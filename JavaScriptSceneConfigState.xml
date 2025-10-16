@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SmartInputJavaScriptSceneConfigState">
+    <option name="singleAnnotateScene" value="{&quot;capsLockState&quot;:false,&quot;code&quot;:&quot;singleAnnotate&quot;,&quot;enable&quot;:false,&quot;languageType&quot;:&quot;CHINESE&quot;,&quot;name&quot;:&quot;单行注释&quot;,&quot;tip&quot;:&quot;光标处于单行注释区域切换为中文&quot;}" />
+    <option name="multilineAnnotateScene" value="{&quot;capsLockState&quot;:false,&quot;code&quot;:&quot;multilineAnnotate&quot;,&quot;enable&quot;:false,&quot;languageType&quot;:&quot;CHINESE&quot;,&quot;name&quot;:&quot;多行注释&quot;,&quot;tip&quot;:&quot;光标处于多行注释区域切换为中文&quot;}" />
+    <option name="documentAnnotateScene" value="{&quot;capsLockState&quot;:false,&quot;code&quot;:&quot;documentAnnotate&quot;,&quot;enable&quot;:false,&quot;languageType&quot;:&quot;CHINESE&quot;,&quot;name&quot;:&quot;文档注释&quot;,&quot;tip&quot;:&quot;光标处于文档注释区域切换为中文&quot;}" />
+    <option name="customChineseScenes" value="{&quot;capsLockState&quot;:false,&quot;code&quot;:&quot;diseaseTypeText;xunit;XmlTagText(div,section);el-popover(trigger);PlSelect(placeholder,label);div(slot,class);span(class);section(class);JSProperty(buttonText,keyDiseasePrefix,keyDiseaseSuffix,deptOrWholeHosp,label,drgCity,drgProvince,dip,default,name,formatter);el-button(type);pl-page-container(class);WorkloadPanel(deptOrWholeHosp);disposeStreamFile(fileName);scatter-chart-period(prefixText);PlButton(btnText);PlInput(unitText)&quot;,&quot;enable&quot;:true,&quot;languageType&quot;:&quot;CHINESE&quot;,&quot;name&quot;:&quot;自定义中文切换&quot;,&quot;tip&quot;:&quot;&quot;}" />
+  </component>
+</project>

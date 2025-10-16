@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="LastEditedFileState">
+    <option name="lastEditedMap">
+      <map>
+        <entry key="$PROJECT_DIR$/.env.analyz" value="1697763634928" />
+        <entry key="$PROJECT_DIR$/.env.development" value="1697763638514" />
+        <entry key="$PROJECT_DIR$/.env.production" value="1697763640027" />
+        <entry key="$PROJECT_DIR$/public/index.html" value="1697699910098" />
+        <entry key="$PROJECT_DIR$/public/lodash.min.js" value="1697699986069" />
+        <entry key="$PROJECT_DIR$/src/App.vue" value="1697699878752" />
+        <entry key="$PROJECT_DIR$/src/api/materialsAnalysis/indexdrg.js" value="1699954125297" />
+        <entry key="$PROJECT_DIR$/src/api/workloadAnalysis/leaveDeptNumber.js" value="1697763862390" />
+        <entry key="$PROJECT_DIR$/src/api/workloadAnalysis/leaveHospNumber.js" value="1697696301439" />
+        <entry key="$PROJECT_DIR$/src/api/workloadAnalysis/operationNumber.js" value="1697704941591" />
+        <entry key="$PROJECT_DIR$/src/assets/iconfont/iconfont.css" value="1698919937675" />
+        <entry key="$PROJECT_DIR$/src/component/incomeExpenses/index/hospitalIncomeAndExpenses.vue" value="1698889682820" />
+        <entry key="$PROJECT_DIR$/src/component/incomeExpensesAnalysis/index/resourceEfficiency2.vue" value="1698915653366" />
+        <entry key="$PROJECT_DIR$/src/component/table/TableFilterConfig.js" value="1699950171153" />
+        <entry key="$PROJECT_DIR$/src/component/tool/PlCascader.vue" value="1698893309201" />
+        <entry key="$PROJECT_DIR$/src/component/tool/PlDialog.vue" value="1697693727121" />
+        <entry key="$PROJECT_DIR$/src/component/tool/PlGridTable.vue" value="1699955919013" />
+        <entry key="$PROJECT_DIR$/src/component/tool/PlPopoverTips.vue" value="1697699765970" />
+        <entry key="$PROJECT_DIR$/src/component/tool/PlSelect.vue" value="1698910492767" />
+        <entry key="$PROJECT_DIR$/src/component/tool/PlSelectGroup.vue" value="1698909224354" />
+        <entry key="$PROJECT_DIR$/src/component/unit/compareSelect.vue" value="1697762846430" />
+        <entry key="$PROJECT_DIR$/src/component/unit/exportExcel.vue" value="1698909215064" />
+        <entry key="$PROJECT_DIR$/src/directives/dialogDrag.js" value="1697710392189" />
+        <entry key="$PROJECT_DIR$/src/doms-ui/component/chart/bar.vue" value="1699956855719" />
+        <entry key="$PROJECT_DIR$/src/doms-ui/component/chart/line.vue" value="1699956852161" />
+        <entry key="$PROJECT_DIR$/src/doms-ui/component/chart/pointConnection.vue" value="1697710544260" />
+        <entry key="$PROJECT_DIR$/src/doms-ui/component/container/con-h360.vue" value="1697703831419" />
+        <entry key="$PROJECT_DIR$/src/doms-ui/component/container/con-hNN.vue" value="1697703822109" />
+        <entry key="$PROJECT_DIR$/src/main.js" value="1697699786569" />
+        <entry key="$PROJECT_DIR$/src/router.js" value="1698904314248" />
+        <entry key="$PROJECT_DIR$/src/store/index.js" value="1698906593320" />
+        <entry key="$PROJECT_DIR$/src/store/modules/exportFile.js" value="1698906635088" />
+        <entry key="$PROJECT_DIR$/src/store/modules/filter.js" value="1697767577008" />
+        <entry key="$PROJECT_DIR$/src/store/modules/recorderPathStore.js" value="1698962453442" />
+        <entry key="$PROJECT_DIR$/src/util/index.js" value="1697698571770" />
+        <entry key="$PROJECT_DIR$/src/views/applicationConfig/keyDiseaseCustomization.vue" value="1699954128768" />
+        <entry key="$PROJECT_DIR$/src/views/diseaseAnalysis/components/operationDetailTable.vue" value="1699950322533" />
+        <entry key="$PROJECT_DIR$/src/views/diseaseAnalysis/drgCity/clinic.vue" value="1699950171153" />
+        <entry key="$PROJECT_DIR$/src/views/diseaseMatrix.vue" value="1698904204906" />
+        <entry key="$PROJECT_DIR$/src/views/diseaseMatrix_dip.vue" value="1698904206297" />
+        <entry key="$PROJECT_DIR$/src/views/materialsAnalysis/departmentNew/diseasesAnalysisDip.vue" value="1697692835783" />
+        <entry key="$PROJECT_DIR$/src/views/materialsAnalysis/wholeHospital/component/table/materialRevenueAnalysis.vue" value="1700116735588" />
+        <entry key="$PROJECT_DIR$/src/views/materialsAnalysis/wholeHospital/component/table/surgicalMaterialsAnalysisTable.vue" value="1699957222468" />
+        <entry key="$PROJECT_DIR$/src/views/materialsAnalysis/wholeHospital/overspendAnalysis.vue" value="1699954134163" />
+        <entry key="$PROJECT_DIR$/src/views/materialsAnalysis/wholeHospitalDRG/component/table/surgicalMaterialsAnalysisTable.vue" value="1699957225162" />
+        <entry key="$PROJECT_DIR$/src/views/materialsAnalysis/wholeHospitalDRG/overspendAnalysis.vue" value="1699957153929" />
+        <entry key="$PROJECT_DIR$/src/views/operationDisease/components/barChart.vue" value="1698909218164" />
+        <entry key="$PROJECT_DIR$/src/views/operationDisease/components/filterExport.js" value="1698908804673" />
+        <entry key="$PROJECT_DIR$/src/views/operationDisease/departmentTable.vue" value="1698909219199" />
+        <entry key="$PROJECT_DIR$/src/views/operationDisease/diseaseEconomics/index.vue" value="1700116735588" />
+        <entry key="$PROJECT_DIR$/src/views/operationDisease/diseaseEconomics/surplusExpense_dip.vue" value="1700116735588" />
+        <entry key="$PROJECT_DIR$/src/views/operationDisease/diseaseMonitoringAnalysis/capacityAnalysis.vue" value="1698904286908" />
+        <entry key="$PROJECT_DIR$/src/views/operationDisease/diseaseMonitoringAnalysis/efficiencyAnalysis.vue" value="1698904208012" />
+        <entry key="$PROJECT_DIR$/src/views/operationDisease/index.vue" value="1698909212624" />
+        <entry key="$PROJECT_DIR$/src/views/operationDisease/index_sanitation.vue" value="1699950195910" />
+        <entry key="$PROJECT_DIR$/src/views/personEfficiency/index.vue" value="1699950198946" />
+        <entry key="$PROJECT_DIR$/src/views/workloadAnalysis/department/components/bedWealthDialog.vue" value="1697769313314" />
+        <entry key="$PROJECT_DIR$/src/views/workloadAnalysis/department/components/medicalGroupDetailDialog.vue" value="1697769315616" />
+        <entry key="$PROJECT_DIR$/src/views/workloadAnalysis/department/components/medicalGroupSurgeryDialog.vue" value="1698918253713" />
+        <entry key="$PROJECT_DIR$/src/views/workloadAnalysis/department/components/popoverTips.js" value="1697704018981" />
+        <entry key="$PROJECT_DIR$/src/views/workloadAnalysis/department/components/surgeryCountDialog.vue" value="1698909346308" />
+        <entry key="$PROJECT_DIR$/src/views/workloadAnalysis/department/components/waCusTable.vue" value="1698919951369" />
+        <entry key="$PROJECT_DIR$/src/views/workloadAnalysis/department/components/waCusTableColumn.vue" value="1698918216090" />
+        <entry key="$PROJECT_DIR$/src/views/workloadAnalysis/department/dischargedPatientSurgery/dialogTable.vue" value="1697771411213" />
+        <entry key="$PROJECT_DIR$/src/views/workloadAnalysis/department/dischargedPatientSurgery/index.vue" value="1697692835783" />
+        <entry key="$PROJECT_DIR$/src/views/workloadAnalysis/department/dischargedPatientSurgery/medicalGroupSurgeryDialog.vue" value="1698918375110" />
+        <entry key="$PROJECT_DIR$/src/views/workloadAnalysis/department/dischargedPatientSurgery/structuralAnalysis.vue" value="1697770450778" />
+        <entry key="$PROJECT_DIR$/src/views/workloadAnalysis/department/dischargedPatientSurgery/surgicalAnalysis.vue" value="1698918312362" />
+        <entry key="$PROJECT_DIR$/src/views/workloadAnalysis/department/index.vue" value="1697762884118" />
+        <entry key="$PROJECT_DIR$/src/views/workloadAnalysis/department/leaveDeptNumber/index.vue" value="1697692835783" />
+        <entry key="$PROJECT_DIR$/src/views/workloadAnalysis/department/leaveDeptNumber/leaveDeptNumber.vue" value="1697768838356" />
+        <entry key="$PROJECT_DIR$/src/views/workloadAnalysis/department/leaveHospNumber/index.vue" value="1697692835783" />
+        <entry key="$PROJECT_DIR$/src/views/workloadAnalysis/department/leaveHospNumber/leaveHospNumber.vue" value="1697768873712" />
+        <entry key="$PROJECT_DIR$/src/views/workloadAnalysis/department/leaveHospNumber/leaveHospStructure.vue" value="1697692835783" />
+        <entry key="$PROJECT_DIR$/src/views/workloadAnalysis/department/operationNumber/dialogTable.vue" value="1697771414068" />
+        <entry key="$PROJECT_DIR$/src/views/workloadAnalysis/department/operationNumber/index.vue" value="1697692835783" />
+        <entry key="$PROJECT_DIR$/src/views/workloadAnalysis/department/operationNumber/operationNumber.vue" value="1697770434158" />
+        <entry key="$PROJECT_DIR$/src/views/workloadAnalysis/department/operationNumber/structuralAnalysis.vue" value="1697770441522" />
+        <entry key="$PROJECT_DIR$/src/views/workloadAnalysis/department/tables/groupChangesTable.vue" value="1697706089248" />
+        <entry key="$PROJECT_DIR$/src/views/workloadAnalysis/department/tables/groupNumberTable.vue" value="1697703833475" />
+        <entry key="$PROJECT_DIR$/src/views/workloadAnalysis/department/tables/medicalGroupAnalysisTable.vue" value="1697706067329" />
+        <entry key="$PROJECT_DIR$/src/views/workloadAnalysis/department/tables/projectChangesTable.vue" value="1697701282396" />
+        <entry key="$PROJECT_DIR$/src/views/workloadAnalysis/wholeHospital/hospitalDischarge.vue" value="1700116735588" />
+        <entry key="$PROJECT_DIR$/src/views/workloadAnalysis/wholeHospital/tables/workloadRankingTable.vue" value="1699953935077" />
+        <entry key="$PROJECT_DIR$/vue.config.js" value="1698962421198" />
+      </map>
+    </option>
+  </component>
+</project>

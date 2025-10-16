@@ -1,0 +1,1545 @@
+{
+  "v3-本量利": [
+    {
+      "fileDescriptor": "$/src/component/cost-volume-profit/prediction-dialog/CvpPredictionTabPanel.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/component/cost-volume-profit/prediction-dialog/CostVolumeProfitPredictionDataOperation.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/component/cost-volume-profit/prediction-dialog/PredictionParamsSet.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/component/cost-volume-profit/CostVolumeProfitChart.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/component/cost-volume-profit/CostVolumeProfit.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/component/cost-volume-profit/CostVolumeProfitPredictionParamsSetDialog.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    }
+  ],
+  "旭日图修改": [
+    {
+      "fileDescriptor": "$/src/views/incomeExpenses/medicalCost.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/incomeExpenses/medicalIncome.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/doms-ui/component/chart/sunburst.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/component/chart/sunburst.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    }
+  ],
+  "收支余-科室医疗盈余分析表-下钻tab": [
+    {
+      "fileDescriptor": "$/src/views/BIEAnalysis/tabsComponent/department/surplus.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/BIEAnalysis/tabsComponent/department/deptIncome.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/BIEAnalysis/tabsComponent/department/deptCost.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/BIEAnalysis/tabsComponent/department/directCost.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/BIEAnalysis/tabsComponent/department/indirectCost.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/BIEAnalysis/tabsComponent/department/humanResourceCost.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/BIEAnalysis/tabsComponent/department/directChangeCost.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/BIEAnalysis/tabsComponent/department/directFixedCost.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    }
+  ],
+  "更换顶部日期组件": [
+    {
+      "fileDescriptor": "$/src/views/operationDisease/components/headerFilters.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/component/unit/headerTimeFilters.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/component/tool/TimeHeaderFilter.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/operationDisease/departmentTable.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/operationDisease/capacity_dip.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/operationDisease/diseaseSurplus_dip.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    }
+  ],
+  "院端收支-异常探查跳转科端-日期": [
+    {
+      "fileDescriptor": "$/src/views/BIEAnalysis/report.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/component/tool/DeptAndTimeHeaderFilter.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/component/departmentSelectNew.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/router/permission.js",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/hooks/router/common/useRemoveDeptQueryFieldsWhenHosp.js",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/util/headerFiltersManage.js",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/materialMatrix.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/incomeMatrix.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/hooks/router/balance-income-expenditure/anomaly-detection/useAnomalyDetectionDeptCodeToDeptPage.js",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    }
+  ],
+  "人效分析": [
+    {
+      "fileDescriptor": "$/src/views/humanResourcesAnalysisDept/human_efficiency_analysis/HumanEfficiencyAnalysis.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    }
+  ],
+  "医院条件判断指令": [
+    {
+      "fileDescriptor": "$/src/directives/hospitalConfig.js",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    }
+  ],
+  "科室端-病种分析 dip-出院分析-图表视图在病种所属象限列，浮框展示该象限病种的解决措施提示": [
+    {
+      "fileDescriptor": "$/src/component/diseaseAnalysis/department/leave-hospital-analysis/rw-surplus-ratio-analysis/rwYieldRate.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    }
+  ],
+  "MI特有页面": [
+    {
+      "fileDescriptor": "$/src/views/diseaseAnalysis/components/costTips.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/BIEAnalysis/component/inHospital/diseaseYield.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/const/components/common/genCostTypeOptionsByHospCode.js",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/component/diseaseAnalysis/department/leave-hospital-analysis/common/DeptMedGroupDateCalibre.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/BIEAnalysis/component/inHospital/DeptDischargePatientDiseaseAnalysis.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/diseaseAnalysisDeptArea/drg/drgCityClinicalArea.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/diseaseAnalysis/drgProvince/clinic.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/diseaseAnalysis/dip/clinic.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/operationDisease/index_sanitation.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/diseaseAnalysisDeptArea/drg/drgProvinceLeaveHospitalArea.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/diseaseAnalysisDeptArea/drg/drgProvinceClinicalArea.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/diseaseMatrix_dip.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/diseaseAnalysis/yieldReport_dip.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/diseaseAnalysisDeptArea/drg/drgCityLeaveHospitalArea.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/diseaseAnalysisDeptArea/dip/leaveHospitalArea.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/diseaseAnalysisDeptArea/dip/clinicalDiseaseAnalysisArea.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/diseaseAnalysis/drgCity/clinic_jdy.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/diseaseAnalysis/drgCity/leavehosp_jdy.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/diseaseAnalysis/drgProvince/clinic_jdy.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/diseaseAnalysis/drgProvince/leavehosp_jdy.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/operationDisease/diseaseAnalyseCityMI.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/operationDisease/diseaseDetailsCityMI.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/operationDisease/diseaseMatrixCityMI.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/operationDisease/diseaseEconomics/indexCityMI.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/operationDisease/diseaseSurplusCityMI.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/operationDisease/diseaseEconomics/indexProvinceMI.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/operationDisease/diseaseEconomics/surplusSpecialProvinceMI.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/operationDisease/diseaseEconomics/surplusPhysicianCityMI.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/operationDisease/diseaseEconomics/surplusSpecialCityMI.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/operationDisease/diseaseEconomics/surplusSpecial_dip.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/operationDisease/diseaseEconomics/surplusPhysicianProvinceMI.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/operationDisease/diseaseSurplusProvinceMI.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/operationDisease/diseaseDetailsProvinceMI.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/operationDisease/diseaseAnalyseProvinceMI.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/operationDisease/diseaseMatrixProvinceMI.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    }
+  ],
+  "通用组件示例": [
+    {
+      "fileDescriptor": "$/src/views/temp/chart/container.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    }
+  ],
+  "吉大医病人类型选项修改": [
+    {
+      "fileDescriptor": "$/src/views/operationDisease/index_dip.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    }
+  ],
+  "矩阵图表": [
+    {
+      "fileDescriptor": "$/src/views/abnormalCheck/abnormalPanel.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/abnormalCheck/components/matrix/index.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/abnormalCheck/components/matrix/chartScatter.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/component/workloadAnalysis/wholeHospital/HospitalAdmissionRateAbnormalProbeMatrix.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/component/matrix/index.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/doms-ui/component/chart/matrixModule.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/doms-ui/component/chart/matrix.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/doms-ui/component/chart/matrixTable.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/component/hospital/ultrasound_image_operation_analysis/ultrasound-number-drop-analysis/UltrasoundNumberDropAnalysisChart.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/component/matrix/chartScatter.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    }
+  ],
+  "医技运营管理驾驶舱": [
+    {
+      "fileDescriptor": "$/src/views/hospitalDataCockpit/wenzhou/cockpitPanelWz.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/hospitalDataCockpit/wenzhou/cockpit.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/deptCockpit/index.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/incomeExpensesAnalysis/index.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/medicalTechnologyWorkload/cockpit/components/panel/PathologicalDiagnosis.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/medicalTechnologyWorkload/cockpit/resource-allocation/Staff.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/medicalTechnologyWorkload/cockpit/resource-allocation/Armamentarium.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/medicalTechnologyWorkload/cockpit/components/resource-allocation/DeptStaffStateStatistic.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/medicalTechnologyWorkload/cockpit/components/resource-allocation/DeptLargeArmamentariumStateStatistic.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/medicalTechnologyWorkload/cockpit/components/resource-allocation/LargeArmamentariumDetail.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/medicalTechnologyWorkload/cockpit/MedicalTechnologyOperationManagementCockpit.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/medicalTechnologyWorkload/cockpit/components/MedicalTechnologyOperationManagementCockpitPanel.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/medicalTechnologyWorkload/cockpit/MedicalTechnologyOperationManagementResourceAllocation.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/store/modules/hospital/medicalTechnologyWorkload/cockpit/medicalTechnologyOperationManagementCockpitStore.js",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/incomeExpensesAnalysis/basicResourcesSituation/index.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/deptCockpit/resourceAllocation/index.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    }
+  ],
+  "科室设备效益分析": [
+    {
+      "fileDescriptor": "$/src/component/department/dept_equipment_benefit_analysis/EquipmentSituationOverview.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/department/dept_equipment_benefit_analysis/DeptEquipmentBenefitAnalysis.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/department/dept_equipment_benefit_analysis/EquipmentDetail.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    }
+  ],
+  "通用分析报告预览、下载组件": [
+    {
+      "fileDescriptor": "$/src/component/tool/PlAnalysisReportPanel.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    }
+  ],
+  "扩展列表格": [
+    {
+      "fileDescriptor": "$/src/component/diseaseAnalysis/department/leave-hospital-analysis/dept-disease-group-detail-data-analysis/disease-type-admitted-med-group-comparison-dialog/MaterialUsageAnalysis.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/materialsAnalysis/wholeHospital/component/table/materialRevenueAnalysis.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    }
+  ],
+  "医疗组表格 TODO: V23 待替换新表格组件 PlGridTable": [],
+  "病组分析-学科分析-关键疾病": [
+    {
+      "fileDescriptor": "$/src/views/operationDisease/diseaseDsciplineAnalysis/index.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/operationDisease/diseaseDsciplineAnalysis/keyDiseases.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/operationDisease/diseaseDsciplineAnalysis/keyTechnology.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/operationDisease/diseaseDsciplineAnalysis/keyDiseases_dip.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/operationDisease/diseaseDsciplineAnalysis/keyTechnology_dip.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/operationDisease/diseaseDsciplineAnalysis/tables/keySituationTable.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/operationDisease/diseaseDsciplineAnalysis/tables/deptContentTable.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    }
+  ],
+  "病种分析-临床病种分析": [
+    {
+      "fileDescriptor": "$/src/views/operationDisease/components/diseaseCure.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/component/diseaseAnalysis/department/leave-hospital-analysis/medical-group-case/DiseaseAdmittedToMedicalGroupCompareCase.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/component/diseaseAnalysis/index/daiDoctorAdmitted.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    }
+  ],
+  "收入细项前十-表格组件": [
+    {
+      "fileDescriptor": "$/src/views/BIEAnalysis/tabsComponent/department/medicalServiceIncome.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/BIEAnalysis/tabsComponent/department/inspectionIncome.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/BIEAnalysis/tabsComponent/department/testIncome.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/BIEAnalysis/tabsComponent/department/drugIncome.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/BIEAnalysis/tabsComponent/department/consumableIncome.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    }
+  ],
+  "动态路由菜单-面包屑": [
+    {
+      "fileDescriptor": "$/src/router/helpers/routerConfig.js",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/hooks/router/dept-equipment-benefit-analysis/useAddDeptEquipmentBenefitAnalysisMenu.js",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/const/components/department/dept_equipment_benefit_analysis/deptEquipmentBenefitAnalysisConstant.js",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/hooks/router/common/dynamic-add-route/useLastRouteObjWithComponent.js",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/const/router/addRouteComponentHash.js",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/hooks/router/dept-equipment-benefit-analysis/useAuthoritySignRouterPathConfig.js",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/component/diseaseAnalysis/department/leave-hospital-analysis/dept-disease-group-detail-data-analysis/DiseaseTypeAdmittedMedGroupComparison.vue",
+      "linenumber": 329,
+      "name": "",
+      "bookmarkType": "DIGIT_1"
+    }
+  ],
+  "出院分析-弹窗改下钻页面": [
+    {
+      "fileDescriptor": "$/src/component/diseaseAnalysis/department/leave-hospital-analysis/disease-type-group-admitted-to-med-group/AdmittedCasesEnrollmentDetail.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/component/diseaseAnalysis/dialog/doctorTable.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/component/diseaseAnalysis/dialog/diseaseDblTable.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/diseaseAnalysis/dip/daiDetailedTable.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/component/diseaseAnalysis/index/daiDetailedData.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    }
+  ],
+  "转科病例明细": [
+    {
+      "fileDescriptor": "$/src/component/diseaseAnalysis/department/clinical/caseDetailTable.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/component/diseaseAnalysis/department/clinical/case-detail-data-analysis/DetailFeeCostAnalysisDialog.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/component/diseaseAnalysis/department/clinical/case-detail-data-analysis/dialog/CaseDiseaseDescription.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/component/diseaseAnalysis/department/clinical/case-detail-data-analysis/dialog/CaseTransferredDeptDetail.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/component/diseaseAnalysis/department/clinical/case-detail-data-analysis/dialog/case-transferred-dept-detail/TransferredDeptRecords.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/component/diseaseAnalysis/department/clinical/case-detail-data-analysis/dialog/case-transferred-dept-detail/DeptFeesDistributionRecords.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/component/diseaseAnalysis/department/clinical/case-detail-data-analysis/dialog/case-transferred-dept-detail/CaseDetailDescription.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/component/diseaseAnalysis/department/clinical/case-detail-data-analysis/common/AsideStepMoveArrow.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/component/diseaseAnalysis/department/clinical/case-detail-data-analysis/dialog/FeesDistribution.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/component/diseaseAnalysis/department/clinical/case-detail-data-analysis/dialog/FeeAccumulatedProportion.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    }
+  ],
+  "院端-病组 病种 支付 替换 标准图表、表格": [
+    {
+      "fileDescriptor": "$/src/views/operationDisease/diseaseDetails_dip.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/operationDisease/expenseConsumptionIndex/index2.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/operationDisease/timeConsumptionIndex/index2.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/operationDisease/drugIndex/index2.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/operationDisease/materialIndex/index2.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    }
+  ],
+  "吉大医废弃页面": [
+    {
+      "fileDescriptor": "$/src/views/operationDisease/diseaseMonitoringAnalysis/indexCityMI.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/operationDisease/diseaseMonitoringAnalysis/indexProvinceMI.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/operationDisease/capacityProvinceMI.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/operationDisease/capacityCityMI.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    }
+  ],
+  "科室设备效益分析页面动态添加子路由相关": [
+    {
+      "fileDescriptor": "$/src/util/routerConfig.js",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/main.js",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/layout/subMenu.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/layout/layout.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/department.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/router/router.js",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/store/modules/login.js",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/hooks/router/useCheckDynamicRouterValidate.js",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    }
+  ],
+  "封装 费别分析 和 药占比、耗占比分析 图表": [
+    {
+      "fileDescriptor": "$/src/component/diseaseAnalysis/dialog/AnalysisCharts.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    }
+  ],
+  "重构菜单组件-通用图标选择器组件": [
+    {
+      "fileDescriptor": "$/src/component/tool/PlIconSelector.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/store/modules/menu.js",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/const/components/menu/MENU_TYPE_CODE_HASH.js",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/const/components/menu/MENU_LINK_TYPE_CODE_HASH.js",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/menuConfig.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/menu/menuParam.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/menu/PcAppToggleTab.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/menu/MenuOperation.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/menu/MenuConfigTable.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/menu/MenuConfigTableOperationDialog.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/menu/AssignRolesDialog.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/menu/AssignDeptDialog.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/menu/LinkParamsSettingDialog.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/layout/leftNav.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/layout/hospitalLeftNav.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/layout/hospitalSubMenu.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    }
+  ],
+  "仪表盘bug修改": [
+    {
+      "fileDescriptor": "$/src/component/tool/PlSingleGauge.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/component/hospital/balance-income-expenditure/BIEAnalysisHospGaugeList.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/component/hospital/balance-income-expenditure/BIEAnalysisHospGauge.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/component/BIEAnalysis/BIEAnalysisGauge.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/component/BIEAnalysis/BIEAnalysisGaugeList.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/BIEAnalysis/BIEAnalysisOverview.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    }
+  ],
+  "科室设备效益分析参考": [
+    {
+      "fileDescriptor": "$/src/views/equipmentBenefitAnalysis/diagnosisEuipmentAnalysis.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/workloadAnalysis/department/dischargedPatientSurgery/surgicalAnalysis.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/equipmentBenefitAnalysis/treatEquipmentAnalysis.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/equipmentBenefitAnalysis/components/treatEquipmentDetail.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    }
+  ],
+  "仪表盘改造": [
+    {
+      "fileDescriptor": "$/src/views/diff/hosp-jdy/incomeExpenses/components/WholeHospitalIncomeOverviewGauge.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/diff/hosp-jdy/incomeExpenses/components/WholeHospitalCostOverviewGauge.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/diff/hosp-jdy/incomeExpenses/components/BIEAnalysisJdyHospGaugeList.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/component/tool/PlGaugeList.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/incomeExpenses/index.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/diff/hosp-jdy/incomeExpenses/IncomeOverview.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/diff/hosp-jdy/incomeExpenses/CostOverview.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    }
+  ],
+  "病种本量利": [
+    {
+      "fileDescriptor": "$/src/views/diseaseAnalysis/drgProvince/leavehosp.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/diseaseAnalysis/dip/leavehosp.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/store/modules/costVolumeProfitStore.js",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/component/BIEAnalysis/cost-volume-profit/BieAnalysisCostVolumeProfit.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/component/diseaseAnalysis/cost-volume-profit/DiseaseAnalysisCostVolumeProfit.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    }
+  ],
+  "科室医疗盈余分析表": [
+    {
+      "fileDescriptor": "$/src/component/BIEAnalysis/DeptMedSurplusAnalysisTable.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/BIEAnalysis/component/outPatient/outpatientBlock.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/BIEAnalysis/component/inHospital/inHospitalBlock.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/BIEAnalysis/component/surgery/surgeryBlock.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/BIEAnalysis/component/overall/overallBlock.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    }
+  ],
+  "柱状图-处理-浮动提示框-点击链接-事件耦合": [
+    {
+      "fileDescriptor": "$/src/component/incomeExpenses/medicalCost/categories-cost-change/CategoriesCostChange.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/doms-ui/component/chart/bar.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/component/incomeExpenses/medicalIncome/fees-income-change/FeesIncomeChange.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    }
+  ],
+  "科室病组实时运营数据分析": [
+    {
+      "fileDescriptor": "$/src/component/diseaseAnalysis/realTimeTracking/DaiRealTimeDiseases.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    }
+  ],
+  "北京地坛医院-DRG-病组分类": [
+    {
+      "fileDescriptor": "$/src/views/operationDisease/diseaseEconomics/surplusExpense.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/operationDisease/diseaseDetails.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/operationDisease/capacity.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/operationDisease/diseaseSurplus.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/operationDisease/expenseConsumptionIndex/index.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/operationDisease/timeConsumptionIndex/index.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/operationDisease/materialIndex/index.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/operationDisease/drugIndex/index.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/diseaseAnalysis/drgCity/leavehosp.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/diseaseAnalysis/yieldReport.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/operationDisease/diseaseMonitoringAnalysis/capacityAnalysis_dip.vue",
+      "linenumber": 132,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/diseaseAnalysis/costEfficiencyReport/index.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/diseaseAnalysis/drgCity/clinic.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/diseaseAnalysis/dept-disease-group-detail-data-analysis/DeptDiseaseGroupDetailDataAnalysis.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/diseaseAnalysis/medical-group-case/MedicalGroupCase.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/diseaseAnalysis/disease-type-group-admitted-to-med-group/DiseaseTypeGroupAdmittedToMedGroup.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/diseaseAnalysis/overallOperationReport/OverallOperationReport.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/operationDisease/diseaseMonitoringAnalysis/costAnalysis_dip.vue",
+      "linenumber": 48,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/operationDisease/diseaseMonitoringAnalysis/efficiencyAnalysis_dip.vue",
+      "linenumber": 47,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/component/diseaseAnalysis/hospital/diseaseAnalysis/abnormal-disease-monitor-analysis/AbnormalAnalysisScatter.vue",
+      "linenumber": 15,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/component/diseaseAnalysis/hospital/diseaseAnalysis/abnormal-disease-monitor-analysis/KeyFocusDisease.vue",
+      "linenumber": 13,
+      "name": ":showHeader\u003d\"false\"",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/operationDisease/diseaseMonitoringAnalysis/index.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/operationDisease/diseaseMonitoringAnalysis/capacityAnalysis.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/operationDisease/diseaseMonitoringAnalysis/costAnalysis.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/operationDisease/diseaseMonitoringAnalysis/index_sanitation.vue",
+      "linenumber": 4,
+      "name": "\u003ctemplate\u003e",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/operationDisease/diseaseMonitoringAnalysis/costAnalysis_sanitation.vue",
+      "linenumber": 143,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/operationDisease/diseaseMonitoringAnalysis/capacityAnalysis_sanitation.vue",
+      "linenumber": 130,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/operationDisease/diseaseMonitoringAnalysis/efficiencyAnalysis_sanitation.vue",
+      "linenumber": 49,
+      "name": "\u003c/template\u003e",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/operationDisease/diseaseMonitoringAnalysis/index_dip.vue",
+      "linenumber": 525,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/operationDisease/index.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/diseaseMatrix.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/operationDisease/diseaseEconomics/index.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/operationDisease/diseaseEconomics/surplusSpecial.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/operationDisease/diseaseEconomics/surplusPhysician.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    }
+  ],
+  "DOM-9456-科室端+院端DP权限做到根据角色控制下拉框显示的内容：收入口径、成本口径": [
+    {
+      "fileDescriptor": "$/src/views/operationDisease/diseaseEconomics/surplusPhysician_dip.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/views/operationDisease/diseaseEconomics/index_dip.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/mixins/components/disease-types-analysis/calibreHandlerMixin.js",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/mixins/components/disease-types-analysis/dipDeptAuthorityCalibreOptionsMixin.js",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalDependencies">
+    <plugin id="com.clutcher.comments_highlighter" />
+    <plugin id="com.github.hamfer.bracketblock" />
+    <plugin id="com.intellij.zh" />
+    <plugin id="com.nickzhang.jetbrains.file_description_plugin" />
+    <plugin id="indent-rainbow.indent-rainbow" />
+    <plugin id="jones.foldcallblocks.fold-call-blocks" />
+  </component>
+</project>

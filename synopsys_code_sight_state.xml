@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SynopsysCodeSightSettings">
+    <option name="version" value="3" />
+    <option name="teamViewColumnStates">
+      <map>
+        <entry key="UnknownServerType">
+          <value>
+            <list>
+              <ColumnState>
+                <option name="name" value="severity" />
+                <option name="width" value="35" />
+              </ColumnState>
+              <ColumnState>
+                <option name="name" value="type" />
+                <option name="width" value="440" />
+              </ColumnState>
+              <ColumnState>
+                <option name="name" value="location" />
+                <option name="width" value="440" />
+              </ColumnState>
+              <ColumnState>
+                <option name="name" value="domain" />
+                <option name="width" value="340" />
+              </ColumnState>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="teamViewSortStates">
+      <map>
+        <entry key="UnknownServerType">
+          <value>
+            <SortState>
+              <option name="sortField" value="type" />
+              <option name="ascending" value="true" />
+            </SortState>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

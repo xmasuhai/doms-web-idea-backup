@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JavaScriptLibraryMappings">
+    <file url="PROJECT" libraries="{@types/absinthe__socket-apollo-link, @types/axios-cancel, @types/echarts, @types/lodash-es, @types/node, @types/react, @types/react-dom, @types/sockjs, @types/websocket, @types/websocket-async, vue2}" />
+    <includedPredefinedLibrary name="Node.js Core" />
+  </component>
+</project>
