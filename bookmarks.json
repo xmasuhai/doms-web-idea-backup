@@ -802,6 +802,80 @@
       "bookmarkType": "DIGIT_1"
     }
   ],
+  "科室病组明细数据分析-医疗组收治病组一览表-下钻": [
+    {
+      "fileDescriptor": "$/src/component/diseaseAnalysis/department/leave-hospital-analysis/dept-disease-group-detail-data-analysis/DialogMaterialAnalysis2.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/component/diseaseAnalysis/department/leave-hospital-analysis/dept-disease-group-detail-data-analysis/DialogMaterialAnalysis.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/component/diseaseAnalysis/department/leave-hospital-analysis/medical-group-case/DiseaseAdmittedToMedicalGroupCompareCaseDialog.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/component/diseaseAnalysis/department/leave-hospital-analysis/dept-disease-group-detail-data-analysis/disease-type-admitted-med-group-comparison-dialog/MaterialCharts.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/store/modules/department/disease-analysis/leave-hospital-analysis/deptDiseaseDetailDataAnalysisStore.js",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/component/diseaseAnalysis/department/leave-hospital-analysis/dept-disease-group-detail-data-analysis/disease-type-admitted-med-group-comparison-dialog/MedicalGroupDosageAnalysis.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/component/diseaseAnalysis/department/leave-hospital-analysis/common/DialogPharmaceuticalAnalysis.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/component/diseaseAnalysis/department/leave-hospital-analysis/dept-disease-group-detail-data-analysis/disease-type-admitted-med-group-comparison-dialog/MedicalServiceDetailAnalysis.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/component/diseaseAnalysis/department/leave-hospital-analysis/dept-disease-group-detail-data-analysis/disease-type-admitted-med-group-comparison-dialog/ExaminationDetailAnalysis.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/component/diseaseAnalysis/department/leave-hospital-analysis/dept-disease-group-detail-data-analysis/disease-type-admitted-med-group-comparison-dialog/InspectionDetailAnalysis.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/component/diseaseAnalysis/department/leave-hospital-analysis/dept-disease-group-detail-data-analysis/DiseaseTypeAdmittedMedGroupComparisonDialog.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    },
+    {
+      "fileDescriptor": "$/src/component/diseaseAnalysis/department/leave-hospital-analysis/dept-disease-group-detail-data-analysis/DiseaseTypeAdmittedMedGroupComparison.vue",
+      "linenumber": -1,
+      "name": "",
+      "bookmarkType": "DEFAULT"
+    }
+  ],
   "出院分析-弹窗改下钻页面": [
     {
       "fileDescriptor": "$/src/component/diseaseAnalysis/department/leave-hospital-analysis/disease-type-group-admitted-to-med-group/AdmittedCasesEnrollmentDetail.vue",

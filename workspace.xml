@@ -41,7 +41,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a32d6ec8-0d74-4a1b-8cad-0ab91948ca3e" name="Changes" comment="v91-feat/refactor:DOM-18332-需求554-通用-科室端-病种分析-出院分析-科室病组明细数据分析 下钻-市医保DRG及DIP-医疗组收治该病组对比-添加下钻&#10;feat(deptDiseaseDetail): 优化病种分析弹窗及药品用量分析展示&#10;&#10;- 移除药品分析弹窗中冗余的 diseaseName 属性传参，统一使用状态数据&#10;- 新增多个分析维度的弹窗高度配置（检查、检验、医疗服务等）&#10;- 优化药品用量分析标题展示逻辑，避免空值显示异常&#10;- 调整组件结构，统一使用 section 包裹内容区域&#10;  - 在检查、检验、医疗服务分析组件中引入 DiseaseAnalysisDesc 病种描述组件&#10;- 优化 compareType 监听逻辑，简化代码结构" />
+    <list default="true" id="a32d6ec8-0d74-4a1b-8cad-0ab91948ca3e" name="Changes" comment="v92-feat:DOM-18614-需求752-院端-收支余-成本菜单，时间下拉框，隐藏周、日的选择，因为成本最小到月&#10;调整费用概览时间筛选器配置，移除了时间筛选器中多余的 'w' 和 'd'选项">
+      <change beforePath="$PROJECT_DIR$/src/component/tool/DeptAndTimeHeaderFilter.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/tool/DeptAndTimeHeaderFilter.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/tool/TimeHeaderFilter.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/tool/TimeHeaderFilter.vue" afterDir="false" />
+    </list>
     <list id="bd8e474f-42c8-444f-9f2b-07be811ba86b" name="ignore-on-commit" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,8 +78,8 @@
         <option value="JSX File" />
         <option value="tsconfig.json" />
         <option value="SCSS File" />
-        <option value="JavaScript File" />
         <option value="Vue Options API Component" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -209,97 +212,98 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
-    "FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder0": "0",
-    "FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder1": "1",
-    "FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder2": "2",
-    "FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder3": "3",
-    "FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder4": "4",
-    "FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder5": "5",
-    "FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth0": "304",
-    "FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth1": "305",
-    "FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth2": "177",
-    "FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth3": "58",
-    "FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth4": "113",
-    "FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth5": "864",
-    "FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder0": "0",
-    "FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder1": "1",
-    "FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder2": "2",
-    "FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder3": "3",
-    "FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder4": "4",
-    "FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder5": "5",
-    "FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth0": "304",
-    "FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth1": "304",
-    "FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth2": "303",
-    "FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth3": "303",
-    "FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth4": "304",
-    "FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth5": "303",
-    "Node.js.useAllCheckColumn.js.executor": "Debug",
-    "Notification.DisplayName-DoNotAsk-JavaScript: Code Vision Performance": "JavaScript: Code Vision 性能观察程序",
-    "Notification.DoNotAsk-JavaScript: Code Vision Performance": "true",
-    "RunOnceActivity.CodyProjectSettingsMigration": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHELLCHECK.PATH": "C:\\Users\\xushuai\\AppData\\Roaming\\JetBrains\\WebStorm2024.1\\plugins\\Shell Script\\shellcheck.exe",
-    "WebServerToolWindowFactoryState": "false",
-    "app.teamhub.selectedTeam": "https://github.com/xmastan/department-management-web",
-    "buildsPattern": "",
-    "com.codeium.enabled": "true",
-    "com.codeium.snoozedEndTime": "0",
-    "com.github.patou.gitmoji.display-icon": "icon",
-    "com.github.patou.gitmoji.text-after-unicode": "",
-    "com.google.cloudcode.ide_session_index": "20240202_0001",
-    "dart.analysis.tool.window.visible": "false",
-    "didalgo.chatgpt.ToolWindow.ACTIVE": "GPT_4",
-    "file.manager.left.side.uri": "file:///C:/Users/xushuai/",
-    "file.manager.right.side.uri": "file:///C:/Users/xushuai/",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "javascript.nodejs.core.library.configured.version": "14.21.3",
-    "javascript.nodejs.core.library.typings.version": "14.18.63",
-    "junie.onboarding.icon.badge.shown": "true",
-    "last_opened_file_path": "D:/project/doms_web/src/assets/images",
-    "list.type.of.created.stylesheet": "SCSS",
-    "network.radicle.jetbrains.radiclejetbrainsplugin.config.path": "",
-    "network.radicle.jetbrains.radiclejetbrainsplugin.config.radSeedKey": "http://localhost:8080",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.standard": "true",
-    "node.js.detected.package.stylelint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.standard": "",
-    "node.js.selected.package.stylelint": "",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_interpreter_path": "node",
-    "nodejs_package_manager_path": "npm",
-    "npm.本地构建打包.executor": "Run",
-    "npm.本地运行项目.executor": "Debug",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "settings.editor.splitter.proportion": "0.26007006",
-    "to.speed.mode.migration.done": "true",
-    "ts.external.directory.path": "D:\\software\\JetBrains\\WebStorm 2024.3\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
-    "typescript.add.unambiguous.imports.on.the.fly": "true",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;2a1a7435_parent_location_hash&quot;: &quot;2a1a7435&quot;,
+    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
+    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder0&quot;: &quot;0&quot;,
+    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder1&quot;: &quot;1&quot;,
+    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder2&quot;: &quot;2&quot;,
+    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder3&quot;: &quot;3&quot;,
+    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder4&quot;: &quot;4&quot;,
+    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder5&quot;: &quot;5&quot;,
+    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth0&quot;: &quot;304&quot;,
+    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth1&quot;: &quot;305&quot;,
+    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth2&quot;: &quot;177&quot;,
+    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth3&quot;: &quot;58&quot;,
+    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth4&quot;: &quot;113&quot;,
+    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth5&quot;: &quot;864&quot;,
+    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder0&quot;: &quot;0&quot;,
+    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder1&quot;: &quot;1&quot;,
+    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder2&quot;: &quot;2&quot;,
+    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder3&quot;: &quot;3&quot;,
+    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder4&quot;: &quot;4&quot;,
+    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder5&quot;: &quot;5&quot;,
+    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth0&quot;: &quot;304&quot;,
+    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth1&quot;: &quot;304&quot;,
+    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth2&quot;: &quot;303&quot;,
+    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth3&quot;: &quot;303&quot;,
+    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth4&quot;: &quot;304&quot;,
+    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth5&quot;: &quot;303&quot;,
+    &quot;Node.js.useAllCheckColumn.js.executor&quot;: &quot;Debug&quot;,
+    &quot;Notification.DisplayName-DoNotAsk-JavaScript: Code Vision Performance&quot;: &quot;JavaScript: Code Vision 性能观察程序&quot;,
+    &quot;Notification.DoNotAsk-JavaScript: Code Vision Performance&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.CodyProjectSettingsMigration&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHELLCHECK.PATH&quot;: &quot;C:\\Users\\xushuai\\AppData\\Roaming\\JetBrains\\WebStorm2024.1\\plugins\\Shell Script\\shellcheck.exe&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;app.teamhub.selectedTeam&quot;: &quot;https://github.com/xmastan/department-management-web&quot;,
+    &quot;buildsPattern&quot;: &quot;&quot;,
+    &quot;com.codeium.enabled&quot;: &quot;true&quot;,
+    &quot;com.codeium.snoozedEndTime&quot;: &quot;0&quot;,
+    &quot;com.github.patou.gitmoji.display-icon&quot;: &quot;icon&quot;,
+    &quot;com.github.patou.gitmoji.text-after-unicode&quot;: &quot;&quot;,
+    &quot;com.google.cloudcode.ide_session_index&quot;: &quot;20240202_0001&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;didalgo.chatgpt.ToolWindow.ACTIVE&quot;: &quot;GPT_4&quot;,
+    &quot;file.manager.left.side.uri&quot;: &quot;file:///C:/Users/xushuai/&quot;,
+    &quot;file.manager.right.side.uri&quot;: &quot;file:///C:/Users/xushuai/&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;14.21.3&quot;,
+    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;14.18.63&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/project/doms_web/src/const/diff/hosp-bjdt/common&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;SCSS&quot;,
+    &quot;network.radicle.jetbrains.radiclejetbrainsplugin.config.path&quot;: &quot;&quot;,
+    &quot;network.radicle.jetbrains.radiclejetbrainsplugin.config.radSeedKey&quot;: &quot;http://localhost:8080&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.stylelint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.stylelint&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;npm.本地构建打包.executor&quot;: &quot;Run&quot;,
+    &quot;npm.本地运行项目.executor&quot;: &quot;Debug&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
+    &quot;settings.editor.splitter.proportion&quot;: &quot;0.26007006&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;D:\\software\\JetBrains\\WebStorm 2024.3\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;,
+    &quot;typescript.add.unambiguous.imports.on.the.fly&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "stardust.markdown.MarkdownSplitEditorSuppressor:keyList": [],
-    "vue.recent.templates": [
-      "Vue Options API Component"
+  &quot;keyToStringList&quot;: {
+    &quot;stardust.markdown.MarkdownSplitEditorSuppressor:keyList&quot;: [],
+    &quot;vue.recent.templates&quot;: [
+      &quot;Vue Options API Component&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\project\doms_web\src\const\diff\hosp-bjdt\common" />
       <recent name="D:\project\doms_web\src\assets\images" />
       <recent name="D:\project\doms_web\src\component\cost-volume-profit\common" />
       <recent name="D:\project\doms_web\src\api\hospital\diseaseAnalysis" />
       <recent name="D:\project\doms_web\src\component\diseaseAnalysis\hospital\disease-economy-analysis\surplus" />
-      <recent name="D:\project\doms_web\src\component\diseaseAnalysis\hospital\time-consumption-index" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\project\doms_web\src\component\cost-volume-profit\prediction-dialog" />
@@ -377,24 +381,6 @@
     <configuration useDefault="false">C:\Users\xushuai\AppData\Roaming\Subversion</configuration>
     <supportedVersion>125</supportedVersion>
     <option name="runUnderTerminal" value="true" />
-  </component>
-  <component name="SvnFileUrlMappingImpl">
-    <option name="myMappingRoots">
-      <list>
-        <SvnCopyRootSimple>
-          <option name="myVcsRoot" value="D:\project\doms_web" />
-          <option name="myCopyRoot" value="D:\project\doms_web" />
-        </SvnCopyRootSimple>
-      </list>
-    </option>
-    <option name="myMoreRealMappingRoots">
-      <list>
-        <SvnCopyRootSimple>
-          <option name="myVcsRoot" value="D:\project\doms_web" />
-          <option name="myCopyRoot" value="D:\project\doms_web" />
-        </SvnCopyRootSimple>
-      </list>
-    </option>
   </component>
   <component name="TDDPredictState">
     <testRunHistory>
@@ -1835,401 +1821,432 @@
       <workItem from="1760420931691" duration="15129000" />
       <workItem from="1760489271079" duration="29737000" />
       <workItem from="1760576289272" duration="273000" />
-      <workItem from="1760576628732" duration="11416000" />
+      <workItem from="1760576628732" duration="14280000" />
+      <workItem from="1760591885667" duration="3757000" />
+      <workItem from="1760595748608" duration="11686000" />
+      <workItem from="1760662708702" duration="15980000" />
+      <workItem from="1760921810711" duration="3181000" />
+      <workItem from="1760925239799" duration="9555000" />
+      <workItem from="1760936793905" duration="489000" />
+      <workItem from="1760937376854" duration="17326000" />
+      <workItem from="1761008175893" duration="249000" />
+      <workItem from="1761008505704" duration="3931000" />
+      <workItem from="1761013480881" duration="1707000" />
+      <workItem from="1761016558433" duration="1434000" />
+      <workItem from="1761022059855" duration="728000" />
+      <workItem from="1761022988265" duration="345000" />
+      <workItem from="1761023396775" duration="118000" />
+      <workItem from="1761023585982" duration="3785000" />
+      <workItem from="1761097879062" duration="17586000" />
+      <workItem from="1761121972086" duration="5612000" />
+      <workItem from="1761181453769" duration="1741000" />
+      <workItem from="1761183369022" duration="583000" />
+      <workItem from="1761184043186" duration="1170000" />
+      <workItem from="1761185368112" duration="335000" />
+      <workItem from="1761185746925" duration="524000" />
+      <workItem from="1761186344444" duration="244000" />
+      <workItem from="1761186618732" duration="155000" />
+      <workItem from="1761186814510" duration="1602000" />
+      <workItem from="1761188486377" duration="6903000" />
+      <workItem from="1761197479036" duration="455000" />
+      <workItem from="1761197999046" duration="2726000" />
+      <workItem from="1761200872888" duration="10424000" />
+      <workItem from="1761267801228" duration="2081000" />
+      <workItem from="1761269944157" duration="71000" />
     </task>
-    <task id="LOCAL-02137" summary="V89-fix:为多个收入支出组件更换 intoViewRequestMixin 混入支持&#10;fix: 修复-科端-病种分析（市医保DRG） /出院分析 未导入 intoViewRequestMixin">
+    <task id="LOCAL-02190" summary="v90-feat/refactor:DOM-18371-需求639-济宁市一-科室端-材料-材料的病种、手术、植入置入菜单下钻，材料分类的下拉框隐藏，显示全部；&#10;feat(materialsAnalysis):为医疗组分析添加医院可见性控制&#10;&#10;- 在 surgicalPatientsGroupPanel 和 diseasesPanel 组件中引入医院代码常量&#10;- 为 dept-select-analysis 组件添加 v-hosp-visible 指令控制显示&#10;- 添加对济宁医院的特殊判断逻辑支持">
       <option name="closed" value="true" />
-      <created>1758793297084</created>
-      <option name="number" value="02137" />
-      <option name="presentableId" value="LOCAL-02137" />
+      <created>1760605651793</created>
+      <option name="number" value="02190" />
+      <option name="presentableId" value="LOCAL-02190" />
       <option name="project" value="LOCAL" />
-      <updated>1758793297084</updated>
+      <updated>1760605651793</updated>
     </task>
-    <task id="LOCAL-02138" summary="V90-fix:修复-科端设备-重点设备效益分析(济宁)-组件布局结构样式&#10;feat(dept_equipment_benefit_analysis): 重构设备效益分析页面图表结构&#10;&#10;- 移除 AverageDailyEconomicBenefitsTrend 组件，将其功能拆分到具体图表组件中&#10;- 为诊断类、治疗类、手术类设备分别添加独立的日均趋势图表组件&#10;- 在图表组件中引入 DomsConH480 容器组件优化布局&#10;- 重构 EquipmentDetail 页面，使用动态组件方式渲染不同设备类型的日均趋势图&#10;- 添加 dailyTrendChartHash 映射表用于根据设备类型动态加载对应图表组件&#10;- 更新页面中所有图表组件的参数传递方式，统一使用 getCommonRequestParams&#10;- 增加对 commonRequestParams 的监听，自动同步到 store 中&#10;- 引入 PlFlex 布局组件优化图表展示区域的排列&#10;- 调整组件导入顺序，优化代码可读性&#10;- 移除冗余的 AverageDailyEconomicBenefitsTrend 组件引用">
+    <task id="LOCAL-02191" summary="拉取代码-添加科室，绩效收入口径组件">
       <option name="closed" value="true" />
-      <created>1758855181252</created>
-      <option name="number" value="02138" />
-      <option name="presentableId" value="LOCAL-02138" />
+      <created>1760667907789</created>
+      <option name="number" value="02191" />
+      <option name="presentableId" value="LOCAL-02191" />
       <option name="project" value="LOCAL" />
-      <updated>1758855181253</updated>
+      <updated>1760667907790</updated>
     </task>
-    <task id="LOCAL-02139" summary="V90-fix:修复-科端设备-重点设备效益分析(济宁)-组件布局结构样式&#10;feat(dept_equipment_benefit_analysis): 新增诊断类设备开单科室下降分析与明细功能&#10;&#10;- 添加 BillingDeptDeclineAnalysis 组件用于展示开单科室下降分析图表&#10;- 添加 EquipDeptBillingDetailTable 组件用于展示科室开单明细表格&#10;- 在 EquipmentDetail.vue 中引入并使用新开单科室相关组件&#10;- 移除旧的 PrescriptionsDepartmentDeclineAnalysisAndDetails 组件引用&#10;- 更新 store 中 commonRequestParams 的设置逻辑，支持 immediate 触发&#10;- 为诊断类设备页面添加 PlFlex 布局容器以容纳新增组件&#10;- 引入 PlCompareSelect 组件实现对比方式选择功能&#10;- 实现数据请求方法，支持下钻页面参数传递与数据获取&#10;- 添加数据校验逻辑 checkDateParamsValid 确保请求参数有效性&#10;- 配置组件间通信与状态管理，确保数据正确绑定与更新">
+    <task id="LOCAL-02192" summary="v91-feat/refactor:DOM-18372-需求660-地坛医院-修复现场bug-卫健委和市医保，院端-总览，药品指数和材料指数，最后一句修改&#10;feat(hospital): 提取药品与材料指数提示生成函数&#10;&#10;- 将默认药品指数提示生成逻辑提取到独立文件&#10;- 将默认材料指数提示生成逻辑提取到独立文件&#10;- 将北京地坛医院药品指数提示生成逻辑提取到独立文件&#10;- 将北京地坛医院材料指数提示生成逻辑提取到独立文件&#10;- 更新药品指数提示生成函数以调用提取后的工具函数&#10;- 更新材料指数提示生成函数以调用提取后的工具函数">
       <option name="closed" value="true" />
-      <created>1758858700489</created>
-      <option name="number" value="02139" />
-      <option name="presentableId" value="LOCAL-02139" />
+      <created>1760667996779</created>
+      <option name="number" value="02192" />
+      <option name="presentableId" value="LOCAL-02192" />
       <option name="project" value="LOCAL" />
-      <updated>1758858700490</updated>
+      <updated>1760667996779</updated>
     </task>
-    <task id="LOCAL-02140" summary="V90-fix:修复-科端设备-重点设备效益分析(济宁)-组件布局结构样式&#10;fix(dept_equipment_benefit_analysis): 统一表格高度为数值类型&#10;&#10;- height 从 '400' 改为 400">
+    <task id="LOCAL-02193" summary="v91-feat/refactor:DOM-18384-需求703-济宁市一-科室端-收支余-暂时屏蔽住院分析Tab下的本量利&#10;feat(BIEAnalysis): 控制本量利分析模块的医院可见性&#10;&#10;- 引入 HOSPITAL_CODE_HASH 常量，支持多医院编码配置&#10;- 新增 getNeedHideBieAnalysisCostVolumeProfitHospCodeStr 计算属性， 用于拼接需要隐藏本量利分析模块的医院编码字符串&#10;- 更新 v-hosp-visible 指令绑定值，由硬编码改为动态计算&#10;- 调整 getIfShowCostVolumeProfit 显示条件，移除对 getIfSdZl 的依赖">
       <option name="closed" value="true" />
-      <created>1758858746431</created>
-      <option name="number" value="02140" />
-      <option name="presentableId" value="LOCAL-02140" />
+      <created>1760670279079</created>
+      <option name="number" value="02193" />
+      <option name="presentableId" value="LOCAL-02193" />
       <option name="project" value="LOCAL" />
-      <updated>1758858746431</updated>
+      <updated>1760670279079</updated>
     </task>
-    <task id="LOCAL-02141" summary="V90-fix:修复-科端设备-重点设备效益分析(济宁)-组件布局结构样式&#10;feat(dept_equipment_benefit_analysis): 拆分诊断类设备检查项目分析组件&#10;&#10;- 将 ExaminationItemsDeclineAnalysisAndDetails 组件拆分为&#10;  ExaminationItemsDeclineAnalysis 和 ExaminationItemsDetailsTable&#10;- 优化诊断类设备页面布局，使用 PlFlex 容器管理子组件&#10;- 新增 ExaminationItemsDeclineAnalysis.vue 文件，实现检查项目下降分析功能&#10;- 新增 ExaminationItemsDetailsTable.vue 文件，实现检查项目明细表格功能&#10;- 调整组件导入顺序，移除旧的组合组件引用&#10;- 保留原有下钻页面逻辑和参数传递方式">
+    <task id="LOCAL-02194" summary="v91-feat/refactor:DOM-18385-需求704-通用-设备 院端+科端-帕累托图添加如图1的滑动块，默认不展示这么多条&#10;refactor(component): 替换 PlChart 为 PlModulePanel 并调整配置 scrollLimit&#10;&#10;- 将BillingDeptDeclineAnalysis中的PlChart替换为PlModulePanel&#10;- 更新组件引入和注册列表以包含PlModulePanel&#10;- 调整图表绑定数据配置，设置type和scrollLimit属性">
       <option name="closed" value="true" />
-      <created>1758860629129</created>
-      <option name="number" value="02141" />
-      <option name="presentableId" value="LOCAL-02141" />
+      <created>1760671037271</created>
+      <option name="number" value="02194" />
+      <option name="presentableId" value="LOCAL-02194" />
       <option name="project" value="LOCAL" />
-      <updated>1758860629129</updated>
+      <updated>1760671037271</updated>
     </task>
-    <task id="LOCAL-02142" summary="V90-fix:修复-科端设备-重点设备效益分析(济宁)-组件布局结构样式&#10;fix(dept_equipment_benefit_analysis):修复检查项详情接口调用参数错误">
+    <task id="LOCAL-02195" summary="v91-feat/refactor:DOM-18409 需求714-山肿瘤-院端-资源效益分析-手术间资源分析-‘手术台均RVU与平均手术时长趋势 ’更名为‘手术相关时长及首台刀准时率趋势’； 且去掉指标‘手术台均RVU’，换成平均换台时长&#10;&#10;- 从vuex获取getIfSdZl状态以支持动态标题切换&#10;- 增加手术相关时长及首台刀准时率趋势标题切换逻辑&#10;- 移除空的watch、computed和生命周期钩子函数&#10;- 整理代码结构，增强可读性和维护性">
       <option name="closed" value="true" />
-      <created>1758863384195</created>
-      <option name="number" value="02142" />
-      <option name="presentableId" value="LOCAL-02142" />
+      <created>1760673447410</created>
+      <option name="number" value="02195" />
+      <option name="presentableId" value="LOCAL-02195" />
       <option name="project" value="LOCAL" />
-      <updated>1758863384195</updated>
+      <updated>1760673447411</updated>
     </task>
-    <task id="LOCAL-02143" summary="V90-fix:修复-科端设备-重点设备效益分析(济宁)-组件布局结构样式&#10;fix(dept_equipment_benefit_analysis): 校验日期参数有效性&#10;&#10;- 引入 checkDateParamsValid 工具函数用于校验日期参数&#10;- 在多个组件中替换原有的日期参数判断逻辑&#10;- 修复因日期参数不合法导致的请求异常问题&#10;- 优化路由参数解析逻辑，避免空值报错">
+    <task id="LOCAL-02196" summary="v91-feat/refactor:DOM-18386-需求715-通用-院端-工作量分析-手术人次下钻页，手术效率变化添加下钻页面（手术间明细），展示各手术间的手术人次，加权工作量和手术间利用率&#10;feat(workloadAnalysis): 更新手术间效率展示组件&#10;&#10;- 引入 PlSpanLink 组件用于展示手术间明细链接&#10;- 调整 PLChartTabBar 组件属性及可见性控制 宽度样式&#10;- 添加山东肿瘤医院代码常量支持&#10;- 增加打开手术间详情对话框方法 占位&#10;- 更新样式文件中 box-sizing 为 border-box">
       <option name="closed" value="true" />
-      <created>1758863566670</created>
-      <option name="number" value="02143" />
-      <option name="presentableId" value="LOCAL-02143" />
+      <created>1760677631436</created>
+      <option name="number" value="02196" />
+      <option name="presentableId" value="LOCAL-02196" />
       <option name="project" value="LOCAL" />
-      <updated>1758863566671</updated>
+      <updated>1760677631436</updated>
     </task>
-    <task id="LOCAL-02144" summary="v89-fix:DOM-17784-需求549-科室端-设备-选择某个设备菜单进来时，选择科室，只显示有该设备的科室&#10;feat(department): 取消主动弹出 科室选择框">
+    <task id="LOCAL-02197" summary="v91-fix/refactor:DOM-18373 科室-病种分析（市医保DRG/DIP）-出院分析-科室病组明细数据分析 下钻-医疗组收治该病组对比-检查：首行缺少病组编码何RW值&#10;feat(disease-analysis): 添加 RW 权重展示功能&#10;&#10;- 在 CurrentDiseaseDescription 组件中引入并使用 mapMutations 方法设置 RW 数据&#10;- 更新 deptDiseaseDetailDataAnalysisStore 状态管理模块以存储 RW 值&#10;- 在 DiseaseAnalysisDesc 组件中显示 RW 信息">
       <option name="closed" value="true" />
-      <created>1758865458461</created>
-      <option name="number" value="02144" />
-      <option name="presentableId" value="LOCAL-02144" />
+      <created>1760678339588</created>
+      <option name="number" value="02197" />
+      <option name="presentableId" value="LOCAL-02197" />
       <option name="project" value="LOCAL" />
-      <updated>1758865458462</updated>
+      <updated>1760678339588</updated>
     </task>
-    <task id="LOCAL-02145" summary="拉取代码-667 v91-湖州中心医院-院端-绩效分析-总览-隐藏全院总绩效排名表格的“异常探查”链接&#10;修复科室病种，分析报告下载文件名，科室丢失问题&#10;通用组件优化">
+    <task id="LOCAL-02198" summary="v91-fix/refactor:DOM-18444-需求745-通用-现场-科端-设备效益分析-重点设备效益分析 设备明细-表格下钻-下钻后，点击面包屑，回到上一层，页面显示404&#10;fix/refactor(dept-equipment-benefit-analysis):修复 设备效益分析页面逻辑与面包屑更新&#10;&#10;- 添加 useUpdateDeptEquipBenefitCrumbList 科室设备效益分析 页面子路由 面包屑更新逻辑&#10;- 在 动态添加路由 逻辑中，引入面包屑更新 hook，动态维护路由层级显示&#10;- 优化查询参数与路径参数监听逻辑，提升数据响应准确性&#10;- 新增通用请求参数监听，同步更新 store 数据">
       <option name="closed" value="true" />
-      <created>1760321456919</created>
-      <option name="number" value="02145" />
-      <option name="presentableId" value="LOCAL-02145" />
+      <created>1760939704641</created>
+      <option name="number" value="02198" />
+      <option name="presentableId" value="LOCAL-02198" />
       <option name="project" value="LOCAL" />
-      <updated>1760321456919</updated>
+      <updated>1760939704641</updated>
     </task>
-    <task id="LOCAL-02146" summary="v90-fix/refactor:处理 DOM-18168、DOM-18171、DOM-18222&#10;需求变更（山大二）-科室-收支余分析-门急诊分析-科内门急诊医生效率分析&#10;最大值、平均值序号应显示-、未显示黑色且不可点击下钻、排序按钮点击无效&#10;refactor(doctorEfficiency): 重构医生效率分析表格组件&#10;&#10;- 移除 PlModulePanel 的静态属性绑定，改用动态计算属性 getTableBindData&#10;- 新增 checkDateParamsValid 校验函数，确保请求参数有效性&#10;- 优化表格数据绑定逻辑，将 columns 和 data 分别赋值&#10;- 调整监听器逻辑，增加对日期参数的校验判断&#10;- 清理无用的注释代码和未使用的属性定义&#10;- 完善表格排序相关配置的动态计算逻辑&#10;- 修复表格序号生成和单元格样式处理逻辑">
+    <task id="LOCAL-02199" summary="v91-fix/refactor:DOM-18444-需求745-通用-现场-科端-设备效益分析-重点设备效益分析 设备明细-表格下钻-下钻后，点击面包屑，回到上一层，页面显示404&#10;refactor(router): 更新设备效益分析路由配置&#10;&#10;- 移除科室设备效益分析的静态路由配置&#10;- 添加动态添加科室设备效益分析菜单的注释说明">
       <option name="closed" value="true" />
-      <created>1760325853289</created>
-      <option name="number" value="02146" />
-      <option name="presentableId" value="LOCAL-02146" />
+      <created>1760940229311</created>
+      <option name="number" value="02199" />
+      <option name="presentableId" value="LOCAL-02199" />
       <option name="project" value="LOCAL" />
-      <updated>1760325853289</updated>
+      <updated>1760940229311</updated>
     </task>
-    <task id="LOCAL-02147" summary="v90-fix/refactor:处理 DOM-18168、DOM-18171、DOM-18222&#10;需求变更（山大二）-科室-收支余分析-门急诊分析-科内门急诊医生效率分析&#10;最大值、平均值序号应显示-、未显示黑色且不可点击下钻、排序按钮点击无效&#10;refactor(doctorEfficiency): 重构医生效率分析表格组件&#10;&#10;- 移除 PlModulePanel 的静态属性绑定，改用动态计算属性 getTableBindData&#10;- 新增 checkDateParamsValid 校验函数，确保请求参数有效性&#10;- 优化表格数据绑定逻辑，将 columns 和 data 分别赋值&#10;- 调整监听器逻辑，增加对日期参数的校验判断&#10;- 清理无用的注释代码和未使用的属性定义&#10;- 完善表格排序相关配置的动态计算逻辑&#10;- 修复表格序号生成和单元格样式处理逻辑">
+    <task id="LOCAL-02200" summary="v91-fix/refactor:DOM-18444-需求745-通用-现场-科端-设备效益分析-重点设备效益分析 设备明细-表格下钻-下钻后，点击面包屑，回到上一层，页面显示404&#10;refactor(deptEquipmentBenefitAnalysis):重构设备效益趋势图表组件&#10;&#10;- 将 PlChart 组件替换为 PlModulePanel 组件&#10;- 移除 params 属性，改用 Vuex 状态管理 commonRequestParams&#10;- 更新图表配置，固定高度为450px 并设置类型为 doms-bar&#10;- 调整数据请求逻辑，使用 commonRequestParams 作为查询参数&#10;-优化错误处理逻辑，确保加载状态正确重置&#10;- 清理冗余的路由监听代码">
       <option name="closed" value="true" />
-      <created>1760325999999</created>
-      <option name="number" value="02147" />
-      <option name="presentableId" value="LOCAL-02147" />
+      <created>1760940959709</created>
+      <option name="number" value="02200" />
+      <option name="presentableId" value="LOCAL-02200" />
       <option name="project" value="LOCAL" />
-      <updated>1760325999999</updated>
+      <updated>1760940959709</updated>
     </task>
-    <task id="LOCAL-02148" summary="v90-fix/refactor:处理 DOM-18168、DOM-18171、DOM-18222&#10;需求变更（山大二）-科室-收支余分析-门急诊分析-科内门急诊医生效率分析&#10;最大值、平均值序号应显示-、未显示黑色且不可点击下钻、排序按钮点击无效&#10;refactor(doctorEfficiency): 重构医生效率分析表格组件&#10;&#10;- 移除 PlModulePanel 的静态属性绑定，改用动态计算属性 getTableBindData&#10;- 新增 checkDateParamsValid 校验函数，确保请求参数有效性&#10;- 优化表格数据绑定逻辑，将 columns 和 data 分别赋值&#10;- 调整监听器逻辑，增加对日期参数的校验判断&#10;- 清理无用的注释代码和未使用的属性定义&#10;- 完善表格排序相关配置的动态计算逻辑&#10;- 修复表格序号生成和单元格样式处理逻辑">
+    <task id="LOCAL-02201" summary="v91-fix/refactor:DOM-18444-需求745-通用-现场-科端-设备效益分析-重点设备效益分析 设备明细-表格下钻-下钻后，点击面包屑，回到上一层，页面显示404&#10;feat(dept-equipment-benefit-analysis): 添加设备类型信息加载状态与参数校验&#10;&#10;- 在 EquipmentTypeInfo 组件中添加 v-loading 指令显示加载状态&#10;- 使用 commonRequestParams 替代原有 params 参数传递方式&#10;- 引入 mapState 获取公共请求参数&#10;- 增强依赖变更监听逻辑，避免无效请求触发&#10;- 更新 useCheckDependenciesNeedRequest 钩子函数增加日期参数有效性检查&#10;- 优化错误处理流程，确保请求失败后正确设置 loading 状态">
       <option name="closed" value="true" />
-      <created>1760326018716</created>
-      <option name="number" value="02148" />
-      <option name="presentableId" value="LOCAL-02148" />
+      <created>1760942496649</created>
+      <option name="number" value="02201" />
+      <option name="presentableId" value="LOCAL-02201" />
       <option name="project" value="LOCAL" />
-      <updated>1760326018716</updated>
+      <updated>1760942496649</updated>
     </task>
-    <task id="LOCAL-02149" summary="拉取代码-通用组件优化">
+    <task id="LOCAL-02202" summary="v91-fix/refactor:DOM-18444-需求745-通用-现场-科端-设备效益分析-重点设备效益分析 设备明细-表格下钻-下钻后，点击面包屑，回到上一层，页面显示404&#10;fix(dept-equipment-benefit-analysis): 更新面包屑标题逻辑&#10;&#10;- 修正面包屑标题显示逻辑，优先使用menuObj.name&#10;- 当menuObj.name不存在时，设置默认标题为&quot;重点设备效益分析&quot;">
       <option name="closed" value="true" />
-      <created>1760326076362</created>
-      <option name="number" value="02149" />
-      <option name="presentableId" value="LOCAL-02149" />
+      <created>1760943808848</created>
+      <option name="number" value="02202" />
+      <option name="presentableId" value="LOCAL-02202" />
       <option name="project" value="LOCAL" />
-      <updated>1760326076362</updated>
+      <updated>1760943808848</updated>
     </task>
-    <task id="LOCAL-02150" summary="v90-fix:DOM-18172-需求变更（山大二）-科室-收支余分析-门急诊分析-科内门急诊医生效率分析-图表展示：点击查看详情无反应&#10;fix(BIEAnalysis):修复医生效率组件中代码访问错误&#10;&#10;- 使用可选链操作符安全访问 code 属性&#10;- 添加 code 存在性检查避免空值错误&#10;- 确保 handleOpenManTime 事件只在 code 有效时触发">
+    <task id="LOCAL-02203" summary="v91-fix/refactor:DOM-18444-需求745-通用-现场-科端-设备效益分析-重点设备效益分析 设备明细-表格下钻-下钻后，点击面包屑，回到上一层，页面显示404&#10;refactor(dept-equipment-benefit-analysis): 更新依赖请求混入逻辑&#10;&#10;- 修改了混入逻辑注释，支持 params 或 commonRequestParams 属性&#10;- 调整计算属性 getDependenciesNeedRequest，优先使用 params，否则使用 commonRequestParams">
       <option name="closed" value="true" />
-      <created>1760327303709</created>
-      <option name="number" value="02150" />
-      <option name="presentableId" value="LOCAL-02150" />
+      <created>1760948480142</created>
+      <option name="number" value="02203" />
+      <option name="presentableId" value="LOCAL-02203" />
       <option name="project" value="LOCAL" />
-      <updated>1760327303710</updated>
+      <updated>1760948480142</updated>
     </task>
-    <task id="LOCAL-02151" summary="v90-fix:DOM-18172-需求变更（山大二）-科室-收支余分析-门急诊分析-科内门急诊医生效率分析-图表展示：点击查看详情无反应&#10;fix(BIEAnalysis):修复医生效率组件中代码访问错误&#10;&#10;- 使用可选链操作符安全访问 code 属性&#10;- 添加 code 存在性检查避免空值错误&#10;- 确保 handleOpenManTime 事件只在 code 有效时触发">
+    <task id="LOCAL-02204" summary="v91-fix/refactor:DOM-18444-需求745-通用-现场-科端-设备效益分析-重点设备效益分析 设备明细-表格下钻-下钻后，点击面包屑，回到上一层，页面显示404&#10;refactor(dept-equipment-benefit-analysis):重构设备效益分析组件结构&#10;&#10;- 移除 EquipmentTypeInfo 组件的 params 属性&#10;- 更新 EquipmentSituationOverview 组件描述并移除 params 属性&#10;- 修改 EquipmentDetailsTable 组件使用 PlModulePanel 替代 PlGridTable&#10;- 调整 EquipmentDetailsTable 对比方式默认值为环比&#10;  - 引入 PlModulePanel 和时间周期常量&#10;  - 更新表格绑定数据配置，设置固定高度和边框显示&#10;- 使用 commonRequestParams 替代原有 params 参数传递&#10;- 优化依赖监听逻辑，避免重复请求">
       <option name="closed" value="true" />
-      <created>1760327322807</created>
-      <option name="number" value="02151" />
-      <option name="presentableId" value="LOCAL-02151" />
+      <created>1760948563619</created>
+      <option name="number" value="02204" />
+      <option name="presentableId" value="LOCAL-02204" />
       <option name="project" value="LOCAL" />
-      <updated>1760327322807</updated>
+      <updated>1760948563619</updated>
     </task>
-    <task id="LOCAL-02152" summary="v90-fix:DOM-18172-需求变更（山大二）-科室-收支余分析-门急诊分析-科内门急诊医生效率分析-图表展示：点击查看详情无反应&#10;fix(BIEAnalysis):修复医生效率组件中的代码引用错误&#10;&#10;- 将 `this.data.code` 更正为 `this.data.codes` 以正确获取索引对应的代码值&#10;- 确保在代码存在时正确触发 `handleOpenManTime` 事件">
+    <task id="LOCAL-02205" summary="v91-fix/refactor:DOM-18444-需求745-通用-现场-科端-设备效益分析-重点设备效益分析 设备明细-表格下钻-下钻后，点击面包屑，回到上一层，页面显示404&#10;refactor(dept-equipment-benefit-analysis): 替换PlChart为PlModulePanel并优化请求参数&#10;- 将检查人次趋势分析、手术台次趋势、项目数趋势组件中的PlChart替换为PlModulePanel&#10;- 移除各组件中不再使用的params属性和PlChart组件引用&#10;- 引入vuex的mapState映射，使用commonRequestParams替代原来的params传参&#10;- 统一图表类型为doms-bar，标准化图表数据绑定方式&#10;- 调整样式文件中description-text-wrapper的flex布局属性，增加min-width设置&#10;- 优化组件间依赖注入和数据请求逻辑，提升代码复用性">
       <option name="closed" value="true" />
-      <created>1760327422030</created>
-      <option name="number" value="02152" />
-      <option name="presentableId" value="LOCAL-02152" />
+      <created>1760949745973</created>
+      <option name="number" value="02205" />
+      <option name="presentableId" value="LOCAL-02205" />
       <option name="project" value="LOCAL" />
-      <updated>1760327422030</updated>
+      <updated>1760949745975</updated>
     </task>
-    <task id="LOCAL-02153" summary="v90-fix:DOM-18247-需求571-湖州中心医院-院端-收支余-收入仪表盘下钻的‘收入结构饼图’，添加如图2的全部、门急诊、住院的切换&#10;处理页面报错">
+    <task id="LOCAL-02206" summary="v91-fix/refactor:DOM-18444-需求745-通用-现场-科端-设备效益分析-重点设备效益分析 设备明细-表格下钻-下钻后，点击面包屑，回到上一层，页面显示404&#10;refactor(deptEquipmentBenefitAnalysis):重构科室设备效益分析组件&#10;&#10;- 移除各子组件中的 params 属性，统一使用 store 中的 commonRequestParams&#10;- 将 PlChart 和 PlGridTable 替换为 PlModulePanel 组件&#10;- 为图表和表格绑定数据添加 type 属性以明确组件类型&#10;- 统一设置图表和表格高度为450，优化样式表现&#10;- 引入 mapState从 store 获取公共请求参数&#10;- 清理无用的样式注释和组件导入&#10;- 优化收支趋势分析组件的滚动限制和边框显示&#10;- 移除冗余的模板和脚本代码，提升组件可维护性">
       <option name="closed" value="true" />
-      <created>1760334271119</created>
-      <option name="number" value="02153" />
-      <option name="presentableId" value="LOCAL-02153" />
+      <created>1760951428520</created>
+      <option name="number" value="02206" />
+      <option name="presentableId" value="LOCAL-02206" />
       <option name="project" value="LOCAL" />
-      <updated>1760334271119</updated>
+      <updated>1760951428520</updated>
     </task>
-    <task id="LOCAL-02154" summary="v90-fix:DOM-18247-需求571-湖州中心医院-院端-收支余-收入仪表盘下钻的‘收入结构饼图’，添加如图2的全部、门急诊、住院的切换&#10;处理页面报错">
+    <task id="LOCAL-02207" summary="v91-fix/refactor:DOM-18444-需求745-通用-现场-科端-设备效益分析-重点设备效益分析 设备明细-表格下钻-下钻后，点击面包屑，回到上一层，页面显示404&#10;refactor(component): 替换PlChart为PlModulePanel组件&#10;&#10;- 将RevenueExpenditureTrendAnalysis.vue中的PlChart组件替换为PlModulePanel&#10;- 移除了对PlChart组件的引用和导入，更新了组件注册列表，使用PlModulePanel替代PlChart">
       <option name="closed" value="true" />
-      <created>1760334299606</created>
-      <option name="number" value="02154" />
-      <option name="presentableId" value="LOCAL-02154" />
+      <created>1760951714776</created>
+      <option name="number" value="02207" />
+      <option name="presentableId" value="LOCAL-02207" />
       <option name="project" value="LOCAL" />
-      <updated>1760334299606</updated>
+      <updated>1760951714776</updated>
     </task>
-    <task id="LOCAL-02155" summary="v90-feat/refactor:DOM-18247-需求571-湖州中心医院-院端-收支余-收入仪表盘下钻的‘收入结构饼图’，添加如图2的全部、门急诊、住院的切换&#10;refactor(medicalIncome): 重构收入结构图表组件以提升可维护性&#10;&#10;- 将 PlChart 组件替换为 PlModulePanel 以统一模块面板样式&#10;- 移除 pieData 数据，简化数据变量&#10;- 优化图表类型判断逻辑，适配不同医院展示需求&#10;- 添加日期参数校验，避免无效请求发送&#10;- 调整组件高度设置，确保在不同容器中正确显示&#10;- 更新组件导入路径，移除冗余的 PlChart 引入">
+    <task id="LOCAL-02208" summary="v91-feat/refactor:DOM-18465需求675-通用（除吉大一）-院端-病种分析-市医保、省卫健委DRG、DIP，全院病组一览表添加各类费用及费用占比&#10;refactor(diseaseTable): 移除重复逻辑并优化数据获取流程&#10;&#10;- 删除旧版 hospDrgAllPage 和 hospDipAll 接口调用逻辑&#10;- 保留重构后的 fetchWholeHospitalDiseaseTypeTableDrg 和 fetchWholeHospitalDiseaseTypeTableDip 方法&#10;- 添加注释标记待删除的冗余代码块">
       <option name="closed" value="true" />
-      <created>1760335658740</created>
-      <option name="number" value="02155" />
-      <option name="presentableId" value="LOCAL-02155" />
+      <created>1760953800159</created>
+      <option name="number" value="02208" />
+      <option name="presentableId" value="LOCAL-02208" />
       <option name="project" value="LOCAL" />
-      <updated>1760335658740</updated>
+      <updated>1760953800159</updated>
     </task>
-    <task id="LOCAL-02156" summary="v90-feat/refactor:DOM-18247-需求571-湖州中心医院-院端-收支余-收入仪表盘下钻的‘收入结构饼图’，添加如图2的全部、门急诊、住院的切换&#10;feat(incomeExpenses): 添加湖州市中心医院收入结构tab切换功能&#10;&#10;- 新增收入结构tab编码哈希表常量文件&#10;- 新增收入结构tab列表配置文件&#10;- 在收入结构组件中引入并使用PLChartTabs组件&#10;- 添加tab切换事件处理逻辑&#10;- 更新图表数据请求参数以支持tab筛选&#10;- 为湖州医院定制tab显示条件判断">
+    <task id="LOCAL-02209" summary="v92-feat:DOM-18473-需求608-科室端-收支余-所有这类图表（对比分析右侧蓝底内容），单位改成万元">
       <option name="closed" value="true" />
-      <created>1760337174497</created>
-      <option name="number" value="02156" />
-      <option name="presentableId" value="LOCAL-02156" />
+      <created>1761009025947</created>
+      <option name="number" value="02209" />
+      <option name="presentableId" value="LOCAL-02209" />
       <option name="project" value="LOCAL" />
-      <updated>1760337174497</updated>
+      <updated>1761009025948</updated>
     </task>
-    <task id="LOCAL-02157" summary="v90-feat/refactor:DOM-18254-处理-地坛医院-现场问题&#10;refactor(operationDisease):重构时间消耗指数页面逻辑&#10;&#10;- 放开新组件代码&#10;- 调整数据过滤和初始化方法&#10;- 注释冗余的配置项方法和监听器">
+    <task id="LOCAL-02210" summary="v92-fix:DOM-18460-需求变更-科室-材料管理-手术收费项目分析-医疗组下钻-材料用量分析：未隐藏下拉框">
       <option name="closed" value="true" />
-      <created>1760340235799</created>
-      <option name="number" value="02157" />
-      <option name="presentableId" value="LOCAL-02157" />
+      <created>1761010090343</created>
+      <option name="number" value="02210" />
+      <option name="presentableId" value="LOCAL-02210" />
       <option name="project" value="LOCAL" />
-      <updated>1760340235799</updated>
+      <updated>1761010090343</updated>
     </task>
-    <task id="LOCAL-02158" summary="v90-feat/refactor:DOM-18254-处理-地坛医院-现场问题&#10;refactor(operationDisease):重构药品指数页面逻辑&#10;&#10;- 放开新组件代码&#10;- 调整数据过滤和初始化方法&#10;- 注释冗余的配置项方法和监听器">
+    <task id="LOCAL-02211" summary="v92-fix:DOM-18473-需求608-科室端-收支余-所有这类图表（对比分析右侧蓝底内容），单位改成万元">
       <option name="closed" value="true" />
-      <created>1760341487952</created>
-      <option name="number" value="02158" />
-      <option name="presentableId" value="LOCAL-02158" />
+      <created>1761015212556</created>
+      <option name="number" value="02211" />
+      <option name="presentableId" value="LOCAL-02211" />
       <option name="project" value="LOCAL" />
-      <updated>1760341487952</updated>
+      <updated>1761015212558</updated>
     </task>
-    <task id="LOCAL-02159" summary="v90-feat/refactor:DOM-18254-处理-地坛医院-现场问题&#10;refactor(operationDisease):重构药品指数页面逻辑&#10;&#10;- 放开新组件代码&#10;- 调整数据过滤和初始化方法&#10;- 注释冗余的配置项方法和监听器">
+    <task id="LOCAL-02212" summary="v92-fix:北京地坛-现场-病种分析（市医保DRG） /出院分析 / 高难度病种例数占比-当前组：出院医保病人 持久化数据">
       <option name="closed" value="true" />
-      <created>1760341512923</created>
-      <option name="number" value="02159" />
-      <option name="presentableId" value="LOCAL-02159" />
+      <created>1761032794862</created>
+      <option name="number" value="02212" />
+      <option name="presentableId" value="LOCAL-02212" />
       <option name="project" value="LOCAL" />
-      <updated>1760341512923</updated>
+      <updated>1761032794862</updated>
     </task>
-    <task id="LOCAL-02160" summary="v90-feat/refactor:DOM-18254-处理-地坛医院-现场问题&#10;refactor(operationDisease):重构材料指数页面逻辑&#10;&#10;- 放开新组件代码&#10;- 调整数据过滤和初始化方法&#10;- 注释冗余的配置项方法和监听器">
+    <task id="LOCAL-02213" summary="v92-fix:北京地坛-现场-病种分析（市医保DRG） /出院分析 / 高难度病种例数占比-当前组：出院医保病人 持久化数据">
       <option name="closed" value="true" />
-      <created>1760342298087</created>
-      <option name="number" value="02160" />
-      <option name="presentableId" value="LOCAL-02160" />
+      <created>1761032811551</created>
+      <option name="number" value="02213" />
+      <option name="presentableId" value="LOCAL-02213" />
       <option name="project" value="LOCAL" />
-      <updated>1760342298087</updated>
+      <updated>1761032811551</updated>
     </task>
-    <task id="LOCAL-02161" summary="拉取代码-558 v90-吉大一+院端-材料-DRG病种材料分析-新增菜单 病组材料分析（CN2.0）">
+    <task id="LOCAL-02214" summary="v91-chore:(inHospitalBlock): 通用-科端-收支余分析 /总览 /住院分析-调整 医疗组住院分析 表格&#10;-显示逻辑&#10;&#10;- 注释掉原有的医疗组显示条件判断&#10;- 根据赵征要求，所有医院环境均需显示医疗组&#10;- 保留医疗组代码过滤条件检查">
       <option name="closed" value="true" />
-      <created>1760346386967</created>
-      <option name="number" value="02161" />
-      <option name="presentableId" value="LOCAL-02161" />
+      <created>1761104229360</created>
+      <option name="number" value="02214" />
+      <option name="presentableId" value="LOCAL-02214" />
       <option name="project" value="LOCAL" />
-      <updated>1760346386968</updated>
+      <updated>1761104229361</updated>
     </task>
-    <task id="LOCAL-02162" summary="v90-fix/refactor:DOM-18223-需求变更（吉大一）-科室-收支余分析-总览-门急诊分析-科内科内门急诊医生效率分析-图表视图：隐藏最大值和平均值&#10;fix/refactor(doctorEfficiency): 优化医生效率图表组件数据绑定逻辑&#10;&#10;- 统一使用 getChartBindData 计算属性管理图表配置&#10;- 将 data 属性重命名为 chartData&#10;- 更新模板中 PlModulePanel 的属性绑定方式&#10;- 注释的旧版复选框选项">
+    <task id="LOCAL-02215" summary="v91-feat/refactor:DOM-18541-需求468-院端-病种分析（DRG支付）-成本异常探查、病组经济分析的病人分类都改为全部医保病人、省医保病人、市医保病人，默认市医保病人；不显示收入和成本口径相关内容，默认理论结算收入和名义成本。&#10;feat/refactor(operationDisease):修复病人分组逻辑与页面显示问题&#10;- 优化 groupPat 方法中的参数合并逻辑&#10;- 新增 onDrgGroupTypeChange 异步调用 groupPat&#10;- 在 drgCity/leavehosp.vue 中同步修改指令名称">
       <option name="closed" value="true" />
-      <created>1760346717549</created>
-      <option name="number" value="02162" />
-      <option name="presentableId" value="LOCAL-02162" />
+      <created>1761111366124</created>
+      <option name="number" value="02215" />
+      <option name="presentableId" value="LOCAL-02215" />
       <option name="project" value="LOCAL" />
-      <updated>1760346717549</updated>
+      <updated>1761111366124</updated>
     </task>
-    <task id="LOCAL-02163" summary="v90-fix/refactor:DOM-18265-需求变更（湖州）-全院-收支分析-总览-医疗收入下钻-收入结构：切换表格，缺少上期值列数据">
+    <task id="LOCAL-02216" summary="v91-feat/refactor:DOM-18541-需求468-院端-病种分析（DRG支付）-成本异常探查、病组经济分析的病人分类都改为全部医保病人、省医保病人、市医保病人，默认市医保病人；不显示收入和成本口径相关内容，默认理论结算收入和名义成本&#10;feat(diseaseMatrix): 新增吉大医病人分组类型选择器&#10;&#10;- 在病人分类选择器中增加对吉大医的特殊处理&#10;- 添加新的 DRG 分组类型下拉选项组件&#10;- 实现根据医院代码控制组件显示逻辑">
       <option name="closed" value="true" />
-      <created>1760347696643</created>
-      <option name="number" value="02163" />
-      <option name="presentableId" value="LOCAL-02163" />
+      <created>1761112744265</created>
+      <option name="number" value="02216" />
+      <option name="presentableId" value="LOCAL-02216" />
       <option name="project" value="LOCAL" />
-      <updated>1760347696645</updated>
+      <updated>1761112744265</updated>
     </task>
-    <task id="LOCAL-02164" summary="v90-fix/refactor:DOM-18190-需求变更（吉大一）-全院-病组分析（市医保DRG）-总览：点击切换病人分类不生效&#10;fix/refactor(operationDisease):重构病人分类与病组类型选择器逻辑&#10;&#10;- 修改病人分类选择器变更事件为 onPatTypeChange&#10;- 修改病组类型选择器变更事件为 onDrgGroupTypeChange&#10;- 删除重复逻辑相关的注释标记更新为 V90 版本&#10;- 注释掉已重构的总权重趋势分析和病组结余分析相关代码&#10;- 移除旧版 hospDrgRw 和 hospDrgIncomeAnalysis 方法调用&#10;- 新增 onPatTypeChange 和 onDrgGroupTypeChange 处理函数&#10;- 调整 drgGroupType 初始值为 null&#10;- 保留待拆分重构的组件逻辑并添加 TODO 注释&#10;- 清理无用的空白行及冗余代码结构">
+    <task id="LOCAL-02217" summary="v91-feat/refactor:DOM-18541-需求468-院端-病种分析（DRG支付）-成本异常探查、病组经济分析的病人分类都改为全部医保病人、省医保病人、市医保病人，默认市医保病人；不显示收入和成本口径相关内容，默认理论结算收入和名义成本&#10;feat(operationDisease): 添加病人分组选项加载状态&#10;&#10;- 为病人分组选择器添加加载状态显示">
       <option name="closed" value="true" />
-      <created>1760349883922</created>
-      <option name="number" value="02164" />
-      <option name="presentableId" value="LOCAL-02164" />
+      <created>1761112893348</created>
+      <option name="number" value="02217" />
+      <option name="presentableId" value="LOCAL-02217" />
       <option name="project" value="LOCAL" />
-      <updated>1760349883922</updated>
+      <updated>1761112893348</updated>
     </task>
-    <task id="LOCAL-02165" summary="v90-fix-refactor:DOM-18283-需求670-通用-院端-病种分析（DIP和DRG）-学科分析，选择关键疾病或关键技术，基本标准或推荐标准，详情表的科室都改为专科&#10;fix(operationDisease):修正科室内容表格组件名称&#10;&#10;- 将组件名称从 keySituationTable 更正为 deptContentTable&#10;- 确保组件命名与实际功能一致">
+    <task id="LOCAL-02218" summary="v91-feat/refactor:DOM-18560-需求351-病种分析-DRG支付，院端和科端：名义成本改为名义收入。相关表格调整&#10;feat(cost): 新增成本口径级联选项配置&#10;&#10;- 新增默认成本口径级联选项配置文件&#10;- 更新成本口径选项生成函数以支持多医院配置&#10;- TODO: 替换 DRG 页面中 成本选项过滤逻辑以适配医疗费用收入口径">
       <option name="closed" value="true" />
-      <created>1760409752911</created>
-      <option name="number" value="02165" />
-      <option name="presentableId" value="LOCAL-02165" />
+      <created>1761118323167</created>
+      <option name="number" value="02218" />
+      <option name="presentableId" value="LOCAL-02218" />
       <option name="project" value="LOCAL" />
-      <updated>1760409752913</updated>
+      <updated>1761118323167</updated>
     </task>
-    <task id="LOCAL-02166" summary="v91-feat/refactor:DOM-18284-需求677-吉大一-现场-尚晓敏-科室端-绩效分析-总览-病组结构下钻-总权重tab-隐藏病组总权重变化表格&#10;refactor(diseaseCmi):重构关键病种总权重变化模块&#10;&#10;- 引入医院编码常量配置&#10;- 新增计算属性控制特定医院隐藏显示">
+    <task id="LOCAL-02219" summary="v91-feat/refactor:DOM-18560-需求351-病种分析-DRG支付，院端和科端：名义成本改为名义收入。相关表格调整&#10;feat/refactor(diseaseMatrix):重构成本类型级联选项逻辑&#10;&#10;- 更新 getCostOptions 方法实现，使用 genCostTypeCascadeOptionsDrg 替代旧逻辑&#10;- 添加 TODO 注释标记待删除的重复逻辑，保留旧逻辑注释便于后续清理">
       <option name="closed" value="true" />
-      <created>1760411671065</created>
-      <option name="number" value="02166" />
-      <option name="presentableId" value="LOCAL-02166" />
+      <created>1761119383012</created>
+      <option name="number" value="02219" />
+      <option name="presentableId" value="LOCAL-02219" />
       <option name="project" value="LOCAL" />
-      <updated>1760411671066</updated>
+      <updated>1761119383012</updated>
     </task>
-    <task id="LOCAL-02167" summary="v91-feat/refactor:DOM-18284-需求677-吉大一-现场-尚晓敏-科室端-绩效分析-总览-病组结构下钻-总权重tab-隐藏病组总权重变化表格&#10;refactor(diseaseCmi):重构关键病种总权重变化模块&#10;&#10;- 引入医院编码常量配置&#10;- 新增计算属性控制特定医院隐藏显示">
+    <task id="LOCAL-02220" summary="v91-feat/refactor:DOM-18560-需求351-病种分析-DRG支付，院端和科端：名义成本改为名义收入。相关表格调整 &#10;- 更新多个组件中的 getCostOptions 方法实现&#10;- 引入 genCostTypeCascadeOptionsDrg 替代原有逻辑&#10;- 标记旧方法 genCostTypeCascadeOptions 待删除">
       <option name="closed" value="true" />
-      <created>1760411692847</created>
-      <option name="number" value="02167" />
-      <option name="presentableId" value="LOCAL-02167" />
+      <created>1761122335371</created>
+      <option name="number" value="02220" />
+      <option name="presentableId" value="LOCAL-02220" />
       <option name="project" value="LOCAL" />
-      <updated>1760411692847</updated>
+      <updated>1761122335371</updated>
     </task>
-    <task id="LOCAL-02168" summary="v91-fix/refactor:DOM-17672-科室-病种分析（省卫健委DRG）-出院分析-病组RW -费用消耗指数分析：点击第二象限没反应&#10;feat(chart): 支持散点图象限划分基于原点坐标动态计算&#10;&#10;- 添加 getOriginX 和 getOriginY 计算方法&#10;- 更新象限判断逻辑以使用动态原点坐标&#10;- 修正数据处理时的注释说明">
+    <task id="LOCAL-02221" summary="v91-feat/refactor:DOM-18560-需求351-病种分析-DRG支付，院端和科端：名义成本改为名义收入。相关表格调整&#10;&#10;- 替换 genCostTypeCascadeOptions 为 genCostTypeCascadeOptionsDrg&#10;- 更新 getCostOptions 方法以适配新函数参数结构&#10;- 添加 TODO 注释标记旧逻辑待删除">
       <option name="closed" value="true" />
-      <created>1760423167988</created>
-      <option name="number" value="02168" />
-      <option name="presentableId" value="LOCAL-02168" />
+      <created>1761123753894</created>
+      <option name="number" value="02221" />
+      <option name="presentableId" value="LOCAL-02221" />
       <option name="project" value="LOCAL" />
-      <updated>1760423167988</updated>
+      <updated>1761123753894</updated>
     </task>
-    <task id="LOCAL-02169" summary="v91-fix/refactor:院端-病组分析（DRG支付） /总览-病组结余分析、总权重趋势，添加请求参数校验&#10;feat(hospital): 添加参数校验功能&#10;&#10;- 在疾病组盈余分析、总RW趋势分析组件中引入 drgGroupType 等参数校验逻辑">
+    <task id="LOCAL-02222" summary="v91-feat/refactor:DOM-18560-需求351-病种分析-DRG支付，院端和科端：名义成本改为名义收入。相关表格调整&#10;refactor(cost):重构 科端-病种分析（市医保DRG） /出院分析；明细数据下钻；医疗组下钻；病例下钻；&#10;&#10;- 更新组件 DeptMedGroupDateCalibre.vue 和 leavehosp.vue 中的调用方式&#10;  - 使用新的 genCostTypeCascadeOptionsDrg 方法替换旧逻辑&#10;  - 标记待删除的重复逻辑代码段">
       <option name="closed" value="true" />
-      <created>1760424749780</created>
-      <option name="number" value="02169" />
-      <option name="presentableId" value="LOCAL-02169" />
+      <created>1761125595794</created>
+      <option name="number" value="02222" />
+      <option name="presentableId" value="LOCAL-02222" />
       <option name="project" value="LOCAL" />
-      <updated>1760424749780</updated>
+      <updated>1761125595794</updated>
     </task>
-    <task id="LOCAL-02170" summary="v91-fix/refactor:DOM-18254-处理-地坛医院-现场问题&#10;fix/refactor:修改 病组分析（DRG支付） /病组经济分析 /结余 /费用构成 药品收入、耗占比占医疗收入比分析 组件模块，添加请求参数 patType&#10;&#10;- 移除重复的药品收入、耗占比分析逻辑&#10;- 更新路由参数处理方式&#10;- 优化面包屑路径生成逻辑&#10;- 删除冗余的API调用和图表配置&#10;- 添加TODO注释标记待拆分重构组件&#10;- 调整组件挂载时的路由处理流程">
+    <task id="LOCAL-02223" summary="v91-feat/refactor:DOM-18560-需求351-病种分析-DRG支付，院端和科端：名义成本改为名义收入。相关表格调整&#10;refactor(cost):重构 科室端-病种分析（市医保DRG） /出院分析 /病组RW-结余率分析 查看详情 下钻页&#10;&#10;- 更新组件 DeptMedGroupDateCalibre.vue 和 leavehosp.vue 中的调用方式&#10;  - 使用新的 genCostTypeCascadeOptionsDrg 方法替换旧逻辑&#10;  - 标记待删除的重复逻辑代码段">
       <option name="closed" value="true" />
-      <created>1760426399572</created>
-      <option name="number" value="02170" />
-      <option name="presentableId" value="LOCAL-02170" />
+      <created>1761125835036</created>
+      <option name="number" value="02223" />
+      <option name="presentableId" value="LOCAL-02223" />
       <option name="project" value="LOCAL" />
-      <updated>1760426399572</updated>
+      <updated>1761125835036</updated>
     </task>
-    <task id="LOCAL-02171" summary="v91-fix/refactor:DOM-18254-处理-地坛医院-现场问题&#10;fix/refactor:修改 病组分析（DRG支付）（DIP支付） /病组经济分析 /结余 /费用构成 药品收入、耗占比占医疗收入比分析 组件模块&#10;&#10;- 重构 getDownDrillRequestParams 方法，条件性添加 patType 参数&#10;- 初始化 drgGroupType为 null 并调整其使用位置&#10;- 添加 updateParamsFromRoute 和 routerHandler 方法处理路由参数&#10;- 注释待删除的旧逻辑代码块，准备后续清理&#10;- 调整 created 和 mounted 生命周期中的逻辑执行顺序">
+    <task id="LOCAL-02224" summary="v91-feat/refactor:DOM-18560-需求351-病种分析-DRG支付，院端和科端：名义成本改为名义收入。相关表格调整&#10;refactor(cost):重构 科端：病种分析（市医保DRG） /临床病种分析&#10;- 更新组件 DeptMedGroupDateCalibre.vue 和 leavehosp.vue 中的调用方式&#10;  - 使用新的 genCostTypeCascadeOptionsDrg 方法替换旧逻辑&#10;  - 标记待删除的重复逻辑代码段">
       <option name="closed" value="true" />
-      <created>1760428063858</created>
-      <option name="number" value="02171" />
-      <option name="presentableId" value="LOCAL-02171" />
+      <created>1761126051321</created>
+      <option name="number" value="02224" />
+      <option name="presentableId" value="LOCAL-02224" />
       <option name="project" value="LOCAL" />
-      <updated>1760428063858</updated>
+      <updated>1761126051321</updated>
     </task>
-    <task id="LOCAL-02172" summary="v91-fix/refactor:DOM-18254-处理-地坛医院-现场问题&#10;fix/refactor:修改 病组分析（DRG支付）（DIP支付） /病组经济分析 /结余 /费用构成 药品收入、耗占比占医疗收入比分析 组件模块&#10;&#10;- 引入DIP相关文本描述getter getIfDip">
+    <task id="LOCAL-02225" summary="v91-fix:DOM-18560-需求351-病种分析-DRG支付，院端和科端：名义成本改为名义收入。相关表格调整&#10;refactor(diseaseEconomics):放开注释使用新组件，重构结余专项页面逻辑与组件结构&#10;&#10;- 移除重复的 TODO 注释和冗余代码块&#10;- 调整级联选择器事件绑定逻辑&#10;- 优化趋势分析、科室分析和医保结算模块的组件封装&#10;- 清理无用的导入语句和变量定义&#10;- 移除废弃的样式类名和注释&#10;- 简化页面参数更新和路由处理逻辑&#10;- 删除未使用的数据监听器和方法">
       <option name="closed" value="true" />
-      <created>1760430068820</created>
-      <option name="number" value="02172" />
-      <option name="presentableId" value="LOCAL-02172" />
+      <created>1761185257619</created>
+      <option name="number" value="02225" />
+      <option name="presentableId" value="LOCAL-02225" />
       <option name="project" value="LOCAL" />
-      <updated>1760430068820</updated>
+      <updated>1761185257619</updated>
     </task>
-    <task id="LOCAL-02173" summary="v91-fix/refactor:DOM-18254-处理-地坛医院-现场问题&#10;fix/refactor:修改 病组分析（DRG支付）（DIP支付） /病组经济分析 /结余 /费用构成 药品收入、耗占比占医疗收入比分析 组件模块&#10;feat(disease-analysis): 新增费用构成分析 费别分析模块&#10;&#10;- 新增 FeeTypeAnalysis 组件用于展示 DRG/DIP 费用构成&#10;- 在 surplusExpense 页面集成费用构成分析功能&#10;- 重构药品耗材占比分析逻辑并标记待删除代码&#10;- 引入 PlFlex 布局组件优化页面结构&#10;- 调整页面初始化逻辑，增加疾病类型文本设置&#10;- 清理冗余的 tabsBarChange 和 drgCostCategory 方法&#10;- 更新相关 API 引用路径和组件导入语句">
+    <task id="LOCAL-02226" summary="v91-fix:DOM-18560-需求351-病种分析-DRG支付，院端和科端：名义成本改为名义收入。相关表格调整&#10;refactor(diseaseEconomics):重构成本口径选项计算逻辑&#10;&#10;- 使用新的 genCostTypeCascadeOptionsDrg 方法替代旧逻辑&#10;- 注释 已弃用方法 genCostTypeCascadeOptions 的调用&#10;- 添加 TODO 注释标记待删除的重复逻辑&#10;- 调整导入语句以适应新方法的引入方式">
       <option name="closed" value="true" />
-      <created>1760430218712</created>
-      <option name="number" value="02173" />
-      <option name="presentableId" value="LOCAL-02173" />
+      <created>1761186107991</created>
+      <option name="number" value="02226" />
+      <option name="presentableId" value="LOCAL-02226" />
       <option name="project" value="LOCAL" />
-      <updated>1760430218712</updated>
+      <updated>1761186107992</updated>
     </task>
-    <task id="LOCAL-02174" summary="v91-fix/refactor:DOM-18254-处理-地坛医院-现场问题&#10;fix/refactor:修改 病组分析（DRG支付）（DIP支付） /病组经济分析 /结余 /费用构成 药品收入、耗占比占医疗收入比分析 组件模块&#10;feat(diseaseEconomics): 添加费用类型分析组件并重构布局&#10;&#10;- 引入 PlFlex 和 FeeTypeAnalysis 组件&#10;- 使用 PlFlex 容器包装费用分析模块&#10;- 调整药品收入、耗占比分析组件位置&#10;- 注释标记待删除的旧版重复逻辑&#10;- 更新组件导入路径和注册列表&#10;- 移动部分配置项和方法到注释区域">
+    <task id="LOCAL-02227" summary="v91-fix:DOM-18373-科室-病种分析（市医保DRG/DIP）-出院分析-科室病组明细数据分析 下钻-医疗组收治该病组对比-检查：首行缺少病组编码何RW值&#10;feat(diseaseAnalysis): 显示疾病编码信息&#10;&#10;- 在疾病分析描述组件中添加疾病编码显示&#10;- 调整疾病名称和编码的样式布局&#10;- 更新疾病分析状态映射以包含疾病编码&#10;- 移除冗余的疾病名称样式定义">
       <option name="closed" value="true" />
-      <created>1760431022322</created>
-      <option name="number" value="02174" />
-      <option name="presentableId" value="LOCAL-02174" />
+      <created>1761188614267</created>
+      <option name="number" value="02227" />
+      <option name="presentableId" value="LOCAL-02227" />
       <option name="project" value="LOCAL" />
-      <updated>1760431022322</updated>
+      <updated>1761188614267</updated>
     </task>
-    <task id="LOCAL-02175" summary="v91-feat/refactor:DOM-16250-全院-病组分析（市医保DRG/DIP支付）-学科分析：未替换标准组件&#10;refactor(diseaseDsciplineAnalysis):修改疾病学科分析页面代码结构与样式&#10;&#10;- 调整组件标签格式&#10;- 删除冗余注释与调试代码">
+    <task id="LOCAL-02228" summary="v91-feat/refactor:DOM-18560-需求351-病种分析-DRG支付，院端和科端：名义成本改为名义收入。相关表格调整&#10;refactor(cost):重构 病组分析（DRG支付） /病组经济分析 /结余 /医师&#10;refactor(diseaseEconomics):放开新组件注释，重构结余医师分析页面逻辑与样式&#10;&#10;- 移除过时的事件监听与处理逻辑&#10;- 调整医保结算相关组件布局与数据处理方式&#10;- 清理冗余代码与注释&#10;- 优化样式定义，移除无用CSS类名与布局代码">
       <option name="closed" value="true" />
-      <created>1760435843708</created>
-      <option name="number" value="02175" />
-      <option name="presentableId" value="LOCAL-02175" />
+      <created>1761189248303</created>
+      <option name="number" value="02228" />
+      <option name="presentableId" value="LOCAL-02228" />
       <option name="project" value="LOCAL" />
-      <updated>1760435843708</updated>
+      <updated>1761189248303</updated>
     </task>
-    <task id="LOCAL-02176" summary="v91-TODO:DOM-16250-全院-病组分析（市医保DRG/DIP支付）-学科分析：未替换标准组件&#10;TODO:替换 关键疾病完成情况 关键技术完成情况 表格">
+    <task id="LOCAL-02229" summary="v91-feat/refactor:DOM-18560-需求351-病种分析-DRG支付，院端和科端：名义成本改为名义收入。相关表格调整&#10;feat(disease-economy-analysis): 重构医保结算相关组件及页面布局&#10;&#10;- 调整 医保倍率例数趋势 与 医保病人结算分析 组件 顺序&#10;- 删除冗余样式和注释，优化代码可读性&#10;- 修正组件导入顺序，确保依赖正确加载">
       <option name="closed" value="true" />
-      <created>1760495071416</created>
-      <option name="number" value="02176" />
-      <option name="presentableId" value="LOCAL-02176" />
+      <created>1761191194230</created>
+      <option name="number" value="02229" />
+      <option name="presentableId" value="LOCAL-02229" />
       <option name="project" value="LOCAL" />
-      <updated>1760495071417</updated>
+      <updated>1761191194230</updated>
     </task>
-    <task id="LOCAL-02177" summary="v91-feat/refactor:DOM-18332-需求554-通用-科室端-病种分析-出院分析-科室病组明细数据分析 下钻-市医保DRG及DIP-医疗组收治该病组对比-添加下钻&#10;feat/refactor(disease-analysis): 更新医疗组病例详情链接列表&#10;&#10;- 新增并调整材料、药品、检查、检验、医疗服务等详情分析链接&#10;- 调整详情分析列宽度以适应更多链接内容&#10;- 重构链接列表常量文件，分离不同场景的链接配置&#10;- 优化医疗组收治对比表格的详情栏展示逻辑">
+    <task id="LOCAL-02230" summary="v91-feat/refactor:DOM-18560-需求351-病种分析-DRG支付，院端和科端：名义成本改为名义收入。相关表格调整&#10;refactor(diseaseEconomics):病组分析（DRG支付） /病组经济分析 /结余 /医师 重构组件 放开新组件注释&#10;&#10;- 删除冗余的样式类定义，移除重复的工具函数&#10;- 整理并优化 surplusPhysician_dip 和 surplusSpecial_dip 页面的数据初始化逻辑&#10;- 添加 TODO 注释标记待删除或待重构的旧逻辑代码块">
       <option name="closed" value="true" />
-      <created>1760501963983</created>
-      <option name="number" value="02177" />
-      <option name="presentableId" value="LOCAL-02177" />
+      <created>1761196675330</created>
+      <option name="number" value="02230" />
+      <option name="presentableId" value="LOCAL-02230" />
       <option name="project" value="LOCAL" />
-      <updated>1760501963984</updated>
+      <updated>1761196675330</updated>
     </task>
-    <task id="LOCAL-02178" summary="v91-feat/refactor:DOM-18332-需求554-通用-科室端-病种分析-出院分析-科室病组明细数据分析 下钻-市医保DRG及DIP-医疗组收治该病组对比-添加下钻&#10;feat(diseaseAnalysis): 新增检查、检验、医疗服务分析弹窗支持&#10;&#10;- 更新药品分析弹窗文件头注释信息&#10;- 扩展医疗组收治病种对比详情弹窗支持多种分析类型&#10;  - 新增检查、检验、医疗服务三种分析弹窗组件&#10;- 修改链接ID映射逻辑以适配新的分析类型&#10;- 调整弹窗默认尺寸设置，新增默认宽高值&#10;- 更新材料和药品分析的链接ID命名规则">
+    <task id="LOCAL-02231" summary="v91-feat/refactor:DOM-18560-需求351-病种分析-DRG支付，院端和科端：名义成本改为名义收入。相关表格调整&#10;refactor(diseaseEconomics):病组分析（DIP支付） /病组经济分析 /结余 /医师 移除多余的事件监听器和属性">
       <option name="closed" value="true" />
-      <created>1760506495605</created>
-      <option name="number" value="02178" />
-      <option name="presentableId" value="LOCAL-02178" />
+      <created>1761196918904</created>
+      <option name="number" value="02231" />
+      <option name="presentableId" value="LOCAL-02231" />
       <option name="project" value="LOCAL" />
-      <updated>1760506495605</updated>
+      <updated>1761196918904</updated>
     </task>
-    <task id="LOCAL-02179" summary="v90-fix/refactor:DOM-18162-全院-收支余分析-总览-医疗盈余趋势：点击切换表格，一直处于加载状态&#10;fix(chart):修复图表数据初始化问题&#10;&#10;- 修改 bar.vue 组件中 initExcelParams 方法的参数传递逻辑&#10;- 统一使用 this.localData 替代 val 参数，避免经过预测后拼接的数据不一致">
+    <task id="LOCAL-02232" summary="v91-feat/refactor:DOM-18560-需求351-病种分析-DRG支付，院端和科端：名义成本改为名义收入。相关表格调整&#10;refactor(diseaseEconomics):病组分析（DIP支付） /病组经济分析 /结余 下钻&#10;&#10;- 移除冗余的组件引用，更新组件注册列表&#10;- 添加 TODO 注释标记待删除的重复逻辑">
       <option name="closed" value="true" />
-      <created>1760511882655</created>
-      <option name="number" value="02179" />
-      <option name="presentableId" value="LOCAL-02179" />
+      <created>1761199700309</created>
+      <option name="number" value="02232" />
+      <option name="presentableId" value="LOCAL-02232" />
       <option name="project" value="LOCAL" />
-      <updated>1760511882655</updated>
+      <updated>1761199700309</updated>
     </task>
-    <task id="LOCAL-02180" summary="v90-fix/refactor:DOM-18162-全院-收支余分析-总览-医疗盈余趋势：点击切换表格，一直处于加载状态&#10;refactor(incomeExpenses): 移除医疗盈余组件中的冗余初始化数据逻辑">
+    <task id="LOCAL-02233" summary="v91-feat/refactor:DOM-18560-需求351-病种分析-DRG支付，院端和科端：名义成本改为名义收入。相关表格调整&#10;refactor(diseaseEconomics):病组分析（DIP支付） /病组经济分析 /结余 下钻 提取路由处理逻辑到独立方法&#10;&#10;- 将重复的路由参数获取和面包屑更新逻辑提取为 routerHandler 方法&#10;- 统一处理查询参数、路由元数据和面包屑路径更新操作&#10;- 简化 mounted 钩子中的路由相关代码 在多个相关组件中应用统一的路由处理方式">
       <option name="closed" value="true" />
-      <created>1760511916663</created>
-      <option name="number" value="02180" />
-      <option name="presentableId" value="LOCAL-02180" />
+      <created>1761201143001</created>
+      <option name="number" value="02233" />
+      <option name="presentableId" value="LOCAL-02233" />
       <option name="project" value="LOCAL" />
-      <updated>1760511916663</updated>
+      <updated>1761201143001</updated>
     </task>
-    <task id="LOCAL-02181" summary="v91-feat/refactor:DOM-18332-需求554-通用-科室端-病种分析-出院分析-科室病组明细数据分析 下钻-市医保DRG及DIP-医疗组收治该病组对比-添加下钻&#10;feat(diseaseAnalysis): 新增医疗组药品用量分析功能&#10;&#10;- 在 DialogPharmaceuticalAnalysis 组件中新增 MedicalGroupDosageAnalysis 模块&#10;- 调整药品分析弹窗高度和宽度配置，提升展示效果&#10;- 修改药品分类占比图表及表格的高度以优化布局&#10;- 引入新的组件 MedicalGroupDosageAnalysis 和 DomsConH360&#10;- 更新样式类名和容器属性以增强视觉一致性&#10;- 为新增模块设置默认的表格配置和样式布局">
+    <task id="LOCAL-02234" summary="v92-feat/refactor:DOM-18386-需求715-通用-院端-工作量分析-手术人次下钻页，手术效率变化添加下钻页面（手术间明细），展示各手术间的手术人次，加权工作量和手术间利用率&#10;feat(workloadAnalysis): 后端暂未完成，隐藏调整手术间效率模块 手术明细弹出框链接&#10;&#10;- 修改手术间效率模块右侧头部布局 样式，使用flex容器替代原有结构&#10;- 调整PLChartTabBar组件样式，设置弹性布局属性">
       <option name="closed" value="true" />
-      <created>1760519659582</created>
-      <option name="number" value="02181" />
-      <option name="presentableId" value="LOCAL-02181" />
+      <created>1761203713111</created>
+      <option name="number" value="02234" />
+      <option name="presentableId" value="LOCAL-02234" />
       <option name="project" value="LOCAL" />
-      <updated>1760519659582</updated>
+      <updated>1761203713111</updated>
     </task>
-    <task id="LOCAL-02182" summary="v91-feat/refactor:DOM-18332-需求554-通用-科室端-病种分析-出院分析-科室病组明细数据分析 下钻-市医保DRG及DIP-医疗组收治该病组对比-添加下钻&#10;feat(dept-disease-detail): 新增医疗组药品用量分析功能&#10;&#10;- 添加获取医疗组药品用量分析数据的API接口&#10;- 实现医疗组信息更新逻辑，支持存储医疗组编码和名称&#10;- 在医疗组用药分析组件中集成对比选择器，支持同环比切换&#10;- 引入时间周期常量，优化日期参数校验逻辑&#10;- 新增药品用量分析面板标题动态展示功能&#10;- 实现表格数据请求方法，支持异步加载并处理异常情况&#10;- 完善组件间状态管理，通过Vuex获取公共参数和医疗组名称">
+    <task id="LOCAL-02235" summary="v91-fix/refactor:处理页面报错：科端-重点设备效益分析&#10;fix(dept_equipment_benefit_analysis): 防止解析空查询参数时出错&#10;&#10;- 为 headerfilters 查询参数提供默认空对象字符串&#10;- 避免在 deptId 不存在时出现解析错误&#10;- 确保 restHeaderfiltersObj 始终是有效对象">
       <option name="closed" value="true" />
-      <created>1760522602468</created>
-      <option name="number" value="02182" />
-      <option name="presentableId" value="LOCAL-02182" />
+      <created>1761207507125</created>
+      <option name="number" value="02235" />
+      <option name="presentableId" value="LOCAL-02235" />
       <option name="project" value="LOCAL" />
-      <updated>1760522602468</updated>
+      <updated>1761207507125</updated>
     </task>
-    <task id="LOCAL-02183" summary="v91-feat/refactor:DOM-18332-需求554-通用-科室端-病种分析-出院分析-科室病组明细数据分析 下钻-市医保DRG及DIP-医疗组收治该病组对比-添加下钻&#10;refactor(dept-disease-group-detail-data-analysis):重构药品分类占比组件&#10;&#10;- 将 PlGridTable 和 PlChart 替换为 PlModulePanel 和 DomsConH360 容器组件&#10;  - 更新组件注册列表，包含新引入的容器组件&#10;- 更新组件绑定数据，添加 type 属性以支持模块面板渲染；移除旧的图表类型配置，使用新的 type 配置&#10;- 调整表格高度从 320 到 350，并移除边框显示&#10;- 移除原有的宽度限制样式，使用外部容器组件控制布局&#10;- 优化组件结构，提高代码可维护性和扩展性&#10;- 更新组件导入路径和依赖关系&#10;  - 移除不再使用的样式定义">
+    <task id="LOCAL-02236" summary="v92-feat:DOM-18605-需求722-通用-科室端-病种分析-临床病种分析-病例明细数据分析-添加下载提示&#10;feat(component): 调整病例详情表格高度&#10;- 将病例详情表格的高度从450调整为420&#10;- 优化表格在页面中的布局效果">
       <option name="closed" value="true" />
-      <created>1760578447022</created>
-      <option name="number" value="02183" />
-      <option name="presentableId" value="LOCAL-02183" />
+      <created>1761210896798</created>
+      <option name="number" value="02236" />
+      <option name="presentableId" value="LOCAL-02236" />
       <option name="project" value="LOCAL" />
-      <updated>1760578447023</updated>
+      <updated>1761210896798</updated>
     </task>
-    <task id="LOCAL-02184" summary="v91-feat/refactor:DOM-18332-需求554-通用-科室端-病种分析-出院分析-科室病组明细数据分析 下钻-市医保DRG及DIP-医疗组收治该病组对比-添加下钻&#10;feat(dept-disease-analysis): 新增医疗组病种分析功能&#10;&#10;- 优化弹窗关闭时销毁元素以提升性能&#10;- 新增医疗组-检查分析、检验分析、医疗服务分析接口请求函数&#10;- 添加医疗组收治该病种对比弹窗状态管理&#10;- 完善检查、检验、医疗服务分析组件数据请求功能&#10;- 统一分析模块组件结构和数据请求逻辑">
+    <task id="LOCAL-02237" summary="v92-feat:DOM-18605-需求722-通用-科室端-病种分析-临床病种分析-病例明细数据分析-添加下载提示&#10;feat(exportExcel): 添加下载进度提示功能&#10;&#10;- 在下载开始时显示&quot;正在下载中...&quot;的持续提示&#10;- 下载完成后显示&quot;下载完毕&quot;的成功提示&#10;- 使用唯一ID标识下载提示，确保能正确关闭">
       <option name="closed" value="true" />
-      <created>1760582929993</created>
-      <option name="number" value="02184" />
-      <option name="presentableId" value="LOCAL-02184" />
+      <created>1761210943973</created>
+      <option name="number" value="02237" />
+      <option name="presentableId" value="LOCAL-02237" />
       <option name="project" value="LOCAL" />
-      <updated>1760582929993</updated>
+      <updated>1761210943974</updated>
     </task>
-    <task id="LOCAL-02185" summary="v91-feat/refactor:DOM-18332-需求554-通用-科室端-病种分析-出院分析-科室病组明细数据分析 下钻-市医保DRG及DIP-医疗组收治该病组对比-添加下钻&#10;feat(deptDiseaseDetail): 优化病种分析弹窗及药品用量分析展示&#10;&#10;- 移除药品分析弹窗中冗余的 diseaseName 属性传参，统一使用状态数据&#10;- 新增多个分析维度的弹窗高度配置（检查、检验、医疗服务等）&#10;- 优化药品用量分析标题展示逻辑，避免空值显示异常&#10;- 调整组件结构，统一使用 section 包裹内容区域&#10;  - 在检查、检验、医疗服务分析组件中引入 DiseaseAnalysisDesc 病种描述组件&#10;- 优化 compareType 监听逻辑，简化代码结构">
+    <task id="LOCAL-02238" summary="v92-feat:DOM-18614-需求752-院端-收支余-成本菜单，时间下拉框，隐藏周、日的选择，因为成本最小到月&#10;调整费用概览时间筛选器配置，移除了时间筛选器中多余的 'w' 和 'd'选项">
       <option name="closed" value="true" />
-      <created>1760587105876</created>
-      <option name="number" value="02185" />
-      <option name="presentableId" value="LOCAL-02185" />
+      <created>1761269522399</created>
+      <option name="number" value="02238" />
+      <option name="presentableId" value="LOCAL-02238" />
       <option name="project" value="LOCAL" />
-      <updated>1760587105876</updated>
+      <updated>1761269522399</updated>
     </task>
-    <option name="localTasksCounter" value="2186" />
+    <option name="localTasksCounter" value="2239" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -2261,32 +2278,32 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="v90-feat/refactor:DOM-18254-处理-地坛医院-现场问题&#10;refactor(operationDisease):重构材料指数页面逻辑&#10;&#10;- 放开新组件代码&#10;- 调整数据过滤和初始化方法&#10;- 注释冗余的配置项方法和监听器" />
-    <MESSAGE value="拉取代码-558 v90-吉大一+院端-材料-DRG病种材料分析-新增菜单 病组材料分析（CN2.0）" />
-    <MESSAGE value="v90-fix/refactor:DOM-18223-需求变更（吉大一）-科室-收支余分析-总览-门急诊分析-科内科内门急诊医生效率分析-图表视图：隐藏最大值和平均值&#10;fix/refactor(doctorEfficiency): 优化医生效率图表组件数据绑定逻辑&#10;&#10;- 统一使用 getChartBindData 计算属性管理图表配置&#10;- 将 data 属性重命名为 chartData&#10;- 更新模板中 PlModulePanel 的属性绑定方式&#10;- 注释的旧版复选框选项" />
-    <MESSAGE value="v90-fix/refactor:DOM-18265-需求变更（湖州）-全院-收支分析-总览-医疗收入下钻-收入结构：切换表格，缺少上期值列数据" />
-    <MESSAGE value="v90-fix/refactor:DOM-18190-需求变更（吉大一）-全院-病组分析（市医保DRG）-总览：点击切换病人分类不生效&#10;fix/refactor(operationDisease):重构病人分类与病组类型选择器逻辑&#10;&#10;- 修改病人分类选择器变更事件为 onPatTypeChange&#10;- 修改病组类型选择器变更事件为 onDrgGroupTypeChange&#10;- 删除重复逻辑相关的注释标记更新为 V90 版本&#10;- 注释掉已重构的总权重趋势分析和病组结余分析相关代码&#10;- 移除旧版 hospDrgRw 和 hospDrgIncomeAnalysis 方法调用&#10;- 新增 onPatTypeChange 和 onDrgGroupTypeChange 处理函数&#10;- 调整 drgGroupType 初始值为 null&#10;- 保留待拆分重构的组件逻辑并添加 TODO 注释&#10;- 清理无用的空白行及冗余代码结构" />
-    <MESSAGE value="v90-fix-refactor:DOM-18283-需求670-通用-院端-病种分析（DIP和DRG）-学科分析，选择关键疾病或关键技术，基本标准或推荐标准，详情表的科室都改为专科&#10;fix(operationDisease):修正科室内容表格组件名称&#10;&#10;- 将组件名称从 keySituationTable 更正为 deptContentTable&#10;- 确保组件命名与实际功能一致" />
-    <MESSAGE value="v91-feat/refactor:DOM-18284-需求677-吉大一-现场-尚晓敏-科室端-绩效分析-总览-病组结构下钻-总权重tab-隐藏病组总权重变化表格&#10;refactor(diseaseCmi):重构关键病种总权重变化模块&#10;&#10;- 引入医院编码常量配置&#10;- 新增计算属性控制特定医院隐藏显示" />
-    <MESSAGE value="v91-fix/refactor:DOM-17672-科室-病种分析（省卫健委DRG）-出院分析-病组RW -费用消耗指数分析：点击第二象限没反应&#10;feat(chart): 支持散点图象限划分基于原点坐标动态计算&#10;&#10;- 添加 getOriginX 和 getOriginY 计算方法&#10;- 更新象限判断逻辑以使用动态原点坐标&#10;- 修正数据处理时的注释说明" />
-    <MESSAGE value="v91-fix/refactor:院端-病组分析（DRG支付） /总览-病组结余分析、总权重趋势，添加请求参数校验&#10;feat(hospital): 添加参数校验功能&#10;&#10;- 在疾病组盈余分析、总RW趋势分析组件中引入 drgGroupType 等参数校验逻辑" />
-    <MESSAGE value="v91-fix/refactor:DOM-18254-处理-地坛医院-现场问题&#10;fix/refactor:修改 病组分析（DRG支付） /病组经济分析 /结余 /费用构成 药品收入、耗占比占医疗收入比分析 组件模块，添加请求参数 patType&#10;&#10;- 移除重复的药品收入、耗占比分析逻辑&#10;- 更新路由参数处理方式&#10;- 优化面包屑路径生成逻辑&#10;- 删除冗余的API调用和图表配置&#10;- 添加TODO注释标记待拆分重构组件&#10;- 调整组件挂载时的路由处理流程" />
-    <MESSAGE value="v91-fix/refactor:DOM-18254-处理-地坛医院-现场问题&#10;fix/refactor:修改 病组分析（DRG支付）（DIP支付） /病组经济分析 /结余 /费用构成 药品收入、耗占比占医疗收入比分析 组件模块&#10;&#10;- 重构 getDownDrillRequestParams 方法，条件性添加 patType 参数&#10;- 初始化 drgGroupType为 null 并调整其使用位置&#10;- 添加 updateParamsFromRoute 和 routerHandler 方法处理路由参数&#10;- 注释待删除的旧逻辑代码块，准备后续清理&#10;- 调整 created 和 mounted 生命周期中的逻辑执行顺序" />
-    <MESSAGE value="v91-fix/refactor:DOM-18254-处理-地坛医院-现场问题&#10;fix/refactor:修改 病组分析（DRG支付）（DIP支付） /病组经济分析 /结余 /费用构成 药品收入、耗占比占医疗收入比分析 组件模块&#10;&#10;- 引入DIP相关文本描述getter getIfDip" />
-    <MESSAGE value="v91-fix/refactor:DOM-18254-处理-地坛医院-现场问题&#10;fix/refactor:修改 病组分析（DRG支付）（DIP支付） /病组经济分析 /结余 /费用构成 药品收入、耗占比占医疗收入比分析 组件模块&#10;feat(disease-analysis): 新增费用构成分析 费别分析模块&#10;&#10;- 新增 FeeTypeAnalysis 组件用于展示 DRG/DIP 费用构成&#10;- 在 surplusExpense 页面集成费用构成分析功能&#10;- 重构药品耗材占比分析逻辑并标记待删除代码&#10;- 引入 PlFlex 布局组件优化页面结构&#10;- 调整页面初始化逻辑，增加疾病类型文本设置&#10;- 清理冗余的 tabsBarChange 和 drgCostCategory 方法&#10;- 更新相关 API 引用路径和组件导入语句" />
-    <MESSAGE value="v91-fix/refactor:DOM-18254-处理-地坛医院-现场问题&#10;fix/refactor:修改 病组分析（DRG支付）（DIP支付） /病组经济分析 /结余 /费用构成 药品收入、耗占比占医疗收入比分析 组件模块&#10;feat(diseaseEconomics): 添加费用类型分析组件并重构布局&#10;&#10;- 引入 PlFlex 和 FeeTypeAnalysis 组件&#10;- 使用 PlFlex 容器包装费用分析模块&#10;- 调整药品收入、耗占比分析组件位置&#10;- 注释标记待删除的旧版重复逻辑&#10;- 更新组件导入路径和注册列表&#10;- 移动部分配置项和方法到注释区域" />
-    <MESSAGE value="v91-feat/refactor:DOM-16250-全院-病组分析（市医保DRG/DIP支付）-学科分析：未替换标准组件&#10;refactor(diseaseDsciplineAnalysis):修改疾病学科分析页面代码结构与样式&#10;&#10;- 调整组件标签格式&#10;- 删除冗余注释与调试代码" />
-    <MESSAGE value="v91-TODO:DOM-16250-全院-病组分析（市医保DRG/DIP支付）-学科分析：未替换标准组件&#10;TODO:替换 关键疾病完成情况 关键技术完成情况 表格" />
-    <MESSAGE value="v91-feat/refactor:DOM-18332-需求554-通用-科室端-病种分析-出院分析-科室病组明细数据分析 下钻-市医保DRG及DIP-医疗组收治该病组对比-添加下钻&#10;feat/refactor(disease-analysis): 更新医疗组病例详情链接列表&#10;&#10;- 新增并调整材料、药品、检查、检验、医疗服务等详情分析链接&#10;- 调整详情分析列宽度以适应更多链接内容&#10;- 重构链接列表常量文件，分离不同场景的链接配置&#10;- 优化医疗组收治对比表格的详情栏展示逻辑" />
-    <MESSAGE value="v91-feat/refactor:DOM-18332-需求554-通用-科室端-病种分析-出院分析-科室病组明细数据分析 下钻-市医保DRG及DIP-医疗组收治该病组对比-添加下钻&#10;feat(diseaseAnalysis): 新增检查、检验、医疗服务分析弹窗支持&#10;&#10;- 更新药品分析弹窗文件头注释信息&#10;- 扩展医疗组收治病种对比详情弹窗支持多种分析类型&#10;  - 新增检查、检验、医疗服务三种分析弹窗组件&#10;- 修改链接ID映射逻辑以适配新的分析类型&#10;- 调整弹窗默认尺寸设置，新增默认宽高值&#10;- 更新材料和药品分析的链接ID命名规则" />
-    <MESSAGE value="v90-fix/refactor:DOM-18162-全院-收支余分析-总览-医疗盈余趋势：点击切换表格，一直处于加载状态&#10;fix(chart):修复图表数据初始化问题&#10;&#10;- 修改 bar.vue 组件中 initExcelParams 方法的参数传递逻辑&#10;- 统一使用 this.localData 替代 val 参数，避免经过预测后拼接的数据不一致" />
-    <MESSAGE value="v90-fix/refactor:DOM-18162-全院-收支余分析-总览-医疗盈余趋势：点击切换表格，一直处于加载状态&#10;refactor(incomeExpenses): 移除医疗盈余组件中的冗余初始化数据逻辑" />
-    <MESSAGE value="v91-feat/refactor:DOM-18332-需求554-通用-科室端-病种分析-出院分析-科室病组明细数据分析 下钻-市医保DRG及DIP-医疗组收治该病组对比-添加下钻&#10;feat(diseaseAnalysis): 新增医疗组药品用量分析功能&#10;&#10;- 在 DialogPharmaceuticalAnalysis 组件中新增 MedicalGroupDosageAnalysis 模块&#10;- 调整药品分析弹窗高度和宽度配置，提升展示效果&#10;- 修改药品分类占比图表及表格的高度以优化布局&#10;- 引入新的组件 MedicalGroupDosageAnalysis 和 DomsConH360&#10;- 更新样式类名和容器属性以增强视觉一致性&#10;- 为新增模块设置默认的表格配置和样式布局" />
-    <MESSAGE value="v91-feat/refactor:DOM-18332-需求554-通用-科室端-病种分析-出院分析-科室病组明细数据分析 下钻-市医保DRG及DIP-医疗组收治该病组对比-添加下钻&#10;feat(dept-disease-detail): 新增医疗组药品用量分析功能&#10;&#10;- 添加获取医疗组药品用量分析数据的API接口&#10;- 实现医疗组信息更新逻辑，支持存储医疗组编码和名称&#10;- 在医疗组用药分析组件中集成对比选择器，支持同环比切换&#10;- 引入时间周期常量，优化日期参数校验逻辑&#10;- 新增药品用量分析面板标题动态展示功能&#10;- 实现表格数据请求方法，支持异步加载并处理异常情况&#10;- 完善组件间状态管理，通过Vuex获取公共参数和医疗组名称" />
-    <MESSAGE value="v91-feat/refactor:DOM-18332-需求554-通用-科室端-病种分析-出院分析-科室病组明细数据分析 下钻-市医保DRG及DIP-医疗组收治该病组对比-添加下钻&#10;refactor(dept-disease-group-detail-data-analysis):重构药品分类占比组件&#10;&#10;- 将 PlGridTable 和 PlChart 替换为 PlModulePanel 和 DomsConH360 容器组件&#10;  - 更新组件注册列表，包含新引入的容器组件&#10;- 更新组件绑定数据，添加 type 属性以支持模块面板渲染；移除旧的图表类型配置，使用新的 type 配置&#10;- 调整表格高度从 320 到 350，并移除边框显示&#10;- 移除原有的宽度限制样式，使用外部容器组件控制布局&#10;- 优化组件结构，提高代码可维护性和扩展性&#10;- 更新组件导入路径和依赖关系&#10;  - 移除不再使用的样式定义" />
-    <MESSAGE value="v91-feat/refactor:DOM-18332-需求554-通用-科室端-病种分析-出院分析-科室病组明细数据分析 下钻-市医保DRG及DIP-医疗组收治该病组对比-添加下钻&#10;feat(dept-disease-analysis): 新增医疗组病种分析功能&#10;&#10;- 优化弹窗关闭时销毁元素以提升性能&#10;- 新增医疗组-检查分析、检验分析、医疗服务分析接口请求函数&#10;- 添加医疗组收治该病种对比弹窗状态管理&#10;- 完善检查、检验、医疗服务分析组件数据请求功能&#10;- 统一分析模块组件结构和数据请求逻辑" />
-    <MESSAGE value="v91-feat/refactor:DOM-18332-需求554-通用-科室端-病种分析-出院分析-科室病组明细数据分析 下钻-市医保DRG及DIP-医疗组收治该病组对比-添加下钻&#10;feat(deptDiseaseDetail): 优化病种分析弹窗及药品用量分析展示&#10;&#10;- 移除药品分析弹窗中冗余的 diseaseName 属性传参，统一使用状态数据&#10;- 新增多个分析维度的弹窗高度配置（检查、检验、医疗服务等）&#10;- 优化药品用量分析标题展示逻辑，避免空值显示异常&#10;- 调整组件结构，统一使用 section 包裹内容区域&#10;  - 在检查、检验、医疗服务分析组件中引入 DiseaseAnalysisDesc 病种描述组件&#10;- 优化 compareType 监听逻辑，简化代码结构" />
-    <option name="LAST_COMMIT_MESSAGE" value="v91-feat/refactor:DOM-18332-需求554-通用-科室端-病种分析-出院分析-科室病组明细数据分析 下钻-市医保DRG及DIP-医疗组收治该病组对比-添加下钻&#10;feat(deptDiseaseDetail): 优化病种分析弹窗及药品用量分析展示&#10;&#10;- 移除药品分析弹窗中冗余的 diseaseName 属性传参，统一使用状态数据&#10;- 新增多个分析维度的弹窗高度配置（检查、检验、医疗服务等）&#10;- 优化药品用量分析标题展示逻辑，避免空值显示异常&#10;- 调整组件结构，统一使用 section 包裹内容区域&#10;  - 在检查、检验、医疗服务分析组件中引入 DiseaseAnalysisDesc 病种描述组件&#10;- 优化 compareType 监听逻辑，简化代码结构" />
+    <MESSAGE value="v91-chore:(inHospitalBlock): 通用-科端-收支余分析 /总览 /住院分析-调整 医疗组住院分析 表格&#10;-显示逻辑&#10;&#10;- 注释掉原有的医疗组显示条件判断&#10;- 根据赵征要求，所有医院环境均需显示医疗组&#10;- 保留医疗组代码过滤条件检查" />
+    <MESSAGE value="v91-feat/refactor:DOM-18541-需求468-院端-病种分析（DRG支付）-成本异常探查、病组经济分析的病人分类都改为全部医保病人、省医保病人、市医保病人，默认市医保病人；不显示收入和成本口径相关内容，默认理论结算收入和名义成本。&#10;feat/refactor(operationDisease):修复病人分组逻辑与页面显示问题&#10;- 优化 groupPat 方法中的参数合并逻辑&#10;- 新增 onDrgGroupTypeChange 异步调用 groupPat&#10;- 在 drgCity/leavehosp.vue 中同步修改指令名称" />
+    <MESSAGE value="v91-feat/refactor:DOM-18541-需求468-院端-病种分析（DRG支付）-成本异常探查、病组经济分析的病人分类都改为全部医保病人、省医保病人、市医保病人，默认市医保病人；不显示收入和成本口径相关内容，默认理论结算收入和名义成本&#10;feat(diseaseMatrix): 新增吉大医病人分组类型选择器&#10;&#10;- 在病人分类选择器中增加对吉大医的特殊处理&#10;- 添加新的 DRG 分组类型下拉选项组件&#10;- 实现根据医院代码控制组件显示逻辑" />
+    <MESSAGE value="v91-feat/refactor:DOM-18541-需求468-院端-病种分析（DRG支付）-成本异常探查、病组经济分析的病人分类都改为全部医保病人、省医保病人、市医保病人，默认市医保病人；不显示收入和成本口径相关内容，默认理论结算收入和名义成本&#10;feat(operationDisease): 添加病人分组选项加载状态&#10;&#10;- 为病人分组选择器添加加载状态显示" />
+    <MESSAGE value="v91-feat/refactor:DOM-18560-需求351-病种分析-DRG支付，院端和科端：名义成本改为名义收入。相关表格调整&#10;feat(cost): 新增成本口径级联选项配置&#10;&#10;- 新增默认成本口径级联选项配置文件&#10;- 更新成本口径选项生成函数以支持多医院配置&#10;- TODO: 替换 DRG 页面中 成本选项过滤逻辑以适配医疗费用收入口径" />
+    <MESSAGE value="v91-feat/refactor:DOM-18560-需求351-病种分析-DRG支付，院端和科端：名义成本改为名义收入。相关表格调整&#10;feat/refactor(diseaseMatrix):重构成本类型级联选项逻辑&#10;&#10;- 更新 getCostOptions 方法实现，使用 genCostTypeCascadeOptionsDrg 替代旧逻辑&#10;- 添加 TODO 注释标记待删除的重复逻辑，保留旧逻辑注释便于后续清理" />
+    <MESSAGE value="v91-feat/refactor:DOM-18560-需求351-病种分析-DRG支付，院端和科端：名义成本改为名义收入。相关表格调整 &#10;- 更新多个组件中的 getCostOptions 方法实现&#10;- 引入 genCostTypeCascadeOptionsDrg 替代原有逻辑&#10;- 标记旧方法 genCostTypeCascadeOptions 待删除" />
+    <MESSAGE value="v91-feat/refactor:DOM-18560-需求351-病种分析-DRG支付，院端和科端：名义成本改为名义收入。相关表格调整&#10;&#10;- 替换 genCostTypeCascadeOptions 为 genCostTypeCascadeOptionsDrg&#10;- 更新 getCostOptions 方法以适配新函数参数结构&#10;- 添加 TODO 注释标记旧逻辑待删除" />
+    <MESSAGE value="v91-feat/refactor:DOM-18560-需求351-病种分析-DRG支付，院端和科端：名义成本改为名义收入。相关表格调整&#10;refactor(cost):重构 科端-病种分析（市医保DRG） /出院分析；明细数据下钻；医疗组下钻；病例下钻；&#10;&#10;- 更新组件 DeptMedGroupDateCalibre.vue 和 leavehosp.vue 中的调用方式&#10;  - 使用新的 genCostTypeCascadeOptionsDrg 方法替换旧逻辑&#10;  - 标记待删除的重复逻辑代码段" />
+    <MESSAGE value="v91-feat/refactor:DOM-18560-需求351-病种分析-DRG支付，院端和科端：名义成本改为名义收入。相关表格调整&#10;refactor(cost):重构 科室端-病种分析（市医保DRG） /出院分析 /病组RW-结余率分析 查看详情 下钻页&#10;&#10;- 更新组件 DeptMedGroupDateCalibre.vue 和 leavehosp.vue 中的调用方式&#10;  - 使用新的 genCostTypeCascadeOptionsDrg 方法替换旧逻辑&#10;  - 标记待删除的重复逻辑代码段" />
+    <MESSAGE value="v91-feat/refactor:DOM-18560-需求351-病种分析-DRG支付，院端和科端：名义成本改为名义收入。相关表格调整&#10;refactor(cost):重构 科端：病种分析（市医保DRG） /临床病种分析&#10;- 更新组件 DeptMedGroupDateCalibre.vue 和 leavehosp.vue 中的调用方式&#10;  - 使用新的 genCostTypeCascadeOptionsDrg 方法替换旧逻辑&#10;  - 标记待删除的重复逻辑代码段" />
+    <MESSAGE value="v91-fix:DOM-18560-需求351-病种分析-DRG支付，院端和科端：名义成本改为名义收入。相关表格调整&#10;refactor(diseaseEconomics):放开注释使用新组件，重构结余专项页面逻辑与组件结构&#10;&#10;- 移除重复的 TODO 注释和冗余代码块&#10;- 调整级联选择器事件绑定逻辑&#10;- 优化趋势分析、科室分析和医保结算模块的组件封装&#10;- 清理无用的导入语句和变量定义&#10;- 移除废弃的样式类名和注释&#10;- 简化页面参数更新和路由处理逻辑&#10;- 删除未使用的数据监听器和方法" />
+    <MESSAGE value="v91-fix:DOM-18560-需求351-病种分析-DRG支付，院端和科端：名义成本改为名义收入。相关表格调整&#10;refactor(diseaseEconomics):重构成本口径选项计算逻辑&#10;&#10;- 使用新的 genCostTypeCascadeOptionsDrg 方法替代旧逻辑&#10;- 注释 已弃用方法 genCostTypeCascadeOptions 的调用&#10;- 添加 TODO 注释标记待删除的重复逻辑&#10;- 调整导入语句以适应新方法的引入方式" />
+    <MESSAGE value="v91-fix:DOM-18373-科室-病种分析（市医保DRG/DIP）-出院分析-科室病组明细数据分析 下钻-医疗组收治该病组对比-检查：首行缺少病组编码何RW值&#10;feat(diseaseAnalysis): 显示疾病编码信息&#10;&#10;- 在疾病分析描述组件中添加疾病编码显示&#10;- 调整疾病名称和编码的样式布局&#10;- 更新疾病分析状态映射以包含疾病编码&#10;- 移除冗余的疾病名称样式定义" />
+    <MESSAGE value="v91-feat/refactor:DOM-18560-需求351-病种分析-DRG支付，院端和科端：名义成本改为名义收入。相关表格调整&#10;refactor(cost):重构 病组分析（DRG支付） /病组经济分析 /结余 /医师&#10;refactor(diseaseEconomics):放开新组件注释，重构结余医师分析页面逻辑与样式&#10;&#10;- 移除过时的事件监听与处理逻辑&#10;- 调整医保结算相关组件布局与数据处理方式&#10;- 清理冗余代码与注释&#10;- 优化样式定义，移除无用CSS类名与布局代码" />
+    <MESSAGE value="v91-feat/refactor:DOM-18560-需求351-病种分析-DRG支付，院端和科端：名义成本改为名义收入。相关表格调整&#10;feat(disease-economy-analysis): 重构医保结算相关组件及页面布局&#10;&#10;- 调整 医保倍率例数趋势 与 医保病人结算分析 组件 顺序&#10;- 删除冗余样式和注释，优化代码可读性&#10;- 修正组件导入顺序，确保依赖正确加载" />
+    <MESSAGE value="v91-feat/refactor:DOM-18560-需求351-病种分析-DRG支付，院端和科端：名义成本改为名义收入。相关表格调整&#10;refactor(diseaseEconomics):病组分析（DRG支付） /病组经济分析 /结余 /医师 重构组件 放开新组件注释&#10;&#10;- 删除冗余的样式类定义，移除重复的工具函数&#10;- 整理并优化 surplusPhysician_dip 和 surplusSpecial_dip 页面的数据初始化逻辑&#10;- 添加 TODO 注释标记待删除或待重构的旧逻辑代码块" />
+    <MESSAGE value="v91-feat/refactor:DOM-18560-需求351-病种分析-DRG支付，院端和科端：名义成本改为名义收入。相关表格调整&#10;refactor(diseaseEconomics):病组分析（DIP支付） /病组经济分析 /结余 /医师 移除多余的事件监听器和属性" />
+    <MESSAGE value="v91-feat/refactor:DOM-18560-需求351-病种分析-DRG支付，院端和科端：名义成本改为名义收入。相关表格调整&#10;refactor(diseaseEconomics):病组分析（DIP支付） /病组经济分析 /结余 下钻&#10;&#10;- 移除冗余的组件引用，更新组件注册列表&#10;- 添加 TODO 注释标记待删除的重复逻辑" />
+    <MESSAGE value="v91-feat/refactor:DOM-18560-需求351-病种分析-DRG支付，院端和科端：名义成本改为名义收入。相关表格调整&#10;refactor(diseaseEconomics):病组分析（DIP支付） /病组经济分析 /结余 下钻 提取路由处理逻辑到独立方法&#10;&#10;- 将重复的路由参数获取和面包屑更新逻辑提取为 routerHandler 方法&#10;- 统一处理查询参数、路由元数据和面包屑路径更新操作&#10;- 简化 mounted 钩子中的路由相关代码 在多个相关组件中应用统一的路由处理方式" />
+    <MESSAGE value="v92-feat/refactor:DOM-18386-需求715-通用-院端-工作量分析-手术人次下钻页，手术效率变化添加下钻页面（手术间明细），展示各手术间的手术人次，加权工作量和手术间利用率&#10;feat(workloadAnalysis): 后端暂未完成，隐藏调整手术间效率模块 手术明细弹出框链接&#10;&#10;- 修改手术间效率模块右侧头部布局 样式，使用flex容器替代原有结构&#10;- 调整PLChartTabBar组件样式，设置弹性布局属性" />
+    <MESSAGE value="v91-fix/refactor:处理页面报错：科端-重点设备效益分析&#10;fix(dept_equipment_benefit_analysis): 防止解析空查询参数时出错&#10;&#10;- 为 headerfilters 查询参数提供默认空对象字符串&#10;- 避免在 deptId 不存在时出现解析错误&#10;- 确保 restHeaderfiltersObj 始终是有效对象" />
+    <MESSAGE value="v92-feat:DOM-18605-需求722-通用-科室端-病种分析-临床病种分析-病例明细数据分析-添加下载提示&#10;feat(component): 调整病例详情表格高度&#10;- 将病例详情表格的高度从450调整为420&#10;- 优化表格在页面中的布局效果" />
+    <MESSAGE value="v92-feat:DOM-18605-需求722-通用-科室端-病种分析-临床病种分析-病例明细数据分析-添加下载提示&#10;feat(exportExcel): 添加下载进度提示功能&#10;&#10;- 在下载开始时显示&quot;正在下载中...&quot;的持续提示&#10;- 下载完成后显示&quot;下载完毕&quot;的成功提示&#10;- 使用唯一ID标识下载提示，确保能正确关闭" />
+    <MESSAGE value="v92-feat:DOM-18614-需求752-院端-收支余-成本菜单，时间下拉框，隐藏周、日的选择，因为成本最小到月&#10;调整费用概览时间筛选器配置，移除了时间筛选器中多余的 'w' 和 'd'选项" />
+    <option name="LAST_COMMIT_MESSAGE" value="v92-feat:DOM-18614-需求752-院端-收支余-成本菜单，时间下拉框，隐藏周、日的选择，因为成本最小到月&#10;调整费用概览时间筛选器配置，移除了时间筛选器中多余的 'w' 和 'd'选项" />
   </component>
   <component name="VueSettings">
     <option name="innerServiceType" value="TS_SERVICE" />
