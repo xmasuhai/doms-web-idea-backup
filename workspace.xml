@@ -44,7 +44,7 @@
     <option name="selectedModelId" value="auto" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a32d6ec8-0d74-4a1b-8cad-0ab91948ca3e" name="Changes" comment="v126:feat/refactor: 需求1943-院端-重点设备效益分析-总览、院端-重点设备效益分析-诊断类设备分析、院端-重点设备效益分析-治疗类设备分析、科室端-重点设备效益分析-下所有菜单-支持周、日维度选择；选择周、日维度时，原工作量、稼动率相关表格和图表内容不变；原收入、投资回报率相关表格和图表，因为成本最小只能到月，直接隐藏或只显示收入相关元素；&#10;feat(equipmentBenefitAnalysis): 添加周度日度隐藏功能&#10;&#10;- 在returnRateAbnormal组件中添加getCurrentFreqCodeIsWeekOrDay计算属性&#10;- 使用v-if指令控制组件在周度和日度时不显示&#10;- 导入vuex的mapGetters辅助函数">
+    <list default="true" id="a32d6ec8-0d74-4a1b-8cad-0ab91948ca3e" name="Changes" comment="v126:feat/refactor: 需求1943-院端-重点设备效益分析-总览、院端-重点设备效益分析-诊断类设备分析、院端-重点设备效益分析-治疗类设备分析、科室端-重点设备效益分析-下所有菜单-支持周、日维度选择；选择周、日维度时，原工作量、稼动率相关表格和图表内容不变；原收入、投资回报率相关表格和图表，因为成本最小只能到月，直接隐藏或只显示收入相关元素；&#10;feat(equipment): 设备效益分析表添加周度日度隐藏功能&#10;&#10;- 在设备效益分析表组件中添加周度、日度时隐藏逻辑&#10;- 引入 PlModulePanel 组件替代原有的 doms-con-h480 容器&#10;- 添加 getCurrentFreqCodeIsWeekOrDay 计算属性用于频率判断&#10;- 修改组件结构，在非周度日度时才显示表格&#10;- 更新组件注册，添加 PlModulePanel 到 components 中&#10;- 添加指标相关参数和模块类型配置&#10;- 新增 getRequestParams 方法统一管理请求参数&#10;- 修改数据获取方法调用，使用新的请求参数结构">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <list id="bd8e474f-42c8-444f-9f2b-07be811ba86b" name="ignore-on-commit" comment="ignore-on-commit" />
@@ -422,7 +422,7 @@
     "npm.testing.executor": "Debug",
     "npm.本地构建打包.executor": "Run",
     "npm.本地运行项目.executor": "Debug",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
     "settings.editor.splitter.proportion": "0.19736843",
     "to.speed.mode.migration.done": "true",
     "ts.external.directory.path": "D:\\software\\JetBrains\\WebStorm 2024.3\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
@@ -2686,23 +2686,7 @@
       <workItem from="1784360736178" duration="894000" />
       <workItem from="1784508731742" duration="3453000" />
       <workItem from="1784512511363" duration="767000" />
-      <workItem from="1784513342945" duration="520000" />
-    </task>
-    <task id="LOCAL-04419" summary="v125:feat/refactor:需求2477-院端-门诊运营专项-门诊运营目标驾驶舱页面中的‘门诊患者分布地图’换成山东省菏泽市的地图&#10;添加菏泽地svg文件">
-      <option name="closed" value="true" />
-      <created>1784023675477</created>
-      <option name="number" value="04419" />
-      <option name="presentableId" value="LOCAL-04419" />
-      <option name="project" value="LOCAL" />
-      <updated>1784023675477</updated>
-    </task>
-    <task id="LOCAL-04420" summary="v125:feat/refactor:需求2477-院端-门诊运营专项-门诊运营目标驾驶舱页面中的‘门诊患者分布地图’换成山东省菏泽市的地图&#10;feat(outpatient): 添加菏泽市地图支持功能&#10;&#10;- 引入菏泽市地图SVG资源文件&#10;- 更新当前选中城市代码为371700，城市名为hezeshi&#10;- 在城市代码列表中添加菏泽市配置项&#10;- 映射菏泽市相关的常量获取器&#10;- 实现菏泽市条件判断逻辑并设置对应的城市名称和代码&#10;- 切换地图显示时使用菏泽市地图替代济宁市地图">
-      <option name="closed" value="true" />
-      <created>1784023984035</created>
-      <option name="number" value="04420" />
-      <option name="presentableId" value="LOCAL-04420" />
-      <option name="project" value="LOCAL" />
-      <updated>1784023984035</updated>
+      <workItem from="1784513342945" duration="3645000" />
     </task>
     <task id="LOCAL-04421" summary="v125:fix/refactor:需求2227-（菏泽市立-院端）病组分析-DRG支付-成本异常探查，卡片图数据问题&#10;feat(diseaseMatrix): 添加病人类型列表选择器变更处理&#10;&#10;- 在 PlCascader 组件上添加 change 事件监听器&#10;- 当医院代码包含显示患者列表选择器时传递 patTypeList 参数&#10;- 添加 patientTypeListChange 方法处理病人类型列表变更&#10;- 更新 patientTypeChange 和 incomeEvtChange 方法为异步调用">
       <option name="closed" value="true" />
@@ -3080,7 +3064,23 @@
       <option name="project" value="LOCAL" />
       <updated>1784513884937</updated>
     </task>
-    <option name="localTasksCounter" value="4468" />
+    <task id="LOCAL-04468" summary="更新配置">
+      <option name="closed" value="true" />
+      <created>1784513906890</created>
+      <option name="number" value="04468" />
+      <option name="presentableId" value="LOCAL-04468" />
+      <option name="project" value="LOCAL" />
+      <updated>1784513906890</updated>
+    </task>
+    <task id="LOCAL-04469" summary="v126:feat/refactor: 需求1943-院端-重点设备效益分析-总览、院端-重点设备效益分析-诊断类设备分析、院端-重点设备效益分析-治疗类设备分析、科室端-重点设备效益分析-下所有菜单-支持周、日维度选择；选择周、日维度时，原工作量、稼动率相关表格和图表内容不变；原收入、投资回报率相关表格和图表，因为成本最小只能到月，直接隐藏或只显示收入相关元素；&#10;feat(equipment): 设备效益分析表添加周度日度隐藏功能&#10;&#10;- 在设备效益分析表组件中添加周度、日度时隐藏逻辑&#10;- 引入 PlModulePanel 组件替代原有的 doms-con-h480 容器&#10;- 添加 getCurrentFreqCodeIsWeekOrDay 计算属性用于频率判断&#10;- 修改组件结构，在非周度日度时才显示表格&#10;- 更新组件注册，添加 PlModulePanel 到 components 中&#10;- 添加指标相关参数和模块类型配置&#10;- 新增 getRequestParams 方法统一管理请求参数&#10;- 修改数据获取方法调用，使用新的请求参数结构">
+      <option name="closed" value="true" />
+      <created>1784517004801</created>
+      <option name="number" value="04469" />
+      <option name="presentableId" value="LOCAL-04469" />
+      <option name="project" value="LOCAL" />
+      <updated>1784517004801</updated>
+    </task>
+    <option name="localTasksCounter" value="4470" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -3101,8 +3101,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="MARK_IGNORED_AS_EXCLUDED" value="true" />
-    <MESSAGE value="v125:feat/refactor:需求2132-院端-临床工作量分析：门诊异常探查、出院异常探查、手术（含介入）异常探查、四级手术异常探查、日间手术异常探查、微创手术异常探查、入院率异常探查；院端-收支分析：收入异常探查、盈余异常探查、药品收入占比异常探查、材料收入占比异常探查、药耗收入占比异常探查；院端-人力资源分析：医生权重异常探查；院端-病组分析（DRG支付）：成本异常探查；院端-异常探查：异常探查常用、异常探查汇总、异常探查自定义；横坐标的25、75分位后面添加问号，纵坐标的25、75分位后面添加问号，问号内容支持自定义，问号内容默认&#10;refactor(levelFourSurgeryMatrix): 临床工作量分析 /日间手术异常探查 添加 25、75分位后面添加问号提示&#10;&#10;- 移除了注释掉的冗余代码，简化了模板结构&#10;- 在主矩阵组件中增加了四个新的量化提示属性传递" />
-    <MESSAGE value="v125:feat/refactor:需求2132-院端-临床工作量分析：门诊异常探查、出院异常探查、手术（含介入）异常探查、四级手术异常探查、日间手术异常探查、微创手术异常探查、入院率异常探查；院端-收支分析：收入异常探查、盈余异常探查、药品收入占比异常探查、材料收入占比异常探查、药耗收入占比异常探查；院端-人力资源分析：医生权重异常探查；院端-病组分析（DRG支付）：成本异常探查；院端-异常探查：异常探查常用、异常探查汇总、异常探查自定义；横坐标的25、75分位后面添加问号，纵坐标的25、75分位后面添加问号，问号内容支持自定义，问号内容默认&#10;refactor(levelFourSurgeryMatrix): 临床工作量分析 /微创手术异常探查 添加 25、75分位后面添加问号提示&#10;&#10;- 移除了注释掉的冗余代码，简化了模板结构&#10;- 在主矩阵组件中增加了四个新的量化提示属性传递" />
     <MESSAGE value="v125:feat/refactor:需求2132-院端-临床工作量分析：门诊异常探查、出院异常探查、手术（含介入）异常探查、四级手术异常探查、日间手术异常探查、微创手术异常探查、入院率异常探查；院端-收支分析：收入异常探查、盈余异常探查、药品收入占比异常探查、材料收入占比异常探查、药耗收入占比异常探查；院端-人力资源分析：医生权重异常探查；院端-病组分析（DRG支付）：成本异常探查；院端-异常探查：异常探查常用、异常探查汇总、异常探查自定义；横坐标的25、75分位后面添加问号，纵坐标的25、75分位后面添加问号，问号内容支持自定义，问号内容默认&#10;refactor(tooltips): 优化异常检测标记点提示列表的y轴偏移计算&#10;&#10;- 添加genSymbolOffsetYAxis函数用于动态计算y轴偏移量&#10;- 将固定的symbolOffset值替换为基于y轴值的动态偏移计算&#10;- 更新25分位线和75分位线的symbolOffset配置以使用动态计算函数" />
     <MESSAGE value="v125:feat/refactor:需求2132-院端-临床工作量分析：门诊异常探查、出院异常探查、手术（含介入）异常探查、四级手术异常探查、日间手术异常探查、微创手术异常探查、入院率异常探查；院端-收支分析：收入异常探查、盈余异常探查、药品收入占比异常探查、材料收入占比异常探查、药耗收入占比异常探查；院端-人力资源分析：医生权重异常探查；院端-病组分析（DRG支付）：成本异常探查；院端-异常探查：异常探查常用、异常探查汇总、异常探查自定义；横坐标的25、75分位后面添加问号，纵坐标的25、75分位后面添加问号，问号内容支持自定义，问号内容默认&#10;refactor(levelFourSurgeryMatrix): 临床工作量分析-入院率异常探查 添加 25、75分位后面添加问号提示&#10;&#10;- 在主矩阵组件中增加了四个新的提示属性传递" />
     <MESSAGE value="v125:feat/refactor:需求2132-院端-临床工作量分析：门诊异常探查、出院异常探查、手术（含介入）异常探查、四级手术异常探查、日间手术异常探查、微创手术异常探查、入院率异常探查；院端-收支分析：收入异常探查、盈余异常探查、药品收入占比异常探查、材料收入占比异常探查、药耗收入占比异常探查；院端-人力资源分析：医生权重异常探查；院端-病组分析（DRG支付）：成本异常探查；院端-异常探查：异常探查常用、异常探查汇总、异常探查自定义；横坐标的25、75分位后面添加问号，纵坐标的25、75分位后面添加问号，问号内容支持自定义，问号内容默认&#10;fix(tooltips): 修复异常检测分位数提示图标的显示逻辑&#10;&#10;- 添加了minX和minY参数用于控制提示图标的显示条件&#10;- 重构了分位数坐标的获取逻辑，避免直接访问数组索引&#10;- 实现了基于最小值判断的提示图标显示条件&#10;- 更新了x轴和y轴分位线提示图标的坐标引用&#10;- 修复了y轴分位线符号偏移量的计算方式" />
@@ -3126,7 +3124,9 @@
     <MESSAGE value="v125:feat/refactor:需求2132-院端-临床工作量分析：门诊异常探查、出院异常探查、手术（含介入）异常探查、四级手术异常探查、日间手术异常探查、微创手术异常探查、入院率异常探查；院端-收支分析：收入异常探查、盈余异常探查、药品收入占比异常探查、材料收入占比异常探查、药耗收入占比异常探查；院端-人力资源分析：医生权重异常探查；院端-病组分析（DRG支付）：成本异常探查；院端-异常探查：异常探查常用、异常探查汇总、异常探查自定义；横坐标的25、75分位后面添加问号，纵坐标的25、75分位后面添加问号，问号内容支持自定义，问号内容默认&#10;fix(tooltips): 简化分位线提示图标显示逻辑&#10;&#10;- 移除判断分位线坐标是否为最小值0的条件&#10;- 仅根据是否存在提示文本决定是否显示图标&#10;- 优化代码可读性和维护性&#10;- 保持原有功能一致，防止误判不显示提示" />
     <MESSAGE value="v126:feat/refactor: 需求1943-院端-重点设备效益分析-总览、院端-重点设备效益分析-诊断类设备分析、院端-重点设备效益分析-治疗类设备分析、科室端-重点设备效益分析-下所有菜单-支持周、日维度选择；选择周、日维度时，原工作量、稼动率相关表格和图表内容不变；原收入、投资回报率相关表格和图表，因为成本最小只能到月，直接隐藏或只显示收入相关元素；&#10;feat(equipmentBenefitAnalysis): 添加周度日度隐藏功能&#10;&#10;- 在returnRateAbnormal组件中添加getCurrentFreqCodeIsWeekOrDay计算属性&#10;- 使用v-if指令控制组件在周度和日度时不显示&#10;- 导入vuex的mapGetters辅助函数&#10;- 更新组件样式以适应新的条件渲染逻辑" />
     <MESSAGE value="v126:feat/refactor: 需求1943-院端-重点设备效益分析-总览、院端-重点设备效益分析-诊断类设备分析、院端-重点设备效益分析-治疗类设备分析、科室端-重点设备效益分析-下所有菜单-支持周、日维度选择；选择周、日维度时，原工作量、稼动率相关表格和图表内容不变；原收入、投资回报率相关表格和图表，因为成本最小只能到月，直接隐藏或只显示收入相关元素；&#10;feat(equipmentBenefitAnalysis): 添加周度日度隐藏功能&#10;&#10;- 在returnRateAbnormal组件中添加getCurrentFreqCodeIsWeekOrDay计算属性&#10;- 使用v-if指令控制组件在周度和日度时不显示&#10;- 导入vuex的mapGetters辅助函数" />
-    <option name="LAST_COMMIT_MESSAGE" value="v126:feat/refactor: 需求1943-院端-重点设备效益分析-总览、院端-重点设备效益分析-诊断类设备分析、院端-重点设备效益分析-治疗类设备分析、科室端-重点设备效益分析-下所有菜单-支持周、日维度选择；选择周、日维度时，原工作量、稼动率相关表格和图表内容不变；原收入、投资回报率相关表格和图表，因为成本最小只能到月，直接隐藏或只显示收入相关元素；&#10;feat(equipmentBenefitAnalysis): 添加周度日度隐藏功能&#10;&#10;- 在returnRateAbnormal组件中添加getCurrentFreqCodeIsWeekOrDay计算属性&#10;- 使用v-if指令控制组件在周度和日度时不显示&#10;- 导入vuex的mapGetters辅助函数" />
+    <MESSAGE value="更新配置" />
+    <MESSAGE value="v126:feat/refactor: 需求1943-院端-重点设备效益分析-总览、院端-重点设备效益分析-诊断类设备分析、院端-重点设备效益分析-治疗类设备分析、科室端-重点设备效益分析-下所有菜单-支持周、日维度选择；选择周、日维度时，原工作量、稼动率相关表格和图表内容不变；原收入、投资回报率相关表格和图表，因为成本最小只能到月，直接隐藏或只显示收入相关元素；&#10;feat(equipment): 设备效益分析表添加周度日度隐藏功能&#10;&#10;- 在设备效益分析表组件中添加周度、日度时隐藏逻辑&#10;- 引入 PlModulePanel 组件替代原有的 doms-con-h480 容器&#10;- 添加 getCurrentFreqCodeIsWeekOrDay 计算属性用于频率判断&#10;- 修改组件结构，在非周度日度时才显示表格&#10;- 更新组件注册，添加 PlModulePanel 到 components 中&#10;- 添加指标相关参数和模块类型配置&#10;- 新增 getRequestParams 方法统一管理请求参数&#10;- 修改数据获取方法调用，使用新的请求参数结构" />
+    <option name="LAST_COMMIT_MESSAGE" value="v126:feat/refactor: 需求1943-院端-重点设备效益分析-总览、院端-重点设备效益分析-诊断类设备分析、院端-重点设备效益分析-治疗类设备分析、科室端-重点设备效益分析-下所有菜单-支持周、日维度选择；选择周、日维度时，原工作量、稼动率相关表格和图表内容不变；原收入、投资回报率相关表格和图表，因为成本最小只能到月，直接隐藏或只显示收入相关元素；&#10;feat(equipment): 设备效益分析表添加周度日度隐藏功能&#10;&#10;- 在设备效益分析表组件中添加周度、日度时隐藏逻辑&#10;- 引入 PlModulePanel 组件替代原有的 doms-con-h480 容器&#10;- 添加 getCurrentFreqCodeIsWeekOrDay 计算属性用于频率判断&#10;- 修改组件结构，在非周度日度时才显示表格&#10;- 更新组件注册，添加 PlModulePanel 到 components 中&#10;- 添加指标相关参数和模块类型配置&#10;- 新增 getRequestParams 方法统一管理请求参数&#10;- 修改数据获取方法调用，使用新的请求参数结构" />
   </component>
   <component name="VueSettings">
     <option name="innerServiceType" value="TS_SERVICE" />
