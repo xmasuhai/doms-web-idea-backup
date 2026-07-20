@@ -44,19 +44,8 @@
     <option name="selectedModelId" value="auto" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a32d6ec8-0d74-4a1b-8cad-0ab91948ca3e" name="Changes" comment="v126:feat/refactor: 需求1943-院端-重点设备效益分析-总览、院端-重点设备效益分析-诊断类设备分析、院端-重点设备效益分析-治疗类设备分析、科室端-重点设备效益分析-下所有菜单-支持周、日维度选择；选择周、日维度时，原工作量、稼动率相关表格和图表内容不变；原收入、投资回报率相关表格和图表，因为成本最小只能到月，直接隐藏或只显示收入相关元素；&#10;feat(equipmentBenefitAnalysis): 添加周度日度隐藏功能&#10;&#10;- 在returnRateAbnormal组件中添加getCurrentFreqCodeIsWeekOrDay计算属性&#10;- 使用v-if指令控制组件在周度和日度时不显示&#10;- 导入vuex的mapGetters辅助函数&#10;- 更新组件样式以适应新的条件渲染逻辑">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/MarsCodeWorkspaceAppSettings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/MarsCodeWorkspaceAppSettings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/aws.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/aws.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/bookmarks.json" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/bookmarks.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/doms_web.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/doms_web.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/externalDependencies.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/externalDependencies.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="a32d6ec8-0d74-4a1b-8cad-0ab91948ca3e" name="Changes" comment="v126:feat/refactor: 需求1943-院端-重点设备效益分析-总览、院端-重点设备效益分析-诊断类设备分析、院端-重点设备效益分析-治疗类设备分析、科室端-重点设备效益分析-下所有菜单-支持周、日维度选择；选择周、日维度时，原工作量、稼动率相关表格和图表内容不变；原收入、投资回报率相关表格和图表，因为成本最小只能到月，直接隐藏或只显示收入相关元素；&#10;feat(equipmentBenefitAnalysis): 添加周度日度隐藏功能&#10;&#10;- 在returnRateAbnormal组件中添加getCurrentFreqCodeIsWeekOrDay计算属性&#10;- 使用v-if指令控制组件在周度和日度时不显示&#10;- 导入vuex的mapGetters辅助函数">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/equipmentBenefitAnalysis/components/returnRateAbnormal.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/equipmentBenefitAnalysis/components/returnRateAbnormal.vue" afterDir="false" />
     </list>
     <list id="bd8e474f-42c8-444f-9f2b-07be811ba86b" name="ignore-on-commit" comment="ignore-on-commit" />
     <option name="SHOW_DIALOG" value="false" />
@@ -509,9 +498,9 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="npm.本地运行项目" />
       <item itemvalue="npm.build" />
       <item itemvalue="npm.testing" />
-      <item itemvalue="npm.本地运行项目" />
     </list>
   </component>
   <component name="SharedIndexes">
@@ -2697,15 +2686,7 @@
       <workItem from="1784360736178" duration="894000" />
       <workItem from="1784508731742" duration="3453000" />
       <workItem from="1784512511363" duration="767000" />
-      <workItem from="1784513342945" duration="323000" />
-    </task>
-    <task id="LOCAL-04418" summary="v125:fix/refactor: 科室端-科室医疗盈余分析表-下钻页-收入细项前十-表格组件&#10;fix(income): 修复收入细项前十表格显示逻辑&#10;&#10;- 修改表格显示条件判断，使用新的计算属性 getIfShowIncomeDetailItemTop10Table&#10;- 添加 getIfBjDt 状态映射，支持病区科室判断&#10;- 修复tab按钮值为空时不请求表格数据的问题，现在会默认请求&quot;病人所属科室&quot;数据&#10;- 更新文件路径格式，移除Windows路径分隔符&#10;- 优化代码注释，明确表格显示逻辑变更">
-      <option name="closed" value="true" />
-      <created>1784020270850</created>
-      <option name="number" value="04418" />
-      <option name="presentableId" value="LOCAL-04418" />
-      <option name="project" value="LOCAL" />
-      <updated>1784020270850</updated>
+      <workItem from="1784513342945" duration="520000" />
     </task>
     <task id="LOCAL-04419" summary="v125:feat/refactor:需求2477-院端-门诊运营专项-门诊运营目标驾驶舱页面中的‘门诊患者分布地图’换成山东省菏泽市的地图&#10;添加菏泽地svg文件">
       <option name="closed" value="true" />
@@ -3091,7 +3072,15 @@
       <option name="project" value="LOCAL" />
       <updated>1784513091874</updated>
     </task>
-    <option name="localTasksCounter" value="4467" />
+    <task id="LOCAL-04467" summary="v126:feat/refactor: 需求1943-院端-重点设备效益分析-总览、院端-重点设备效益分析-诊断类设备分析、院端-重点设备效益分析-治疗类设备分析、科室端-重点设备效益分析-下所有菜单-支持周、日维度选择；选择周、日维度时，原工作量、稼动率相关表格和图表内容不变；原收入、投资回报率相关表格和图表，因为成本最小只能到月，直接隐藏或只显示收入相关元素；&#10;feat(equipmentBenefitAnalysis): 添加周度日度隐藏功能&#10;&#10;- 在returnRateAbnormal组件中添加getCurrentFreqCodeIsWeekOrDay计算属性&#10;- 使用v-if指令控制组件在周度和日度时不显示&#10;- 导入vuex的mapGetters辅助函数">
+      <option name="closed" value="true" />
+      <created>1784513884936</created>
+      <option name="number" value="04467" />
+      <option name="presentableId" value="LOCAL-04467" />
+      <option name="project" value="LOCAL" />
+      <updated>1784513884937</updated>
+    </task>
+    <option name="localTasksCounter" value="4468" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -3112,7 +3101,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="MARK_IGNORED_AS_EXCLUDED" value="true" />
-    <MESSAGE value="v125:feat/refactor:需求2132-院端-临床工作量分析：门诊异常探查、出院异常探查、手术（含介入）异常探查、四级手术异常探查、日间手术异常探查、微创手术异常探查、入院率异常探查；院端-收支分析：收入异常探查、盈余异常探查、药品收入占比异常探查、材料收入占比异常探查、药耗收入占比异常探查；院端-人力资源分析：医生权重异常探查；院端-病组分析（DRG支付）：成本异常探查；院端-异常探查：异常探查常用、异常探查汇总、异常探查自定义；横坐标的25、75分位后面添加问号，纵坐标的25、75分位后面添加问号，问号内容支持自定义，问号内容默认&#10;refactor(levelFourSurgeryMatrix): 临床工作量分析 /四级手术异常探查 添加 25、75分位后面添加问号提示&#10;&#10;- 移除了注释掉的冗余代码，简化了模板结构&#10;- 在主矩阵组件中增加了四个新的量化提示属性传递" />
     <MESSAGE value="v125:feat/refactor:需求2132-院端-临床工作量分析：门诊异常探查、出院异常探查、手术（含介入）异常探查、四级手术异常探查、日间手术异常探查、微创手术异常探查、入院率异常探查；院端-收支分析：收入异常探查、盈余异常探查、药品收入占比异常探查、材料收入占比异常探查、药耗收入占比异常探查；院端-人力资源分析：医生权重异常探查；院端-病组分析（DRG支付）：成本异常探查；院端-异常探查：异常探查常用、异常探查汇总、异常探查自定义；横坐标的25、75分位后面添加问号，纵坐标的25、75分位后面添加问号，问号内容支持自定义，问号内容默认&#10;refactor(levelFourSurgeryMatrix): 临床工作量分析 /日间手术异常探查 添加 25、75分位后面添加问号提示&#10;&#10;- 移除了注释掉的冗余代码，简化了模板结构&#10;- 在主矩阵组件中增加了四个新的量化提示属性传递" />
     <MESSAGE value="v125:feat/refactor:需求2132-院端-临床工作量分析：门诊异常探查、出院异常探查、手术（含介入）异常探查、四级手术异常探查、日间手术异常探查、微创手术异常探查、入院率异常探查；院端-收支分析：收入异常探查、盈余异常探查、药品收入占比异常探查、材料收入占比异常探查、药耗收入占比异常探查；院端-人力资源分析：医生权重异常探查；院端-病组分析（DRG支付）：成本异常探查；院端-异常探查：异常探查常用、异常探查汇总、异常探查自定义；横坐标的25、75分位后面添加问号，纵坐标的25、75分位后面添加问号，问号内容支持自定义，问号内容默认&#10;refactor(levelFourSurgeryMatrix): 临床工作量分析 /微创手术异常探查 添加 25、75分位后面添加问号提示&#10;&#10;- 移除了注释掉的冗余代码，简化了模板结构&#10;- 在主矩阵组件中增加了四个新的量化提示属性传递" />
     <MESSAGE value="v125:feat/refactor:需求2132-院端-临床工作量分析：门诊异常探查、出院异常探查、手术（含介入）异常探查、四级手术异常探查、日间手术异常探查、微创手术异常探查、入院率异常探查；院端-收支分析：收入异常探查、盈余异常探查、药品收入占比异常探查、材料收入占比异常探查、药耗收入占比异常探查；院端-人力资源分析：医生权重异常探查；院端-病组分析（DRG支付）：成本异常探查；院端-异常探查：异常探查常用、异常探查汇总、异常探查自定义；横坐标的25、75分位后面添加问号，纵坐标的25、75分位后面添加问号，问号内容支持自定义，问号内容默认&#10;refactor(tooltips): 优化异常检测标记点提示列表的y轴偏移计算&#10;&#10;- 添加genSymbolOffsetYAxis函数用于动态计算y轴偏移量&#10;- 将固定的symbolOffset值替换为基于y轴值的动态偏移计算&#10;- 更新25分位线和75分位线的symbolOffset配置以使用动态计算函数" />
@@ -3137,7 +3125,8 @@
     <MESSAGE value="v125:feat/refactor:需求2132-院端-临床工作量分析：门诊异常探查、出院异常探查、手术（含介入）异常探查、四级手术异常探查、日间手术异常探查、微创手术异常探查、入院率异常探查；院端-收支分析：收入异常探查、盈余异常探查、药品收入占比异常探查、材料收入占比异常探查、药耗收入占比异常探查；院端-人力资源分析：医生权重异常探查；院端-病组分析（DRG支付）：成本异常探查；院端-异常探查：异常探查常用、异常探查汇总、异常探查自定义；横坐标的25、75分位后面添加问号，纵坐标的25、75分位后面添加问号，问号内容支持自定义，问号内容默认&#10;feat(tooltips): 添加分位数标记点位置配置参数&#10;&#10;- 添加 quantileX25and75yPosition 和 quantileY25and75xPosition 配置参数&#10;- 将硬编码的位置值替换为可配置的参数&#10;- 统一 x 轴和 y 轴分位数标记点的位置配置" />
     <MESSAGE value="v125:feat/refactor:需求2132-院端-临床工作量分析：门诊异常探查、出院异常探查、手术（含介入）异常探查、四级手术异常探查、日间手术异常探查、微创手术异常探查、入院率异常探查；院端-收支分析：收入异常探查、盈余异常探查、药品收入占比异常探查、材料收入占比异常探查、药耗收入占比异常探查；院端-人力资源分析：医生权重异常探查；院端-病组分析（DRG支付）：成本异常探查；院端-异常探查：异常探查常用、异常探查汇总、异常探查自定义；横坐标的25、75分位后面添加问号，纵坐标的25、75分位后面添加问号，问号内容支持自定义，问号内容默认&#10;fix(tooltips): 简化分位线提示图标显示逻辑&#10;&#10;- 移除判断分位线坐标是否为最小值0的条件&#10;- 仅根据是否存在提示文本决定是否显示图标&#10;- 优化代码可读性和维护性&#10;- 保持原有功能一致，防止误判不显示提示" />
     <MESSAGE value="v126:feat/refactor: 需求1943-院端-重点设备效益分析-总览、院端-重点设备效益分析-诊断类设备分析、院端-重点设备效益分析-治疗类设备分析、科室端-重点设备效益分析-下所有菜单-支持周、日维度选择；选择周、日维度时，原工作量、稼动率相关表格和图表内容不变；原收入、投资回报率相关表格和图表，因为成本最小只能到月，直接隐藏或只显示收入相关元素；&#10;feat(equipmentBenefitAnalysis): 添加周度日度隐藏功能&#10;&#10;- 在returnRateAbnormal组件中添加getCurrentFreqCodeIsWeekOrDay计算属性&#10;- 使用v-if指令控制组件在周度和日度时不显示&#10;- 导入vuex的mapGetters辅助函数&#10;- 更新组件样式以适应新的条件渲染逻辑" />
-    <option name="LAST_COMMIT_MESSAGE" value="v126:feat/refactor: 需求1943-院端-重点设备效益分析-总览、院端-重点设备效益分析-诊断类设备分析、院端-重点设备效益分析-治疗类设备分析、科室端-重点设备效益分析-下所有菜单-支持周、日维度选择；选择周、日维度时，原工作量、稼动率相关表格和图表内容不变；原收入、投资回报率相关表格和图表，因为成本最小只能到月，直接隐藏或只显示收入相关元素；&#10;feat(equipmentBenefitAnalysis): 添加周度日度隐藏功能&#10;&#10;- 在returnRateAbnormal组件中添加getCurrentFreqCodeIsWeekOrDay计算属性&#10;- 使用v-if指令控制组件在周度和日度时不显示&#10;- 导入vuex的mapGetters辅助函数&#10;- 更新组件样式以适应新的条件渲染逻辑" />
+    <MESSAGE value="v126:feat/refactor: 需求1943-院端-重点设备效益分析-总览、院端-重点设备效益分析-诊断类设备分析、院端-重点设备效益分析-治疗类设备分析、科室端-重点设备效益分析-下所有菜单-支持周、日维度选择；选择周、日维度时，原工作量、稼动率相关表格和图表内容不变；原收入、投资回报率相关表格和图表，因为成本最小只能到月，直接隐藏或只显示收入相关元素；&#10;feat(equipmentBenefitAnalysis): 添加周度日度隐藏功能&#10;&#10;- 在returnRateAbnormal组件中添加getCurrentFreqCodeIsWeekOrDay计算属性&#10;- 使用v-if指令控制组件在周度和日度时不显示&#10;- 导入vuex的mapGetters辅助函数" />
+    <option name="LAST_COMMIT_MESSAGE" value="v126:feat/refactor: 需求1943-院端-重点设备效益分析-总览、院端-重点设备效益分析-诊断类设备分析、院端-重点设备效益分析-治疗类设备分析、科室端-重点设备效益分析-下所有菜单-支持周、日维度选择；选择周、日维度时，原工作量、稼动率相关表格和图表内容不变；原收入、投资回报率相关表格和图表，因为成本最小只能到月，直接隐藏或只显示收入相关元素；&#10;feat(equipmentBenefitAnalysis): 添加周度日度隐藏功能&#10;&#10;- 在returnRateAbnormal组件中添加getCurrentFreqCodeIsWeekOrDay计算属性&#10;- 使用v-if指令控制组件在周度和日度时不显示&#10;- 导入vuex的mapGetters辅助函数" />
   </component>
   <component name="VueSettings">
     <option name="innerServiceType" value="TS_SERVICE" />
