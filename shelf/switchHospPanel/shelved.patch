@@ -1,0 +1,48 @@
+Index: src/views/layout/switchHospPanel.vue
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><!--\n * @Author       : gangjinzhang\n * @Email        : 729777679@qq.com\n * @Date         : 2024-03-21 16:28:33\n * @LastEditTime : 2025-11-26 14:23:27\n * @Description  : 切换医院插件\n-->\n<template>\n  <div class=\"switchHospPanel\" v-if=\"hospConfig.hospCode=='-132'\">\n    <pl-select :class=\"[type==2?'switch-s-hosp':'']\" :label=\"labelStr\" v-model=\"currtCode\" :options=\"hospCodes\" @change=\"switchChange\"></pl-select>\n  </div>\n</template>\n\n<script>\nimport { mapMutations, mapState } from 'vuex';\nimport PlSelect from '../../component/tool/PlSelect.vue';\nimport {HospCodeSession} from \"@/directives/hospitalConfig.js\";\nimport {configObj} from '@/router/helpers/routerConfig.js';\nimport { changePort } from '@/util';\nimport { useStateConfig } from '@/store/modules/constant';\nimport Cookies from 'js-cookie'\nexport default {\n  name: \"switchHospPanel\",\n  components: {PlSelect},\n  props: {\n    type:{\n      type:[String,Number],\n      default:1,\n    }\n  },\n  data() {\n    return {\n      currtCode:\"-132\",\n      hospKey:\"palline_hosp_code_session\",\n      labelStr:\"切换院区\",\n    };\n  },\n  watch: {\n    type:{\n      handler(val){\n        if(val==1){\n          this.labelStr=\"切换院区\"\n        }else{\n          this.labelStr=\" \"\n        }\n      },immediate:true\n    }\n  },\n  computed: {\n    ...mapState(\"constant\",[\"hospCodes\",\"hospConfig\"]),\n  },\n  methods: {\n    ...mapMutations('login', ['setLoginStoreAttrs',],),\n    ...mapMutations(\"constant\",[\"setCurrtHospCode\"]),\n    ...mapMutations('disease', ['resetDiseaseStoreAttrs',]),\n    /** 更新 并持久化存储 权限管理 /菜单配置： {'授权标识': '路径url',} */\n    updateAuthoritySignRouterPathConfig(authoritySignRouterPathConfig) {\n      this.setLoginStoreAttrs(\n        [\n          'authoritySignRouterPathConfig',\n          authoritySignRouterPathConfig,\n        ])\n    },\n\n    switchChange(val){\n      // this.setCurrtHospCode(val);\n      // sessionStorage.setItem(HospCodeSession,this.currtCode); \n      sessionStorage.setItem(\"pl_searchEngineConfig\",\"\")\n      // 重置病种状态\n      this.resetDiseaseStoreAttrs();\n      // location.reload()\n      Cookies.set(useStateConfig.isUpdataUse,1)\n      let port = this.hospCodes.find(item=>item.value==val).port;\n      changePort(port);\n      // 更新 并持久化存储 权限管理 /菜单配置： {'授权标识': '路径url',}\n      this.updateAuthoritySignRouterPathConfig(configObj);\n\n    },\n\n  },\n  created() {\n    // let _dcode = sessionStorage.getItem(HospCodeSession);\n    // if(!_dcode){\n    //   sessionStorage.setItem(HospCodeSession,this.currtCode);\n    // }else{\n    //   this.currtCode = _dcode;\n    // }\n    sessionStorage.setItem(HospCodeSession,this.currtCode);\n  },\n  mounted() {\n  }\n};\n</script>\n<style lang=\"scss\" scoped>\n.switchHospPanel{\n  .switch-s-hosp{\n    ::v-deep .el-input{\n      .el-input__inner{\n        border: none;\n        // border-bottom: 1px solid #BBC2CD;\n        border-radius: 0;\n        padding: 0 4px;\n        width: 110px;\n        font-size: 12px;\n        // height: 30px;\n        // line-height: 30px;\n      }\n      .el-input__suffix{\n        right: 0px;\n        .el-select__caret{\n          width: 10px;\n        }\n      }\n    }\n\n  }\n}\n</style>\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/views/layout/switchHospPanel.vue b/src/views/layout/switchHospPanel.vue
+--- a/src/views/layout/switchHospPanel.vue	(revision 80bb7ceee24a50007266cd3cc6531e683f21d9d8)
++++ b/src/views/layout/switchHospPanel.vue	(date 1764226665287)
+@@ -64,14 +64,14 @@
+ 
+     switchChange(val){
+       // this.setCurrtHospCode(val);
+-      // sessionStorage.setItem(HospCodeSession,this.currtCode); 
++      sessionStorage.setItem(HospCodeSession,this.currtCode);
+       sessionStorage.setItem("pl_searchEngineConfig","")
+       // 重置病种状态
+       this.resetDiseaseStoreAttrs();
+-      // location.reload()
++      location.reload()
+       Cookies.set(useStateConfig.isUpdataUse,1)
+-      let port = this.hospCodes.find(item=>item.value==val).port;
+-      changePort(port);
++      // let port = this.hospCodes.find(item=>item.value==val).port;
++      // changePort(port);
+       // 更新 并持久化存储 权限管理 /菜单配置： {'授权标识': '路径url',}
+       this.updateAuthoritySignRouterPathConfig(configObj);
+ 
+@@ -79,12 +79,12 @@
+ 
+   },
+   created() {
+-    // let _dcode = sessionStorage.getItem(HospCodeSession);
+-    // if(!_dcode){
+-    //   sessionStorage.setItem(HospCodeSession,this.currtCode);
+-    // }else{
+-    //   this.currtCode = _dcode;
+-    // }
++    let _dcode = sessionStorage.getItem(HospCodeSession);
++    if(!_dcode){
++      sessionStorage.setItem(HospCodeSession,this.currtCode);
++    }else{
++      this.currtCode = _dcode;
++    }
+     sessionStorage.setItem(HospCodeSession,this.currtCode);
+   },
+   mounted() {

@@ -40,12 +40,25 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
+  <component name="BackgroundAgentGlobalSettings">
+    <option name="selectedModelId" value="auto" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="a32d6ec8-0d74-4a1b-8cad-0ab91948ca3e" name="Changes" comment="v92-feat:DOM-18614-需求752-院端-收支余-成本菜单，时间下拉框，隐藏周、日的选择，因为成本最小到月&#10;调整费用概览时间筛选器配置，移除了时间筛选器中多余的 'w' 和 'd'选项">
-      <change beforePath="$PROJECT_DIR$/src/component/tool/DeptAndTimeHeaderFilter.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/tool/DeptAndTimeHeaderFilter.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/tool/TimeHeaderFilter.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/tool/TimeHeaderFilter.vue" afterDir="false" />
+    <list default="true" id="a32d6ec8-0d74-4a1b-8cad-0ab91948ca3e" name="Changes" comment="v126:feat/refactor: 需求1943-院端-重点设备效益分析-总览、院端-重点设备效益分析-诊断类设备分析、院端-重点设备效益分析-治疗类设备分析、科室端-重点设备效益分析-下所有菜单-支持周、日维度选择；选择周、日维度时，原工作量、稼动率相关表格和图表内容不变；原收入、投资回报率相关表格和图表，因为成本最小只能到月，直接隐藏或只显示收入相关元素；&#10;feat(equipmentBenefitAnalysis): 添加周度日度隐藏功能&#10;&#10;- 在returnRateAbnormal组件中添加getCurrentFreqCodeIsWeekOrDay计算属性&#10;- 使用v-if指令控制组件在周度和日度时不显示&#10;- 导入vuex的mapGetters辅助函数&#10;- 更新组件样式以适应新的条件渲染逻辑">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/MarsCodeWorkspaceAppSettings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/MarsCodeWorkspaceAppSettings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/aws.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/aws.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/bookmarks.json" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/bookmarks.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/doms_web.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/doms_web.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/externalDependencies.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/externalDependencies.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/equipmentBenefitAnalysis/components/returnRateAbnormal.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/equipmentBenefitAnalysis/components/returnRateAbnormal.vue" afterDir="false" />
     </list>
-    <list id="bd8e474f-42c8-444f-9f2b-07be811ba86b" name="ignore-on-commit" comment="" />
+    <list id="bd8e474f-42c8-444f-9f2b-07be811ba86b" name="ignore-on-commit" comment="ignore-on-commit" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -55,13 +68,50 @@
     <option name="activeAccountId" value="VXNlcjoxMDM5MjY=" />
   </component>
   <component name="CommittedChangesCache">
-    <option name="initialCount" value="888" />
+    <option name="initialCount" value="88888" />
+  </component>
+  <component name="CopilotChats">
+    <option name="panelChat">
+      <chat>
+        <option name="activeSessionId" value="c1f5a24d-f692-4ca1-ad63-8ea6fb069812" />
+        <option name="sessions">
+          <session>
+            <option name="chatType" value="PANEL" />
+            <option name="id" value="c1f5a24d-f692-4ca1-ad63-8ea6fb069812" />
+            <option name="modeId" value="Agent" />
+            <option name="modelType" value="builtin_family" />
+            <option name="modelValue" value="auto" />
+            <option name="targetType" value="LOCAL" />
+          </session>
+        </option>
+        <option name="type" value="PANEL" />
+      </chat>
+    </option>
+  </component>
+  <component name="CopilotPersistence">
+    <persistenceIdMap>
+      <entry key="_D:/project/doms_web" value="2U0ANw89ckJYfmBj6fZXiqM3IHU" />
+    </persistenceIdMap>
+  </component>
+  <component name="CopilotUserSelectedChatMode">
+    <option name="chatModeId" value="file:///c%3A/snapshot/copilot-intellij/dist/assets/agents/Plan.agent.md" />
+  </component>
+  <component name="CopilotUserSelectedModel">
+    <selectedModels>
+      <entry key="inline" value="GPT-5 mini" />
+      <entry key="edit-panel" value="GPT-5 mini" />
+      <entry key="chat-panel" value="GPT-5 mini" />
+      <entry key="agent-panel" value="GPT-5 mini" />
+    </selectedModels>
   </component>
   <component name="CopyThePathConfig">
     <option name="pathPrefix" value="/" />
   </component>
   <component name="DarkyenusTimeTracker">
     <option name="totalTimeSeconds" value="2031945" />
+  </component>
+  <component name="EmbeddingIndexingInfo">
+    <option name="cachedIndexableFilesCount" value="3794" />
   </component>
   <component name="FileSync">
     <option name="targetMappings">
@@ -91,6 +141,7 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="SYNC" />
   </component>
   <component name="GitLabServerManager">
     <selected>-1</selected>
@@ -107,7 +158,11 @@
                 <list>
                   <RecentBranch>
                     <option name="branchName" value="master" />
-                    <option name="lastUsedInstant" value="1752470825" />
+                    <option name="lastUsedInstant" value="1761908183" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="doms_web_czsy" />
+                    <option name="lastUsedInstant" value="1761907989" />
                   </RecentBranch>
                 </list>
               </option>
@@ -131,15 +186,18 @@
     <setting file="file://$PROJECT_DIR$/src/component/cost-volume-profit/params-set/CostVolumeProfitParamsSetHeader.vue" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/component/cost-volume-profit/params-set/CostVolumeProfitParamsSetInputForms.vue" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/component/cost-volume-profit/params-set/CostVolumeProfitTable.vue" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/component/diff/hosp-dt/department/BIEAnalysis/income-overview/DeptEachFeeIncomeChangeLinkage.vue" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/component/diseaseAnalysis/cost-volume-profit/DiseaseAnalysisCostVolumeProfit.vue" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/component/hospital/medical-technology-dept-operation-analysis/radiographic-image-operation-analysis/RadiographicImageCommonComponent.vue" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/component/hospital/medical-technology-dept-operation-analysis/radiographic-image-operation-analysis/api/radiographicImageApi.js" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/component/hospital/medical-technology-dept-operation-analysis/radiographic-image-operation-analysis/components/ApparatusAvgDailyInspectionWorkload.vue" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/component/incomeExpenses/medicalIncome/FeesIncomeChangeMainItem.vue" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/component/table/PlTable.vue" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/component/table/PlTableDialog.vue" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/component/tool/PlChart.vue" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/component/tool/PlGridTable.vue" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/const/components/disease-types-analysis/hospital/disease-analysis/indicators-table/genIndicatorsTableLastRouterNodeHash.js" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/const/hospCodes.js" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/router/helpers/routerConfig.js" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/store/modules/constant.js" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/store/modules/costVolumeProfitStore.js" root0="FORCE_HIGHLIGHTING" />
@@ -178,6 +236,42 @@
     <setting file="file://$PROJECT_DIR$/src/views/operationDisease/diseaseMonitoringAnalysis/tables/costAnalysisTableNew.vue" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/views/operationDisease/index_dip.vue" root0="FORCE_HIGHLIGHTING" />
   </component>
+  <component name="I18nToolkitSettings">
+    <option name="lastSearchQuery" value="InpatientSourceDistributionTable.vue" />
+  </component>
+  <component name="InstanceColorv3">
+    <option name="map">
+      <map>
+        <entry key="$PROJECT_DIR$/Writerside/常.tree">
+          <value>
+            <ColorState>
+              <option name="customOrder" value="1" />
+              <option name="first">
+                <RgbState>
+                  <option name="blue" value="60" />
+                  <option name="darkBlue" value="60" />
+                  <option name="darkGreen" value="68" />
+                  <option name="darkRed" value="206" />
+                  <option name="green" value="68" />
+                  <option name="red" value="206" />
+                </RgbState>
+              </option>
+              <option name="second">
+                <RgbState>
+                  <option name="blue" value="65" />
+                  <option name="darkBlue" value="65" />
+                  <option name="darkGreen" value="126" />
+                  <option name="darkRed" value="231" />
+                  <option name="green" value="126" />
+                  <option name="red" value="231" />
+                </RgbState>
+              </option>
+            </ColorState>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="Jenkins.Settings">
     <option name="username" value="xushuai" />
   </component>
@@ -195,8 +289,28 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="NamedScopeManager">
+    <scope name="GitScope" pattern="GitScopeFiles" />
+  </component>
   <component name="PackageJsonUpdateNotifier">
     <dismissed value="$PROJECT_DIR$/package.json" />
+  </component>
+  <component name="PersonalNotes">
+    <option name="notes">
+      <list>
+        <Note>
+          <option name="codeSnippet" value="data?.forEach((item)=&gt;{" />
+          <option name="content" value="遍历数据列表，添加科室属性" />
+          <option name="filePath" value="$PROJECT_DIR$/src/component/departmentSelectNew3.vue" />
+          <option name="header" value="常用科室-遍历" />
+          <option name="noteType" value="EXPLANATION" />
+        </Note>
+      </list>
+    </option>
   </component>
   <component name="ProblemsViewState">
     <option name="groupByToolId" value="true" />
@@ -208,109 +322,145 @@
   &quot;associatedIndex&quot;: 3
 }</component>
   <component name="ProjectId" id="2U0ANw89ckJYfmBj6fZXiqM3IHU" />
+  <component name="ProjectSessionTemplates">
+    <option name="inlineTemplate">
+      <template>
+        <option name="modeId" value="InlineAgent" />
+        <option name="model">
+          <model>
+            <option name="modelType" value="builtin_id" />
+            <option name="modelValue" value="gpt-5-mini" />
+          </model>
+        </option>
+        <option name="targetType" value="LOCAL" />
+      </template>
+    </option>
+    <option name="panelTemplate">
+      <template>
+        <option name="modeId" value="Ask" />
+        <option name="model">
+          <model>
+            <option name="modelType" value="builtin_id" />
+            <option name="modelValue" value="auto" />
+          </model>
+        </option>
+        <option name="targetType" value="BACKGROUND" />
+        <option name="worktreeMode" value="WORKSPACE" />
+      </template>
+    </option>
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;2a1a7435_parent_location_hash&quot;: &quot;2a1a7435&quot;,
-    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
-    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder0&quot;: &quot;0&quot;,
-    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder1&quot;: &quot;1&quot;,
-    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder2&quot;: &quot;2&quot;,
-    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder3&quot;: &quot;3&quot;,
-    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder4&quot;: &quot;4&quot;,
-    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder5&quot;: &quot;5&quot;,
-    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth0&quot;: &quot;304&quot;,
-    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth1&quot;: &quot;305&quot;,
-    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth2&quot;: &quot;177&quot;,
-    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth3&quot;: &quot;58&quot;,
-    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth4&quot;: &quot;113&quot;,
-    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth5&quot;: &quot;864&quot;,
-    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder0&quot;: &quot;0&quot;,
-    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder1&quot;: &quot;1&quot;,
-    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder2&quot;: &quot;2&quot;,
-    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder3&quot;: &quot;3&quot;,
-    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder4&quot;: &quot;4&quot;,
-    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder5&quot;: &quot;5&quot;,
-    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth0&quot;: &quot;304&quot;,
-    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth1&quot;: &quot;304&quot;,
-    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth2&quot;: &quot;303&quot;,
-    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth3&quot;: &quot;303&quot;,
-    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth4&quot;: &quot;304&quot;,
-    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth5&quot;: &quot;303&quot;,
-    &quot;Node.js.useAllCheckColumn.js.executor&quot;: &quot;Debug&quot;,
-    &quot;Notification.DisplayName-DoNotAsk-JavaScript: Code Vision Performance&quot;: &quot;JavaScript: Code Vision 性能观察程序&quot;,
-    &quot;Notification.DoNotAsk-JavaScript: Code Vision Performance&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.CodyProjectSettingsMigration&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;SHELLCHECK.PATH&quot;: &quot;C:\\Users\\xushuai\\AppData\\Roaming\\JetBrains\\WebStorm2024.1\\plugins\\Shell Script\\shellcheck.exe&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;app.teamhub.selectedTeam&quot;: &quot;https://github.com/xmastan/department-management-web&quot;,
-    &quot;buildsPattern&quot;: &quot;&quot;,
-    &quot;com.codeium.enabled&quot;: &quot;true&quot;,
-    &quot;com.codeium.snoozedEndTime&quot;: &quot;0&quot;,
-    &quot;com.github.patou.gitmoji.display-icon&quot;: &quot;icon&quot;,
-    &quot;com.github.patou.gitmoji.text-after-unicode&quot;: &quot;&quot;,
-    &quot;com.google.cloudcode.ide_session_index&quot;: &quot;20240202_0001&quot;,
-    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
-    &quot;didalgo.chatgpt.ToolWindow.ACTIVE&quot;: &quot;GPT_4&quot;,
-    &quot;file.manager.left.side.uri&quot;: &quot;file:///C:/Users/xushuai/&quot;,
-    &quot;file.manager.right.side.uri&quot;: &quot;file:///C:/Users/xushuai/&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;14.21.3&quot;,
-    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;14.18.63&quot;,
-    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/project/doms_web/src/const/diff/hosp-bjdt/common&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;SCSS&quot;,
-    &quot;network.radicle.jetbrains.radiclejetbrainsplugin.config.path&quot;: &quot;&quot;,
-    &quot;network.radicle.jetbrains.radiclejetbrainsplugin.config.radSeedKey&quot;: &quot;http://localhost:8080&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.stylelint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
-    &quot;node.js.selected.package.stylelint&quot;: &quot;&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;npm.本地构建打包.executor&quot;: &quot;Run&quot;,
-    &quot;npm.本地运行项目.executor&quot;: &quot;Debug&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
-    &quot;settings.editor.splitter.proportion&quot;: &quot;0.26007006&quot;,
-    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;D:\\software\\JetBrains\\WebStorm 2024.3\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;,
-    &quot;typescript.add.unambiguous.imports.on.the.fly&quot;: &quot;true&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "2a1a7435_parent_location_hash": "2a1a7435",
+    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
+    "FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder0": "0",
+    "FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder1": "1",
+    "FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder2": "2",
+    "FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder3": "3",
+    "FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder4": "4",
+    "FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder5": "5",
+    "FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth0": "75",
+    "FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth1": "75",
+    "FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth2": "75",
+    "FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth3": "75",
+    "FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth4": "75",
+    "FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth5": "1406",
+    "FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder0": "0",
+    "FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder1": "1",
+    "FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder2": "2",
+    "FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder3": "3",
+    "FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder4": "4",
+    "FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder5": "5",
+    "FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth0": "298",
+    "FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth1": "298",
+    "FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth2": "296",
+    "FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth3": "296",
+    "FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth4": "297",
+    "FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth5": "296",
+    "Node.js.useAllCheckColumn.js.executor": "Debug",
+    "Notification.DisplayName-DoNotAsk-JavaScript: Code Vision Performance": "JavaScript: Code Vision 性能观察程序",
+    "Notification.DoNotAsk-JavaScript: Code Vision Performance": "true",
+    "RunOnceActivity.CodyProjectSettingsMigration": "true",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "SHELLCHECK.PATH": "C:\\Users\\xushuai\\AppData\\Roaming\\JetBrains\\WebStorm2024.1\\plugins\\Shell Script\\shellcheck.exe",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "app.teamhub.selectedTeam": "https://github.com/xmastan/department-management-web",
+    "buildsPattern": "",
+    "chainlesschain.chat.sessionIds": "",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "com.codeium.enabled": "true",
+    "com.codeium.snoozedEndTime": "0",
+    "com.github.patou.gitmoji.migration-offered": "true",
+    "com.google.cloudcode.ide_session_index": "20240202_0001",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "copilot.chat.legacySessionMetadata.migrated": "true",
+    "dart.analysis.tool.window.visible": "false",
+    "didalgo.chatgpt.ToolWindow.ACTIVE": "GPT_4",
+    "file.manager.left.side.uri": "file:///C:/Users/xushuai/",
+    "file.manager.right.side.uri": "file:///C:/Users/xushuai/",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "javascript.nodejs.core.library.configured.version": "18.20.8",
+    "javascript.nodejs.core.library.typings.version": "18.19.130",
+    "javascript.preferred.runtime.type.id": "node",
+    "junie.onboarding.icon.badge.shown": "true",
+    "last_opened_file_path": "D:/project/doms_web/src/assets/images",
+    "list.type.of.created.stylesheet": "SCSS",
+    "network.radicle.jetbrains.radiclejetbrainsplugin.config.path": "",
+    "network.radicle.jetbrains.radiclejetbrainsplugin.config.radSeedKey": "http://localhost:8080",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
+    "node.js.detected.package.stylelint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.standard": "",
+    "node.js.selected.package.stylelint": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_interpreter_path": "node",
+    "nodejs_package_manager_path": "npm",
+    "npm.testing.executor": "Debug",
+    "npm.本地构建打包.executor": "Run",
+    "npm.本地运行项目.executor": "Debug",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.splitter.proportion": "0.19736843",
+    "to.speed.mode.migration.done": "true",
+    "ts.external.directory.path": "D:\\software\\JetBrains\\WebStorm 2024.3\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
+    "typescript.add.unambiguous.imports.on.the.fly": "true",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;stardust.markdown.MarkdownSplitEditorSuppressor:keyList&quot;: [],
-    &quot;vue.recent.templates&quot;: [
-      &quot;Vue Options API Component&quot;
+  "keyToStringList": {
+    "stardust.markdown.MarkdownSplitEditorSuppressor:keyList": [],
+    "vue.recent.templates": [
+      "Vue Options API Component"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\project\doms_web\src\const\diff\hosp-bjdt\common" />
       <recent name="D:\project\doms_web\src\assets\images" />
-      <recent name="D:\project\doms_web\src\component\cost-volume-profit\common" />
-      <recent name="D:\project\doms_web\src\api\hospital\diseaseAnalysis" />
-      <recent name="D:\project\doms_web\src\component\diseaseAnalysis\hospital\disease-economy-analysis\surplus" />
+      <recent name="D:\project\doms_web\src\hooks\components\BIEAnalysis\overview\diseaseDetail" />
+      <recent name="D:\project\doms_web\src\component\workloadAnalysis\department\overview\dept-workload-analysis\outpatient-surgery-visits" />
+      <recent name="D:\project\doms_web\src\views\hospitalDataCockpit\shandongweifang" />
+      <recent name="D:\project\doms_web\src\api\diff\hosp-sdwf" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\project\doms_web\src\component\cost-volume-profit\prediction-dialog" />
-      <recent name="D:\project\doms_web\src\component\tool" />
-      <recent name="D:\project\doms_web\src\router\components\disease" />
-      <recent name="D:\project\doms_web\src\api\disease-group-disease-type-analysis\drg-common" />
-      <recent name="D:\project\doms_web\src\component\diseaseAnalysis\department\leave-hospital-analysis\rw-expense-consumption-index-analysis" />
+      <recent name="D:\project\doms_web\src\component\diff\hosp-sder\hospital\material-monitor\drg" />
+      <recent name="D:\project\doms_web\src\component\diseaseAnalysis\hospital\overview\adrg-ref-case-comparison-dept" />
+      <recent name="D:\project\doms_web\src\component\diseaseAnalysis\hospital\overview" />
+      <recent name="D:\project\doms_web\src\views\hospitalDataCockpit\shandongweifang\left" />
+      <recent name="D:\project\doms_web\src\views\hospitalDataCockpit\shandongweifang" />
     </key>
   </component>
   <component name="RunManager" selected="npm.本地运行项目">
@@ -332,6 +482,9 @@
       <node-interpreter value="project" />
       <package-manager value="npm" />
       <envs />
+      <EXTENSION ID="com.intellij.javascript.debugger.execution.StartBrowserRunConfigurationExtension">
+        <browser with-js-debugger="true" />
+      </EXTENSION>
       <method v="2" />
     </configuration>
     <configuration name="本地构建打包" type="js.build_tools.npm">
@@ -356,15 +509,20 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="npm.build" />
+      <item itemvalue="npm.testing" />
       <item itemvalue="npm.本地运行项目" />
     </list>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-3aa1da707db6-JavaScript-WS-252.26830.93" />
+        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-WS-262.8665.259" />
       </set>
     </attachedChunks>
+  </component>
+  <component name="ShelveChangesManager">
+    <option name="remove_strategy" value="true" />
   </component>
   <component name="SmartUpdateOptions">
     <option name="map">
@@ -1852,401 +2010,1088 @@
       <workItem from="1761197999046" duration="2726000" />
       <workItem from="1761200872888" duration="10424000" />
       <workItem from="1761267801228" duration="2081000" />
-      <workItem from="1761269944157" duration="71000" />
+      <workItem from="1761269944157" duration="9177000" />
+      <workItem from="1761279294244" duration="19185000" />
+      <workItem from="1761526579167" duration="773000" />
+      <workItem from="1761527424661" duration="6004000" />
+      <workItem from="1761534636787" duration="15977000" />
+      <workItem from="1761551722500" duration="8840000" />
+      <workItem from="1761612869563" duration="1515000" />
+      <workItem from="1761614466228" duration="7534000" />
+      <workItem from="1761622983667" duration="14808000" />
+      <workItem from="1761639598976" duration="75000" />
+      <workItem from="1761639726904" duration="6661000" />
+      <workItem from="1761699713064" duration="9574000" />
+      <workItem from="1761713854827" duration="1451000" />
+      <workItem from="1761715341432" duration="13303000" />
+      <workItem from="1761729455930" duration="3389000" />
+      <workItem from="1761786243553" duration="30992000" />
+      <workItem from="1761872153612" duration="354000" />
+      <workItem from="1761872551498" duration="3588000" />
+      <workItem from="1761882819756" duration="1500000" />
+      <workItem from="1761884682021" duration="599000" />
+      <workItem from="1761887796911" duration="184000" />
+      <workItem from="1761888038799" duration="67000" />
+      <workItem from="1761907382154" duration="1093000" />
+      <workItem from="1762142353146" duration="4569000" />
+      <workItem from="1762148441746" duration="2387000" />
+      <workItem from="1762154756012" duration="9730000" />
+      <workItem from="1762217755405" duration="10899000" />
+      <workItem from="1762228969230" duration="549000" />
+      <workItem from="1762229567100" duration="2091000" />
+      <workItem from="1762232616042" duration="343000" />
+      <workItem from="1762233046239" duration="921000" />
+      <workItem from="1762234101432" duration="14624000" />
+      <workItem from="1762304619724" duration="9651000" />
+      <workItem from="1762316628344" duration="11029000" />
+      <workItem from="1762328532748" duration="7537000" />
+      <workItem from="1762390975044" duration="13177000" />
+      <workItem from="1762405310442" duration="19376000" />
+      <workItem from="1762477549375" duration="114000" />
+      <workItem from="1762477707359" duration="4345000" />
+      <workItem from="1762482647141" duration="12782000" />
+      <workItem from="1762496740549" duration="13627000" />
+      <workItem from="1762736380647" duration="10768000" />
+      <workItem from="1762747287348" duration="23681000" />
+      <workItem from="1762822523793" duration="11738000" />
+      <workItem from="1762834437374" duration="9704000" />
+      <workItem from="1762845951501" duration="9176000" />
+      <workItem from="1763042888890" duration="236000" />
+      <workItem from="1763043193028" duration="582000" />
+      <workItem from="1763341493076" duration="970000" />
+      <workItem from="1763342533338" duration="26371000" />
+      <workItem from="1763427895687" duration="22497000" />
+      <workItem from="1763456144886" duration="4024000" />
+      <workItem from="1763460252527" duration="28000" />
+      <workItem from="1763515176207" duration="5637000" />
+      <workItem from="1763521245329" duration="25100000" />
+      <workItem from="1763600926777" duration="17937000" />
+      <workItem from="1763620786668" duration="19375000" />
+      <workItem from="1763687250995" duration="4132000" />
+      <workItem from="1763692233659" duration="29098000" />
+      <workItem from="1763779997384" duration="724000" />
+      <workItem from="1763780832300" duration="312000" />
+      <workItem from="1763781202875" duration="204000" />
+      <workItem from="1763781470281" duration="26000" />
+      <workItem from="1763945663592" duration="11250000" />
+      <workItem from="1763957105175" duration="996000" />
+      <workItem from="1763962014193" duration="15932000" />
+      <workItem from="1764032157723" duration="31355000" />
+      <workItem from="1764118526118" duration="614000" />
+      <workItem from="1764119160689" duration="23839000" />
+      <workItem from="1764144666169" duration="7174000" />
+      <workItem from="1764205498381" duration="34606000" />
+      <workItem from="1764291540310" duration="11591000" />
+      <workItem from="1764304098566" duration="3862000" />
+      <workItem from="1764308675045" duration="10833000" />
+      <workItem from="1764320202324" duration="4421000" />
+      <workItem from="1764325471823" duration="232000" />
+      <workItem from="1764467040166" duration="1300000" />
+      <workItem from="1764550647786" duration="10102000" />
+      <workItem from="1764561152132" duration="19950000" />
+      <workItem from="1764637468995" duration="16336000" />
+      <workItem from="1764655156310" duration="13893000" />
+      <workItem from="1764723258923" duration="14406000" />
+      <workItem from="1764738607207" duration="2449000" />
+      <workItem from="1764741140709" duration="485000" />
+      <workItem from="1764741678805" duration="14591000" />
+      <workItem from="1764809767563" duration="9252000" />
+      <workItem from="1764819310620" duration="5501000" />
+      <workItem from="1764826007914" duration="15119000" />
+      <workItem from="1764841784716" duration="264000" />
+      <workItem from="1764842101325" duration="350000" />
+      <workItem from="1764842568974" duration="744000" />
+      <workItem from="1764896644442" duration="265000" />
+      <workItem from="1764897525549" duration="862000" />
+      <workItem from="1764899462489" duration="21373000" />
+      <workItem from="1764929679001" duration="137000" />
+      <workItem from="1764931137748" duration="498000" />
+      <workItem from="1765156288180" duration="3164000" />
+      <workItem from="1765159561516" duration="4214000" />
+      <workItem from="1765164131572" duration="7015000" />
+      <workItem from="1765171924434" duration="15606000" />
+      <workItem from="1765241845290" duration="6101000" />
+      <workItem from="1765248207882" duration="437000" />
+      <workItem from="1765248854028" duration="113000" />
+      <workItem from="1765248990489" duration="364000" />
+      <workItem from="1765250151511" duration="632000" />
+      <workItem from="1765250847620" duration="8958000" />
+      <workItem from="1765262306579" duration="12462000" />
+      <workItem from="1765341164763" duration="220000" />
+      <workItem from="1765341446308" duration="41000" />
+      <workItem from="1765376385997" duration="353000" />
+      <workItem from="1765760231005" duration="29123000" />
+      <workItem from="1765847043541" duration="1721000" />
+      <workItem from="1765850302762" duration="14000000" />
+      <workItem from="1765866112853" duration="13676000" />
+      <workItem from="1765932886304" duration="254000" />
+      <workItem from="1765934675971" duration="40555000" />
+      <workItem from="1766023394788" duration="89000" />
+      <workItem from="1766023530422" duration="35382000" />
+      <workItem from="1766105674684" duration="2013000" />
+      <workItem from="1766109073007" duration="322000" />
+      <workItem from="1766109443024" duration="7595000" />
+      <workItem from="1766117762811" duration="2458000" />
+      <workItem from="1766120845872" duration="14090000" />
+      <workItem from="1766365506059" duration="473000" />
+      <workItem from="1766366059683" duration="2957000" />
+      <workItem from="1766369166436" duration="23028000" />
+      <workItem from="1766394250495" duration="2130000" />
+      <workItem from="1766396507689" duration="1524000" />
+      <workItem from="1766451841048" duration="3507000" />
+      <workItem from="1766459131810" duration="3111000" />
+      <workItem from="1766463189096" duration="474000" />
+      <workItem from="1766465876670" duration="9430000" />
+      <workItem from="1766484104242" duration="1322000" />
+      <workItem from="1766487028066" duration="2161000" />
+      <workItem from="1766516493064" duration="13181000" />
+      <workItem from="1766553996236" duration="16058000" />
+      <workItem from="1766624845334" duration="36863000" />
+      <workItem from="1766711021888" duration="6477000" />
+      <workItem from="1766735691980" duration="212000" />
+      <workItem from="1766742884699" duration="758000" />
+      <workItem from="1767189227218" duration="747000" />
+      <workItem from="1767191069065" duration="48000" />
+      <workItem from="1767574705740" duration="508000" />
+      <workItem from="1767575248706" duration="14116000" />
+      <workItem from="1767591283544" duration="320000" />
+      <workItem from="1767591785007" duration="10966000" />
+      <workItem from="1767661507135" duration="2412000" />
+      <workItem from="1767664222472" duration="1189000" />
+      <workItem from="1767665496666" duration="23818000" />
+      <workItem from="1767695553627" duration="49000" />
+      <workItem from="1767695799386" duration="171000" />
+      <workItem from="1767747612136" duration="5457000" />
+      <workItem from="1767753591924" duration="3786000" />
+      <workItem from="1767758551621" duration="2977000" />
+      <workItem from="1767768469912" duration="13462000" />
+      <workItem from="1767783094616" duration="16000" />
+      <workItem from="1767834260131" duration="498000" />
+      <workItem from="1767834847026" duration="5071000" />
+      <workItem from="1767840754309" duration="354000" />
+      <workItem from="1767841610740" duration="757000" />
+      <workItem from="1767844602452" duration="177000" />
+      <workItem from="1767844808003" duration="28925000" />
+      <workItem from="1767920558124" duration="1671000" />
+      <workItem from="1767922329091" duration="30269000" />
+      <workItem from="1768179750849" duration="1766000" />
+      <workItem from="1768181816974" duration="12050000" />
+      <workItem from="1768194708718" duration="199000" />
+      <workItem from="1768194946941" duration="23265000" />
+      <workItem from="1768265628981" duration="474000" />
+      <workItem from="1768266203281" duration="4203000" />
+      <workItem from="1768270579456" duration="229000" />
+      <workItem from="1768270864131" duration="1598000" />
+      <workItem from="1768278083236" duration="17842000" />
+      <workItem from="1768298228667" duration="7840000" />
+      <workItem from="1768352335320" duration="12815000" />
+      <workItem from="1768367750873" duration="850000" />
+      <workItem from="1768368645129" duration="27642000" />
+      <workItem from="1768417332614" duration="655000" />
+      <workItem from="1768438528142" duration="268000" />
+      <workItem from="1768438898828" duration="3863000" />
+      <workItem from="1768442935985" duration="4179000" />
+      <workItem from="1768448438274" duration="26402000" />
+      <workItem from="1768525416688" duration="13273000" />
+      <workItem from="1768541378724" duration="10902000" />
+      <workItem from="1768552457216" duration="5520000" />
+      <workItem from="1768561435519" duration="33000" />
+      <workItem from="1768655875474" duration="992000" />
+      <workItem from="1768715798998" duration="168000" />
+      <workItem from="1768715993339" duration="349000" />
+      <workItem from="1768784653423" duration="9077000" />
+      <workItem from="1768794802422" duration="22741000" />
+      <workItem from="1768871078149" duration="177000" />
+      <workItem from="1768871309654" duration="410000" />
+      <workItem from="1768871759863" duration="36737000" />
+      <workItem from="1768956905708" duration="32387000" />
+      <workItem from="1769043498241" duration="4790000" />
+      <workItem from="1769051969090" duration="288000" />
+      <workItem from="1769052326750" duration="2325000" />
+      <workItem from="1769054765430" duration="436000" />
+      <workItem from="1769055232124" duration="622000" />
+      <workItem from="1769055897267" duration="262000" />
+      <workItem from="1769056189950" duration="210000" />
+      <workItem from="1769056430319" duration="747000" />
+      <workItem from="1769058020842" duration="537000" />
+      <workItem from="1769058586118" duration="339000" />
+      <workItem from="1769058970044" duration="99000" />
+      <workItem from="1769059097185" duration="197000" />
+      <workItem from="1769059317527" duration="245000" />
+      <workItem from="1769059591740" duration="136000" />
+      <workItem from="1769059754228" duration="235000" />
+      <workItem from="1769060008833" duration="922000" />
+      <workItem from="1769060964762" duration="266000" />
+      <workItem from="1769061513336" duration="256000" />
+      <workItem from="1769061793012" duration="635000" />
+      <workItem from="1769062456553" duration="2203000" />
+      <workItem from="1769064801633" duration="583000" />
+      <workItem from="1769065413045" duration="8576000" />
+      <workItem from="1769129687670" duration="764000" />
+      <workItem from="1769130508175" duration="34377000" />
+      <workItem from="1769389477015" duration="9028000" />
+      <workItem from="1769403470497" duration="13753000" />
+      <workItem from="1769419321332" duration="7874000" />
+      <workItem from="1769475880504" duration="30893000" />
+      <workItem from="1769562284921" duration="32800000" />
+      <workItem from="1769648669573" duration="30000" />
+      <workItem from="1769657267111" duration="23807000" />
+      <workItem from="1769687190499" duration="391000" />
+      <workItem from="1769687881219" duration="1082000" />
+      <workItem from="1769713287997" duration="29426000" />
+      <workItem from="1769769933605" duration="5000" />
+      <workItem from="1769843176039" duration="1187000" />
+      <workItem from="1769844401148" duration="610000" />
+      <workItem from="1769845034160" duration="974000" />
+      <workItem from="1769994307943" duration="4677000" />
+      <workItem from="1770000059129" duration="20062000" />
+      <workItem from="1770080797274" duration="6921000" />
+      <workItem from="1770088898400" duration="448000" />
+      <workItem from="1770089392355" duration="16012000" />
+      <workItem from="1770111417282" duration="13561000" />
+      <workItem from="1770253940788" duration="3462000" />
+      <workItem from="1770257863368" duration="4256000" />
+      <workItem from="1770262907058" duration="1402000" />
+      <workItem from="1770270321375" duration="217000" />
+      <workItem from="1770270626370" duration="4317000" />
+      <workItem from="1770275036161" duration="123000" />
+      <workItem from="1770275203292" duration="7418000" />
+      <workItem from="1770283285766" duration="2841000" />
+      <workItem from="1770339865056" duration="22208000" />
+      <workItem from="1770364915902" duration="8044000" />
+      <workItem from="1770598425323" duration="243000" />
+      <workItem from="1770598692691" duration="33466000" />
+      <workItem from="1770685003514" duration="287000" />
+      <workItem from="1770685325456" duration="29975000" />
+      <workItem from="1770771793692" duration="1562000" />
+      <workItem from="1770773915892" duration="449000" />
+      <workItem from="1770774385034" duration="129000" />
+      <workItem from="1770774535118" duration="14423000" />
+      <workItem from="1770794280320" duration="8877000" />
+      <workItem from="1770857746178" duration="690000" />
+      <workItem from="1770858476664" duration="947000" />
+      <workItem from="1770859454599" duration="25000" />
+      <workItem from="1770877610832" duration="2398000" />
+      <workItem from="1770884186376" duration="5311000" />
+      <workItem from="1770944769255" duration="1084000" />
+      <workItem from="1770945907833" duration="1373000" />
+      <workItem from="1770947320703" duration="45000" />
+      <workItem from="1770947398298" duration="1955000" />
+      <workItem from="1770949385379" duration="18009000" />
+      <workItem from="1772202713920" duration="616000" />
+      <workItem from="1772203440381" duration="47000" />
+      <workItem from="1772203512403" duration="166000" />
+      <workItem from="1772203721080" duration="100000" />
+      <workItem from="1772240102773" duration="1394000" />
+      <workItem from="1772242046587" duration="2062000" />
+      <workItem from="1772245039862" duration="3364000" />
+      <workItem from="1772248679721" duration="1778000" />
+      <workItem from="1772253159738" duration="10626000" />
+      <workItem from="1772413592986" duration="6955000" />
+      <workItem from="1772422088300" duration="1792000" />
+      <workItem from="1772425732372" duration="13098000" />
+      <workItem from="1772440860224" duration="179000" />
+      <workItem from="1772441114548" duration="4168000" />
+      <workItem from="1772501182593" duration="497000" />
+      <workItem from="1772501727668" duration="1812000" />
+      <workItem from="1772503675638" duration="1797000" />
+      <workItem from="1772505533753" duration="15482000" />
+      <workItem from="1772522194313" duration="10260000" />
+      <workItem from="1772586557785" duration="31871000" />
+      <workItem from="1772650766436" duration="19125000" />
+      <workItem from="1772692446031" duration="1866000" />
+      <workItem from="1772694454446" duration="3529000" />
+      <workItem from="1772699072261" duration="9801000" />
+      <workItem from="1772758473285" duration="1156000" />
+      <workItem from="1772760776373" duration="246000" />
+      <workItem from="1772761058632" duration="706000" />
+      <workItem from="1772761793664" duration="294000" />
+      <workItem from="1772762130224" duration="62000" />
+      <workItem from="1772762218307" duration="1110000" />
+      <workItem from="1772763827099" duration="26581000" />
+      <workItem from="1773018379076" duration="940000" />
+      <workItem from="1773019371313" duration="15865000" />
+      <workItem from="1773104544003" duration="7022000" />
+      <workItem from="1773112405653" duration="5969000" />
+      <workItem from="1773119120742" duration="16204000" />
+      <workItem from="1773191021666" duration="16710000" />
+      <workItem from="1773211514821" duration="800000" />
+      <workItem from="1773212360619" duration="495000" />
+      <workItem from="1773212888282" duration="2723000" />
+      <workItem from="1773215829819" duration="2560000" />
+      <workItem from="1773218920752" duration="3708000" />
+      <workItem from="1773277812400" duration="13506000" />
+      <workItem from="1773292489341" duration="7624000" />
+      <workItem from="1773300809347" duration="11191000" />
+      <workItem from="1773363190885" duration="13468000" />
+      <workItem from="1773378212151" duration="2002000" />
+      <workItem from="1773380257720" duration="111000" />
+      <workItem from="1773380388243" duration="1567000" />
+      <workItem from="1773382254998" duration="14578000" />
+      <workItem from="1773622511439" duration="27964000" />
+      <workItem from="1773709513758" duration="221000" />
+      <workItem from="1773709772868" duration="806000" />
+      <workItem from="1773710712644" duration="223000" />
+      <workItem from="1773710982450" duration="24198000" />
+      <workItem from="1773795756850" duration="721000" />
+      <workItem from="1773796596604" duration="26816000" />
+      <workItem from="1773884235303" duration="24445000" />
+      <workItem from="1773968628751" duration="14684000" />
+      <workItem from="1773987562450" duration="9532000" />
+      <workItem from="1773997298284" duration="4989000" />
+      <workItem from="1774227869303" duration="8633000" />
+      <workItem from="1774236619779" duration="30424000" />
+      <workItem from="1774292489776" duration="31402000" />
+      <workItem from="1774400603080" duration="18764000" />
+      <workItem from="1774420372069" duration="2577000" />
+      <workItem from="1774423006203" duration="10184000" />
+      <workItem from="1774487186898" duration="2890000" />
+      <workItem from="1774490133344" duration="228000" />
+      <workItem from="1774490393611" duration="3281000" />
+      <workItem from="1774493751195" duration="3801000" />
+      <workItem from="1774497609732" duration="4814000" />
+      <workItem from="1774502474247" duration="24685000" />
+      <workItem from="1774573426029" duration="261000" />
+      <workItem from="1774573762466" duration="847000" />
+      <workItem from="1774575013645" duration="23253000" />
+      <workItem from="1774601395835" duration="1615000" />
+      <workItem from="1774603135989" duration="3899000" />
+      <workItem from="1774832230458" duration="12662000" />
+      <workItem from="1774846947507" duration="17475000" />
+      <workItem from="1774866151002" duration="5000" />
+      <workItem from="1774921160571" duration="29781000" />
+      <workItem from="1775005360055" duration="8971000" />
+      <workItem from="1775014473101" duration="20551000" />
+      <workItem from="1775039044057" duration="404000" />
+      <workItem from="1775091750339" duration="371000" />
+      <workItem from="1775092182984" duration="9423000" />
+      <workItem from="1775102225708" duration="17964000" />
+      <workItem from="1775178502598" duration="980000" />
+      <workItem from="1775179540959" duration="8590000" />
+      <workItem from="1775193146015" duration="5678000" />
+      <workItem from="1775200072191" duration="127000" />
+      <workItem from="1775200459835" duration="11311000" />
+      <workItem from="1775301021637" duration="876000" />
+      <workItem from="1775301931831" duration="483000" />
+      <workItem from="1775523832245" duration="2636000" />
+      <workItem from="1775553588183" duration="1174000" />
+      <workItem from="1775611496543" duration="1497000" />
+      <workItem from="1775616955650" duration="1172000" />
+      <workItem from="1775627654985" duration="16000" />
+      <workItem from="1775648132904" duration="1237000" />
+      <workItem from="1775695857278" duration="4600000" />
+      <workItem from="1775701093133" duration="103000" />
+      <workItem from="1775706908601" duration="6126000" />
+      <workItem from="1775714648556" duration="14528000" />
+      <workItem from="1775731170967" duration="109000" />
+      <workItem from="1775783061437" duration="22000" />
+      <workItem from="1775784860542" duration="2988000" />
+      <workItem from="1775793585655" duration="244000" />
+      <workItem from="1775802820567" duration="8553000" />
+      <workItem from="1776043692068" duration="3732000" />
+      <workItem from="1776047482864" duration="10230000" />
+      <workItem from="1776060186837" duration="10241000" />
+      <workItem from="1776071986983" duration="1229000" />
+      <workItem from="1776073945733" duration="35000" />
+      <workItem from="1776074017554" duration="1480000" />
+      <workItem from="1776075575841" duration="3544000" />
+      <workItem from="1776129229333" duration="8211000" />
+      <workItem from="1776137745511" duration="12831000" />
+      <workItem from="1776159135794" duration="17722000" />
+      <workItem from="1776301551060" duration="69000" />
+      <workItem from="1776301748490" duration="7093000" />
+      <workItem from="1776311002442" duration="8136000" />
+      <workItem from="1776366166321" duration="612000" />
+      <workItem from="1776387823252" duration="1567000" />
+      <workItem from="1776391084688" duration="659000" />
+      <workItem from="1776398914466" duration="443000" />
+      <workItem from="1776399467056" duration="3204000" />
+      <workItem from="1776416876866" duration="896000" />
+      <workItem from="1776418163302" duration="710000" />
+      <workItem from="1776756572795" duration="61000" />
+      <workItem from="1776756771696" duration="2535000" />
+      <workItem from="1776835000038" duration="342000" />
+      <workItem from="1776841751901" duration="117000" />
+      <workItem from="1776842945952" duration="5719000" />
+      <workItem from="1776907204588" duration="2429000" />
+      <workItem from="1776911013013" duration="527000" />
+      <workItem from="1776911608491" duration="7950000" />
+      <workItem from="1776931250531" duration="77000" />
+      <workItem from="1776932285439" duration="128000" />
+      <workItem from="1776932498441" duration="6666000" />
+      <workItem from="1776992791529" duration="287000" />
+      <workItem from="1776993263233" duration="228000" />
+      <workItem from="1776993733600" duration="264000" />
+      <workItem from="1776994138363" duration="4736000" />
+      <workItem from="1777002515446" duration="1614000" />
+      <workItem from="1777009626998" duration="11665000" />
+      <workItem from="1777025289955" duration="194000" />
+      <workItem from="1777025671553" duration="597000" />
+      <workItem from="1777252451555" duration="1202000" />
+      <workItem from="1777253933399" duration="266000" />
+      <workItem from="1777254990804" duration="135000" />
+      <workItem from="1777255158779" duration="623000" />
+      <workItem from="1777255818963" duration="15198000" />
+      <workItem from="1777277074953" duration="458000" />
+      <workItem from="1777278118433" duration="395000" />
+      <workItem from="1777278768009" duration="516000" />
+      <workItem from="1777279362749" duration="1766000" />
+      <workItem from="1777288424494" duration="536000" />
+      <workItem from="1777338383842" duration="920000" />
+      <workItem from="1777341139045" duration="6896000" />
+      <workItem from="1777349858574" duration="1704000" />
+      <workItem from="1777352689426" duration="8983000" />
+      <workItem from="1777361974887" duration="2587000" />
+      <workItem from="1777364609646" duration="15107000" />
+      <workItem from="1777424759176" duration="6757000" />
+      <workItem from="1777431650205" duration="31650000" />
+      <workItem from="1777510735708" duration="537000" />
+      <workItem from="1777511323035" duration="465000" />
+      <workItem from="1777511836323" duration="1969000" />
+      <workItem from="1777514263110" duration="6335000" />
+      <workItem from="1777520725013" duration="9864000" />
+      <workItem from="1777531876240" duration="9872000" />
+      <workItem from="1778029520844" duration="20037000" />
+      <workItem from="1778052210069" duration="8818000" />
+      <workItem from="1778063327445" duration="4850000" />
+      <workItem from="1778121163837" duration="4194000" />
+      <workItem from="1778126623959" duration="1190000" />
+      <workItem from="1778127910142" duration="2101000" />
+      <workItem from="1778130802801" duration="12653000" />
+      <workItem from="1778202262948" duration="15405000" />
+      <workItem from="1778226650241" duration="9514000" />
+      <workItem from="1778288588646" duration="763000" />
+      <workItem from="1778289439499" duration="12362000" />
+      <workItem from="1778303909695" duration="7263000" />
+      <workItem from="1778316441699" duration="372000" />
+      <workItem from="1778316916534" duration="270000" />
+      <workItem from="1778317309731" duration="3336000" />
+      <workItem from="1778462341459" duration="338000" />
+      <workItem from="1778462978143" duration="586000" />
+      <workItem from="1778463628083" duration="2714000" />
+      <workItem from="1778487850118" duration="164000" />
+      <workItem from="1778496467493" duration="509000" />
+      <workItem from="1778550805361" duration="459000" />
+      <workItem from="1778551310059" duration="7940000" />
+      <workItem from="1778572185992" duration="339000" />
+      <workItem from="1778635327165" duration="587000" />
+      <workItem from="1778635969246" duration="400000" />
+      <workItem from="1778636439657" duration="9840000" />
+      <workItem from="1778648420462" duration="6376000" />
+      <workItem from="1778654878457" duration="21357000" />
+      <workItem from="1778720679681" duration="130000" />
+      <workItem from="1778720968457" duration="1136000" />
+      <workItem from="1778722915418" duration="1042000" />
+      <workItem from="1778723997143" duration="11933000" />
+      <workItem from="1778785360902" duration="20708000" />
+      <workItem from="1778835016896" duration="4120000" />
+      <workItem from="1778839430663" duration="233000" />
+      <workItem from="1779066355712" duration="14394000" />
+      <workItem from="1779081662318" duration="11488000" />
+      <workItem from="1779094598096" duration="3063000" />
+      <workItem from="1779097757450" duration="4240000" />
+      <workItem from="1779152671900" duration="8595000" />
+      <workItem from="1779169436708" duration="426000" />
+      <workItem from="1779169997737" duration="8684000" />
+      <workItem from="1779179701038" duration="4417000" />
+      <workItem from="1779217307712" duration="22272000" />
+      <workItem from="1779357630790" duration="234000" />
+      <workItem from="1779358034378" duration="2943000" />
+      <workItem from="1779361616725" duration="3121000" />
+      <workItem from="1779367044639" duration="552000" />
+      <workItem from="1779411884338" duration="643000" />
+      <workItem from="1779412567095" duration="1427000" />
+      <workItem from="1779417215545" duration="16976000" />
+      <workItem from="1779439356584" duration="219000" />
+      <workItem from="1779439612760" duration="6764000" />
+      <workItem from="1779671282756" duration="29383000" />
+      <workItem from="1779757569511" duration="31844000" />
+      <workItem from="1779843766459" duration="2251000" />
+      <workItem from="1779846290775" duration="5736000" />
+      <workItem from="1779853522876" duration="12338000" />
+      <workItem from="1779931043613" duration="6810000" />
+      <workItem from="1779954674853" duration="11604000" />
+      <workItem from="1780016837362" duration="852000" />
+      <workItem from="1780021925901" duration="4829000" />
+      <workItem from="1780030148720" duration="1992000" />
+      <workItem from="1780032225898" duration="16668000" />
+      <workItem from="1780275805349" duration="26563000" />
+      <workItem from="1780305801734" duration="66000" />
+      <workItem from="1780305995388" duration="91000" />
+      <workItem from="1780306211473" duration="1514000" />
+      <workItem from="1780307810566" duration="2129000" />
+      <workItem from="1780362223872" duration="827000" />
+      <workItem from="1780363161500" duration="8267000" />
+      <workItem from="1780373184467" duration="11720000" />
+      <workItem from="1780388096706" duration="4478000" />
+      <workItem from="1780396960594" duration="17000" />
+      <workItem from="1780448581056" duration="832000" />
+      <workItem from="1780449711590" duration="320000" />
+      <workItem from="1780450160062" duration="37705000" />
+      <workItem from="1780599969002" duration="297000" />
+      <workItem from="1780600305437" duration="328000" />
+      <workItem from="1780600666751" duration="296000" />
+      <workItem from="1780601002704" duration="332000" />
+      <workItem from="1780601365368" duration="299000" />
+      <workItem from="1780601706629" duration="328000" />
+      <workItem from="1780602062975" duration="300000" />
+      <workItem from="1780602401330" duration="328000" />
+      <workItem from="1780602758168" duration="300000" />
+      <workItem from="1780603099500" duration="232000" />
+      <workItem from="1780603370232" duration="300000" />
+      <workItem from="1780603710201" duration="322000" />
+      <workItem from="1780604064169" duration="294000" />
+      <workItem from="1780604395841" duration="327000" />
+      <workItem from="1780604754957" duration="301000" />
+      <workItem from="1780605093824" duration="325000" />
+      <workItem from="1780605450096" duration="309000" />
+      <workItem from="1780605796702" duration="328000" />
+      <workItem from="1780606157125" duration="307000" />
+      <workItem from="1780606502387" duration="331000" />
+      <workItem from="1780606866284" duration="310000" />
+      <workItem from="1780607214576" duration="335000" />
+      <workItem from="1780607582439" duration="304000" />
+      <workItem from="1780607923066" duration="326000" />
+      <workItem from="1780608279037" duration="303000" />
+      <workItem from="1780608621476" duration="326000" />
+      <workItem from="1780608979016" duration="301000" />
+      <workItem from="1780609317001" duration="327000" />
+      <workItem from="1780609674376" duration="297000" />
+      <workItem from="1780610008885" duration="330000" />
+      <workItem from="1780610373202" duration="309000" />
+      <workItem from="1780610718670" duration="331000" />
+      <workItem from="1780611086970" duration="305000" />
+      <workItem from="1780611429791" duration="331000" />
+      <workItem from="1780611789964" duration="305000" />
+      <workItem from="1780612132848" duration="328000" />
+      <workItem from="1780612492978" duration="300000" />
+      <workItem from="1780612832476" duration="335000" />
+      <workItem from="1780613200044" duration="315000" />
+      <workItem from="1780613563520" duration="327000" />
+      <workItem from="1780613921494" duration="318000" />
+      <workItem from="1780614277067" duration="325000" />
+      <workItem from="1780614635082" duration="304000" />
+      <workItem from="1780614980259" duration="332000" />
+      <workItem from="1780615345989" duration="170000" />
+      <workItem from="1780615546159" duration="300000" />
+      <workItem from="1780615883313" duration="333000" />
+      <workItem from="1780616250022" duration="299000" />
+      <workItem from="1780616586491" duration="329000" />
+      <workItem from="1780616952449" duration="303000" />
+      <workItem from="1780617292987" duration="329000" />
+      <workItem from="1780617657849" duration="304000" />
+      <workItem from="1780617999496" duration="323000" />
+      <workItem from="1780618355613" duration="305000" />
+      <workItem from="1780618698339" duration="328000" />
+      <workItem from="1780619057596" duration="305000" />
+      <workItem from="1780619400681" duration="325000" />
+      <workItem from="1780619758123" duration="300000" />
+      <workItem from="1780620096440" duration="323000" />
+      <workItem from="1780620451513" duration="301000" />
+      <workItem from="1780620791334" duration="321000" />
+      <workItem from="1780621141251" duration="755000" />
+      <workItem from="1780621960617" duration="370000" />
+      <workItem from="1780622373266" duration="352000" />
+      <workItem from="1780622817202" duration="5321000" />
+      <workItem from="1780636279899" duration="177000" />
+      <workItem from="1780644351205" duration="979000" />
+      <workItem from="1780645393697" duration="2369000" />
+      <workItem from="1780903052998" duration="392000" />
+      <workItem from="1780915187248" duration="89000" />
+      <workItem from="1780915383314" duration="166000" />
+      <workItem from="1781053606788" duration="1167000" />
+      <workItem from="1781057789162" duration="29144000" />
+      <workItem from="1781139886068" duration="342000" />
+      <workItem from="1781140288541" duration="23062000" />
+      <workItem from="1781164913440" duration="1198000" />
+      <workItem from="1781166190586" duration="11535000" />
+      <workItem from="1781229331155" duration="7703000" />
+      <workItem from="1781237549978" duration="784000" />
+      <workItem from="1781238386333" duration="27000" />
+      <workItem from="1781238455068" duration="16017000" />
+      <workItem from="1781485366792" duration="28316000" />
+      <workItem from="1781517442724" duration="3567000" />
+      <workItem from="1781573345211" duration="2242000" />
+      <workItem from="1781575684290" duration="636000" />
+      <workItem from="1781576381617" duration="19818000" />
+      <workItem from="1781658228653" duration="6070000" />
+      <workItem from="1781666635862" duration="371000" />
+      <workItem from="1781667186998" duration="338000" />
+      <workItem from="1781667679225" duration="5379000" />
+      <workItem from="1781678522859" duration="12081000" />
+      <workItem from="1781694396356" duration="6415000" />
+      <workItem from="1781744523364" duration="298000" />
+      <workItem from="1781745411408" duration="13648000" />
+      <workItem from="1781765283927" duration="8587000" />
+      <workItem from="1781777489613" duration="4502000" />
+      <workItem from="1782090794099" duration="105000" />
+      <workItem from="1782090995074" duration="2294000" />
+      <workItem from="1782097559294" duration="12290000" />
+      <workItem from="1782117575800" duration="8576000" />
+      <workItem from="1782176656756" duration="3093000" />
+      <workItem from="1782180193576" duration="471000" />
+      <workItem from="1782180820134" duration="354000" />
+      <workItem from="1782181217378" duration="617000" />
+      <workItem from="1782181901732" duration="2711000" />
+      <workItem from="1782184654350" duration="84000" />
+      <workItem from="1782184770284" duration="4444000" />
+      <workItem from="1782191096085" duration="10120000" />
+      <workItem from="1782204165397" duration="1936000" />
+      <workItem from="1782206579295" duration="2394000" />
+      <workItem from="1782209095663" duration="5431000" />
+      <workItem from="1782214653850" duration="2380000" />
+      <workItem from="1782266797587" duration="364000" />
+      <workItem from="1782267198791" duration="180000" />
+      <workItem from="1782267955080" duration="465000" />
+      <workItem from="1782268438892" duration="2276000" />
+      <workItem from="1782271068335" duration="13874000" />
+      <workItem from="1782287245592" duration="220000" />
+      <workItem from="1782287879163" duration="409000" />
+      <workItem from="1782288412921" duration="253000" />
+      <workItem from="1782288697069" duration="7965000" />
+      <workItem from="1782296811797" duration="8017000" />
+      <workItem from="1782349454165" duration="28862000" />
+      <workItem from="1782389261344" duration="534000" />
+      <workItem from="1782435912135" duration="1530000" />
+      <workItem from="1782439587264" duration="31908000" />
+      <workItem from="1782694954994" duration="3644000" />
+      <workItem from="1782698722058" duration="15666000" />
+      <workItem from="1782781592457" duration="1310000" />
+      <workItem from="1782783372100" duration="71000" />
+      <workItem from="1782783474709" duration="1147000" />
+      <workItem from="1782785412704" duration="1149000" />
+      <workItem from="1782787160219" duration="19359000" />
+      <workItem from="1782868525618" duration="1003000" />
+      <workItem from="1782870106826" duration="13197000" />
+      <workItem from="1782891799792" duration="7696000" />
+      <workItem from="1782954790665" duration="13220000" />
+      <workItem from="1782973542004" duration="12362000" />
+      <workItem from="1783044462916" duration="2015000" />
+      <workItem from="1783046610064" duration="93000" />
+      <workItem from="1783046743956" duration="5753000" />
+      <workItem from="1783054531931" duration="334000" />
+      <workItem from="1783054908239" duration="20033000" />
+      <workItem from="1783299740878" duration="470000" />
+      <workItem from="1783300362157" duration="22623000" />
+      <workItem from="1783324902966" duration="8347000" />
+      <workItem from="1783333482870" duration="617000" />
+      <workItem from="1783364523951" duration="30567000" />
+      <workItem from="1783473151547" duration="4133000" />
+      <workItem from="1783477385050" duration="133000" />
+      <workItem from="1783477601938" duration="18857000" />
+      <workItem from="1783559003077" duration="35231000" />
+      <workItem from="1783599175594" duration="497000" />
+      <workItem from="1783857772928" duration="2312000" />
+      <workItem from="1783862136204" duration="28825000" />
+      <workItem from="1783991666480" duration="17206000" />
+      <workItem from="1784018454757" duration="41706000" />
+      <workItem from="1784163732083" duration="1009000" />
+      <workItem from="1784164839744" duration="10886000" />
+      <workItem from="1784177503592" duration="749000" />
+      <workItem from="1784178434413" duration="4224000" />
+      <workItem from="1784184209180" duration="30000" />
+      <workItem from="1784184445665" duration="16234000" />
+      <workItem from="1784357560529" duration="902000" />
+      <workItem from="1784359306778" duration="673000" />
+      <workItem from="1784360149092" duration="376000" />
+      <workItem from="1784360736178" duration="894000" />
+      <workItem from="1784508731742" duration="3453000" />
+      <workItem from="1784512511363" duration="767000" />
+      <workItem from="1784513342945" duration="323000" />
     </task>
-    <task id="LOCAL-02190" summary="v90-feat/refactor:DOM-18371-需求639-济宁市一-科室端-材料-材料的病种、手术、植入置入菜单下钻，材料分类的下拉框隐藏，显示全部；&#10;feat(materialsAnalysis):为医疗组分析添加医院可见性控制&#10;&#10;- 在 surgicalPatientsGroupPanel 和 diseasesPanel 组件中引入医院代码常量&#10;- 为 dept-select-analysis 组件添加 v-hosp-visible 指令控制显示&#10;- 添加对济宁医院的特殊判断逻辑支持">
+    <task id="LOCAL-04418" summary="v125:fix/refactor: 科室端-科室医疗盈余分析表-下钻页-收入细项前十-表格组件&#10;fix(income): 修复收入细项前十表格显示逻辑&#10;&#10;- 修改表格显示条件判断，使用新的计算属性 getIfShowIncomeDetailItemTop10Table&#10;- 添加 getIfBjDt 状态映射，支持病区科室判断&#10;- 修复tab按钮值为空时不请求表格数据的问题，现在会默认请求&quot;病人所属科室&quot;数据&#10;- 更新文件路径格式，移除Windows路径分隔符&#10;- 优化代码注释，明确表格显示逻辑变更">
       <option name="closed" value="true" />
-      <created>1760605651793</created>
-      <option name="number" value="02190" />
-      <option name="presentableId" value="LOCAL-02190" />
+      <created>1784020270850</created>
+      <option name="number" value="04418" />
+      <option name="presentableId" value="LOCAL-04418" />
       <option name="project" value="LOCAL" />
-      <updated>1760605651793</updated>
+      <updated>1784020270850</updated>
     </task>
-    <task id="LOCAL-02191" summary="拉取代码-添加科室，绩效收入口径组件">
+    <task id="LOCAL-04419" summary="v125:feat/refactor:需求2477-院端-门诊运营专项-门诊运营目标驾驶舱页面中的‘门诊患者分布地图’换成山东省菏泽市的地图&#10;添加菏泽地svg文件">
       <option name="closed" value="true" />
-      <created>1760667907789</created>
-      <option name="number" value="02191" />
-      <option name="presentableId" value="LOCAL-02191" />
+      <created>1784023675477</created>
+      <option name="number" value="04419" />
+      <option name="presentableId" value="LOCAL-04419" />
       <option name="project" value="LOCAL" />
-      <updated>1760667907790</updated>
+      <updated>1784023675477</updated>
     </task>
-    <task id="LOCAL-02192" summary="v91-feat/refactor:DOM-18372-需求660-地坛医院-修复现场bug-卫健委和市医保，院端-总览，药品指数和材料指数，最后一句修改&#10;feat(hospital): 提取药品与材料指数提示生成函数&#10;&#10;- 将默认药品指数提示生成逻辑提取到独立文件&#10;- 将默认材料指数提示生成逻辑提取到独立文件&#10;- 将北京地坛医院药品指数提示生成逻辑提取到独立文件&#10;- 将北京地坛医院材料指数提示生成逻辑提取到独立文件&#10;- 更新药品指数提示生成函数以调用提取后的工具函数&#10;- 更新材料指数提示生成函数以调用提取后的工具函数">
+    <task id="LOCAL-04420" summary="v125:feat/refactor:需求2477-院端-门诊运营专项-门诊运营目标驾驶舱页面中的‘门诊患者分布地图’换成山东省菏泽市的地图&#10;feat(outpatient): 添加菏泽市地图支持功能&#10;&#10;- 引入菏泽市地图SVG资源文件&#10;- 更新当前选中城市代码为371700，城市名为hezeshi&#10;- 在城市代码列表中添加菏泽市配置项&#10;- 映射菏泽市相关的常量获取器&#10;- 实现菏泽市条件判断逻辑并设置对应的城市名称和代码&#10;- 切换地图显示时使用菏泽市地图替代济宁市地图">
       <option name="closed" value="true" />
-      <created>1760667996779</created>
-      <option name="number" value="02192" />
-      <option name="presentableId" value="LOCAL-02192" />
+      <created>1784023984035</created>
+      <option name="number" value="04420" />
+      <option name="presentableId" value="LOCAL-04420" />
       <option name="project" value="LOCAL" />
-      <updated>1760667996779</updated>
+      <updated>1784023984035</updated>
     </task>
-    <task id="LOCAL-02193" summary="v91-feat/refactor:DOM-18384-需求703-济宁市一-科室端-收支余-暂时屏蔽住院分析Tab下的本量利&#10;feat(BIEAnalysis): 控制本量利分析模块的医院可见性&#10;&#10;- 引入 HOSPITAL_CODE_HASH 常量，支持多医院编码配置&#10;- 新增 getNeedHideBieAnalysisCostVolumeProfitHospCodeStr 计算属性， 用于拼接需要隐藏本量利分析模块的医院编码字符串&#10;- 更新 v-hosp-visible 指令绑定值，由硬编码改为动态计算&#10;- 调整 getIfShowCostVolumeProfit 显示条件，移除对 getIfSdZl 的依赖">
+    <task id="LOCAL-04421" summary="v125:fix/refactor:需求2227-（菏泽市立-院端）病组分析-DRG支付-成本异常探查，卡片图数据问题&#10;feat(diseaseMatrix): 添加病人类型列表选择器变更处理&#10;&#10;- 在 PlCascader 组件上添加 change 事件监听器&#10;- 当医院代码包含显示患者列表选择器时传递 patTypeList 参数&#10;- 添加 patientTypeListChange 方法处理病人类型列表变更&#10;- 更新 patientTypeChange 和 incomeEvtChange 方法为异步调用">
       <option name="closed" value="true" />
-      <created>1760670279079</created>
-      <option name="number" value="02193" />
-      <option name="presentableId" value="LOCAL-02193" />
+      <created>1784025832028</created>
+      <option name="number" value="04421" />
+      <option name="presentableId" value="LOCAL-04421" />
       <option name="project" value="LOCAL" />
-      <updated>1760670279079</updated>
+      <updated>1784025832028</updated>
     </task>
-    <task id="LOCAL-02194" summary="v91-feat/refactor:DOM-18385-需求704-通用-设备 院端+科端-帕累托图添加如图1的滑动块，默认不展示这么多条&#10;refactor(component): 替换 PlChart 为 PlModulePanel 并调整配置 scrollLimit&#10;&#10;- 将BillingDeptDeclineAnalysis中的PlChart替换为PlModulePanel&#10;- 更新组件引入和注册列表以包含PlModulePanel&#10;- 调整图表绑定数据配置，设置type和scrollLimit属性">
+    <task id="LOCAL-04422" summary="v125:fix/refactor:需求2299-‘多级科室’模式时，在‘全部科室’按钮旁添加‘常用科室’按钮，点击后下方红框的科室列表显示用户设置的常用科室&#10;fix/refactor(department): 优化部门树形复选框组件逻辑&#10;&#10;- 移除deptListData数据映射操作，防止更新替换数组时滚动条移动&#10;- 修复复选框状态更新逻辑，正确处理父子节点关系&#10;- 添加子节点ID列表计算功能，确保取消选择时同时取消子节点&#10;- 优化部门数据遍历逻辑，直接修改原数组而非创建新对象&#10;- 完善选中状态同步机制，确保UI与数据状态一致">
       <option name="closed" value="true" />
-      <created>1760671037271</created>
-      <option name="number" value="02194" />
-      <option name="presentableId" value="LOCAL-02194" />
+      <created>1784080829672</created>
+      <option name="number" value="04422" />
+      <option name="presentableId" value="LOCAL-04422" />
       <option name="project" value="LOCAL" />
-      <updated>1760671037271</updated>
+      <updated>1784080829672</updated>
     </task>
-    <task id="LOCAL-02195" summary="v91-feat/refactor:DOM-18409 需求714-山肿瘤-院端-资源效益分析-手术间资源分析-‘手术台均RVU与平均手术时长趋势 ’更名为‘手术相关时长及首台刀准时率趋势’； 且去掉指标‘手术台均RVU’，换成平均换台时长&#10;&#10;- 从vuex获取getIfSdZl状态以支持动态标题切换&#10;- 增加手术相关时长及首台刀准时率趋势标题切换逻辑&#10;- 移除空的watch、computed和生命周期钩子函数&#10;- 整理代码结构，增强可读性和维护性">
+    <task id="LOCAL-04423" summary="v125:fix/refactor:需求2430-因果图谱的鱼骨图，鱼头处与增降幅的红绿色看不清，将鱼头颜色变浅；将树形图的根节点底色一起变浅；&#10;style(fishboneChart): 更新鱼骨图第三个版本的颜色样式&#10;&#10;- 将填充颜色从 #9EB8DA 更改为 #CEDFF6">
       <option name="closed" value="true" />
-      <created>1760673447410</created>
-      <option name="number" value="02195" />
-      <option name="presentableId" value="LOCAL-02195" />
+      <created>1784082487448</created>
+      <option name="number" value="04423" />
+      <option name="presentableId" value="LOCAL-04423" />
       <option name="project" value="LOCAL" />
-      <updated>1760673447411</updated>
+      <updated>1784082487448</updated>
     </task>
-    <task id="LOCAL-02196" summary="v91-feat/refactor:DOM-18386-需求715-通用-院端-工作量分析-手术人次下钻页，手术效率变化添加下钻页面（手术间明细），展示各手术间的手术人次，加权工作量和手术间利用率&#10;feat(workloadAnalysis): 更新手术间效率展示组件&#10;&#10;- 引入 PlSpanLink 组件用于展示手术间明细链接&#10;- 调整 PLChartTabBar 组件属性及可见性控制 宽度样式&#10;- 添加山东肿瘤医院代码常量支持&#10;- 增加打开手术间详情对话框方法 占位&#10;- 更新样式文件中 box-sizing 为 border-box">
+    <task id="LOCAL-04424" summary="v125:fix/refactor:需求2430-因果图谱的鱼骨图，鱼头处与增降幅的红绿色看不清，将鱼头颜色变浅；将树形图的根节点底色一起变浅；&#10;style(fishboneChart): 更新鱼骨图组件样式颜色&#10;&#10;- 将 .fish-line 的背景色从 #9EB8DA 更改为 #CEDFF6&#10;- 将节点颜色从 #9EB8DA 更改为 #CEDFF6&#10;- 在 indentedComp.vue 中更新节点悬停和选中状态的颜色为 #CEDFF6&#10;- 移除旧的颜色代码并保留注释标记">
       <option name="closed" value="true" />
-      <created>1760677631436</created>
-      <option name="number" value="02196" />
-      <option name="presentableId" value="LOCAL-02196" />
+      <created>1784082558682</created>
+      <option name="number" value="04424" />
+      <option name="presentableId" value="LOCAL-04424" />
       <option name="project" value="LOCAL" />
-      <updated>1760677631436</updated>
+      <updated>1784082558682</updated>
     </task>
-    <task id="LOCAL-02197" summary="v91-fix/refactor:DOM-18373 科室-病种分析（市医保DRG/DIP）-出院分析-科室病组明细数据分析 下钻-医疗组收治该病组对比-检查：首行缺少病组编码何RW值&#10;feat(disease-analysis): 添加 RW 权重展示功能&#10;&#10;- 在 CurrentDiseaseDescription 组件中引入并使用 mapMutations 方法设置 RW 数据&#10;- 更新 deptDiseaseDetailDataAnalysisStore 状态管理模块以存储 RW 值&#10;- 在 DiseaseAnalysisDesc 组件中显示 RW 信息">
+    <task id="LOCAL-04425" summary="v125:feat/refactor:需求2132-院端-临床工作量分析：门诊异常探查、出院异常探查、手术（含介入）异常探查、四级手术异常探查、日间手术异常探查、微创手术异常探查、入院率异常探查；院端-收支分析：收入异常探查、盈余异常探查、药品收入占比异常探查、材料收入占比异常探查、药耗收入占比异常探查；院端-人力资源分析：医生权重异常探查；院端-病组分析（DRG支付）：成本异常探查；院端-异常探查：异常探查常用、异常探查汇总、异常探查自定义；横坐标的25、75分位后面添加问号，纵坐标的25、75分位后面添加问号，问号内容支持自定义，问号内容默认&#10;fix(matrix): 修复散点图X轴提示默认值问题&#10;&#10;- 将chartXTips默认值从'qwerty'修改为空字符串">
       <option name="closed" value="true" />
-      <created>1760678339588</created>
-      <option name="number" value="02197" />
-      <option name="presentableId" value="LOCAL-02197" />
+      <created>1784082718988</created>
+      <option name="number" value="04425" />
+      <option name="presentableId" value="LOCAL-04425" />
       <option name="project" value="LOCAL" />
-      <updated>1760678339588</updated>
+      <updated>1784082718988</updated>
     </task>
-    <task id="LOCAL-02198" summary="v91-fix/refactor:DOM-18444-需求745-通用-现场-科端-设备效益分析-重点设备效益分析 设备明细-表格下钻-下钻后，点击面包屑，回到上一层，页面显示404&#10;fix/refactor(dept-equipment-benefit-analysis):修复 设备效益分析页面逻辑与面包屑更新&#10;&#10;- 添加 useUpdateDeptEquipBenefitCrumbList 科室设备效益分析 页面子路由 面包屑更新逻辑&#10;- 在 动态添加路由 逻辑中，引入面包屑更新 hook，动态维护路由层级显示&#10;- 优化查询参数与路径参数监听逻辑，提升数据响应准确性&#10;- 新增通用请求参数监听，同步更新 store 数据">
+    <task id="LOCAL-04426" summary="v125:fix/refactor:需求2430-因果图谱的鱼骨图，鱼头处与增降幅的红绿色看不清，将鱼头颜色变浅；将树形图的根节点底色一起变浅；&#10;style(indexAnalysis): 更新根节点背景颜色配置&#10;&#10;- 将根节点背景颜色从 #9EB8DA 更改为 #CEDFF6&#10;- 保留原颜色值作为注释以便后续参考">
       <option name="closed" value="true" />
-      <created>1760939704641</created>
-      <option name="number" value="02198" />
-      <option name="presentableId" value="LOCAL-02198" />
+      <created>1784095417370</created>
+      <option name="number" value="04426" />
+      <option name="presentableId" value="LOCAL-04426" />
       <option name="project" value="LOCAL" />
-      <updated>1760939704641</updated>
+      <updated>1784095417371</updated>
     </task>
-    <task id="LOCAL-02199" summary="v91-fix/refactor:DOM-18444-需求745-通用-现场-科端-设备效益分析-重点设备效益分析 设备明细-表格下钻-下钻后，点击面包屑，回到上一层，页面显示404&#10;refactor(router): 更新设备效益分析路由配置&#10;&#10;- 移除科室设备效益分析的静态路由配置&#10;- 添加动态添加科室设备效益分析菜单的注释说明">
+    <task id="LOCAL-04427" summary="v125:feat/refactor:需求2132-院端-临床工作量分析：门诊异常探查、出院异常探查、手术（含介入）异常探查、四级手术异常探查、日间手术异常探查、微创手术异常探查、入院率异常探查；院端-收支分析：收入异常探查、盈余异常探查、药品收入占比异常探查、材料收入占比异常探查、药耗收入占比异常探查；院端-人力资源分析：医生权重异常探查；院端-病组分析（DRG支付）：成本异常探查；院端-异常探查：异常探查常用、异常探查汇总、异常探查自定义；横坐标的25、75分位后面添加问号，纵坐标的25、75分位后面添加问号，问号内容支持自定义，问号内容默认&#10;feat:添加问号提示图标文件">
       <option name="closed" value="true" />
-      <created>1760940229311</created>
-      <option name="number" value="02199" />
-      <option name="presentableId" value="LOCAL-02199" />
+      <created>1784095777910</created>
+      <option name="number" value="04427" />
+      <option name="presentableId" value="LOCAL-04427" />
       <option name="project" value="LOCAL" />
-      <updated>1760940229311</updated>
+      <updated>1784095777910</updated>
     </task>
-    <task id="LOCAL-02200" summary="v91-fix/refactor:DOM-18444-需求745-通用-现场-科端-设备效益分析-重点设备效益分析 设备明细-表格下钻-下钻后，点击面包屑，回到上一层，页面显示404&#10;refactor(deptEquipmentBenefitAnalysis):重构设备效益趋势图表组件&#10;&#10;- 将 PlChart 组件替换为 PlModulePanel 组件&#10;- 移除 params 属性，改用 Vuex 状态管理 commonRequestParams&#10;- 更新图表配置，固定高度为450px 并设置类型为 doms-bar&#10;- 调整数据请求逻辑，使用 commonRequestParams 作为查询参数&#10;-优化错误处理逻辑，确保加载状态正确重置&#10;- 清理冗余的路由监听代码">
+    <task id="LOCAL-04428" summary="v125:feat/refactor:需求2132-院端-临床工作量分析：门诊异常探查、出院异常探查、手术（含介入）异常探查、四级手术异常探查、日间手术异常探查、微创手术异常探查、入院率异常探查；院端-收支分析：收入异常探查、盈余异常探查、药品收入占比异常探查、材料收入占比异常探查、药耗收入占比异常探查；院端-人力资源分析：医生权重异常探查；院端-病组分析（DRG支付）：成本异常探查；院端-异常探查：异常探查常用、异常探查汇总、异常探查自定义；横坐标的25、75分位后面添加问号，纵坐标的25、75分位后面添加问号，问号内容支持自定义，问号内容默认&#10;fix(tooltips): 增加参数访问的可选链&#10;&#10;- 在 useCustomTooltips 中对 params.value 使用可选链操作符，避免访问空值报错&#10;- 在 useIncomeTooltips 中对 params.value 多处访问增加可选链，防止异常&#10;- 清理注释代码，去除旧版本坐标轴互换的冗余注释段落&#10;- 确保 tooltip 渲染时字段访问更安全，提升健壮性与稳定性">
       <option name="closed" value="true" />
-      <created>1760940959709</created>
-      <option name="number" value="02200" />
-      <option name="presentableId" value="LOCAL-02200" />
+      <created>1784095859570</created>
+      <option name="number" value="04428" />
+      <option name="presentableId" value="LOCAL-04428" />
       <option name="project" value="LOCAL" />
-      <updated>1760940959709</updated>
+      <updated>1784095859570</updated>
     </task>
-    <task id="LOCAL-02201" summary="v91-fix/refactor:DOM-18444-需求745-通用-现场-科端-设备效益分析-重点设备效益分析 设备明细-表格下钻-下钻后，点击面包屑，回到上一层，页面显示404&#10;feat(dept-equipment-benefit-analysis): 添加设备类型信息加载状态与参数校验&#10;&#10;- 在 EquipmentTypeInfo 组件中添加 v-loading 指令显示加载状态&#10;- 使用 commonRequestParams 替代原有 params 参数传递方式&#10;- 引入 mapState 获取公共请求参数&#10;- 增强依赖变更监听逻辑，避免无效请求触发&#10;- 更新 useCheckDependenciesNeedRequest 钩子函数增加日期参数有效性检查&#10;- 优化错误处理流程，确保请求失败后正确设置 loading 状态">
+    <task id="LOCAL-04429" summary="v125:feat/refactor:需求2132-院端-临床工作量分析：门诊异常探查、出院异常探查、手术（含介入）异常探查、四级手术异常探查、日间手术异常探查、微创手术异常探查、入院率异常探查；院端-收支分析：收入异常探查、盈余异常探查、药品收入占比异常探查、材料收入占比异常探查、药耗收入占比异常探查；院端-人力资源分析：医生权重异常探查；院端-病组分析（DRG支付）：成本异常探查；院端-异常探查：异常探查常用、异常探查汇总、异常探查自定义；横坐标的25、75分位后面添加问号，纵坐标的25、75分位后面添加问号，问号内容支持自定义，问号内容默认&#10;feat(matrix):WIP-在散点图中添加分位线标记点功能&#10;&#10;- 引入 question-mark.svg 图标用于标记点显示&#10;- 为 x轴25分位线添加图标标记点配置&#10;- 设置标记点样式包括符号大小和偏移量&#10;- 配置标记点位置为 x轴对应值和 y轴10%位置&#10;- 添加调试日志用于初始化图表数据验证&#10;- 注释掉临时的 tips 配置项">
       <option name="closed" value="true" />
-      <created>1760942496649</created>
-      <option name="number" value="02201" />
-      <option name="presentableId" value="LOCAL-02201" />
+      <created>1784096042897</created>
+      <option name="number" value="04429" />
+      <option name="presentableId" value="LOCAL-04429" />
       <option name="project" value="LOCAL" />
-      <updated>1760942496649</updated>
+      <updated>1784096042897</updated>
     </task>
-    <task id="LOCAL-02202" summary="v91-fix/refactor:DOM-18444-需求745-通用-现场-科端-设备效益分析-重点设备效益分析 设备明细-表格下钻-下钻后，点击面包屑，回到上一层，页面显示404&#10;fix(dept-equipment-benefit-analysis): 更新面包屑标题逻辑&#10;&#10;- 修正面包屑标题显示逻辑，优先使用menuObj.name&#10;- 当menuObj.name不存在时，设置默认标题为&quot;重点设备效益分析&quot;">
+    <task id="LOCAL-04430" summary="v125:feat/refactor:需求2132-院端-临床工作量分析：门诊异常探查、出院异常探查、手术（含介入）异常探查、四级手术异常探查、日间手术异常探查、微创手术异常探查、入院率异常探查；院端-收支分析：收入异常探查、盈余异常探查、药品收入占比异常探查、材料收入占比异常探查、药耗收入占比异常探查；院端-人力资源分析：医生权重异常探查；院端-病组分析（DRG支付）：成本异常探查；院端-异常探查：异常探查常用、异常探查汇总、异常探查自定义；横坐标的25、75分位后面添加问号，纵坐标的25、75分位后面添加问号，问号内容支持自定义，问号内容默认&#10;feat(tooltips): 添加异常检测分位线浮动提示功能&#10;&#10;- 创建 useMarkPoint25and75TipsList 钩子函数&#10;- 实现 x轴和y轴的25分位线、75分位线提示悬浮图标&#10;- 添加 questionMark 图标作为提示符号&#10;- 配置 markPoint 数据展示和 tooltip 格式化功能&#10;- 支持动态配置分位线提示内容&#10;- 添加调试日志输出功能">
       <option name="closed" value="true" />
-      <created>1760943808848</created>
-      <option name="number" value="02202" />
-      <option name="presentableId" value="LOCAL-02202" />
+      <created>1784108575552</created>
+      <option name="number" value="04430" />
+      <option name="presentableId" value="LOCAL-04430" />
       <option name="project" value="LOCAL" />
-      <updated>1760943808848</updated>
+      <updated>1784108575553</updated>
     </task>
-    <task id="LOCAL-02203" summary="v91-fix/refactor:DOM-18444-需求745-通用-现场-科端-设备效益分析-重点设备效益分析 设备明细-表格下钻-下钻后，点击面包屑，回到上一层，页面显示404&#10;refactor(dept-equipment-benefit-analysis): 更新依赖请求混入逻辑&#10;&#10;- 修改了混入逻辑注释，支持 params 或 commonRequestParams 属性&#10;- 调整计算属性 getDependenciesNeedRequest，优先使用 params，否则使用 commonRequestParams">
+    <task id="LOCAL-04431" summary="v125:feat/refactor:需求2132-院端-临床工作量分析：门诊异常探查、出院异常探查、手术（含介入）异常探查、四级手术异常探查、日间手术异常探查、微创手术异常探查、入院率异常探查；院端-收支分析：收入异常探查、盈余异常探查、药品收入占比异常探查、材料收入占比异常探查、药耗收入占比异常探查；院端-人力资源分析：医生权重异常探查；院端-病组分析（DRG支付）：成本异常探查；院端-异常探查：异常探查常用、异常探查汇总、异常探查自定义；横坐标的25、75分位后面添加问号，纵坐标的25、75分位后面添加问号，问号内容支持自定义，问号内容默认&#10;feat(matrix): 更新散点图组件的工具提示和分位线功能&#10;&#10;- 移除旧的问号图片导入，改用新的分位点提示列表钩子函数&#10;- 添加四个分位线提示属性（quantileX25Tips、quantileX75Tips、quantileY25Tips、quantileY75Tips）&#10;- 禁用全局工具提示显示，改为在系列数据点级别启用工具提示&#10;- 为系列配置添加自定义工具提示格式化器&#10;- 移除调试用的控制台日志代码&#10;- 实现分位线浮动提示图标功能，使用新的钩子函数生成标记点列表&#10;- 将标记点列表集成到图表系列配置中">
       <option name="closed" value="true" />
-      <created>1760948480142</created>
-      <option name="number" value="02203" />
-      <option name="presentableId" value="LOCAL-02203" />
+      <created>1784108762257</created>
+      <option name="number" value="04431" />
+      <option name="presentableId" value="LOCAL-04431" />
       <option name="project" value="LOCAL" />
-      <updated>1760948480142</updated>
+      <updated>1784108762257</updated>
     </task>
-    <task id="LOCAL-02204" summary="v91-fix/refactor:DOM-18444-需求745-通用-现场-科端-设备效益分析-重点设备效益分析 设备明细-表格下钻-下钻后，点击面包屑，回到上一层，页面显示404&#10;refactor(dept-equipment-benefit-analysis):重构设备效益分析组件结构&#10;&#10;- 移除 EquipmentTypeInfo 组件的 params 属性&#10;- 更新 EquipmentSituationOverview 组件描述并移除 params 属性&#10;- 修改 EquipmentDetailsTable 组件使用 PlModulePanel 替代 PlGridTable&#10;- 调整 EquipmentDetailsTable 对比方式默认值为环比&#10;  - 引入 PlModulePanel 和时间周期常量&#10;  - 更新表格绑定数据配置，设置固定高度和边框显示&#10;- 使用 commonRequestParams 替代原有 params 参数传递&#10;- 优化依赖监听逻辑，避免重复请求">
+    <task id="LOCAL-04432" summary="v125:feat/refactor:需求2132-院端-临床工作量分析：门诊异常探查、出院异常探查、手术（含介入）异常探查、四级手术异常探查、日间手术异常探查、微创手术异常探查、入院率异常探查；院端-收支分析：收入异常探查、盈余异常探查、药品收入占比异常探查、材料收入占比异常探查、药耗收入占比异常探查；院端-人力资源分析：医生权重异常探查；院端-病组分析（DRG支付）：成本异常探查；院端-异常探查：异常探查常用、异常探查汇总、异常探查自定义；横坐标的25、75分位后面添加问号，纵坐标的25、75分位后面添加问号，问号内容支持自定义，问号内容默认&#10;feat(outpatientMatrix): 添加四分位数提示参数&#10;&#10;- 添加 quantileX25Tips 属性绑定&#10;- 添加 quantileX75Tips 属性绑定&#10;- 添加 quantileY25Tips 属性绑定&#10;- 添加 quantileY75Tips 属性绑定">
       <option name="closed" value="true" />
-      <created>1760948563619</created>
-      <option name="number" value="02204" />
-      <option name="presentableId" value="LOCAL-02204" />
+      <created>1784108835393</created>
+      <option name="number" value="04432" />
+      <option name="presentableId" value="LOCAL-04432" />
       <option name="project" value="LOCAL" />
-      <updated>1760948563619</updated>
+      <updated>1784108835393</updated>
     </task>
-    <task id="LOCAL-02205" summary="v91-fix/refactor:DOM-18444-需求745-通用-现场-科端-设备效益分析-重点设备效益分析 设备明细-表格下钻-下钻后，点击面包屑，回到上一层，页面显示404&#10;refactor(dept-equipment-benefit-analysis): 替换PlChart为PlModulePanel并优化请求参数&#10;- 将检查人次趋势分析、手术台次趋势、项目数趋势组件中的PlChart替换为PlModulePanel&#10;- 移除各组件中不再使用的params属性和PlChart组件引用&#10;- 引入vuex的mapState映射，使用commonRequestParams替代原来的params传参&#10;- 统一图表类型为doms-bar，标准化图表数据绑定方式&#10;- 调整样式文件中description-text-wrapper的flex布局属性，增加min-width设置&#10;- 优化组件间依赖注入和数据请求逻辑，提升代码复用性">
+    <task id="LOCAL-04433" summary="v125:feat/refactor:需求2132-院端-临床工作量分析：门诊异常探查、出院异常探查、手术（含介入）异常探查、四级手术异常探查、日间手术异常探查、微创手术异常探查、入院率异常探查；院端-收支分析：收入异常探查、盈余异常探查、药品收入占比异常探查、材料收入占比异常探查、药耗收入占比异常探查；院端-人力资源分析：医生权重异常探查；院端-病组分析（DRG支付）：成本异常探查；院端-异常探查：异常探查常用、异常探查汇总、异常探查自定义；横坐标的25、75分位后面添加问号，纵坐标的25、75分位后面添加问号，问号内容支持自定义，问号内容默认&#10;refactor(tooltips): 移除useMarkPoint25and75TipsList中的调试日志&#10;&#10;- 删除了多个console.log调试输出">
       <option name="closed" value="true" />
-      <created>1760949745973</created>
-      <option name="number" value="02205" />
-      <option name="presentableId" value="LOCAL-02205" />
+      <created>1784108935903</created>
+      <option name="number" value="04433" />
+      <option name="presentableId" value="LOCAL-04433" />
       <option name="project" value="LOCAL" />
-      <updated>1760949745975</updated>
+      <updated>1784108935903</updated>
     </task>
-    <task id="LOCAL-02206" summary="v91-fix/refactor:DOM-18444-需求745-通用-现场-科端-设备效益分析-重点设备效益分析 设备明细-表格下钻-下钻后，点击面包屑，回到上一层，页面显示404&#10;refactor(deptEquipmentBenefitAnalysis):重构科室设备效益分析组件&#10;&#10;- 移除各子组件中的 params 属性，统一使用 store 中的 commonRequestParams&#10;- 将 PlChart 和 PlGridTable 替换为 PlModulePanel 组件&#10;- 为图表和表格绑定数据添加 type 属性以明确组件类型&#10;- 统一设置图表和表格高度为450，优化样式表现&#10;- 引入 mapState从 store 获取公共请求参数&#10;- 清理无用的样式注释和组件导入&#10;- 优化收支趋势分析组件的滚动限制和边框显示&#10;- 移除冗余的模板和脚本代码，提升组件可维护性">
+    <task id="LOCAL-04434" summary="v125:feat/refactor:需求2132-院端-临床工作量分析：门诊异常探查、出院异常探查、手术（含介入）异常探查、四级手术异常探查、日间手术异常探查、微创手术异常探查、入院率异常探查；院端-收支分析：收入异常探查、盈余异常探查、药品收入占比异常探查、材料收入占比异常探查、药耗收入占比异常探查；院端-人力资源分析：医生权重异常探查；院端-病组分析（DRG支付）：成本异常探查；院端-异常探查：异常探查常用、异常探查汇总、异常探查自定义；横坐标的25、75分位后面添加问号，纵坐标的25、75分位后面添加问号，问号内容支持自定义，问号内容默认&#10;fix(hooks): 修复疾病工具提示参数为空时返回空字符串的问题&#10;&#10;- 在 useDiseaseTooltips 钩子中添加参数值为空的判断&#10;- 避免当参数 value 不存在时返回 undefined 内容&#10;- 提升工具提示组件的健壮性，避免渲染异常&#10;- 删除了未使用的注释代码，保持代码整洁">
       <option name="closed" value="true" />
-      <created>1760951428520</created>
-      <option name="number" value="02206" />
-      <option name="presentableId" value="LOCAL-02206" />
+      <created>1784109033798</created>
+      <option name="number" value="04434" />
+      <option name="presentableId" value="LOCAL-04434" />
       <option name="project" value="LOCAL" />
-      <updated>1760951428520</updated>
+      <updated>1784109033798</updated>
     </task>
-    <task id="LOCAL-02207" summary="v91-fix/refactor:DOM-18444-需求745-通用-现场-科端-设备效益分析-重点设备效益分析 设备明细-表格下钻-下钻后，点击面包屑，回到上一层，页面显示404&#10;refactor(component): 替换PlChart为PlModulePanel组件&#10;&#10;- 将RevenueExpenditureTrendAnalysis.vue中的PlChart组件替换为PlModulePanel&#10;- 移除了对PlChart组件的引用和导入，更新了组件注册列表，使用PlModulePanel替代PlChart">
+    <task id="LOCAL-04435" summary="v125:feat/refactor:需求2132-院端-临床工作量分析：门诊异常探查、出院异常探查、手术（含介入）异常探查、四级手术异常探查、日间手术异常探查、微创手术异常探查、入院率异常探查；院端-收支分析：收入异常探查、盈余异常探查、药品收入占比异常探查、材料收入占比异常探查、药耗收入占比异常探查；院端-人力资源分析：医生权重异常探查；院端-病组分析（DRG支付）：成本异常探查；院端-异常探查：异常探查常用、异常探查汇总、异常探查自定义；横坐标的25、75分位后面添加问号，纵坐标的25、75分位后面添加问号，问号内容支持自定义，问号内容默认&#10;fix(hospPageConfig): 注释四分位数提示文本为空字符串&#10;&#10;- 将 quantileX25Tips、quantileX75Tips、quantileY25Tips 和 quantileY75Tips 的默认提示文本替换为空字符串&#10;- 注释掉原有提示文本，避免显示默认说明内容&#10;- 维持原有逻辑结构，保证配置获取不受影响">
       <option name="closed" value="true" />
-      <created>1760951714776</created>
-      <option name="number" value="02207" />
-      <option name="presentableId" value="LOCAL-02207" />
+      <created>1784109602088</created>
+      <option name="number" value="04435" />
+      <option name="presentableId" value="LOCAL-04435" />
       <option name="project" value="LOCAL" />
-      <updated>1760951714776</updated>
+      <updated>1784109602088</updated>
     </task>
-    <task id="LOCAL-02208" summary="v91-feat/refactor:DOM-18465需求675-通用（除吉大一）-院端-病种分析-市医保、省卫健委DRG、DIP，全院病组一览表添加各类费用及费用占比&#10;refactor(diseaseTable): 移除重复逻辑并优化数据获取流程&#10;&#10;- 删除旧版 hospDrgAllPage 和 hospDipAll 接口调用逻辑&#10;- 保留重构后的 fetchWholeHospitalDiseaseTypeTableDrg 和 fetchWholeHospitalDiseaseTypeTableDip 方法&#10;- 添加注释标记待删除的冗余代码块">
+    <task id="LOCAL-04436" summary="v125:feat/refactor:需求2132-院端-临床工作量分析：门诊异常探查、出院异常探查、手术（含介入）异常探查、四级手术异常探查、日间手术异常探查、微创手术异常探查、入院率异常探查；院端-收支分析：收入异常探查、盈余异常探查、药品收入占比异常探查、材料收入占比异常探查、药耗收入占比异常探查；院端-人力资源分析：医生权重异常探查；院端-病组分析（DRG支付）：成本异常探查；院端-异常探查：异常探查常用、异常探查汇总、异常探查自定义；横坐标的25、75分位后面添加问号，纵坐标的25、75分位后面添加问号，问号内容支持自定义，问号内容默认&#10;chore:临时删除 hospMatrixConfig">
       <option name="closed" value="true" />
-      <created>1760953800159</created>
-      <option name="number" value="02208" />
-      <option name="presentableId" value="LOCAL-02208" />
+      <created>1784110976233</created>
+      <option name="number" value="04436" />
+      <option name="presentableId" value="LOCAL-04436" />
       <option name="project" value="LOCAL" />
-      <updated>1760953800159</updated>
+      <updated>1784110976233</updated>
     </task>
-    <task id="LOCAL-02209" summary="v92-feat:DOM-18473-需求608-科室端-收支余-所有这类图表（对比分析右侧蓝底内容），单位改成万元">
+    <task id="LOCAL-04437" summary="v125:feat/refactor:需求2132-院端-临床工作量分析：门诊异常探查、出院异常探查、手术（含介入）异常探查、四级手术异常探查、日间手术异常探查、微创手术异常探查、入院率异常探查；院端-收支分析：收入异常探查、盈余异常探查、药品收入占比异常探查、材料收入占比异常探查、药耗收入占比异常探查；院端-人力资源分析：医生权重异常探查；院端-病组分析（DRG支付）：成本异常探查；院端-异常探查：异常探查常用、异常探查汇总、异常探查自定义；横坐标的25、75分位后面添加问号，纵坐标的25、75分位后面添加问号，问号内容支持自定义，问号内容默认&#10;chore:恢复 hospMatrixConfig">
       <option name="closed" value="true" />
-      <created>1761009025947</created>
-      <option name="number" value="02209" />
-      <option name="presentableId" value="LOCAL-02209" />
+      <created>1784111070740</created>
+      <option name="number" value="04437" />
+      <option name="presentableId" value="LOCAL-04437" />
       <option name="project" value="LOCAL" />
-      <updated>1761009025948</updated>
+      <updated>1784111070740</updated>
     </task>
-    <task id="LOCAL-02210" summary="v92-fix:DOM-18460-需求变更-科室-材料管理-手术收费项目分析-医疗组下钻-材料用量分析：未隐藏下拉框">
+    <task id="LOCAL-04438" summary="v125:feat/refactor:需求2132-院端-临床工作量分析：门诊异常探查、出院异常探查、手术（含介入）异常探查、四级手术异常探查、日间手术异常探查、微创手术异常探查、入院率异常探查；院端-收支分析：收入异常探查、盈余异常探查、药品收入占比异常探查、材料收入占比异常探查、药耗收入占比异常探查；院端-人力资源分析：医生权重异常探查；院端-病组分析（DRG支付）：成本异常探查；院端-异常探查：异常探查常用、异常探查汇总、异常探查自定义；横坐标的25、75分位后面添加问号，纵坐标的25、75分位后面添加问号，问号内容支持自定义，问号内容默认&#10;refactor(inHospitalMatrix): 重构住院矩阵页面组件结构&#10;&#10;- 简化模板结构并删除注释掉的冗余代码&#10;- 添加四分位数提示功能支持&#10;- 优化组件属性配置和布局结构">
       <option name="closed" value="true" />
-      <created>1761010090343</created>
-      <option name="number" value="02210" />
-      <option name="presentableId" value="LOCAL-02210" />
+      <created>1784111798423</created>
+      <option name="number" value="04438" />
+      <option name="presentableId" value="LOCAL-04438" />
       <option name="project" value="LOCAL" />
-      <updated>1761010090343</updated>
+      <updated>1784111798423</updated>
     </task>
-    <task id="LOCAL-02211" summary="v92-fix:DOM-18473-需求608-科室端-收支余-所有这类图表（对比分析右侧蓝底内容），单位改成万元">
+    <task id="LOCAL-04439" summary="v125:feat/refactor:需求2132-院端-临床工作量分析：门诊异常探查、出院异常探查、手术（含介入）异常探查、四级手术异常探查、日间手术异常探查、微创手术异常探查、入院率异常探查；院端-收支分析：收入异常探查、盈余异常探查、药品收入占比异常探查、材料收入占比异常探查、药耗收入占比异常探查；院端-人力资源分析：医生权重异常探查；院端-病组分析（DRG支付）：成本异常探查；院端-异常探查：异常探查常用、异常探查汇总、异常探查自定义；横坐标的25、75分位后面添加问号，纵坐标的25、75分位后面添加问号，问号内容支持自定义，问号内容默认&#10;feat(hospPageConfigMixin): 增加环境判断及页面配置条件控制&#10;&#10;- 引入 vuex 的 mapGetters 用于获取常量状态&#10;- 添加多个环境及医院代码的 getter 映射&#10;- 新增 getIfHaspMatrixPageConfig 计算属性，综合判断是否加载页面配置&#10;- fetchPageConfigByMenu 方法增加环境判断，避免不符合条件时请求配置数据">
       <option name="closed" value="true" />
-      <created>1761015212556</created>
-      <option name="number" value="02211" />
-      <option name="presentableId" value="LOCAL-02211" />
+      <created>1784112196785</created>
+      <option name="number" value="04439" />
+      <option name="presentableId" value="LOCAL-04439" />
       <option name="project" value="LOCAL" />
-      <updated>1761015212558</updated>
+      <updated>1784112196785</updated>
     </task>
-    <task id="LOCAL-02212" summary="v92-fix:北京地坛-现场-病种分析（市医保DRG） /出院分析 / 高难度病种例数占比-当前组：出院医保病人 持久化数据">
+    <task id="LOCAL-04440" summary="v125:feat/refactor:需求2132-院端-临床工作量分析：门诊异常探查、出院异常探查、手术（含介入）异常探查、四级手术异常探查、日间手术异常探查、微创手术异常探查、入院率异常探查；院端-收支分析：收入异常探查、盈余异常探查、药品收入占比异常探查、材料收入占比异常探查、药耗收入占比异常探查；院端-人力资源分析：医生权重异常探查；院端-病组分析（DRG支付）：成本异常探查；院端-异常探查：异常探查常用、异常探查汇总、异常探查自定义；横坐标的25、75分位后面添加问号，纵坐标的25、75分位后面添加问号，问号内容支持自定义，问号内容默认&#10;refactor(surgeryMatrix): 精简头部筛选组件并优化属性传递&#10;&#10;- 删除了旧的department-select及其内部复杂结构和按钮&#10;- 使用DeptAndTimeHeaderFilter组件替代，实现头部科室和时间筛选&#10;- 在矩阵组件中添加了quantileX25Tips、quantileX75Tips、quantileY25Tips和quantileY75Tips属性传递&#10;- 保持其他参数及布局不变，提升代码清晰度与维护性">
       <option name="closed" value="true" />
-      <created>1761032794862</created>
-      <option name="number" value="02212" />
-      <option name="presentableId" value="LOCAL-02212" />
+      <created>1784112850619</created>
+      <option name="number" value="04440" />
+      <option name="presentableId" value="LOCAL-04440" />
       <option name="project" value="LOCAL" />
-      <updated>1761032794862</updated>
+      <updated>1784112850619</updated>
     </task>
-    <task id="LOCAL-02213" summary="v92-fix:北京地坛-现场-病种分析（市医保DRG） /出院分析 / 高难度病种例数占比-当前组：出院医保病人 持久化数据">
+    <task id="LOCAL-04441" summary="v125:feat/refactor:需求2132-院端-临床工作量分析：门诊异常探查、出院异常探查、手术（含介入）异常探查、四级手术异常探查、日间手术异常探查、微创手术异常探查、入院率异常探查；院端-收支分析：收入异常探查、盈余异常探查、药品收入占比异常探查、材料收入占比异常探查、药耗收入占比异常探查；院端-人力资源分析：医生权重异常探查；院端-病组分析（DRG支付）：成本异常探查；院端-异常探查：异常探查常用、异常探查汇总、异常探查自定义；横坐标的25、75分位后面添加问号，纵坐标的25、75分位后面添加问号，问号内容支持自定义，问号内容默认&#10;refactor(levelFourSurgeryMatrix): 临床工作量分析 /四级手术异常探查 添加 25、75分位后面添加问号提示&#10;&#10;- 移除了注释掉的冗余代码，简化了模板结构&#10;- 在主矩阵组件中增加了四个新的量化提示属性传递">
       <option name="closed" value="true" />
-      <created>1761032811551</created>
-      <option name="number" value="02213" />
-      <option name="presentableId" value="LOCAL-02213" />
+      <created>1784166768626</created>
+      <option name="number" value="04441" />
+      <option name="presentableId" value="LOCAL-04441" />
       <option name="project" value="LOCAL" />
-      <updated>1761032811551</updated>
+      <updated>1784166768628</updated>
     </task>
-    <task id="LOCAL-02214" summary="v91-chore:(inHospitalBlock): 通用-科端-收支余分析 /总览 /住院分析-调整 医疗组住院分析 表格&#10;-显示逻辑&#10;&#10;- 注释掉原有的医疗组显示条件判断&#10;- 根据赵征要求，所有医院环境均需显示医疗组&#10;- 保留医疗组代码过滤条件检查">
+    <task id="LOCAL-04442" summary="v125:feat/refactor:需求2132-院端-临床工作量分析：门诊异常探查、出院异常探查、手术（含介入）异常探查、四级手术异常探查、日间手术异常探查、微创手术异常探查、入院率异常探查；院端-收支分析：收入异常探查、盈余异常探查、药品收入占比异常探查、材料收入占比异常探查、药耗收入占比异常探查；院端-人力资源分析：医生权重异常探查；院端-病组分析（DRG支付）：成本异常探查；院端-异常探查：异常探查常用、异常探查汇总、异常探查自定义；横坐标的25、75分位后面添加问号，纵坐标的25、75分位后面添加问号，问号内容支持自定义，问号内容默认&#10;refactor(levelFourSurgeryMatrix): 临床工作量分析 /日间手术异常探查 添加 25、75分位后面添加问号提示&#10;&#10;- 移除了注释掉的冗余代码，简化了模板结构&#10;- 在主矩阵组件中增加了四个新的量化提示属性传递">
       <option name="closed" value="true" />
-      <created>1761104229360</created>
-      <option name="number" value="02214" />
-      <option name="presentableId" value="LOCAL-02214" />
+      <created>1784167105689</created>
+      <option name="number" value="04442" />
+      <option name="presentableId" value="LOCAL-04442" />
       <option name="project" value="LOCAL" />
-      <updated>1761104229361</updated>
+      <updated>1784167105689</updated>
     </task>
-    <task id="LOCAL-02215" summary="v91-feat/refactor:DOM-18541-需求468-院端-病种分析（DRG支付）-成本异常探查、病组经济分析的病人分类都改为全部医保病人、省医保病人、市医保病人，默认市医保病人；不显示收入和成本口径相关内容，默认理论结算收入和名义成本。&#10;feat/refactor(operationDisease):修复病人分组逻辑与页面显示问题&#10;- 优化 groupPat 方法中的参数合并逻辑&#10;- 新增 onDrgGroupTypeChange 异步调用 groupPat&#10;- 在 drgCity/leavehosp.vue 中同步修改指令名称">
+    <task id="LOCAL-04443" summary="v125:feat/refactor:需求2132-院端-临床工作量分析：门诊异常探查、出院异常探查、手术（含介入）异常探查、四级手术异常探查、日间手术异常探查、微创手术异常探查、入院率异常探查；院端-收支分析：收入异常探查、盈余异常探查、药品收入占比异常探查、材料收入占比异常探查、药耗收入占比异常探查；院端-人力资源分析：医生权重异常探查；院端-病组分析（DRG支付）：成本异常探查；院端-异常探查：异常探查常用、异常探查汇总、异常探查自定义；横坐标的25、75分位后面添加问号，纵坐标的25、75分位后面添加问号，问号内容支持自定义，问号内容默认&#10;refactor(levelFourSurgeryMatrix): 临床工作量分析 /微创手术异常探查 添加 25、75分位后面添加问号提示&#10;&#10;- 移除了注释掉的冗余代码，简化了模板结构&#10;- 在主矩阵组件中增加了四个新的量化提示属性传递">
       <option name="closed" value="true" />
-      <created>1761111366124</created>
-      <option name="number" value="02215" />
-      <option name="presentableId" value="LOCAL-02215" />
+      <created>1784168376072</created>
+      <option name="number" value="04443" />
+      <option name="presentableId" value="LOCAL-04443" />
       <option name="project" value="LOCAL" />
-      <updated>1761111366124</updated>
+      <updated>1784168376072</updated>
     </task>
-    <task id="LOCAL-02216" summary="v91-feat/refactor:DOM-18541-需求468-院端-病种分析（DRG支付）-成本异常探查、病组经济分析的病人分类都改为全部医保病人、省医保病人、市医保病人，默认市医保病人；不显示收入和成本口径相关内容，默认理论结算收入和名义成本&#10;feat(diseaseMatrix): 新增吉大医病人分组类型选择器&#10;&#10;- 在病人分类选择器中增加对吉大医的特殊处理&#10;- 添加新的 DRG 分组类型下拉选项组件&#10;- 实现根据医院代码控制组件显示逻辑">
+    <task id="LOCAL-04444" summary="v125:feat/refactor:需求2132-院端-临床工作量分析：门诊异常探查、出院异常探查、手术（含介入）异常探查、四级手术异常探查、日间手术异常探查、微创手术异常探查、入院率异常探查；院端-收支分析：收入异常探查、盈余异常探查、药品收入占比异常探查、材料收入占比异常探查、药耗收入占比异常探查；院端-人力资源分析：医生权重异常探查；院端-病组分析（DRG支付）：成本异常探查；院端-异常探查：异常探查常用、异常探查汇总、异常探查自定义；横坐标的25、75分位后面添加问号，纵坐标的25、75分位后面添加问号，问号内容支持自定义，问号内容默认&#10;refactor(tooltips): 优化异常检测标记点提示列表的y轴偏移计算&#10;&#10;- 添加genSymbolOffsetYAxis函数用于动态计算y轴偏移量&#10;- 将固定的symbolOffset值替换为基于y轴值的动态偏移计算&#10;- 更新25分位线和75分位线的symbolOffset配置以使用动态计算函数">
       <option name="closed" value="true" />
-      <created>1761112744265</created>
-      <option name="number" value="02216" />
-      <option name="presentableId" value="LOCAL-02216" />
+      <created>1784169084504</created>
+      <option name="number" value="04444" />
+      <option name="presentableId" value="LOCAL-04444" />
       <option name="project" value="LOCAL" />
-      <updated>1761112744265</updated>
+      <updated>1784169084504</updated>
     </task>
-    <task id="LOCAL-02217" summary="v91-feat/refactor:DOM-18541-需求468-院端-病种分析（DRG支付）-成本异常探查、病组经济分析的病人分类都改为全部医保病人、省医保病人、市医保病人，默认市医保病人；不显示收入和成本口径相关内容，默认理论结算收入和名义成本&#10;feat(operationDisease): 添加病人分组选项加载状态&#10;&#10;- 为病人分组选择器添加加载状态显示">
+    <task id="LOCAL-04445" summary="v125:feat/refactor:需求2132-院端-临床工作量分析：门诊异常探查、出院异常探查、手术（含介入）异常探查、四级手术异常探查、日间手术异常探查、微创手术异常探查、入院率异常探查；院端-收支分析：收入异常探查、盈余异常探查、药品收入占比异常探查、材料收入占比异常探查、药耗收入占比异常探查；院端-人力资源分析：医生权重异常探查；院端-病组分析（DRG支付）：成本异常探查；院端-异常探查：异常探查常用、异常探查汇总、异常探查自定义；横坐标的25、75分位后面添加问号，纵坐标的25、75分位后面添加问号，问号内容支持自定义，问号内容默认&#10;refactor(levelFourSurgeryMatrix): 临床工作量分析-入院率异常探查 添加 25、75分位后面添加问号提示&#10;&#10;- 在主矩阵组件中增加了四个新的提示属性传递">
       <option name="closed" value="true" />
-      <created>1761112893348</created>
-      <option name="number" value="02217" />
-      <option name="presentableId" value="LOCAL-02217" />
+      <created>1784169872460</created>
+      <option name="number" value="04445" />
+      <option name="presentableId" value="LOCAL-04445" />
       <option name="project" value="LOCAL" />
-      <updated>1761112893348</updated>
+      <updated>1784169872461</updated>
     </task>
-    <task id="LOCAL-02218" summary="v91-feat/refactor:DOM-18560-需求351-病种分析-DRG支付，院端和科端：名义成本改为名义收入。相关表格调整&#10;feat(cost): 新增成本口径级联选项配置&#10;&#10;- 新增默认成本口径级联选项配置文件&#10;- 更新成本口径选项生成函数以支持多医院配置&#10;- TODO: 替换 DRG 页面中 成本选项过滤逻辑以适配医疗费用收入口径">
+    <task id="LOCAL-04446" summary="v125:feat/refactor:需求2132-院端-临床工作量分析：门诊异常探查、出院异常探查、手术（含介入）异常探查、四级手术异常探查、日间手术异常探查、微创手术异常探查、入院率异常探查；院端-收支分析：收入异常探查、盈余异常探查、药品收入占比异常探查、材料收入占比异常探查、药耗收入占比异常探查；院端-人力资源分析：医生权重异常探查；院端-病组分析（DRG支付）：成本异常探查；院端-异常探查：异常探查常用、异常探查汇总、异常探查自定义；横坐标的25、75分位后面添加问号，纵坐标的25、75分位后面添加问号，问号内容支持自定义，问号内容默认&#10;fix(tooltips): 修复异常检测分位数提示图标的显示逻辑&#10;&#10;- 添加了minX和minY参数用于控制提示图标的显示条件&#10;- 重构了分位数坐标的获取逻辑，避免直接访问数组索引&#10;- 实现了基于最小值判断的提示图标显示条件&#10;- 更新了x轴和y轴分位线提示图标的坐标引用&#10;- 修复了y轴分位线符号偏移量的计算方式">
       <option name="closed" value="true" />
-      <created>1761118323167</created>
-      <option name="number" value="02218" />
-      <option name="presentableId" value="LOCAL-02218" />
+      <created>1784173891158</created>
+      <option name="number" value="04446" />
+      <option name="presentableId" value="LOCAL-04446" />
       <option name="project" value="LOCAL" />
-      <updated>1761118323167</updated>
+      <updated>1784173891159</updated>
     </task>
-    <task id="LOCAL-02219" summary="v91-feat/refactor:DOM-18560-需求351-病种分析-DRG支付，院端和科端：名义成本改为名义收入。相关表格调整&#10;feat/refactor(diseaseMatrix):重构成本类型级联选项逻辑&#10;&#10;- 更新 getCostOptions 方法实现，使用 genCostTypeCascadeOptionsDrg 替代旧逻辑&#10;- 添加 TODO 注释标记待删除的重复逻辑，保留旧逻辑注释便于后续清理">
+    <task id="LOCAL-04447" summary="v125:feat/refactor:需求2132-院端-临床工作量分析：门诊异常探查、出院异常探查、手术（含介入）异常探查、四级手术异常探查、日间手术异常探查、微创手术异常探查、入院率异常探查；院端-收支分析：收入异常探查、盈余异常探查、药品收入占比异常探查、材料收入占比异常探查、药耗收入占比异常探查；院端-人力资源分析：医生权重异常探查；院端-病组分析（DRG支付）：成本异常探查；院端-异常探查：异常探查常用、异常探查汇总、异常探查自定义；横坐标的25、75分位后面添加问号，纵坐标的25、75分位后面添加问号，问号内容支持自定义，问号内容默认&#10;fix(tooltips): 修复异常检测分位数提示图标的显示逻辑&#10;&#10;- 添加了minX和minY参数用于控制提示图标的显示条件&#10;- 重构了分位数坐标的获取逻辑，避免直接访问数组索引&#10;- 实现了基于最小值判断的提示图标显示条件&#10;- 更新了x轴和y轴分位线提示图标的坐标引用&#10;- 修复了y轴分位线符号偏移量的计算方式">
       <option name="closed" value="true" />
-      <created>1761119383012</created>
-      <option name="number" value="02219" />
-      <option name="presentableId" value="LOCAL-02219" />
+      <created>1784174012209</created>
+      <option name="number" value="04447" />
+      <option name="presentableId" value="LOCAL-04447" />
       <option name="project" value="LOCAL" />
-      <updated>1761119383012</updated>
+      <updated>1784174012209</updated>
     </task>
-    <task id="LOCAL-02220" summary="v91-feat/refactor:DOM-18560-需求351-病种分析-DRG支付，院端和科端：名义成本改为名义收入。相关表格调整 &#10;- 更新多个组件中的 getCostOptions 方法实现&#10;- 引入 genCostTypeCascadeOptionsDrg 替代原有逻辑&#10;- 标记旧方法 genCostTypeCascadeOptions 待删除">
+    <task id="LOCAL-04448" summary="v125:feat/refactor:需求2132-院端-临床工作量分析：门诊异常探查、出院异常探查、手术（含介入）异常探查、四级手术异常探查、日间手术异常探查、微创手术异常探查、入院率异常探查；院端-收支分析：收入异常探查、盈余异常探查、药品收入占比异常探查、材料收入占比异常探查、药耗收入占比异常探查；院端-人力资源分析：医生权重异常探查；院端-病组分析（DRG支付）：成本异常探查；院端-异常探查：异常探查常用、异常探查汇总、异常探查自定义；横坐标的25、75分位后面添加问号，纵坐标的25、75分位后面添加问号，问号内容支持自定义，问号内容默认&#10;refactor(levelFourSurgeryMatrix): 院端-病组分析（DRG支付） /成本异常探查 添加 25、75分位后面添加问号提示&#10;&#10;- 在主矩阵组件中增加了四个新的量化提示属性传递">
       <option name="closed" value="true" />
-      <created>1761122335371</created>
-      <option name="number" value="02220" />
-      <option name="presentableId" value="LOCAL-02220" />
+      <created>1784174065968</created>
+      <option name="number" value="04448" />
+      <option name="presentableId" value="LOCAL-04448" />
       <option name="project" value="LOCAL" />
-      <updated>1761122335371</updated>
+      <updated>1784174065968</updated>
     </task>
-    <task id="LOCAL-02221" summary="v91-feat/refactor:DOM-18560-需求351-病种分析-DRG支付，院端和科端：名义成本改为名义收入。相关表格调整&#10;&#10;- 替换 genCostTypeCascadeOptions 为 genCostTypeCascadeOptionsDrg&#10;- 更新 getCostOptions 方法以适配新函数参数结构&#10;- 添加 TODO 注释标记旧逻辑待删除">
+    <task id="LOCAL-04449" summary="v125:feat/refactor:需求2132-院端-临床工作量分析：门诊异常探查、出院异常探查、手术（含介入）异常探查、四级手术异常探查、日间手术异常探查、微创手术异常探查、入院率异常探查；院端-收支分析：收入异常探查、盈余异常探查、药品收入占比异常探查、材料收入占比异常探查、药耗收入占比异常探查；院端-人力资源分析：医生权重异常探查；院端-病组分析（DRG支付）：成本异常探查；院端-异常探查：异常探查常用、异常探查汇总、异常探查自定义；横坐标的25、75分位后面添加问号，纵坐标的25、75分位后面添加问号，问号内容支持自定义，问号内容默认&#10;refactor(levelFourSurgeryMatrix): 院端-收支分析 /收入异常探查 添加 25、75分位后面添加问号提示&#10;&#10;- 在主矩阵组件中增加了四个新的提示属性传递">
       <option name="closed" value="true" />
-      <created>1761123753894</created>
-      <option name="number" value="02221" />
-      <option name="presentableId" value="LOCAL-02221" />
+      <created>1784174821415</created>
+      <option name="number" value="04449" />
+      <option name="presentableId" value="LOCAL-04449" />
       <option name="project" value="LOCAL" />
-      <updated>1761123753894</updated>
+      <updated>1784174821415</updated>
     </task>
-    <task id="LOCAL-02222" summary="v91-feat/refactor:DOM-18560-需求351-病种分析-DRG支付，院端和科端：名义成本改为名义收入。相关表格调整&#10;refactor(cost):重构 科端-病种分析（市医保DRG） /出院分析；明细数据下钻；医疗组下钻；病例下钻；&#10;&#10;- 更新组件 DeptMedGroupDateCalibre.vue 和 leavehosp.vue 中的调用方式&#10;  - 使用新的 genCostTypeCascadeOptionsDrg 方法替换旧逻辑&#10;  - 标记待删除的重复逻辑代码段">
+    <task id="LOCAL-04450" summary="v125:feat/refactor:需求2132-院端-临床工作量分析：门诊异常探查、出院异常探查、手术（含介入）异常探查、四级手术异常探查、日间手术异常探查、微创手术异常探查、入院率异常探查；院端-收支分析：收入异常探查、盈余异常探查、药品收入占比异常探查、材料收入占比异常探查、药耗收入占比异常探查；院端-人力资源分析：医生权重异常探查；院端-病组分析（DRG支付）：成本异常探查；院端-异常探查：异常探查常用、异常探查汇总、异常探查自定义；横坐标的25、75分位后面添加问号，纵坐标的25、75分位后面添加问号，问号内容支持自定义，问号内容默认&#10;refactor(levelFourSurgeryMatrix): 院端-收支分析 /盈余异常探查 添加 25、75分位后面添加问号提示&#10;&#10;- 在主矩阵组件中增加了四个新的提示属性传递">
       <option name="closed" value="true" />
-      <created>1761125595794</created>
-      <option name="number" value="02222" />
-      <option name="presentableId" value="LOCAL-02222" />
+      <created>1784179429936</created>
+      <option name="number" value="04450" />
+      <option name="presentableId" value="LOCAL-04450" />
       <option name="project" value="LOCAL" />
-      <updated>1761125595794</updated>
+      <updated>1784179429936</updated>
     </task>
-    <task id="LOCAL-02223" summary="v91-feat/refactor:DOM-18560-需求351-病种分析-DRG支付，院端和科端：名义成本改为名义收入。相关表格调整&#10;refactor(cost):重构 科室端-病种分析（市医保DRG） /出院分析 /病组RW-结余率分析 查看详情 下钻页&#10;&#10;- 更新组件 DeptMedGroupDateCalibre.vue 和 leavehosp.vue 中的调用方式&#10;  - 使用新的 genCostTypeCascadeOptionsDrg 方法替换旧逻辑&#10;  - 标记待删除的重复逻辑代码段">
+    <task id="LOCAL-04451" summary="v125:feat/refactor:需求2132-院端-临床工作量分析：门诊异常探查、出院异常探查、手术（含介入）异常探查、四级手术异常探查、日间手术异常探查、微创手术异常探查、入院率异常探查；院端-收支分析：收入异常探查、盈余异常探查、药品收入占比异常探查、材料收入占比异常探查、药耗收入占比异常探查；院端-人力资源分析：医生权重异常探查；院端-病组分析（DRG支付）：成本异常探查；院端-异常探查：异常探查常用、异常探查汇总、异常探查自定义；横坐标的25、75分位后面添加问号，纵坐标的25、75分位后面添加问号，问号内容支持自定义，问号内容默认&#10;refactor(levelFourSurgeryMatrix): 收支分析 /耗占比异常探查 添加 25、75分位后面添加问号提示&#10;&#10;- 在主矩阵组件中增加了四个新的提示属性传递">
       <option name="closed" value="true" />
-      <created>1761125835036</created>
-      <option name="number" value="02223" />
-      <option name="presentableId" value="LOCAL-02223" />
+      <created>1784179687437</created>
+      <option name="number" value="04451" />
+      <option name="presentableId" value="LOCAL-04451" />
       <option name="project" value="LOCAL" />
-      <updated>1761125835036</updated>
+      <updated>1784179687439</updated>
     </task>
-    <task id="LOCAL-02224" summary="v91-feat/refactor:DOM-18560-需求351-病种分析-DRG支付，院端和科端：名义成本改为名义收入。相关表格调整&#10;refactor(cost):重构 科端：病种分析（市医保DRG） /临床病种分析&#10;- 更新组件 DeptMedGroupDateCalibre.vue 和 leavehosp.vue 中的调用方式&#10;  - 使用新的 genCostTypeCascadeOptionsDrg 方法替换旧逻辑&#10;  - 标记待删除的重复逻辑代码段">
+    <task id="LOCAL-04452" summary="v125:feat/refactor:需求2132-院端-临床工作量分析：门诊异常探查、出院异常探查、手术（含介入）异常探查、四级手术异常探查、日间手术异常探查、微创手术异常探查、入院率异常探查；院端-收支分析：收入异常探查、盈余异常探查、药品收入占比异常探查、材料收入占比异常探查、药耗收入占比异常探查；院端-人力资源分析：医生权重异常探查；院端-病组分析（DRG支付）：成本异常探查；院端-异常探查：异常探查常用、异常探查汇总、异常探查自定义；横坐标的25、75分位后面添加问号，纵坐标的25、75分位后面添加问号，问号内容支持自定义，问号内容默认&#10;refactor(levelFourSurgeryMatrix): 收支分析 /药占比异常探查 添加 25、75分位后面添加问号提示&#10;&#10;- 在主矩阵组件中增加了四个新的提示属性传递">
       <option name="closed" value="true" />
-      <created>1761126051321</created>
-      <option name="number" value="02224" />
-      <option name="presentableId" value="LOCAL-02224" />
+      <created>1784180034658</created>
+      <option name="number" value="04452" />
+      <option name="presentableId" value="LOCAL-04452" />
       <option name="project" value="LOCAL" />
-      <updated>1761126051321</updated>
+      <updated>1784180034658</updated>
     </task>
-    <task id="LOCAL-02225" summary="v91-fix:DOM-18560-需求351-病种分析-DRG支付，院端和科端：名义成本改为名义收入。相关表格调整&#10;refactor(diseaseEconomics):放开注释使用新组件，重构结余专项页面逻辑与组件结构&#10;&#10;- 移除重复的 TODO 注释和冗余代码块&#10;- 调整级联选择器事件绑定逻辑&#10;- 优化趋势分析、科室分析和医保结算模块的组件封装&#10;- 清理无用的导入语句和变量定义&#10;- 移除废弃的样式类名和注释&#10;- 简化页面参数更新和路由处理逻辑&#10;- 删除未使用的数据监听器和方法">
+    <task id="LOCAL-04453" summary="v125:feat/refactor:需求2132-院端-临床工作量分析：门诊异常探查、出院异常探查、手术（含介入）异常探查、四级手术异常探查、日间手术异常探查、微创手术异常探查、入院率异常探查；院端-收支分析：收入异常探查、盈余异常探查、药品收入占比异常探查、材料收入占比异常探查、药耗收入占比异常探查；院端-人力资源分析：医生权重异常探查；院端-病组分析（DRG支付）：成本异常探查；院端-异常探查：异常探查常用、异常探查汇总、异常探查自定义；横坐标的25、75分位后面添加问号，纵坐标的25、75分位后面添加问号，问号内容支持自定义，问号内容默认&#10;feat/refactor(herbsMatrix): 收支分析 /药耗占比异常探查 矩阵页面组件 新增四个四分位数提示属性&#10;&#10;- 移除注释掉的旧部门选择器组件代码&#10;- 使用新的 DeptAndTimeHeaderFilter 组件替代原有时间过滤器&#10;- 在 Matrix 组件中新增四个四分位数提示属性 (quantileX25Tips, quantileX75Tips, quantileY25Tips, quantileY75Tips)">
       <option name="closed" value="true" />
-      <created>1761185257619</created>
-      <option name="number" value="02225" />
-      <option name="presentableId" value="LOCAL-02225" />
+      <created>1784180250206</created>
+      <option name="number" value="04453" />
+      <option name="presentableId" value="LOCAL-04453" />
       <option name="project" value="LOCAL" />
-      <updated>1761185257619</updated>
+      <updated>1784180250206</updated>
     </task>
-    <task id="LOCAL-02226" summary="v91-fix:DOM-18560-需求351-病种分析-DRG支付，院端和科端：名义成本改为名义收入。相关表格调整&#10;refactor(diseaseEconomics):重构成本口径选项计算逻辑&#10;&#10;- 使用新的 genCostTypeCascadeOptionsDrg 方法替代旧逻辑&#10;- 注释 已弃用方法 genCostTypeCascadeOptions 的调用&#10;- 添加 TODO 注释标记待删除的重复逻辑&#10;- 调整导入语句以适应新方法的引入方式">
+    <task id="LOCAL-04454" summary="v125:feat/refactor:需求2132-院端-临床工作量分析：门诊异常探查、出院异常探查、手术（含介入）异常探查、四级手术异常探查、日间手术异常探查、微创手术异常探查、入院率异常探查；院端-收支分析：收入异常探查、盈余异常探查、药品收入占比异常探查、材料收入占比异常探查、药耗收入占比异常探查；院端-人力资源分析：医生权重异常探查；院端-病组分析（DRG支付）：成本异常探查；院端-异常探查：异常探查常用、异常探查汇总、异常探查自定义；横坐标的25、75分位后面添加问号，纵坐标的25、75分位后面添加问号，问号内容支持自定义，问号内容默认&#10;fix(tooltips): 修复异常检测分位数提示图标的显示逻辑&#10;&#10;- 将分位数坐标判断条件从 AND 改为 OR 以正确显示提示图标&#10;- 更新符号偏移量从 200% 到 260% 以改善视觉位置&#10;- 调整四个分位数坐标的显示条件：X25、X75、Y25 和 Y75 轴">
       <option name="closed" value="true" />
-      <created>1761186107991</created>
-      <option name="number" value="02226" />
-      <option name="presentableId" value="LOCAL-02226" />
+      <created>1784181137982</created>
+      <option name="number" value="04454" />
+      <option name="presentableId" value="LOCAL-04454" />
       <option name="project" value="LOCAL" />
-      <updated>1761186107992</updated>
+      <updated>1784181137982</updated>
     </task>
-    <task id="LOCAL-02227" summary="v91-fix:DOM-18373-科室-病种分析（市医保DRG/DIP）-出院分析-科室病组明细数据分析 下钻-医疗组收治该病组对比-检查：首行缺少病组编码何RW值&#10;feat(diseaseAnalysis): 显示疾病编码信息&#10;&#10;- 在疾病分析描述组件中添加疾病编码显示&#10;- 调整疾病名称和编码的样式布局&#10;- 更新疾病分析状态映射以包含疾病编码&#10;- 移除冗余的疾病名称样式定义">
+    <task id="LOCAL-04455" summary="v125:feat/refactor:需求2132-院端-临床工作量分析：门诊异常探查、出院异常探查、手术（含介入）异常探查、四级手术异常探查、日间手术异常探查、微创手术异常探查、入院率异常探查；院端-收支分析：收入异常探查、盈余异常探查、药品收入占比异常探查、材料收入占比异常探查、药耗收入占比异常探查；院端-人力资源分析：医生权重异常探查；院端-病组分析（DRG支付）：成本异常探查；院端-异常探查：异常探查常用、异常探查汇总、异常探查自定义；横坐标的25、75分位后面添加问号，纵坐标的25、75分位后面添加问号，问号内容支持自定义，问号内容默认&#10;refactor(doctorCapacity): 人力资源分析 /医生权重异常探查 添加 25、75分位后面添加问号提示&#10;&#10;- 在主矩阵组件中增加了四个新的提示属性传递">
       <option name="closed" value="true" />
-      <created>1761188614267</created>
-      <option name="number" value="02227" />
-      <option name="presentableId" value="LOCAL-02227" />
+      <created>1784184990409</created>
+      <option name="number" value="04455" />
+      <option name="presentableId" value="LOCAL-04455" />
       <option name="project" value="LOCAL" />
-      <updated>1761188614267</updated>
+      <updated>1784184990410</updated>
     </task>
-    <task id="LOCAL-02228" summary="v91-feat/refactor:DOM-18560-需求351-病种分析-DRG支付，院端和科端：名义成本改为名义收入。相关表格调整&#10;refactor(cost):重构 病组分析（DRG支付） /病组经济分析 /结余 /医师&#10;refactor(diseaseEconomics):放开新组件注释，重构结余医师分析页面逻辑与样式&#10;&#10;- 移除过时的事件监听与处理逻辑&#10;- 调整医保结算相关组件布局与数据处理方式&#10;- 清理冗余代码与注释&#10;- 优化样式定义，移除无用CSS类名与布局代码">
+    <task id="LOCAL-04456" summary="v125:feat/refactor:需求2132-院端-临床工作量分析：门诊异常探查、出院异常探查、手术（含介入）异常探查、四级手术异常探查、日间手术异常探查、微创手术异常探查、入院率异常探查；院端-收支分析：收入异常探查、盈余异常探查、药品收入占比异常探查、材料收入占比异常探查、药耗收入占比异常探查；院端-人力资源分析：医生权重异常探查；院端-病组分析（DRG支付）：成本异常探查；院端-异常探查：异常探查常用、异常探查汇总、异常探查自定义；横坐标的25、75分位后面添加问号，纵坐标的25、75分位后面添加问号，问号内容支持自定义，问号内容默认&#10;refactor(doctorCapacity): 收支分析 /收入异常探查 添加 25、75分位后面添加问号提示&#10;&#10;- 移除已注释的废弃逻辑代码和TODO注释&#10;- 引入hospPageConfigMixin混入实现页面配置功能&#10;- 添加initPage方法用于初始化页面配置&#10;- 在created生命周期中调用initPage方法&#10;- 传递分位数提示属性到表格组件">
       <option name="closed" value="true" />
-      <created>1761189248303</created>
-      <option name="number" value="02228" />
-      <option name="presentableId" value="LOCAL-02228" />
+      <created>1784190611866</created>
+      <option name="number" value="04456" />
+      <option name="presentableId" value="LOCAL-04456" />
       <option name="project" value="LOCAL" />
-      <updated>1761189248303</updated>
+      <updated>1784190611866</updated>
     </task>
-    <task id="LOCAL-02229" summary="v91-feat/refactor:DOM-18560-需求351-病种分析-DRG支付，院端和科端：名义成本改为名义收入。相关表格调整&#10;feat(disease-economy-analysis): 重构医保结算相关组件及页面布局&#10;&#10;- 调整 医保倍率例数趋势 与 医保病人结算分析 组件 顺序&#10;- 删除冗余样式和注释，优化代码可读性&#10;- 修正组件导入顺序，确保依赖正确加载">
+    <task id="LOCAL-04457" summary="v125:feat/refactor:需求2132-院端-临床工作量分析：门诊异常探查、出院异常探查、手术（含介入）异常探查、四级手术异常探查、日间手术异常探查、微创手术异常探查、入院率异常探查；院端-收支分析：收入异常探查、盈余异常探查、药品收入占比异常探查、材料收入占比异常探查、药耗收入占比异常探查；院端-人力资源分析：医生权重异常探查；院端-病组分析（DRG支付）：成本异常探查；院端-异常探查：异常探查常用、异常探查汇总、异常探查自定义；横坐标的25、75分位后面添加问号，纵坐标的25、75分位后面添加问号，问号内容支持自定义，问号内容默认&#10;feat(tooltips): 添加异常检测标记点偏移配置参数&#10;&#10;- 添加了 xAxisSymbolOffsetX 和 yAxisSymbolOffsetX 配置参数&#10;- 将硬编码的偏移值替换为可配置参数&#10;- 更新了 x轴和y轴标记点的偏移量设置逻辑&#10;- 优化了标记点位置的灵活性和可定制性">
       <option name="closed" value="true" />
-      <created>1761191194230</created>
-      <option name="number" value="02229" />
-      <option name="presentableId" value="LOCAL-02229" />
+      <created>1784190688803</created>
+      <option name="number" value="04457" />
+      <option name="presentableId" value="LOCAL-04457" />
       <option name="project" value="LOCAL" />
-      <updated>1761191194230</updated>
+      <updated>1784190688803</updated>
     </task>
-    <task id="LOCAL-02230" summary="v91-feat/refactor:DOM-18560-需求351-病种分析-DRG支付，院端和科端：名义成本改为名义收入。相关表格调整&#10;refactor(diseaseEconomics):病组分析（DRG支付） /病组经济分析 /结余 /医师 重构组件 放开新组件注释&#10;&#10;- 删除冗余的样式类定义，移除重复的工具函数&#10;- 整理并优化 surplusPhysician_dip 和 surplusSpecial_dip 页面的数据初始化逻辑&#10;- 添加 TODO 注释标记待删除或待重构的旧逻辑代码块">
+    <task id="LOCAL-04458" summary="v125:feat/refactor:需求2132-院端-临床工作量分析：门诊异常探查、出院异常探查、手术（含介入）异常探查、四级手术异常探查、日间手术异常探查、微创手术异常探查、入院率异常探查；院端-收支分析：收入异常探查、盈余异常探查、药品收入占比异常探查、材料收入占比异常探查、药耗收入占比异常探查；院端-人力资源分析：医生权重异常探查；院端-病组分析（DRG支付）：成本异常探查；院端-异常探查：异常探查常用、异常探查汇总、异常探查自定义；横坐标的25、75分位后面添加问号，纵坐标的25、75分位后面添加问号，问号内容支持自定义，问号内容默认&#10;fix(chartScatter): 优化点击事件的参数校验&#10;&#10;- 添加判断条件，确保点击坐标点时参数及科室编码存在&#10;- 防止因无效参数导致的事件处理异常&#10;- 保持点击事件的正确触发逻辑">
       <option name="closed" value="true" />
-      <created>1761196675330</created>
-      <option name="number" value="02230" />
-      <option name="presentableId" value="LOCAL-02230" />
+      <created>1784190766359</created>
+      <option name="number" value="04458" />
+      <option name="presentableId" value="LOCAL-04458" />
       <option name="project" value="LOCAL" />
-      <updated>1761196675330</updated>
+      <updated>1784190766359</updated>
     </task>
-    <task id="LOCAL-02231" summary="v91-feat/refactor:DOM-18560-需求351-病种分析-DRG支付，院端和科端：名义成本改为名义收入。相关表格调整&#10;refactor(diseaseEconomics):病组分析（DIP支付） /病组经济分析 /结余 /医师 移除多余的事件监听器和属性">
+    <task id="LOCAL-04459" summary="v125:feat/refactor:需求2132-院端-临床工作量分析：门诊异常探查、出院异常探查、手术（含介入）异常探查、四级手术异常探查、日间手术异常探查、微创手术异常探查、入院率异常探查；院端-收支分析：收入异常探查、盈余异常探查、药品收入占比异常探查、材料收入占比异常探查、药耗收入占比异常探查；院端-人力资源分析：医生权重异常探查；院端-病组分析（DRG支付）：成本异常探查；院端-异常探查：异常探查常用、异常探查汇总、异常探查自定义；横坐标的25、75分位后面添加问号，纵坐标的25、75分位后面添加问号，问号内容支持自定义，问号内容默认&#10;feat(abnormalCheck): 添加异常检查页面分位线浮动提示功能&#10;&#10;- 在abnormalCheckSave.vue中移除废弃的时间过滤组件和维度选择组件&#10;- 在abnormalPanel.vue中新增分位线浮动提示属性并集成医院页面配置混入&#10;- 在chartScatter.vue中引入分位线浮动提示钩子函数并添加提示图标显示逻辑&#10;- 更新图表系列配置以包含分位线浮动提示标记点&#10;- 移除废弃的注释代码和无用导入模块">
       <option name="closed" value="true" />
-      <created>1761196918904</created>
-      <option name="number" value="02231" />
-      <option name="presentableId" value="LOCAL-02231" />
+      <created>1784190893808</created>
+      <option name="number" value="04459" />
+      <option name="presentableId" value="LOCAL-04459" />
       <option name="project" value="LOCAL" />
-      <updated>1761196918904</updated>
+      <updated>1784190893808</updated>
     </task>
-    <task id="LOCAL-02232" summary="v91-feat/refactor:DOM-18560-需求351-病种分析-DRG支付，院端和科端：名义成本改为名义收入。相关表格调整&#10;refactor(diseaseEconomics):病组分析（DIP支付） /病组经济分析 /结余 下钻&#10;&#10;- 移除冗余的组件引用，更新组件注册列表&#10;- 添加 TODO 注释标记待删除的重复逻辑">
+    <task id="LOCAL-04460" summary="v125:feat/refactor:需求变更2463（山大二）-全院-病组分析（市医保DRG）-总览-总权重下钻-RW分布：表格和图形显示RW区间数量不一致&#10;feat(charts): 更新图表组件配置以支持滚动限制&#10;&#10;- 在图表配置中添加 scrollLimit 属性设置为 20">
       <option name="closed" value="true" />
-      <created>1761199700309</created>
-      <option name="number" value="02232" />
-      <option name="presentableId" value="LOCAL-02232" />
+      <created>1784193941204</created>
+      <option name="number" value="04460" />
+      <option name="presentableId" value="LOCAL-04460" />
       <option name="project" value="LOCAL" />
-      <updated>1761199700309</updated>
+      <updated>1784193941204</updated>
     </task>
-    <task id="LOCAL-02233" summary="v91-feat/refactor:DOM-18560-需求351-病种分析-DRG支付，院端和科端：名义成本改为名义收入。相关表格调整&#10;refactor(diseaseEconomics):病组分析（DIP支付） /病组经济分析 /结余 下钻 提取路由处理逻辑到独立方法&#10;&#10;- 将重复的路由参数获取和面包屑更新逻辑提取为 routerHandler 方法&#10;- 统一处理查询参数、路由元数据和面包屑路径更新操作&#10;- 简化 mounted 钩子中的路由相关代码 在多个相关组件中应用统一的路由处理方式">
+    <task id="LOCAL-04461" summary="v125:feat/refactor:需求变更2513（毓璜顶/山东菏泽）-全院-病种分析（市医保DRG）-总览-费用消耗指数/时间消耗指数/药品指数/材料指数下钻：病人分类未默认置灰&#10;fix(operationDisease): 禁用patTypeList选择框&#10;&#10;- 在drugsIndex视图中将patTypeList选择框设置为禁用&#10;- 在expenseConsumptionIndex视图中将patTypeList选择框设置为禁用&#10;- 在materialIndex视图中将patTypeList选择框设置为禁用&#10;- 在timeConsumptionIndex视图中将patTypeList选择框设置为禁用">
       <option name="closed" value="true" />
-      <created>1761201143001</created>
-      <option name="number" value="02233" />
-      <option name="presentableId" value="LOCAL-02233" />
+      <created>1784194811361</created>
+      <option name="number" value="04461" />
+      <option name="presentableId" value="LOCAL-04461" />
       <option name="project" value="LOCAL" />
-      <updated>1761201143001</updated>
+      <updated>1784194811361</updated>
     </task>
-    <task id="LOCAL-02234" summary="v92-feat/refactor:DOM-18386-需求715-通用-院端-工作量分析-手术人次下钻页，手术效率变化添加下钻页面（手术间明细），展示各手术间的手术人次，加权工作量和手术间利用率&#10;feat(workloadAnalysis): 后端暂未完成，隐藏调整手术间效率模块 手术明细弹出框链接&#10;&#10;- 修改手术间效率模块右侧头部布局 样式，使用flex容器替代原有结构&#10;- 调整PLChartTabBar组件样式，设置弹性布局属性">
+    <task id="LOCAL-04462" summary="v125:feat/refactor:2418-科室端-病种分析（市医保DRG）-出院分析，在医疗组收治病组一览表下方添加一张表，标题为DRG病例明细表&#10;fix(DRGCaseDetail): 修复 commonRequestParams 监听器更新问题&#10;&#10;- 添加 commonRequestParams 的深度监听 更新监听器以设置 ifNeedUpdateColumns 为 true">
       <option name="closed" value="true" />
-      <created>1761203713111</created>
-      <option name="number" value="02234" />
-      <option name="presentableId" value="LOCAL-02234" />
+      <created>1784195246365</created>
+      <option name="number" value="04462" />
+      <option name="presentableId" value="LOCAL-04462" />
       <option name="project" value="LOCAL" />
-      <updated>1761203713111</updated>
+      <updated>1784195246365</updated>
     </task>
-    <task id="LOCAL-02235" summary="v91-fix/refactor:处理页面报错：科端-重点设备效益分析&#10;fix(dept_equipment_benefit_analysis): 防止解析空查询参数时出错&#10;&#10;- 为 headerfilters 查询参数提供默认空对象字符串&#10;- 避免在 deptId 不存在时出现解析错误&#10;- 确保 restHeaderfiltersObj 始终是有效对象">
+    <task id="LOCAL-04463" summary="v125:feat/refactor:需求2132-院端-临床工作量分析：门诊异常探查、出院异常探查、手术（含介入）异常探查、四级手术异常探查、日间手术异常探查、微创手术异常探查、入院率异常探查；院端-收支分析：收入异常探查、盈余异常探查、药品收入占比异常探查、材料收入占比异常探查、药耗收入占比异常探查；院端-人力资源分析：医生权重异常探查；院端-病组分析（DRG支付）：成本异常探查；院端-异常探查：异常探查常用、异常探查汇总、异常探查自定义；横坐标的25、75分位后面添加问号，纵坐标的25、75分位后面添加问号，问号内容支持自定义，问号内容默认&#10;fix(matrix): 修复矩阵组件初始化逻辑&#10;&#10;- 将侦听函数改为异步，确保状态复位后执行下一步操作&#10;- 使用 await this.$nextTick() 等待 DOM 更新完成&#10;- 取消图表tab页判断，直接初始化图表数据&#10;- 注释掉原有的this.$nextTick包裹的初始化调用逻辑">
       <option name="closed" value="true" />
-      <created>1761207507125</created>
-      <option name="number" value="02235" />
-      <option name="presentableId" value="LOCAL-02235" />
+      <created>1784198325025</created>
+      <option name="number" value="04463" />
+      <option name="presentableId" value="LOCAL-04463" />
       <option name="project" value="LOCAL" />
-      <updated>1761207507125</updated>
+      <updated>1784198325025</updated>
     </task>
-    <task id="LOCAL-02236" summary="v92-feat:DOM-18605-需求722-通用-科室端-病种分析-临床病种分析-病例明细数据分析-添加下载提示&#10;feat(component): 调整病例详情表格高度&#10;- 将病例详情表格的高度从450调整为420&#10;- 优化表格在页面中的布局效果">
+    <task id="LOCAL-04464" summary="v125:feat/refactor:需求2132-院端-临床工作量分析：门诊异常探查、出院异常探查、手术（含介入）异常探查、四级手术异常探查、日间手术异常探查、微创手术异常探查、入院率异常探查；院端-收支分析：收入异常探查、盈余异常探查、药品收入占比异常探查、材料收入占比异常探查、药耗收入占比异常探查；院端-人力资源分析：医生权重异常探查；院端-病组分析（DRG支付）：成本异常探查；院端-异常探查：异常探查常用、异常探查汇总、异常探查自定义；横坐标的25、75分位后面添加问号，纵坐标的25、75分位后面添加问号，问号内容支持自定义，问号内容默认&#10;feat(tooltips): 添加分位数标记点位置配置参数&#10;&#10;- 添加 quantileX25and75yPosition 和 quantileY25and75xPosition 配置参数&#10;- 将硬编码的位置值替换为可配置的参数&#10;- 统一 x 轴和 y 轴分位数标记点的位置配置">
       <option name="closed" value="true" />
-      <created>1761210896798</created>
-      <option name="number" value="02236" />
-      <option name="presentableId" value="LOCAL-02236" />
+      <created>1784198565522</created>
+      <option name="number" value="04464" />
+      <option name="presentableId" value="LOCAL-04464" />
       <option name="project" value="LOCAL" />
-      <updated>1761210896798</updated>
+      <updated>1784198565522</updated>
     </task>
-    <task id="LOCAL-02237" summary="v92-feat:DOM-18605-需求722-通用-科室端-病种分析-临床病种分析-病例明细数据分析-添加下载提示&#10;feat(exportExcel): 添加下载进度提示功能&#10;&#10;- 在下载开始时显示&quot;正在下载中...&quot;的持续提示&#10;- 下载完成后显示&quot;下载完毕&quot;的成功提示&#10;- 使用唯一ID标识下载提示，确保能正确关闭">
+    <task id="LOCAL-04465" summary="v125:feat/refactor:需求2132-院端-临床工作量分析：门诊异常探查、出院异常探查、手术（含介入）异常探查、四级手术异常探查、日间手术异常探查、微创手术异常探查、入院率异常探查；院端-收支分析：收入异常探查、盈余异常探查、药品收入占比异常探查、材料收入占比异常探查、药耗收入占比异常探查；院端-人力资源分析：医生权重异常探查；院端-病组分析（DRG支付）：成本异常探查；院端-异常探查：异常探查常用、异常探查汇总、异常探查自定义；横坐标的25、75分位后面添加问号，纵坐标的25、75分位后面添加问号，问号内容支持自定义，问号内容默认&#10;fix(tooltips): 简化分位线提示图标显示逻辑&#10;&#10;- 移除判断分位线坐标是否为最小值0的条件&#10;- 仅根据是否存在提示文本决定是否显示图标&#10;- 优化代码可读性和维护性&#10;- 保持原有功能一致，防止误判不显示提示">
       <option name="closed" value="true" />
-      <created>1761210943973</created>
-      <option name="number" value="02237" />
-      <option name="presentableId" value="LOCAL-02237" />
+      <created>1784200365686</created>
+      <option name="number" value="04465" />
+      <option name="presentableId" value="LOCAL-04465" />
       <option name="project" value="LOCAL" />
-      <updated>1761210943974</updated>
+      <updated>1784200365687</updated>
     </task>
-    <task id="LOCAL-02238" summary="v92-feat:DOM-18614-需求752-院端-收支余-成本菜单，时间下拉框，隐藏周、日的选择，因为成本最小到月&#10;调整费用概览时间筛选器配置，移除了时间筛选器中多余的 'w' 和 'd'选项">
+    <task id="LOCAL-04466" summary="v126:feat/refactor: 需求1943-院端-重点设备效益分析-总览、院端-重点设备效益分析-诊断类设备分析、院端-重点设备效益分析-治疗类设备分析、科室端-重点设备效益分析-下所有菜单-支持周、日维度选择；选择周、日维度时，原工作量、稼动率相关表格和图表内容不变；原收入、投资回报率相关表格和图表，因为成本最小只能到月，直接隐藏或只显示收入相关元素；&#10;feat(equipmentBenefitAnalysis): 添加周度日度隐藏功能&#10;&#10;- 在returnRateAbnormal组件中添加getCurrentFreqCodeIsWeekOrDay计算属性&#10;- 使用v-if指令控制组件在周度和日度时不显示&#10;- 导入vuex的mapGetters辅助函数&#10;- 更新组件样式以适应新的条件渲染逻辑">
       <option name="closed" value="true" />
-      <created>1761269522399</created>
-      <option name="number" value="02238" />
-      <option name="presentableId" value="LOCAL-02238" />
+      <created>1784513091873</created>
+      <option name="number" value="04466" />
+      <option name="presentableId" value="LOCAL-04466" />
       <option name="project" value="LOCAL" />
-      <updated>1761269522399</updated>
+      <updated>1784513091874</updated>
     </task>
-    <option name="localTasksCounter" value="2239" />
+    <option name="localTasksCounter" value="4467" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -2257,19 +3102,7 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="master" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
+            <State />
           </value>
         </entry>
       </map>
@@ -2278,39 +3111,63 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="v91-chore:(inHospitalBlock): 通用-科端-收支余分析 /总览 /住院分析-调整 医疗组住院分析 表格&#10;-显示逻辑&#10;&#10;- 注释掉原有的医疗组显示条件判断&#10;- 根据赵征要求，所有医院环境均需显示医疗组&#10;- 保留医疗组代码过滤条件检查" />
-    <MESSAGE value="v91-feat/refactor:DOM-18541-需求468-院端-病种分析（DRG支付）-成本异常探查、病组经济分析的病人分类都改为全部医保病人、省医保病人、市医保病人，默认市医保病人；不显示收入和成本口径相关内容，默认理论结算收入和名义成本。&#10;feat/refactor(operationDisease):修复病人分组逻辑与页面显示问题&#10;- 优化 groupPat 方法中的参数合并逻辑&#10;- 新增 onDrgGroupTypeChange 异步调用 groupPat&#10;- 在 drgCity/leavehosp.vue 中同步修改指令名称" />
-    <MESSAGE value="v91-feat/refactor:DOM-18541-需求468-院端-病种分析（DRG支付）-成本异常探查、病组经济分析的病人分类都改为全部医保病人、省医保病人、市医保病人，默认市医保病人；不显示收入和成本口径相关内容，默认理论结算收入和名义成本&#10;feat(diseaseMatrix): 新增吉大医病人分组类型选择器&#10;&#10;- 在病人分类选择器中增加对吉大医的特殊处理&#10;- 添加新的 DRG 分组类型下拉选项组件&#10;- 实现根据医院代码控制组件显示逻辑" />
-    <MESSAGE value="v91-feat/refactor:DOM-18541-需求468-院端-病种分析（DRG支付）-成本异常探查、病组经济分析的病人分类都改为全部医保病人、省医保病人、市医保病人，默认市医保病人；不显示收入和成本口径相关内容，默认理论结算收入和名义成本&#10;feat(operationDisease): 添加病人分组选项加载状态&#10;&#10;- 为病人分组选择器添加加载状态显示" />
-    <MESSAGE value="v91-feat/refactor:DOM-18560-需求351-病种分析-DRG支付，院端和科端：名义成本改为名义收入。相关表格调整&#10;feat(cost): 新增成本口径级联选项配置&#10;&#10;- 新增默认成本口径级联选项配置文件&#10;- 更新成本口径选项生成函数以支持多医院配置&#10;- TODO: 替换 DRG 页面中 成本选项过滤逻辑以适配医疗费用收入口径" />
-    <MESSAGE value="v91-feat/refactor:DOM-18560-需求351-病种分析-DRG支付，院端和科端：名义成本改为名义收入。相关表格调整&#10;feat/refactor(diseaseMatrix):重构成本类型级联选项逻辑&#10;&#10;- 更新 getCostOptions 方法实现，使用 genCostTypeCascadeOptionsDrg 替代旧逻辑&#10;- 添加 TODO 注释标记待删除的重复逻辑，保留旧逻辑注释便于后续清理" />
-    <MESSAGE value="v91-feat/refactor:DOM-18560-需求351-病种分析-DRG支付，院端和科端：名义成本改为名义收入。相关表格调整 &#10;- 更新多个组件中的 getCostOptions 方法实现&#10;- 引入 genCostTypeCascadeOptionsDrg 替代原有逻辑&#10;- 标记旧方法 genCostTypeCascadeOptions 待删除" />
-    <MESSAGE value="v91-feat/refactor:DOM-18560-需求351-病种分析-DRG支付，院端和科端：名义成本改为名义收入。相关表格调整&#10;&#10;- 替换 genCostTypeCascadeOptions 为 genCostTypeCascadeOptionsDrg&#10;- 更新 getCostOptions 方法以适配新函数参数结构&#10;- 添加 TODO 注释标记旧逻辑待删除" />
-    <MESSAGE value="v91-feat/refactor:DOM-18560-需求351-病种分析-DRG支付，院端和科端：名义成本改为名义收入。相关表格调整&#10;refactor(cost):重构 科端-病种分析（市医保DRG） /出院分析；明细数据下钻；医疗组下钻；病例下钻；&#10;&#10;- 更新组件 DeptMedGroupDateCalibre.vue 和 leavehosp.vue 中的调用方式&#10;  - 使用新的 genCostTypeCascadeOptionsDrg 方法替换旧逻辑&#10;  - 标记待删除的重复逻辑代码段" />
-    <MESSAGE value="v91-feat/refactor:DOM-18560-需求351-病种分析-DRG支付，院端和科端：名义成本改为名义收入。相关表格调整&#10;refactor(cost):重构 科室端-病种分析（市医保DRG） /出院分析 /病组RW-结余率分析 查看详情 下钻页&#10;&#10;- 更新组件 DeptMedGroupDateCalibre.vue 和 leavehosp.vue 中的调用方式&#10;  - 使用新的 genCostTypeCascadeOptionsDrg 方法替换旧逻辑&#10;  - 标记待删除的重复逻辑代码段" />
-    <MESSAGE value="v91-feat/refactor:DOM-18560-需求351-病种分析-DRG支付，院端和科端：名义成本改为名义收入。相关表格调整&#10;refactor(cost):重构 科端：病种分析（市医保DRG） /临床病种分析&#10;- 更新组件 DeptMedGroupDateCalibre.vue 和 leavehosp.vue 中的调用方式&#10;  - 使用新的 genCostTypeCascadeOptionsDrg 方法替换旧逻辑&#10;  - 标记待删除的重复逻辑代码段" />
-    <MESSAGE value="v91-fix:DOM-18560-需求351-病种分析-DRG支付，院端和科端：名义成本改为名义收入。相关表格调整&#10;refactor(diseaseEconomics):放开注释使用新组件，重构结余专项页面逻辑与组件结构&#10;&#10;- 移除重复的 TODO 注释和冗余代码块&#10;- 调整级联选择器事件绑定逻辑&#10;- 优化趋势分析、科室分析和医保结算模块的组件封装&#10;- 清理无用的导入语句和变量定义&#10;- 移除废弃的样式类名和注释&#10;- 简化页面参数更新和路由处理逻辑&#10;- 删除未使用的数据监听器和方法" />
-    <MESSAGE value="v91-fix:DOM-18560-需求351-病种分析-DRG支付，院端和科端：名义成本改为名义收入。相关表格调整&#10;refactor(diseaseEconomics):重构成本口径选项计算逻辑&#10;&#10;- 使用新的 genCostTypeCascadeOptionsDrg 方法替代旧逻辑&#10;- 注释 已弃用方法 genCostTypeCascadeOptions 的调用&#10;- 添加 TODO 注释标记待删除的重复逻辑&#10;- 调整导入语句以适应新方法的引入方式" />
-    <MESSAGE value="v91-fix:DOM-18373-科室-病种分析（市医保DRG/DIP）-出院分析-科室病组明细数据分析 下钻-医疗组收治该病组对比-检查：首行缺少病组编码何RW值&#10;feat(diseaseAnalysis): 显示疾病编码信息&#10;&#10;- 在疾病分析描述组件中添加疾病编码显示&#10;- 调整疾病名称和编码的样式布局&#10;- 更新疾病分析状态映射以包含疾病编码&#10;- 移除冗余的疾病名称样式定义" />
-    <MESSAGE value="v91-feat/refactor:DOM-18560-需求351-病种分析-DRG支付，院端和科端：名义成本改为名义收入。相关表格调整&#10;refactor(cost):重构 病组分析（DRG支付） /病组经济分析 /结余 /医师&#10;refactor(diseaseEconomics):放开新组件注释，重构结余医师分析页面逻辑与样式&#10;&#10;- 移除过时的事件监听与处理逻辑&#10;- 调整医保结算相关组件布局与数据处理方式&#10;- 清理冗余代码与注释&#10;- 优化样式定义，移除无用CSS类名与布局代码" />
-    <MESSAGE value="v91-feat/refactor:DOM-18560-需求351-病种分析-DRG支付，院端和科端：名义成本改为名义收入。相关表格调整&#10;feat(disease-economy-analysis): 重构医保结算相关组件及页面布局&#10;&#10;- 调整 医保倍率例数趋势 与 医保病人结算分析 组件 顺序&#10;- 删除冗余样式和注释，优化代码可读性&#10;- 修正组件导入顺序，确保依赖正确加载" />
-    <MESSAGE value="v91-feat/refactor:DOM-18560-需求351-病种分析-DRG支付，院端和科端：名义成本改为名义收入。相关表格调整&#10;refactor(diseaseEconomics):病组分析（DRG支付） /病组经济分析 /结余 /医师 重构组件 放开新组件注释&#10;&#10;- 删除冗余的样式类定义，移除重复的工具函数&#10;- 整理并优化 surplusPhysician_dip 和 surplusSpecial_dip 页面的数据初始化逻辑&#10;- 添加 TODO 注释标记待删除或待重构的旧逻辑代码块" />
-    <MESSAGE value="v91-feat/refactor:DOM-18560-需求351-病种分析-DRG支付，院端和科端：名义成本改为名义收入。相关表格调整&#10;refactor(diseaseEconomics):病组分析（DIP支付） /病组经济分析 /结余 /医师 移除多余的事件监听器和属性" />
-    <MESSAGE value="v91-feat/refactor:DOM-18560-需求351-病种分析-DRG支付，院端和科端：名义成本改为名义收入。相关表格调整&#10;refactor(diseaseEconomics):病组分析（DIP支付） /病组经济分析 /结余 下钻&#10;&#10;- 移除冗余的组件引用，更新组件注册列表&#10;- 添加 TODO 注释标记待删除的重复逻辑" />
-    <MESSAGE value="v91-feat/refactor:DOM-18560-需求351-病种分析-DRG支付，院端和科端：名义成本改为名义收入。相关表格调整&#10;refactor(diseaseEconomics):病组分析（DIP支付） /病组经济分析 /结余 下钻 提取路由处理逻辑到独立方法&#10;&#10;- 将重复的路由参数获取和面包屑更新逻辑提取为 routerHandler 方法&#10;- 统一处理查询参数、路由元数据和面包屑路径更新操作&#10;- 简化 mounted 钩子中的路由相关代码 在多个相关组件中应用统一的路由处理方式" />
-    <MESSAGE value="v92-feat/refactor:DOM-18386-需求715-通用-院端-工作量分析-手术人次下钻页，手术效率变化添加下钻页面（手术间明细），展示各手术间的手术人次，加权工作量和手术间利用率&#10;feat(workloadAnalysis): 后端暂未完成，隐藏调整手术间效率模块 手术明细弹出框链接&#10;&#10;- 修改手术间效率模块右侧头部布局 样式，使用flex容器替代原有结构&#10;- 调整PLChartTabBar组件样式，设置弹性布局属性" />
-    <MESSAGE value="v91-fix/refactor:处理页面报错：科端-重点设备效益分析&#10;fix(dept_equipment_benefit_analysis): 防止解析空查询参数时出错&#10;&#10;- 为 headerfilters 查询参数提供默认空对象字符串&#10;- 避免在 deptId 不存在时出现解析错误&#10;- 确保 restHeaderfiltersObj 始终是有效对象" />
-    <MESSAGE value="v92-feat:DOM-18605-需求722-通用-科室端-病种分析-临床病种分析-病例明细数据分析-添加下载提示&#10;feat(component): 调整病例详情表格高度&#10;- 将病例详情表格的高度从450调整为420&#10;- 优化表格在页面中的布局效果" />
-    <MESSAGE value="v92-feat:DOM-18605-需求722-通用-科室端-病种分析-临床病种分析-病例明细数据分析-添加下载提示&#10;feat(exportExcel): 添加下载进度提示功能&#10;&#10;- 在下载开始时显示&quot;正在下载中...&quot;的持续提示&#10;- 下载完成后显示&quot;下载完毕&quot;的成功提示&#10;- 使用唯一ID标识下载提示，确保能正确关闭" />
-    <MESSAGE value="v92-feat:DOM-18614-需求752-院端-收支余-成本菜单，时间下拉框，隐藏周、日的选择，因为成本最小到月&#10;调整费用概览时间筛选器配置，移除了时间筛选器中多余的 'w' 和 'd'选项" />
-    <option name="LAST_COMMIT_MESSAGE" value="v92-feat:DOM-18614-需求752-院端-收支余-成本菜单，时间下拉框，隐藏周、日的选择，因为成本最小到月&#10;调整费用概览时间筛选器配置，移除了时间筛选器中多余的 'w' 和 'd'选项" />
+    <option name="MARK_IGNORED_AS_EXCLUDED" value="true" />
+    <MESSAGE value="v125:feat/refactor:需求2132-院端-临床工作量分析：门诊异常探查、出院异常探查、手术（含介入）异常探查、四级手术异常探查、日间手术异常探查、微创手术异常探查、入院率异常探查；院端-收支分析：收入异常探查、盈余异常探查、药品收入占比异常探查、材料收入占比异常探查、药耗收入占比异常探查；院端-人力资源分析：医生权重异常探查；院端-病组分析（DRG支付）：成本异常探查；院端-异常探查：异常探查常用、异常探查汇总、异常探查自定义；横坐标的25、75分位后面添加问号，纵坐标的25、75分位后面添加问号，问号内容支持自定义，问号内容默认&#10;refactor(levelFourSurgeryMatrix): 临床工作量分析 /四级手术异常探查 添加 25、75分位后面添加问号提示&#10;&#10;- 移除了注释掉的冗余代码，简化了模板结构&#10;- 在主矩阵组件中增加了四个新的量化提示属性传递" />
+    <MESSAGE value="v125:feat/refactor:需求2132-院端-临床工作量分析：门诊异常探查、出院异常探查、手术（含介入）异常探查、四级手术异常探查、日间手术异常探查、微创手术异常探查、入院率异常探查；院端-收支分析：收入异常探查、盈余异常探查、药品收入占比异常探查、材料收入占比异常探查、药耗收入占比异常探查；院端-人力资源分析：医生权重异常探查；院端-病组分析（DRG支付）：成本异常探查；院端-异常探查：异常探查常用、异常探查汇总、异常探查自定义；横坐标的25、75分位后面添加问号，纵坐标的25、75分位后面添加问号，问号内容支持自定义，问号内容默认&#10;refactor(levelFourSurgeryMatrix): 临床工作量分析 /日间手术异常探查 添加 25、75分位后面添加问号提示&#10;&#10;- 移除了注释掉的冗余代码，简化了模板结构&#10;- 在主矩阵组件中增加了四个新的量化提示属性传递" />
+    <MESSAGE value="v125:feat/refactor:需求2132-院端-临床工作量分析：门诊异常探查、出院异常探查、手术（含介入）异常探查、四级手术异常探查、日间手术异常探查、微创手术异常探查、入院率异常探查；院端-收支分析：收入异常探查、盈余异常探查、药品收入占比异常探查、材料收入占比异常探查、药耗收入占比异常探查；院端-人力资源分析：医生权重异常探查；院端-病组分析（DRG支付）：成本异常探查；院端-异常探查：异常探查常用、异常探查汇总、异常探查自定义；横坐标的25、75分位后面添加问号，纵坐标的25、75分位后面添加问号，问号内容支持自定义，问号内容默认&#10;refactor(levelFourSurgeryMatrix): 临床工作量分析 /微创手术异常探查 添加 25、75分位后面添加问号提示&#10;&#10;- 移除了注释掉的冗余代码，简化了模板结构&#10;- 在主矩阵组件中增加了四个新的量化提示属性传递" />
+    <MESSAGE value="v125:feat/refactor:需求2132-院端-临床工作量分析：门诊异常探查、出院异常探查、手术（含介入）异常探查、四级手术异常探查、日间手术异常探查、微创手术异常探查、入院率异常探查；院端-收支分析：收入异常探查、盈余异常探查、药品收入占比异常探查、材料收入占比异常探查、药耗收入占比异常探查；院端-人力资源分析：医生权重异常探查；院端-病组分析（DRG支付）：成本异常探查；院端-异常探查：异常探查常用、异常探查汇总、异常探查自定义；横坐标的25、75分位后面添加问号，纵坐标的25、75分位后面添加问号，问号内容支持自定义，问号内容默认&#10;refactor(tooltips): 优化异常检测标记点提示列表的y轴偏移计算&#10;&#10;- 添加genSymbolOffsetYAxis函数用于动态计算y轴偏移量&#10;- 将固定的symbolOffset值替换为基于y轴值的动态偏移计算&#10;- 更新25分位线和75分位线的symbolOffset配置以使用动态计算函数" />
+    <MESSAGE value="v125:feat/refactor:需求2132-院端-临床工作量分析：门诊异常探查、出院异常探查、手术（含介入）异常探查、四级手术异常探查、日间手术异常探查、微创手术异常探查、入院率异常探查；院端-收支分析：收入异常探查、盈余异常探查、药品收入占比异常探查、材料收入占比异常探查、药耗收入占比异常探查；院端-人力资源分析：医生权重异常探查；院端-病组分析（DRG支付）：成本异常探查；院端-异常探查：异常探查常用、异常探查汇总、异常探查自定义；横坐标的25、75分位后面添加问号，纵坐标的25、75分位后面添加问号，问号内容支持自定义，问号内容默认&#10;refactor(levelFourSurgeryMatrix): 临床工作量分析-入院率异常探查 添加 25、75分位后面添加问号提示&#10;&#10;- 在主矩阵组件中增加了四个新的提示属性传递" />
+    <MESSAGE value="v125:feat/refactor:需求2132-院端-临床工作量分析：门诊异常探查、出院异常探查、手术（含介入）异常探查、四级手术异常探查、日间手术异常探查、微创手术异常探查、入院率异常探查；院端-收支分析：收入异常探查、盈余异常探查、药品收入占比异常探查、材料收入占比异常探查、药耗收入占比异常探查；院端-人力资源分析：医生权重异常探查；院端-病组分析（DRG支付）：成本异常探查；院端-异常探查：异常探查常用、异常探查汇总、异常探查自定义；横坐标的25、75分位后面添加问号，纵坐标的25、75分位后面添加问号，问号内容支持自定义，问号内容默认&#10;fix(tooltips): 修复异常检测分位数提示图标的显示逻辑&#10;&#10;- 添加了minX和minY参数用于控制提示图标的显示条件&#10;- 重构了分位数坐标的获取逻辑，避免直接访问数组索引&#10;- 实现了基于最小值判断的提示图标显示条件&#10;- 更新了x轴和y轴分位线提示图标的坐标引用&#10;- 修复了y轴分位线符号偏移量的计算方式" />
+    <MESSAGE value="v125:feat/refactor:需求2132-院端-临床工作量分析：门诊异常探查、出院异常探查、手术（含介入）异常探查、四级手术异常探查、日间手术异常探查、微创手术异常探查、入院率异常探查；院端-收支分析：收入异常探查、盈余异常探查、药品收入占比异常探查、材料收入占比异常探查、药耗收入占比异常探查；院端-人力资源分析：医生权重异常探查；院端-病组分析（DRG支付）：成本异常探查；院端-异常探查：异常探查常用、异常探查汇总、异常探查自定义；横坐标的25、75分位后面添加问号，纵坐标的25、75分位后面添加问号，问号内容支持自定义，问号内容默认&#10;refactor(levelFourSurgeryMatrix): 院端-病组分析（DRG支付） /成本异常探查 添加 25、75分位后面添加问号提示&#10;&#10;- 在主矩阵组件中增加了四个新的量化提示属性传递" />
+    <MESSAGE value="v125:feat/refactor:需求2132-院端-临床工作量分析：门诊异常探查、出院异常探查、手术（含介入）异常探查、四级手术异常探查、日间手术异常探查、微创手术异常探查、入院率异常探查；院端-收支分析：收入异常探查、盈余异常探查、药品收入占比异常探查、材料收入占比异常探查、药耗收入占比异常探查；院端-人力资源分析：医生权重异常探查；院端-病组分析（DRG支付）：成本异常探查；院端-异常探查：异常探查常用、异常探查汇总、异常探查自定义；横坐标的25、75分位后面添加问号，纵坐标的25、75分位后面添加问号，问号内容支持自定义，问号内容默认&#10;refactor(levelFourSurgeryMatrix): 院端-收支分析 /收入异常探查 添加 25、75分位后面添加问号提示&#10;&#10;- 在主矩阵组件中增加了四个新的提示属性传递" />
+    <MESSAGE value="v125:feat/refactor:需求2132-院端-临床工作量分析：门诊异常探查、出院异常探查、手术（含介入）异常探查、四级手术异常探查、日间手术异常探查、微创手术异常探查、入院率异常探查；院端-收支分析：收入异常探查、盈余异常探查、药品收入占比异常探查、材料收入占比异常探查、药耗收入占比异常探查；院端-人力资源分析：医生权重异常探查；院端-病组分析（DRG支付）：成本异常探查；院端-异常探查：异常探查常用、异常探查汇总、异常探查自定义；横坐标的25、75分位后面添加问号，纵坐标的25、75分位后面添加问号，问号内容支持自定义，问号内容默认&#10;refactor(levelFourSurgeryMatrix): 院端-收支分析 /盈余异常探查 添加 25、75分位后面添加问号提示&#10;&#10;- 在主矩阵组件中增加了四个新的提示属性传递" />
+    <MESSAGE value="v125:feat/refactor:需求2132-院端-临床工作量分析：门诊异常探查、出院异常探查、手术（含介入）异常探查、四级手术异常探查、日间手术异常探查、微创手术异常探查、入院率异常探查；院端-收支分析：收入异常探查、盈余异常探查、药品收入占比异常探查、材料收入占比异常探查、药耗收入占比异常探查；院端-人力资源分析：医生权重异常探查；院端-病组分析（DRG支付）：成本异常探查；院端-异常探查：异常探查常用、异常探查汇总、异常探查自定义；横坐标的25、75分位后面添加问号，纵坐标的25、75分位后面添加问号，问号内容支持自定义，问号内容默认&#10;refactor(levelFourSurgeryMatrix): 收支分析 /耗占比异常探查 添加 25、75分位后面添加问号提示&#10;&#10;- 在主矩阵组件中增加了四个新的提示属性传递" />
+    <MESSAGE value="v125:feat/refactor:需求2132-院端-临床工作量分析：门诊异常探查、出院异常探查、手术（含介入）异常探查、四级手术异常探查、日间手术异常探查、微创手术异常探查、入院率异常探查；院端-收支分析：收入异常探查、盈余异常探查、药品收入占比异常探查、材料收入占比异常探查、药耗收入占比异常探查；院端-人力资源分析：医生权重异常探查；院端-病组分析（DRG支付）：成本异常探查；院端-异常探查：异常探查常用、异常探查汇总、异常探查自定义；横坐标的25、75分位后面添加问号，纵坐标的25、75分位后面添加问号，问号内容支持自定义，问号内容默认&#10;refactor(levelFourSurgeryMatrix): 收支分析 /药占比异常探查 添加 25、75分位后面添加问号提示&#10;&#10;- 在主矩阵组件中增加了四个新的提示属性传递" />
+    <MESSAGE value="v125:feat/refactor:需求2132-院端-临床工作量分析：门诊异常探查、出院异常探查、手术（含介入）异常探查、四级手术异常探查、日间手术异常探查、微创手术异常探查、入院率异常探查；院端-收支分析：收入异常探查、盈余异常探查、药品收入占比异常探查、材料收入占比异常探查、药耗收入占比异常探查；院端-人力资源分析：医生权重异常探查；院端-病组分析（DRG支付）：成本异常探查；院端-异常探查：异常探查常用、异常探查汇总、异常探查自定义；横坐标的25、75分位后面添加问号，纵坐标的25、75分位后面添加问号，问号内容支持自定义，问号内容默认&#10;feat/refactor(herbsMatrix): 收支分析 /药耗占比异常探查 矩阵页面组件 新增四个四分位数提示属性&#10;&#10;- 移除注释掉的旧部门选择器组件代码&#10;- 使用新的 DeptAndTimeHeaderFilter 组件替代原有时间过滤器&#10;- 在 Matrix 组件中新增四个四分位数提示属性 (quantileX25Tips, quantileX75Tips, quantileY25Tips, quantileY75Tips)" />
+    <MESSAGE value="v125:feat/refactor:需求2132-院端-临床工作量分析：门诊异常探查、出院异常探查、手术（含介入）异常探查、四级手术异常探查、日间手术异常探查、微创手术异常探查、入院率异常探查；院端-收支分析：收入异常探查、盈余异常探查、药品收入占比异常探查、材料收入占比异常探查、药耗收入占比异常探查；院端-人力资源分析：医生权重异常探查；院端-病组分析（DRG支付）：成本异常探查；院端-异常探查：异常探查常用、异常探查汇总、异常探查自定义；横坐标的25、75分位后面添加问号，纵坐标的25、75分位后面添加问号，问号内容支持自定义，问号内容默认&#10;fix(tooltips): 修复异常检测分位数提示图标的显示逻辑&#10;&#10;- 将分位数坐标判断条件从 AND 改为 OR 以正确显示提示图标&#10;- 更新符号偏移量从 200% 到 260% 以改善视觉位置&#10;- 调整四个分位数坐标的显示条件：X25、X75、Y25 和 Y75 轴" />
+    <MESSAGE value="v125:feat/refactor:需求2132-院端-临床工作量分析：门诊异常探查、出院异常探查、手术（含介入）异常探查、四级手术异常探查、日间手术异常探查、微创手术异常探查、入院率异常探查；院端-收支分析：收入异常探查、盈余异常探查、药品收入占比异常探查、材料收入占比异常探查、药耗收入占比异常探查；院端-人力资源分析：医生权重异常探查；院端-病组分析（DRG支付）：成本异常探查；院端-异常探查：异常探查常用、异常探查汇总、异常探查自定义；横坐标的25、75分位后面添加问号，纵坐标的25、75分位后面添加问号，问号内容支持自定义，问号内容默认&#10;refactor(doctorCapacity): 人力资源分析 /医生权重异常探查 添加 25、75分位后面添加问号提示&#10;&#10;- 在主矩阵组件中增加了四个新的提示属性传递" />
+    <MESSAGE value="v125:feat/refactor:需求2132-院端-临床工作量分析：门诊异常探查、出院异常探查、手术（含介入）异常探查、四级手术异常探查、日间手术异常探查、微创手术异常探查、入院率异常探查；院端-收支分析：收入异常探查、盈余异常探查、药品收入占比异常探查、材料收入占比异常探查、药耗收入占比异常探查；院端-人力资源分析：医生权重异常探查；院端-病组分析（DRG支付）：成本异常探查；院端-异常探查：异常探查常用、异常探查汇总、异常探查自定义；横坐标的25、75分位后面添加问号，纵坐标的25、75分位后面添加问号，问号内容支持自定义，问号内容默认&#10;refactor(doctorCapacity): 收支分析 /收入异常探查 添加 25、75分位后面添加问号提示&#10;&#10;- 移除已注释的废弃逻辑代码和TODO注释&#10;- 引入hospPageConfigMixin混入实现页面配置功能&#10;- 添加initPage方法用于初始化页面配置&#10;- 在created生命周期中调用initPage方法&#10;- 传递分位数提示属性到表格组件" />
+    <MESSAGE value="v125:feat/refactor:需求2132-院端-临床工作量分析：门诊异常探查、出院异常探查、手术（含介入）异常探查、四级手术异常探查、日间手术异常探查、微创手术异常探查、入院率异常探查；院端-收支分析：收入异常探查、盈余异常探查、药品收入占比异常探查、材料收入占比异常探查、药耗收入占比异常探查；院端-人力资源分析：医生权重异常探查；院端-病组分析（DRG支付）：成本异常探查；院端-异常探查：异常探查常用、异常探查汇总、异常探查自定义；横坐标的25、75分位后面添加问号，纵坐标的25、75分位后面添加问号，问号内容支持自定义，问号内容默认&#10;feat(tooltips): 添加异常检测标记点偏移配置参数&#10;&#10;- 添加了 xAxisSymbolOffsetX 和 yAxisSymbolOffsetX 配置参数&#10;- 将硬编码的偏移值替换为可配置参数&#10;- 更新了 x轴和y轴标记点的偏移量设置逻辑&#10;- 优化了标记点位置的灵活性和可定制性" />
+    <MESSAGE value="v125:feat/refactor:需求2132-院端-临床工作量分析：门诊异常探查、出院异常探查、手术（含介入）异常探查、四级手术异常探查、日间手术异常探查、微创手术异常探查、入院率异常探查；院端-收支分析：收入异常探查、盈余异常探查、药品收入占比异常探查、材料收入占比异常探查、药耗收入占比异常探查；院端-人力资源分析：医生权重异常探查；院端-病组分析（DRG支付）：成本异常探查；院端-异常探查：异常探查常用、异常探查汇总、异常探查自定义；横坐标的25、75分位后面添加问号，纵坐标的25、75分位后面添加问号，问号内容支持自定义，问号内容默认&#10;fix(chartScatter): 优化点击事件的参数校验&#10;&#10;- 添加判断条件，确保点击坐标点时参数及科室编码存在&#10;- 防止因无效参数导致的事件处理异常&#10;- 保持点击事件的正确触发逻辑" />
+    <MESSAGE value="v125:feat/refactor:需求2132-院端-临床工作量分析：门诊异常探查、出院异常探查、手术（含介入）异常探查、四级手术异常探查、日间手术异常探查、微创手术异常探查、入院率异常探查；院端-收支分析：收入异常探查、盈余异常探查、药品收入占比异常探查、材料收入占比异常探查、药耗收入占比异常探查；院端-人力资源分析：医生权重异常探查；院端-病组分析（DRG支付）：成本异常探查；院端-异常探查：异常探查常用、异常探查汇总、异常探查自定义；横坐标的25、75分位后面添加问号，纵坐标的25、75分位后面添加问号，问号内容支持自定义，问号内容默认&#10;feat(abnormalCheck): 添加异常检查页面分位线浮动提示功能&#10;&#10;- 在abnormalCheckSave.vue中移除废弃的时间过滤组件和维度选择组件&#10;- 在abnormalPanel.vue中新增分位线浮动提示属性并集成医院页面配置混入&#10;- 在chartScatter.vue中引入分位线浮动提示钩子函数并添加提示图标显示逻辑&#10;- 更新图表系列配置以包含分位线浮动提示标记点&#10;- 移除废弃的注释代码和无用导入模块" />
+    <MESSAGE value="v125:feat/refactor:需求变更2463（山大二）-全院-病组分析（市医保DRG）-总览-总权重下钻-RW分布：表格和图形显示RW区间数量不一致&#10;feat(charts): 更新图表组件配置以支持滚动限制&#10;&#10;- 在图表配置中添加 scrollLimit 属性设置为 20" />
+    <MESSAGE value="v125:feat/refactor:需求变更2513（毓璜顶/山东菏泽）-全院-病种分析（市医保DRG）-总览-费用消耗指数/时间消耗指数/药品指数/材料指数下钻：病人分类未默认置灰&#10;fix(operationDisease): 禁用patTypeList选择框&#10;&#10;- 在drugsIndex视图中将patTypeList选择框设置为禁用&#10;- 在expenseConsumptionIndex视图中将patTypeList选择框设置为禁用&#10;- 在materialIndex视图中将patTypeList选择框设置为禁用&#10;- 在timeConsumptionIndex视图中将patTypeList选择框设置为禁用" />
+    <MESSAGE value="v125:feat/refactor:2418-科室端-病种分析（市医保DRG）-出院分析，在医疗组收治病组一览表下方添加一张表，标题为DRG病例明细表&#10;fix(DRGCaseDetail): 修复 commonRequestParams 监听器更新问题&#10;&#10;- 添加 commonRequestParams 的深度监听 更新监听器以设置 ifNeedUpdateColumns 为 true" />
+    <MESSAGE value="v125:feat/refactor:需求2132-院端-临床工作量分析：门诊异常探查、出院异常探查、手术（含介入）异常探查、四级手术异常探查、日间手术异常探查、微创手术异常探查、入院率异常探查；院端-收支分析：收入异常探查、盈余异常探查、药品收入占比异常探查、材料收入占比异常探查、药耗收入占比异常探查；院端-人力资源分析：医生权重异常探查；院端-病组分析（DRG支付）：成本异常探查；院端-异常探查：异常探查常用、异常探查汇总、异常探查自定义；横坐标的25、75分位后面添加问号，纵坐标的25、75分位后面添加问号，问号内容支持自定义，问号内容默认&#10;fix(matrix): 修复矩阵组件初始化逻辑&#10;&#10;- 将侦听函数改为异步，确保状态复位后执行下一步操作&#10;- 使用 await this.$nextTick() 等待 DOM 更新完成&#10;- 取消图表tab页判断，直接初始化图表数据&#10;- 注释掉原有的this.$nextTick包裹的初始化调用逻辑" />
+    <MESSAGE value="v125:feat/refactor:需求2132-院端-临床工作量分析：门诊异常探查、出院异常探查、手术（含介入）异常探查、四级手术异常探查、日间手术异常探查、微创手术异常探查、入院率异常探查；院端-收支分析：收入异常探查、盈余异常探查、药品收入占比异常探查、材料收入占比异常探查、药耗收入占比异常探查；院端-人力资源分析：医生权重异常探查；院端-病组分析（DRG支付）：成本异常探查；院端-异常探查：异常探查常用、异常探查汇总、异常探查自定义；横坐标的25、75分位后面添加问号，纵坐标的25、75分位后面添加问号，问号内容支持自定义，问号内容默认&#10;feat(tooltips): 添加分位数标记点位置配置参数&#10;&#10;- 添加 quantileX25and75yPosition 和 quantileY25and75xPosition 配置参数&#10;- 将硬编码的位置值替换为可配置的参数&#10;- 统一 x 轴和 y 轴分位数标记点的位置配置" />
+    <MESSAGE value="v125:feat/refactor:需求2132-院端-临床工作量分析：门诊异常探查、出院异常探查、手术（含介入）异常探查、四级手术异常探查、日间手术异常探查、微创手术异常探查、入院率异常探查；院端-收支分析：收入异常探查、盈余异常探查、药品收入占比异常探查、材料收入占比异常探查、药耗收入占比异常探查；院端-人力资源分析：医生权重异常探查；院端-病组分析（DRG支付）：成本异常探查；院端-异常探查：异常探查常用、异常探查汇总、异常探查自定义；横坐标的25、75分位后面添加问号，纵坐标的25、75分位后面添加问号，问号内容支持自定义，问号内容默认&#10;fix(tooltips): 简化分位线提示图标显示逻辑&#10;&#10;- 移除判断分位线坐标是否为最小值0的条件&#10;- 仅根据是否存在提示文本决定是否显示图标&#10;- 优化代码可读性和维护性&#10;- 保持原有功能一致，防止误判不显示提示" />
+    <MESSAGE value="v126:feat/refactor: 需求1943-院端-重点设备效益分析-总览、院端-重点设备效益分析-诊断类设备分析、院端-重点设备效益分析-治疗类设备分析、科室端-重点设备效益分析-下所有菜单-支持周、日维度选择；选择周、日维度时，原工作量、稼动率相关表格和图表内容不变；原收入、投资回报率相关表格和图表，因为成本最小只能到月，直接隐藏或只显示收入相关元素；&#10;feat(equipmentBenefitAnalysis): 添加周度日度隐藏功能&#10;&#10;- 在returnRateAbnormal组件中添加getCurrentFreqCodeIsWeekOrDay计算属性&#10;- 使用v-if指令控制组件在周度和日度时不显示&#10;- 导入vuex的mapGetters辅助函数&#10;- 更新组件样式以适应新的条件渲染逻辑" />
+    <option name="LAST_COMMIT_MESSAGE" value="v126:feat/refactor: 需求1943-院端-重点设备效益分析-总览、院端-重点设备效益分析-诊断类设备分析、院端-重点设备效益分析-治疗类设备分析、科室端-重点设备效益分析-下所有菜单-支持周、日维度选择；选择周、日维度时，原工作量、稼动率相关表格和图表内容不变；原收入、投资回报率相关表格和图表，因为成本最小只能到月，直接隐藏或只显示收入相关元素；&#10;feat(equipmentBenefitAnalysis): 添加周度日度隐藏功能&#10;&#10;- 在returnRateAbnormal组件中添加getCurrentFreqCodeIsWeekOrDay计算属性&#10;- 使用v-if指令控制组件在周度和日度时不显示&#10;- 导入vuex的mapGetters辅助函数&#10;- 更新组件样式以适应新的条件渲染逻辑" />
   </component>
   <component name="VueSettings">
     <option name="innerServiceType" value="TS_SERVICE" />
+    <option name="tsPluginPreviewEnabled" value="false" />
+    <option name="tsPluginVersion" value="V3_1_2" />
     <option name="useTypesFromServer" value="true" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/views/diseaseMatrix.vue</url>
+          <line>274</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/views/abnormalCheck/components/matrix/chartScatter.vue</url>
+          <line>497</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="XSLT-Support.FileAssociations.UIState">
-    <expand />
+    <expand>
+      <path>
+        <item name="doms_web" type="b2602c69:ProjectViewProjectNode" />
+        <item name="dir{file://D:/project/doms_web}" type="462c0819:PsiDirectoryNode" />
+      </path>
+    </expand>
     <select />
   </component>
   <component name="com.github.evgenys91.machinet.common.dslhistory.DslHistoryState">
@@ -4266,5 +5123,13 @@
         </TimePoint>
       </list>
     </option>
+  </component>
+  <component name="github-copilot-workspace">
+    <instructionFileLocations>
+      <option value=".github/instructions" />
+    </instructionFileLocations>
+    <promptFileLocations>
+      <option value=".github/prompts" />
+    </promptFileLocations>
   </component>
 </project>

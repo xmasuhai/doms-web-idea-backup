@@ -23,16 +23,9 @@
   <component name="JavaScriptSettings">
     <option name="languageLevel" value="ES6" />
   </component>
-  <component name="SvnBranchConfigurationManager">
-    <option name="myConfigurationMap">
-      <map>
-        <entry key="$PROJECT_DIR$">
-          <value>
-            <SvnBranchConfiguration />
-          </value>
-        </entry>
-      </map>
-    </option>
+  <component name="WebPackConfiguration">
+    <option name="mode" value="AUTO" />
+    <option name="path" value="$PROJECT_DIR$/node_modules/@vue/cli-service/webpack.config.js" />
   </component>
   <component name="com.github.texhnolyzze.jiraworklogplugin.JiraWorklogPluginState">
     <option name="closed" value="true" />

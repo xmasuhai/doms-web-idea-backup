@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BookmarkPalaceStorage">
+    <tags>
+      <Tag>
+        <option name="color" value="#43A047" />
+        <option name="createdAt" value="1773212882165" />
+        <option name="description" value="程序入口点" />
+        <option name="groupId" value="cc75668a-5162-468f-a0a6-ab9d7a6da1d9" />
+        <option name="id" value="7203498d-16dc-4413-bf14-77abb6e3fa1d" />
+        <option name="name" value="入口" />
+      </Tag>
+      <Tag>
+        <option name="color" value="#E53935" />
+        <option name="createdAt" value="1773212882165" />
+        <option name="description" value="核心业务逻辑" />
+        <option name="groupId" value="cc75668a-5162-468f-a0a6-ab9d7a6da1d9" />
+        <option name="id" value="768e2e78-3bd3-4ab9-9b3e-a955aaa5caf6" />
+        <option name="name" value="核心逻辑" />
+        <option name="order" value="1" />
+      </Tag>
+      <Tag>
+        <option name="color" value="#FB8C00" />
+        <option name="createdAt" value="1773212882165" />
+        <option name="description" value="异常处理代码" />
+        <option name="groupId" value="cc75668a-5162-468f-a0a6-ab9d7a6da1d9" />
+        <option name="id" value="83d35edd-0f17-4dea-9fb9-c7fe632d32f3" />
+        <option name="name" value="异常处理" />
+        <option name="order" value="2" />
+      </Tag>
+      <Tag>
+        <option name="color" value="#FDD835" />
+        <option name="createdAt" value="1773212882165" />
+        <option name="description" value="数据校验逻辑" />
+        <option name="groupId" value="cc75668a-5162-468f-a0a6-ab9d7a6da1d9" />
+        <option name="id" value="4d7fd378-a235-4dad-80bf-b5598ba5b6ae" />
+        <option name="name" value="数据校验" />
+        <option name="order" value="3" />
+      </Tag>
+      <Tag>
+        <option name="color" value="#8E24AA" />
+        <option name="createdAt" value="1773212882165" />
+        <option name="description" value="远程调用" />
+        <option name="groupId" value="690dd4d3-a676-48a4-bf52-0abfd31ffe78" />
+        <option name="id" value="6e897ad7-221d-411e-a2b3-da329a692118" />
+        <option name="name" value="RPC调用" />
+        <option name="order" value="4" />
+      </Tag>
+      <Tag>
+        <option name="color" value="#00ACC1" />
+        <option name="createdAt" value="1773212882165" />
+        <option name="description" value="数据库相关" />
+        <option name="groupId" value="690dd4d3-a676-48a4-bf52-0abfd31ffe78" />
+        <option name="id" value="d90c23ac-4263-4b9f-99f6-830133e58563" />
+        <option name="name" value="数据库操作" />
+        <option name="order" value="5" />
+      </Tag>
+      <Tag>
+        <option name="color" value="#D81B60" />
+        <option name="createdAt" value="1773212882165" />
+        <option name="description" value="缓存相关" />
+        <option name="groupId" value="690dd4d3-a676-48a4-bf52-0abfd31ffe78" />
+        <option name="id" value="a11b74ae-06e7-44b9-a67f-1319dc10d581" />
+        <option name="name" value="缓存" />
+        <option name="order" value="6" />
+      </Tag>
+      <Tag>
+        <option name="color" value="#757575" />
+        <option name="createdAt" value="1773212882165" />
+        <option name="description" value="需要优化的代码" />
+        <option name="groupId" value="3a13a822-b63f-484a-9715-1b9d7230f8cc" />
+        <option name="id" value="f0f3dde5-6932-42ac-8fe0-44d864e87c0b" />
+        <option name="name" value="待优化" />
+        <option name="order" value="7" />
+      </Tag>
+      <Tag>
+        <option name="color" value="#FF5722" />
+        <option name="createdAt" value="1773212882165" />
+        <option name="description" value="待完成" />
+        <option name="groupId" value="3a13a822-b63f-484a-9715-1b9d7230f8cc" />
+        <option name="id" value="b5c5c3c0-a201-4d48-980c-a2b96afac0ee" />
+        <option name="name" value="TODO" />
+        <option name="order" value="8" />
+      </Tag>
+      <Tag>
+        <option name="color" value="#F44336" />
+        <option name="createdAt" value="1773212882165" />
+        <option name="description" value="已知问题" />
+        <option name="groupId" value="3a13a822-b63f-484a-9715-1b9d7230f8cc" />
+        <option name="id" value="4369ac12-17f2-4159-8a17-314466b57ac8" />
+        <option name="name" value="BUG" />
+        <option name="order" value="9" />
+      </Tag>
+    </tags>
+    <tagGroups>
+      <TagGroup>
+        <option name="description" value="业务相关标签" />
+        <option name="id" value="cc75668a-5162-468f-a0a6-ab9d7a6da1d9" />
+        <option name="name" value="业务流程" />
+      </TagGroup>
+      <TagGroup>
+        <option name="description" value="技术相关标签" />
+        <option name="id" value="690dd4d3-a676-48a4-bf52-0abfd31ffe78" />
+        <option name="name" value="技术标记" />
+        <option name="order" value="1" />
+      </TagGroup>
+      <TagGroup>
+        <option name="description" value="代码状态标签" />
+        <option name="id" value="3a13a822-b63f-484a-9715-1b9d7230f8cc" />
+        <option name="name" value="状态标记" />
+        <option name="order" value="2" />
+      </TagGroup>
+    </tagGroups>
+    <diagrams>
+      <Diagram>
+        <option name="createdAt" value="1773212882171" />
+        <option name="description" value="业务主链路导览图" />
+        <option name="id" value="2560d78f-9856-4305-9e09-477c0138f670" />
+        <option name="name" value="主流程 Main Flow" />
+        <option name="type" value="MAIN_FLOW" />
+        <option name="updatedAt" value="1773212882171" />
+      </Diagram>
+      <Diagram>
+        <option name="createdAt" value="1773212882172" />
+        <option name="description" value="自定义代码导览图" />
+        <option name="id" value="faba84ce-c35c-4798-8db5-8a40a26e6300" />
+        <option name="name" value="自定义 Custom" />
+        <option name="updatedAt" value="1773212882172" />
+      </Diagram>
+    </diagrams>
+  </component>
+</project>

@@ -10,6 +10,14 @@
       <excludeFolder url="file://$MODULE_DIR$/.lingma" />
       <excludeFolder url="file://$MODULE_DIR$/.junie" />
       <excludeFolder url="file://$MODULE_DIR$/.todo" />
+      <excludeFolder url="file://$MODULE_DIR$/.ai" />
+      <excludeFolder url="file://$MODULE_DIR$/.claude" />
+      <excludeFolder url="file://$MODULE_DIR$/.codemoss" />
+      <excludeFolder url="file://$MODULE_DIR$/public/bin" />
+      <excludeFolder url="file://$MODULE_DIR$/src/assets/lib" />
+      <excludePattern pattern="node_modules" />
+      <excludePattern pattern=".pnpm" />
+      <excludePattern pattern=".cxx" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
