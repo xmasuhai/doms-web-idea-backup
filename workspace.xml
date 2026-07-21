@@ -44,9 +44,8 @@
     <option name="selectedModelId" value="auto" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a32d6ec8-0d74-4a1b-8cad-0ab91948ca3e" name="Changes" comment="v126:feat/refactor: v125:feat/refactor:需求2467-前端代码规范化修改-收支余分析 /诊间成本估算【时间段】-诊间结余估算&#10;refactor(cost): 诊间估算对话框组件结构&#10;&#10;- 移除未使用的Vuex映射导入语句&#10;- 添加elemId工具函数导入用于元素标识&#10;- 将elemId注入到组件数据中便于表格ID生成&#10;- 移除空的生命周期钩子函数声明&#10;- 简化组件数据结构定义">
+    <list default="true" id="a32d6ec8-0d74-4a1b-8cad-0ab91948ca3e" name="Changes" comment="v126:feat/refactor: 用户常用科室列表-树形选择器-弹出框&#10;fix/refactor(department): 优化科室树形复选框组件逻辑&#10;&#10;- 添加deptListDataCopy用于存储部门列表数据副本，防止直接修改外部数据，保持单项数据流&#10;- 使用Set去重处理部门选中列表&#10;- 监听deptListData变化并深拷贝到本地副本&#10;- 监听部门选中列表变化并更新副本中的选中状态&#10;- 将计算属性getDeptsTableData的数据源改为副本&#10;- 添加mapUniqueDeptId方法用于映射唯一部门ID&#10;- 优化部门复选框变更处理逻辑，支持父子节点联动选择&#10;- 修复选中科室后，多余仍选中之前已选中父级下所有子项科室">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/department/user-common-use-depts/DeptListTreeCheckboxDialog.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/department/user-common-use-depts/DeptListTreeCheckboxDialog.vue" afterDir="false" />
     </list>
     <list id="bd8e474f-42c8-444f-9f2b-07be811ba86b" name="ignore-on-commit" comment="ignore-on-commit" />
     <option name="SHOW_DIALOG" value="false" />
@@ -2693,15 +2692,7 @@
       <workItem from="1784524103659" duration="143000" />
       <workItem from="1784524295157" duration="11397000" />
       <workItem from="1784537895444" duration="1045000" />
-      <workItem from="1784539152250" duration="6469000" />
-    </task>
-    <task id="LOCAL-04426" summary="v125:fix/refactor:需求2430-因果图谱的鱼骨图，鱼头处与增降幅的红绿色看不清，将鱼头颜色变浅；将树形图的根节点底色一起变浅；&#10;style(indexAnalysis): 更新根节点背景颜色配置&#10;&#10;- 将根节点背景颜色从 #9EB8DA 更改为 #CEDFF6&#10;- 保留原颜色值作为注释以便后续参考">
-      <option name="closed" value="true" />
-      <created>1784095417370</created>
-      <option name="number" value="04426" />
-      <option name="presentableId" value="LOCAL-04426" />
-      <option name="project" value="LOCAL" />
-      <updated>1784095417371</updated>
+      <workItem from="1784539152250" duration="6877000" />
     </task>
     <task id="LOCAL-04427" summary="v125:feat/refactor:需求2132-院端-临床工作量分析：门诊异常探查、出院异常探查、手术（含介入）异常探查、四级手术异常探查、日间手术异常探查、微创手术异常探查、入院率异常探查；院端-收支分析：收入异常探查、盈余异常探查、药品收入占比异常探查、材料收入占比异常探查、药耗收入占比异常探查；院端-人力资源分析：医生权重异常探查；院端-病组分析（DRG支付）：成本异常探查；院端-异常探查：异常探查常用、异常探查汇总、异常探查自定义；横坐标的25、75分位后面添加问号，纵坐标的25、75分位后面添加问号，问号内容支持自定义，问号内容默认&#10;feat:添加问号提示图标文件">
       <option name="closed" value="true" />
@@ -3087,7 +3078,15 @@
       <option name="project" value="LOCAL" />
       <updated>1784535288625</updated>
     </task>
-    <option name="localTasksCounter" value="4475" />
+    <task id="LOCAL-04475" summary="v126:feat/refactor: 用户常用科室列表-树形选择器-弹出框&#10;fix/refactor(department): 优化科室树形复选框组件逻辑&#10;&#10;- 添加deptListDataCopy用于存储部门列表数据副本，防止直接修改外部数据，保持单项数据流&#10;- 使用Set去重处理部门选中列表&#10;- 监听deptListData变化并深拷贝到本地副本&#10;- 监听部门选中列表变化并更新副本中的选中状态&#10;- 将计算属性getDeptsTableData的数据源改为副本&#10;- 添加mapUniqueDeptId方法用于映射唯一部门ID&#10;- 优化部门复选框变更处理逻辑，支持父子节点联动选择&#10;- 修复选中科室后，多余仍选中之前已选中父级下所有子项科室">
+      <option name="closed" value="true" />
+      <created>1784546036733</created>
+      <option name="number" value="04475" />
+      <option name="presentableId" value="LOCAL-04475" />
+      <option name="project" value="LOCAL" />
+      <updated>1784546036733</updated>
+    </task>
+    <option name="localTasksCounter" value="4476" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -3108,7 +3107,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="MARK_IGNORED_AS_EXCLUDED" value="true" />
-    <MESSAGE value="v125:feat/refactor:需求2132-院端-临床工作量分析：门诊异常探查、出院异常探查、手术（含介入）异常探查、四级手术异常探查、日间手术异常探查、微创手术异常探查、入院率异常探查；院端-收支分析：收入异常探查、盈余异常探查、药品收入占比异常探查、材料收入占比异常探查、药耗收入占比异常探查；院端-人力资源分析：医生权重异常探查；院端-病组分析（DRG支付）：成本异常探查；院端-异常探查：异常探查常用、异常探查汇总、异常探查自定义；横坐标的25、75分位后面添加问号，纵坐标的25、75分位后面添加问号，问号内容支持自定义，问号内容默认&#10;refactor(levelFourSurgeryMatrix): 院端-收支分析 /盈余异常探查 添加 25、75分位后面添加问号提示&#10;&#10;- 在主矩阵组件中增加了四个新的提示属性传递" />
     <MESSAGE value="v125:feat/refactor:需求2132-院端-临床工作量分析：门诊异常探查、出院异常探查、手术（含介入）异常探查、四级手术异常探查、日间手术异常探查、微创手术异常探查、入院率异常探查；院端-收支分析：收入异常探查、盈余异常探查、药品收入占比异常探查、材料收入占比异常探查、药耗收入占比异常探查；院端-人力资源分析：医生权重异常探查；院端-病组分析（DRG支付）：成本异常探查；院端-异常探查：异常探查常用、异常探查汇总、异常探查自定义；横坐标的25、75分位后面添加问号，纵坐标的25、75分位后面添加问号，问号内容支持自定义，问号内容默认&#10;refactor(levelFourSurgeryMatrix): 收支分析 /耗占比异常探查 添加 25、75分位后面添加问号提示&#10;&#10;- 在主矩阵组件中增加了四个新的提示属性传递" />
     <MESSAGE value="v125:feat/refactor:需求2132-院端-临床工作量分析：门诊异常探查、出院异常探查、手术（含介入）异常探查、四级手术异常探查、日间手术异常探查、微创手术异常探查、入院率异常探查；院端-收支分析：收入异常探查、盈余异常探查、药品收入占比异常探查、材料收入占比异常探查、药耗收入占比异常探查；院端-人力资源分析：医生权重异常探查；院端-病组分析（DRG支付）：成本异常探查；院端-异常探查：异常探查常用、异常探查汇总、异常探查自定义；横坐标的25、75分位后面添加问号，纵坐标的25、75分位后面添加问号，问号内容支持自定义，问号内容默认&#10;refactor(levelFourSurgeryMatrix): 收支分析 /药占比异常探查 添加 25、75分位后面添加问号提示&#10;&#10;- 在主矩阵组件中增加了四个新的提示属性传递" />
     <MESSAGE value="v125:feat/refactor:需求2132-院端-临床工作量分析：门诊异常探查、出院异常探查、手术（含介入）异常探查、四级手术异常探查、日间手术异常探查、微创手术异常探查、入院率异常探查；院端-收支分析：收入异常探查、盈余异常探查、药品收入占比异常探查、材料收入占比异常探查、药耗收入占比异常探查；院端-人力资源分析：医生权重异常探查；院端-病组分析（DRG支付）：成本异常探查；院端-异常探查：异常探查常用、异常探查汇总、异常探查自定义；横坐标的25、75分位后面添加问号，纵坐标的25、75分位后面添加问号，问号内容支持自定义，问号内容默认&#10;feat/refactor(herbsMatrix): 收支分析 /药耗占比异常探查 矩阵页面组件 新增四个四分位数提示属性&#10;&#10;- 移除注释掉的旧部门选择器组件代码&#10;- 使用新的 DeptAndTimeHeaderFilter 组件替代原有时间过滤器&#10;- 在 Matrix 组件中新增四个四分位数提示属性 (quantileX25Tips, quantileX75Tips, quantileY25Tips, quantileY75Tips)" />
@@ -3133,7 +3131,8 @@
     <MESSAGE value="v126:feat/refactor: 科端-病种分析（DIP） /在院分析 科室在院病组概要汇总（预分组） 在院实时医疗分组&#10;feat(diseaseAnalysis): 更新住院分析组件功能&#10;&#10;- 移除注释掉的 doms-con-h360 组件包装器&#10;- 添加 footerData 数据属性用于表格底部展示&#10;- 在组件绑定数据中启用 hideBox 属性隐藏边框&#10;- 从接口响应中接收 footerData 数据并赋值给组件" />
     <MESSAGE value="v126:feat/refactor: v125:feat/refactor:需求2467-前端代码规范化修改-收支余分析 /诊间成本估算【时间段】-诊间结余估算" />
     <MESSAGE value="v126:feat/refactor: v125:feat/refactor:需求2467-前端代码规范化修改-收支余分析 /诊间成本估算【时间段】-诊间结余估算&#10;refactor(cost): 诊间估算对话框组件结构&#10;&#10;- 移除未使用的Vuex映射导入语句&#10;- 添加elemId工具函数导入用于元素标识&#10;- 将elemId注入到组件数据中便于表格ID生成&#10;- 移除空的生命周期钩子函数声明&#10;- 简化组件数据结构定义" />
-    <option name="LAST_COMMIT_MESSAGE" value="v126:feat/refactor: v125:feat/refactor:需求2467-前端代码规范化修改-收支余分析 /诊间成本估算【时间段】-诊间结余估算&#10;refactor(cost): 诊间估算对话框组件结构&#10;&#10;- 移除未使用的Vuex映射导入语句&#10;- 添加elemId工具函数导入用于元素标识&#10;- 将elemId注入到组件数据中便于表格ID生成&#10;- 移除空的生命周期钩子函数声明&#10;- 简化组件数据结构定义" />
+    <MESSAGE value="v126:feat/refactor: 用户常用科室列表-树形选择器-弹出框&#10;fix/refactor(department): 优化科室树形复选框组件逻辑&#10;&#10;- 添加deptListDataCopy用于存储部门列表数据副本，防止直接修改外部数据，保持单项数据流&#10;- 使用Set去重处理部门选中列表&#10;- 监听deptListData变化并深拷贝到本地副本&#10;- 监听部门选中列表变化并更新副本中的选中状态&#10;- 将计算属性getDeptsTableData的数据源改为副本&#10;- 添加mapUniqueDeptId方法用于映射唯一部门ID&#10;- 优化部门复选框变更处理逻辑，支持父子节点联动选择&#10;- 修复选中科室后，多余仍选中之前已选中父级下所有子项科室" />
+    <option name="LAST_COMMIT_MESSAGE" value="v126:feat/refactor: 用户常用科室列表-树形选择器-弹出框&#10;fix/refactor(department): 优化科室树形复选框组件逻辑&#10;&#10;- 添加deptListDataCopy用于存储部门列表数据副本，防止直接修改外部数据，保持单项数据流&#10;- 使用Set去重处理部门选中列表&#10;- 监听deptListData变化并深拷贝到本地副本&#10;- 监听部门选中列表变化并更新副本中的选中状态&#10;- 将计算属性getDeptsTableData的数据源改为副本&#10;- 添加mapUniqueDeptId方法用于映射唯一部门ID&#10;- 优化部门复选框变更处理逻辑，支持父子节点联动选择&#10;- 修复选中科室后，多余仍选中之前已选中父级下所有子项科室" />
   </component>
   <component name="VueSettings">
     <option name="innerServiceType" value="TS_SERVICE" />
