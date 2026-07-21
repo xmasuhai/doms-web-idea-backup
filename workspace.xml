@@ -45,7 +45,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a32d6ec8-0d74-4a1b-8cad-0ab91948ca3e" name="Changes" comment="v126:feat/refactor::需求2175-院端-病组分析（DRG支付） ，新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(hospital): 新增诊断操作明细报表页面&#10;&#10;- 创建了诊断操作明细报表组件 DiagnosisOperationDetailHosp.vue&#10;- 替换配置了页面路由指向新的诊断操作明细报表组件&#10;- 集成了病组分析相关的混入组件和功能模块&#10;- 添加了页面容器布局和样式结构">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/diseaseAnalysis/overallOperationReport/costEfficiencyIndex.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/diseaseAnalysis/overallOperationReport/costEfficiencyIndex.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/hospital/disease-group-analysis-drg/drg-city/DiagnosisOperationDetailHosp.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/hospital/disease-group-analysis-drg/drg-city/DiagnosisOperationDetailHosp.vue" afterDir="false" />
     </list>
     <list id="bd8e474f-42c8-444f-9f2b-07be811ba86b" name="ignore-on-commit" comment="ignore-on-commit" />
@@ -531,6 +531,24 @@
     <configuration useDefault="false">C:\Users\xushuai\AppData\Roaming\Subversion</configuration>
     <supportedVersion>125</supportedVersion>
     <option name="runUnderTerminal" value="true" />
+  </component>
+  <component name="SvnFileUrlMappingImpl">
+    <option name="myMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="D:\project\doms_web" />
+          <option name="myCopyRoot" value="D:\project\doms_web" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
+    <option name="myMoreRealMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="D:\project\doms_web" />
+          <option name="myCopyRoot" value="D:\project\doms_web" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
   </component>
   <component name="TDDPredictState">
     <testRunHistory>
@@ -2701,7 +2719,7 @@
       <workItem from="1784598588780" duration="353000" />
       <workItem from="1784599070202" duration="84000" />
       <workItem from="1784599211666" duration="1324000" />
-      <workItem from="1784600609992" duration="13403000" />
+      <workItem from="1784600609992" duration="15144000" />
     </task>
     <task id="LOCAL-04434" summary="v125:feat/refactor:需求2132-院端-临床工作量分析：门诊异常探查、出院异常探查、手术（含介入）异常探查、四级手术异常探查、日间手术异常探查、微创手术异常探查、入院率异常探查；院端-收支分析：收入异常探查、盈余异常探查、药品收入占比异常探查、材料收入占比异常探查、药耗收入占比异常探查；院端-人力资源分析：医生权重异常探查；院端-病组分析（DRG支付）：成本异常探查；院端-异常探查：异常探查常用、异常探查汇总、异常探查自定义；横坐标的25、75分位后面添加问号，纵坐标的25、75分位后面添加问号，问号内容支持自定义，问号内容默认&#10;fix(hooks): 修复疾病工具提示参数为空时返回空字符串的问题&#10;&#10;- 在 useDiseaseTooltips 钩子中添加参数值为空的判断&#10;- 避免当参数 value 不存在时返回 undefined 内容&#10;- 提升工具提示组件的健壮性，避免渲染异常&#10;- 删除了未使用的注释代码，保持代码整洁">
       <option name="closed" value="true" />
