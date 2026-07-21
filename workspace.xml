@@ -46,7 +46,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a32d6ec8-0d74-4a1b-8cad-0ab91948ca3e" name="Changes" comment="v126:feat/refactor::需求2308-CMI值保留后四位小数，支持做成自定义小数位数，科端-病组分析（医保DRG）-出院分析-科室病组整体运营分析-CMI下钻：①CMI对比分析（左边图表和右边文字描述都改）；②CMI入组例数分析；③CMI与科系、全院对比；&#10;feat: 病种分析（市医保DRG） /出院分析 /科室病组整体运营分析 CMI与科系、全院对比 修改图表数据小数精度配置逻辑&#10;&#10;- 修正CMI数据精度配置为动态获取blkCommonData中的值&#10;- 修复y轴刻度精度计算逻辑，支持默认值回退&#10;- 修复x轴刻度精度计算逻辑，确保数值类型的精度设置正确">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/diseaseAnalysis/overallOperationReport/cmi.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/diseaseAnalysis/overallOperationReport/cmi.vue" afterDir="false" />
     </list>
     <list id="bd8e474f-42c8-444f-9f2b-07be811ba86b" name="ignore-on-commit" comment="ignore-on-commit" />
     <option name="SHOW_DIALOG" value="false" />
@@ -2699,7 +2699,7 @@
       <workItem from="1784598588780" duration="353000" />
       <workItem from="1784599070202" duration="84000" />
       <workItem from="1784599211666" duration="1324000" />
-      <workItem from="1784600609992" duration="7513000" />
+      <workItem from="1784600609992" duration="7955000" />
     </task>
     <task id="LOCAL-04430" summary="v125:feat/refactor:需求2132-院端-临床工作量分析：门诊异常探查、出院异常探查、手术（含介入）异常探查、四级手术异常探查、日间手术异常探查、微创手术异常探查、入院率异常探查；院端-收支分析：收入异常探查、盈余异常探查、药品收入占比异常探查、材料收入占比异常探查、药耗收入占比异常探查；院端-人力资源分析：医生权重异常探查；院端-病组分析（DRG支付）：成本异常探查；院端-异常探查：异常探查常用、异常探查汇总、异常探查自定义；横坐标的25、75分位后面添加问号，纵坐标的25、75分位后面添加问号，问号内容支持自定义，问号内容默认&#10;feat(tooltips): 添加异常检测分位线浮动提示功能&#10;&#10;- 创建 useMarkPoint25and75TipsList 钩子函数&#10;- 实现 x轴和y轴的25分位线、75分位线提示悬浮图标&#10;- 添加 questionMark 图标作为提示符号&#10;- 配置 markPoint 数据展示和 tooltip 格式化功能&#10;- 支持动态配置分位线提示内容&#10;- 添加调试日志输出功能">
       <option name="closed" value="true" />
