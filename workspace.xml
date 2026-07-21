@@ -44,8 +44,9 @@
     <option name="selectedModelId" value="auto" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a32d6ec8-0d74-4a1b-8cad-0ab91948ca3e" name="Changes" comment="v126:feat/refactor: 用户常用科室列表-树形选择器-弹出框&#10;fix/refactor(department): 优化科室树形复选框组件逻辑&#10;&#10;- 添加deptListDataCopy用于存储部门列表数据副本，防止直接修改外部数据，保持单项数据流&#10;- 使用Set去重处理部门选中列表&#10;- 监听deptListData变化并深拷贝到本地副本&#10;- 监听部门选中列表变化并更新副本中的选中状态&#10;- 将计算属性getDeptsTableData的数据源改为副本&#10;- 添加mapUniqueDeptId方法用于映射唯一部门ID&#10;- 优化部门复选框变更处理逻辑，支持父子节点联动选择&#10;- 修复选中科室后，多余仍选中之前已选中父级下所有子项科室">
-      <change beforePath="$PROJECT_DIR$/src/views/diseaseAnalysis/overallOperationReport/capacity.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/diseaseAnalysis/overallOperationReport/capacity.vue" afterDir="false" />
+    <list default="true" id="a32d6ec8-0d74-4a1b-8cad-0ab91948ca3e" name="Changes" comment="v126:feat/refactor::需求2467-前端代码规范化修改-病种分析（市医保DRG） /出院分析 /科室病组整体运营分析 总权重&#10;feat(diseaseAnalysis): 添加图表组件ID和代码配置&#10;&#10;- 引入elemId工具函数用于生成唯一标识&#10;- 为四个图表组件添加唯一的id属性&#10;- 配置每个图表的code参数以支持数据追踪&#10;- 更新图表1为总权重对比分析并设置对应代码&#10;- 更新图表2为总权重趋势分析并设置对应代码&#10;- 更新图表3为入组例数趋势分析并设置对应代码&#10;- 更新图表4为总权重前十分布占比并设置对应代码">
+      <change beforePath="$PROJECT_DIR$/.idea/claudeCodeTabState.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/claudeCodeTabState.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/operationDisease/diseaseMonitoringAnalysis/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/operationDisease/diseaseMonitoringAnalysis/index.vue" afterDir="false" />
     </list>
     <list id="bd8e474f-42c8-444f-9f2b-07be811ba86b" name="ignore-on-commit" comment="ignore-on-commit" />
@@ -529,24 +530,6 @@
     <configuration useDefault="false">C:\Users\xushuai\AppData\Roaming\Subversion</configuration>
     <supportedVersion>125</supportedVersion>
     <option name="runUnderTerminal" value="true" />
-  </component>
-  <component name="SvnFileUrlMappingImpl">
-    <option name="myMappingRoots">
-      <list>
-        <SvnCopyRootSimple>
-          <option name="myVcsRoot" value="D:\project\doms_web" />
-          <option name="myCopyRoot" value="D:\project\doms_web" />
-        </SvnCopyRootSimple>
-      </list>
-    </option>
-    <option name="myMoreRealMappingRoots">
-      <list>
-        <SvnCopyRootSimple>
-          <option name="myVcsRoot" value="D:\project\doms_web" />
-          <option name="myCopyRoot" value="D:\project\doms_web" />
-        </SvnCopyRootSimple>
-      </list>
-    </option>
   </component>
   <component name="TDDPredictState">
     <testRunHistory>
@@ -2717,15 +2700,7 @@
       <workItem from="1784598588780" duration="353000" />
       <workItem from="1784599070202" duration="84000" />
       <workItem from="1784599211666" duration="1324000" />
-      <workItem from="1784600609992" duration="4218000" />
-    </task>
-    <task id="LOCAL-04427" summary="v125:feat/refactor:需求2132-院端-临床工作量分析：门诊异常探查、出院异常探查、手术（含介入）异常探查、四级手术异常探查、日间手术异常探查、微创手术异常探查、入院率异常探查；院端-收支分析：收入异常探查、盈余异常探查、药品收入占比异常探查、材料收入占比异常探查、药耗收入占比异常探查；院端-人力资源分析：医生权重异常探查；院端-病组分析（DRG支付）：成本异常探查；院端-异常探查：异常探查常用、异常探查汇总、异常探查自定义；横坐标的25、75分位后面添加问号，纵坐标的25、75分位后面添加问号，问号内容支持自定义，问号内容默认&#10;feat:添加问号提示图标文件">
-      <option name="closed" value="true" />
-      <created>1784095777910</created>
-      <option name="number" value="04427" />
-      <option name="presentableId" value="LOCAL-04427" />
-      <option name="project" value="LOCAL" />
-      <updated>1784095777910</updated>
+      <workItem from="1784600609992" duration="4732000" />
     </task>
     <task id="LOCAL-04428" summary="v125:feat/refactor:需求2132-院端-临床工作量分析：门诊异常探查、出院异常探查、手术（含介入）异常探查、四级手术异常探查、日间手术异常探查、微创手术异常探查、入院率异常探查；院端-收支分析：收入异常探查、盈余异常探查、药品收入占比异常探查、材料收入占比异常探查、药耗收入占比异常探查；院端-人力资源分析：医生权重异常探查；院端-病组分析（DRG支付）：成本异常探查；院端-异常探查：异常探查常用、异常探查汇总、异常探查自定义；横坐标的25、75分位后面添加问号，纵坐标的25、75分位后面添加问号，问号内容支持自定义，问号内容默认&#10;fix(tooltips): 增加参数访问的可选链&#10;&#10;- 在 useCustomTooltips 中对 params.value 使用可选链操作符，避免访问空值报错&#10;- 在 useIncomeTooltips 中对 params.value 多处访问增加可选链，防止异常&#10;- 清理注释代码，去除旧版本坐标轴互换的冗余注释段落&#10;- 确保 tooltip 渲染时字段访问更安全，提升健壮性与稳定性">
       <option name="closed" value="true" />
@@ -3111,7 +3086,15 @@
       <option name="project" value="LOCAL" />
       <updated>1784546036733</updated>
     </task>
-    <option name="localTasksCounter" value="4476" />
+    <task id="LOCAL-04476" summary="v126:feat/refactor::需求2467-前端代码规范化修改-病种分析（市医保DRG） /出院分析 /科室病组整体运营分析 总权重&#10;feat(diseaseAnalysis): 添加图表组件ID和代码配置&#10;&#10;- 引入elemId工具函数用于生成唯一标识&#10;- 为四个图表组件添加唯一的id属性&#10;- 配置每个图表的code参数以支持数据追踪&#10;- 更新图表1为总权重对比分析并设置对应代码&#10;- 更新图表2为总权重趋势分析并设置对应代码&#10;- 更新图表3为入组例数趋势分析并设置对应代码&#10;- 更新图表4为总权重前十分布占比并设置对应代码">
+      <option name="closed" value="true" />
+      <created>1784605038337</created>
+      <option name="number" value="04476" />
+      <option name="presentableId" value="LOCAL-04476" />
+      <option name="project" value="LOCAL" />
+      <updated>1784605038338</updated>
+    </task>
+    <option name="localTasksCounter" value="4477" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -3132,7 +3115,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="MARK_IGNORED_AS_EXCLUDED" value="true" />
-    <MESSAGE value="v125:feat/refactor:需求2132-院端-临床工作量分析：门诊异常探查、出院异常探查、手术（含介入）异常探查、四级手术异常探查、日间手术异常探查、微创手术异常探查、入院率异常探查；院端-收支分析：收入异常探查、盈余异常探查、药品收入占比异常探查、材料收入占比异常探查、药耗收入占比异常探查；院端-人力资源分析：医生权重异常探查；院端-病组分析（DRG支付）：成本异常探查；院端-异常探查：异常探查常用、异常探查汇总、异常探查自定义；横坐标的25、75分位后面添加问号，纵坐标的25、75分位后面添加问号，问号内容支持自定义，问号内容默认&#10;refactor(levelFourSurgeryMatrix): 收支分析 /耗占比异常探查 添加 25、75分位后面添加问号提示&#10;&#10;- 在主矩阵组件中增加了四个新的提示属性传递" />
     <MESSAGE value="v125:feat/refactor:需求2132-院端-临床工作量分析：门诊异常探查、出院异常探查、手术（含介入）异常探查、四级手术异常探查、日间手术异常探查、微创手术异常探查、入院率异常探查；院端-收支分析：收入异常探查、盈余异常探查、药品收入占比异常探查、材料收入占比异常探查、药耗收入占比异常探查；院端-人力资源分析：医生权重异常探查；院端-病组分析（DRG支付）：成本异常探查；院端-异常探查：异常探查常用、异常探查汇总、异常探查自定义；横坐标的25、75分位后面添加问号，纵坐标的25、75分位后面添加问号，问号内容支持自定义，问号内容默认&#10;refactor(levelFourSurgeryMatrix): 收支分析 /药占比异常探查 添加 25、75分位后面添加问号提示&#10;&#10;- 在主矩阵组件中增加了四个新的提示属性传递" />
     <MESSAGE value="v125:feat/refactor:需求2132-院端-临床工作量分析：门诊异常探查、出院异常探查、手术（含介入）异常探查、四级手术异常探查、日间手术异常探查、微创手术异常探查、入院率异常探查；院端-收支分析：收入异常探查、盈余异常探查、药品收入占比异常探查、材料收入占比异常探查、药耗收入占比异常探查；院端-人力资源分析：医生权重异常探查；院端-病组分析（DRG支付）：成本异常探查；院端-异常探查：异常探查常用、异常探查汇总、异常探查自定义；横坐标的25、75分位后面添加问号，纵坐标的25、75分位后面添加问号，问号内容支持自定义，问号内容默认&#10;feat/refactor(herbsMatrix): 收支分析 /药耗占比异常探查 矩阵页面组件 新增四个四分位数提示属性&#10;&#10;- 移除注释掉的旧部门选择器组件代码&#10;- 使用新的 DeptAndTimeHeaderFilter 组件替代原有时间过滤器&#10;- 在 Matrix 组件中新增四个四分位数提示属性 (quantileX25Tips, quantileX75Tips, quantileY25Tips, quantileY75Tips)" />
     <MESSAGE value="v125:feat/refactor:需求2132-院端-临床工作量分析：门诊异常探查、出院异常探查、手术（含介入）异常探查、四级手术异常探查、日间手术异常探查、微创手术异常探查、入院率异常探查；院端-收支分析：收入异常探查、盈余异常探查、药品收入占比异常探查、材料收入占比异常探查、药耗收入占比异常探查；院端-人力资源分析：医生权重异常探查；院端-病组分析（DRG支付）：成本异常探查；院端-异常探查：异常探查常用、异常探查汇总、异常探查自定义；横坐标的25、75分位后面添加问号，纵坐标的25、75分位后面添加问号，问号内容支持自定义，问号内容默认&#10;fix(tooltips): 修复异常检测分位数提示图标的显示逻辑&#10;&#10;- 将分位数坐标判断条件从 AND 改为 OR 以正确显示提示图标&#10;- 更新符号偏移量从 200% 到 260% 以改善视觉位置&#10;- 调整四个分位数坐标的显示条件：X25、X75、Y25 和 Y75 轴" />
@@ -3157,7 +3139,8 @@
     <MESSAGE value="v126:feat/refactor: v125:feat/refactor:需求2467-前端代码规范化修改-收支余分析 /诊间成本估算【时间段】-诊间结余估算" />
     <MESSAGE value="v126:feat/refactor: v125:feat/refactor:需求2467-前端代码规范化修改-收支余分析 /诊间成本估算【时间段】-诊间结余估算&#10;refactor(cost): 诊间估算对话框组件结构&#10;&#10;- 移除未使用的Vuex映射导入语句&#10;- 添加elemId工具函数导入用于元素标识&#10;- 将elemId注入到组件数据中便于表格ID生成&#10;- 移除空的生命周期钩子函数声明&#10;- 简化组件数据结构定义" />
     <MESSAGE value="v126:feat/refactor: 用户常用科室列表-树形选择器-弹出框&#10;fix/refactor(department): 优化科室树形复选框组件逻辑&#10;&#10;- 添加deptListDataCopy用于存储部门列表数据副本，防止直接修改外部数据，保持单项数据流&#10;- 使用Set去重处理部门选中列表&#10;- 监听deptListData变化并深拷贝到本地副本&#10;- 监听部门选中列表变化并更新副本中的选中状态&#10;- 将计算属性getDeptsTableData的数据源改为副本&#10;- 添加mapUniqueDeptId方法用于映射唯一部门ID&#10;- 优化部门复选框变更处理逻辑，支持父子节点联动选择&#10;- 修复选中科室后，多余仍选中之前已选中父级下所有子项科室" />
-    <option name="LAST_COMMIT_MESSAGE" value="v126:feat/refactor: 用户常用科室列表-树形选择器-弹出框&#10;fix/refactor(department): 优化科室树形复选框组件逻辑&#10;&#10;- 添加deptListDataCopy用于存储部门列表数据副本，防止直接修改外部数据，保持单项数据流&#10;- 使用Set去重处理部门选中列表&#10;- 监听deptListData变化并深拷贝到本地副本&#10;- 监听部门选中列表变化并更新副本中的选中状态&#10;- 将计算属性getDeptsTableData的数据源改为副本&#10;- 添加mapUniqueDeptId方法用于映射唯一部门ID&#10;- 优化部门复选框变更处理逻辑，支持父子节点联动选择&#10;- 修复选中科室后，多余仍选中之前已选中父级下所有子项科室" />
+    <MESSAGE value="v126:feat/refactor::需求2467-前端代码规范化修改-病种分析（市医保DRG） /出院分析 /科室病组整体运营分析 总权重&#10;feat(diseaseAnalysis): 添加图表组件ID和代码配置&#10;&#10;- 引入elemId工具函数用于生成唯一标识&#10;- 为四个图表组件添加唯一的id属性&#10;- 配置每个图表的code参数以支持数据追踪&#10;- 更新图表1为总权重对比分析并设置对应代码&#10;- 更新图表2为总权重趋势分析并设置对应代码&#10;- 更新图表3为入组例数趋势分析并设置对应代码&#10;- 更新图表4为总权重前十分布占比并设置对应代码" />
+    <option name="LAST_COMMIT_MESSAGE" value="v126:feat/refactor::需求2467-前端代码规范化修改-病种分析（市医保DRG） /出院分析 /科室病组整体运营分析 总权重&#10;feat(diseaseAnalysis): 添加图表组件ID和代码配置&#10;&#10;- 引入elemId工具函数用于生成唯一标识&#10;- 为四个图表组件添加唯一的id属性&#10;- 配置每个图表的code参数以支持数据追踪&#10;- 更新图表1为总权重对比分析并设置对应代码&#10;- 更新图表2为总权重趋势分析并设置对应代码&#10;- 更新图表3为入组例数趋势分析并设置对应代码&#10;- 更新图表4为总权重前十分布占比并设置对应代码" />
   </component>
   <component name="VueSettings">
     <option name="innerServiceType" value="TS_SERVICE" />

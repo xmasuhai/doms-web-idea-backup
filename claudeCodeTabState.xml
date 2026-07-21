@@ -7,26 +7,12 @@
           <value>
             <TabSessionState>
               <option name="provider" value="claude" />
-              <option name="sessionId" value="c7ca303c-9fad-4aeb-892d-d0862e9d4233" />
-              <option name="cwd" value="D:\project\doms_web" />
               <option name="model" value="claude-fable-5[1m]" />
-              <option name="permissionMode" value="default" />
-            </TabSessionState>
-          </value>
-        </entry>
-        <entry key="1">
-          <value>
-            <TabSessionState>
-              <option name="provider" value="claude" />
-              <option name="sessionId" value="697f33e5-e142-4f1d-956c-1458741bb3cb" />
-              <option name="cwd" value="D:\project\doms_web" />
-              <option name="model" value="claude-sonnet-4-6[1m]" />
               <option name="permissionMode" value="default" />
             </TabSessionState>
           </value>
         </entry>
       </map>
     </option>
-    <option name="tabCount" value="2" />
   </component>
 </project>
