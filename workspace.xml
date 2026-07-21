@@ -46,6 +46,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a32d6ec8-0d74-4a1b-8cad-0ab91948ca3e" name="Changes" comment="v126:feat/refactor::需求2308-CMI值保留后四位小数，支持做成自定义小数位数，科端-病组分析（医保DRG）-出院分析-科室病组整体运营分析-CMI下钻：①CMI对比分析（左边图表和右边文字描述都改）；②CMI入组例数分析；③CMI与科系、全院对比；&#10;feat: 病种分析（市医保DRG） /出院分析 /科室病组整体运营分析 CMI与科系、全院对比 修改图表数据小数精度配置逻辑&#10;refactor(diseaseAnalysis): 优化小数位数配置逻辑&#10;&#10;- 移除不必要的空值合并操作符 (??) 的默认值设置&#10;- 简化 y 轴和 x 轴的小数位数判断条件&#10;- 统一小数位数配置的处理方式&#10;- 提升代码简洁性和可读性">
       <change afterPath="$PROJECT_DIR$/src/router/components/disease/hospital/diagnosisOperationDetailHospRoute.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/router/components/disease/diseaseAnalysisRouteHosp.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/components/disease/diseaseAnalysisRouteHosp.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/router/helpers/routerConfig.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/helpers/routerConfig.js" afterDir="false" />
     </list>
     <list id="bd8e474f-42c8-444f-9f2b-07be811ba86b" name="ignore-on-commit" comment="ignore-on-commit" />
@@ -2719,7 +2720,7 @@
       <workItem from="1784598588780" duration="353000" />
       <workItem from="1784599070202" duration="84000" />
       <workItem from="1784599211666" duration="1324000" />
-      <workItem from="1784600609992" duration="9827000" />
+      <workItem from="1784600609992" duration="10961000" />
     </task>
     <task id="LOCAL-04431" summary="v125:feat/refactor:需求2132-院端-临床工作量分析：门诊异常探查、出院异常探查、手术（含介入）异常探查、四级手术异常探查、日间手术异常探查、微创手术异常探查、入院率异常探查；院端-收支分析：收入异常探查、盈余异常探查、药品收入占比异常探查、材料收入占比异常探查、药耗收入占比异常探查；院端-人力资源分析：医生权重异常探查；院端-病组分析（DRG支付）：成本异常探查；院端-异常探查：异常探查常用、异常探查汇总、异常探查自定义；横坐标的25、75分位后面添加问号，纵坐标的25、75分位后面添加问号，问号内容支持自定义，问号内容默认&#10;feat(matrix): 更新散点图组件的工具提示和分位线功能&#10;&#10;- 移除旧的问号图片导入，改用新的分位点提示列表钩子函数&#10;- 添加四个分位线提示属性（quantileX25Tips、quantileX75Tips、quantileY25Tips、quantileY75Tips）&#10;- 禁用全局工具提示显示，改为在系列数据点级别启用工具提示&#10;- 为系列配置添加自定义工具提示格式化器&#10;- 移除调试用的控制台日志代码&#10;- 实现分位线浮动提示图标功能，使用新的钩子函数生成标记点列表&#10;- 将标记点列表集成到图表系列配置中">
       <option name="closed" value="true" />
