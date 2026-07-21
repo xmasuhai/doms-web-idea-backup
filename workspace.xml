@@ -44,9 +44,9 @@
     <option name="selectedModelId" value="auto" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a32d6ec8-0d74-4a1b-8cad-0ab91948ca3e" name="Changes" comment="v126:feat/refactor::需求2308-CMI值保留后四位小数，支持做成自定义小数位数，科端-病组分析（医保DRG）-出院分析-科室病组整体运营分析-CMI下钻：①CMI对比分析（左边图表和右边文字描述都改）；②CMI入组例数分析；③CMI与科系、全院对比；&#10;feat: 病种分析（市医保DRG） /出院分析 /科室病组整体运营分析 CMI与科系、全院对比 修改图表数据小数精度配置逻辑&#10;&#10;- 修正CMI数据精度配置为动态获取blkCommonData中的值&#10;- 修复y轴刻度精度计算逻辑，支持默认值回退&#10;- 修复x轴刻度精度计算逻辑，确保数值类型的精度设置正确">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/diseaseAnalysis/overallOperationReport/cmi.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/diseaseAnalysis/overallOperationReport/cmi.vue" afterDir="false" />
+    <list default="true" id="a32d6ec8-0d74-4a1b-8cad-0ab91948ca3e" name="Changes" comment="v126:feat/refactor::需求2308-CMI值保留后四位小数，支持做成自定义小数位数，科端-病组分析（医保DRG）-出院分析-科室病组整体运营分析-CMI下钻：①CMI对比分析（左边图表和右边文字描述都改）；②CMI入组例数分析；③CMI与科系、全院对比；&#10;feat: 病种分析（市医保DRG） /出院分析 /科室病组整体运营分析 CMI与科系、全院对比 修改图表数据小数精度配置逻辑&#10;refactor(diseaseAnalysis): 优化小数位数配置逻辑&#10;&#10;- 移除不必要的空值合并操作符 (??) 的默认值设置&#10;- 简化 y 轴和 x 轴的小数位数判断条件&#10;- 统一小数位数配置的处理方式&#10;- 提升代码简洁性和可读性">
+      <change afterPath="$PROJECT_DIR$/src/router/components/disease/hospital/diagnosisOperationDetailHospRoute.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/router/helpers/routerConfig.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/helpers/routerConfig.js" afterDir="false" />
     </list>
     <list id="bd8e474f-42c8-444f-9f2b-07be811ba86b" name="ignore-on-commit" comment="ignore-on-commit" />
     <option name="SHOW_DIALOG" value="false" />
@@ -411,10 +411,12 @@
     "network.radicle.jetbrains.radiclejetbrainsplugin.config.path": "",
     "network.radicle.jetbrains.radiclejetbrainsplugin.config.radSeedKey": "http://localhost:8080",
     "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.jshint": "true",
     "node.js.detected.package.standard": "true",
     "node.js.detected.package.stylelint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.jshint": "",
     "node.js.selected.package.standard": "",
     "node.js.selected.package.stylelint": "",
     "node.js.selected.package.tslint": "(autodetect)",
@@ -529,6 +531,24 @@
     <configuration useDefault="false">C:\Users\xushuai\AppData\Roaming\Subversion</configuration>
     <supportedVersion>125</supportedVersion>
     <option name="runUnderTerminal" value="true" />
+  </component>
+  <component name="SvnFileUrlMappingImpl">
+    <option name="myMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="D:\project\doms_web" />
+          <option name="myCopyRoot" value="D:\project\doms_web" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
+    <option name="myMoreRealMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="D:\project\doms_web" />
+          <option name="myCopyRoot" value="D:\project\doms_web" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
   </component>
   <component name="TDDPredictState">
     <testRunHistory>
@@ -2699,15 +2719,7 @@
       <workItem from="1784598588780" duration="353000" />
       <workItem from="1784599070202" duration="84000" />
       <workItem from="1784599211666" duration="1324000" />
-      <workItem from="1784600609992" duration="7955000" />
-    </task>
-    <task id="LOCAL-04430" summary="v125:feat/refactor:需求2132-院端-临床工作量分析：门诊异常探查、出院异常探查、手术（含介入）异常探查、四级手术异常探查、日间手术异常探查、微创手术异常探查、入院率异常探查；院端-收支分析：收入异常探查、盈余异常探查、药品收入占比异常探查、材料收入占比异常探查、药耗收入占比异常探查；院端-人力资源分析：医生权重异常探查；院端-病组分析（DRG支付）：成本异常探查；院端-异常探查：异常探查常用、异常探查汇总、异常探查自定义；横坐标的25、75分位后面添加问号，纵坐标的25、75分位后面添加问号，问号内容支持自定义，问号内容默认&#10;feat(tooltips): 添加异常检测分位线浮动提示功能&#10;&#10;- 创建 useMarkPoint25and75TipsList 钩子函数&#10;- 实现 x轴和y轴的25分位线、75分位线提示悬浮图标&#10;- 添加 questionMark 图标作为提示符号&#10;- 配置 markPoint 数据展示和 tooltip 格式化功能&#10;- 支持动态配置分位线提示内容&#10;- 添加调试日志输出功能">
-      <option name="closed" value="true" />
-      <created>1784108575552</created>
-      <option name="number" value="04430" />
-      <option name="presentableId" value="LOCAL-04430" />
-      <option name="project" value="LOCAL" />
-      <updated>1784108575553</updated>
+      <workItem from="1784600609992" duration="9827000" />
     </task>
     <task id="LOCAL-04431" summary="v125:feat/refactor:需求2132-院端-临床工作量分析：门诊异常探查、出院异常探查、手术（含介入）异常探查、四级手术异常探查、日间手术异常探查、微创手术异常探查、入院率异常探查；院端-收支分析：收入异常探查、盈余异常探查、药品收入占比异常探查、材料收入占比异常探查、药耗收入占比异常探查；院端-人力资源分析：医生权重异常探查；院端-病组分析（DRG支付）：成本异常探查；院端-异常探查：异常探查常用、异常探查汇总、异常探查自定义；横坐标的25、75分位后面添加问号，纵坐标的25、75分位后面添加问号，问号内容支持自定义，问号内容默认&#10;feat(matrix): 更新散点图组件的工具提示和分位线功能&#10;&#10;- 移除旧的问号图片导入，改用新的分位点提示列表钩子函数&#10;- 添加四个分位线提示属性（quantileX25Tips、quantileX75Tips、quantileY25Tips、quantileY75Tips）&#10;- 禁用全局工具提示显示，改为在系列数据点级别启用工具提示&#10;- 为系列配置添加自定义工具提示格式化器&#10;- 移除调试用的控制台日志代码&#10;- 实现分位线浮动提示图标功能，使用新的钩子函数生成标记点列表&#10;- 将标记点列表集成到图表系列配置中">
       <option name="closed" value="true" />
@@ -3093,7 +3105,15 @@
       <option name="project" value="LOCAL" />
       <updated>1784611567299</updated>
     </task>
-    <option name="localTasksCounter" value="4479" />
+    <task id="LOCAL-04479" summary="v126:feat/refactor::需求2308-CMI值保留后四位小数，支持做成自定义小数位数，科端-病组分析（医保DRG）-出院分析-科室病组整体运营分析-CMI下钻：①CMI对比分析（左边图表和右边文字描述都改）；②CMI入组例数分析；③CMI与科系、全院对比；&#10;feat: 病种分析（市医保DRG） /出院分析 /科室病组整体运营分析 CMI与科系、全院对比 修改图表数据小数精度配置逻辑&#10;refactor(diseaseAnalysis): 优化小数位数配置逻辑&#10;&#10;- 移除不必要的空值合并操作符 (??) 的默认值设置&#10;- 简化 y 轴和 x 轴的小数位数判断条件&#10;- 统一小数位数配置的处理方式&#10;- 提升代码简洁性和可读性">
+      <option name="closed" value="true" />
+      <created>1784612158449</created>
+      <option name="number" value="04479" />
+      <option name="presentableId" value="LOCAL-04479" />
+      <option name="project" value="LOCAL" />
+      <updated>1784612158450</updated>
+    </task>
+    <option name="localTasksCounter" value="4480" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -3114,7 +3134,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="MARK_IGNORED_AS_EXCLUDED" value="true" />
-    <MESSAGE value="v125:feat/refactor:需求2132-院端-临床工作量分析：门诊异常探查、出院异常探查、手术（含介入）异常探查、四级手术异常探查、日间手术异常探查、微创手术异常探查、入院率异常探查；院端-收支分析：收入异常探查、盈余异常探查、药品收入占比异常探查、材料收入占比异常探查、药耗收入占比异常探查；院端-人力资源分析：医生权重异常探查；院端-病组分析（DRG支付）：成本异常探查；院端-异常探查：异常探查常用、异常探查汇总、异常探查自定义；横坐标的25、75分位后面添加问号，纵坐标的25、75分位后面添加问号，问号内容支持自定义，问号内容默认&#10;fix(tooltips): 修复异常检测分位数提示图标的显示逻辑&#10;&#10;- 将分位数坐标判断条件从 AND 改为 OR 以正确显示提示图标&#10;- 更新符号偏移量从 200% 到 260% 以改善视觉位置&#10;- 调整四个分位数坐标的显示条件：X25、X75、Y25 和 Y75 轴" />
     <MESSAGE value="v125:feat/refactor:需求2132-院端-临床工作量分析：门诊异常探查、出院异常探查、手术（含介入）异常探查、四级手术异常探查、日间手术异常探查、微创手术异常探查、入院率异常探查；院端-收支分析：收入异常探查、盈余异常探查、药品收入占比异常探查、材料收入占比异常探查、药耗收入占比异常探查；院端-人力资源分析：医生权重异常探查；院端-病组分析（DRG支付）：成本异常探查；院端-异常探查：异常探查常用、异常探查汇总、异常探查自定义；横坐标的25、75分位后面添加问号，纵坐标的25、75分位后面添加问号，问号内容支持自定义，问号内容默认&#10;refactor(doctorCapacity): 人力资源分析 /医生权重异常探查 添加 25、75分位后面添加问号提示&#10;&#10;- 在主矩阵组件中增加了四个新的提示属性传递" />
     <MESSAGE value="v125:feat/refactor:需求2132-院端-临床工作量分析：门诊异常探查、出院异常探查、手术（含介入）异常探查、四级手术异常探查、日间手术异常探查、微创手术异常探查、入院率异常探查；院端-收支分析：收入异常探查、盈余异常探查、药品收入占比异常探查、材料收入占比异常探查、药耗收入占比异常探查；院端-人力资源分析：医生权重异常探查；院端-病组分析（DRG支付）：成本异常探查；院端-异常探查：异常探查常用、异常探查汇总、异常探查自定义；横坐标的25、75分位后面添加问号，纵坐标的25、75分位后面添加问号，问号内容支持自定义，问号内容默认&#10;refactor(doctorCapacity): 收支分析 /收入异常探查 添加 25、75分位后面添加问号提示&#10;&#10;- 移除已注释的废弃逻辑代码和TODO注释&#10;- 引入hospPageConfigMixin混入实现页面配置功能&#10;- 添加initPage方法用于初始化页面配置&#10;- 在created生命周期中调用initPage方法&#10;- 传递分位数提示属性到表格组件" />
     <MESSAGE value="v125:feat/refactor:需求2132-院端-临床工作量分析：门诊异常探查、出院异常探查、手术（含介入）异常探查、四级手术异常探查、日间手术异常探查、微创手术异常探查、入院率异常探查；院端-收支分析：收入异常探查、盈余异常探查、药品收入占比异常探查、材料收入占比异常探查、药耗收入占比异常探查；院端-人力资源分析：医生权重异常探查；院端-病组分析（DRG支付）：成本异常探查；院端-异常探查：异常探查常用、异常探查汇总、异常探查自定义；横坐标的25、75分位后面添加问号，纵坐标的25、75分位后面添加问号，问号内容支持自定义，问号内容默认&#10;feat(tooltips): 添加异常检测标记点偏移配置参数&#10;&#10;- 添加了 xAxisSymbolOffsetX 和 yAxisSymbolOffsetX 配置参数&#10;- 将硬编码的偏移值替换为可配置参数&#10;- 更新了 x轴和y轴标记点的偏移量设置逻辑&#10;- 优化了标记点位置的灵活性和可定制性" />
@@ -3139,7 +3158,8 @@
     <MESSAGE value="v126:feat/refactor::需求2467-前端代码规范化修改-病种分析（市医保DRG） /出院分析 /科室病组整体运营分析 总权重&#10;feat(diseaseAnalysis): 添加图表组件ID和代码配置&#10;&#10;- 引入elemId工具函数用于生成唯一标识&#10;- 为四个图表组件添加唯一的id属性&#10;- 配置每个图表的code参数以支持数据追踪&#10;- 更新图表1为总权重对比分析并设置对应代码&#10;- 更新图表2为总权重趋势分析并设置对应代码&#10;- 更新图表3为入组例数趋势分析并设置对应代码&#10;- 更新图表4为总权重前十分布占比并设置对应代码" />
     <MESSAGE value="v126:feat/refactor::需求2305-病人分类下拉框内容改为本地（本地下面是职工、居民）、异地（异地下面是职工、居民），支持多选，当选择本地时，默认本地职工和居民勾选，当选择异地时，默认异地下面的职工和居民勾选。默认本地和异地均被选中。院端-病组分析（DRG支付）-异常病组监控分析-费用分析tab；&#10;feat(diseaseMonitoring): 启用病人分类多选功能并优化参数传递&#10;&#10;- 移除病人分类多选组件的注释禁用状态&#10;- 重构参数传递逻辑，仅在符合条件的医院显示时才传递patTypeList参数&#10;- 优化查询参数处理，支持条件性参数传递&#10;- 恢复被注释的病人分类多选选择器相关计算属性&#10;- 调整代码结构以支持不同医院的差异化功能显示" />
     <MESSAGE value="v126:feat/refactor::需求2308-CMI值保留后四位小数，支持做成自定义小数位数，科端-病组分析（医保DRG）-出院分析-科室病组整体运营分析-CMI下钻：①CMI对比分析（左边图表和右边文字描述都改）；②CMI入组例数分析；③CMI与科系、全院对比；&#10;feat: 病种分析（市医保DRG） /出院分析 /科室病组整体运营分析 CMI与科系、全院对比 修改图表数据小数精度配置逻辑&#10;&#10;- 修正CMI数据精度配置为动态获取blkCommonData中的值&#10;- 修复y轴刻度精度计算逻辑，支持默认值回退&#10;- 修复x轴刻度精度计算逻辑，确保数值类型的精度设置正确" />
-    <option name="LAST_COMMIT_MESSAGE" value="v126:feat/refactor::需求2308-CMI值保留后四位小数，支持做成自定义小数位数，科端-病组分析（医保DRG）-出院分析-科室病组整体运营分析-CMI下钻：①CMI对比分析（左边图表和右边文字描述都改）；②CMI入组例数分析；③CMI与科系、全院对比；&#10;feat: 病种分析（市医保DRG） /出院分析 /科室病组整体运营分析 CMI与科系、全院对比 修改图表数据小数精度配置逻辑&#10;&#10;- 修正CMI数据精度配置为动态获取blkCommonData中的值&#10;- 修复y轴刻度精度计算逻辑，支持默认值回退&#10;- 修复x轴刻度精度计算逻辑，确保数值类型的精度设置正确" />
+    <MESSAGE value="v126:feat/refactor::需求2308-CMI值保留后四位小数，支持做成自定义小数位数，科端-病组分析（医保DRG）-出院分析-科室病组整体运营分析-CMI下钻：①CMI对比分析（左边图表和右边文字描述都改）；②CMI入组例数分析；③CMI与科系、全院对比；&#10;feat: 病种分析（市医保DRG） /出院分析 /科室病组整体运营分析 CMI与科系、全院对比 修改图表数据小数精度配置逻辑&#10;refactor(diseaseAnalysis): 优化小数位数配置逻辑&#10;&#10;- 移除不必要的空值合并操作符 (??) 的默认值设置&#10;- 简化 y 轴和 x 轴的小数位数判断条件&#10;- 统一小数位数配置的处理方式&#10;- 提升代码简洁性和可读性" />
+    <option name="LAST_COMMIT_MESSAGE" value="v126:feat/refactor::需求2308-CMI值保留后四位小数，支持做成自定义小数位数，科端-病组分析（医保DRG）-出院分析-科室病组整体运营分析-CMI下钻：①CMI对比分析（左边图表和右边文字描述都改）；②CMI入组例数分析；③CMI与科系、全院对比；&#10;feat: 病种分析（市医保DRG） /出院分析 /科室病组整体运营分析 CMI与科系、全院对比 修改图表数据小数精度配置逻辑&#10;refactor(diseaseAnalysis): 优化小数位数配置逻辑&#10;&#10;- 移除不必要的空值合并操作符 (??) 的默认值设置&#10;- 简化 y 轴和 x 轴的小数位数判断条件&#10;- 统一小数位数配置的处理方式&#10;- 提升代码简洁性和可读性" />
   </component>
   <component name="VueSettings">
     <option name="innerServiceType" value="TS_SERVICE" />
