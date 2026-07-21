@@ -45,14 +45,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a32d6ec8-0d74-4a1b-8cad-0ab91948ca3e" name="Changes" comment="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(iconfont): 添加医院管理系统相关图标">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/iconfont/demo_index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/iconfont/demo_index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/iconfont/iconfont.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/iconfont/iconfont.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/iconfont/iconfont.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/iconfont/iconfont.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/iconfont/iconfont.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/iconfont/iconfont.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/iconfont/iconfont.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/iconfont/iconfont.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/iconfont/iconfont.woff" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/iconfont/iconfont.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/iconfont/iconfont.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/iconfont/iconfont.woff2" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/tool/diagnosis-operation-detail/PlDiagnosisSelector.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/tool/diagnosis-operation-detail/PlDiagnosisSelector.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/hospital/disease-group-analysis-drg/drg-city/DiagnosisOperationDetailHosp.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/hospital/disease-group-analysis-drg/drg-city/DiagnosisOperationDetailHosp.vue" afterDir="false" />
     </list>
@@ -2711,15 +2703,7 @@
       <workItem from="1784599211666" duration="1324000" />
       <workItem from="1784600609992" duration="18608000" />
       <workItem from="1784623910570" duration="294000" />
-      <workItem from="1784624264725" duration="7933000" />
-    </task>
-    <task id="LOCAL-04440" summary="v125:feat/refactor:需求2132-院端-临床工作量分析：门诊异常探查、出院异常探查、手术（含介入）异常探查、四级手术异常探查、日间手术异常探查、微创手术异常探查、入院率异常探查；院端-收支分析：收入异常探查、盈余异常探查、药品收入占比异常探查、材料收入占比异常探查、药耗收入占比异常探查；院端-人力资源分析：医生权重异常探查；院端-病组分析（DRG支付）：成本异常探查；院端-异常探查：异常探查常用、异常探查汇总、异常探查自定义；横坐标的25、75分位后面添加问号，纵坐标的25、75分位后面添加问号，问号内容支持自定义，问号内容默认&#10;refactor(surgeryMatrix): 精简头部筛选组件并优化属性传递&#10;&#10;- 删除了旧的department-select及其内部复杂结构和按钮&#10;- 使用DeptAndTimeHeaderFilter组件替代，实现头部科室和时间筛选&#10;- 在矩阵组件中添加了quantileX25Tips、quantileX75Tips、quantileY25Tips和quantileY75Tips属性传递&#10;- 保持其他参数及布局不变，提升代码清晰度与维护性">
-      <option name="closed" value="true" />
-      <created>1784112850619</created>
-      <option name="number" value="04440" />
-      <option name="presentableId" value="LOCAL-04440" />
-      <option name="project" value="LOCAL" />
-      <updated>1784112850619</updated>
+      <workItem from="1784624264725" duration="7976000" />
     </task>
     <task id="LOCAL-04441" summary="v125:feat/refactor:需求2132-院端-临床工作量分析：门诊异常探查、出院异常探查、手术（含介入）异常探查、四级手术异常探查、日间手术异常探查、微创手术异常探查、入院率异常探查；院端-收支分析：收入异常探查、盈余异常探查、药品收入占比异常探查、材料收入占比异常探查、药耗收入占比异常探查；院端-人力资源分析：医生权重异常探查；院端-病组分析（DRG支付）：成本异常探查；院端-异常探查：异常探查常用、异常探查汇总、异常探查自定义；横坐标的25、75分位后面添加问号，纵坐标的25、75分位后面添加问号，问号内容支持自定义，问号内容默认&#10;refactor(levelFourSurgeryMatrix): 临床工作量分析 /四级手术异常探查 添加 25、75分位后面添加问号提示&#10;&#10;- 移除了注释掉的冗余代码，简化了模板结构&#10;- 在主矩阵组件中增加了四个新的量化提示属性传递">
       <option name="closed" value="true" />
@@ -3105,7 +3089,15 @@
       <option name="project" value="LOCAL" />
       <updated>1784627804954</updated>
     </task>
-    <option name="localTasksCounter" value="4489" />
+    <task id="LOCAL-04489" summary="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(iconfont): 添加医院管理系统相关图标">
+      <option name="closed" value="true" />
+      <created>1784632388588</created>
+      <option name="number" value="04489" />
+      <option name="presentableId" value="LOCAL-04489" />
+      <option name="project" value="LOCAL" />
+      <updated>1784632388588</updated>
+    </task>
+    <option name="localTasksCounter" value="4490" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
