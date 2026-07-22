@@ -44,10 +44,10 @@
     <option name="selectedModelId" value="auto" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a32d6ec8-0d74-4a1b-8cad-0ab91948ca3e" name="Changes" comment="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;style(selector): 为诊断选择器组件添加样式类名&#10;&#10;- 为 PlDiagnosisSelector 组件添加 diagnosis-selector 类名&#10;- 为 PlOperationSelector 组件添加 operation-selector 类名&#10;- 为两个选择器的弹出层分别添加自定义 popper-class">
+    <list default="true" id="a32d6ec8-0d74-4a1b-8cad-0ab91948ca3e" name="Changes" comment="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(drg): 添加DRG病组选择器功能&#10;&#10;- 新增PlDrgGroupSelector组件实现DRG病组筛选功能&#10;- 在DiagnosisOperationDetailHosp页面集成DRG病组选择器&#10;- 配置DRG病组选择器默认不选状态并添加远程搜索功能&#10;- 实现选择器关键词过滤和防抖请求优化&#10;- 添加选择器标签宽度限制样式调整&#10;- 集成日期参数验证确保请求参数有效性">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/tool/PlSelect.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/tool/PlSelect.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/tool/diagnosis-operation-detail/PlDrgGroupSelector.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/tool/diagnosis-operation-detail/PlDrgGroupSelector.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/hospital/disease-group-analysis-drg/drg-city/DiagnosisOperationDetailHosp.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/hospital/disease-group-analysis-drg/drg-city/DiagnosisOperationDetailHosp.vue" afterDir="false" />
     </list>
     <list id="bd8e474f-42c8-444f-9f2b-07be811ba86b" name="ignore-on-commit" comment="ignore-on-commit" />
     <option name="SHOW_DIALOG" value="false" />
@@ -2705,23 +2705,7 @@
       <workItem from="1784600609992" duration="18608000" />
       <workItem from="1784623910570" duration="294000" />
       <workItem from="1784624264725" duration="13695000" />
-      <workItem from="1784684262611" duration="8907000" />
-    </task>
-    <task id="LOCAL-04447" summary="v125:feat/refactor:需求2132-院端-临床工作量分析：门诊异常探查、出院异常探查、手术（含介入）异常探查、四级手术异常探查、日间手术异常探查、微创手术异常探查、入院率异常探查；院端-收支分析：收入异常探查、盈余异常探查、药品收入占比异常探查、材料收入占比异常探查、药耗收入占比异常探查；院端-人力资源分析：医生权重异常探查；院端-病组分析（DRG支付）：成本异常探查；院端-异常探查：异常探查常用、异常探查汇总、异常探查自定义；横坐标的25、75分位后面添加问号，纵坐标的25、75分位后面添加问号，问号内容支持自定义，问号内容默认&#10;fix(tooltips): 修复异常检测分位数提示图标的显示逻辑&#10;&#10;- 添加了minX和minY参数用于控制提示图标的显示条件&#10;- 重构了分位数坐标的获取逻辑，避免直接访问数组索引&#10;- 实现了基于最小值判断的提示图标显示条件&#10;- 更新了x轴和y轴分位线提示图标的坐标引用&#10;- 修复了y轴分位线符号偏移量的计算方式">
-      <option name="closed" value="true" />
-      <created>1784174012209</created>
-      <option name="number" value="04447" />
-      <option name="presentableId" value="LOCAL-04447" />
-      <option name="project" value="LOCAL" />
-      <updated>1784174012209</updated>
-    </task>
-    <task id="LOCAL-04448" summary="v125:feat/refactor:需求2132-院端-临床工作量分析：门诊异常探查、出院异常探查、手术（含介入）异常探查、四级手术异常探查、日间手术异常探查、微创手术异常探查、入院率异常探查；院端-收支分析：收入异常探查、盈余异常探查、药品收入占比异常探查、材料收入占比异常探查、药耗收入占比异常探查；院端-人力资源分析：医生权重异常探查；院端-病组分析（DRG支付）：成本异常探查；院端-异常探查：异常探查常用、异常探查汇总、异常探查自定义；横坐标的25、75分位后面添加问号，纵坐标的25、75分位后面添加问号，问号内容支持自定义，问号内容默认&#10;refactor(levelFourSurgeryMatrix): 院端-病组分析（DRG支付） /成本异常探查 添加 25、75分位后面添加问号提示&#10;&#10;- 在主矩阵组件中增加了四个新的量化提示属性传递">
-      <option name="closed" value="true" />
-      <created>1784174065968</created>
-      <option name="number" value="04448" />
-      <option name="presentableId" value="LOCAL-04448" />
-      <option name="project" value="LOCAL" />
-      <updated>1784174065968</updated>
+      <workItem from="1784684262611" duration="10188000" />
     </task>
     <task id="LOCAL-04449" summary="v125:feat/refactor:需求2132-院端-临床工作量分析：门诊异常探查、出院异常探查、手术（含介入）异常探查、四级手术异常探查、日间手术异常探查、微创手术异常探查、入院率异常探查；院端-收支分析：收入异常探查、盈余异常探查、药品收入占比异常探查、材料收入占比异常探查、药耗收入占比异常探查；院端-人力资源分析：医生权重异常探查；院端-病组分析（DRG支付）：成本异常探查；院端-异常探查：异常探查常用、异常探查汇总、异常探查自定义；横坐标的25、75分位后面添加问号，纵坐标的25、75分位后面添加问号，问号内容支持自定义，问号内容默认&#10;refactor(levelFourSurgeryMatrix): 院端-收支分析 /收入异常探查 添加 25、75分位后面添加问号提示&#10;&#10;- 在主矩阵组件中增加了四个新的提示属性传递">
       <option name="closed" value="true" />
@@ -3099,7 +3083,23 @@
       <option name="project" value="LOCAL" />
       <updated>1784693315108</updated>
     </task>
-    <option name="localTasksCounter" value="4496" />
+    <task id="LOCAL-04496" summary="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;style(selector): 为诊断选择器组件添加样式类名&#10;&#10;- 为 PlDiagnosisSelector 组件添加 diagnosis-selector 类名&#10;- 为 PlOperationSelector 组件添加 operation-selector 类名&#10;- 为两个选择器的弹出层分别添加自定义 popper-class">
+      <option name="closed" value="true" />
+      <created>1784693424884</created>
+      <option name="number" value="04496" />
+      <option name="presentableId" value="LOCAL-04496" />
+      <option name="project" value="LOCAL" />
+      <updated>1784693424884</updated>
+    </task>
+    <task id="LOCAL-04497" summary="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(drg): 添加DRG病组选择器功能&#10;&#10;- 新增PlDrgGroupSelector组件实现DRG病组筛选功能&#10;- 在DiagnosisOperationDetailHosp页面集成DRG病组选择器&#10;- 配置DRG病组选择器默认不选状态并添加远程搜索功能&#10;- 实现选择器关键词过滤和防抖请求优化&#10;- 添加选择器标签宽度限制样式调整&#10;- 集成日期参数验证确保请求参数有效性">
+      <option name="closed" value="true" />
+      <created>1784693480072</created>
+      <option name="number" value="04497" />
+      <option name="presentableId" value="LOCAL-04497" />
+      <option name="project" value="LOCAL" />
+      <updated>1784693480073</updated>
+    </task>
+    <option name="localTasksCounter" value="4498" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -3120,8 +3120,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="MARK_IGNORED_AS_EXCLUDED" value="true" />
-    <MESSAGE value="v126:feat/refactor: 病种分析（省卫健委DRG） /在院分析、病种分析（DIP） /在院分析 科室在院病组概要汇总（预分组） 在院实时医疗分组-去除旧版组件&#10;refactor(diseaseAnalysis): 移除重复组件并简化页面结构&#10;&#10;- 删除了重复的 DaiHospitalDiseases 组件引用&#10;- 移除了 PlSelectGroup 包装器，直接使用 PlQueryWrapper&#10;- 清理了相关的 import 语句和组件注册&#10;- 移除了开发环境判断条件，简化代码逻辑" />
-    <MESSAGE value="v126:feat/refactor: 科端-病种分析（DIP） /在院分析 科室在院病组概要汇总（预分组） 在院实时医疗分组&#10;feat(diseaseAnalysis): 更新住院分析组件功能&#10;&#10;- 移除注释掉的 doms-con-h360 组件包装器&#10;- 添加 footerData 数据属性用于表格底部展示&#10;- 在组件绑定数据中启用 hideBox 属性隐藏边框&#10;- 从接口响应中接收 footerData 数据并赋值给组件" />
     <MESSAGE value="v126:feat/refactor: v125:feat/refactor:需求2467-前端代码规范化修改-收支余分析 /诊间成本估算【时间段】-诊间结余估算" />
     <MESSAGE value="v126:feat/refactor: v125:feat/refactor:需求2467-前端代码规范化修改-收支余分析 /诊间成本估算【时间段】-诊间结余估算&#10;refactor(cost): 诊间估算对话框组件结构&#10;&#10;- 移除未使用的Vuex映射导入语句&#10;- 添加elemId工具函数导入用于元素标识&#10;- 将elemId注入到组件数据中便于表格ID生成&#10;- 移除空的生命周期钩子函数声明&#10;- 简化组件数据结构定义" />
     <MESSAGE value="v126:feat/refactor: 用户常用科室列表-树形选择器-弹出框&#10;fix/refactor(department): 优化科室树形复选框组件逻辑&#10;&#10;- 添加deptListDataCopy用于存储部门列表数据副本，防止直接修改外部数据，保持单项数据流&#10;- 使用Set去重处理部门选中列表&#10;- 监听deptListData变化并深拷贝到本地副本&#10;- 监听部门选中列表变化并更新副本中的选中状态&#10;- 将计算属性getDeptsTableData的数据源改为副本&#10;- 添加mapUniqueDeptId方法用于映射唯一部门ID&#10;- 优化部门复选框变更处理逻辑，支持父子节点联动选择&#10;- 修复选中科室后，多余仍选中之前已选中父级下所有子项科室" />
@@ -3145,7 +3143,9 @@
     <MESSAGE value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;refactor(diagnosis-selector): 重构诊断选择器组件结构&#10;&#10;- 调整属性配置顺序，将disabled属性移至正确位置&#10;- 添加placeholder提示文本改善用户体验&#10;- 重新组织方法定义顺序，将toggleIconState方法提前" />
     <MESSAGE value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(drg): 添加DRG分组选择器功能&#10;&#10;- 集成SvgIcon组件并添加图标切换功能&#10;- 实现DRG病组数据的异步加载和选项绑定&#10;- 添加多选模式和标签折叠显示支持&#10;- 实现选择器禁用状态控制逻辑&#10;- 添加查询参数传递和事件发射机制&#10;- 完善组件属性配置和样式布局" />
     <MESSAGE value="v126:feat/refactor:需求2582-在科室端，在标杆分析中，“本院”两个字改为“本科室”&#10;feat(benchmarkPanel2): 添加科室数据显示功能支持&#10;&#10;- 引入 config 模块的 getIsDept getter 方法&#10;- 修改 GradientArrowSampler 构造函数以支持 ifDept 参数传递&#10;- 在组件 created 钩子中传入 ifDept 配置参数&#10;- 根据 ifDept 状态动态显示&quot;本科室数据&quot;或&quot;本院数据&quot;标签" />
-    <option name="LAST_COMMIT_MESSAGE" value="v126:feat/refactor:需求2582-在科室端，在标杆分析中，“本院”两个字改为“本科室”&#10;feat(benchmarkPanel2): 添加科室数据显示功能支持&#10;&#10;- 引入 config 模块的 getIsDept getter 方法&#10;- 修改 GradientArrowSampler 构造函数以支持 ifDept 参数传递&#10;- 在组件 created 钩子中传入 ifDept 配置参数&#10;- 根据 ifDept 状态动态显示&quot;本科室数据&quot;或&quot;本院数据&quot;标签" />
+    <MESSAGE value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;style(selector): 为诊断选择器组件添加样式类名&#10;&#10;- 为 PlDiagnosisSelector 组件添加 diagnosis-selector 类名&#10;- 为 PlOperationSelector 组件添加 operation-selector 类名&#10;- 为两个选择器的弹出层分别添加自定义 popper-class" />
+    <MESSAGE value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(drg): 添加DRG病组选择器功能&#10;&#10;- 新增PlDrgGroupSelector组件实现DRG病组筛选功能&#10;- 在DiagnosisOperationDetailHosp页面集成DRG病组选择器&#10;- 配置DRG病组选择器默认不选状态并添加远程搜索功能&#10;- 实现选择器关键词过滤和防抖请求优化&#10;- 添加选择器标签宽度限制样式调整&#10;- 集成日期参数验证确保请求参数有效性" />
+    <option name="LAST_COMMIT_MESSAGE" value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(drg): 添加DRG病组选择器功能&#10;&#10;- 新增PlDrgGroupSelector组件实现DRG病组筛选功能&#10;- 在DiagnosisOperationDetailHosp页面集成DRG病组选择器&#10;- 配置DRG病组选择器默认不选状态并添加远程搜索功能&#10;- 实现选择器关键词过滤和防抖请求优化&#10;- 添加选择器标签宽度限制样式调整&#10;- 集成日期参数验证确保请求参数有效性" />
   </component>
   <component name="VueSettings">
     <option name="innerServiceType" value="TS_SERVICE" />
