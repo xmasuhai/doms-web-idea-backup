@@ -44,9 +44,10 @@
     <option name="selectedModelId" value="auto" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a32d6ec8-0d74-4a1b-8cad-0ab91948ca3e" name="Changes" comment="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(drg): 添加操作口径选择器并优化诊断操作详情组件&#10;&#10;- 新增 PlOperationSelector 组件支持操作类型多选&#10;- 在 DiagnosisOperationDetailHosp 页面集成操作口径选择功能&#10;- 添加诊断口径和操作口径的选择状态控制逻辑&#10;- 实现 DRG 组列表多选功能和启用状态管理&#10;- 优化查询参数构建逻辑以支持新增筛选条件&#10;- 更新组件间事件通信机制以同步选择器启用状态">
+    <list default="true" id="a32d6ec8-0d74-4a1b-8cad-0ab91948ca3e" name="Changes" comment="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;refactor(diagnosis-selector): 重构诊断选择器组件结构&#10;&#10;- 调整属性配置顺序，将disabled属性移至正确位置&#10;- 添加placeholder提示文本改善用户体验&#10;- 重新组织方法定义顺序，将toggleIconState方法提前">
+      <change beforePath="$PROJECT_DIR$/.idea/claudeCodeTabState.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/claudeCodeTabState.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/tool/diagnosis-operation-detail/PlDiagnosisSelector.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/tool/diagnosis-operation-detail/PlDiagnosisSelector.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/tool/diagnosis-operation-detail/PlDrgGroupSelector.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/tool/diagnosis-operation-detail/PlDrgGroupSelector.vue" afterDir="false" />
     </list>
     <list id="bd8e474f-42c8-444f-9f2b-07be811ba86b" name="ignore-on-commit" comment="ignore-on-commit" />
     <option name="SHOW_DIALOG" value="false" />
@@ -2704,15 +2705,7 @@
       <workItem from="1784600609992" duration="18608000" />
       <workItem from="1784623910570" duration="294000" />
       <workItem from="1784624264725" duration="13695000" />
-      <workItem from="1784684262611" duration="2674000" />
-    </task>
-    <task id="LOCAL-04444" summary="v125:feat/refactor:需求2132-院端-临床工作量分析：门诊异常探查、出院异常探查、手术（含介入）异常探查、四级手术异常探查、日间手术异常探查、微创手术异常探查、入院率异常探查；院端-收支分析：收入异常探查、盈余异常探查、药品收入占比异常探查、材料收入占比异常探查、药耗收入占比异常探查；院端-人力资源分析：医生权重异常探查；院端-病组分析（DRG支付）：成本异常探查；院端-异常探查：异常探查常用、异常探查汇总、异常探查自定义；横坐标的25、75分位后面添加问号，纵坐标的25、75分位后面添加问号，问号内容支持自定义，问号内容默认&#10;refactor(tooltips): 优化异常检测标记点提示列表的y轴偏移计算&#10;&#10;- 添加genSymbolOffsetYAxis函数用于动态计算y轴偏移量&#10;- 将固定的symbolOffset值替换为基于y轴值的动态偏移计算&#10;- 更新25分位线和75分位线的symbolOffset配置以使用动态计算函数">
-      <option name="closed" value="true" />
-      <created>1784169084504</created>
-      <option name="number" value="04444" />
-      <option name="presentableId" value="LOCAL-04444" />
-      <option name="project" value="LOCAL" />
-      <updated>1784169084504</updated>
+      <workItem from="1784684262611" duration="3272000" />
     </task>
     <task id="LOCAL-04445" summary="v125:feat/refactor:需求2132-院端-临床工作量分析：门诊异常探查、出院异常探查、手术（含介入）异常探查、四级手术异常探查、日间手术异常探查、微创手术异常探查、入院率异常探查；院端-收支分析：收入异常探查、盈余异常探查、药品收入占比异常探查、材料收入占比异常探查、药耗收入占比异常探查；院端-人力资源分析：医生权重异常探查；院端-病组分析（DRG支付）：成本异常探查；院端-异常探查：异常探查常用、异常探查汇总、异常探查自定义；横坐标的25、75分位后面添加问号，纵坐标的25、75分位后面添加问号，问号内容支持自定义，问号内容默认&#10;refactor(levelFourSurgeryMatrix): 临床工作量分析-入院率异常探查 添加 25、75分位后面添加问号提示&#10;&#10;- 在主矩阵组件中增加了四个新的提示属性传递">
       <option name="closed" value="true" />
@@ -3098,7 +3091,15 @@
       <option name="project" value="LOCAL" />
       <updated>1784686764552</updated>
     </task>
-    <option name="localTasksCounter" value="4493" />
+    <task id="LOCAL-04493" summary="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;refactor(diagnosis-selector): 重构诊断选择器组件结构&#10;&#10;- 调整属性配置顺序，将disabled属性移至正确位置&#10;- 添加placeholder提示文本改善用户体验&#10;- 重新组织方法定义顺序，将toggleIconState方法提前">
+      <option name="closed" value="true" />
+      <created>1784687073255</created>
+      <option name="number" value="04493" />
+      <option name="presentableId" value="LOCAL-04493" />
+      <option name="project" value="LOCAL" />
+      <updated>1784687073255</updated>
+    </task>
+    <option name="localTasksCounter" value="4494" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -3119,7 +3120,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="MARK_IGNORED_AS_EXCLUDED" value="true" />
-    <MESSAGE value="更新配置" />
     <MESSAGE value="v126:feat/refactor: 需求1943-院端-重点设备效益分析-总览、院端-重点设备效益分析-诊断类设备分析、院端-重点设备效益分析-治疗类设备分析、科室端-重点设备效益分析-下所有菜单-支持周、日维度选择；选择周、日维度时，原工作量、稼动率相关表格和图表内容不变；原收入、投资回报率相关表格和图表，因为成本最小只能到月，直接隐藏或只显示收入相关元素；&#10;feat(equipment): 设备效益分析表添加周度日度隐藏功能&#10;&#10;- 在设备效益分析表组件中添加周度、日度时隐藏逻辑&#10;- 引入 PlModulePanel 组件替代原有的 doms-con-h480 容器&#10;- 添加 getCurrentFreqCodeIsWeekOrDay 计算属性用于频率判断&#10;- 修改组件结构，在非周度日度时才显示表格&#10;- 更新组件注册，添加 PlModulePanel 到 components 中&#10;- 添加指标相关参数和模块类型配置&#10;- 新增 getRequestParams 方法统一管理请求参数&#10;- 修改数据获取方法调用，使用新的请求参数结构" />
     <MESSAGE value="v126:feat/refactor: 科端-病种分析（市医保DRG） /在院分析 科室在院病组概要汇总（预分组） 在院实时医疗分组-去除旧版组件&#10;refactor(diseaseAnalysis): 优化科室在院病组概要组件结构&#10;&#10;- 移除废弃的 doms-con-h360 组件包装器&#10;- 更新 PlModulePanel 组件配置，添加 hideBox 属性&#10;- 新增 footerData 数据字段支持表格底部数据展示&#10;- 调整数据解析逻辑，增加对 footerData 和 titleTips 的空值处理&#10;- 删除已重构的 DaiHospitalDiseases 组件引用&#10;- 清理废弃的 getIfDevEnv 环境判断逻辑&#10;- 优化组件导入结构，移除不必要的依赖引入" />
     <MESSAGE value="v126:feat/refactor: 病种分析（省卫健委DRG） /在院分析、病种分析（DIP） /在院分析 科室在院病组概要汇总（预分组） 在院实时医疗分组-去除旧版组件&#10;refactor(diseaseAnalysis): 移除重复组件并简化页面结构&#10;&#10;- 删除了重复的 DaiHospitalDiseases 组件引用&#10;- 移除了 PlSelectGroup 包装器，直接使用 PlQueryWrapper&#10;- 清理了相关的 import 语句和组件注册&#10;- 移除了开发环境判断条件，简化代码逻辑" />
@@ -3144,7 +3144,8 @@
     <MESSAGE value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(PlDiagnosisSelector): 添加诊断选择器图标切换功能&#10;&#10;- 集成 SvgIcon 组件并添加上下箭头图标&#10;- 实现图标点击切换状态功能&#10;- 添加诊断选项数据请求逻辑&#10;- 配置选择器绑定数据和禁用状态控制&#10;- 添加组件样式和布局调整&#10;- 实现查询键属性配置和事件处理" />
     <MESSAGE value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(drg): 在医院诊断操作详情页面添加诊断口径选择器&#10;&#10;- 添加 PlDiagnosisSelector 组件用于诊断口径筛选&#10;- 在查询包装器中集成诊断口径选择功能&#10;- 更新组件导入和注册配置&#10;- 添加诊断口径相关的查询参数绑定" />
     <MESSAGE value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(drg): 添加操作口径选择器并优化诊断操作详情组件&#10;&#10;- 新增 PlOperationSelector 组件支持操作类型多选&#10;- 在 DiagnosisOperationDetailHosp 页面集成操作口径选择功能&#10;- 添加诊断口径和操作口径的选择状态控制逻辑&#10;- 实现 DRG 组列表多选功能和启用状态管理&#10;- 优化查询参数构建逻辑以支持新增筛选条件&#10;- 更新组件间事件通信机制以同步选择器启用状态" />
-    <option name="LAST_COMMIT_MESSAGE" value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(drg): 添加操作口径选择器并优化诊断操作详情组件&#10;&#10;- 新增 PlOperationSelector 组件支持操作类型多选&#10;- 在 DiagnosisOperationDetailHosp 页面集成操作口径选择功能&#10;- 添加诊断口径和操作口径的选择状态控制逻辑&#10;- 实现 DRG 组列表多选功能和启用状态管理&#10;- 优化查询参数构建逻辑以支持新增筛选条件&#10;- 更新组件间事件通信机制以同步选择器启用状态" />
+    <MESSAGE value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;refactor(diagnosis-selector): 重构诊断选择器组件结构&#10;&#10;- 调整属性配置顺序，将disabled属性移至正确位置&#10;- 添加placeholder提示文本改善用户体验&#10;- 重新组织方法定义顺序，将toggleIconState方法提前" />
+    <option name="LAST_COMMIT_MESSAGE" value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;refactor(diagnosis-selector): 重构诊断选择器组件结构&#10;&#10;- 调整属性配置顺序，将disabled属性移至正确位置&#10;- 添加placeholder提示文本改善用户体验&#10;- 重新组织方法定义顺序，将toggleIconState方法提前" />
   </component>
   <component name="VueSettings">
     <option name="innerServiceType" value="TS_SERVICE" />
