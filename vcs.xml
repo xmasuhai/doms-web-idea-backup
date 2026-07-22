@@ -107,6 +107,6 @@
     </option>
   </component>
   <component name="VcsDirectoryMappings">
-    <mapping directory="" vcs="Git" />
+    <mapping directory="" vcs="svn" />
   </component>
 </project>

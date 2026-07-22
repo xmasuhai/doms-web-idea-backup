@@ -44,12 +44,9 @@
     <option name="selectedModelId" value="auto" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a32d6ec8-0d74-4a1b-8cad-0ab91948ca3e" name="Changes" comment="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;doc: 修正诊断类型默认值配置注释&#10;&#10;- 将诊断口径默认值从主诊断0更新为主诊断1&#10;- 更新单选诊断类型的注释说明&#10;- 同步修改组件中的诊断类型初始值注释">
-      <change afterPath="$PROJECT_DIR$/src/component/diseaseAnalysis/hospital/diagnosis-operation-detail" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/src/component/diseaseAnalysis/hospital/diagnosis-operation-detail/DiagnosisOperationDetailTableHosp.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/modules/hospital/diseaseAnalysis/diagnosisOperationDetailHospStore.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/hospital/diseaseAnalysis/diagnosis-operation-detail/diagnosisOperationDetailHospApi.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/hospital/diseaseAnalysis/diagnosis-operation-detail/diagnosisOperationDetailHospApi.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/modules/diseaseGroupAnalysisDrgStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/modules/diseaseGroupAnalysisDrgStore.js" afterDir="false" />
+    <list default="true" id="a32d6ec8-0d74-4a1b-8cad-0ab91948ca3e" name="Changes" comment="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(DiagnosisOperationDetailTableHosp): 为诊断手术详情表格组件添加唯一ID标识&#10;&#10;- 引入elemId工具函数用于生成唯一元素ID&#10;- 在组件数据中添加elemId属性&#10;- 为表格元素动态生成并设置唯一的id属性值">
+      <change afterPath="$PROJECT_DIR$/src/component/diseaseAnalysis/hospital/diagnosis-operation-detail/DiagnosisOperationDetailDrilldownFeeTypeTableHosp.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/component/diseaseAnalysis/hospital/diagnosis-operation-detail/DiagnosisOperationDetailDrilldownTableHosp.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/hospital/disease-group-analysis-drg/drg-city/DiagnosisOperationDetailHosp.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/hospital/disease-group-analysis-drg/drg-city/DiagnosisOperationDetailHosp.vue" afterDir="false" />
     </list>
     <list id="bd8e474f-42c8-444f-9f2b-07be811ba86b" name="ignore-on-commit" comment="ignore-on-commit" />
@@ -122,8 +119,8 @@
         <option value="JSX File" />
         <option value="tsconfig.json" />
         <option value="SCSS File" />
-        <option value="Vue Options API Component" />
         <option value="JavaScript File" />
+        <option value="Vue Options API Component" />
       </list>
     </option>
   </component>
@@ -2726,39 +2723,7 @@
       <workItem from="1784600609992" duration="18608000" />
       <workItem from="1784623910570" duration="294000" />
       <workItem from="1784624264725" duration="13695000" />
-      <workItem from="1784684262611" duration="20123000" />
-    </task>
-    <task id="LOCAL-04455" summary="v125:feat/refactor:需求2132-院端-临床工作量分析：门诊异常探查、出院异常探查、手术（含介入）异常探查、四级手术异常探查、日间手术异常探查、微创手术异常探查、入院率异常探查；院端-收支分析：收入异常探查、盈余异常探查、药品收入占比异常探查、材料收入占比异常探查、药耗收入占比异常探查；院端-人力资源分析：医生权重异常探查；院端-病组分析（DRG支付）：成本异常探查；院端-异常探查：异常探查常用、异常探查汇总、异常探查自定义；横坐标的25、75分位后面添加问号，纵坐标的25、75分位后面添加问号，问号内容支持自定义，问号内容默认&#10;refactor(doctorCapacity): 人力资源分析 /医生权重异常探查 添加 25、75分位后面添加问号提示&#10;&#10;- 在主矩阵组件中增加了四个新的提示属性传递">
-      <option name="closed" value="true" />
-      <created>1784184990409</created>
-      <option name="number" value="04455" />
-      <option name="presentableId" value="LOCAL-04455" />
-      <option name="project" value="LOCAL" />
-      <updated>1784184990410</updated>
-    </task>
-    <task id="LOCAL-04456" summary="v125:feat/refactor:需求2132-院端-临床工作量分析：门诊异常探查、出院异常探查、手术（含介入）异常探查、四级手术异常探查、日间手术异常探查、微创手术异常探查、入院率异常探查；院端-收支分析：收入异常探查、盈余异常探查、药品收入占比异常探查、材料收入占比异常探查、药耗收入占比异常探查；院端-人力资源分析：医生权重异常探查；院端-病组分析（DRG支付）：成本异常探查；院端-异常探查：异常探查常用、异常探查汇总、异常探查自定义；横坐标的25、75分位后面添加问号，纵坐标的25、75分位后面添加问号，问号内容支持自定义，问号内容默认&#10;refactor(doctorCapacity): 收支分析 /收入异常探查 添加 25、75分位后面添加问号提示&#10;&#10;- 移除已注释的废弃逻辑代码和TODO注释&#10;- 引入hospPageConfigMixin混入实现页面配置功能&#10;- 添加initPage方法用于初始化页面配置&#10;- 在created生命周期中调用initPage方法&#10;- 传递分位数提示属性到表格组件">
-      <option name="closed" value="true" />
-      <created>1784190611866</created>
-      <option name="number" value="04456" />
-      <option name="presentableId" value="LOCAL-04456" />
-      <option name="project" value="LOCAL" />
-      <updated>1784190611866</updated>
-    </task>
-    <task id="LOCAL-04457" summary="v125:feat/refactor:需求2132-院端-临床工作量分析：门诊异常探查、出院异常探查、手术（含介入）异常探查、四级手术异常探查、日间手术异常探查、微创手术异常探查、入院率异常探查；院端-收支分析：收入异常探查、盈余异常探查、药品收入占比异常探查、材料收入占比异常探查、药耗收入占比异常探查；院端-人力资源分析：医生权重异常探查；院端-病组分析（DRG支付）：成本异常探查；院端-异常探查：异常探查常用、异常探查汇总、异常探查自定义；横坐标的25、75分位后面添加问号，纵坐标的25、75分位后面添加问号，问号内容支持自定义，问号内容默认&#10;feat(tooltips): 添加异常检测标记点偏移配置参数&#10;&#10;- 添加了 xAxisSymbolOffsetX 和 yAxisSymbolOffsetX 配置参数&#10;- 将硬编码的偏移值替换为可配置参数&#10;- 更新了 x轴和y轴标记点的偏移量设置逻辑&#10;- 优化了标记点位置的灵活性和可定制性">
-      <option name="closed" value="true" />
-      <created>1784190688803</created>
-      <option name="number" value="04457" />
-      <option name="presentableId" value="LOCAL-04457" />
-      <option name="project" value="LOCAL" />
-      <updated>1784190688803</updated>
-    </task>
-    <task id="LOCAL-04458" summary="v125:feat/refactor:需求2132-院端-临床工作量分析：门诊异常探查、出院异常探查、手术（含介入）异常探查、四级手术异常探查、日间手术异常探查、微创手术异常探查、入院率异常探查；院端-收支分析：收入异常探查、盈余异常探查、药品收入占比异常探查、材料收入占比异常探查、药耗收入占比异常探查；院端-人力资源分析：医生权重异常探查；院端-病组分析（DRG支付）：成本异常探查；院端-异常探查：异常探查常用、异常探查汇总、异常探查自定义；横坐标的25、75分位后面添加问号，纵坐标的25、75分位后面添加问号，问号内容支持自定义，问号内容默认&#10;fix(chartScatter): 优化点击事件的参数校验&#10;&#10;- 添加判断条件，确保点击坐标点时参数及科室编码存在&#10;- 防止因无效参数导致的事件处理异常&#10;- 保持点击事件的正确触发逻辑">
-      <option name="closed" value="true" />
-      <created>1784190766359</created>
-      <option name="number" value="04458" />
-      <option name="presentableId" value="LOCAL-04458" />
-      <option name="project" value="LOCAL" />
-      <updated>1784190766359</updated>
+      <workItem from="1784684262611" duration="21109000" />
     </task>
     <task id="LOCAL-04459" summary="v125:feat/refactor:需求2132-院端-临床工作量分析：门诊异常探查、出院异常探查、手术（含介入）异常探查、四级手术异常探查、日间手术异常探查、微创手术异常探查、入院率异常探查；院端-收支分析：收入异常探查、盈余异常探查、药品收入占比异常探查、材料收入占比异常探查、药耗收入占比异常探查；院端-人力资源分析：医生权重异常探查；院端-病组分析（DRG支付）：成本异常探查；院端-异常探查：异常探查常用、异常探查汇总、异常探查自定义；横坐标的25、75分位后面添加问号，纵坐标的25、75分位后面添加问号，问号内容支持自定义，问号内容默认&#10;feat(abnormalCheck): 添加异常检查页面分位线浮动提示功能&#10;&#10;- 在abnormalCheckSave.vue中移除废弃的时间过滤组件和维度选择组件&#10;- 在abnormalPanel.vue中新增分位线浮动提示属性并集成医院页面配置混入&#10;- 在chartScatter.vue中引入分位线浮动提示钩子函数并添加提示图标显示逻辑&#10;- 更新图表系列配置以包含分位线浮动提示标记点&#10;- 移除废弃的注释代码和无用导入模块">
       <option name="closed" value="true" />
@@ -3120,7 +3085,39 @@
       <option name="project" value="LOCAL" />
       <updated>1784699187150</updated>
     </task>
-    <option name="localTasksCounter" value="4504" />
+    <task id="LOCAL-04504" summary="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(hospital): 添加诊断操作明细相关API接口&#10;&#10;- 新增诊断操作明细表格数据请求接口&#10;- 新增诊断操作明细下钻维度下拉框请求接口&#10;- 新增诊断操作明细下钻表格数据请求接口&#10;- 新增诊断操作明细下钻维度列表请求接口&#10;- 新增诊断操作明细下钻费用类型下拉框请求接口&#10;- 新增诊断操作明细下钻费用类型明细表格请求接口">
+      <option name="closed" value="true" />
+      <created>1784705797215</created>
+      <option name="number" value="04504" />
+      <option name="presentableId" value="LOCAL-04504" />
+      <option name="project" value="LOCAL" />
+      <updated>1784705797216</updated>
+    </task>
+    <task id="LOCAL-04505" summary="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(store): 添加诊断操作明细报表数据模块&#10;&#10;- 新增诊断操作明细报表数据存储模块&#10;- 集成诊断操作明细到疾病分析DRG支付模块&#10;- 定义诊断代码、名称及操作代码、名称状态字段&#10;- 配置模块命名空间及基础数据结构">
+      <option name="closed" value="true" />
+      <created>1784705847660</created>
+      <option name="number" value="04505" />
+      <option name="presentableId" value="LOCAL-04505" />
+      <option name="project" value="LOCAL" />
+      <updated>1784705847660</updated>
+    </task>
+    <task id="LOCAL-04506" summary="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(hospital): 添加医院端诊断操作明细表格组件&#10;&#10;- 新增 DiagnosisOperationDetailTableHosp 组件用于显示诊断操作明细表格&#10;- 在 DiagosisOperationDetailHosp 页面中集成新的明细表格组件&#10;- 实现表格数据请求、渲染和交互功能&#10;- 添加表格行选择、高亮和排序相关逻辑&#10;- 集成 vuex 状态管理用于存储选中的诊断操作信息">
+      <option name="closed" value="true" />
+      <created>1784705930736</created>
+      <option name="number" value="04506" />
+      <option name="presentableId" value="LOCAL-04506" />
+      <option name="project" value="LOCAL" />
+      <updated>1784705930736</updated>
+    </task>
+    <task id="LOCAL-04507" summary="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(DiagnosisOperationDetailTableHosp): 为诊断手术详情表格组件添加唯一ID标识&#10;&#10;- 引入elemId工具函数用于生成唯一元素ID&#10;- 在组件数据中添加elemId属性&#10;- 为表格元素动态生成并设置唯一的id属性值">
+      <option name="closed" value="true" />
+      <created>1784706315952</created>
+      <option name="number" value="04507" />
+      <option name="presentableId" value="LOCAL-04507" />
+      <option name="project" value="LOCAL" />
+      <updated>1784706315952</updated>
+    </task>
+    <option name="localTasksCounter" value="4508" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -3141,10 +3138,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="MARK_IGNORED_AS_EXCLUDED" value="true" />
-    <MESSAGE value="v126:feat/refactor::需求2308-CMI值保留后四位小数，支持做成自定义小数位数，科端-病组分析（医保DRG）-出院分析-科室病组整体运营分析-CMI下钻：①CMI对比分析（左边图表和右边文字描述都改）；②CMI入组例数分析；③CMI与科系、全院对比；&#10;feat: 病种分析（市医保DRG） /出院分析 /科室病组整体运营分析 CMI与科系、全院对比 修改图表数据小数精度配置逻辑&#10;refactor(diseaseAnalysis): 优化小数位数配置逻辑&#10;&#10;- 移除不必要的空值合并操作符 (??) 的默认值设置&#10;- 简化 y 轴和 x 轴的小数位数判断条件&#10;- 统一小数位数配置的处理方式&#10;- 提升代码简洁性和可读性" />
-    <MESSAGE value="v126:feat/refactor::需求2175-院端-病组分析（DRG支付） ，新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(router): 添加院端病组分析诊断操作明细报表路由&#10;&#10;- 新增诊断操作明细报表路由配置&#10;- 配置路由路径为 /diagnosisOperationDetailHosp&#10;- 暂时设置路由组件为 operationDisease/index.vue&#10;- 添加页面标题为 诊断操作明细报表" />
-    <MESSAGE value="v126:feat/refactor::需求2175-院端-病组分析（DRG支付） ，新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(router): 添加院端病组分析诊断操作明细报表路由&#10;&#10;- 引入诊断操作明细报表路由配置&#10;- 更新路由配置文件添加新的路由映射&#10;- 在院端疾病分析路由中集成诊断操作明细功能" />
-    <MESSAGE value="v126:feat/refactor::需求2175-院端-病组分析（DRG支付） ，新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(hospital): 新增诊断操作明细报表页面&#10;&#10;- 创建了诊断操作明细报表组件 DiagnosisOperationDetailHosp.vue&#10;- 替换配置了页面路由指向新的诊断操作明细报表组件&#10;- 集成了病组分析相关的混入组件和功能模块&#10;- 添加了页面容器布局和样式结构" />
     <MESSAGE value="v126:fix/refactor:病种分析（市医保DRG） /出院分析 /费用消耗指数&#10;fix(costEfficiencyIndex): 修复成本效益指标数据请求参数缺失问题&#10;&#10;- 添加了 commonRequestParams 参数到数据请求对象中&#10;- 解决了因参数缺失导致的数据获取问题" />
     <MESSAGE value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(drg): 添加DRG市医保诊断操作详情页面头部筛选功能&#10;&#10;- 集成PlQueryWrapper组件实现查询包装器功能&#10;- 添加TimeHeaderFilter时间筛选组件&#10;- 实现PlCascader级联选择器支持病人分类多选&#10;- 集成PlSelect下拉选择器用于收入口径配置&#10;- 添加CalibrePopoverTips提示组件增强用户体验&#10;- 实现收入口径和病组成本的动态选项生成功能&#10;- 添加患者类型列表的多选绑定数据处理逻辑&#10;- 实现收入和成本口径的数据同步机制&#10;- 集成vuex状态管理支持数据流控制&#10;- 优化页面布局结构添加容器样式&#10;- 移除调试用的红色边框样式配置" />
     <MESSAGE value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(hospital): 添加病组分析诊断操作明细报表接口&#10;&#10;- 实现诊断下拉框数据获取接口&#10;- 实现操作下拉框数据获取接口&#10;- 实现DRG病组下拉框数据获取接口&#10;- 集成axios请求库进行HTTP通信&#10;- 添加完整的文件头部注释信息" />
@@ -3166,7 +3159,11 @@
     <MESSAGE value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat: 更新诊断操作详情组件图标显示逻辑&#10;&#10;- 将 PlDiagnosisSelector.vue 中的图标名称从 app-up/app-down 替换为 eye-open/eye-close&#10;- 将 PlDrgGroupSelector.vue 中的图标名称从 app-up/app-down 替换为 eye-open/eye-close  &#10;- 将 PlOperationSelector.vue 中的图标名称从 app-up/app-down 替换为 eye-open/eye-close" />
     <MESSAGE value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;refactor(diagnosis): 重构诊断选择器组件以统一眼睛图标功能&#10;&#10;- 移除各个选择器组件中的重复SvgIcon实现&#10;- 创建PlSelectorSlotWithEyeIcon通用组件封装眼睛图标逻辑&#10;- 更新PlDiagnosisSelector组件使用新的插槽组件&#10;- 更新PlDrgGroupSelector组件使用新的插槽组件&#10;- 更新PlOperationSelector组件使用新的插槽组件&#10;- 移除废弃的计算属性和样式代码&#10;- 统一眼睛图标的交互逻辑和样式表现" />
     <MESSAGE value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;doc: 修正诊断类型默认值配置注释&#10;&#10;- 将诊断口径默认值从主诊断0更新为主诊断1&#10;- 更新单选诊断类型的注释说明&#10;- 同步修改组件中的诊断类型初始值注释" />
-    <option name="LAST_COMMIT_MESSAGE" value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;doc: 修正诊断类型默认值配置注释&#10;&#10;- 将诊断口径默认值从主诊断0更新为主诊断1&#10;- 更新单选诊断类型的注释说明&#10;- 同步修改组件中的诊断类型初始值注释" />
+    <MESSAGE value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(hospital): 添加诊断操作明细相关API接口&#10;&#10;- 新增诊断操作明细表格数据请求接口&#10;- 新增诊断操作明细下钻维度下拉框请求接口&#10;- 新增诊断操作明细下钻表格数据请求接口&#10;- 新增诊断操作明细下钻维度列表请求接口&#10;- 新增诊断操作明细下钻费用类型下拉框请求接口&#10;- 新增诊断操作明细下钻费用类型明细表格请求接口" />
+    <MESSAGE value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(store): 添加诊断操作明细报表数据模块&#10;&#10;- 新增诊断操作明细报表数据存储模块&#10;- 集成诊断操作明细到疾病分析DRG支付模块&#10;- 定义诊断代码、名称及操作代码、名称状态字段&#10;- 配置模块命名空间及基础数据结构" />
+    <MESSAGE value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(hospital): 添加医院端诊断操作明细表格组件&#10;&#10;- 新增 DiagnosisOperationDetailTableHosp 组件用于显示诊断操作明细表格&#10;- 在 DiagosisOperationDetailHosp 页面中集成新的明细表格组件&#10;- 实现表格数据请求、渲染和交互功能&#10;- 添加表格行选择、高亮和排序相关逻辑&#10;- 集成 vuex 状态管理用于存储选中的诊断操作信息" />
+    <MESSAGE value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(DiagnosisOperationDetailTableHosp): 为诊断手术详情表格组件添加唯一ID标识&#10;&#10;- 引入elemId工具函数用于生成唯一元素ID&#10;- 在组件数据中添加elemId属性&#10;- 为表格元素动态生成并设置唯一的id属性值" />
+    <option name="LAST_COMMIT_MESSAGE" value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(DiagnosisOperationDetailTableHosp): 为诊断手术详情表格组件添加唯一ID标识&#10;&#10;- 引入elemId工具函数用于生成唯一元素ID&#10;- 在组件数据中添加elemId属性&#10;- 为表格元素动态生成并设置唯一的id属性值" />
   </component>
   <component name="VueSettings">
     <option name="innerServiceType" value="TS_SERVICE" />
