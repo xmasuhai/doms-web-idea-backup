@@ -7,6 +7,8 @@
           <value>
             <TabSessionState>
               <option name="provider" value="claude" />
+              <option name="sessionId" value="4f085878-e128-4a87-acd3-bc8ceb825c6c" />
+              <option name="cwd" value="D:\project\doms_web" />
               <option name="model" value="claude-fable-5[1m]" />
               <option name="permissionMode" value="default" />
             </TabSessionState>
