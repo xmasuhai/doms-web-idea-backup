@@ -44,11 +44,8 @@
     <option name="selectedModelId" value="auto" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a32d6ec8-0d74-4a1b-8cad-0ab91948ca3e" name="Changes" comment="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(diseaseAnalysis): 添加诊断操作明细下钻表格组件&#10;&#10;- 在 DiagnosisOperationDetailDrilldownFeeTypeTableHosp 组件中添加样式类名&#10;- 在 DiagnosisOperationDetailDrilldownTableHosp 组件中添加维度类型选择器&#10;- 新增 dimensionType 数据属性和相关计算属性&#10;- 添加维度类型选项监听器和初始化逻辑&#10;- 在主页面中引入并注册新的下钻表格组件&#10;- 更新页面布局结构以包含新的明细表格">
-      <change afterPath="$PROJECT_DIR$/src/component/tool/diagnosis-operation-detail/PlDimensionListSelector.vue" afterDir="false" />
+    <list default="true" id="a32d6ec8-0d74-4a1b-8cad-0ab91948ca3e" name="Changes" comment="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(diagnosis-operation-detail): 添加诊断操作明细报表维度列表选择器组件&#10;&#10;- 创建 PlDimensionListSelector 组件用于诊断操作明细报表维度选择&#10;- 集成 PlSelect 下拉框组件并配置相关绑定属性&#10;- 实现维度列表数据请求功能，支持钻取维度数据获取&#10;- 添加参数验证逻辑，确保日期和维度类型参数有效性&#10;- 实现加载状态管理和错误处理机制&#10;- 配置默认选中第一个选项的功能并触发相应事件">
       <change beforePath="$PROJECT_DIR$/src/component/diseaseAnalysis/hospital/diagnosis-operation-detail/DiagnosisOperationDetailDrilldownFeeTypeTableHosp.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/diseaseAnalysis/hospital/diagnosis-operation-detail/DiagnosisOperationDetailDrilldownFeeTypeTableHosp.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/diseaseAnalysis/hospital/diagnosis-operation-detail/DiagnosisOperationDetailDrilldownTableHosp.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/diseaseAnalysis/hospital/diagnosis-operation-detail/DiagnosisOperationDetailDrilldownTableHosp.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/hospital/disease-group-analysis-drg/drg-city/DiagnosisOperationDetailHosp.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/hospital/disease-group-analysis-drg/drg-city/DiagnosisOperationDetailHosp.vue" afterDir="false" />
     </list>
     <list id="bd8e474f-42c8-444f-9f2b-07be811ba86b" name="ignore-on-commit" comment="ignore-on-commit" />
     <option name="SHOW_DIALOG" value="false" />
@@ -533,24 +530,6 @@
     <configuration useDefault="false">C:\Users\xushuai\AppData\Roaming\Subversion</configuration>
     <supportedVersion>125</supportedVersion>
     <option name="runUnderTerminal" value="true" />
-  </component>
-  <component name="SvnFileUrlMappingImpl">
-    <option name="myMappingRoots">
-      <list>
-        <SvnCopyRootSimple>
-          <option name="myVcsRoot" value="D:\project\doms_web" />
-          <option name="myCopyRoot" value="D:\project\doms_web" />
-        </SvnCopyRootSimple>
-      </list>
-    </option>
-    <option name="myMoreRealMappingRoots">
-      <list>
-        <SvnCopyRootSimple>
-          <option name="myVcsRoot" value="D:\project\doms_web" />
-          <option name="myCopyRoot" value="D:\project\doms_web" />
-        </SvnCopyRootSimple>
-      </list>
-    </option>
   </component>
   <component name="TDDPredictState">
     <testRunHistory>
@@ -2724,15 +2703,7 @@
       <workItem from="1784600609992" duration="18608000" />
       <workItem from="1784623910570" duration="294000" />
       <workItem from="1784624264725" duration="13695000" />
-      <workItem from="1784684262611" duration="27842000" />
-    </task>
-    <task id="LOCAL-04462" summary="v125:feat/refactor:2418-科室端-病种分析（市医保DRG）-出院分析，在医疗组收治病组一览表下方添加一张表，标题为DRG病例明细表&#10;fix(DRGCaseDetail): 修复 commonRequestParams 监听器更新问题&#10;&#10;- 添加 commonRequestParams 的深度监听 更新监听器以设置 ifNeedUpdateColumns 为 true">
-      <option name="closed" value="true" />
-      <created>1784195246365</created>
-      <option name="number" value="04462" />
-      <option name="presentableId" value="LOCAL-04462" />
-      <option name="project" value="LOCAL" />
-      <updated>1784195246365</updated>
+      <workItem from="1784684262611" duration="28248000" />
     </task>
     <task id="LOCAL-04463" summary="v125:feat/refactor:需求2132-院端-临床工作量分析：门诊异常探查、出院异常探查、手术（含介入）异常探查、四级手术异常探查、日间手术异常探查、微创手术异常探查、入院率异常探查；院端-收支分析：收入异常探查、盈余异常探查、药品收入占比异常探查、材料收入占比异常探查、药耗收入占比异常探查；院端-人力资源分析：医生权重异常探查；院端-病组分析（DRG支付）：成本异常探查；院端-异常探查：异常探查常用、异常探查汇总、异常探查自定义；横坐标的25、75分位后面添加问号，纵坐标的25、75分位后面添加问号，问号内容支持自定义，问号内容默认&#10;fix(matrix): 修复矩阵组件初始化逻辑&#10;&#10;- 将侦听函数改为异步，确保状态复位后执行下一步操作&#10;- 使用 await this.$nextTick() 等待 DOM 更新完成&#10;- 取消图表tab页判断，直接初始化图表数据&#10;- 注释掉原有的this.$nextTick包裹的初始化调用逻辑">
       <option name="closed" value="true" />
@@ -3118,7 +3089,15 @@
       <option name="project" value="LOCAL" />
       <updated>1784711885124</updated>
     </task>
-    <option name="localTasksCounter" value="4511" />
+    <task id="LOCAL-04511" summary="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(diagnosis-operation-detail): 添加诊断操作明细报表维度列表选择器组件&#10;&#10;- 创建 PlDimensionListSelector 组件用于诊断操作明细报表维度选择&#10;- 集成 PlSelect 下拉框组件并配置相关绑定属性&#10;- 实现维度列表数据请求功能，支持钻取维度数据获取&#10;- 添加参数验证逻辑，确保日期和维度类型参数有效性&#10;- 实现加载状态管理和错误处理机制&#10;- 配置默认选中第一个选项的功能并触发相应事件">
+      <option name="closed" value="true" />
+      <created>1784713902796</created>
+      <option name="number" value="04511" />
+      <option name="presentableId" value="LOCAL-04511" />
+      <option name="project" value="LOCAL" />
+      <updated>1784713902796</updated>
+    </task>
+    <option name="localTasksCounter" value="4512" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -3139,7 +3118,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="MARK_IGNORED_AS_EXCLUDED" value="true" />
-    <MESSAGE value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;refactor(DiagnosisOperationDetailHosp): 优化选择器组件的数据绑定&#10;&#10;- 将收入口径和病组成本选择器的属性提取为独立计算属性&#10;- 使用v-bind简化模板中的属性传递&#10;- 移除冗余的硬编码属性配置" />
     <MESSAGE value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(drg): 添加对比方式选择功能到医院DRG诊断手术详情页面&#10;&#10;- 引入PlCompareSelect组件用于对比方式选择&#10;- 添加compareType字段到查询参数和响应式数据&#10;- 注入全局同比环比默认值并设置初始值&#10;- 更新handleQuery方法以同步对比类型参数&#10;- 添加诊断类型和操作类型响应式变量&#10;- 修复props属性格式化问题&#10;- 优化代码结构和数据处理逻辑" />
     <MESSAGE value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(component): 添加诊断操作明细报表选择组件&#10;&#10;- 新增 PlDiagnosisSelector 组件用于诊断类型选择&#10;- 新增 PlDrgGroupSelector 组件用于 DRG 组选择&#10;- 新增 PlOperationSelector 组件用于操作类型选择&#10;- 所有组件基于 PlSelect 基础组件构建&#10;- 统一实现 loading 状态和数据绑定功能&#10;- 遵循命名规范和代码结构标准" />
     <MESSAGE value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(iconfont): 添加医院管理系统相关图标" />
@@ -3164,7 +3142,8 @@
     <MESSAGE value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(diseaseAnalysis): 新增医院端诊断操作明细表格组件&#10;&#10;- 创建 DiagnosisOperationDetailDrilldownFeeTypeTableHosp 组件用于费用类型明细展示&#10;- 创建 DiagnosisOperationDetailDrilldownTableHosp 组件用于诊断操作费用明细展示&#10;- 集成 PlModulePanel 组件实现表格渲染功能&#10;- 实现数据请求逻辑和参数验证机制&#10;- 配置表格列定义和数据绑定功能&#10;- 添加加载状态管理和错误处理机制" />
     <MESSAGE value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(hospital): 添加诊断操作明细报表维度下拉框功能&#10;&#10;- 引入 to 工具函数和 fetchDrilldownDimensionSelectOptions API&#10;- 新增 dimensionTypeLoading 和 dimensionTypeOptions 状态字段&#10;- 添加 getDimensionTypeRequestParams getter 方法&#10;- 实现 requestDimensionTypeOptions 异步操作方法&#10;- 集成维度类型选项数据获取和映射逻辑" />
     <MESSAGE value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(diseaseAnalysis): 添加诊断操作明细下钻表格组件&#10;&#10;- 在 DiagnosisOperationDetailDrilldownFeeTypeTableHosp 组件中添加样式类名&#10;- 在 DiagnosisOperationDetailDrilldownTableHosp 组件中添加维度类型选择器&#10;- 新增 dimensionType 数据属性和相关计算属性&#10;- 添加维度类型选项监听器和初始化逻辑&#10;- 在主页面中引入并注册新的下钻表格组件&#10;- 更新页面布局结构以包含新的明细表格" />
-    <option name="LAST_COMMIT_MESSAGE" value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(diseaseAnalysis): 添加诊断操作明细下钻表格组件&#10;&#10;- 在 DiagnosisOperationDetailDrilldownFeeTypeTableHosp 组件中添加样式类名&#10;- 在 DiagnosisOperationDetailDrilldownTableHosp 组件中添加维度类型选择器&#10;- 新增 dimensionType 数据属性和相关计算属性&#10;- 添加维度类型选项监听器和初始化逻辑&#10;- 在主页面中引入并注册新的下钻表格组件&#10;- 更新页面布局结构以包含新的明细表格" />
+    <MESSAGE value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(diagnosis-operation-detail): 添加诊断操作明细报表维度列表选择器组件&#10;&#10;- 创建 PlDimensionListSelector 组件用于诊断操作明细报表维度选择&#10;- 集成 PlSelect 下拉框组件并配置相关绑定属性&#10;- 实现维度列表数据请求功能，支持钻取维度数据获取&#10;- 添加参数验证逻辑，确保日期和维度类型参数有效性&#10;- 实现加载状态管理和错误处理机制&#10;- 配置默认选中第一个选项的功能并触发相应事件" />
+    <option name="LAST_COMMIT_MESSAGE" value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(diagnosis-operation-detail): 添加诊断操作明细报表维度列表选择器组件&#10;&#10;- 创建 PlDimensionListSelector 组件用于诊断操作明细报表维度选择&#10;- 集成 PlSelect 下拉框组件并配置相关绑定属性&#10;- 实现维度列表数据请求功能，支持钻取维度数据获取&#10;- 添加参数验证逻辑，确保日期和维度类型参数有效性&#10;- 实现加载状态管理和错误处理机制&#10;- 配置默认选中第一个选项的功能并触发相应事件" />
   </component>
   <component name="VueSettings">
     <option name="innerServiceType" value="TS_SERVICE" />
