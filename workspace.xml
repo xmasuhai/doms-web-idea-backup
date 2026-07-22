@@ -46,6 +46,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a32d6ec8-0d74-4a1b-8cad-0ab91948ca3e" name="Changes" comment="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(diseaseAnalysis): 添加费用类型选择功能到病组费用明细表&#10;&#10;- 在诊断操作明细费用类型表格组件中新增费用类型选择器&#10;- 集成费用类型下拉框并实现后端数据获取功能&#10;- 更新维度列表选择器请求参数结构&#10;- 添加费用类型验证和数组长度检查逻辑&#10;- 实现费用类型选项动态加载和默认值设置&#10;- 修复维度列表更新事件绑定问题">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/diseaseAnalysis/hospital/diagnosis-operation-detail/DiagnosisOperationDetailDrilldownFeeTypeTableHosp.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/diseaseAnalysis/hospital/diagnosis-operation-detail/DiagnosisOperationDetailDrilldownFeeTypeTableHosp.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/tool/diagnosis-operation-detail/PlDimensionListSelector.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/tool/diagnosis-operation-detail/PlDimensionListSelector.vue" afterDir="false" />
     </list>
     <list id="bd8e474f-42c8-444f-9f2b-07be811ba86b" name="ignore-on-commit" comment="ignore-on-commit" />
@@ -2704,7 +2705,7 @@
       <workItem from="1784600609992" duration="18608000" />
       <workItem from="1784623910570" duration="294000" />
       <workItem from="1784624264725" duration="13695000" />
-      <workItem from="1784684262611" duration="34714000" />
+      <workItem from="1784684262611" duration="35498000" />
     </task>
     <task id="LOCAL-04467" summary="v126:feat/refactor: 需求1943-院端-重点设备效益分析-总览、院端-重点设备效益分析-诊断类设备分析、院端-重点设备效益分析-治疗类设备分析、科室端-重点设备效益分析-下所有菜单-支持周、日维度选择；选择周、日维度时，原工作量、稼动率相关表格和图表内容不变；原收入、投资回报率相关表格和图表，因为成本最小只能到月，直接隐藏或只显示收入相关元素；&#10;feat(equipmentBenefitAnalysis): 添加周度日度隐藏功能&#10;&#10;- 在returnRateAbnormal组件中添加getCurrentFreqCodeIsWeekOrDay计算属性&#10;- 使用v-if指令控制组件在周度和日度时不显示&#10;- 导入vuex的mapGetters辅助函数">
       <option name="closed" value="true" />
