@@ -44,9 +44,12 @@
     <option name="selectedModelId" value="auto" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a32d6ec8-0d74-4a1b-8cad-0ab91948ca3e" name="Changes" comment="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(DiagnosisOperationDetailTableHosp): 为诊断手术详情表格组件添加唯一ID标识&#10;&#10;- 引入elemId工具函数用于生成唯一元素ID&#10;- 在组件数据中添加elemId属性&#10;- 为表格元素动态生成并设置唯一的id属性值">
-      <change afterPath="$PROJECT_DIR$/src/component/diseaseAnalysis/hospital/diagnosis-operation-detail/DiagnosisOperationDetailDrilldownFeeTypeTableHosp.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/component/diseaseAnalysis/hospital/diagnosis-operation-detail/DiagnosisOperationDetailDrilldownTableHosp.vue" afterDir="false" />
+    <list default="true" id="a32d6ec8-0d74-4a1b-8cad-0ab91948ca3e" name="Changes" comment="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(diseaseAnalysis): 新增医院端诊断操作明细表格组件&#10;&#10;- 创建 DiagnosisOperationDetailDrilldownFeeTypeTableHosp 组件用于费用类型明细展示&#10;- 创建 DiagnosisOperationDetailDrilldownTableHosp 组件用于诊断操作费用明细展示&#10;- 集成 PlModulePanel 组件实现表格渲染功能&#10;- 实现数据请求逻辑和参数验证机制&#10;- 配置表格列定义和数据绑定功能&#10;- 添加加载状态管理和错误处理机制">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/diseaseAnalysis/hospital/diagnosis-operation-detail/DiagnosisOperationDetailDrilldownFeeTypeTableHosp.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/diseaseAnalysis/hospital/diagnosis-operation-detail/DiagnosisOperationDetailDrilldownFeeTypeTableHosp.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/diseaseAnalysis/hospital/diagnosis-operation-detail/DiagnosisOperationDetailDrilldownTableHosp.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/diseaseAnalysis/hospital/diagnosis-operation-detail/DiagnosisOperationDetailDrilldownTableHosp.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/modules/hospital/diseaseAnalysis/diagnosisOperationDetailHospStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/modules/hospital/diseaseAnalysis/diagnosisOperationDetailHospStore.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/hospital/disease-group-analysis-drg/drg-city/DiagnosisOperationDetailHosp.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/hospital/disease-group-analysis-drg/drg-city/DiagnosisOperationDetailHosp.vue" afterDir="false" />
     </list>
     <list id="bd8e474f-42c8-444f-9f2b-07be811ba86b" name="ignore-on-commit" comment="ignore-on-commit" />
@@ -532,24 +535,6 @@
     <configuration useDefault="false">C:\Users\xushuai\AppData\Roaming\Subversion</configuration>
     <supportedVersion>125</supportedVersion>
     <option name="runUnderTerminal" value="true" />
-  </component>
-  <component name="SvnFileUrlMappingImpl">
-    <option name="myMappingRoots">
-      <list>
-        <SvnCopyRootSimple>
-          <option name="myVcsRoot" value="D:\project\doms_web" />
-          <option name="myCopyRoot" value="D:\project\doms_web" />
-        </SvnCopyRootSimple>
-      </list>
-    </option>
-    <option name="myMoreRealMappingRoots">
-      <list>
-        <SvnCopyRootSimple>
-          <option name="myVcsRoot" value="D:\project\doms_web" />
-          <option name="myCopyRoot" value="D:\project\doms_web" />
-        </SvnCopyRootSimple>
-      </list>
-    </option>
   </component>
   <component name="TDDPredictState">
     <testRunHistory>
@@ -2723,15 +2708,7 @@
       <workItem from="1784600609992" duration="18608000" />
       <workItem from="1784623910570" duration="294000" />
       <workItem from="1784624264725" duration="13695000" />
-      <workItem from="1784684262611" duration="21834000" />
-    </task>
-    <task id="LOCAL-04459" summary="v125:feat/refactor:需求2132-院端-临床工作量分析：门诊异常探查、出院异常探查、手术（含介入）异常探查、四级手术异常探查、日间手术异常探查、微创手术异常探查、入院率异常探查；院端-收支分析：收入异常探查、盈余异常探查、药品收入占比异常探查、材料收入占比异常探查、药耗收入占比异常探查；院端-人力资源分析：医生权重异常探查；院端-病组分析（DRG支付）：成本异常探查；院端-异常探查：异常探查常用、异常探查汇总、异常探查自定义；横坐标的25、75分位后面添加问号，纵坐标的25、75分位后面添加问号，问号内容支持自定义，问号内容默认&#10;feat(abnormalCheck): 添加异常检查页面分位线浮动提示功能&#10;&#10;- 在abnormalCheckSave.vue中移除废弃的时间过滤组件和维度选择组件&#10;- 在abnormalPanel.vue中新增分位线浮动提示属性并集成医院页面配置混入&#10;- 在chartScatter.vue中引入分位线浮动提示钩子函数并添加提示图标显示逻辑&#10;- 更新图表系列配置以包含分位线浮动提示标记点&#10;- 移除废弃的注释代码和无用导入模块">
-      <option name="closed" value="true" />
-      <created>1784190893808</created>
-      <option name="number" value="04459" />
-      <option name="presentableId" value="LOCAL-04459" />
-      <option name="project" value="LOCAL" />
-      <updated>1784190893808</updated>
+      <workItem from="1784684262611" duration="25808000" />
     </task>
     <task id="LOCAL-04460" summary="v125:feat/refactor:需求变更2463（山大二）-全院-病组分析（市医保DRG）-总览-总权重下钻-RW分布：表格和图形显示RW区间数量不一致&#10;feat(charts): 更新图表组件配置以支持滚动限制&#10;&#10;- 在图表配置中添加 scrollLimit 属性设置为 20">
       <option name="closed" value="true" />
@@ -3117,7 +3094,15 @@
       <option name="project" value="LOCAL" />
       <updated>1784706315952</updated>
     </task>
-    <option name="localTasksCounter" value="4508" />
+    <task id="LOCAL-04508" summary="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(diseaseAnalysis): 新增医院端诊断操作明细表格组件&#10;&#10;- 创建 DiagnosisOperationDetailDrilldownFeeTypeTableHosp 组件用于费用类型明细展示&#10;- 创建 DiagnosisOperationDetailDrilldownTableHosp 组件用于诊断操作费用明细展示&#10;- 集成 PlModulePanel 组件实现表格渲染功能&#10;- 实现数据请求逻辑和参数验证机制&#10;- 配置表格列定义和数据绑定功能&#10;- 添加加载状态管理和错误处理机制">
+      <option name="closed" value="true" />
+      <created>1784707551071</created>
+      <option name="number" value="04508" />
+      <option name="presentableId" value="LOCAL-04508" />
+      <option name="project" value="LOCAL" />
+      <updated>1784707551071</updated>
+    </task>
+    <option name="localTasksCounter" value="4509" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -3138,7 +3123,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="MARK_IGNORED_AS_EXCLUDED" value="true" />
-    <MESSAGE value="v126:fix/refactor:病种分析（市医保DRG） /出院分析 /费用消耗指数&#10;fix(costEfficiencyIndex): 修复成本效益指标数据请求参数缺失问题&#10;&#10;- 添加了 commonRequestParams 参数到数据请求对象中&#10;- 解决了因参数缺失导致的数据获取问题" />
     <MESSAGE value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(drg): 添加DRG市医保诊断操作详情页面头部筛选功能&#10;&#10;- 集成PlQueryWrapper组件实现查询包装器功能&#10;- 添加TimeHeaderFilter时间筛选组件&#10;- 实现PlCascader级联选择器支持病人分类多选&#10;- 集成PlSelect下拉选择器用于收入口径配置&#10;- 添加CalibrePopoverTips提示组件增强用户体验&#10;- 实现收入口径和病组成本的动态选项生成功能&#10;- 添加患者类型列表的多选绑定数据处理逻辑&#10;- 实现收入和成本口径的数据同步机制&#10;- 集成vuex状态管理支持数据流控制&#10;- 优化页面布局结构添加容器样式&#10;- 移除调试用的红色边框样式配置" />
     <MESSAGE value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(hospital): 添加病组分析诊断操作明细报表接口&#10;&#10;- 实现诊断下拉框数据获取接口&#10;- 实现操作下拉框数据获取接口&#10;- 实现DRG病组下拉框数据获取接口&#10;- 集成axios请求库进行HTTP通信&#10;- 添加完整的文件头部注释信息" />
     <MESSAGE value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;refactor(DiagnosisOperationDetailHosp): 优化选择器组件的数据绑定&#10;&#10;- 将收入口径和病组成本选择器的属性提取为独立计算属性&#10;- 使用v-bind简化模板中的属性传递&#10;- 移除冗余的硬编码属性配置" />
@@ -3163,7 +3147,8 @@
     <MESSAGE value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(store): 添加诊断操作明细报表数据模块&#10;&#10;- 新增诊断操作明细报表数据存储模块&#10;- 集成诊断操作明细到疾病分析DRG支付模块&#10;- 定义诊断代码、名称及操作代码、名称状态字段&#10;- 配置模块命名空间及基础数据结构" />
     <MESSAGE value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(hospital): 添加医院端诊断操作明细表格组件&#10;&#10;- 新增 DiagnosisOperationDetailTableHosp 组件用于显示诊断操作明细表格&#10;- 在 DiagosisOperationDetailHosp 页面中集成新的明细表格组件&#10;- 实现表格数据请求、渲染和交互功能&#10;- 添加表格行选择、高亮和排序相关逻辑&#10;- 集成 vuex 状态管理用于存储选中的诊断操作信息" />
     <MESSAGE value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(DiagnosisOperationDetailTableHosp): 为诊断手术详情表格组件添加唯一ID标识&#10;&#10;- 引入elemId工具函数用于生成唯一元素ID&#10;- 在组件数据中添加elemId属性&#10;- 为表格元素动态生成并设置唯一的id属性值" />
-    <option name="LAST_COMMIT_MESSAGE" value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(DiagnosisOperationDetailTableHosp): 为诊断手术详情表格组件添加唯一ID标识&#10;&#10;- 引入elemId工具函数用于生成唯一元素ID&#10;- 在组件数据中添加elemId属性&#10;- 为表格元素动态生成并设置唯一的id属性值" />
+    <MESSAGE value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(diseaseAnalysis): 新增医院端诊断操作明细表格组件&#10;&#10;- 创建 DiagnosisOperationDetailDrilldownFeeTypeTableHosp 组件用于费用类型明细展示&#10;- 创建 DiagnosisOperationDetailDrilldownTableHosp 组件用于诊断操作费用明细展示&#10;- 集成 PlModulePanel 组件实现表格渲染功能&#10;- 实现数据请求逻辑和参数验证机制&#10;- 配置表格列定义和数据绑定功能&#10;- 添加加载状态管理和错误处理机制" />
+    <option name="LAST_COMMIT_MESSAGE" value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(diseaseAnalysis): 新增医院端诊断操作明细表格组件&#10;&#10;- 创建 DiagnosisOperationDetailDrilldownFeeTypeTableHosp 组件用于费用类型明细展示&#10;- 创建 DiagnosisOperationDetailDrilldownTableHosp 组件用于诊断操作费用明细展示&#10;- 集成 PlModulePanel 组件实现表格渲染功能&#10;- 实现数据请求逻辑和参数验证机制&#10;- 配置表格列定义和数据绑定功能&#10;- 添加加载状态管理和错误处理机制" />
   </component>
   <component name="VueSettings">
     <option name="innerServiceType" value="TS_SERVICE" />
