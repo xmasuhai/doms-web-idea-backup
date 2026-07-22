@@ -505,9 +505,9 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="npm.本地运行项目" />
       <item itemvalue="npm.build" />
       <item itemvalue="npm.testing" />
-      <item itemvalue="npm.本地运行项目" />
     </list>
   </component>
   <component name="SharedIndexes">
