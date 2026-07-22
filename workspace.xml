@@ -44,7 +44,12 @@
     <option name="selectedModelId" value="auto" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a32d6ec8-0d74-4a1b-8cad-0ab91948ca3e" name="Changes" comment="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细" />
+    <list default="true" id="a32d6ec8-0d74-4a1b-8cad-0ab91948ca3e" name="Changes" comment="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;doc: 修正诊断类型默认值配置注释&#10;&#10;- 将诊断口径默认值从主诊断0更新为主诊断1&#10;- 更新单选诊断类型的注释说明&#10;- 同步修改组件中的诊断类型初始值注释">
+      <change afterPath="$PROJECT_DIR$/src/component/diseaseAnalysis/hospital/diagnosis-operation-detail" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/src/component/diseaseAnalysis/hospital/diagnosis-operation-detail/DiagnosisOperationDetailTableHosp.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/hospital/diseaseAnalysis/diagnosis-operation-detail/diagnosisOperationDetailHospApi.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/hospital/diseaseAnalysis/diagnosis-operation-detail/diagnosisOperationDetailHospApi.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/hospital/disease-group-analysis-drg/drg-city/DiagnosisOperationDetailHosp.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/hospital/disease-group-analysis-drg/drg-city/DiagnosisOperationDetailHosp.vue" afterDir="false" />
+    </list>
     <list id="bd8e474f-42c8-444f-9f2b-07be811ba86b" name="ignore-on-commit" comment="ignore-on-commit" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -498,9 +503,9 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="npm.本地运行项目" />
       <item itemvalue="npm.build" />
       <item itemvalue="npm.testing" />
-      <item itemvalue="npm.本地运行项目" />
     </list>
   </component>
   <component name="SharedIndexes">
@@ -528,6 +533,24 @@
     <configuration useDefault="false">C:\Users\xushuai\AppData\Roaming\Subversion</configuration>
     <supportedVersion>125</supportedVersion>
     <option name="runUnderTerminal" value="true" />
+  </component>
+  <component name="SvnFileUrlMappingImpl">
+    <option name="myMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="D:\project\doms_web" />
+          <option name="myCopyRoot" value="D:\project\doms_web" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
+    <option name="myMoreRealMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="D:\project\doms_web" />
+          <option name="myCopyRoot" value="D:\project\doms_web" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
   </component>
   <component name="TDDPredictState">
     <testRunHistory>
@@ -2701,15 +2724,7 @@
       <workItem from="1784600609992" duration="18608000" />
       <workItem from="1784623910570" duration="294000" />
       <workItem from="1784624264725" duration="13695000" />
-      <workItem from="1784684262611" duration="13709000" />
-    </task>
-    <task id="LOCAL-04454" summary="v125:feat/refactor:需求2132-院端-临床工作量分析：门诊异常探查、出院异常探查、手术（含介入）异常探查、四级手术异常探查、日间手术异常探查、微创手术异常探查、入院率异常探查；院端-收支分析：收入异常探查、盈余异常探查、药品收入占比异常探查、材料收入占比异常探查、药耗收入占比异常探查；院端-人力资源分析：医生权重异常探查；院端-病组分析（DRG支付）：成本异常探查；院端-异常探查：异常探查常用、异常探查汇总、异常探查自定义；横坐标的25、75分位后面添加问号，纵坐标的25、75分位后面添加问号，问号内容支持自定义，问号内容默认&#10;fix(tooltips): 修复异常检测分位数提示图标的显示逻辑&#10;&#10;- 将分位数坐标判断条件从 AND 改为 OR 以正确显示提示图标&#10;- 更新符号偏移量从 200% 到 260% 以改善视觉位置&#10;- 调整四个分位数坐标的显示条件：X25、X75、Y25 和 Y75 轴">
-      <option name="closed" value="true" />
-      <created>1784181137982</created>
-      <option name="number" value="04454" />
-      <option name="presentableId" value="LOCAL-04454" />
-      <option name="project" value="LOCAL" />
-      <updated>1784181137982</updated>
+      <workItem from="1784684262611" duration="15887000" />
     </task>
     <task id="LOCAL-04455" summary="v125:feat/refactor:需求2132-院端-临床工作量分析：门诊异常探查、出院异常探查、手术（含介入）异常探查、四级手术异常探查、日间手术异常探查、微创手术异常探查、入院率异常探查；院端-收支分析：收入异常探查、盈余异常探查、药品收入占比异常探查、材料收入占比异常探查、药耗收入占比异常探查；院端-人力资源分析：医生权重异常探查；院端-病组分析（DRG支付）：成本异常探查；院端-异常探查：异常探查常用、异常探查汇总、异常探查自定义；横坐标的25、75分位后面添加问号，纵坐标的25、75分位后面添加问号，问号内容支持自定义，问号内容默认&#10;refactor(doctorCapacity): 人力资源分析 /医生权重异常探查 添加 25、75分位后面添加问号提示&#10;&#10;- 在主矩阵组件中增加了四个新的提示属性传递">
       <option name="closed" value="true" />
@@ -3095,7 +3110,15 @@
       <option name="project" value="LOCAL" />
       <updated>1784699099290</updated>
     </task>
-    <option name="localTasksCounter" value="4503" />
+    <task id="LOCAL-04503" summary="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;doc: 修正诊断类型默认值配置注释&#10;&#10;- 将诊断口径默认值从主诊断0更新为主诊断1&#10;- 更新单选诊断类型的注释说明&#10;- 同步修改组件中的诊断类型初始值注释">
+      <option name="closed" value="true" />
+      <created>1784699187150</created>
+      <option name="number" value="04503" />
+      <option name="presentableId" value="LOCAL-04503" />
+      <option name="project" value="LOCAL" />
+      <updated>1784699187150</updated>
+    </task>
+    <option name="localTasksCounter" value="4504" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -3116,7 +3139,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="MARK_IGNORED_AS_EXCLUDED" value="true" />
-    <MESSAGE value="v126:feat/refactor::需求2308-CMI值保留后四位小数，支持做成自定义小数位数，科端-病组分析（医保DRG）-出院分析-科室病组整体运营分析-CMI下钻：①CMI对比分析（左边图表和右边文字描述都改）；②CMI入组例数分析；③CMI与科系、全院对比；&#10;feat: 病种分析（市医保DRG） /出院分析 /科室病组整体运营分析 CMI与科系、全院对比 修改图表数据小数精度配置逻辑&#10;&#10;- 修正CMI数据精度配置为动态获取blkCommonData中的值&#10;- 修复y轴刻度精度计算逻辑，支持默认值回退&#10;- 修复x轴刻度精度计算逻辑，确保数值类型的精度设置正确" />
     <MESSAGE value="v126:feat/refactor::需求2308-CMI值保留后四位小数，支持做成自定义小数位数，科端-病组分析（医保DRG）-出院分析-科室病组整体运营分析-CMI下钻：①CMI对比分析（左边图表和右边文字描述都改）；②CMI入组例数分析；③CMI与科系、全院对比；&#10;feat: 病种分析（市医保DRG） /出院分析 /科室病组整体运营分析 CMI与科系、全院对比 修改图表数据小数精度配置逻辑&#10;refactor(diseaseAnalysis): 优化小数位数配置逻辑&#10;&#10;- 移除不必要的空值合并操作符 (??) 的默认值设置&#10;- 简化 y 轴和 x 轴的小数位数判断条件&#10;- 统一小数位数配置的处理方式&#10;- 提升代码简洁性和可读性" />
     <MESSAGE value="v126:feat/refactor::需求2175-院端-病组分析（DRG支付） ，新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(router): 添加院端病组分析诊断操作明细报表路由&#10;&#10;- 新增诊断操作明细报表路由配置&#10;- 配置路由路径为 /diagnosisOperationDetailHosp&#10;- 暂时设置路由组件为 operationDisease/index.vue&#10;- 添加页面标题为 诊断操作明细报表" />
     <MESSAGE value="v126:feat/refactor::需求2175-院端-病组分析（DRG支付） ，新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(router): 添加院端病组分析诊断操作明细报表路由&#10;&#10;- 引入诊断操作明细报表路由配置&#10;- 更新路由配置文件添加新的路由映射&#10;- 在院端疾病分析路由中集成诊断操作明细功能" />
@@ -3141,7 +3163,8 @@
     <MESSAGE value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(iconfont): 添加新的图标字体资源&#10;&#10;- 新增 eye-close 图标 (Unicode &amp;#xe702;)&#10;- 新增 eye-open 图标 (Unicode &amp;#xe703;)&#10;- 新增 编辑 图标 (Unicode &amp;#xe701;)&#10;- 更新字体文件时间戳参数&#10;- 在 demo 页面中展示新图标&#10;- 配置图标的 CSS 样式类名&#10;- 更新图标 JSON 配置文件" />
     <MESSAGE value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat: 更新诊断操作详情组件图标显示逻辑&#10;&#10;- 将 PlDiagnosisSelector.vue 中的图标名称从 app-up/app-down 替换为 eye-open/eye-close&#10;- 将 PlDrgGroupSelector.vue 中的图标名称从 app-up/app-down 替换为 eye-open/eye-close  &#10;- 将 PlOperationSelector.vue 中的图标名称从 app-up/app-down 替换为 eye-open/eye-close" />
     <MESSAGE value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;refactor(diagnosis): 重构诊断选择器组件以统一眼睛图标功能&#10;&#10;- 移除各个选择器组件中的重复SvgIcon实现&#10;- 创建PlSelectorSlotWithEyeIcon通用组件封装眼睛图标逻辑&#10;- 更新PlDiagnosisSelector组件使用新的插槽组件&#10;- 更新PlDrgGroupSelector组件使用新的插槽组件&#10;- 更新PlOperationSelector组件使用新的插槽组件&#10;- 移除废弃的计算属性和样式代码&#10;- 统一眼睛图标的交互逻辑和样式表现" />
-    <option name="LAST_COMMIT_MESSAGE" value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;refactor(diagnosis): 重构诊断选择器组件以统一眼睛图标功能&#10;&#10;- 移除各个选择器组件中的重复SvgIcon实现&#10;- 创建PlSelectorSlotWithEyeIcon通用组件封装眼睛图标逻辑&#10;- 更新PlDiagnosisSelector组件使用新的插槽组件&#10;- 更新PlDrgGroupSelector组件使用新的插槽组件&#10;- 更新PlOperationSelector组件使用新的插槽组件&#10;- 移除废弃的计算属性和样式代码&#10;- 统一眼睛图标的交互逻辑和样式表现" />
+    <MESSAGE value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;doc: 修正诊断类型默认值配置注释&#10;&#10;- 将诊断口径默认值从主诊断0更新为主诊断1&#10;- 更新单选诊断类型的注释说明&#10;- 同步修改组件中的诊断类型初始值注释" />
+    <option name="LAST_COMMIT_MESSAGE" value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;doc: 修正诊断类型默认值配置注释&#10;&#10;- 将诊断口径默认值从主诊断0更新为主诊断1&#10;- 更新单选诊断类型的注释说明&#10;- 同步修改组件中的诊断类型初始值注释" />
   </component>
   <component name="VueSettings">
     <option name="innerServiceType" value="TS_SERVICE" />
