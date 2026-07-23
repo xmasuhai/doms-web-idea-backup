@@ -44,11 +44,8 @@
     <option name="selectedModelId" value="auto" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a32d6ec8-0d74-4a1b-8cad-0ab91948ca3e" name="Changes" comment="v126:feat/refactor:需求2588-科室端-收支分析-总览、收入总览两个页面，收入口径选择‘开单收入’时，整体分析Tab页、门急诊分析Tab、住院分析Tab页的‘医疗盈余分析表’表的各项收入下钻页，‘对比分析’图替换成对应收入分析表和费用上升前十帕累托图&#10;refactor(BIEAnalysis): 优化收入分析模块布局配置&#10;&#10;- 将 PlItemLayout 组件的绑定属性重构为计算属性 getPlItemLayoutBind&#10;- 移除硬编码的 lastRowBottomMargin 和 rowNum 属性&#10;- 使用 v-bind 指令动态绑定组件属性&#10;- 根据医疗服务类型动态设置底部边距样式类">
-      <change beforePath="$PROJECT_DIR$/src/component/diseaseAnalysis/hospital/diagnosis-operation-detail/DiagnosisOperationDetailDrilldownFeeTypeTableHosp.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/diseaseAnalysis/hospital/diagnosis-operation-detail/DiagnosisOperationDetailDrilldownFeeTypeTableHosp.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/diseaseAnalysis/hospital/diagnosis-operation-detail/DiagnosisOperationDetailDrilldownTableHosp.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/diseaseAnalysis/hospital/diagnosis-operation-detail/DiagnosisOperationDetailDrilldownTableHosp.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/diseaseAnalysis/hospital/diagnosis-operation-detail/DiagnosisOperationDetailTableHosp.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/diseaseAnalysis/hospital/diagnosis-operation-detail/DiagnosisOperationDetailTableHosp.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/tool/diagnosis-operation-detail/PlDimensionListSelector.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/tool/diagnosis-operation-detail/PlDimensionListSelector.vue" afterDir="false" />
+    <list default="true" id="a32d6ec8-0d74-4a1b-8cad-0ab91948ca3e" name="Changes" comment="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;refactor(diseaseAnalysis): 优化诊断手术详情表格数据清理逻辑&#10;&#10;- 在多个组件中添加 clearTable 方法用于清空表格列和数据&#10;- 在日期参数变化时调用 clearTable 清理表格状态&#10;- 在维度类型变化时调用 clearTable 清理表格状态&#10;- 在请求数据前调用 clearTable 确保表格状态重置&#10;- 移除维度列表选择器中的多余检查键以简化验证逻辑">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <list id="bd8e474f-42c8-444f-9f2b-07be811ba86b" name="ignore-on-commit" comment="ignore-on-commit" />
     <option name="SHOW_DIALOG" value="false" />
@@ -2707,15 +2704,7 @@
       <workItem from="1784623910570" duration="294000" />
       <workItem from="1784624264725" duration="13695000" />
       <workItem from="1784684262611" duration="36252000" />
-      <workItem from="1784768095682" duration="21897000" />
-    </task>
-    <task id="LOCAL-04485" summary="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(hospital): 添加病组分析诊断操作明细报表接口&#10;&#10;- 实现诊断下拉框数据获取接口&#10;- 实现操作下拉框数据获取接口&#10;- 实现DRG病组下拉框数据获取接口&#10;- 集成axios请求库进行HTTP通信&#10;- 添加完整的文件头部注释信息">
-      <option name="closed" value="true" />
-      <created>1784624684010</created>
-      <option name="number" value="04485" />
-      <option name="presentableId" value="LOCAL-04485" />
-      <option name="project" value="LOCAL" />
-      <updated>1784624684011</updated>
+      <workItem from="1784768095682" duration="22584000" />
     </task>
     <task id="LOCAL-04486" summary="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;refactor(DiagnosisOperationDetailHosp): 优化选择器组件的数据绑定&#10;&#10;- 将收入口径和病组成本选择器的属性提取为独立计算属性&#10;- 使用v-bind简化模板中的属性传递&#10;- 移除冗余的硬编码属性配置">
       <option name="closed" value="true" />
@@ -3101,7 +3090,15 @@
       <option name="project" value="LOCAL" />
       <updated>1784788850382</updated>
     </task>
-    <option name="localTasksCounter" value="4534" />
+    <task id="LOCAL-04534" summary="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;refactor(diseaseAnalysis): 优化诊断手术详情表格数据清理逻辑&#10;&#10;- 在多个组件中添加 clearTable 方法用于清空表格列和数据&#10;- 在日期参数变化时调用 clearTable 清理表格状态&#10;- 在维度类型变化时调用 clearTable 清理表格状态&#10;- 在请求数据前调用 clearTable 确保表格状态重置&#10;- 移除维度列表选择器中的多余检查键以简化验证逻辑">
+      <option name="closed" value="true" />
+      <created>1784791327881</created>
+      <option name="number" value="04534" />
+      <option name="presentableId" value="LOCAL-04534" />
+      <option name="project" value="LOCAL" />
+      <updated>1784791327882</updated>
+    </task>
+    <option name="localTasksCounter" value="4535" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -3122,7 +3119,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="MARK_IGNORED_AS_EXCLUDED" value="true" />
-    <MESSAGE value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(hospital): 添加诊断操作明细报表维度下拉框功能&#10;&#10;- 引入 to 工具函数和 fetchDrilldownDimensionSelectOptions API&#10;- 新增 dimensionTypeLoading 和 dimensionTypeOptions 状态字段&#10;- 添加 getDimensionTypeRequestParams getter 方法&#10;- 实现 requestDimensionTypeOptions 异步操作方法&#10;- 集成维度类型选项数据获取和映射逻辑" />
     <MESSAGE value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(diseaseAnalysis): 添加诊断操作明细下钻表格组件&#10;&#10;- 在 DiagnosisOperationDetailDrilldownFeeTypeTableHosp 组件中添加样式类名&#10;- 在 DiagnosisOperationDetailDrilldownTableHosp 组件中添加维度类型选择器&#10;- 新增 dimensionType 数据属性和相关计算属性&#10;- 添加维度类型选项监听器和初始化逻辑&#10;- 在主页面中引入并注册新的下钻表格组件&#10;- 更新页面布局结构以包含新的明细表格" />
     <MESSAGE value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(diagnosis-operation-detail): 添加诊断操作明细报表维度列表选择器组件&#10;&#10;- 创建 PlDimensionListSelector 组件用于诊断操作明细报表维度选择&#10;- 集成 PlSelect 下拉框组件并配置相关绑定属性&#10;- 实现维度列表数据请求功能，支持钻取维度数据获取&#10;- 添加参数验证逻辑，确保日期和维度类型参数有效性&#10;- 实现加载状态管理和错误处理机制&#10;- 配置默认选中第一个选项的功能并触发相应事件" />
     <MESSAGE value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;fix(api): 修复诊断操作明细费用类型下拉框接口参数问题&#10;&#10;- 移除了 fetchDrilldownFeeTypeSelectOptions 函数的 params 参数" />
@@ -3147,7 +3143,8 @@
     <MESSAGE value="v126:feat/refactor:需求2588-科室端-收支分析-总览、收入总览两个页面，收入口径选择‘开单收入’时，整体分析Tab页、门急诊分析Tab、住院分析Tab页的‘医疗盈余分析表’表的各项收入下钻页，‘对比分析’图替换成对应收入分析表和费用上升前十帕累托图&#10;fix(BIEAnalysis): 更新收入分析模块的Vuex状态映射&#10;&#10;- 添加mapState辅助函数以简化组件状态访问" />
     <MESSAGE value="v126:feat/refactor:需求2588-科室端-收支分析-总览、收入总览两个页面，收入口径选择‘开单收入’时，整体分析Tab页、门急诊分析Tab、住院分析Tab页的‘医疗盈余分析表’表的各项收入下钻页，‘对比分析’图替换成对应收入分析表和费用上升前十帕累托图&#10;fix(income): 修复收入分析模块布局间距问题&#10;&#10;- 为PlItemLayout组件添加lastRowBottomMargin属性以调整底部边距&#10;- 解决门急诊和住院费用项目排名前十组件的布局间距问题" />
     <MESSAGE value="v126:feat/refactor:需求2588-科室端-收支分析-总览、收入总览两个页面，收入口径选择‘开单收入’时，整体分析Tab页、门急诊分析Tab、住院分析Tab页的‘医疗盈余分析表’表的各项收入下钻页，‘对比分析’图替换成对应收入分析表和费用上升前十帕累托图&#10;refactor(BIEAnalysis): 优化收入分析模块布局配置&#10;&#10;- 将 PlItemLayout 组件的绑定属性重构为计算属性 getPlItemLayoutBind&#10;- 移除硬编码的 lastRowBottomMargin 和 rowNum 属性&#10;- 使用 v-bind 指令动态绑定组件属性&#10;- 根据医疗服务类型动态设置底部边距样式类" />
-    <option name="LAST_COMMIT_MESSAGE" value="v126:feat/refactor:需求2588-科室端-收支分析-总览、收入总览两个页面，收入口径选择‘开单收入’时，整体分析Tab页、门急诊分析Tab、住院分析Tab页的‘医疗盈余分析表’表的各项收入下钻页，‘对比分析’图替换成对应收入分析表和费用上升前十帕累托图&#10;refactor(BIEAnalysis): 优化收入分析模块布局配置&#10;&#10;- 将 PlItemLayout 组件的绑定属性重构为计算属性 getPlItemLayoutBind&#10;- 移除硬编码的 lastRowBottomMargin 和 rowNum 属性&#10;- 使用 v-bind 指令动态绑定组件属性&#10;- 根据医疗服务类型动态设置底部边距样式类" />
+    <MESSAGE value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;refactor(diseaseAnalysis): 优化诊断手术详情表格数据清理逻辑&#10;&#10;- 在多个组件中添加 clearTable 方法用于清空表格列和数据&#10;- 在日期参数变化时调用 clearTable 清理表格状态&#10;- 在维度类型变化时调用 clearTable 清理表格状态&#10;- 在请求数据前调用 clearTable 确保表格状态重置&#10;- 移除维度列表选择器中的多余检查键以简化验证逻辑" />
+    <option name="LAST_COMMIT_MESSAGE" value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;refactor(diseaseAnalysis): 优化诊断手术详情表格数据清理逻辑&#10;&#10;- 在多个组件中添加 clearTable 方法用于清空表格列和数据&#10;- 在日期参数变化时调用 clearTable 清理表格状态&#10;- 在维度类型变化时调用 clearTable 清理表格状态&#10;- 在请求数据前调用 clearTable 确保表格状态重置&#10;- 移除维度列表选择器中的多余检查键以简化验证逻辑" />
   </component>
   <component name="VueSettings">
     <option name="innerServiceType" value="TS_SERVICE" />
