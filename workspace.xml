@@ -44,8 +44,9 @@
     <option name="selectedModelId" value="auto" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a32d6ec8-0d74-4a1b-8cad-0ab91948ca3e" name="Changes" comment="v126:feat/refactor:需求2588-科室端-收支分析-总览、收入总览两个页面，收入口径选择‘开单收入’时，整体分析Tab页、门急诊分析Tab、住院分析Tab页的‘医疗盈余分析表’表的各项收入下钻页，‘对比分析’图替换成对应收入分析表和费用上升前十帕累托图&#10;feat(BIEAnalysis): 添加收入口径计算逻辑和菏泽市立医院模块显示控制&#10;&#10;- 从 MAIN_TAB_TYPE_CODE 中新增导入 TAB_CODE_OUTPATIENT 和 TAB_CODE_IN_HOSPITAL&#10;- 从 INCOME_TYPE_CODE_HASH 中新增导入 CODE_DEPT_BILLING_INCOME&#10;- 添加 getIfBilling 计算属性用于判断收入口径是否为科室开单收入&#10;- 修复注释中&quot;陈总 整体分析&quot;为&quot;是否 整体分析&quot;&#10;- 添加 getIfShowModuleSdhz 计算属性用于控制菏泽市立医院模块显示&#10;- 支持整体分析、门急诊分析、住院分析三种 tabs 的开单收入模块显示控制">
+    <list default="true" id="a32d6ec8-0d74-4a1b-8cad-0ab91948ca3e" name="Changes" comment="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(DiagnosisOperationDetailDrilldownFeeTypeTableHosp): 添加表格排序功能支持&#10;&#10;- 引入 useIfHasSequencableFalseRow 和 useCalcSequencableFalseRows 钩子函数&#10;- 实现 getIfHasSequencableFalseRows 方法检测表格是否存在不可排序行&#10;- 实现 getStartSortRow 方法计算表格排序起始行&#10;- 在 getTableBindData 中动态绑定 startSortRow 属性以支持表格排序配置">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/config/queryConfig.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/config/queryConfig.js" afterDir="false" />
     </list>
     <list id="bd8e474f-42c8-444f-9f2b-07be811ba86b" name="ignore-on-commit" comment="ignore-on-commit" />
     <option name="SHOW_DIALOG" value="false" />
@@ -2704,15 +2705,7 @@
       <workItem from="1784623910570" duration="294000" />
       <workItem from="1784624264725" duration="13695000" />
       <workItem from="1784684262611" duration="36252000" />
-      <workItem from="1784768095682" duration="7595000" />
-    </task>
-    <task id="LOCAL-04473" summary="v126:feat/refactor: v125:feat/refactor:需求2467-前端代码规范化修改-收支余分析 /诊间成本估算【时间段】-诊间结余估算">
-      <option name="closed" value="true" />
-      <created>1784535212646</created>
-      <option name="number" value="04473" />
-      <option name="presentableId" value="LOCAL-04473" />
-      <option name="project" value="LOCAL" />
-      <updated>1784535212646</updated>
+      <workItem from="1784768095682" duration="9098000" />
     </task>
     <task id="LOCAL-04474" summary="v126:feat/refactor: v125:feat/refactor:需求2467-前端代码规范化修改-收支余分析 /诊间成本估算【时间段】-诊间结余估算&#10;refactor(cost): 诊间估算对话框组件结构&#10;&#10;- 移除未使用的Vuex映射导入语句&#10;- 添加elemId工具函数导入用于元素标识&#10;- 将elemId注入到组件数据中便于表格ID生成&#10;- 移除空的生命周期钩子函数声明&#10;- 简化组件数据结构定义">
       <option name="closed" value="true" />
@@ -3098,7 +3091,15 @@
       <option name="project" value="LOCAL" />
       <updated>1784775513334</updated>
     </task>
-    <option name="localTasksCounter" value="4522" />
+    <task id="LOCAL-04522" summary="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(DiagnosisOperationDetailDrilldownFeeTypeTableHosp): 添加表格排序功能支持&#10;&#10;- 引入 useIfHasSequencableFalseRow 和 useCalcSequencableFalseRows 钩子函数&#10;- 实现 getIfHasSequencableFalseRows 方法检测表格是否存在不可排序行&#10;- 实现 getStartSortRow 方法计算表格排序起始行&#10;- 在 getTableBindData 中动态绑定 startSortRow 属性以支持表格排序配置">
+      <option name="closed" value="true" />
+      <created>1784777271009</created>
+      <option name="number" value="04522" />
+      <option name="presentableId" value="LOCAL-04522" />
+      <option name="project" value="LOCAL" />
+      <updated>1784777271009</updated>
+    </task>
+    <option name="localTasksCounter" value="4523" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -3119,7 +3120,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="MARK_IGNORED_AS_EXCLUDED" value="true" />
-    <MESSAGE value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(drg): 添加DRG病组选择器功能&#10;&#10;- 新增PlDrgGroupSelector组件实现DRG病组筛选功能&#10;- 在DiagnosisOperationDetailHosp页面集成DRG病组选择器&#10;- 配置DRG病组选择器默认不选状态并添加远程搜索功能&#10;- 实现选择器关键词过滤和防抖请求优化&#10;- 添加选择器标签宽度限制样式调整&#10;- 集成日期参数验证确保请求参数有效性" />
     <MESSAGE value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(PlSelect): 添加 visible-change 事件发射功能&#10;&#10;- 在 visibleChange 方法中添加 $emit('visible-change', e) 事件发射&#10;- 支持外部监听下拉框显示/隐藏状态变化" />
     <MESSAGE value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat/refactor: 修改DRG分组选择器下拉框事件处理&#10;&#10;- 将blur事件替换为visible-change事件以正确处理下拉框关闭&#10;- 修改onSelectorBlur方法名为onCloseDropdown并调整逻辑&#10;- 添加可见性检查避免不必要的数据重置" />
     <MESSAGE value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(iconfont): 添加新的图标字体资源&#10;&#10;- 新增 eye-close 图标 (Unicode &amp;#xe702;)&#10;- 新增 eye-open 图标 (Unicode &amp;#xe703;)&#10;- 新增 编辑 图标 (Unicode &amp;#xe701;)&#10;- 更新字体文件时间戳参数&#10;- 在 demo 页面中展示新图标&#10;- 配置图标的 CSS 样式类名&#10;- 更新图标 JSON 配置文件" />
@@ -3144,7 +3144,8 @@
     <MESSAGE value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;fix(diseaseAnalysis): 修复诊断操作详情费用类型表格参数验证&#10;&#10;- 在参数验证的 checkingKeys 中添加 diagnosisCode 和 operationCode 字段&#10;- 确保诊断代码和手术代码变更时触发正确的参数验证逻辑" />
     <MESSAGE value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;fix(diseaseAnalysis): 修复诊断操作明细费用类型表格参数验证问题&#10;&#10;- 添加了对空值参数的验证检查&#10;- 增加了 null、undefined 和空字符串的无效键检测&#10;- 完善了参数校验逻辑以避免潜在的数据处理错误" />
     <MESSAGE value="v126:feat/refactor:需求2588-科室端-收支分析-总览、收入总览两个页面，收入口径选择‘开单收入’时，整体分析Tab页、门急诊分析Tab、住院分析Tab页的‘医疗盈余分析表’表的各项收入下钻页，‘对比分析’图替换成对应收入分析表和费用上升前十帕累托图&#10;feat(BIEAnalysis): 添加收入口径计算逻辑和菏泽市立医院模块显示控制&#10;&#10;- 从 MAIN_TAB_TYPE_CODE 中新增导入 TAB_CODE_OUTPATIENT 和 TAB_CODE_IN_HOSPITAL&#10;- 从 INCOME_TYPE_CODE_HASH 中新增导入 CODE_DEPT_BILLING_INCOME&#10;- 添加 getIfBilling 计算属性用于判断收入口径是否为科室开单收入&#10;- 修复注释中&quot;陈总 整体分析&quot;为&quot;是否 整体分析&quot;&#10;- 添加 getIfShowModuleSdhz 计算属性用于控制菏泽市立医院模块显示&#10;- 支持整体分析、门急诊分析、住院分析三种 tabs 的开单收入模块显示控制" />
-    <option name="LAST_COMMIT_MESSAGE" value="v126:feat/refactor:需求2588-科室端-收支分析-总览、收入总览两个页面，收入口径选择‘开单收入’时，整体分析Tab页、门急诊分析Tab、住院分析Tab页的‘医疗盈余分析表’表的各项收入下钻页，‘对比分析’图替换成对应收入分析表和费用上升前十帕累托图&#10;feat(BIEAnalysis): 添加收入口径计算逻辑和菏泽市立医院模块显示控制&#10;&#10;- 从 MAIN_TAB_TYPE_CODE 中新增导入 TAB_CODE_OUTPATIENT 和 TAB_CODE_IN_HOSPITAL&#10;- 从 INCOME_TYPE_CODE_HASH 中新增导入 CODE_DEPT_BILLING_INCOME&#10;- 添加 getIfBilling 计算属性用于判断收入口径是否为科室开单收入&#10;- 修复注释中&quot;陈总 整体分析&quot;为&quot;是否 整体分析&quot;&#10;- 添加 getIfShowModuleSdhz 计算属性用于控制菏泽市立医院模块显示&#10;- 支持整体分析、门急诊分析、住院分析三种 tabs 的开单收入模块显示控制" />
+    <MESSAGE value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(DiagnosisOperationDetailDrilldownFeeTypeTableHosp): 添加表格排序功能支持&#10;&#10;- 引入 useIfHasSequencableFalseRow 和 useCalcSequencableFalseRows 钩子函数&#10;- 实现 getIfHasSequencableFalseRows 方法检测表格是否存在不可排序行&#10;- 实现 getStartSortRow 方法计算表格排序起始行&#10;- 在 getTableBindData 中动态绑定 startSortRow 属性以支持表格排序配置" />
+    <option name="LAST_COMMIT_MESSAGE" value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(DiagnosisOperationDetailDrilldownFeeTypeTableHosp): 添加表格排序功能支持&#10;&#10;- 引入 useIfHasSequencableFalseRow 和 useCalcSequencableFalseRows 钩子函数&#10;- 实现 getIfHasSequencableFalseRows 方法检测表格是否存在不可排序行&#10;- 实现 getStartSortRow 方法计算表格排序起始行&#10;- 在 getTableBindData 中动态绑定 startSortRow 属性以支持表格排序配置" />
   </component>
   <component name="VueSettings">
     <option name="innerServiceType" value="TS_SERVICE" />
