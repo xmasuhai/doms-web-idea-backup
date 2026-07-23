@@ -44,9 +44,9 @@
     <option name="selectedModelId" value="auto" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a32d6ec8-0d74-4a1b-8cad-0ab91948ca3e" name="Changes" comment="v126:fix/refactor:自定义RW区间输入框-院端 病种分析-总权重-下钻 RW分布-自定义RW区间对话框&#10;fix(RwRangeList): 左闭右开-修复RW范围输入组件显示问题&#10;&#10;- 修正了RW符号的显示顺序，确保正确的数值范围展示">
+    <list default="true" id="a32d6ec8-0d74-4a1b-8cad-0ab91948ca3e" name="Changes" comment="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;fix(diseaseAnalysis): 修复诊断操作详情费用类型表格数据请求问题&#10;&#10;- 将handler函数改为async函数以支持异步操作&#10;- 在requestTableData调用前添加await确保数据加载完成&#10;- 在clearTable方法中重置ifDimensionListReady状态">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/diseaseAnalysis/hospital/total-weight/RwRangeList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/diseaseAnalysis/hospital/total-weight/RwRangeList.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/diseaseMatrix.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/diseaseMatrix.vue" afterDir="false" />
     </list>
     <list id="bd8e474f-42c8-444f-9f2b-07be811ba86b" name="ignore-on-commit" comment="ignore-on-commit" />
     <option name="SHOW_DIALOG" value="false" />
@@ -2705,23 +2705,7 @@
       <workItem from="1784623910570" duration="294000" />
       <workItem from="1784624264725" duration="13695000" />
       <workItem from="1784684262611" duration="36252000" />
-      <workItem from="1784768095682" duration="28987000" />
-    </task>
-    <task id="LOCAL-04494" summary="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(drg): 添加DRG分组选择器功能&#10;&#10;- 集成SvgIcon组件并添加图标切换功能&#10;- 实现DRG病组数据的异步加载和选项绑定&#10;- 添加多选模式和标签折叠显示支持&#10;- 实现选择器禁用状态控制逻辑&#10;- 添加查询参数传递和事件发射机制&#10;- 完善组件属性配置和样式布局">
-      <option name="closed" value="true" />
-      <created>1784687632501</created>
-      <option name="number" value="04494" />
-      <option name="presentableId" value="LOCAL-04494" />
-      <option name="project" value="LOCAL" />
-      <updated>1784687632501</updated>
-    </task>
-    <task id="LOCAL-04495" summary="v126:feat/refactor:需求2582-在科室端，在标杆分析中，“本院”两个字改为“本科室”&#10;feat(benchmarkPanel2): 添加科室数据显示功能支持&#10;&#10;- 引入 config 模块的 getIsDept getter 方法&#10;- 修改 GradientArrowSampler 构造函数以支持 ifDept 参数传递&#10;- 在组件 created 钩子中传入 ifDept 配置参数&#10;- 根据 ifDept 状态动态显示&quot;本科室数据&quot;或&quot;本院数据&quot;标签">
-      <option name="closed" value="true" />
-      <created>1784693315108</created>
-      <option name="number" value="04495" />
-      <option name="presentableId" value="LOCAL-04495" />
-      <option name="project" value="LOCAL" />
-      <updated>1784693315108</updated>
+      <workItem from="1784768095682" duration="30590000" />
     </task>
     <task id="LOCAL-04496" summary="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;style(selector): 为诊断选择器组件添加样式类名&#10;&#10;- 为 PlDiagnosisSelector 组件添加 diagnosis-selector 类名&#10;- 为 PlOperationSelector 组件添加 operation-selector 类名&#10;- 为两个选择器的弹出层分别添加自定义 popper-class">
       <option name="closed" value="true" />
@@ -3099,7 +3083,23 @@
       <option name="project" value="LOCAL" />
       <updated>1784798493910</updated>
     </task>
-    <option name="localTasksCounter" value="4543" />
+    <task id="LOCAL-04543" summary="v126:fix/refactor:自定义RW区间输入框-院端 病种分析-总权重-下钻 RW分布-自定义RW区间对话框&#10;fix(RwRangeList): 撤销修改-左闭右开-修复RW范围输入组件显示问题">
+      <option name="closed" value="true" />
+      <created>1784798724216</created>
+      <option name="number" value="04543" />
+      <option name="presentableId" value="LOCAL-04543" />
+      <option name="project" value="LOCAL" />
+      <updated>1784798724217</updated>
+    </task>
+    <task id="LOCAL-04544" summary="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;fix(diseaseAnalysis): 修复诊断操作详情费用类型表格数据请求问题&#10;&#10;- 将handler函数改为async函数以支持异步操作&#10;- 在requestTableData调用前添加await确保数据加载完成&#10;- 在clearTable方法中重置ifDimensionListReady状态">
+      <option name="closed" value="true" />
+      <created>1784799229513</created>
+      <option name="number" value="04544" />
+      <option name="presentableId" value="LOCAL-04544" />
+      <option name="project" value="LOCAL" />
+      <updated>1784799229513</updated>
+    </task>
+    <option name="localTasksCounter" value="4545" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -3120,8 +3120,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="MARK_IGNORED_AS_EXCLUDED" value="true" />
-    <MESSAGE value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;refactor(diseaseAnalysis): 优化诊断手术详情表格组件&#10;&#10;- 调整请求参数结构，将 commonRequestParams 移至对象开头&#10;- 添加对 commonRequestParams 的监听，实现数据变化时自动更新&#10;- 为诊断和手术名称添加空值处理，避免 undefined 显示问题" />
-    <MESSAGE value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;fix(diseaseAnalysis): 修复诊断操作详情费用类型表格参数验证&#10;&#10;- 在参数验证的 checkingKeys 中添加 diagnosisCode 和 operationCode 字段&#10;- 确保诊断代码和手术代码变更时触发正确的参数验证逻辑" />
     <MESSAGE value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;fix(diseaseAnalysis): 修复诊断操作明细费用类型表格参数验证问题&#10;&#10;- 添加了对空值参数的验证检查&#10;- 增加了 null、undefined 和空字符串的无效键检测&#10;- 完善了参数校验逻辑以避免潜在的数据处理错误" />
     <MESSAGE value="v126:feat/refactor:需求2588-科室端-收支分析-总览、收入总览两个页面，收入口径选择‘开单收入’时，整体分析Tab页、门急诊分析Tab、住院分析Tab页的‘医疗盈余分析表’表的各项收入下钻页，‘对比分析’图替换成对应收入分析表和费用上升前十帕累托图&#10;feat(BIEAnalysis): 添加收入口径计算逻辑和菏泽市立医院模块显示控制&#10;&#10;- 从 MAIN_TAB_TYPE_CODE 中新增导入 TAB_CODE_OUTPATIENT 和 TAB_CODE_IN_HOSPITAL&#10;- 从 INCOME_TYPE_CODE_HASH 中新增导入 CODE_DEPT_BILLING_INCOME&#10;- 添加 getIfBilling 计算属性用于判断收入口径是否为科室开单收入&#10;- 修复注释中&quot;陈总 整体分析&quot;为&quot;是否 整体分析&quot;&#10;- 添加 getIfShowModuleSdhz 计算属性用于控制菏泽市立医院模块显示&#10;- 支持整体分析、门急诊分析、住院分析三种 tabs 的开单收入模块显示控制" />
     <MESSAGE value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(DiagnosisOperationDetailDrilldownFeeTypeTableHosp): 添加表格排序功能支持&#10;&#10;- 引入 useIfHasSequencableFalseRow 和 useCalcSequencableFalseRows 钩子函数&#10;- 实现 getIfHasSequencableFalseRows 方法检测表格是否存在不可排序行&#10;- 实现 getStartSortRow 方法计算表格排序起始行&#10;- 在 getTableBindData 中动态绑定 startSortRow 属性以支持表格排序配置" />
@@ -3145,7 +3143,9 @@
     <MESSAGE value="v126:feat/refactor:需求变更1943-全院-重点设备效益分析-诊断类设备分析/治疗类设备分析-设备稼动率明细：名称显示有误&#10;fix(equipmentBenefitAnalysis): 修复设备稼动率明细标题显示问题&#10;&#10;- 移除空设备名称前缀中的多余连字符&#10;- 优化分类数据为空时的标题处理逻辑&#10;- 确保标题格式的一致性，避免显示空白前缀" />
     <MESSAGE value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;fix(diseaseAnalysis): 处理维度列表数据为空时也可请求&#10;&#10;- 添加 ifDimensionListReady 状态标识维度列表是否准备就绪&#10;- 在 PlDimensionListSelector 组件中添加 update:options-ready 事件&#10;- 修改 requestParams 的 handler 为异步函数确保数据加载完成&#10;- 在数据请求完成后触发 options-ready 事件&#10;- 更新表格数据请求逻辑使用新的状态判断条件" />
     <MESSAGE value="v126:fix/refactor:自定义RW区间输入框-院端 病种分析-总权重-下钻 RW分布-自定义RW区间对话框&#10;fix(RwRangeList): 左闭右开-修复RW范围输入组件显示问题&#10;&#10;- 修正了RW符号的显示顺序，确保正确的数值范围展示" />
-    <option name="LAST_COMMIT_MESSAGE" value="v126:fix/refactor:自定义RW区间输入框-院端 病种分析-总权重-下钻 RW分布-自定义RW区间对话框&#10;fix(RwRangeList): 左闭右开-修复RW范围输入组件显示问题&#10;&#10;- 修正了RW符号的显示顺序，确保正确的数值范围展示" />
+    <MESSAGE value="v126:fix/refactor:自定义RW区间输入框-院端 病种分析-总权重-下钻 RW分布-自定义RW区间对话框&#10;fix(RwRangeList): 撤销修改-左闭右开-修复RW范围输入组件显示问题" />
+    <MESSAGE value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;fix(diseaseAnalysis): 修复诊断操作详情费用类型表格数据请求问题&#10;&#10;- 将handler函数改为async函数以支持异步操作&#10;- 在requestTableData调用前添加await确保数据加载完成&#10;- 在clearTable方法中重置ifDimensionListReady状态" />
+    <option name="LAST_COMMIT_MESSAGE" value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;fix(diseaseAnalysis): 修复诊断操作详情费用类型表格数据请求问题&#10;&#10;- 将handler函数改为async函数以支持异步操作&#10;- 在requestTableData调用前添加await确保数据加载完成&#10;- 在clearTable方法中重置ifDimensionListReady状态" />
   </component>
   <component name="VueSettings">
     <option name="innerServiceType" value="TS_SERVICE" />
