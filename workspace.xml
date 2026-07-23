@@ -46,6 +46,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a32d6ec8-0d74-4a1b-8cad-0ab91948ca3e" name="Changes" comment="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;fix(diseaseAnalysis): 修复诊断操作详情费用类型表格数据请求问题&#10;&#10;- 将handler函数改为async函数以支持异步操作&#10;- 在requestTableData调用前添加await确保数据加载完成&#10;- 在clearTable方法中重置ifDimensionListReady状态">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/diseaseAnalysis/hospital/diagnosis-operation-detail/DiagnosisOperationDetailTableHosp.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/diseaseAnalysis/hospital/diagnosis-operation-detail/DiagnosisOperationDetailTableHosp.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/diseaseMatrix.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/diseaseMatrix.vue" afterDir="false" />
     </list>
     <list id="bd8e474f-42c8-444f-9f2b-07be811ba86b" name="ignore-on-commit" comment="ignore-on-commit" />
@@ -2705,7 +2706,7 @@
       <workItem from="1784623910570" duration="294000" />
       <workItem from="1784624264725" duration="13695000" />
       <workItem from="1784684262611" duration="36252000" />
-      <workItem from="1784768095682" duration="30590000" />
+      <workItem from="1784768095682" duration="31519000" />
     </task>
     <task id="LOCAL-04496" summary="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;style(selector): 为诊断选择器组件添加样式类名&#10;&#10;- 为 PlDiagnosisSelector 组件添加 diagnosis-selector 类名&#10;- 为 PlOperationSelector 组件添加 operation-selector 类名&#10;- 为两个选择器的弹出层分别添加自定义 popper-class">
       <option name="closed" value="true" />
