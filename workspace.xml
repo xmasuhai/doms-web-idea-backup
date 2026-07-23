@@ -44,7 +44,7 @@
     <option name="selectedModelId" value="auto" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a32d6ec8-0d74-4a1b-8cad-0ab91948ca3e" name="Changes" comment="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;fix(diseaseAnalysis): 处理维度列表数据为空时也可请求&#10;&#10;- 添加 ifDimensionListReady 状态标识维度列表是否准备就绪&#10;- 在 PlDimensionListSelector 组件中添加 update:options-ready 事件&#10;- 修改 requestParams 的 handler 为异步函数确保数据加载完成&#10;- 在数据请求完成后触发 options-ready 事件&#10;- 更新表格数据请求逻辑使用新的状态判断条件">
+    <list default="true" id="a32d6ec8-0d74-4a1b-8cad-0ab91948ca3e" name="Changes" comment="v126:fix/refactor:自定义RW区间输入框-院端 病种分析-总权重-下钻 RW分布-自定义RW区间对话框&#10;fix(RwRangeList): 左闭右开-修复RW范围输入组件显示问题&#10;&#10;- 修正了RW符号的显示顺序，确保正确的数值范围展示">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/diseaseAnalysis/hospital/total-weight/RwRangeList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/diseaseAnalysis/hospital/total-weight/RwRangeList.vue" afterDir="false" />
     </list>
@@ -344,101 +344,101 @@
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "2a1a7435_parent_location_hash": "2a1a7435",
-    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
-    "FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder0": "0",
-    "FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder1": "1",
-    "FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder2": "2",
-    "FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder3": "3",
-    "FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder4": "4",
-    "FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder5": "5",
-    "FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth0": "75",
-    "FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth1": "75",
-    "FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth2": "75",
-    "FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth3": "75",
-    "FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth4": "75",
-    "FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth5": "1426",
-    "FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder0": "0",
-    "FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder1": "1",
-    "FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder2": "2",
-    "FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder3": "3",
-    "FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder4": "4",
-    "FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder5": "5",
-    "FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth0": "301",
-    "FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth1": "301",
-    "FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth2": "300",
-    "FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth3": "299",
-    "FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth4": "300",
-    "FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth5": "300",
-    "Node.js.useAllCheckColumn.js.executor": "Debug",
-    "Notification.DisplayName-DoNotAsk-JavaScript: Code Vision Performance": "JavaScript: Code Vision 性能观察程序",
-    "Notification.DoNotAsk-JavaScript: Code Vision Performance": "true",
-    "RunOnceActivity.CodyProjectSettingsMigration": "true",
-    "RunOnceActivity.MCP Project settings loaded": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "SHELLCHECK.PATH": "C:\\Users\\xushuai\\AppData\\Roaming\\JetBrains\\WebStorm2024.1\\plugins\\Shell Script\\shellcheck.exe",
-    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "app.teamhub.selectedTeam": "https://github.com/xmastan/department-management-web",
-    "buildsPattern": "",
-    "chainlesschain.chat.sessionIds": "",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "com.codeium.enabled": "true",
-    "com.codeium.snoozedEndTime": "0",
-    "com.github.patou.gitmoji.migration-offered": "true",
-    "com.google.cloudcode.ide_session_index": "20240202_0001",
-    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "copilot.chat.legacySessionMetadata.migrated": "true",
-    "dart.analysis.tool.window.visible": "false",
-    "didalgo.chatgpt.ToolWindow.ACTIVE": "GPT_4",
-    "file.manager.left.side.uri": "file:///C:/Users/xushuai/",
-    "file.manager.right.side.uri": "file:///C:/Users/xushuai/",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "javascript.nodejs.core.library.configured.version": "18.20.8",
-    "javascript.nodejs.core.library.typings.version": "18.19.130",
-    "javascript.preferred.runtime.type.id": "node",
-    "junie.onboarding.icon.badge.shown": "true",
-    "last_opened_file_path": "D:/project/doms_web/src/assets/iconfont",
-    "list.type.of.created.stylesheet": "SCSS",
-    "network.radicle.jetbrains.radiclejetbrainsplugin.config.path": "",
-    "network.radicle.jetbrains.radiclejetbrainsplugin.config.radSeedKey": "http://localhost:8080",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.jshint": "true",
-    "node.js.detected.package.standard": "true",
-    "node.js.detected.package.stylelint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.jshint": "",
-    "node.js.selected.package.standard": "",
-    "node.js.selected.package.stylelint": "",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_interpreter_path": "node",
-    "nodejs_package_manager_path": "npm",
-    "npm.testing.executor": "Debug",
-    "npm.本地构建打包.executor": "Run",
-    "npm.本地运行项目.executor": "Debug",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
-    "settings.editor.splitter.proportion": "0.19736843",
-    "to.speed.mode.migration.done": "true",
-    "ts.external.directory.path": "D:\\software\\JetBrains\\WebStorm 2024.3\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
-    "typescript.add.unambiguous.imports.on.the.fly": "true",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;2a1a7435_parent_location_hash&quot;: &quot;2a1a7435&quot;,
+    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
+    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder0&quot;: &quot;0&quot;,
+    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder1&quot;: &quot;1&quot;,
+    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder2&quot;: &quot;2&quot;,
+    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder3&quot;: &quot;3&quot;,
+    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder4&quot;: &quot;4&quot;,
+    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder5&quot;: &quot;5&quot;,
+    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth0&quot;: &quot;75&quot;,
+    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth1&quot;: &quot;75&quot;,
+    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth2&quot;: &quot;75&quot;,
+    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth3&quot;: &quot;75&quot;,
+    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth4&quot;: &quot;75&quot;,
+    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth5&quot;: &quot;1426&quot;,
+    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder0&quot;: &quot;0&quot;,
+    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder1&quot;: &quot;1&quot;,
+    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder2&quot;: &quot;2&quot;,
+    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder3&quot;: &quot;3&quot;,
+    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder4&quot;: &quot;4&quot;,
+    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder5&quot;: &quot;5&quot;,
+    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth0&quot;: &quot;301&quot;,
+    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth1&quot;: &quot;301&quot;,
+    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth2&quot;: &quot;300&quot;,
+    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth3&quot;: &quot;299&quot;,
+    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth4&quot;: &quot;300&quot;,
+    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth5&quot;: &quot;300&quot;,
+    &quot;Node.js.useAllCheckColumn.js.executor&quot;: &quot;Debug&quot;,
+    &quot;Notification.DisplayName-DoNotAsk-JavaScript: Code Vision Performance&quot;: &quot;JavaScript: Code Vision 性能观察程序&quot;,
+    &quot;Notification.DoNotAsk-JavaScript: Code Vision Performance&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.CodyProjectSettingsMigration&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;SHELLCHECK.PATH&quot;: &quot;C:\\Users\\xushuai\\AppData\\Roaming\\JetBrains\\WebStorm2024.1\\plugins\\Shell Script\\shellcheck.exe&quot;,
+    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;app.teamhub.selectedTeam&quot;: &quot;https://github.com/xmastan/department-management-web&quot;,
+    &quot;buildsPattern&quot;: &quot;&quot;,
+    &quot;chainlesschain.chat.sessionIds&quot;: &quot;&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;com.codeium.enabled&quot;: &quot;true&quot;,
+    &quot;com.codeium.snoozedEndTime&quot;: &quot;0&quot;,
+    &quot;com.github.patou.gitmoji.migration-offered&quot;: &quot;true&quot;,
+    &quot;com.google.cloudcode.ide_session_index&quot;: &quot;20240202_0001&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;copilot.chat.legacySessionMetadata.migrated&quot;: &quot;true&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;didalgo.chatgpt.ToolWindow.ACTIVE&quot;: &quot;GPT_4&quot;,
+    &quot;file.manager.left.side.uri&quot;: &quot;file:///C:/Users/xushuai/&quot;,
+    &quot;file.manager.right.side.uri&quot;: &quot;file:///C:/Users/xushuai/&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;18.20.8&quot;,
+    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;18.19.130&quot;,
+    &quot;javascript.preferred.runtime.type.id&quot;: &quot;node&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/project/doms_web/src/assets/iconfont&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;SCSS&quot;,
+    &quot;network.radicle.jetbrains.radiclejetbrainsplugin.config.path&quot;: &quot;&quot;,
+    &quot;network.radicle.jetbrains.radiclejetbrainsplugin.config.radSeedKey&quot;: &quot;http://localhost:8080&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.jshint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.stylelint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.jshint&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.stylelint&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;npm.testing.executor&quot;: &quot;Debug&quot;,
+    &quot;npm.本地构建打包.executor&quot;: &quot;Run&quot;,
+    &quot;npm.本地运行项目.executor&quot;: &quot;Debug&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
+    &quot;settings.editor.splitter.proportion&quot;: &quot;0.19736843&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;D:\\software\\JetBrains\\WebStorm 2024.3\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;,
+    &quot;typescript.add.unambiguous.imports.on.the.fly&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "stardust.markdown.MarkdownSplitEditorSuppressor:keyList": [],
-    "vue.recent.templates": [
-      "Vue Options API Component"
+  &quot;keyToStringList&quot;: {
+    &quot;stardust.markdown.MarkdownSplitEditorSuppressor:keyList&quot;: [],
+    &quot;vue.recent.templates&quot;: [
+      &quot;Vue Options API Component&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\project\doms_web\src\assets\iconfont" />
@@ -2705,15 +2705,7 @@
       <workItem from="1784623910570" duration="294000" />
       <workItem from="1784624264725" duration="13695000" />
       <workItem from="1784684262611" duration="36252000" />
-      <workItem from="1784768095682" duration="28758000" />
-    </task>
-    <task id="LOCAL-04493" summary="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;refactor(diagnosis-selector): 重构诊断选择器组件结构&#10;&#10;- 调整属性配置顺序，将disabled属性移至正确位置&#10;- 添加placeholder提示文本改善用户体验&#10;- 重新组织方法定义顺序，将toggleIconState方法提前">
-      <option name="closed" value="true" />
-      <created>1784687073255</created>
-      <option name="number" value="04493" />
-      <option name="presentableId" value="LOCAL-04493" />
-      <option name="project" value="LOCAL" />
-      <updated>1784687073255</updated>
+      <workItem from="1784768095682" duration="28987000" />
     </task>
     <task id="LOCAL-04494" summary="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(drg): 添加DRG分组选择器功能&#10;&#10;- 集成SvgIcon组件并添加图标切换功能&#10;- 实现DRG病组数据的异步加载和选项绑定&#10;- 添加多选模式和标签折叠显示支持&#10;- 实现选择器禁用状态控制逻辑&#10;- 添加查询参数传递和事件发射机制&#10;- 完善组件属性配置和样式布局">
       <option name="closed" value="true" />
@@ -3099,7 +3091,15 @@
       <option name="project" value="LOCAL" />
       <updated>1784798122105</updated>
     </task>
-    <option name="localTasksCounter" value="4542" />
+    <task id="LOCAL-04542" summary="v126:fix/refactor:自定义RW区间输入框-院端 病种分析-总权重-下钻 RW分布-自定义RW区间对话框&#10;fix(RwRangeList): 左闭右开-修复RW范围输入组件显示问题&#10;&#10;- 修正了RW符号的显示顺序，确保正确的数值范围展示">
+      <option name="closed" value="true" />
+      <created>1784798493910</created>
+      <option name="number" value="04542" />
+      <option name="presentableId" value="LOCAL-04542" />
+      <option name="project" value="LOCAL" />
+      <updated>1784798493910</updated>
+    </task>
+    <option name="localTasksCounter" value="4543" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -3120,7 +3120,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="MARK_IGNORED_AS_EXCLUDED" value="true" />
-    <MESSAGE value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat: 添加医院诊断操作明细组件的指标参数&#10;&#10;- 为 DiagnosisOperationDetailDrilldownFeeTypeTableHosp 组件设置正确的 indModelCode&#10;- 为 DiagnosisOperationDetailDrilldownTableHosp 组件设置正确的 indModelCode&#10;- 为 DiagnosisOperationDetailTableHosp 组件设置正确的 indModelCode&#10;- 移除维度下拉请求参数中的冗余字段 indModelCode 和 showModuleType" />
     <MESSAGE value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;refactor(diseaseAnalysis): 优化诊断手术详情表格组件&#10;&#10;- 调整请求参数结构，将 commonRequestParams 移至对象开头&#10;- 添加对 commonRequestParams 的监听，实现数据变化时自动更新&#10;- 为诊断和手术名称添加空值处理，避免 undefined 显示问题" />
     <MESSAGE value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;fix(diseaseAnalysis): 修复诊断操作详情费用类型表格参数验证&#10;&#10;- 在参数验证的 checkingKeys 中添加 diagnosisCode 和 operationCode 字段&#10;- 确保诊断代码和手术代码变更时触发正确的参数验证逻辑" />
     <MESSAGE value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;fix(diseaseAnalysis): 修复诊断操作明细费用类型表格参数验证问题&#10;&#10;- 添加了对空值参数的验证检查&#10;- 增加了 null、undefined 和空字符串的无效键检测&#10;- 完善了参数校验逻辑以避免潜在的数据处理错误" />
@@ -3145,7 +3144,8 @@
     <MESSAGE value="v126:feat/refactor:需求变更1943-全院-重点设备效益分析-诊断类设备分析/治疗类设备分析-设备稼动率明细：名称显示有误&#10;fix(equipmentBenefitAnalysis): 解决设备稼动率明细标题显示问题&#10;&#10;- 修复了当设备名称为空时标题显示异常的问题&#10;- 使用可选链操作符避免空值导致的错误&#10;- 确保标题格式的一致性，即使设备名称不存在也能正确显示" />
     <MESSAGE value="v126:feat/refactor:需求变更1943-全院-重点设备效益分析-诊断类设备分析/治疗类设备分析-设备稼动率明细：名称显示有误&#10;fix(equipmentBenefitAnalysis): 修复设备稼动率明细标题显示问题&#10;&#10;- 移除空设备名称前缀中的多余连字符&#10;- 优化分类数据为空时的标题处理逻辑&#10;- 确保标题格式的一致性，避免显示空白前缀" />
     <MESSAGE value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;fix(diseaseAnalysis): 处理维度列表数据为空时也可请求&#10;&#10;- 添加 ifDimensionListReady 状态标识维度列表是否准备就绪&#10;- 在 PlDimensionListSelector 组件中添加 update:options-ready 事件&#10;- 修改 requestParams 的 handler 为异步函数确保数据加载完成&#10;- 在数据请求完成后触发 options-ready 事件&#10;- 更新表格数据请求逻辑使用新的状态判断条件" />
-    <option name="LAST_COMMIT_MESSAGE" value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;fix(diseaseAnalysis): 处理维度列表数据为空时也可请求&#10;&#10;- 添加 ifDimensionListReady 状态标识维度列表是否准备就绪&#10;- 在 PlDimensionListSelector 组件中添加 update:options-ready 事件&#10;- 修改 requestParams 的 handler 为异步函数确保数据加载完成&#10;- 在数据请求完成后触发 options-ready 事件&#10;- 更新表格数据请求逻辑使用新的状态判断条件" />
+    <MESSAGE value="v126:fix/refactor:自定义RW区间输入框-院端 病种分析-总权重-下钻 RW分布-自定义RW区间对话框&#10;fix(RwRangeList): 左闭右开-修复RW范围输入组件显示问题&#10;&#10;- 修正了RW符号的显示顺序，确保正确的数值范围展示" />
+    <option name="LAST_COMMIT_MESSAGE" value="v126:fix/refactor:自定义RW区间输入框-院端 病种分析-总权重-下钻 RW分布-自定义RW区间对话框&#10;fix(RwRangeList): 左闭右开-修复RW范围输入组件显示问题&#10;&#10;- 修正了RW符号的显示顺序，确保正确的数值范围展示" />
   </component>
   <component name="VueSettings">
     <option name="innerServiceType" value="TS_SERVICE" />
