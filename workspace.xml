@@ -44,8 +44,9 @@
     <option name="selectedModelId" value="auto" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a32d6ec8-0d74-4a1b-8cad-0ab91948ca3e" name="Changes" comment="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;refactor(diseaseAnalysis): 优化诊断手术详情表格组件&#10;&#10;- 调整请求参数结构，将 commonRequestParams 移至对象开头&#10;- 添加对 commonRequestParams 的监听，实现数据变化时自动更新&#10;- 为诊断和手术名称添加空值处理，避免 undefined 显示问题">
-      <change beforePath="$PROJECT_DIR$/src/component/diseaseAnalysis/hospital/diagnosis-operation-detail/DiagnosisOperationDetailDrilldownFeeTypeTableHosp.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/diseaseAnalysis/hospital/diagnosis-operation-detail/DiagnosisOperationDetailDrilldownFeeTypeTableHosp.vue" afterDir="false" />
+    <list default="true" id="a32d6ec8-0d74-4a1b-8cad-0ab91948ca3e" name="Changes" comment="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;fix(diseaseAnalysis): 修复诊断操作明细费用类型表格参数验证问题&#10;&#10;- 添加了对空值参数的验证检查&#10;- 增加了 null、undefined 和空字符串的无效键检测&#10;- 完善了参数校验逻辑以避免潜在的数据处理错误">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/modules/BIEAnalysis.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/modules/BIEAnalysis.js" afterDir="false" />
     </list>
     <list id="bd8e474f-42c8-444f-9f2b-07be811ba86b" name="ignore-on-commit" comment="ignore-on-commit" />
     <option name="SHOW_DIALOG" value="false" />
@@ -2704,23 +2705,7 @@
       <workItem from="1784623910570" duration="294000" />
       <workItem from="1784624264725" duration="13695000" />
       <workItem from="1784684262611" duration="36252000" />
-      <workItem from="1784768095682" duration="2413000" />
-    </task>
-    <task id="LOCAL-04470" summary="v126:feat/refactor: 科端-病种分析（市医保DRG） /在院分析 科室在院病组概要汇总（预分组） 在院实时医疗分组-去除旧版组件&#10;refactor(diseaseAnalysis): 优化科室在院病组概要组件结构&#10;&#10;- 移除废弃的 doms-con-h360 组件包装器&#10;- 更新 PlModulePanel 组件配置，添加 hideBox 属性&#10;- 新增 footerData 数据字段支持表格底部数据展示&#10;- 调整数据解析逻辑，增加对 footerData 和 titleTips 的空值处理&#10;- 删除已重构的 DaiHospitalDiseases 组件引用&#10;- 清理废弃的 getIfDevEnv 环境判断逻辑&#10;- 优化组件导入结构，移除不必要的依赖引入">
-      <option name="closed" value="true" />
-      <created>1784529016434</created>
-      <option name="number" value="04470" />
-      <option name="presentableId" value="LOCAL-04470" />
-      <option name="project" value="LOCAL" />
-      <updated>1784529016435</updated>
-    </task>
-    <task id="LOCAL-04471" summary="v126:feat/refactor: 病种分析（省卫健委DRG） /在院分析、病种分析（DIP） /在院分析 科室在院病组概要汇总（预分组） 在院实时医疗分组-去除旧版组件&#10;refactor(diseaseAnalysis): 移除重复组件并简化页面结构&#10;&#10;- 删除了重复的 DaiHospitalDiseases 组件引用&#10;- 移除了 PlSelectGroup 包装器，直接使用 PlQueryWrapper&#10;- 清理了相关的 import 语句和组件注册&#10;- 移除了开发环境判断条件，简化代码逻辑">
-      <option name="closed" value="true" />
-      <created>1784529419562</created>
-      <option name="number" value="04471" />
-      <option name="presentableId" value="LOCAL-04471" />
-      <option name="project" value="LOCAL" />
-      <updated>1784529419562</updated>
+      <workItem from="1784768095682" duration="7057000" />
     </task>
     <task id="LOCAL-04472" summary="v126:feat/refactor: 科端-病种分析（DIP） /在院分析 科室在院病组概要汇总（预分组） 在院实时医疗分组&#10;feat(diseaseAnalysis): 更新住院分析组件功能&#10;&#10;- 移除注释掉的 doms-con-h360 组件包装器&#10;- 添加 footerData 数据属性用于表格底部展示&#10;- 在组件绑定数据中启用 hideBox 属性隐藏边框&#10;- 从接口响应中接收 footerData 数据并赋值给组件">
       <option name="closed" value="true" />
@@ -3098,7 +3083,23 @@
       <option name="project" value="LOCAL" />
       <updated>1784770470566</updated>
     </task>
-    <option name="localTasksCounter" value="4519" />
+    <task id="LOCAL-04519" summary="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;fix(diseaseAnalysis): 修复诊断操作详情费用类型表格参数验证&#10;&#10;- 在参数验证的 checkingKeys 中添加 diagnosisCode 和 operationCode 字段&#10;- 确保诊断代码和手术代码变更时触发正确的参数验证逻辑">
+      <option name="closed" value="true" />
+      <created>1784770638132</created>
+      <option name="number" value="04519" />
+      <option name="presentableId" value="LOCAL-04519" />
+      <option name="project" value="LOCAL" />
+      <updated>1784770638134</updated>
+    </task>
+    <task id="LOCAL-04520" summary="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;fix(diseaseAnalysis): 修复诊断操作明细费用类型表格参数验证问题&#10;&#10;- 添加了对空值参数的验证检查&#10;- 增加了 null、undefined 和空字符串的无效键检测&#10;- 完善了参数校验逻辑以避免潜在的数据处理错误">
+      <option name="closed" value="true" />
+      <created>1784770763063</created>
+      <option name="number" value="04520" />
+      <option name="presentableId" value="LOCAL-04520" />
+      <option name="project" value="LOCAL" />
+      <updated>1784770763063</updated>
+    </task>
+    <option name="localTasksCounter" value="4521" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -3119,8 +3120,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="MARK_IGNORED_AS_EXCLUDED" value="true" />
-    <MESSAGE value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(drg): 添加DRG分组选择器功能&#10;&#10;- 集成SvgIcon组件并添加图标切换功能&#10;- 实现DRG病组数据的异步加载和选项绑定&#10;- 添加多选模式和标签折叠显示支持&#10;- 实现选择器禁用状态控制逻辑&#10;- 添加查询参数传递和事件发射机制&#10;- 完善组件属性配置和样式布局" />
-    <MESSAGE value="v126:feat/refactor:需求2582-在科室端，在标杆分析中，“本院”两个字改为“本科室”&#10;feat(benchmarkPanel2): 添加科室数据显示功能支持&#10;&#10;- 引入 config 模块的 getIsDept getter 方法&#10;- 修改 GradientArrowSampler 构造函数以支持 ifDept 参数传递&#10;- 在组件 created 钩子中传入 ifDept 配置参数&#10;- 根据 ifDept 状态动态显示&quot;本科室数据&quot;或&quot;本院数据&quot;标签" />
     <MESSAGE value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;style(selector): 为诊断选择器组件添加样式类名&#10;&#10;- 为 PlDiagnosisSelector 组件添加 diagnosis-selector 类名&#10;- 为 PlOperationSelector 组件添加 operation-selector 类名&#10;- 为两个选择器的弹出层分别添加自定义 popper-class" />
     <MESSAGE value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(drg): 添加DRG病组选择器功能&#10;&#10;- 新增PlDrgGroupSelector组件实现DRG病组筛选功能&#10;- 在DiagnosisOperationDetailHosp页面集成DRG病组选择器&#10;- 配置DRG病组选择器默认不选状态并添加远程搜索功能&#10;- 实现选择器关键词过滤和防抖请求优化&#10;- 添加选择器标签宽度限制样式调整&#10;- 集成日期参数验证确保请求参数有效性" />
     <MESSAGE value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(PlSelect): 添加 visible-change 事件发射功能&#10;&#10;- 在 visibleChange 方法中添加 $emit('visible-change', e) 事件发射&#10;- 支持外部监听下拉框显示/隐藏状态变化" />
@@ -3144,7 +3143,9 @@
     <MESSAGE value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;refactor(diseaseAnalysis): 优化诊断操作详情费用类型表格组件&#10;&#10;- 添加 getParams 计算依赖变更参数方法&#10;- 将 getRequestParams 替换为 getParams 并添加防抖处理&#10;- 在 dimensionListSelector 组件中清空选项和维度值列表" />
     <MESSAGE value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat: 添加医院诊断操作明细组件的指标参数&#10;&#10;- 为 DiagnosisOperationDetailDrilldownFeeTypeTableHosp 组件设置正确的 indModelCode&#10;- 为 DiagnosisOperationDetailDrilldownTableHosp 组件设置正确的 indModelCode&#10;- 为 DiagnosisOperationDetailTableHosp 组件设置正确的 indModelCode&#10;- 移除维度下拉请求参数中的冗余字段 indModelCode 和 showModuleType" />
     <MESSAGE value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;refactor(diseaseAnalysis): 优化诊断手术详情表格组件&#10;&#10;- 调整请求参数结构，将 commonRequestParams 移至对象开头&#10;- 添加对 commonRequestParams 的监听，实现数据变化时自动更新&#10;- 为诊断和手术名称添加空值处理，避免 undefined 显示问题" />
-    <option name="LAST_COMMIT_MESSAGE" value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;refactor(diseaseAnalysis): 优化诊断手术详情表格组件&#10;&#10;- 调整请求参数结构，将 commonRequestParams 移至对象开头&#10;- 添加对 commonRequestParams 的监听，实现数据变化时自动更新&#10;- 为诊断和手术名称添加空值处理，避免 undefined 显示问题" />
+    <MESSAGE value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;fix(diseaseAnalysis): 修复诊断操作详情费用类型表格参数验证&#10;&#10;- 在参数验证的 checkingKeys 中添加 diagnosisCode 和 operationCode 字段&#10;- 确保诊断代码和手术代码变更时触发正确的参数验证逻辑" />
+    <MESSAGE value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;fix(diseaseAnalysis): 修复诊断操作明细费用类型表格参数验证问题&#10;&#10;- 添加了对空值参数的验证检查&#10;- 增加了 null、undefined 和空字符串的无效键检测&#10;- 完善了参数校验逻辑以避免潜在的数据处理错误" />
+    <option name="LAST_COMMIT_MESSAGE" value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;fix(diseaseAnalysis): 修复诊断操作明细费用类型表格参数验证问题&#10;&#10;- 添加了对空值参数的验证检查&#10;- 增加了 null、undefined 和空字符串的无效键检测&#10;- 完善了参数校验逻辑以避免潜在的数据处理错误" />
   </component>
   <component name="VueSettings">
     <option name="innerServiceType" value="TS_SERVICE" />
