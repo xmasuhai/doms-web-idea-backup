@@ -44,11 +44,9 @@
     <option name="selectedModelId" value="auto" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a32d6ec8-0d74-4a1b-8cad-0ab91948ca3e" name="Changes" comment="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;refactor(diseaseAnalysis): 优化诊断操作详情费用类型表格组件请求参数&#10;&#10;- 将 getDimensionListSelectorRequestParams 替换为 commonRequestParams&#10;- 调整 getRequestParams 中参数顺序以确保正确合并&#10;- 优化 PlDimensionListSelector 组件属性绑定逻辑&#10;- 简化属性解构赋值减少冗余代码&#10;- 统一请求参数处理方式提高代码一致性">
-      <change afterPath="$PROJECT_DIR$/src/api/BIEAnalysis/incomeOverviewApi.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/BIEAnalysis/dept-medical-surplus-analysis/income/medical-service-income/DeptIncomeTypeAnalysisTable.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/BIEAnalysis/dept-medical-surplus-analysis/income/medical-service-income/DeptIncomeTypeAnalysisTable.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/BIEAnalysis/dept-medical-surplus-analysis/income/medical-service-income/InHospitalFeeItemChangeTop10.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/BIEAnalysis/dept-medical-surplus-analysis/income/medical-service-income/InHospitalFeeItemChangeTop10.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/BIEAnalysis/dept-medical-surplus-analysis/income/medical-service-income/OutpatientItemFeeChangeTop10.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/BIEAnalysis/dept-medical-surplus-analysis/income/medical-service-income/OutpatientItemFeeChangeTop10.vue" afterDir="false" />
+    <list default="true" id="a32d6ec8-0d74-4a1b-8cad-0ab91948ca3e" name="Changes" comment="v126:feat/refactor:需求2588-科室端-收支分析-总览、收入总览两个页面，收入口径选择‘开单收入’时，整体分析Tab页、门急诊分析Tab、住院分析Tab页的‘医疗盈余分析表’表的各项收入下钻页，‘对比分析’图替换成对应收入分析表和费用上升前十帕累托图&#10;feat(BIEAnalysis): 添加医疗收入服务模块显示控制功能&#10;&#10;- 在住院费用项目变动前十组件中添加条件渲染判断&#10;- 在门诊费用项目变动前十组件中添加条件渲染判断&#10;- 新增整体和住院业务类型常量定义&#10;- 添加门诊业务类型常量到门诊组件中&#10;- 集成BIEAnalysis状态管理中的医疗服务类型&#10;- 实现模块显示条件计算逻辑&#10;- 根据业务类型动态选择数据请求方法&#10;- 配置不同业务类型的API接口映射关系">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/BIEAnalysis/dept-medical-surplus-analysis/income/IncomeAnalysisModule.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/BIEAnalysis/dept-medical-surplus-analysis/income/IncomeAnalysisModule.vue" afterDir="false" />
     </list>
     <list id="bd8e474f-42c8-444f-9f2b-07be811ba86b" name="ignore-on-commit" comment="ignore-on-commit" />
     <option name="SHOW_DIALOG" value="false" />
@@ -503,9 +501,9 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="npm.本地运行项目" />
       <item itemvalue="npm.build" />
       <item itemvalue="npm.testing" />
-      <item itemvalue="npm.本地运行项目" />
     </list>
   </component>
   <component name="SharedIndexes">
@@ -533,24 +531,6 @@
     <configuration useDefault="false">C:\Users\xushuai\AppData\Roaming\Subversion</configuration>
     <supportedVersion>125</supportedVersion>
     <option name="runUnderTerminal" value="true" />
-  </component>
-  <component name="SvnFileUrlMappingImpl">
-    <option name="myMappingRoots">
-      <list>
-        <SvnCopyRootSimple>
-          <option name="myVcsRoot" value="D:\project\doms_web" />
-          <option name="myCopyRoot" value="D:\project\doms_web" />
-        </SvnCopyRootSimple>
-      </list>
-    </option>
-    <option name="myMoreRealMappingRoots">
-      <list>
-        <SvnCopyRootSimple>
-          <option name="myVcsRoot" value="D:\project\doms_web" />
-          <option name="myCopyRoot" value="D:\project\doms_web" />
-        </SvnCopyRootSimple>
-      </list>
-    </option>
   </component>
   <component name="TDDPredictState">
     <testRunHistory>
@@ -2725,47 +2705,7 @@
       <workItem from="1784623910570" duration="294000" />
       <workItem from="1784624264725" duration="13695000" />
       <workItem from="1784684262611" duration="36252000" />
-      <workItem from="1784768095682" duration="14146000" />
-    </task>
-    <task id="LOCAL-04476" summary="v126:feat/refactor::需求2467-前端代码规范化修改-病种分析（市医保DRG） /出院分析 /科室病组整体运营分析 总权重&#10;feat(diseaseAnalysis): 添加图表组件ID和代码配置&#10;&#10;- 引入elemId工具函数用于生成唯一标识&#10;- 为四个图表组件添加唯一的id属性&#10;- 配置每个图表的code参数以支持数据追踪&#10;- 更新图表1为总权重对比分析并设置对应代码&#10;- 更新图表2为总权重趋势分析并设置对应代码&#10;- 更新图表3为入组例数趋势分析并设置对应代码&#10;- 更新图表4为总权重前十分布占比并设置对应代码">
-      <option name="closed" value="true" />
-      <created>1784605038337</created>
-      <option name="number" value="04476" />
-      <option name="presentableId" value="LOCAL-04476" />
-      <option name="project" value="LOCAL" />
-      <updated>1784605038338</updated>
-    </task>
-    <task id="LOCAL-04477" summary="v126:feat/refactor::需求2305-病人分类下拉框内容改为本地（本地下面是职工、居民）、异地（异地下面是职工、居民），支持多选，当选择本地时，默认本地职工和居民勾选，当选择异地时，默认异地下面的职工和居民勾选。默认本地和异地均被选中。院端-病组分析（DRG支付）-异常病组监控分析-费用分析tab；&#10;feat(diseaseMonitoring): 启用病人分类多选功能并优化参数传递&#10;&#10;- 移除病人分类多选组件的注释禁用状态&#10;- 重构参数传递逻辑，仅在符合条件的医院显示时才传递patTypeList参数&#10;- 优化查询参数处理，支持条件性参数传递&#10;- 恢复被注释的病人分类多选选择器相关计算属性&#10;- 调整代码结构以支持不同医院的差异化功能显示">
-      <option name="closed" value="true" />
-      <created>1784605602472</created>
-      <option name="number" value="04477" />
-      <option name="presentableId" value="LOCAL-04477" />
-      <option name="project" value="LOCAL" />
-      <updated>1784605602472</updated>
-    </task>
-    <task id="LOCAL-04478" summary="v126:feat/refactor::需求2308-CMI值保留后四位小数，支持做成自定义小数位数，科端-病组分析（医保DRG）-出院分析-科室病组整体运营分析-CMI下钻：①CMI对比分析（左边图表和右边文字描述都改）；②CMI入组例数分析；③CMI与科系、全院对比；&#10;feat: 病种分析（市医保DRG） /出院分析 /科室病组整体运营分析 CMI与科系、全院对比 修改图表数据小数精度配置逻辑&#10;&#10;- 修正CMI数据精度配置为动态获取blkCommonData中的值&#10;- 修复y轴刻度精度计算逻辑，支持默认值回退&#10;- 修复x轴刻度精度计算逻辑，确保数值类型的精度设置正确">
-      <option name="closed" value="true" />
-      <created>1784611567299</created>
-      <option name="number" value="04478" />
-      <option name="presentableId" value="LOCAL-04478" />
-      <option name="project" value="LOCAL" />
-      <updated>1784611567299</updated>
-    </task>
-    <task id="LOCAL-04479" summary="v126:feat/refactor::需求2308-CMI值保留后四位小数，支持做成自定义小数位数，科端-病组分析（医保DRG）-出院分析-科室病组整体运营分析-CMI下钻：①CMI对比分析（左边图表和右边文字描述都改）；②CMI入组例数分析；③CMI与科系、全院对比；&#10;feat: 病种分析（市医保DRG） /出院分析 /科室病组整体运营分析 CMI与科系、全院对比 修改图表数据小数精度配置逻辑&#10;refactor(diseaseAnalysis): 优化小数位数配置逻辑&#10;&#10;- 移除不必要的空值合并操作符 (??) 的默认值设置&#10;- 简化 y 轴和 x 轴的小数位数判断条件&#10;- 统一小数位数配置的处理方式&#10;- 提升代码简洁性和可读性">
-      <option name="closed" value="true" />
-      <created>1784612158449</created>
-      <option name="number" value="04479" />
-      <option name="presentableId" value="LOCAL-04479" />
-      <option name="project" value="LOCAL" />
-      <updated>1784612158450</updated>
-    </task>
-    <task id="LOCAL-04480" summary="v126:feat/refactor::需求2175-院端-病组分析（DRG支付） ，新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(router): 添加院端病组分析诊断操作明细报表路由&#10;&#10;- 新增诊断操作明细报表路由配置&#10;- 配置路由路径为 /diagnosisOperationDetailHosp&#10;- 暂时设置路由组件为 operationDisease/index.vue&#10;- 添加页面标题为 诊断操作明细报表">
-      <option name="closed" value="true" />
-      <created>1784615296404</created>
-      <option name="number" value="04480" />
-      <option name="presentableId" value="LOCAL-04480" />
-      <option name="project" value="LOCAL" />
-      <updated>1784615296404</updated>
+      <workItem from="1784768095682" duration="18656000" />
     </task>
     <task id="LOCAL-04481" summary="v126:feat/refactor::需求2175-院端-病组分析（DRG支付） ，新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(router): 添加院端病组分析诊断操作明细报表路由&#10;&#10;- 引入诊断操作明细报表路由配置&#10;- 更新路由配置文件添加新的路由映射&#10;- 在院端疾病分析路由中集成诊断操作明细功能">
       <option name="closed" value="true" />
@@ -3119,7 +3059,47 @@
       <option name="project" value="LOCAL" />
       <updated>1784779045373</updated>
     </task>
-    <option name="localTasksCounter" value="4525" />
+    <task id="LOCAL-04525" summary="v126:feat/refactor:需求2588-科室端-收支分析-总览、收入总览两个页面，收入口径选择‘开单收入’时，整体分析Tab页、门急诊分析Tab、住院分析Tab页的‘医疗盈余分析表’表的各项收入下钻页，‘对比分析’图替换成对应收入分析表和费用上升前十帕累托图&#10;feat(BIEAnalysis): 添加收入总览相关API接口&#10;&#10;- 新增整体分析-收入构成明细表请求接口&#10;- 新增门急诊项目费用变化前十请求接口&#10;- 新增住院项目费用变化前十请求接口&#10;- 新增门急诊分析-收入构成明细表请求接口&#10;- 新增门急诊费用变化前十请求接口&#10;- 新增住院分析-收入构成明细表请求接口&#10;- 新增住院费用变化前十请求接口">
+      <option name="closed" value="true" />
+      <created>1784782988877</created>
+      <option name="number" value="04525" />
+      <option name="presentableId" value="LOCAL-04525" />
+      <option name="project" value="LOCAL" />
+      <updated>1784782988877</updated>
+    </task>
+    <task id="LOCAL-04526" summary="v126:feat/refactor:需求2588-科室端-收支分析-总览、收入总览两个页面，收入口径选择‘开单收入’时，整体分析Tab页、门急诊分析Tab、住院分析Tab页的‘医疗盈余分析表’表的各项收入下钻页，‘对比分析’图替换成对应收入分析表和费用上升前十帕累托图&#10;refactor(BIEAnalysis): 更新收入分析模块的API导入路径和组件状态映射&#10;&#10;- 将API导入路径从 '@/api/diff/hosp-dt/department/BIEAnalysis/incomeOverviewBjdtApi' &#10;  更改为 '@/api/BIEAnalysis/incomeOverviewApi.js'&#10;- 在DeptIncomeTypeAnalysisTable组件中添加BIEAnalysis模块的状态映射&#10;- 在收入分析相关组件中移除北京地坛特定注释&#10;- 更新文件最后编辑时间戳和编辑者信息&#10;- 在DeptIncomeTypeAnalysisTable中添加空的getRequestMethod方法占位符">
+      <option name="closed" value="true" />
+      <created>1784783032114</created>
+      <option name="number" value="04526" />
+      <option name="presentableId" value="LOCAL-04526" />
+      <option name="project" value="LOCAL" />
+      <updated>1784783032114</updated>
+    </task>
+    <task id="LOCAL-04527" summary="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;fix: 移除维度类型参数验证&#10;&#10;- 移除了 dimensionType 参数的验证检查">
+      <option name="closed" value="true" />
+      <created>1784784873354</created>
+      <option name="number" value="04527" />
+      <option name="presentableId" value="LOCAL-04527" />
+      <option name="project" value="LOCAL" />
+      <updated>1784784873354</updated>
+    </task>
+    <task id="LOCAL-04528" summary="v126:feat/refactor:需求2588-科室端-收支分析-总览、收入总览两个页面，收入口径选择‘开单收入’时，整体分析Tab页、门急诊分析Tab、住院分析Tab页的‘医疗盈余分析表’表的各项收入下钻页，‘对比分析’图替换成对应收入分析表和费用上升前十帕累托图&#10;feat/refactor(BIEAnalysis): 重构收入分析表格的数据请求逻辑&#10;&#10;- 添加住院和门诊收入分析API接口导入&#10;- 引入主标签页类型常量用于区分不同收入分析类型&#10;- 实现根据不同医疗业务类型动态选择数据请求方法&#10;- 更新表格绑定数据中的请求方法为动态获取方式&#10;- 移除硬编码的收入方法参数改为动态配置">
+      <option name="closed" value="true" />
+      <created>1784785758922</created>
+      <option name="number" value="04528" />
+      <option name="presentableId" value="LOCAL-04528" />
+      <option name="project" value="LOCAL" />
+      <updated>1784785758922</updated>
+    </task>
+    <task id="LOCAL-04529" summary="v126:feat/refactor:需求2588-科室端-收支分析-总览、收入总览两个页面，收入口径选择‘开单收入’时，整体分析Tab页、门急诊分析Tab、住院分析Tab页的‘医疗盈余分析表’表的各项收入下钻页，‘对比分析’图替换成对应收入分析表和费用上升前十帕累托图&#10;feat(BIEAnalysis): 添加医疗收入服务模块显示控制功能&#10;&#10;- 在住院费用项目变动前十组件中添加条件渲染判断&#10;- 在门诊费用项目变动前十组件中添加条件渲染判断&#10;- 新增整体和住院业务类型常量定义&#10;- 添加门诊业务类型常量到门诊组件中&#10;- 集成BIEAnalysis状态管理中的医疗服务类型&#10;- 实现模块显示条件计算逻辑&#10;- 根据业务类型动态选择数据请求方法&#10;- 配置不同业务类型的API接口映射关系">
+      <option name="closed" value="true" />
+      <created>1784786762282</created>
+      <option name="number" value="04529" />
+      <option name="presentableId" value="LOCAL-04529" />
+      <option name="project" value="LOCAL" />
+      <updated>1784786762282</updated>
+    </task>
+    <option name="localTasksCounter" value="4530" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -3140,11 +3120,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="MARK_IGNORED_AS_EXCLUDED" value="true" />
-    <MESSAGE value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(iconfont): 添加新的图标字体资源&#10;&#10;- 新增 eye-close 图标 (Unicode &amp;#xe702;)&#10;- 新增 eye-open 图标 (Unicode &amp;#xe703;)&#10;- 新增 编辑 图标 (Unicode &amp;#xe701;)&#10;- 更新字体文件时间戳参数&#10;- 在 demo 页面中展示新图标&#10;- 配置图标的 CSS 样式类名&#10;- 更新图标 JSON 配置文件" />
-    <MESSAGE value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat: 更新诊断操作详情组件图标显示逻辑&#10;&#10;- 将 PlDiagnosisSelector.vue 中的图标名称从 app-up/app-down 替换为 eye-open/eye-close&#10;- 将 PlDrgGroupSelector.vue 中的图标名称从 app-up/app-down 替换为 eye-open/eye-close  &#10;- 将 PlOperationSelector.vue 中的图标名称从 app-up/app-down 替换为 eye-open/eye-close" />
-    <MESSAGE value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;refactor(diagnosis): 重构诊断选择器组件以统一眼睛图标功能&#10;&#10;- 移除各个选择器组件中的重复SvgIcon实现&#10;- 创建PlSelectorSlotWithEyeIcon通用组件封装眼睛图标逻辑&#10;- 更新PlDiagnosisSelector组件使用新的插槽组件&#10;- 更新PlDrgGroupSelector组件使用新的插槽组件&#10;- 更新PlOperationSelector组件使用新的插槽组件&#10;- 移除废弃的计算属性和样式代码&#10;- 统一眼睛图标的交互逻辑和样式表现" />
-    <MESSAGE value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;doc: 修正诊断类型默认值配置注释&#10;&#10;- 将诊断口径默认值从主诊断0更新为主诊断1&#10;- 更新单选诊断类型的注释说明&#10;- 同步修改组件中的诊断类型初始值注释" />
-    <MESSAGE value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(hospital): 添加诊断操作明细相关API接口&#10;&#10;- 新增诊断操作明细表格数据请求接口&#10;- 新增诊断操作明细下钻维度下拉框请求接口&#10;- 新增诊断操作明细下钻表格数据请求接口&#10;- 新增诊断操作明细下钻维度列表请求接口&#10;- 新增诊断操作明细下钻费用类型下拉框请求接口&#10;- 新增诊断操作明细下钻费用类型明细表格请求接口" />
     <MESSAGE value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(store): 添加诊断操作明细报表数据模块&#10;&#10;- 新增诊断操作明细报表数据存储模块&#10;- 集成诊断操作明细到疾病分析DRG支付模块&#10;- 定义诊断代码、名称及操作代码、名称状态字段&#10;- 配置模块命名空间及基础数据结构" />
     <MESSAGE value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(hospital): 添加医院端诊断操作明细表格组件&#10;&#10;- 新增 DiagnosisOperationDetailTableHosp 组件用于显示诊断操作明细表格&#10;- 在 DiagosisOperationDetailHosp 页面中集成新的明细表格组件&#10;- 实现表格数据请求、渲染和交互功能&#10;- 添加表格行选择、高亮和排序相关逻辑&#10;- 集成 vuex 状态管理用于存储选中的诊断操作信息" />
     <MESSAGE value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(DiagnosisOperationDetailTableHosp): 为诊断手术详情表格组件添加唯一ID标识&#10;&#10;- 引入elemId工具函数用于生成唯一元素ID&#10;- 在组件数据中添加elemId属性&#10;- 为表格元素动态生成并设置唯一的id属性值" />
@@ -3165,7 +3140,12 @@
     <MESSAGE value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(DiagnosisOperationDetailDrilldownFeeTypeTableHosp): 添加表格排序功能支持&#10;&#10;- 引入 useIfHasSequencableFalseRow 和 useCalcSequencableFalseRows 钩子函数&#10;- 实现 getIfHasSequencableFalseRows 方法检测表格是否存在不可排序行&#10;- 实现 getStartSortRow 方法计算表格排序起始行&#10;- 在 getTableBindData 中动态绑定 startSortRow 属性以支持表格排序配置" />
     <MESSAGE value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;fix(DiagnosisOperationDetailTableHosp): 修复表格行选择状态管理问题&#10;&#10;- 添加previousRow缓存变量存储上次点击行&#10;- 在selectTableRow方法中更新previousRow状态&#10;- 当行索引小于起始排序行时恢复上一行选中状态&#10;- 防止无效行点击时丢失当前选中状态" />
     <MESSAGE value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;refactor(diseaseAnalysis): 优化诊断操作详情费用类型表格组件请求参数&#10;&#10;- 将 getDimensionListSelectorRequestParams 替换为 commonRequestParams&#10;- 调整 getRequestParams 中参数顺序以确保正确合并&#10;- 优化 PlDimensionListSelector 组件属性绑定逻辑&#10;- 简化属性解构赋值减少冗余代码&#10;- 统一请求参数处理方式提高代码一致性" />
-    <option name="LAST_COMMIT_MESSAGE" value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;refactor(diseaseAnalysis): 优化诊断操作详情费用类型表格组件请求参数&#10;&#10;- 将 getDimensionListSelectorRequestParams 替换为 commonRequestParams&#10;- 调整 getRequestParams 中参数顺序以确保正确合并&#10;- 优化 PlDimensionListSelector 组件属性绑定逻辑&#10;- 简化属性解构赋值减少冗余代码&#10;- 统一请求参数处理方式提高代码一致性" />
+    <MESSAGE value="v126:feat/refactor:需求2588-科室端-收支分析-总览、收入总览两个页面，收入口径选择‘开单收入’时，整体分析Tab页、门急诊分析Tab、住院分析Tab页的‘医疗盈余分析表’表的各项收入下钻页，‘对比分析’图替换成对应收入分析表和费用上升前十帕累托图&#10;feat(BIEAnalysis): 添加收入总览相关API接口&#10;&#10;- 新增整体分析-收入构成明细表请求接口&#10;- 新增门急诊项目费用变化前十请求接口&#10;- 新增住院项目费用变化前十请求接口&#10;- 新增门急诊分析-收入构成明细表请求接口&#10;- 新增门急诊费用变化前十请求接口&#10;- 新增住院分析-收入构成明细表请求接口&#10;- 新增住院费用变化前十请求接口" />
+    <MESSAGE value="v126:feat/refactor:需求2588-科室端-收支分析-总览、收入总览两个页面，收入口径选择‘开单收入’时，整体分析Tab页、门急诊分析Tab、住院分析Tab页的‘医疗盈余分析表’表的各项收入下钻页，‘对比分析’图替换成对应收入分析表和费用上升前十帕累托图&#10;refactor(BIEAnalysis): 更新收入分析模块的API导入路径和组件状态映射&#10;&#10;- 将API导入路径从 '@/api/diff/hosp-dt/department/BIEAnalysis/incomeOverviewBjdtApi' &#10;  更改为 '@/api/BIEAnalysis/incomeOverviewApi.js'&#10;- 在DeptIncomeTypeAnalysisTable组件中添加BIEAnalysis模块的状态映射&#10;- 在收入分析相关组件中移除北京地坛特定注释&#10;- 更新文件最后编辑时间戳和编辑者信息&#10;- 在DeptIncomeTypeAnalysisTable中添加空的getRequestMethod方法占位符" />
+    <MESSAGE value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;fix: 移除维度类型参数验证&#10;&#10;- 移除了 dimensionType 参数的验证检查" />
+    <MESSAGE value="v126:feat/refactor:需求2588-科室端-收支分析-总览、收入总览两个页面，收入口径选择‘开单收入’时，整体分析Tab页、门急诊分析Tab、住院分析Tab页的‘医疗盈余分析表’表的各项收入下钻页，‘对比分析’图替换成对应收入分析表和费用上升前十帕累托图&#10;feat/refactor(BIEAnalysis): 重构收入分析表格的数据请求逻辑&#10;&#10;- 添加住院和门诊收入分析API接口导入&#10;- 引入主标签页类型常量用于区分不同收入分析类型&#10;- 实现根据不同医疗业务类型动态选择数据请求方法&#10;- 更新表格绑定数据中的请求方法为动态获取方式&#10;- 移除硬编码的收入方法参数改为动态配置" />
+    <MESSAGE value="v126:feat/refactor:需求2588-科室端-收支分析-总览、收入总览两个页面，收入口径选择‘开单收入’时，整体分析Tab页、门急诊分析Tab、住院分析Tab页的‘医疗盈余分析表’表的各项收入下钻页，‘对比分析’图替换成对应收入分析表和费用上升前十帕累托图&#10;feat(BIEAnalysis): 添加医疗收入服务模块显示控制功能&#10;&#10;- 在住院费用项目变动前十组件中添加条件渲染判断&#10;- 在门诊费用项目变动前十组件中添加条件渲染判断&#10;- 新增整体和住院业务类型常量定义&#10;- 添加门诊业务类型常量到门诊组件中&#10;- 集成BIEAnalysis状态管理中的医疗服务类型&#10;- 实现模块显示条件计算逻辑&#10;- 根据业务类型动态选择数据请求方法&#10;- 配置不同业务类型的API接口映射关系" />
+    <option name="LAST_COMMIT_MESSAGE" value="v126:feat/refactor:需求2588-科室端-收支分析-总览、收入总览两个页面，收入口径选择‘开单收入’时，整体分析Tab页、门急诊分析Tab、住院分析Tab页的‘医疗盈余分析表’表的各项收入下钻页，‘对比分析’图替换成对应收入分析表和费用上升前十帕累托图&#10;feat(BIEAnalysis): 添加医疗收入服务模块显示控制功能&#10;&#10;- 在住院费用项目变动前十组件中添加条件渲染判断&#10;- 在门诊费用项目变动前十组件中添加条件渲染判断&#10;- 新增整体和住院业务类型常量定义&#10;- 添加门诊业务类型常量到门诊组件中&#10;- 集成BIEAnalysis状态管理中的医疗服务类型&#10;- 实现模块显示条件计算逻辑&#10;- 根据业务类型动态选择数据请求方法&#10;- 配置不同业务类型的API接口映射关系" />
   </component>
   <component name="VueSettings">
     <option name="innerServiceType" value="TS_SERVICE" />
