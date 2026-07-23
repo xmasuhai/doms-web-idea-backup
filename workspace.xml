@@ -44,8 +44,10 @@
     <option name="selectedModelId" value="auto" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a32d6ec8-0d74-4a1b-8cad-0ab91948ca3e" name="Changes" comment="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;refactor(diseaseAnalysis): 优化诊断手术详情表格数据清理逻辑&#10;&#10;- 在多个组件中添加 clearTable 方法用于清空表格列和数据&#10;- 在日期参数变化时调用 clearTable 清理表格状态&#10;- 在维度类型变化时调用 clearTable 清理表格状态&#10;- 在请求数据前调用 clearTable 确保表格状态重置&#10;- 移除维度列表选择器中的多余检查键以简化验证逻辑">
+    <list default="true" id="a32d6ec8-0d74-4a1b-8cad-0ab91948ca3e" name="Changes" comment="v126:feat/refactor:需求2588-科室端-收支分析-总览、收入总览两个页面，收入口径选择‘开单收入’时，整体分析Tab页、门急诊分析Tab、住院分析Tab页的‘医疗盈余分析表’表的各项收入下钻页，‘对比分析’图替换成对应收入分析表和费用上升前十帕累托图&#10;refactor(api): 移除废弃接口&#10;&#10;- 移除整体分析收入构成明细表接口 fetchOverviewIncomeAnalysis&#10;- 移除门急诊项目费用变化前十接口 fetchOutpatientItemFeeChangeTop10&#10;- 移除住院项目费用变化前十接口 fetchInHospitalFeeItemChangeTop10">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/equipmentBenefitAnalysis/components/diagnosisReturnRateAbnormal.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/equipmentBenefitAnalysis/components/diagnosisReturnRateAbnormal.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/equipmentBenefitAnalysis/components/treatReturnRateAbnormal.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/equipmentBenefitAnalysis/components/treatReturnRateAbnormal.vue" afterDir="false" />
     </list>
     <list id="bd8e474f-42c8-444f-9f2b-07be811ba86b" name="ignore-on-commit" comment="ignore-on-commit" />
     <option name="SHOW_DIALOG" value="false" />
@@ -2704,15 +2706,7 @@
       <workItem from="1784623910570" duration="294000" />
       <workItem from="1784624264725" duration="13695000" />
       <workItem from="1784684262611" duration="36252000" />
-      <workItem from="1784768095682" duration="22584000" />
-    </task>
-    <task id="LOCAL-04486" summary="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;refactor(DiagnosisOperationDetailHosp): 优化选择器组件的数据绑定&#10;&#10;- 将收入口径和病组成本选择器的属性提取为独立计算属性&#10;- 使用v-bind简化模板中的属性传递&#10;- 移除冗余的硬编码属性配置">
-      <option name="closed" value="true" />
-      <created>1784624724528</created>
-      <option name="number" value="04486" />
-      <option name="presentableId" value="LOCAL-04486" />
-      <option name="project" value="LOCAL" />
-      <updated>1784624724528</updated>
+      <workItem from="1784768095682" duration="24070000" />
     </task>
     <task id="LOCAL-04487" summary="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(drg): 添加对比方式选择功能到医院DRG诊断手术详情页面&#10;&#10;- 引入PlCompareSelect组件用于对比方式选择&#10;- 添加compareType字段到查询参数和响应式数据&#10;- 注入全局同比环比默认值并设置初始值&#10;- 更新handleQuery方法以同步对比类型参数&#10;- 添加诊断类型和操作类型响应式变量&#10;- 修复props属性格式化问题&#10;- 优化代码结构和数据处理逻辑">
       <option name="closed" value="true" />
@@ -3098,7 +3092,15 @@
       <option name="project" value="LOCAL" />
       <updated>1784791327882</updated>
     </task>
-    <option name="localTasksCounter" value="4535" />
+    <task id="LOCAL-04535" summary="v126:feat/refactor:需求2588-科室端-收支分析-总览、收入总览两个页面，收入口径选择‘开单收入’时，整体分析Tab页、门急诊分析Tab、住院分析Tab页的‘医疗盈余分析表’表的各项收入下钻页，‘对比分析’图替换成对应收入分析表和费用上升前十帕累托图&#10;refactor(api): 移除废弃接口&#10;&#10;- 移除整体分析收入构成明细表接口 fetchOverviewIncomeAnalysis&#10;- 移除门急诊项目费用变化前十接口 fetchOutpatientItemFeeChangeTop10&#10;- 移除住院项目费用变化前十接口 fetchInHospitalFeeItemChangeTop10">
+      <option name="closed" value="true" />
+      <created>1784792135901</created>
+      <option name="number" value="04535" />
+      <option name="presentableId" value="LOCAL-04535" />
+      <option name="project" value="LOCAL" />
+      <updated>1784792135901</updated>
+    </task>
+    <option name="localTasksCounter" value="4536" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -3119,7 +3121,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="MARK_IGNORED_AS_EXCLUDED" value="true" />
-    <MESSAGE value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(diseaseAnalysis): 添加诊断操作明细下钻表格组件&#10;&#10;- 在 DiagnosisOperationDetailDrilldownFeeTypeTableHosp 组件中添加样式类名&#10;- 在 DiagnosisOperationDetailDrilldownTableHosp 组件中添加维度类型选择器&#10;- 新增 dimensionType 数据属性和相关计算属性&#10;- 添加维度类型选项监听器和初始化逻辑&#10;- 在主页面中引入并注册新的下钻表格组件&#10;- 更新页面布局结构以包含新的明细表格" />
     <MESSAGE value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(diagnosis-operation-detail): 添加诊断操作明细报表维度列表选择器组件&#10;&#10;- 创建 PlDimensionListSelector 组件用于诊断操作明细报表维度选择&#10;- 集成 PlSelect 下拉框组件并配置相关绑定属性&#10;- 实现维度列表数据请求功能，支持钻取维度数据获取&#10;- 添加参数验证逻辑，确保日期和维度类型参数有效性&#10;- 实现加载状态管理和错误处理机制&#10;- 配置默认选中第一个选项的功能并触发相应事件" />
     <MESSAGE value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;fix(api): 修复诊断操作明细费用类型下拉框接口参数问题&#10;&#10;- 移除了 fetchDrilldownFeeTypeSelectOptions 函数的 params 参数" />
     <MESSAGE value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(PlDimensionListSelector): 更新维度列表选择器组件功能&#10;&#10;- 将 v-model 绑定从 $attrs.value 改为 dimensionValueList&#10;- 新增 panelTitle 属性支持面板标题显示&#10;- 配置 select 组件支持多选模式和过滤功能&#10;- 集成 vxe-select 组件并配置相关属性&#10;- 实现选项数据的维度名称和编码映射逻辑&#10;- 添加选中选项数据的监听和更新机制&#10;- 优化样式以保持与 element-ui 的一致性" />
@@ -3144,7 +3145,8 @@
     <MESSAGE value="v126:feat/refactor:需求2588-科室端-收支分析-总览、收入总览两个页面，收入口径选择‘开单收入’时，整体分析Tab页、门急诊分析Tab、住院分析Tab页的‘医疗盈余分析表’表的各项收入下钻页，‘对比分析’图替换成对应收入分析表和费用上升前十帕累托图&#10;fix(income): 修复收入分析模块布局间距问题&#10;&#10;- 为PlItemLayout组件添加lastRowBottomMargin属性以调整底部边距&#10;- 解决门急诊和住院费用项目排名前十组件的布局间距问题" />
     <MESSAGE value="v126:feat/refactor:需求2588-科室端-收支分析-总览、收入总览两个页面，收入口径选择‘开单收入’时，整体分析Tab页、门急诊分析Tab、住院分析Tab页的‘医疗盈余分析表’表的各项收入下钻页，‘对比分析’图替换成对应收入分析表和费用上升前十帕累托图&#10;refactor(BIEAnalysis): 优化收入分析模块布局配置&#10;&#10;- 将 PlItemLayout 组件的绑定属性重构为计算属性 getPlItemLayoutBind&#10;- 移除硬编码的 lastRowBottomMargin 和 rowNum 属性&#10;- 使用 v-bind 指令动态绑定组件属性&#10;- 根据医疗服务类型动态设置底部边距样式类" />
     <MESSAGE value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;refactor(diseaseAnalysis): 优化诊断手术详情表格数据清理逻辑&#10;&#10;- 在多个组件中添加 clearTable 方法用于清空表格列和数据&#10;- 在日期参数变化时调用 clearTable 清理表格状态&#10;- 在维度类型变化时调用 clearTable 清理表格状态&#10;- 在请求数据前调用 clearTable 确保表格状态重置&#10;- 移除维度列表选择器中的多余检查键以简化验证逻辑" />
-    <option name="LAST_COMMIT_MESSAGE" value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;refactor(diseaseAnalysis): 优化诊断手术详情表格数据清理逻辑&#10;&#10;- 在多个组件中添加 clearTable 方法用于清空表格列和数据&#10;- 在日期参数变化时调用 clearTable 清理表格状态&#10;- 在维度类型变化时调用 clearTable 清理表格状态&#10;- 在请求数据前调用 clearTable 确保表格状态重置&#10;- 移除维度列表选择器中的多余检查键以简化验证逻辑" />
+    <MESSAGE value="v126:feat/refactor:需求2588-科室端-收支分析-总览、收入总览两个页面，收入口径选择‘开单收入’时，整体分析Tab页、门急诊分析Tab、住院分析Tab页的‘医疗盈余分析表’表的各项收入下钻页，‘对比分析’图替换成对应收入分析表和费用上升前十帕累托图&#10;refactor(api): 移除废弃接口&#10;&#10;- 移除整体分析收入构成明细表接口 fetchOverviewIncomeAnalysis&#10;- 移除门急诊项目费用变化前十接口 fetchOutpatientItemFeeChangeTop10&#10;- 移除住院项目费用变化前十接口 fetchInHospitalFeeItemChangeTop10" />
+    <option name="LAST_COMMIT_MESSAGE" value="v126:feat/refactor:需求2588-科室端-收支分析-总览、收入总览两个页面，收入口径选择‘开单收入’时，整体分析Tab页、门急诊分析Tab、住院分析Tab页的‘医疗盈余分析表’表的各项收入下钻页，‘对比分析’图替换成对应收入分析表和费用上升前十帕累托图&#10;refactor(api): 移除废弃接口&#10;&#10;- 移除整体分析收入构成明细表接口 fetchOverviewIncomeAnalysis&#10;- 移除门急诊项目费用变化前十接口 fetchOutpatientItemFeeChangeTop10&#10;- 移除住院项目费用变化前十接口 fetchInHospitalFeeItemChangeTop10" />
   </component>
   <component name="VueSettings">
     <option name="innerServiceType" value="TS_SERVICE" />
