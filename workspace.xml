@@ -46,7 +46,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a32d6ec8-0d74-4a1b-8cad-0ab91948ca3e" name="Changes" comment="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(DiagnosisOperationDetailDrilldownFeeTypeTableHosp): 添加表格排序功能支持&#10;&#10;- 引入 useIfHasSequencableFalseRow 和 useCalcSequencableFalseRows 钩子函数&#10;- 实现 getIfHasSequencableFalseRows 方法检测表格是否存在不可排序行&#10;- 实现 getStartSortRow 方法计算表格排序起始行&#10;- 在 getTableBindData 中动态绑定 startSortRow 属性以支持表格排序配置">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/config/queryConfig.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/config/queryConfig.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/diseaseAnalysis/hospital/diagnosis-operation-detail/DiagnosisOperationDetailTableHosp.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/diseaseAnalysis/hospital/diagnosis-operation-detail/DiagnosisOperationDetailTableHosp.vue" afterDir="false" />
     </list>
     <list id="bd8e474f-42c8-444f-9f2b-07be811ba86b" name="ignore-on-commit" comment="ignore-on-commit" />
     <option name="SHOW_DIALOG" value="false" />
@@ -2705,7 +2705,7 @@
       <workItem from="1784623910570" duration="294000" />
       <workItem from="1784624264725" duration="13695000" />
       <workItem from="1784684262611" duration="36252000" />
-      <workItem from="1784768095682" duration="9098000" />
+      <workItem from="1784768095682" duration="9486000" />
     </task>
     <task id="LOCAL-04474" summary="v126:feat/refactor: v125:feat/refactor:需求2467-前端代码规范化修改-收支余分析 /诊间成本估算【时间段】-诊间结余估算&#10;refactor(cost): 诊间估算对话框组件结构&#10;&#10;- 移除未使用的Vuex映射导入语句&#10;- 添加elemId工具函数导入用于元素标识&#10;- 将elemId注入到组件数据中便于表格ID生成&#10;- 移除空的生命周期钩子函数声明&#10;- 简化组件数据结构定义">
       <option name="closed" value="true" />
