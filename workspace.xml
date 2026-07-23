@@ -44,9 +44,9 @@
     <option name="selectedModelId" value="auto" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a32d6ec8-0d74-4a1b-8cad-0ab91948ca3e" name="Changes" comment="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(DiagnosisOperationDetailDrilldownFeeTypeTableHosp): 添加表格排序功能支持&#10;&#10;- 引入 useIfHasSequencableFalseRow 和 useCalcSequencableFalseRows 钩子函数&#10;- 实现 getIfHasSequencableFalseRows 方法检测表格是否存在不可排序行&#10;- 实现 getStartSortRow 方法计算表格排序起始行&#10;- 在 getTableBindData 中动态绑定 startSortRow 属性以支持表格排序配置">
+    <list default="true" id="a32d6ec8-0d74-4a1b-8cad-0ab91948ca3e" name="Changes" comment="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;refactor(diseaseAnalysis): 优化诊断操作详情费用类型表格组件请求参数&#10;&#10;- 将 getDimensionListSelectorRequestParams 替换为 commonRequestParams&#10;- 调整 getRequestParams 中参数顺序以确保正确合并&#10;- 优化 PlDimensionListSelector 组件属性绑定逻辑&#10;- 简化属性解构赋值减少冗余代码&#10;- 统一请求参数处理方式提高代码一致性">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/diseaseAnalysis/hospital/diagnosis-operation-detail/DiagnosisOperationDetailTableHosp.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/diseaseAnalysis/hospital/diagnosis-operation-detail/DiagnosisOperationDetailTableHosp.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <list id="bd8e474f-42c8-444f-9f2b-07be811ba86b" name="ignore-on-commit" comment="ignore-on-commit" />
     <option name="SHOW_DIALOG" value="false" />
@@ -2705,23 +2705,7 @@
       <workItem from="1784623910570" duration="294000" />
       <workItem from="1784624264725" duration="13695000" />
       <workItem from="1784684262611" duration="36252000" />
-      <workItem from="1784768095682" duration="9486000" />
-    </task>
-    <task id="LOCAL-04474" summary="v126:feat/refactor: v125:feat/refactor:需求2467-前端代码规范化修改-收支余分析 /诊间成本估算【时间段】-诊间结余估算&#10;refactor(cost): 诊间估算对话框组件结构&#10;&#10;- 移除未使用的Vuex映射导入语句&#10;- 添加elemId工具函数导入用于元素标识&#10;- 将elemId注入到组件数据中便于表格ID生成&#10;- 移除空的生命周期钩子函数声明&#10;- 简化组件数据结构定义">
-      <option name="closed" value="true" />
-      <created>1784535288625</created>
-      <option name="number" value="04474" />
-      <option name="presentableId" value="LOCAL-04474" />
-      <option name="project" value="LOCAL" />
-      <updated>1784535288625</updated>
-    </task>
-    <task id="LOCAL-04475" summary="v126:feat/refactor: 用户常用科室列表-树形选择器-弹出框&#10;fix/refactor(department): 优化科室树形复选框组件逻辑&#10;&#10;- 添加deptListDataCopy用于存储部门列表数据副本，防止直接修改外部数据，保持单项数据流&#10;- 使用Set去重处理部门选中列表&#10;- 监听deptListData变化并深拷贝到本地副本&#10;- 监听部门选中列表变化并更新副本中的选中状态&#10;- 将计算属性getDeptsTableData的数据源改为副本&#10;- 添加mapUniqueDeptId方法用于映射唯一部门ID&#10;- 优化部门复选框变更处理逻辑，支持父子节点联动选择&#10;- 修复选中科室后，多余仍选中之前已选中父级下所有子项科室">
-      <option name="closed" value="true" />
-      <created>1784546036733</created>
-      <option name="number" value="04475" />
-      <option name="presentableId" value="LOCAL-04475" />
-      <option name="project" value="LOCAL" />
-      <updated>1784546036733</updated>
+      <workItem from="1784768095682" duration="10854000" />
     </task>
     <task id="LOCAL-04476" summary="v126:feat/refactor::需求2467-前端代码规范化修改-病种分析（市医保DRG） /出院分析 /科室病组整体运营分析 总权重&#10;feat(diseaseAnalysis): 添加图表组件ID和代码配置&#10;&#10;- 引入elemId工具函数用于生成唯一标识&#10;- 为四个图表组件添加唯一的id属性&#10;- 配置每个图表的code参数以支持数据追踪&#10;- 更新图表1为总权重对比分析并设置对应代码&#10;- 更新图表2为总权重趋势分析并设置对应代码&#10;- 更新图表3为入组例数趋势分析并设置对应代码&#10;- 更新图表4为总权重前十分布占比并设置对应代码">
       <option name="closed" value="true" />
@@ -3099,7 +3083,23 @@
       <option name="project" value="LOCAL" />
       <updated>1784777271009</updated>
     </task>
-    <option name="localTasksCounter" value="4523" />
+    <task id="LOCAL-04523" summary="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;fix(DiagnosisOperationDetailTableHosp): 修复表格行选择状态管理问题&#10;&#10;- 添加previousRow缓存变量存储上次点击行&#10;- 在selectTableRow方法中更新previousRow状态&#10;- 当行索引小于起始排序行时恢复上一行选中状态&#10;- 防止无效行点击时丢失当前选中状态">
+      <option name="closed" value="true" />
+      <created>1784778030201</created>
+      <option name="number" value="04523" />
+      <option name="presentableId" value="LOCAL-04523" />
+      <option name="project" value="LOCAL" />
+      <updated>1784778030202</updated>
+    </task>
+    <task id="LOCAL-04524" summary="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;refactor(diseaseAnalysis): 优化诊断操作详情费用类型表格组件请求参数&#10;&#10;- 将 getDimensionListSelectorRequestParams 替换为 commonRequestParams&#10;- 调整 getRequestParams 中参数顺序以确保正确合并&#10;- 优化 PlDimensionListSelector 组件属性绑定逻辑&#10;- 简化属性解构赋值减少冗余代码&#10;- 统一请求参数处理方式提高代码一致性">
+      <option name="closed" value="true" />
+      <created>1784779045372</created>
+      <option name="number" value="04524" />
+      <option name="presentableId" value="LOCAL-04524" />
+      <option name="project" value="LOCAL" />
+      <updated>1784779045373</updated>
+    </task>
+    <option name="localTasksCounter" value="4525" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -3120,8 +3120,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="MARK_IGNORED_AS_EXCLUDED" value="true" />
-    <MESSAGE value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(PlSelect): 添加 visible-change 事件发射功能&#10;&#10;- 在 visibleChange 方法中添加 $emit('visible-change', e) 事件发射&#10;- 支持外部监听下拉框显示/隐藏状态变化" />
-    <MESSAGE value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat/refactor: 修改DRG分组选择器下拉框事件处理&#10;&#10;- 将blur事件替换为visible-change事件以正确处理下拉框关闭&#10;- 修改onSelectorBlur方法名为onCloseDropdown并调整逻辑&#10;- 添加可见性检查避免不必要的数据重置" />
     <MESSAGE value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(iconfont): 添加新的图标字体资源&#10;&#10;- 新增 eye-close 图标 (Unicode &amp;#xe702;)&#10;- 新增 eye-open 图标 (Unicode &amp;#xe703;)&#10;- 新增 编辑 图标 (Unicode &amp;#xe701;)&#10;- 更新字体文件时间戳参数&#10;- 在 demo 页面中展示新图标&#10;- 配置图标的 CSS 样式类名&#10;- 更新图标 JSON 配置文件" />
     <MESSAGE value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat: 更新诊断操作详情组件图标显示逻辑&#10;&#10;- 将 PlDiagnosisSelector.vue 中的图标名称从 app-up/app-down 替换为 eye-open/eye-close&#10;- 将 PlDrgGroupSelector.vue 中的图标名称从 app-up/app-down 替换为 eye-open/eye-close  &#10;- 将 PlOperationSelector.vue 中的图标名称从 app-up/app-down 替换为 eye-open/eye-close" />
     <MESSAGE value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;refactor(diagnosis): 重构诊断选择器组件以统一眼睛图标功能&#10;&#10;- 移除各个选择器组件中的重复SvgIcon实现&#10;- 创建PlSelectorSlotWithEyeIcon通用组件封装眼睛图标逻辑&#10;- 更新PlDiagnosisSelector组件使用新的插槽组件&#10;- 更新PlDrgGroupSelector组件使用新的插槽组件&#10;- 更新PlOperationSelector组件使用新的插槽组件&#10;- 移除废弃的计算属性和样式代码&#10;- 统一眼睛图标的交互逻辑和样式表现" />
@@ -3145,7 +3143,9 @@
     <MESSAGE value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;fix(diseaseAnalysis): 修复诊断操作明细费用类型表格参数验证问题&#10;&#10;- 添加了对空值参数的验证检查&#10;- 增加了 null、undefined 和空字符串的无效键检测&#10;- 完善了参数校验逻辑以避免潜在的数据处理错误" />
     <MESSAGE value="v126:feat/refactor:需求2588-科室端-收支分析-总览、收入总览两个页面，收入口径选择‘开单收入’时，整体分析Tab页、门急诊分析Tab、住院分析Tab页的‘医疗盈余分析表’表的各项收入下钻页，‘对比分析’图替换成对应收入分析表和费用上升前十帕累托图&#10;feat(BIEAnalysis): 添加收入口径计算逻辑和菏泽市立医院模块显示控制&#10;&#10;- 从 MAIN_TAB_TYPE_CODE 中新增导入 TAB_CODE_OUTPATIENT 和 TAB_CODE_IN_HOSPITAL&#10;- 从 INCOME_TYPE_CODE_HASH 中新增导入 CODE_DEPT_BILLING_INCOME&#10;- 添加 getIfBilling 计算属性用于判断收入口径是否为科室开单收入&#10;- 修复注释中&quot;陈总 整体分析&quot;为&quot;是否 整体分析&quot;&#10;- 添加 getIfShowModuleSdhz 计算属性用于控制菏泽市立医院模块显示&#10;- 支持整体分析、门急诊分析、住院分析三种 tabs 的开单收入模块显示控制" />
     <MESSAGE value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(DiagnosisOperationDetailDrilldownFeeTypeTableHosp): 添加表格排序功能支持&#10;&#10;- 引入 useIfHasSequencableFalseRow 和 useCalcSequencableFalseRows 钩子函数&#10;- 实现 getIfHasSequencableFalseRows 方法检测表格是否存在不可排序行&#10;- 实现 getStartSortRow 方法计算表格排序起始行&#10;- 在 getTableBindData 中动态绑定 startSortRow 属性以支持表格排序配置" />
-    <option name="LAST_COMMIT_MESSAGE" value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(DiagnosisOperationDetailDrilldownFeeTypeTableHosp): 添加表格排序功能支持&#10;&#10;- 引入 useIfHasSequencableFalseRow 和 useCalcSequencableFalseRows 钩子函数&#10;- 实现 getIfHasSequencableFalseRows 方法检测表格是否存在不可排序行&#10;- 实现 getStartSortRow 方法计算表格排序起始行&#10;- 在 getTableBindData 中动态绑定 startSortRow 属性以支持表格排序配置" />
+    <MESSAGE value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;fix(DiagnosisOperationDetailTableHosp): 修复表格行选择状态管理问题&#10;&#10;- 添加previousRow缓存变量存储上次点击行&#10;- 在selectTableRow方法中更新previousRow状态&#10;- 当行索引小于起始排序行时恢复上一行选中状态&#10;- 防止无效行点击时丢失当前选中状态" />
+    <MESSAGE value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;refactor(diseaseAnalysis): 优化诊断操作详情费用类型表格组件请求参数&#10;&#10;- 将 getDimensionListSelectorRequestParams 替换为 commonRequestParams&#10;- 调整 getRequestParams 中参数顺序以确保正确合并&#10;- 优化 PlDimensionListSelector 组件属性绑定逻辑&#10;- 简化属性解构赋值减少冗余代码&#10;- 统一请求参数处理方式提高代码一致性" />
+    <option name="LAST_COMMIT_MESSAGE" value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;refactor(diseaseAnalysis): 优化诊断操作详情费用类型表格组件请求参数&#10;&#10;- 将 getDimensionListSelectorRequestParams 替换为 commonRequestParams&#10;- 调整 getRequestParams 中参数顺序以确保正确合并&#10;- 优化 PlDimensionListSelector 组件属性绑定逻辑&#10;- 简化属性解构赋值减少冗余代码&#10;- 统一请求参数处理方式提高代码一致性" />
   </component>
   <component name="VueSettings">
     <option name="innerServiceType" value="TS_SERVICE" />
