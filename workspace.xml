@@ -44,11 +44,11 @@
     <option name="selectedModelId" value="auto" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a32d6ec8-0d74-4a1b-8cad-0ab91948ca3e" name="Changes" comment="v126:feat/refactor:需求2588-科室端-收支分析-总览、收入总览两个页面，收入口径选择‘开单收入’时，整体分析Tab页、门急诊分析Tab、住院分析Tab页的‘医疗盈余分析表’表的各项收入下钻页，‘对比分析’图替换成对应收入分析表和费用上升前十帕累托图&#10;fix(BIEAnalysis): 更新收入分析模块的Vuex状态映射&#10;&#10;- 添加mapState辅助函数以简化组件状态访问">
+    <list default="true" id="a32d6ec8-0d74-4a1b-8cad-0ab91948ca3e" name="Changes" comment="v126:feat/refactor:需求2588-科室端-收支分析-总览、收入总览两个页面，收入口径选择‘开单收入’时，整体分析Tab页、门急诊分析Tab、住院分析Tab页的‘医疗盈余分析表’表的各项收入下钻页，‘对比分析’图替换成对应收入分析表和费用上升前十帕累托图&#10;refactor(BIEAnalysis): 优化收入分析模块布局配置&#10;&#10;- 将 PlItemLayout 组件的绑定属性重构为计算属性 getPlItemLayoutBind&#10;- 移除硬编码的 lastRowBottomMargin 和 rowNum 属性&#10;- 使用 v-bind 指令动态绑定组件属性&#10;- 根据医疗服务类型动态设置底部边距样式类">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/BIEAnalysis/dept-medical-surplus-analysis/income/IncomeAnalysisModule.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/BIEAnalysis/dept-medical-surplus-analysis/income/IncomeAnalysisModule.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/indexAnalysis/component/chartOrTableInit.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/indexAnalysis/component/chartOrTableInit.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/diseaseAnalysis/hospital/diagnosis-operation-detail/DiagnosisOperationDetailDrilldownFeeTypeTableHosp.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/diseaseAnalysis/hospital/diagnosis-operation-detail/DiagnosisOperationDetailDrilldownFeeTypeTableHosp.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/diseaseAnalysis/hospital/diagnosis-operation-detail/DiagnosisOperationDetailDrilldownTableHosp.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/diseaseAnalysis/hospital/diagnosis-operation-detail/DiagnosisOperationDetailDrilldownTableHosp.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/tool/diagnosis-operation-detail/PlDimensionListSelector.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/tool/diagnosis-operation-detail/PlDimensionListSelector.vue" afterDir="false" />
     </list>
     <list id="bd8e474f-42c8-444f-9f2b-07be811ba86b" name="ignore-on-commit" comment="ignore-on-commit" />
     <option name="SHOW_DIALOG" value="false" />
@@ -2707,23 +2707,7 @@
       <workItem from="1784623910570" duration="294000" />
       <workItem from="1784624264725" duration="13695000" />
       <workItem from="1784684262611" duration="36252000" />
-      <workItem from="1784768095682" duration="19216000" />
-    </task>
-    <task id="LOCAL-04483" summary="v126:fix/refactor:病种分析（市医保DRG） /出院分析 /费用消耗指数&#10;fix(costEfficiencyIndex): 修复成本效益指标数据请求参数缺失问题&#10;&#10;- 添加了 commonRequestParams 参数到数据请求对象中&#10;- 解决了因参数缺失导致的数据获取问题">
-      <option name="closed" value="true" />
-      <created>1784619830419</created>
-      <option name="number" value="04483" />
-      <option name="presentableId" value="LOCAL-04483" />
-      <option name="project" value="LOCAL" />
-      <updated>1784619830420</updated>
-    </task>
-    <task id="LOCAL-04484" summary="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(drg): 添加DRG市医保诊断操作详情页面头部筛选功能&#10;&#10;- 集成PlQueryWrapper组件实现查询包装器功能&#10;- 添加TimeHeaderFilter时间筛选组件&#10;- 实现PlCascader级联选择器支持病人分类多选&#10;- 集成PlSelect下拉选择器用于收入口径配置&#10;- 添加CalibrePopoverTips提示组件增强用户体验&#10;- 实现收入口径和病组成本的动态选项生成功能&#10;- 添加患者类型列表的多选绑定数据处理逻辑&#10;- 实现收入和成本口径的数据同步机制&#10;- 集成vuex状态管理支持数据流控制&#10;- 优化页面布局结构添加容器样式&#10;- 移除调试用的红色边框样式配置">
-      <option name="closed" value="true" />
-      <created>1784619946149</created>
-      <option name="number" value="04484" />
-      <option name="presentableId" value="LOCAL-04484" />
-      <option name="project" value="LOCAL" />
-      <updated>1784619946150</updated>
+      <workItem from="1784768095682" duration="21578000" />
     </task>
     <task id="LOCAL-04485" summary="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(hospital): 添加病组分析诊断操作明细报表接口&#10;&#10;- 实现诊断下拉框数据获取接口&#10;- 实现操作下拉框数据获取接口&#10;- 实现DRG病组下拉框数据获取接口&#10;- 集成axios请求库进行HTTP通信&#10;- 添加完整的文件头部注释信息">
       <option name="closed" value="true" />
@@ -3101,7 +3085,23 @@
       <option name="project" value="LOCAL" />
       <updated>1784787763506</updated>
     </task>
-    <option name="localTasksCounter" value="4532" />
+    <task id="LOCAL-04532" summary="v126:feat/refactor:需求2588-科室端-收支分析-总览、收入总览两个页面，收入口径选择‘开单收入’时，整体分析Tab页、门急诊分析Tab、住院分析Tab页的‘医疗盈余分析表’表的各项收入下钻页，‘对比分析’图替换成对应收入分析表和费用上升前十帕累托图&#10;fix(income): 修复收入分析模块布局间距问题&#10;&#10;- 为PlItemLayout组件添加lastRowBottomMargin属性以调整底部边距&#10;- 解决门急诊和住院费用项目排名前十组件的布局间距问题">
+      <option name="closed" value="true" />
+      <created>1784788163226</created>
+      <option name="number" value="04532" />
+      <option name="presentableId" value="LOCAL-04532" />
+      <option name="project" value="LOCAL" />
+      <updated>1784788163226</updated>
+    </task>
+    <task id="LOCAL-04533" summary="v126:feat/refactor:需求2588-科室端-收支分析-总览、收入总览两个页面，收入口径选择‘开单收入’时，整体分析Tab页、门急诊分析Tab、住院分析Tab页的‘医疗盈余分析表’表的各项收入下钻页，‘对比分析’图替换成对应收入分析表和费用上升前十帕累托图&#10;refactor(BIEAnalysis): 优化收入分析模块布局配置&#10;&#10;- 将 PlItemLayout 组件的绑定属性重构为计算属性 getPlItemLayoutBind&#10;- 移除硬编码的 lastRowBottomMargin 和 rowNum 属性&#10;- 使用 v-bind 指令动态绑定组件属性&#10;- 根据医疗服务类型动态设置底部边距样式类">
+      <option name="closed" value="true" />
+      <created>1784788850382</created>
+      <option name="number" value="04533" />
+      <option name="presentableId" value="LOCAL-04533" />
+      <option name="project" value="LOCAL" />
+      <updated>1784788850382</updated>
+    </task>
+    <option name="localTasksCounter" value="4534" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -3122,8 +3122,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="MARK_IGNORED_AS_EXCLUDED" value="true" />
-    <MESSAGE value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(DiagnosisOperationDetailTableHosp): 为诊断手术详情表格组件添加唯一ID标识&#10;&#10;- 引入elemId工具函数用于生成唯一元素ID&#10;- 在组件数据中添加elemId属性&#10;- 为表格元素动态生成并设置唯一的id属性值" />
-    <MESSAGE value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(diseaseAnalysis): 新增医院端诊断操作明细表格组件&#10;&#10;- 创建 DiagnosisOperationDetailDrilldownFeeTypeTableHosp 组件用于费用类型明细展示&#10;- 创建 DiagnosisOperationDetailDrilldownTableHosp 组件用于诊断操作费用明细展示&#10;- 集成 PlModulePanel 组件实现表格渲染功能&#10;- 实现数据请求逻辑和参数验证机制&#10;- 配置表格列定义和数据绑定功能&#10;- 添加加载状态管理和错误处理机制" />
     <MESSAGE value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(hospital): 添加诊断操作明细报表维度下拉框功能&#10;&#10;- 引入 to 工具函数和 fetchDrilldownDimensionSelectOptions API&#10;- 新增 dimensionTypeLoading 和 dimensionTypeOptions 状态字段&#10;- 添加 getDimensionTypeRequestParams getter 方法&#10;- 实现 requestDimensionTypeOptions 异步操作方法&#10;- 集成维度类型选项数据获取和映射逻辑" />
     <MESSAGE value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(diseaseAnalysis): 添加诊断操作明细下钻表格组件&#10;&#10;- 在 DiagnosisOperationDetailDrilldownFeeTypeTableHosp 组件中添加样式类名&#10;- 在 DiagnosisOperationDetailDrilldownTableHosp 组件中添加维度类型选择器&#10;- 新增 dimensionType 数据属性和相关计算属性&#10;- 添加维度类型选项监听器和初始化逻辑&#10;- 在主页面中引入并注册新的下钻表格组件&#10;- 更新页面布局结构以包含新的明细表格" />
     <MESSAGE value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(diagnosis-operation-detail): 添加诊断操作明细报表维度列表选择器组件&#10;&#10;- 创建 PlDimensionListSelector 组件用于诊断操作明细报表维度选择&#10;- 集成 PlSelect 下拉框组件并配置相关绑定属性&#10;- 实现维度列表数据请求功能，支持钻取维度数据获取&#10;- 添加参数验证逻辑，确保日期和维度类型参数有效性&#10;- 实现加载状态管理和错误处理机制&#10;- 配置默认选中第一个选项的功能并触发相应事件" />
@@ -3147,7 +3145,9 @@
     <MESSAGE value="v126:feat/refactor:需求2588-科室端-收支分析-总览、收入总览两个页面，收入口径选择‘开单收入’时，整体分析Tab页、门急诊分析Tab、住院分析Tab页的‘医疗盈余分析表’表的各项收入下钻页，‘对比分析’图替换成对应收入分析表和费用上升前十帕累托图&#10;feat(BIEAnalysis): 添加医疗收入服务模块显示控制功能&#10;&#10;- 在住院费用项目变动前十组件中添加条件渲染判断&#10;- 在门诊费用项目变动前十组件中添加条件渲染判断&#10;- 新增整体和住院业务类型常量定义&#10;- 添加门诊业务类型常量到门诊组件中&#10;- 集成BIEAnalysis状态管理中的医疗服务类型&#10;- 实现模块显示条件计算逻辑&#10;- 根据业务类型动态选择数据请求方法&#10;- 配置不同业务类型的API接口映射关系" />
     <MESSAGE value="v126:feat/refactor:需求2588-科室端-收支分析-总览、收入总览两个页面，收入口径选择‘开单收入’时，整体分析Tab页、门急诊分析Tab、住院分析Tab页的‘医疗盈余分析表’表的各项收入下钻页，‘对比分析’图替换成对应收入分析表和费用上升前十帕累托图&#10;feat(BIEAnalysis): 动态调整收入分析模块布局行数&#10;&#10;- 添加 medicalServeType 状态映射&#10;- 实现 getPlItemLayoutRowNum 计算属性根据医疗类型返回不同行数&#10;- 集成门诊和住院服务类型常量&#10;- 更新 PlItemLayout 组件以支持动态行数配置" />
     <MESSAGE value="v126:feat/refactor:需求2588-科室端-收支分析-总览、收入总览两个页面，收入口径选择‘开单收入’时，整体分析Tab页、门急诊分析Tab、住院分析Tab页的‘医疗盈余分析表’表的各项收入下钻页，‘对比分析’图替换成对应收入分析表和费用上升前十帕累托图&#10;fix(BIEAnalysis): 更新收入分析模块的Vuex状态映射&#10;&#10;- 添加mapState辅助函数以简化组件状态访问" />
-    <option name="LAST_COMMIT_MESSAGE" value="v126:feat/refactor:需求2588-科室端-收支分析-总览、收入总览两个页面，收入口径选择‘开单收入’时，整体分析Tab页、门急诊分析Tab、住院分析Tab页的‘医疗盈余分析表’表的各项收入下钻页，‘对比分析’图替换成对应收入分析表和费用上升前十帕累托图&#10;fix(BIEAnalysis): 更新收入分析模块的Vuex状态映射&#10;&#10;- 添加mapState辅助函数以简化组件状态访问" />
+    <MESSAGE value="v126:feat/refactor:需求2588-科室端-收支分析-总览、收入总览两个页面，收入口径选择‘开单收入’时，整体分析Tab页、门急诊分析Tab、住院分析Tab页的‘医疗盈余分析表’表的各项收入下钻页，‘对比分析’图替换成对应收入分析表和费用上升前十帕累托图&#10;fix(income): 修复收入分析模块布局间距问题&#10;&#10;- 为PlItemLayout组件添加lastRowBottomMargin属性以调整底部边距&#10;- 解决门急诊和住院费用项目排名前十组件的布局间距问题" />
+    <MESSAGE value="v126:feat/refactor:需求2588-科室端-收支分析-总览、收入总览两个页面，收入口径选择‘开单收入’时，整体分析Tab页、门急诊分析Tab、住院分析Tab页的‘医疗盈余分析表’表的各项收入下钻页，‘对比分析’图替换成对应收入分析表和费用上升前十帕累托图&#10;refactor(BIEAnalysis): 优化收入分析模块布局配置&#10;&#10;- 将 PlItemLayout 组件的绑定属性重构为计算属性 getPlItemLayoutBind&#10;- 移除硬编码的 lastRowBottomMargin 和 rowNum 属性&#10;- 使用 v-bind 指令动态绑定组件属性&#10;- 根据医疗服务类型动态设置底部边距样式类" />
+    <option name="LAST_COMMIT_MESSAGE" value="v126:feat/refactor:需求2588-科室端-收支分析-总览、收入总览两个页面，收入口径选择‘开单收入’时，整体分析Tab页、门急诊分析Tab、住院分析Tab页的‘医疗盈余分析表’表的各项收入下钻页，‘对比分析’图替换成对应收入分析表和费用上升前十帕累托图&#10;refactor(BIEAnalysis): 优化收入分析模块布局配置&#10;&#10;- 将 PlItemLayout 组件的绑定属性重构为计算属性 getPlItemLayoutBind&#10;- 移除硬编码的 lastRowBottomMargin 和 rowNum 属性&#10;- 使用 v-bind 指令动态绑定组件属性&#10;- 根据医疗服务类型动态设置底部边距样式类" />
   </component>
   <component name="VueSettings">
     <option name="innerServiceType" value="TS_SERVICE" />
