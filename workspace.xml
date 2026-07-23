@@ -44,10 +44,10 @@
     <option name="selectedModelId" value="auto" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a32d6ec8-0d74-4a1b-8cad-0ab91948ca3e" name="Changes" comment="v126:feat/refactor:需求2588-科室端-收支分析-总览、收入总览两个页面，收入口径选择‘开单收入’时，整体分析Tab页、门急诊分析Tab、住院分析Tab页的‘医疗盈余分析表’表的各项收入下钻页，‘对比分析’图替换成对应收入分析表和费用上升前十帕累托图&#10;refactor(api): 移除废弃接口&#10;&#10;- 移除整体分析收入构成明细表接口 fetchOverviewIncomeAnalysis&#10;- 移除门急诊项目费用变化前十接口 fetchOutpatientItemFeeChangeTop10&#10;- 移除住院项目费用变化前十接口 fetchInHospitalFeeItemChangeTop10">
+    <list default="true" id="a32d6ec8-0d74-4a1b-8cad-0ab91948ca3e" name="Changes" comment="v126:feat/refactor:需求变更1943-全院-重点设备效益分析-诊断类设备分析/治疗类设备分析-设备稼动率明细：名称显示有误&#10;fix(equipmentBenefitAnalysis): 修复设备稼动率明细标题显示问题&#10;&#10;- 移除空设备名称前缀中的多余连字符&#10;- 优化分类数据为空时的标题处理逻辑&#10;- 确保标题格式的一致性，避免显示空白前缀">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/equipmentBenefitAnalysis/components/diagnosisReturnRateAbnormal.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/equipmentBenefitAnalysis/components/diagnosisReturnRateAbnormal.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/equipmentBenefitAnalysis/components/treatReturnRateAbnormal.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/equipmentBenefitAnalysis/components/treatReturnRateAbnormal.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/diseaseAnalysis/hospital/diagnosis-operation-detail/DiagnosisOperationDetailDrilldownFeeTypeTableHosp.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/diseaseAnalysis/hospital/diagnosis-operation-detail/DiagnosisOperationDetailDrilldownFeeTypeTableHosp.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/tool/diagnosis-operation-detail/PlDimensionListSelector.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/tool/diagnosis-operation-detail/PlDimensionListSelector.vue" afterDir="false" />
     </list>
     <list id="bd8e474f-42c8-444f-9f2b-07be811ba86b" name="ignore-on-commit" comment="ignore-on-commit" />
     <option name="SHOW_DIALOG" value="false" />
@@ -345,101 +345,101 @@
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;2a1a7435_parent_location_hash&quot;: &quot;2a1a7435&quot;,
-    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
-    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder0&quot;: &quot;0&quot;,
-    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder1&quot;: &quot;1&quot;,
-    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder2&quot;: &quot;2&quot;,
-    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder3&quot;: &quot;3&quot;,
-    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder4&quot;: &quot;4&quot;,
-    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder5&quot;: &quot;5&quot;,
-    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth0&quot;: &quot;75&quot;,
-    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth1&quot;: &quot;75&quot;,
-    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth2&quot;: &quot;75&quot;,
-    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth3&quot;: &quot;75&quot;,
-    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth4&quot;: &quot;75&quot;,
-    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth5&quot;: &quot;1406&quot;,
-    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder0&quot;: &quot;0&quot;,
-    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder1&quot;: &quot;1&quot;,
-    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder2&quot;: &quot;2&quot;,
-    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder3&quot;: &quot;3&quot;,
-    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder4&quot;: &quot;4&quot;,
-    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder5&quot;: &quot;5&quot;,
-    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth0&quot;: &quot;298&quot;,
-    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth1&quot;: &quot;298&quot;,
-    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth2&quot;: &quot;296&quot;,
-    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth3&quot;: &quot;296&quot;,
-    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth4&quot;: &quot;297&quot;,
-    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth5&quot;: &quot;296&quot;,
-    &quot;Node.js.useAllCheckColumn.js.executor&quot;: &quot;Debug&quot;,
-    &quot;Notification.DisplayName-DoNotAsk-JavaScript: Code Vision Performance&quot;: &quot;JavaScript: Code Vision 性能观察程序&quot;,
-    &quot;Notification.DoNotAsk-JavaScript: Code Vision Performance&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.CodyProjectSettingsMigration&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;SHELLCHECK.PATH&quot;: &quot;C:\\Users\\xushuai\\AppData\\Roaming\\JetBrains\\WebStorm2024.1\\plugins\\Shell Script\\shellcheck.exe&quot;,
-    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;app.teamhub.selectedTeam&quot;: &quot;https://github.com/xmastan/department-management-web&quot;,
-    &quot;buildsPattern&quot;: &quot;&quot;,
-    &quot;chainlesschain.chat.sessionIds&quot;: &quot;&quot;,
-    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
-    &quot;com.codeium.enabled&quot;: &quot;true&quot;,
-    &quot;com.codeium.snoozedEndTime&quot;: &quot;0&quot;,
-    &quot;com.github.patou.gitmoji.migration-offered&quot;: &quot;true&quot;,
-    &quot;com.google.cloudcode.ide_session_index&quot;: &quot;20240202_0001&quot;,
-    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
-    &quot;copilot.chat.legacySessionMetadata.migrated&quot;: &quot;true&quot;,
-    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
-    &quot;didalgo.chatgpt.ToolWindow.ACTIVE&quot;: &quot;GPT_4&quot;,
-    &quot;file.manager.left.side.uri&quot;: &quot;file:///C:/Users/xushuai/&quot;,
-    &quot;file.manager.right.side.uri&quot;: &quot;file:///C:/Users/xushuai/&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;18.20.8&quot;,
-    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;18.19.130&quot;,
-    &quot;javascript.preferred.runtime.type.id&quot;: &quot;node&quot;,
-    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/project/doms_web/src/assets/iconfont&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;SCSS&quot;,
-    &quot;network.radicle.jetbrains.radiclejetbrainsplugin.config.path&quot;: &quot;&quot;,
-    &quot;network.radicle.jetbrains.radiclejetbrainsplugin.config.radSeedKey&quot;: &quot;http://localhost:8080&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.jshint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.stylelint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.jshint&quot;: &quot;&quot;,
-    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
-    &quot;node.js.selected.package.stylelint&quot;: &quot;&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;npm.testing.executor&quot;: &quot;Debug&quot;,
-    &quot;npm.本地构建打包.executor&quot;: &quot;Run&quot;,
-    &quot;npm.本地运行项目.executor&quot;: &quot;Debug&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
-    &quot;settings.editor.splitter.proportion&quot;: &quot;0.19736843&quot;,
-    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;D:\\software\\JetBrains\\WebStorm 2024.3\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;,
-    &quot;typescript.add.unambiguous.imports.on.the.fly&quot;: &quot;true&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "2a1a7435_parent_location_hash": "2a1a7435",
+    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
+    "FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder0": "0",
+    "FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder1": "1",
+    "FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder2": "2",
+    "FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder3": "3",
+    "FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder4": "4",
+    "FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder5": "5",
+    "FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth0": "75",
+    "FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth1": "75",
+    "FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth2": "75",
+    "FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth3": "75",
+    "FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth4": "75",
+    "FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth5": "1426",
+    "FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder0": "0",
+    "FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder1": "1",
+    "FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder2": "2",
+    "FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder3": "3",
+    "FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder4": "4",
+    "FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder5": "5",
+    "FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth0": "301",
+    "FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth1": "301",
+    "FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth2": "300",
+    "FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth3": "299",
+    "FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth4": "300",
+    "FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth5": "300",
+    "Node.js.useAllCheckColumn.js.executor": "Debug",
+    "Notification.DisplayName-DoNotAsk-JavaScript: Code Vision Performance": "JavaScript: Code Vision 性能观察程序",
+    "Notification.DoNotAsk-JavaScript: Code Vision Performance": "true",
+    "RunOnceActivity.CodyProjectSettingsMigration": "true",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "SHELLCHECK.PATH": "C:\\Users\\xushuai\\AppData\\Roaming\\JetBrains\\WebStorm2024.1\\plugins\\Shell Script\\shellcheck.exe",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "app.teamhub.selectedTeam": "https://github.com/xmastan/department-management-web",
+    "buildsPattern": "",
+    "chainlesschain.chat.sessionIds": "",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "com.codeium.enabled": "true",
+    "com.codeium.snoozedEndTime": "0",
+    "com.github.patou.gitmoji.migration-offered": "true",
+    "com.google.cloudcode.ide_session_index": "20240202_0001",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "copilot.chat.legacySessionMetadata.migrated": "true",
+    "dart.analysis.tool.window.visible": "false",
+    "didalgo.chatgpt.ToolWindow.ACTIVE": "GPT_4",
+    "file.manager.left.side.uri": "file:///C:/Users/xushuai/",
+    "file.manager.right.side.uri": "file:///C:/Users/xushuai/",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "javascript.nodejs.core.library.configured.version": "18.20.8",
+    "javascript.nodejs.core.library.typings.version": "18.19.130",
+    "javascript.preferred.runtime.type.id": "node",
+    "junie.onboarding.icon.badge.shown": "true",
+    "last_opened_file_path": "D:/project/doms_web/src/assets/iconfont",
+    "list.type.of.created.stylesheet": "SCSS",
+    "network.radicle.jetbrains.radiclejetbrainsplugin.config.path": "",
+    "network.radicle.jetbrains.radiclejetbrainsplugin.config.radSeedKey": "http://localhost:8080",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.jshint": "true",
+    "node.js.detected.package.standard": "true",
+    "node.js.detected.package.stylelint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.jshint": "",
+    "node.js.selected.package.standard": "",
+    "node.js.selected.package.stylelint": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_interpreter_path": "node",
+    "nodejs_package_manager_path": "npm",
+    "npm.testing.executor": "Debug",
+    "npm.本地构建打包.executor": "Run",
+    "npm.本地运行项目.executor": "Debug",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
+    "settings.editor.splitter.proportion": "0.19736843",
+    "to.speed.mode.migration.done": "true",
+    "ts.external.directory.path": "D:\\software\\JetBrains\\WebStorm 2024.3\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
+    "typescript.add.unambiguous.imports.on.the.fly": "true",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;stardust.markdown.MarkdownSplitEditorSuppressor:keyList&quot;: [],
-    &quot;vue.recent.templates&quot;: [
-      &quot;Vue Options API Component&quot;
+  "keyToStringList": {
+    "stardust.markdown.MarkdownSplitEditorSuppressor:keyList": [],
+    "vue.recent.templates": [
+      "Vue Options API Component"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\project\doms_web\src\assets\iconfont" />
@@ -2706,47 +2706,7 @@
       <workItem from="1784623910570" duration="294000" />
       <workItem from="1784624264725" duration="13695000" />
       <workItem from="1784684262611" duration="36252000" />
-      <workItem from="1784768095682" duration="24070000" />
-    </task>
-    <task id="LOCAL-04487" summary="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(drg): 添加对比方式选择功能到医院DRG诊断手术详情页面&#10;&#10;- 引入PlCompareSelect组件用于对比方式选择&#10;- 添加compareType字段到查询参数和响应式数据&#10;- 注入全局同比环比默认值并设置初始值&#10;- 更新handleQuery方法以同步对比类型参数&#10;- 添加诊断类型和操作类型响应式变量&#10;- 修复props属性格式化问题&#10;- 优化代码结构和数据处理逻辑">
-      <option name="closed" value="true" />
-      <created>1784626820372</created>
-      <option name="number" value="04487" />
-      <option name="presentableId" value="LOCAL-04487" />
-      <option name="project" value="LOCAL" />
-      <updated>1784626820372</updated>
-    </task>
-    <task id="LOCAL-04488" summary="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(component): 添加诊断操作明细报表选择组件&#10;&#10;- 新增 PlDiagnosisSelector 组件用于诊断类型选择&#10;- 新增 PlDrgGroupSelector 组件用于 DRG 组选择&#10;- 新增 PlOperationSelector 组件用于操作类型选择&#10;- 所有组件基于 PlSelect 基础组件构建&#10;- 统一实现 loading 状态和数据绑定功能&#10;- 遵循命名规范和代码结构标准">
-      <option name="closed" value="true" />
-      <created>1784627804954</created>
-      <option name="number" value="04488" />
-      <option name="presentableId" value="LOCAL-04488" />
-      <option name="project" value="LOCAL" />
-      <updated>1784627804954</updated>
-    </task>
-    <task id="LOCAL-04489" summary="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(iconfont): 添加医院管理系统相关图标">
-      <option name="closed" value="true" />
-      <created>1784632388588</created>
-      <option name="number" value="04489" />
-      <option name="presentableId" value="LOCAL-04489" />
-      <option name="project" value="LOCAL" />
-      <updated>1784632388588</updated>
-    </task>
-    <task id="LOCAL-04490" summary="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(PlDiagnosisSelector): 添加诊断选择器图标切换功能&#10;&#10;- 集成 SvgIcon 组件并添加上下箭头图标&#10;- 实现图标点击切换状态功能&#10;- 添加诊断选项数据请求逻辑&#10;- 配置选择器绑定数据和禁用状态控制&#10;- 添加组件样式和布局调整&#10;- 实现查询键属性配置和事件处理">
-      <option name="closed" value="true" />
-      <created>1784632461639</created>
-      <option name="number" value="04490" />
-      <option name="presentableId" value="LOCAL-04490" />
-      <option name="project" value="LOCAL" />
-      <updated>1784632461639</updated>
-    </task>
-    <task id="LOCAL-04491" summary="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(drg): 在医院诊断操作详情页面添加诊断口径选择器&#10;&#10;- 添加 PlDiagnosisSelector 组件用于诊断口径筛选&#10;- 在查询包装器中集成诊断口径选择功能&#10;- 更新组件导入和注册配置&#10;- 添加诊断口径相关的查询参数绑定">
-      <option name="closed" value="true" />
-      <created>1784632541379</created>
-      <option name="number" value="04491" />
-      <option name="presentableId" value="LOCAL-04491" />
-      <option name="project" value="LOCAL" />
-      <updated>1784632541379</updated>
+      <workItem from="1784768095682" duration="28389000" />
     </task>
     <task id="LOCAL-04492" summary="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(drg): 添加操作口径选择器并优化诊断操作详情组件&#10;&#10;- 新增 PlOperationSelector 组件支持操作类型多选&#10;- 在 DiagnosisOperationDetailHosp 页面集成操作口径选择功能&#10;- 添加诊断口径和操作口径的选择状态控制逻辑&#10;- 实现 DRG 组列表多选功能和启用状态管理&#10;- 优化查询参数构建逻辑以支持新增筛选条件&#10;- 更新组件间事件通信机制以同步选择器启用状态">
       <option name="closed" value="true" />
@@ -3100,7 +3060,47 @@
       <option name="project" value="LOCAL" />
       <updated>1784792135901</updated>
     </task>
-    <option name="localTasksCounter" value="4536" />
+    <task id="LOCAL-04536" summary="v126:fix/refactor:需求变更1943（济宁）-全院-重点设备效益分析-诊断类设备分析-诊断类设备投资回报率异常探查/设备投资回报率明细：周度和日度时，未隐藏该表&#10;feat(equipmentBenefitAnalysis): 添加频率代码周日判断条件控制组件显示&#10;&#10;- 在diagnosisReturnRateAbnormal.vue中添加getCurrentFreqCodeIsWeekOrDay条件判断&#10;- 在treatReturnRateAbnormal.vue中添加getCurrentFreqCodeIsWeekOrDay条件判断&#10;- 引入mapGetters用于获取vuex中的频率代码状态&#10;- 配置computed属性映射filter模块的getCurrentFreqCodeIsWeekOrDay方法">
+      <option name="closed" value="true" />
+      <created>1784793677986</created>
+      <option name="number" value="04536" />
+      <option name="presentableId" value="LOCAL-04536" />
+      <option name="project" value="LOCAL" />
+      <updated>1784793677986</updated>
+    </task>
+    <task id="LOCAL-04537" summary="v126:fix/refactor:需求变更2305-全院-病种分析（DRG支付）-异常病组监控分析-费用分析/总权重分析/效率分析-费用变动异常分析：切换表格，单位重复&#10;fix(chart): 修复散点图单位显示逻辑&#10;&#10;- 修改了单位显示条件仅对百分比符号进行特殊处理&#10;- 保持其他单位类型的正常显示逻辑">
+      <option name="closed" value="true" />
+      <created>1784795192157</created>
+      <option name="number" value="04537" />
+      <option name="presentableId" value="LOCAL-04537" />
+      <option name="project" value="LOCAL" />
+      <updated>1784795192157</updated>
+    </task>
+    <task id="LOCAL-04538" summary="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;fix(diseaseAnalysis): 修复诊断操作详情表格组件标题显示和参数校验问题&#10;&#10;- 优化 getPanelTitle 方法，改进诊断和操作名称为空时的标题显示逻辑&#10;- 注释掉 diagnosisCode 和 operationCode 参数校验，解决参数验证问题">
+      <option name="closed" value="true" />
+      <created>1784795834876</created>
+      <option name="number" value="04538" />
+      <option name="presentableId" value="LOCAL-04538" />
+      <option name="project" value="LOCAL" />
+      <updated>1784795834876</updated>
+    </task>
+    <task id="LOCAL-04539" summary="v126:feat/refactor:需求变更1943-全院-重点设备效益分析-诊断类设备分析/治疗类设备分析-设备稼动率明细：名称显示有误&#10;fix(equipmentBenefitAnalysis): 解决设备稼动率明细标题显示问题&#10;&#10;- 修复了当设备名称为空时标题显示异常的问题&#10;- 使用可选链操作符避免空值导致的错误&#10;- 确保标题格式的一致性，即使设备名称不存在也能正确显示">
+      <option name="closed" value="true" />
+      <created>1784796616817</created>
+      <option name="number" value="04539" />
+      <option name="presentableId" value="LOCAL-04539" />
+      <option name="project" value="LOCAL" />
+      <updated>1784796616817</updated>
+    </task>
+    <task id="LOCAL-04540" summary="v126:feat/refactor:需求变更1943-全院-重点设备效益分析-诊断类设备分析/治疗类设备分析-设备稼动率明细：名称显示有误&#10;fix(equipmentBenefitAnalysis): 修复设备稼动率明细标题显示问题&#10;&#10;- 移除空设备名称前缀中的多余连字符&#10;- 优化分类数据为空时的标题处理逻辑&#10;- 确保标题格式的一致性，避免显示空白前缀">
+      <option name="closed" value="true" />
+      <created>1784797065975</created>
+      <option name="number" value="04540" />
+      <option name="presentableId" value="LOCAL-04540" />
+      <option name="project" value="LOCAL" />
+      <updated>1784797065975</updated>
+    </task>
+    <option name="localTasksCounter" value="4541" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -3121,11 +3121,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="MARK_IGNORED_AS_EXCLUDED" value="true" />
-    <MESSAGE value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(diagnosis-operation-detail): 添加诊断操作明细报表维度列表选择器组件&#10;&#10;- 创建 PlDimensionListSelector 组件用于诊断操作明细报表维度选择&#10;- 集成 PlSelect 下拉框组件并配置相关绑定属性&#10;- 实现维度列表数据请求功能，支持钻取维度数据获取&#10;- 添加参数验证逻辑，确保日期和维度类型参数有效性&#10;- 实现加载状态管理和错误处理机制&#10;- 配置默认选中第一个选项的功能并触发相应事件" />
-    <MESSAGE value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;fix(api): 修复诊断操作明细费用类型下拉框接口参数问题&#10;&#10;- 移除了 fetchDrilldownFeeTypeSelectOptions 函数的 params 参数" />
-    <MESSAGE value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(PlDimensionListSelector): 更新维度列表选择器组件功能&#10;&#10;- 将 v-model 绑定从 $attrs.value 改为 dimensionValueList&#10;- 新增 panelTitle 属性支持面板标题显示&#10;- 配置 select 组件支持多选模式和过滤功能&#10;- 集成 vxe-select 组件并配置相关属性&#10;- 实现选项数据的维度名称和编码映射逻辑&#10;- 添加选中选项数据的监听和更新机制&#10;- 优化样式以保持与 element-ui 的一致性" />
-    <MESSAGE value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(DiagnosisOperationDetailDrilldownTableHosp): 添加表格排序功能支持&#10;&#10;- 引入useIfHasSequencableFalseRow和useCalcSequencableFalseRows钩子&#10;- 添加getIfHasSequencableFalseRows方法检查表格是否存在不可排序行数据&#10;- 添加getStartSortRow方法计算排序起始行&#10;- 在table绑定数据中动态添加startSortRow配置项&#10;- 扩展参数验证范围包括diagnosisCode和operationCode字段&#10;- 增加无效键值校验配置以提高参数验证准确性" />
-    <MESSAGE value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(diseaseAnalysis): 添加费用类型选择功能到病组费用明细表&#10;&#10;- 在诊断操作明细费用类型表格组件中新增费用类型选择器&#10;- 集成费用类型下拉框并实现后端数据获取功能&#10;- 更新维度列表选择器请求参数结构&#10;- 添加费用类型验证和数组长度检查逻辑&#10;- 实现费用类型选项动态加载和默认值设置&#10;- 修复维度列表更新事件绑定问题" />
     <MESSAGE value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;refactor(diseaseAnalysis): 优化诊断操作详情费用类型表格组件&#10;&#10;- 添加 getParams 计算依赖变更参数方法&#10;- 将 getRequestParams 替换为 getParams 并添加防抖处理&#10;- 在 dimensionListSelector 组件中清空选项和维度值列表" />
     <MESSAGE value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat: 添加医院诊断操作明细组件的指标参数&#10;&#10;- 为 DiagnosisOperationDetailDrilldownFeeTypeTableHosp 组件设置正确的 indModelCode&#10;- 为 DiagnosisOperationDetailDrilldownTableHosp 组件设置正确的 indModelCode&#10;- 为 DiagnosisOperationDetailTableHosp 组件设置正确的 indModelCode&#10;- 移除维度下拉请求参数中的冗余字段 indModelCode 和 showModuleType" />
     <MESSAGE value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;refactor(diseaseAnalysis): 优化诊断手术详情表格组件&#10;&#10;- 调整请求参数结构，将 commonRequestParams 移至对象开头&#10;- 添加对 commonRequestParams 的监听，实现数据变化时自动更新&#10;- 为诊断和手术名称添加空值处理，避免 undefined 显示问题" />
@@ -3146,7 +3141,12 @@
     <MESSAGE value="v126:feat/refactor:需求2588-科室端-收支分析-总览、收入总览两个页面，收入口径选择‘开单收入’时，整体分析Tab页、门急诊分析Tab、住院分析Tab页的‘医疗盈余分析表’表的各项收入下钻页，‘对比分析’图替换成对应收入分析表和费用上升前十帕累托图&#10;refactor(BIEAnalysis): 优化收入分析模块布局配置&#10;&#10;- 将 PlItemLayout 组件的绑定属性重构为计算属性 getPlItemLayoutBind&#10;- 移除硬编码的 lastRowBottomMargin 和 rowNum 属性&#10;- 使用 v-bind 指令动态绑定组件属性&#10;- 根据医疗服务类型动态设置底部边距样式类" />
     <MESSAGE value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;refactor(diseaseAnalysis): 优化诊断手术详情表格数据清理逻辑&#10;&#10;- 在多个组件中添加 clearTable 方法用于清空表格列和数据&#10;- 在日期参数变化时调用 clearTable 清理表格状态&#10;- 在维度类型变化时调用 clearTable 清理表格状态&#10;- 在请求数据前调用 clearTable 确保表格状态重置&#10;- 移除维度列表选择器中的多余检查键以简化验证逻辑" />
     <MESSAGE value="v126:feat/refactor:需求2588-科室端-收支分析-总览、收入总览两个页面，收入口径选择‘开单收入’时，整体分析Tab页、门急诊分析Tab、住院分析Tab页的‘医疗盈余分析表’表的各项收入下钻页，‘对比分析’图替换成对应收入分析表和费用上升前十帕累托图&#10;refactor(api): 移除废弃接口&#10;&#10;- 移除整体分析收入构成明细表接口 fetchOverviewIncomeAnalysis&#10;- 移除门急诊项目费用变化前十接口 fetchOutpatientItemFeeChangeTop10&#10;- 移除住院项目费用变化前十接口 fetchInHospitalFeeItemChangeTop10" />
-    <option name="LAST_COMMIT_MESSAGE" value="v126:feat/refactor:需求2588-科室端-收支分析-总览、收入总览两个页面，收入口径选择‘开单收入’时，整体分析Tab页、门急诊分析Tab、住院分析Tab页的‘医疗盈余分析表’表的各项收入下钻页，‘对比分析’图替换成对应收入分析表和费用上升前十帕累托图&#10;refactor(api): 移除废弃接口&#10;&#10;- 移除整体分析收入构成明细表接口 fetchOverviewIncomeAnalysis&#10;- 移除门急诊项目费用变化前十接口 fetchOutpatientItemFeeChangeTop10&#10;- 移除住院项目费用变化前十接口 fetchInHospitalFeeItemChangeTop10" />
+    <MESSAGE value="v126:fix/refactor:需求变更1943（济宁）-全院-重点设备效益分析-诊断类设备分析-诊断类设备投资回报率异常探查/设备投资回报率明细：周度和日度时，未隐藏该表&#10;feat(equipmentBenefitAnalysis): 添加频率代码周日判断条件控制组件显示&#10;&#10;- 在diagnosisReturnRateAbnormal.vue中添加getCurrentFreqCodeIsWeekOrDay条件判断&#10;- 在treatReturnRateAbnormal.vue中添加getCurrentFreqCodeIsWeekOrDay条件判断&#10;- 引入mapGetters用于获取vuex中的频率代码状态&#10;- 配置computed属性映射filter模块的getCurrentFreqCodeIsWeekOrDay方法" />
+    <MESSAGE value="v126:fix/refactor:需求变更2305-全院-病种分析（DRG支付）-异常病组监控分析-费用分析/总权重分析/效率分析-费用变动异常分析：切换表格，单位重复&#10;fix(chart): 修复散点图单位显示逻辑&#10;&#10;- 修改了单位显示条件仅对百分比符号进行特殊处理&#10;- 保持其他单位类型的正常显示逻辑" />
+    <MESSAGE value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;fix(diseaseAnalysis): 修复诊断操作详情表格组件标题显示和参数校验问题&#10;&#10;- 优化 getPanelTitle 方法，改进诊断和操作名称为空时的标题显示逻辑&#10;- 注释掉 diagnosisCode 和 operationCode 参数校验，解决参数验证问题" />
+    <MESSAGE value="v126:feat/refactor:需求变更1943-全院-重点设备效益分析-诊断类设备分析/治疗类设备分析-设备稼动率明细：名称显示有误&#10;fix(equipmentBenefitAnalysis): 解决设备稼动率明细标题显示问题&#10;&#10;- 修复了当设备名称为空时标题显示异常的问题&#10;- 使用可选链操作符避免空值导致的错误&#10;- 确保标题格式的一致性，即使设备名称不存在也能正确显示" />
+    <MESSAGE value="v126:feat/refactor:需求变更1943-全院-重点设备效益分析-诊断类设备分析/治疗类设备分析-设备稼动率明细：名称显示有误&#10;fix(equipmentBenefitAnalysis): 修复设备稼动率明细标题显示问题&#10;&#10;- 移除空设备名称前缀中的多余连字符&#10;- 优化分类数据为空时的标题处理逻辑&#10;- 确保标题格式的一致性，避免显示空白前缀" />
+    <option name="LAST_COMMIT_MESSAGE" value="v126:feat/refactor:需求变更1943-全院-重点设备效益分析-诊断类设备分析/治疗类设备分析-设备稼动率明细：名称显示有误&#10;fix(equipmentBenefitAnalysis): 修复设备稼动率明细标题显示问题&#10;&#10;- 移除空设备名称前缀中的多余连字符&#10;- 优化分类数据为空时的标题处理逻辑&#10;- 确保标题格式的一致性，避免显示空白前缀" />
   </component>
   <component name="VueSettings">
     <option name="innerServiceType" value="TS_SERVICE" />
