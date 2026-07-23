@@ -45,8 +45,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a32d6ec8-0d74-4a1b-8cad-0ab91948ca3e" name="Changes" comment="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;refactor(diseaseAnalysis): 优化诊断操作详情费用类型表格组件请求参数&#10;&#10;- 将 getDimensionListSelectorRequestParams 替换为 commonRequestParams&#10;- 调整 getRequestParams 中参数顺序以确保正确合并&#10;- 优化 PlDimensionListSelector 组件属性绑定逻辑&#10;- 简化属性解构赋值减少冗余代码&#10;- 统一请求参数处理方式提高代码一致性">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/api/BIEAnalysis/incomeOverviewApi.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/BIEAnalysis/dept-medical-surplus-analysis/income/medical-service-income/DeptIncomeTypeAnalysisTable.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/BIEAnalysis/dept-medical-surplus-analysis/income/medical-service-income/DeptIncomeTypeAnalysisTable.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/BIEAnalysis/dept-medical-surplus-analysis/income/medical-service-income/InHospitalFeeItemChangeTop10.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/BIEAnalysis/dept-medical-surplus-analysis/income/medical-service-income/InHospitalFeeItemChangeTop10.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/BIEAnalysis/dept-medical-surplus-analysis/income/medical-service-income/OutpatientItemFeeChangeTop10.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/BIEAnalysis/dept-medical-surplus-analysis/income/medical-service-income/OutpatientItemFeeChangeTop10.vue" afterDir="false" />
     </list>
     <list id="bd8e474f-42c8-444f-9f2b-07be811ba86b" name="ignore-on-commit" comment="ignore-on-commit" />
     <option name="SHOW_DIALOG" value="false" />
@@ -118,8 +120,8 @@
         <option value="JSX File" />
         <option value="tsconfig.json" />
         <option value="SCSS File" />
-        <option value="JavaScript File" />
         <option value="Vue Options API Component" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -501,9 +503,9 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="npm.本地运行项目" />
       <item itemvalue="npm.build" />
       <item itemvalue="npm.testing" />
+      <item itemvalue="npm.本地运行项目" />
     </list>
   </component>
   <component name="SharedIndexes">
@@ -531,6 +533,24 @@
     <configuration useDefault="false">C:\Users\xushuai\AppData\Roaming\Subversion</configuration>
     <supportedVersion>125</supportedVersion>
     <option name="runUnderTerminal" value="true" />
+  </component>
+  <component name="SvnFileUrlMappingImpl">
+    <option name="myMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="D:\project\doms_web" />
+          <option name="myCopyRoot" value="D:\project\doms_web" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
+    <option name="myMoreRealMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="D:\project\doms_web" />
+          <option name="myCopyRoot" value="D:\project\doms_web" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
   </component>
   <component name="TDDPredictState">
     <testRunHistory>
@@ -2705,7 +2725,7 @@
       <workItem from="1784623910570" duration="294000" />
       <workItem from="1784624264725" duration="13695000" />
       <workItem from="1784684262611" duration="36252000" />
-      <workItem from="1784768095682" duration="10854000" />
+      <workItem from="1784768095682" duration="14146000" />
     </task>
     <task id="LOCAL-04476" summary="v126:feat/refactor::需求2467-前端代码规范化修改-病种分析（市医保DRG） /出院分析 /科室病组整体运营分析 总权重&#10;feat(diseaseAnalysis): 添加图表组件ID和代码配置&#10;&#10;- 引入elemId工具函数用于生成唯一标识&#10;- 为四个图表组件添加唯一的id属性&#10;- 配置每个图表的code参数以支持数据追踪&#10;- 更新图表1为总权重对比分析并设置对应代码&#10;- 更新图表2为总权重趋势分析并设置对应代码&#10;- 更新图表3为入组例数趋势分析并设置对应代码&#10;- 更新图表4为总权重前十分布占比并设置对应代码">
       <option name="closed" value="true" />
