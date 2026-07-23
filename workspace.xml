@@ -44,10 +44,9 @@
     <option name="selectedModelId" value="auto" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a32d6ec8-0d74-4a1b-8cad-0ab91948ca3e" name="Changes" comment="v126:feat/refactor:需求变更1943-全院-重点设备效益分析-诊断类设备分析/治疗类设备分析-设备稼动率明细：名称显示有误&#10;fix(equipmentBenefitAnalysis): 修复设备稼动率明细标题显示问题&#10;&#10;- 移除空设备名称前缀中的多余连字符&#10;- 优化分类数据为空时的标题处理逻辑&#10;- 确保标题格式的一致性，避免显示空白前缀">
+    <list default="true" id="a32d6ec8-0d74-4a1b-8cad-0ab91948ca3e" name="Changes" comment="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;fix(diseaseAnalysis): 处理维度列表数据为空时也可请求&#10;&#10;- 添加 ifDimensionListReady 状态标识维度列表是否准备就绪&#10;- 在 PlDimensionListSelector 组件中添加 update:options-ready 事件&#10;- 修改 requestParams 的 handler 为异步函数确保数据加载完成&#10;- 在数据请求完成后触发 options-ready 事件&#10;- 更新表格数据请求逻辑使用新的状态判断条件">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/diseaseAnalysis/hospital/diagnosis-operation-detail/DiagnosisOperationDetailDrilldownFeeTypeTableHosp.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/diseaseAnalysis/hospital/diagnosis-operation-detail/DiagnosisOperationDetailDrilldownFeeTypeTableHosp.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/tool/diagnosis-operation-detail/PlDimensionListSelector.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/tool/diagnosis-operation-detail/PlDimensionListSelector.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/diseaseAnalysis/hospital/total-weight/RwRangeList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/diseaseAnalysis/hospital/total-weight/RwRangeList.vue" afterDir="false" />
     </list>
     <list id="bd8e474f-42c8-444f-9f2b-07be811ba86b" name="ignore-on-commit" comment="ignore-on-commit" />
     <option name="SHOW_DIALOG" value="false" />
@@ -2706,15 +2705,7 @@
       <workItem from="1784623910570" duration="294000" />
       <workItem from="1784624264725" duration="13695000" />
       <workItem from="1784684262611" duration="36252000" />
-      <workItem from="1784768095682" duration="28389000" />
-    </task>
-    <task id="LOCAL-04492" summary="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(drg): 添加操作口径选择器并优化诊断操作详情组件&#10;&#10;- 新增 PlOperationSelector 组件支持操作类型多选&#10;- 在 DiagnosisOperationDetailHosp 页面集成操作口径选择功能&#10;- 添加诊断口径和操作口径的选择状态控制逻辑&#10;- 实现 DRG 组列表多选功能和启用状态管理&#10;- 优化查询参数构建逻辑以支持新增筛选条件&#10;- 更新组件间事件通信机制以同步选择器启用状态">
-      <option name="closed" value="true" />
-      <created>1784686764552</created>
-      <option name="number" value="04492" />
-      <option name="presentableId" value="LOCAL-04492" />
-      <option name="project" value="LOCAL" />
-      <updated>1784686764552</updated>
+      <workItem from="1784768095682" duration="28758000" />
     </task>
     <task id="LOCAL-04493" summary="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;refactor(diagnosis-selector): 重构诊断选择器组件结构&#10;&#10;- 调整属性配置顺序，将disabled属性移至正确位置&#10;- 添加placeholder提示文本改善用户体验&#10;- 重新组织方法定义顺序，将toggleIconState方法提前">
       <option name="closed" value="true" />
@@ -3100,7 +3091,15 @@
       <option name="project" value="LOCAL" />
       <updated>1784797065975</updated>
     </task>
-    <option name="localTasksCounter" value="4541" />
+    <task id="LOCAL-04541" summary="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;fix(diseaseAnalysis): 处理维度列表数据为空时也可请求&#10;&#10;- 添加 ifDimensionListReady 状态标识维度列表是否准备就绪&#10;- 在 PlDimensionListSelector 组件中添加 update:options-ready 事件&#10;- 修改 requestParams 的 handler 为异步函数确保数据加载完成&#10;- 在数据请求完成后触发 options-ready 事件&#10;- 更新表格数据请求逻辑使用新的状态判断条件">
+      <option name="closed" value="true" />
+      <created>1784798122105</created>
+      <option name="number" value="04541" />
+      <option name="presentableId" value="LOCAL-04541" />
+      <option name="project" value="LOCAL" />
+      <updated>1784798122105</updated>
+    </task>
+    <option name="localTasksCounter" value="4542" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -3121,7 +3120,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="MARK_IGNORED_AS_EXCLUDED" value="true" />
-    <MESSAGE value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;refactor(diseaseAnalysis): 优化诊断操作详情费用类型表格组件&#10;&#10;- 添加 getParams 计算依赖变更参数方法&#10;- 将 getRequestParams 替换为 getParams 并添加防抖处理&#10;- 在 dimensionListSelector 组件中清空选项和维度值列表" />
     <MESSAGE value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat: 添加医院诊断操作明细组件的指标参数&#10;&#10;- 为 DiagnosisOperationDetailDrilldownFeeTypeTableHosp 组件设置正确的 indModelCode&#10;- 为 DiagnosisOperationDetailDrilldownTableHosp 组件设置正确的 indModelCode&#10;- 为 DiagnosisOperationDetailTableHosp 组件设置正确的 indModelCode&#10;- 移除维度下拉请求参数中的冗余字段 indModelCode 和 showModuleType" />
     <MESSAGE value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;refactor(diseaseAnalysis): 优化诊断手术详情表格组件&#10;&#10;- 调整请求参数结构，将 commonRequestParams 移至对象开头&#10;- 添加对 commonRequestParams 的监听，实现数据变化时自动更新&#10;- 为诊断和手术名称添加空值处理，避免 undefined 显示问题" />
     <MESSAGE value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;fix(diseaseAnalysis): 修复诊断操作详情费用类型表格参数验证&#10;&#10;- 在参数验证的 checkingKeys 中添加 diagnosisCode 和 operationCode 字段&#10;- 确保诊断代码和手术代码变更时触发正确的参数验证逻辑" />
@@ -3146,7 +3144,8 @@
     <MESSAGE value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;fix(diseaseAnalysis): 修复诊断操作详情表格组件标题显示和参数校验问题&#10;&#10;- 优化 getPanelTitle 方法，改进诊断和操作名称为空时的标题显示逻辑&#10;- 注释掉 diagnosisCode 和 operationCode 参数校验，解决参数验证问题" />
     <MESSAGE value="v126:feat/refactor:需求变更1943-全院-重点设备效益分析-诊断类设备分析/治疗类设备分析-设备稼动率明细：名称显示有误&#10;fix(equipmentBenefitAnalysis): 解决设备稼动率明细标题显示问题&#10;&#10;- 修复了当设备名称为空时标题显示异常的问题&#10;- 使用可选链操作符避免空值导致的错误&#10;- 确保标题格式的一致性，即使设备名称不存在也能正确显示" />
     <MESSAGE value="v126:feat/refactor:需求变更1943-全院-重点设备效益分析-诊断类设备分析/治疗类设备分析-设备稼动率明细：名称显示有误&#10;fix(equipmentBenefitAnalysis): 修复设备稼动率明细标题显示问题&#10;&#10;- 移除空设备名称前缀中的多余连字符&#10;- 优化分类数据为空时的标题处理逻辑&#10;- 确保标题格式的一致性，避免显示空白前缀" />
-    <option name="LAST_COMMIT_MESSAGE" value="v126:feat/refactor:需求变更1943-全院-重点设备效益分析-诊断类设备分析/治疗类设备分析-设备稼动率明细：名称显示有误&#10;fix(equipmentBenefitAnalysis): 修复设备稼动率明细标题显示问题&#10;&#10;- 移除空设备名称前缀中的多余连字符&#10;- 优化分类数据为空时的标题处理逻辑&#10;- 确保标题格式的一致性，避免显示空白前缀" />
+    <MESSAGE value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;fix(diseaseAnalysis): 处理维度列表数据为空时也可请求&#10;&#10;- 添加 ifDimensionListReady 状态标识维度列表是否准备就绪&#10;- 在 PlDimensionListSelector 组件中添加 update:options-ready 事件&#10;- 修改 requestParams 的 handler 为异步函数确保数据加载完成&#10;- 在数据请求完成后触发 options-ready 事件&#10;- 更新表格数据请求逻辑使用新的状态判断条件" />
+    <option name="LAST_COMMIT_MESSAGE" value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;fix(diseaseAnalysis): 处理维度列表数据为空时也可请求&#10;&#10;- 添加 ifDimensionListReady 状态标识维度列表是否准备就绪&#10;- 在 PlDimensionListSelector 组件中添加 update:options-ready 事件&#10;- 修改 requestParams 的 handler 为异步函数确保数据加载完成&#10;- 在数据请求完成后触发 options-ready 事件&#10;- 更新表格数据请求逻辑使用新的状态判断条件" />
   </component>
   <component name="VueSettings">
     <option name="innerServiceType" value="TS_SERVICE" />
