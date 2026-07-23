@@ -44,10 +44,8 @@
     <option name="selectedModelId" value="auto" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a32d6ec8-0d74-4a1b-8cad-0ab91948ca3e" name="Changes" comment="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(diseaseAnalysis): 添加费用类型选择功能到病组费用明细表&#10;&#10;- 在诊断操作明细费用类型表格组件中新增费用类型选择器&#10;- 集成费用类型下拉框并实现后端数据获取功能&#10;- 更新维度列表选择器请求参数结构&#10;- 添加费用类型验证和数组长度检查逻辑&#10;- 实现费用类型选项动态加载和默认值设置&#10;- 修复维度列表更新事件绑定问题">
+    <list default="true" id="a32d6ec8-0d74-4a1b-8cad-0ab91948ca3e" name="Changes" comment="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;refactor(diseaseAnalysis): 优化诊断操作详情费用类型表格组件&#10;&#10;- 添加 getParams 计算依赖变更参数方法&#10;- 将 getRequestParams 替换为 getParams 并添加防抖处理&#10;- 在 dimensionListSelector 组件中清空选项和维度值列表">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/diseaseAnalysis/hospital/diagnosis-operation-detail/DiagnosisOperationDetailDrilldownFeeTypeTableHosp.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/diseaseAnalysis/hospital/diagnosis-operation-detail/DiagnosisOperationDetailDrilldownFeeTypeTableHosp.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/tool/diagnosis-operation-detail/PlDimensionListSelector.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/tool/diagnosis-operation-detail/PlDimensionListSelector.vue" afterDir="false" />
     </list>
     <list id="bd8e474f-42c8-444f-9f2b-07be811ba86b" name="ignore-on-commit" comment="ignore-on-commit" />
     <option name="SHOW_DIALOG" value="false" />
@@ -2705,15 +2703,7 @@
       <workItem from="1784600609992" duration="18608000" />
       <workItem from="1784623910570" duration="294000" />
       <workItem from="1784624264725" duration="13695000" />
-      <workItem from="1784684262611" duration="35498000" />
-    </task>
-    <task id="LOCAL-04467" summary="v126:feat/refactor: 需求1943-院端-重点设备效益分析-总览、院端-重点设备效益分析-诊断类设备分析、院端-重点设备效益分析-治疗类设备分析、科室端-重点设备效益分析-下所有菜单-支持周、日维度选择；选择周、日维度时，原工作量、稼动率相关表格和图表内容不变；原收入、投资回报率相关表格和图表，因为成本最小只能到月，直接隐藏或只显示收入相关元素；&#10;feat(equipmentBenefitAnalysis): 添加周度日度隐藏功能&#10;&#10;- 在returnRateAbnormal组件中添加getCurrentFreqCodeIsWeekOrDay计算属性&#10;- 使用v-if指令控制组件在周度和日度时不显示&#10;- 导入vuex的mapGetters辅助函数">
-      <option name="closed" value="true" />
-      <created>1784513884936</created>
-      <option name="number" value="04467" />
-      <option name="presentableId" value="LOCAL-04467" />
-      <option name="project" value="LOCAL" />
-      <updated>1784513884937</updated>
+      <workItem from="1784684262611" duration="36252000" />
     </task>
     <task id="LOCAL-04468" summary="更新配置">
       <option name="closed" value="true" />
@@ -3099,7 +3089,15 @@
       <option name="project" value="LOCAL" />
       <updated>1784720612385</updated>
     </task>
-    <option name="localTasksCounter" value="4516" />
+    <task id="LOCAL-04516" summary="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;refactor(diseaseAnalysis): 优化诊断操作详情费用类型表格组件&#10;&#10;- 添加 getParams 计算依赖变更参数方法&#10;- 将 getRequestParams 替换为 getParams 并添加防抖处理&#10;- 在 dimensionListSelector 组件中清空选项和维度值列表">
+      <option name="closed" value="true" />
+      <created>1784721722535</created>
+      <option name="number" value="04516" />
+      <option name="presentableId" value="LOCAL-04516" />
+      <option name="project" value="LOCAL" />
+      <updated>1784721722535</updated>
+    </task>
+    <option name="localTasksCounter" value="4517" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -3120,7 +3118,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="MARK_IGNORED_AS_EXCLUDED" value="true" />
-    <MESSAGE value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(drg): 在医院诊断操作详情页面添加诊断口径选择器&#10;&#10;- 添加 PlDiagnosisSelector 组件用于诊断口径筛选&#10;- 在查询包装器中集成诊断口径选择功能&#10;- 更新组件导入和注册配置&#10;- 添加诊断口径相关的查询参数绑定" />
     <MESSAGE value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(drg): 添加操作口径选择器并优化诊断操作详情组件&#10;&#10;- 新增 PlOperationSelector 组件支持操作类型多选&#10;- 在 DiagnosisOperationDetailHosp 页面集成操作口径选择功能&#10;- 添加诊断口径和操作口径的选择状态控制逻辑&#10;- 实现 DRG 组列表多选功能和启用状态管理&#10;- 优化查询参数构建逻辑以支持新增筛选条件&#10;- 更新组件间事件通信机制以同步选择器启用状态" />
     <MESSAGE value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;refactor(diagnosis-selector): 重构诊断选择器组件结构&#10;&#10;- 调整属性配置顺序，将disabled属性移至正确位置&#10;- 添加placeholder提示文本改善用户体验&#10;- 重新组织方法定义顺序，将toggleIconState方法提前" />
     <MESSAGE value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(drg): 添加DRG分组选择器功能&#10;&#10;- 集成SvgIcon组件并添加图标切换功能&#10;- 实现DRG病组数据的异步加载和选项绑定&#10;- 添加多选模式和标签折叠显示支持&#10;- 实现选择器禁用状态控制逻辑&#10;- 添加查询参数传递和事件发射机制&#10;- 完善组件属性配置和样式布局" />
@@ -3145,7 +3142,8 @@
     <MESSAGE value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(PlDimensionListSelector): 更新维度列表选择器组件功能&#10;&#10;- 将 v-model 绑定从 $attrs.value 改为 dimensionValueList&#10;- 新增 panelTitle 属性支持面板标题显示&#10;- 配置 select 组件支持多选模式和过滤功能&#10;- 集成 vxe-select 组件并配置相关属性&#10;- 实现选项数据的维度名称和编码映射逻辑&#10;- 添加选中选项数据的监听和更新机制&#10;- 优化样式以保持与 element-ui 的一致性" />
     <MESSAGE value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(DiagnosisOperationDetailDrilldownTableHosp): 添加表格排序功能支持&#10;&#10;- 引入useIfHasSequencableFalseRow和useCalcSequencableFalseRows钩子&#10;- 添加getIfHasSequencableFalseRows方法检查表格是否存在不可排序行数据&#10;- 添加getStartSortRow方法计算排序起始行&#10;- 在table绑定数据中动态添加startSortRow配置项&#10;- 扩展参数验证范围包括diagnosisCode和operationCode字段&#10;- 增加无效键值校验配置以提高参数验证准确性" />
     <MESSAGE value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(diseaseAnalysis): 添加费用类型选择功能到病组费用明细表&#10;&#10;- 在诊断操作明细费用类型表格组件中新增费用类型选择器&#10;- 集成费用类型下拉框并实现后端数据获取功能&#10;- 更新维度列表选择器请求参数结构&#10;- 添加费用类型验证和数组长度检查逻辑&#10;- 实现费用类型选项动态加载和默认值设置&#10;- 修复维度列表更新事件绑定问题" />
-    <option name="LAST_COMMIT_MESSAGE" value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(diseaseAnalysis): 添加费用类型选择功能到病组费用明细表&#10;&#10;- 在诊断操作明细费用类型表格组件中新增费用类型选择器&#10;- 集成费用类型下拉框并实现后端数据获取功能&#10;- 更新维度列表选择器请求参数结构&#10;- 添加费用类型验证和数组长度检查逻辑&#10;- 实现费用类型选项动态加载和默认值设置&#10;- 修复维度列表更新事件绑定问题" />
+    <MESSAGE value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;refactor(diseaseAnalysis): 优化诊断操作详情费用类型表格组件&#10;&#10;- 添加 getParams 计算依赖变更参数方法&#10;- 将 getRequestParams 替换为 getParams 并添加防抖处理&#10;- 在 dimensionListSelector 组件中清空选项和维度值列表" />
+    <option name="LAST_COMMIT_MESSAGE" value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;refactor(diseaseAnalysis): 优化诊断操作详情费用类型表格组件&#10;&#10;- 添加 getParams 计算依赖变更参数方法&#10;- 将 getRequestParams 替换为 getParams 并添加防抖处理&#10;- 在 dimensionListSelector 组件中清空选项和维度值列表" />
   </component>
   <component name="VueSettings">
     <option name="innerServiceType" value="TS_SERVICE" />
