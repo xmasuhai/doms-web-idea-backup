@@ -44,8 +44,9 @@
     <option name="selectedModelId" value="auto" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a32d6ec8-0d74-4a1b-8cad-0ab91948ca3e" name="Changes" comment="v127:feat/refactor:需求2276-科室端-病种分析（市医保DRG） ，新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(diseaseAnalysis): 添加科室端DRG病组分析诊断操作明细页面&#10;&#10;- 新增DiagnosisOperationDetailDept.vue组件文件&#10;- 创建科室端病组分析（DRG支付）诊断操作明细页面&#10;- 配置路由指向新的科室端页面路径&#10;- 更新文件路径引用以匹配新页面位置">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="a32d6ec8-0d74-4a1b-8cad-0ab91948ca3e" name="Changes" comment="v127:feat/refactor:需求2276-科室端-病种分析（市医保DRG） ，新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(diseaseAnalysis): 添加DRG市医保诊断操作明细科室页面功能&#10;&#10;- 引入PlQueryWrapper、DeptAndTimeHeaderFilter等组件实现查询过滤器&#10;- 添加收入口径和病组成本下拉选择功能&#10;- 实现对比方式选择器和口径提示弹窗&#10;- 集成混入逻辑包括索引导出、类型设置、成本选项处理和口径处理器&#10;- 添加全局注入参数配置默认值&#10;- 实现数据获取和状态管理逻辑&#10;- 完善页面初始化和查询处理流程">
+      <change afterPath="$PROJECT_DIR$/src/api/disease-group-disease-type-analysis/drg-city/diagnosis-operation-detail" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/src/api/disease-group-disease-type-analysis/drg-city/diagnosis-operation-detail/diagnosisOperationDetailDeptApi.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/diseaseAnalysis/drgCity/DiagnosisOperationDetailDept.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/diseaseAnalysis/drgCity/DiagnosisOperationDetailDept.vue" afterDir="false" />
     </list>
     <list id="bd8e474f-42c8-444f-9f2b-07be811ba86b" name="ignore-on-commit" comment="ignore-on-commit" />
@@ -406,7 +407,7 @@
     "javascript.nodejs.core.library.typings.version": "18.19.130",
     "javascript.preferred.runtime.type.id": "node",
     "junie.onboarding.icon.badge.shown": "true",
-    "last_opened_file_path": "D:/project/doms_web/src/router/components/disease/department",
+    "last_opened_file_path": "D:/project/doms_web/src/api/disease-group-disease-type-analysis/drg-city/diagnosis-operation-detail",
     "list.type.of.created.stylesheet": "SCSS",
     "network.radicle.jetbrains.radiclejetbrainsplugin.config.path": "",
     "network.radicle.jetbrains.radiclejetbrainsplugin.config.radSeedKey": "http://localhost:8080",
@@ -441,18 +442,18 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\project\doms_web\src\api\disease-group-disease-type-analysis\drg-city\diagnosis-operation-detail" />
       <recent name="D:\project\doms_web\src\router\components\disease\department" />
       <recent name="D:\project\doms_web\src\assets\iconfont" />
       <recent name="D:\project\doms_web\src\assets\images" />
       <recent name="D:\project\doms_web\src\hooks\components\BIEAnalysis\overview\diseaseDetail" />
-      <recent name="D:\project\doms_web\src\component\workloadAnalysis\department\overview\dept-workload-analysis\outpatient-surgery-visits" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\project\doms_web\src\api\disease-group-disease-type-analysis\drg-city" />
       <recent name="D:\project\doms_web\src\component\diff\hosp-sder\hospital\material-monitor\drg" />
       <recent name="D:\project\doms_web\src\component\diseaseAnalysis\hospital\overview\adrg-ref-case-comparison-dept" />
       <recent name="D:\project\doms_web\src\component\diseaseAnalysis\hospital\overview" />
       <recent name="D:\project\doms_web\src\views\hospitalDataCockpit\shandongweifang\left" />
-      <recent name="D:\project\doms_web\src\views\hospitalDataCockpit\shandongweifang" />
     </key>
   </component>
   <component name="RunManager" selected="npm.本地运行项目">
@@ -531,6 +532,24 @@
     <configuration useDefault="false">C:\Users\xushuai\AppData\Roaming\Subversion</configuration>
     <supportedVersion>125</supportedVersion>
     <option name="runUnderTerminal" value="true" />
+  </component>
+  <component name="SvnFileUrlMappingImpl">
+    <option name="myMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="D:\project\doms_web" />
+          <option name="myCopyRoot" value="D:\project\doms_web" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
+    <option name="myMoreRealMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="D:\project\doms_web" />
+          <option name="myCopyRoot" value="D:\project\doms_web" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
   </component>
   <component name="TDDPredictState">
     <testRunHistory>
@@ -2708,15 +2727,7 @@
       <workItem from="1784768095682" duration="35303000" />
       <workItem from="1784855028153" duration="1319000" />
       <workItem from="1784856520896" duration="13458000" />
-      <workItem from="1784871591689" duration="10307000" />
-    </task>
-    <task id="LOCAL-04519" summary="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;fix(diseaseAnalysis): 修复诊断操作详情费用类型表格参数验证&#10;&#10;- 在参数验证的 checkingKeys 中添加 diagnosisCode 和 operationCode 字段&#10;- 确保诊断代码和手术代码变更时触发正确的参数验证逻辑">
-      <option name="closed" value="true" />
-      <created>1784770638132</created>
-      <option name="number" value="04519" />
-      <option name="presentableId" value="LOCAL-04519" />
-      <option name="project" value="LOCAL" />
-      <updated>1784770638134</updated>
+      <workItem from="1784871591689" duration="11051000" />
     </task>
     <task id="LOCAL-04520" summary="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;fix(diseaseAnalysis): 修复诊断操作明细费用类型表格参数验证问题&#10;&#10;- 添加了对空值参数的验证检查&#10;- 增加了 null、undefined 和空字符串的无效键检测&#10;- 完善了参数校验逻辑以避免潜在的数据处理错误">
       <option name="closed" value="true" />
@@ -3102,7 +3113,15 @@
       <option name="project" value="LOCAL" />
       <updated>1784880861653</updated>
     </task>
-    <option name="localTasksCounter" value="4568" />
+    <task id="LOCAL-04568" summary="v127:feat/refactor:需求2276-科室端-病种分析（市医保DRG） ，新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(diseaseAnalysis): 添加DRG市医保诊断操作明细科室页面功能&#10;&#10;- 引入PlQueryWrapper、DeptAndTimeHeaderFilter等组件实现查询过滤器&#10;- 添加收入口径和病组成本下拉选择功能&#10;- 实现对比方式选择器和口径提示弹窗&#10;- 集成混入逻辑包括索引导出、类型设置、成本选项处理和口径处理器&#10;- 添加全局注入参数配置默认值&#10;- 实现数据获取和状态管理逻辑&#10;- 完善页面初始化和查询处理流程">
+      <option name="closed" value="true" />
+      <created>1784883073998</created>
+      <option name="number" value="04568" />
+      <option name="presentableId" value="LOCAL-04568" />
+      <option name="project" value="LOCAL" />
+      <updated>1784883073999</updated>
+    </task>
+    <option name="localTasksCounter" value="4569" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -3123,7 +3142,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="MARK_IGNORED_AS_EXCLUDED" value="true" />
-    <MESSAGE value="v126:fix/refactor:自定义RW区间输入框-院端 病种分析-总权重-下钻 RW分布-自定义RW区间对话框&#10;fix(RwRangeList): 撤销修改-左闭右开-修复RW范围输入组件显示问题" />
     <MESSAGE value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;fix(diseaseAnalysis): 修复诊断操作详情费用类型表格数据请求问题&#10;&#10;- 将handler函数改为async函数以支持异步操作&#10;- 在requestTableData调用前添加await确保数据加载完成&#10;- 在clearTable方法中重置ifDimensionListReady状态" />
     <MESSAGE value="v126:feat/refactor:（菏泽市立-院端）病组分析-DRG支付-成本异常探查，卡片图数据问题&#10;fix(diseaseMatrix): 优化搜索和患者类型切换逻辑&#10;&#10;- 将handleSearch方法改为异步函数并添加groupPat调用&#10;- 在patientTypeListChange方法中注释掉重复的groupPat调用&#10;- 确保数据分组操作在表格初始化前完成&#10;- 保持原有的医院DRG矩阵和选择功能不变" />
     <MESSAGE value="v126:feat/refactor::需求2467-前端代码规范化修改-病种分析（市医保DRG） /出院分析 /科室病组整体运营分析 总权重&#10;feat(cost): 添加表格ID生成功能到诊所房间详情对话框&#10;&#10;- 从 '@/util' 导入 elemId 函数&#10;- 为表格数据添加唯一ID字段，使用 elemId 生成 clinicRoom-table 的ID" />
@@ -3148,7 +3166,8 @@
     <MESSAGE value="v127:feat/refactor:需求2276-科室端-病种分析（市医保DRG） ，新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(router): 添加科室端诊断操作明细报表路由配置&#10;&#10;- 新增 diagnosisOperationDetailDeptRoute 路由表&#10;- 配置诊断操作明细页面路径和组件映射&#10;- 设置页面元数据包括标题和菜单显示属性&#10;- 添加 DRG 相关过滤器类型配置" />
     <MESSAGE value="v127:feat/refactor:需求2276-科室端-病种分析（市医保DRG） ，新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(router): 添加科端诊断操作明细路由配置&#10;&#10;- 引入诊断操作明细科端路由模块&#10;- 更新路由配置文件添加科端诊断操作明细路由映射&#10;- 在病组分析相关路由中集成诊断操作明细功能" />
     <MESSAGE value="v127:feat/refactor:需求2276-科室端-病种分析（市医保DRG） ，新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(diseaseAnalysis): 添加科室端DRG病组分析诊断操作明细页面&#10;&#10;- 新增DiagnosisOperationDetailDept.vue组件文件&#10;- 创建科室端病组分析（DRG支付）诊断操作明细页面&#10;- 配置路由指向新的科室端页面路径&#10;- 更新文件路径引用以匹配新页面位置" />
-    <option name="LAST_COMMIT_MESSAGE" value="v127:feat/refactor:需求2276-科室端-病种分析（市医保DRG） ，新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(diseaseAnalysis): 添加科室端DRG病组分析诊断操作明细页面&#10;&#10;- 新增DiagnosisOperationDetailDept.vue组件文件&#10;- 创建科室端病组分析（DRG支付）诊断操作明细页面&#10;- 配置路由指向新的科室端页面路径&#10;- 更新文件路径引用以匹配新页面位置" />
+    <MESSAGE value="v127:feat/refactor:需求2276-科室端-病种分析（市医保DRG） ，新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(diseaseAnalysis): 添加DRG市医保诊断操作明细科室页面功能&#10;&#10;- 引入PlQueryWrapper、DeptAndTimeHeaderFilter等组件实现查询过滤器&#10;- 添加收入口径和病组成本下拉选择功能&#10;- 实现对比方式选择器和口径提示弹窗&#10;- 集成混入逻辑包括索引导出、类型设置、成本选项处理和口径处理器&#10;- 添加全局注入参数配置默认值&#10;- 实现数据获取和状态管理逻辑&#10;- 完善页面初始化和查询处理流程" />
+    <option name="LAST_COMMIT_MESSAGE" value="v127:feat/refactor:需求2276-科室端-病种分析（市医保DRG） ，新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(diseaseAnalysis): 添加DRG市医保诊断操作明细科室页面功能&#10;&#10;- 引入PlQueryWrapper、DeptAndTimeHeaderFilter等组件实现查询过滤器&#10;- 添加收入口径和病组成本下拉选择功能&#10;- 实现对比方式选择器和口径提示弹窗&#10;- 集成混入逻辑包括索引导出、类型设置、成本选项处理和口径处理器&#10;- 添加全局注入参数配置默认值&#10;- 实现数据获取和状态管理逻辑&#10;- 完善页面初始化和查询处理流程" />
   </component>
   <component name="VueSettings">
     <option name="innerServiceType" value="TS_SERVICE" />
