@@ -44,10 +44,9 @@
     <option name="selectedModelId" value="auto" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a32d6ec8-0d74-4a1b-8cad-0ab91948ca3e" name="Changes" comment="v127:feat/refactor:需求2276-科室端-病种分析（市医保DRG） ，新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(router): 添加科室端诊断操作明细报表路由配置&#10;&#10;- 新增 diagnosisOperationDetailDeptRoute 路由表&#10;- 配置诊断操作明细页面路径和组件映射&#10;- 设置页面元数据包括标题和菜单显示属性&#10;- 添加 DRG 相关过滤器类型配置">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/router/components/disease/diseaseAnalysisRouteDept.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/components/disease/diseaseAnalysisRouteDept.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/router/helpers/routerConfig.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/helpers/routerConfig.js" afterDir="false" />
+    <list default="true" id="a32d6ec8-0d74-4a1b-8cad-0ab91948ca3e" name="Changes" comment="v127:feat/refactor:需求2276-科室端-病种分析（市医保DRG） ，新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(router): 添加科端诊断操作明细路由配置&#10;&#10;- 引入诊断操作明细科端路由模块&#10;- 更新路由配置文件添加科端诊断操作明细路由映射&#10;- 在病组分析相关路由中集成诊断操作明细功能">
+      <change afterPath="$PROJECT_DIR$/src/views/diseaseAnalysis/drgCity/DiagnosisOperationDetailDept.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/router/components/disease/department/diagnosisOperationDetailDeptRoute.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/components/disease/department/diagnosisOperationDetailDeptRoute.js" afterDir="false" />
     </list>
     <list id="bd8e474f-42c8-444f-9f2b-07be811ba86b" name="ignore-on-commit" comment="ignore-on-commit" />
     <option name="SHOW_DIALOG" value="false" />
@@ -532,6 +531,24 @@
     <configuration useDefault="false">C:\Users\xushuai\AppData\Roaming\Subversion</configuration>
     <supportedVersion>125</supportedVersion>
     <option name="runUnderTerminal" value="true" />
+  </component>
+  <component name="SvnFileUrlMappingImpl">
+    <option name="myMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="D:\project\doms_web" />
+          <option name="myCopyRoot" value="D:\project\doms_web" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
+    <option name="myMoreRealMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="D:\project\doms_web" />
+          <option name="myCopyRoot" value="D:\project\doms_web" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
   </component>
   <component name="TDDPredictState">
     <testRunHistory>
@@ -2709,15 +2726,7 @@
       <workItem from="1784768095682" duration="35303000" />
       <workItem from="1784855028153" duration="1319000" />
       <workItem from="1784856520896" duration="13458000" />
-      <workItem from="1784871591689" duration="7653000" />
-    </task>
-    <task id="LOCAL-04517" summary="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat: 添加医院诊断操作明细组件的指标参数&#10;&#10;- 为 DiagnosisOperationDetailDrilldownFeeTypeTableHosp 组件设置正确的 indModelCode&#10;- 为 DiagnosisOperationDetailDrilldownTableHosp 组件设置正确的 indModelCode&#10;- 为 DiagnosisOperationDetailTableHosp 组件设置正确的 indModelCode&#10;- 移除维度下拉请求参数中的冗余字段 indModelCode 和 showModuleType">
-      <option name="closed" value="true" />
-      <created>1784769166196</created>
-      <option name="number" value="04517" />
-      <option name="presentableId" value="LOCAL-04517" />
-      <option name="project" value="LOCAL" />
-      <updated>1784769166197</updated>
+      <workItem from="1784871591689" duration="8137000" />
     </task>
     <task id="LOCAL-04518" summary="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;refactor(diseaseAnalysis): 优化诊断手术详情表格组件&#10;&#10;- 调整请求参数结构，将 commonRequestParams 移至对象开头&#10;- 添加对 commonRequestParams 的监听，实现数据变化时自动更新&#10;- 为诊断和手术名称添加空值处理，避免 undefined 显示问题">
       <option name="closed" value="true" />
@@ -3103,7 +3112,15 @@
       <option name="project" value="LOCAL" />
       <updated>1784880338817</updated>
     </task>
-    <option name="localTasksCounter" value="4566" />
+    <task id="LOCAL-04566" summary="v127:feat/refactor:需求2276-科室端-病种分析（市医保DRG） ，新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(router): 添加科端诊断操作明细路由配置&#10;&#10;- 引入诊断操作明细科端路由模块&#10;- 更新路由配置文件添加科端诊断操作明细路由映射&#10;- 在病组分析相关路由中集成诊断操作明细功能">
+      <option name="closed" value="true" />
+      <created>1784880388016</created>
+      <option name="number" value="04566" />
+      <option name="presentableId" value="LOCAL-04566" />
+      <option name="project" value="LOCAL" />
+      <updated>1784880388016</updated>
+    </task>
+    <option name="localTasksCounter" value="4567" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -3124,7 +3141,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="MARK_IGNORED_AS_EXCLUDED" value="true" />
-    <MESSAGE value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;fix(diseaseAnalysis): 处理维度列表数据为空时也可请求&#10;&#10;- 添加 ifDimensionListReady 状态标识维度列表是否准备就绪&#10;- 在 PlDimensionListSelector 组件中添加 update:options-ready 事件&#10;- 修改 requestParams 的 handler 为异步函数确保数据加载完成&#10;- 在数据请求完成后触发 options-ready 事件&#10;- 更新表格数据请求逻辑使用新的状态判断条件" />
     <MESSAGE value="v126:fix/refactor:自定义RW区间输入框-院端 病种分析-总权重-下钻 RW分布-自定义RW区间对话框&#10;fix(RwRangeList): 左闭右开-修复RW范围输入组件显示问题&#10;&#10;- 修正了RW符号的显示顺序，确保正确的数值范围展示" />
     <MESSAGE value="v126:fix/refactor:自定义RW区间输入框-院端 病种分析-总权重-下钻 RW分布-自定义RW区间对话框&#10;fix(RwRangeList): 撤销修改-左闭右开-修复RW范围输入组件显示问题" />
     <MESSAGE value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;fix(diseaseAnalysis): 修复诊断操作详情费用类型表格数据请求问题&#10;&#10;- 将handler函数改为async函数以支持异步操作&#10;- 在requestTableData调用前添加await确保数据加载完成&#10;- 在clearTable方法中重置ifDimensionListReady状态" />
@@ -3149,7 +3165,8 @@
     <MESSAGE value="v126:feat/refactor:需求2304-科端-病组分析（医保DRG）-出院分析、科端-病组分析（医保DRG）-临床病种分析，病人分类下拉框后面添加问号，问号默认内容：如“本地、异地”均不选择，则为本科室所有病例合计值。内容支持现场后台配置&#10;refactor(diseaseAnalysis): 科端-病种分析 出院分析 病组RW-费用消耗指数分析 下钻页 替换病人分类选择器组件&#10;&#10;- 将 PlCascader 组件替换为 PlPatientTypeListSelector 组件&#10;- 添加 disabled 属性和 drgGroupType、fromType 等绑定参数&#10;- 移除患者类型多选选项列表计算属性&#10;- 移除患者类型多选绑定数据计算属性&#10;- 更新组件导入和注册方式 优化组件配置结构" />
     <MESSAGE value="v126:feat/refactor:需求2304-科端-病组分析（医保DRG）-出院分析、科端-病组分析（医保DRG）-临床病种分析，病人分类下拉框后面添加问号，问号默认内容：如“本地、异地”均不选择，则为本科室所有病例合计值。内容支持现场后台配置&#10;refactor(diseaseAnalysis): 科室端-病种分析（市医保DRG） /出院分析 /病组RW-结余率分析 查看详情 下钻页 替换病人分类选择器组件&#10;&#10;- 将 PlCascader 组件替换为 PlPatientTypeListSelector 组件&#10;- 移除已废弃的 getPatientTypeListOptions 和 getPatientTypeListMultiSelectorBindData 方法&#10;- 删除不再使用的 patientTypeListOptionsDrg 常量&#10;- 添加 PlPatientTypeListSelector 组件到 components 注册&#10;- 移除已不再使用的 getShowPatListSelectorHospCodesStr 方法&#10;- 优化病人分类选择器的数据绑定方式" />
     <MESSAGE value="v127:feat/refactor:需求2276-科室端-病种分析（市医保DRG） ，新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(router): 添加科室端诊断操作明细报表路由配置&#10;&#10;- 新增 diagnosisOperationDetailDeptRoute 路由表&#10;- 配置诊断操作明细页面路径和组件映射&#10;- 设置页面元数据包括标题和菜单显示属性&#10;- 添加 DRG 相关过滤器类型配置" />
-    <option name="LAST_COMMIT_MESSAGE" value="v127:feat/refactor:需求2276-科室端-病种分析（市医保DRG） ，新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(router): 添加科室端诊断操作明细报表路由配置&#10;&#10;- 新增 diagnosisOperationDetailDeptRoute 路由表&#10;- 配置诊断操作明细页面路径和组件映射&#10;- 设置页面元数据包括标题和菜单显示属性&#10;- 添加 DRG 相关过滤器类型配置" />
+    <MESSAGE value="v127:feat/refactor:需求2276-科室端-病种分析（市医保DRG） ，新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(router): 添加科端诊断操作明细路由配置&#10;&#10;- 引入诊断操作明细科端路由模块&#10;- 更新路由配置文件添加科端诊断操作明细路由映射&#10;- 在病组分析相关路由中集成诊断操作明细功能" />
+    <option name="LAST_COMMIT_MESSAGE" value="v127:feat/refactor:需求2276-科室端-病种分析（市医保DRG） ，新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(router): 添加科端诊断操作明细路由配置&#10;&#10;- 引入诊断操作明细科端路由模块&#10;- 更新路由配置文件添加科端诊断操作明细路由映射&#10;- 在病组分析相关路由中集成诊断操作明细功能" />
   </component>
   <component name="VueSettings">
     <option name="innerServiceType" value="TS_SERVICE" />
