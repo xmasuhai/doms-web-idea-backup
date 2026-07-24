@@ -47,6 +47,7 @@
     <list default="true" id="a32d6ec8-0d74-4a1b-8cad-0ab91948ca3e" name="Changes" comment="v127:feat/refactor:需求2276-科室端-病种分析（市医保DRG） ，新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(diseaseAnalysis): 添加DRG市医保诊断操作明细科室页面功能&#10;&#10;- 引入PlQueryWrapper、DeptAndTimeHeaderFilter等组件实现查询过滤器&#10;- 添加收入口径和病组成本下拉选择功能&#10;- 实现对比方式选择器和口径提示弹窗&#10;- 集成混入逻辑包括索引导出、类型设置、成本选项处理和口径处理器&#10;- 添加全局注入参数配置默认值&#10;- 实现数据获取和状态管理逻辑&#10;- 完善页面初始化和查询处理流程">
       <change afterPath="$PROJECT_DIR$/src/api/disease-group-disease-type-analysis/drg-city/diagnosis-operation-detail" afterDir="true" />
       <change afterPath="$PROJECT_DIR$/src/api/disease-group-disease-type-analysis/drg-city/diagnosis-operation-detail/diagnosisOperationDetailDeptApi.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/tool/diagnosis-operation-detail/PlDiagnosisSelector.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/tool/diagnosis-operation-detail/PlDiagnosisSelector.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/diseaseAnalysis/drgCity/DiagnosisOperationDetailDept.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/diseaseAnalysis/drgCity/DiagnosisOperationDetailDept.vue" afterDir="false" />
     </list>
     <list id="bd8e474f-42c8-444f-9f2b-07be811ba86b" name="ignore-on-commit" comment="ignore-on-commit" />
@@ -2727,7 +2728,7 @@
       <workItem from="1784768095682" duration="35303000" />
       <workItem from="1784855028153" duration="1319000" />
       <workItem from="1784856520896" duration="13458000" />
-      <workItem from="1784871591689" duration="11051000" />
+      <workItem from="1784871591689" duration="11773000" />
     </task>
     <task id="LOCAL-04520" summary="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;fix(diseaseAnalysis): 修复诊断操作明细费用类型表格参数验证问题&#10;&#10;- 添加了对空值参数的验证检查&#10;- 增加了 null、undefined 和空字符串的无效键检测&#10;- 完善了参数校验逻辑以避免潜在的数据处理错误">
       <option name="closed" value="true" />
