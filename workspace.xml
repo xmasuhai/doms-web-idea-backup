@@ -44,9 +44,11 @@
     <option name="selectedModelId" value="auto" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a32d6ec8-0d74-4a1b-8cad-0ab91948ca3e" name="Changes" comment="v126:feat/refactor:需求2467-前端代码规范化修改-病种分析（市医保DRG） /出院分析 /科室病组整体运营分析 总权重&#10;refactor(BIEAnalysis): 优化住院患者盈余估算组件的图表元素标识&#10;&#10;- 引入elemId工具函数用于生成唯一元素标识符&#10;- 为住院患者盈余明细表添加唯一ID标识&#10;- 为住院患者盈余分析图添加唯一ID标识">
+    <list default="true" id="a32d6ec8-0d74-4a1b-8cad-0ab91948ca3e" name="Changes" comment="v126:feat/refactor:需求2467-前端代码规范化修改&#10;feat(BIEAnalysis): 添加病种单位边际贡献排名表格组件指标模型代码&#10;&#10;- 在返回对象中添加indModelCode字段用于标识指标模型&#10;- 将indModelCode作为表格绑定数据的code属性传递">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/BIEAnalysis/component/cost/tabDetailsDialog.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/BIEAnalysis/component/cost/tabDetailsDialog.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/diseaseAnalysis/hospital/diagnosis-operation-detail/DiagnosisOperationDetailDrilldownFeeTypeTableHosp.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/diseaseAnalysis/hospital/diagnosis-operation-detail/DiagnosisOperationDetailDrilldownFeeTypeTableHosp.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/diseaseAnalysis/hospital/diagnosis-operation-detail/DiagnosisOperationDetailDrilldownTableHosp.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/diseaseAnalysis/hospital/diagnosis-operation-detail/DiagnosisOperationDetailDrilldownTableHosp.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/diseaseAnalysis/hospital/diagnosis-operation-detail/DiagnosisOperationDetailTableHosp.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/diseaseAnalysis/hospital/diagnosis-operation-detail/DiagnosisOperationDetailTableHosp.vue" afterDir="false" />
     </list>
     <list id="bd8e474f-42c8-444f-9f2b-07be811ba86b" name="ignore-on-commit" comment="ignore-on-commit" />
     <option name="SHOW_DIALOG" value="false" />
@@ -2705,39 +2707,8 @@
       <workItem from="1784623910570" duration="294000" />
       <workItem from="1784624264725" duration="13695000" />
       <workItem from="1784684262611" duration="36252000" />
-      <workItem from="1784768095682" duration="33508000" />
-    </task>
-    <task id="LOCAL-04500" summary="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(iconfont): 添加新的图标字体资源&#10;&#10;- 新增 eye-close 图标 (Unicode &amp;#xe702;)&#10;- 新增 eye-open 图标 (Unicode &amp;#xe703;)&#10;- 新增 编辑 图标 (Unicode &amp;#xe701;)&#10;- 更新字体文件时间戳参数&#10;- 在 demo 页面中展示新图标&#10;- 配置图标的 CSS 样式类名&#10;- 更新图标 JSON 配置文件">
-      <option name="closed" value="true" />
-      <created>1784695841924</created>
-      <option name="number" value="04500" />
-      <option name="presentableId" value="LOCAL-04500" />
-      <option name="project" value="LOCAL" />
-      <updated>1784695841924</updated>
-    </task>
-    <task id="LOCAL-04501" summary="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat: 更新诊断操作详情组件图标显示逻辑&#10;&#10;- 将 PlDiagnosisSelector.vue 中的图标名称从 app-up/app-down 替换为 eye-open/eye-close&#10;- 将 PlDrgGroupSelector.vue 中的图标名称从 app-up/app-down 替换为 eye-open/eye-close  &#10;- 将 PlOperationSelector.vue 中的图标名称从 app-up/app-down 替换为 eye-open/eye-close">
-      <option name="closed" value="true" />
-      <created>1784696352924</created>
-      <option name="number" value="04501" />
-      <option name="presentableId" value="LOCAL-04501" />
-      <option name="project" value="LOCAL" />
-      <updated>1784696352924</updated>
-    </task>
-    <task id="LOCAL-04502" summary="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;refactor(diagnosis): 重构诊断选择器组件以统一眼睛图标功能&#10;&#10;- 移除各个选择器组件中的重复SvgIcon实现&#10;- 创建PlSelectorSlotWithEyeIcon通用组件封装眼睛图标逻辑&#10;- 更新PlDiagnosisSelector组件使用新的插槽组件&#10;- 更新PlDrgGroupSelector组件使用新的插槽组件&#10;- 更新PlOperationSelector组件使用新的插槽组件&#10;- 移除废弃的计算属性和样式代码&#10;- 统一眼睛图标的交互逻辑和样式表现">
-      <option name="closed" value="true" />
-      <created>1784699099290</created>
-      <option name="number" value="04502" />
-      <option name="presentableId" value="LOCAL-04502" />
-      <option name="project" value="LOCAL" />
-      <updated>1784699099290</updated>
-    </task>
-    <task id="LOCAL-04503" summary="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;doc: 修正诊断类型默认值配置注释&#10;&#10;- 将诊断口径默认值从主诊断0更新为主诊断1&#10;- 更新单选诊断类型的注释说明&#10;- 同步修改组件中的诊断类型初始值注释">
-      <option name="closed" value="true" />
-      <created>1784699187150</created>
-      <option name="number" value="04503" />
-      <option name="presentableId" value="LOCAL-04503" />
-      <option name="project" value="LOCAL" />
-      <updated>1784699187150</updated>
+      <workItem from="1784768095682" duration="35303000" />
+      <workItem from="1784855028153" duration="1319000" />
     </task>
     <task id="LOCAL-04504" summary="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(hospital): 添加诊断操作明细相关API接口&#10;&#10;- 新增诊断操作明细表格数据请求接口&#10;- 新增诊断操作明细下钻维度下拉框请求接口&#10;- 新增诊断操作明细下钻表格数据请求接口&#10;- 新增诊断操作明细下钻维度列表请求接口&#10;- 新增诊断操作明细下钻费用类型下拉框请求接口&#10;- 新增诊断操作明细下钻费用类型明细表格请求接口">
       <option name="closed" value="true" />
@@ -3099,7 +3070,39 @@
       <option name="project" value="LOCAL" />
       <updated>1784804411686</updated>
     </task>
-    <option name="localTasksCounter" value="4549" />
+    <task id="LOCAL-04549" summary="v126:feat/refactor:需求2467-前端代码规范化修改&#10;refactor(BIEAnalysis): 优化住院费用明细表格组件结构&#10;&#10;- 引入 elemId 工具函数用于生成唯一标识符&#10;- 为住院结余明细表格添加唯一 ID 属性">
+      <option name="closed" value="true" />
+      <created>1784805049952</created>
+      <option name="number" value="04549" />
+      <option name="presentableId" value="LOCAL-04549" />
+      <option name="project" value="LOCAL" />
+      <updated>1784805049952</updated>
+    </task>
+    <task id="LOCAL-04550" summary="v126:feat/refactor:需求2467-前端代码规范化修改&#10;refactor(BIEAnalysis): 优化住院科室出院患者疾病分析组件&#10;&#10;- 引入 elemId 工具函数用于元素标识&#10;- 将指标模型代码提取为组件数据属性&#10;- 使用组件实例属性替代硬编码的指标模型代码&#10;- 在表格绑定数据中添加代码和ID字段支持">
+      <option name="closed" value="true" />
+      <created>1784805462963</created>
+      <option name="number" value="04550" />
+      <option name="presentableId" value="LOCAL-04550" />
+      <option name="project" value="LOCAL" />
+      <updated>1784805462964</updated>
+    </task>
+    <task id="LOCAL-04551" summary="v126:feat/refactor:需求2467-前端代码规范化修改&#10;feat(BIEAnalysis): 添加疾病产出详情表组件功能&#10;&#10;- 引入elemId工具函数用于元素标识生成&#10;- 新增indModelCode数据属性用于模型代码标识&#10;- 在表格绑定数据中添加id和code字段配置&#10;- 为过滤对象添加indModelCode参数支持&#10;- 完善组件结构配置和数据请求设置">
+      <option name="closed" value="true" />
+      <created>1784806572594</created>
+      <option name="number" value="04551" />
+      <option name="presentableId" value="LOCAL-04551" />
+      <option name="project" value="LOCAL" />
+      <updated>1784806572594</updated>
+    </task>
+    <task id="LOCAL-04552" summary="v126:feat/refactor:需求2467-前端代码规范化修改&#10;feat(BIEAnalysis): 添加病种单位边际贡献排名表格组件指标模型代码&#10;&#10;- 在返回对象中添加indModelCode字段用于标识指标模型&#10;- 将indModelCode作为表格绑定数据的code属性传递">
+      <option name="closed" value="true" />
+      <created>1784806855218</created>
+      <option name="number" value="04552" />
+      <option name="presentableId" value="LOCAL-04552" />
+      <option name="project" value="LOCAL" />
+      <updated>1784806855218</updated>
+    </task>
+    <option name="localTasksCounter" value="4553" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -3120,10 +3123,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="MARK_IGNORED_AS_EXCLUDED" value="true" />
-    <MESSAGE value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;refactor(diseaseAnalysis): 优化诊断操作详情费用类型表格组件请求参数&#10;&#10;- 将 getDimensionListSelectorRequestParams 替换为 commonRequestParams&#10;- 调整 getRequestParams 中参数顺序以确保正确合并&#10;- 优化 PlDimensionListSelector 组件属性绑定逻辑&#10;- 简化属性解构赋值减少冗余代码&#10;- 统一请求参数处理方式提高代码一致性" />
-    <MESSAGE value="v126:feat/refactor:需求2588-科室端-收支分析-总览、收入总览两个页面，收入口径选择‘开单收入’时，整体分析Tab页、门急诊分析Tab、住院分析Tab页的‘医疗盈余分析表’表的各项收入下钻页，‘对比分析’图替换成对应收入分析表和费用上升前十帕累托图&#10;feat(BIEAnalysis): 添加收入总览相关API接口&#10;&#10;- 新增整体分析-收入构成明细表请求接口&#10;- 新增门急诊项目费用变化前十请求接口&#10;- 新增住院项目费用变化前十请求接口&#10;- 新增门急诊分析-收入构成明细表请求接口&#10;- 新增门急诊费用变化前十请求接口&#10;- 新增住院分析-收入构成明细表请求接口&#10;- 新增住院费用变化前十请求接口" />
-    <MESSAGE value="v126:feat/refactor:需求2588-科室端-收支分析-总览、收入总览两个页面，收入口径选择‘开单收入’时，整体分析Tab页、门急诊分析Tab、住院分析Tab页的‘医疗盈余分析表’表的各项收入下钻页，‘对比分析’图替换成对应收入分析表和费用上升前十帕累托图&#10;refactor(BIEAnalysis): 更新收入分析模块的API导入路径和组件状态映射&#10;&#10;- 将API导入路径从 '@/api/diff/hosp-dt/department/BIEAnalysis/incomeOverviewBjdtApi' &#10;  更改为 '@/api/BIEAnalysis/incomeOverviewApi.js'&#10;- 在DeptIncomeTypeAnalysisTable组件中添加BIEAnalysis模块的状态映射&#10;- 在收入分析相关组件中移除北京地坛特定注释&#10;- 更新文件最后编辑时间戳和编辑者信息&#10;- 在DeptIncomeTypeAnalysisTable中添加空的getRequestMethod方法占位符" />
-    <MESSAGE value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;fix: 移除维度类型参数验证&#10;&#10;- 移除了 dimensionType 参数的验证检查" />
     <MESSAGE value="v126:feat/refactor:需求2588-科室端-收支分析-总览、收入总览两个页面，收入口径选择‘开单收入’时，整体分析Tab页、门急诊分析Tab、住院分析Tab页的‘医疗盈余分析表’表的各项收入下钻页，‘对比分析’图替换成对应收入分析表和费用上升前十帕累托图&#10;feat/refactor(BIEAnalysis): 重构收入分析表格的数据请求逻辑&#10;&#10;- 添加住院和门诊收入分析API接口导入&#10;- 引入主标签页类型常量用于区分不同收入分析类型&#10;- 实现根据不同医疗业务类型动态选择数据请求方法&#10;- 更新表格绑定数据中的请求方法为动态获取方式&#10;- 移除硬编码的收入方法参数改为动态配置" />
     <MESSAGE value="v126:feat/refactor:需求2588-科室端-收支分析-总览、收入总览两个页面，收入口径选择‘开单收入’时，整体分析Tab页、门急诊分析Tab、住院分析Tab页的‘医疗盈余分析表’表的各项收入下钻页，‘对比分析’图替换成对应收入分析表和费用上升前十帕累托图&#10;feat(BIEAnalysis): 添加医疗收入服务模块显示控制功能&#10;&#10;- 在住院费用项目变动前十组件中添加条件渲染判断&#10;- 在门诊费用项目变动前十组件中添加条件渲染判断&#10;- 新增整体和住院业务类型常量定义&#10;- 添加门诊业务类型常量到门诊组件中&#10;- 集成BIEAnalysis状态管理中的医疗服务类型&#10;- 实现模块显示条件计算逻辑&#10;- 根据业务类型动态选择数据请求方法&#10;- 配置不同业务类型的API接口映射关系" />
     <MESSAGE value="v126:feat/refactor:需求2588-科室端-收支分析-总览、收入总览两个页面，收入口径选择‘开单收入’时，整体分析Tab页、门急诊分析Tab、住院分析Tab页的‘医疗盈余分析表’表的各项收入下钻页，‘对比分析’图替换成对应收入分析表和费用上升前十帕累托图&#10;feat(BIEAnalysis): 动态调整收入分析模块布局行数&#10;&#10;- 添加 medicalServeType 状态映射&#10;- 实现 getPlItemLayoutRowNum 计算属性根据医疗类型返回不同行数&#10;- 集成门诊和住院服务类型常量&#10;- 更新 PlItemLayout 组件以支持动态行数配置" />
@@ -3145,7 +3144,11 @@
     <MESSAGE value="v126:feat/refactor::需求2467-前端代码规范化修改-病种分析（市医保DRG） /出院分析 /科室病组整体运营分析 总权重&#10;feat(cost): 添加表格ID生成功能到诊所房间详情对话框&#10;&#10;- 从 '@/util' 导入 elemId 函数&#10;- 为表格数据添加唯一ID字段，使用 elemId 生成 clinicRoom-table 的ID" />
     <MESSAGE value="v126:feat/refactor::需求2467-前端代码规范化修改-病种分析（市医保DRG） /出院分析 /科室病组整体运营分析 总权重&#10;refactor(cost): 移除未使用的Vuex映射并优化导入&#10;&#10;- 移除了clinicRoomdetailsDialog.vue中的mapState、mapGetters、mapMutations、mapActions导入&#10;- 移除了estimateDetailedDialog.vue中的mapState、mapGetters、mapMutations、mapActions导入&#10;- 在estimateDetailedDialog.vue中添加了elemId工具函数导入&#10;- 为estimateDetailedDialog中的表格组件添加了唯一ID标识" />
     <MESSAGE value="v126:feat/refactor:需求2467-前端代码规范化修改-病种分析（市医保DRG） /出院分析 /科室病组整体运营分析 总权重&#10;refactor(BIEAnalysis): 优化住院患者盈余估算组件的图表元素标识&#10;&#10;- 引入elemId工具函数用于生成唯一元素标识符&#10;- 为住院患者盈余明细表添加唯一ID标识&#10;- 为住院患者盈余分析图添加唯一ID标识" />
-    <option name="LAST_COMMIT_MESSAGE" value="v126:feat/refactor:需求2467-前端代码规范化修改-病种分析（市医保DRG） /出院分析 /科室病组整体运营分析 总权重&#10;refactor(BIEAnalysis): 优化住院患者盈余估算组件的图表元素标识&#10;&#10;- 引入elemId工具函数用于生成唯一元素标识符&#10;- 为住院患者盈余明细表添加唯一ID标识&#10;- 为住院患者盈余分析图添加唯一ID标识" />
+    <MESSAGE value="v126:feat/refactor:需求2467-前端代码规范化修改&#10;refactor(BIEAnalysis): 优化住院费用明细表格组件结构&#10;&#10;- 引入 elemId 工具函数用于生成唯一标识符&#10;- 为住院结余明细表格添加唯一 ID 属性" />
+    <MESSAGE value="v126:feat/refactor:需求2467-前端代码规范化修改&#10;refactor(BIEAnalysis): 优化住院科室出院患者疾病分析组件&#10;&#10;- 引入 elemId 工具函数用于元素标识&#10;- 将指标模型代码提取为组件数据属性&#10;- 使用组件实例属性替代硬编码的指标模型代码&#10;- 在表格绑定数据中添加代码和ID字段支持" />
+    <MESSAGE value="v126:feat/refactor:需求2467-前端代码规范化修改&#10;feat(BIEAnalysis): 添加疾病产出详情表组件功能&#10;&#10;- 引入elemId工具函数用于元素标识生成&#10;- 新增indModelCode数据属性用于模型代码标识&#10;- 在表格绑定数据中添加id和code字段配置&#10;- 为过滤对象添加indModelCode参数支持&#10;- 完善组件结构配置和数据请求设置" />
+    <MESSAGE value="v126:feat/refactor:需求2467-前端代码规范化修改&#10;feat(BIEAnalysis): 添加病种单位边际贡献排名表格组件指标模型代码&#10;&#10;- 在返回对象中添加indModelCode字段用于标识指标模型&#10;- 将indModelCode作为表格绑定数据的code属性传递" />
+    <option name="LAST_COMMIT_MESSAGE" value="v126:feat/refactor:需求2467-前端代码规范化修改&#10;feat(BIEAnalysis): 添加病种单位边际贡献排名表格组件指标模型代码&#10;&#10;- 在返回对象中添加indModelCode字段用于标识指标模型&#10;- 将indModelCode作为表格绑定数据的code属性传递" />
   </component>
   <component name="VueSettings">
     <option name="innerServiceType" value="TS_SERVICE" />
