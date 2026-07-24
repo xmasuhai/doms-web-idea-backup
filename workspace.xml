@@ -44,11 +44,9 @@
     <option name="selectedModelId" value="auto" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a32d6ec8-0d74-4a1b-8cad-0ab91948ca3e" name="Changes" comment="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;fix(diseaseAnalysis): 修复表格筛选时排序功能异常问题&#10;&#10;- 在三个医院诊断操作详情表格组件中添加筛选状态标识 isFiltering&#10;- 监听 filter-change 事件并更新筛选状态&#10;- 修改 getIfHasSequencableFalseRows 计算属性，仅在非筛选状态下进行排序判断&#10;- 防止筛选时表格排序功能产生异常行为&#10;- 添加表格引用获取方法 getTableGridRef 为后续扩展做准备">
-      <change afterPath="$PROJECT_DIR$/src/component/diseaseAnalysis/common/PlPatientTypeListSelector.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/disease-group-disease-type-analysis/calibre-api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/disease-group-disease-type-analysis/calibre-api.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/diseaseAnalysis/common/CalibrePopoverTips.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/diseaseAnalysis/common/CalibrePopoverTips.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/diseaseAnalysis/drgCity/leavehosp.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/diseaseAnalysis/drgCity/leavehosp.vue" afterDir="false" />
+    <list default="true" id="a32d6ec8-0d74-4a1b-8cad-0ab91948ca3e" name="Changes" comment="v126:feat/refactor:需求2304-科端-病组分析（医保DRG）-出院分析、科端-病组分析（医保DRG）-临床病种分析，病人分类下拉框后面添加问号，问号默认内容：如“本地、异地”均不选择，则为本科室所有病例合计值。内容支持现场后台配置&#10;refactor(diseaseAnalysis): 重构病人分类选择器组件&#10;&#10;- 将PlCascader替换为专用的PlPatientTypeListSelector组件&#10;- 移除废弃的getPatientTypeListMultiSelectorBindData计算属性&#10;- 移除不再使用的patientTypeListOptionsDrg常量&#10;- 添加新的PlPatientTypeListSelector组件引用和注册&#10;- 优化组件间的参数传递方式，使用.sync修饰符同步数据">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/diseaseAnalysis/drgCity/clinic.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/diseaseAnalysis/drgCity/clinic.vue" afterDir="false" />
     </list>
     <list id="bd8e474f-42c8-444f-9f2b-07be811ba86b" name="ignore-on-commit" comment="ignore-on-commit" />
     <option name="SHOW_DIALOG" value="false" />
@@ -533,24 +531,6 @@
     <configuration useDefault="false">C:\Users\xushuai\AppData\Roaming\Subversion</configuration>
     <supportedVersion>125</supportedVersion>
     <option name="runUnderTerminal" value="true" />
-  </component>
-  <component name="SvnFileUrlMappingImpl">
-    <option name="myMappingRoots">
-      <list>
-        <SvnCopyRootSimple>
-          <option name="myVcsRoot" value="D:\project\doms_web" />
-          <option name="myCopyRoot" value="D:\project\doms_web" />
-        </SvnCopyRootSimple>
-      </list>
-    </option>
-    <option name="myMoreRealMappingRoots">
-      <list>
-        <SvnCopyRootSimple>
-          <option name="myVcsRoot" value="D:\project\doms_web" />
-          <option name="myCopyRoot" value="D:\project\doms_web" />
-        </SvnCopyRootSimple>
-      </list>
-    </option>
   </component>
   <component name="TDDPredictState">
     <testRunHistory>
@@ -2727,31 +2707,7 @@
       <workItem from="1784684262611" duration="36252000" />
       <workItem from="1784768095682" duration="35303000" />
       <workItem from="1784855028153" duration="1319000" />
-      <workItem from="1784856520896" duration="6603000" />
-    </task>
-    <task id="LOCAL-04506" summary="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(hospital): 添加医院端诊断操作明细表格组件&#10;&#10;- 新增 DiagnosisOperationDetailTableHosp 组件用于显示诊断操作明细表格&#10;- 在 DiagosisOperationDetailHosp 页面中集成新的明细表格组件&#10;- 实现表格数据请求、渲染和交互功能&#10;- 添加表格行选择、高亮和排序相关逻辑&#10;- 集成 vuex 状态管理用于存储选中的诊断操作信息">
-      <option name="closed" value="true" />
-      <created>1784705930736</created>
-      <option name="number" value="04506" />
-      <option name="presentableId" value="LOCAL-04506" />
-      <option name="project" value="LOCAL" />
-      <updated>1784705930736</updated>
-    </task>
-    <task id="LOCAL-04507" summary="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(DiagnosisOperationDetailTableHosp): 为诊断手术详情表格组件添加唯一ID标识&#10;&#10;- 引入elemId工具函数用于生成唯一元素ID&#10;- 在组件数据中添加elemId属性&#10;- 为表格元素动态生成并设置唯一的id属性值">
-      <option name="closed" value="true" />
-      <created>1784706315952</created>
-      <option name="number" value="04507" />
-      <option name="presentableId" value="LOCAL-04507" />
-      <option name="project" value="LOCAL" />
-      <updated>1784706315952</updated>
-    </task>
-    <task id="LOCAL-04508" summary="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(diseaseAnalysis): 新增医院端诊断操作明细表格组件&#10;&#10;- 创建 DiagnosisOperationDetailDrilldownFeeTypeTableHosp 组件用于费用类型明细展示&#10;- 创建 DiagnosisOperationDetailDrilldownTableHosp 组件用于诊断操作费用明细展示&#10;- 集成 PlModulePanel 组件实现表格渲染功能&#10;- 实现数据请求逻辑和参数验证机制&#10;- 配置表格列定义和数据绑定功能&#10;- 添加加载状态管理和错误处理机制">
-      <option name="closed" value="true" />
-      <created>1784707551071</created>
-      <option name="number" value="04508" />
-      <option name="presentableId" value="LOCAL-04508" />
-      <option name="project" value="LOCAL" />
-      <updated>1784707551071</updated>
+      <workItem from="1784856520896" duration="9216000" />
     </task>
     <task id="LOCAL-04509" summary="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(hospital): 添加诊断操作明细报表维度下拉框功能&#10;&#10;- 引入 to 工具函数和 fetchDrilldownDimensionSelectOptions API&#10;- 新增 dimensionTypeLoading 和 dimensionTypeOptions 状态字段&#10;- 添加 getDimensionTypeRequestParams getter 方法&#10;- 实现 requestDimensionTypeOptions 异步操作方法&#10;- 集成维度类型选项数据获取和映射逻辑">
       <option name="closed" value="true" />
@@ -3121,7 +3077,31 @@
       <option name="project" value="LOCAL" />
       <updated>1784858647717</updated>
     </task>
-    <option name="localTasksCounter" value="4555" />
+    <task id="LOCAL-04555" summary="v126:feat/refactor:需求2304-科端-病组分析（医保DRG）-出院分析、科端-病组分析（医保DRG）-临床病种分析，病人分类下拉框后面添加问号，问号默认内容：如“本地、异地”均不选择，则为本科室所有病例合计值。内容支持现场后台配置&#10;feat(diseaseAnalysis): 新增病人分类提示功能并优化口径提示组件&#10;&#10;- 添加 fetchPatientTypeListTipsOptions API 接口用于获取病人分类下拉框说明提示&#10;- 扩展 CalibrePopoverTips 组件支持 patTypeList 类型验证&#10;- 为 CalibrePopoverTips 组件增加自定义请求方法配置选项&#10;- 实现动态请求方法选择机制，支持默认和自定义提示获取逻辑&#10;- 更新组件内部请求调用方式以适配新的扩展功能">
+      <option name="closed" value="true" />
+      <created>1784863474769</created>
+      <option name="number" value="04555" />
+      <option name="presentableId" value="LOCAL-04555" />
+      <option name="project" value="LOCAL" />
+      <updated>1784863474770</updated>
+    </task>
+    <task id="LOCAL-04556" summary="v126:feat/refactor:需求2304-科端-病组分析（医保DRG）-出院分析、科端-病组分析（医保DRG）-临床病种分析，病人分类下拉框后面添加问号，问号默认内容：如“本地、异地”均不选择，则为本科室所有病例合计值。内容支持现场后台配置&#10;feat(diseaseAnalysis): 添加病人分类列表多选组件&#10;&#10;- 新增 PlPatientTypeListSelector 组件实现病人分类多选功能&#10;- 集成 PlCascader 级联选择器和 CalibrePopoverTips 提示组件&#10;- 实现基于医院编码的病人分类选择器显示控制逻辑&#10;- 添加病人分类选项配置包括本地职工、本地居民、外地职工、外地居民&#10;- 实现多选标签折叠显示和搜索功能&#10;- 集成 API 接口获取病人分类提示选项数据">
+      <option name="closed" value="true" />
+      <created>1784863543141</created>
+      <option name="number" value="04556" />
+      <option name="presentableId" value="LOCAL-04556" />
+      <option name="project" value="LOCAL" />
+      <updated>1784863543141</updated>
+    </task>
+    <task id="LOCAL-04557" summary="v126:feat/refactor:需求2304-科端-病组分析（医保DRG）-出院分析、科端-病组分析（医保DRG）-临床病种分析，病人分类下拉框后面添加问号，问号默认内容：如“本地、异地”均不选择，则为本科室所有病例合计值。内容支持现场后台配置&#10;refactor(diseaseAnalysis): 重构病人分类选择器组件&#10;&#10;- 将PlCascader替换为专用的PlPatientTypeListSelector组件&#10;- 移除废弃的getPatientTypeListMultiSelectorBindData计算属性&#10;- 移除不再使用的patientTypeListOptionsDrg常量&#10;- 添加新的PlPatientTypeListSelector组件引用和注册&#10;- 优化组件间的参数传递方式，使用.sync修饰符同步数据">
+      <option name="closed" value="true" />
+      <created>1784863619412</created>
+      <option name="number" value="04557" />
+      <option name="presentableId" value="LOCAL-04557" />
+      <option name="project" value="LOCAL" />
+      <updated>1784863619412</updated>
+    </task>
+    <option name="localTasksCounter" value="4558" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -3142,9 +3122,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="MARK_IGNORED_AS_EXCLUDED" value="true" />
-    <MESSAGE value="v126:feat/refactor:需求2588-科室端-收支分析-总览、收入总览两个页面，收入口径选择‘开单收入’时，整体分析Tab页、门急诊分析Tab、住院分析Tab页的‘医疗盈余分析表’表的各项收入下钻页，‘对比分析’图替换成对应收入分析表和费用上升前十帕累托图&#10;feat(BIEAnalysis): 动态调整收入分析模块布局行数&#10;&#10;- 添加 medicalServeType 状态映射&#10;- 实现 getPlItemLayoutRowNum 计算属性根据医疗类型返回不同行数&#10;- 集成门诊和住院服务类型常量&#10;- 更新 PlItemLayout 组件以支持动态行数配置" />
-    <MESSAGE value="v126:feat/refactor:需求2588-科室端-收支分析-总览、收入总览两个页面，收入口径选择‘开单收入’时，整体分析Tab页、门急诊分析Tab、住院分析Tab页的‘医疗盈余分析表’表的各项收入下钻页，‘对比分析’图替换成对应收入分析表和费用上升前十帕累托图&#10;fix(BIEAnalysis): 更新收入分析模块的Vuex状态映射&#10;&#10;- 添加mapState辅助函数以简化组件状态访问" />
-    <MESSAGE value="v126:feat/refactor:需求2588-科室端-收支分析-总览、收入总览两个页面，收入口径选择‘开单收入’时，整体分析Tab页、门急诊分析Tab、住院分析Tab页的‘医疗盈余分析表’表的各项收入下钻页，‘对比分析’图替换成对应收入分析表和费用上升前十帕累托图&#10;fix(income): 修复收入分析模块布局间距问题&#10;&#10;- 为PlItemLayout组件添加lastRowBottomMargin属性以调整底部边距&#10;- 解决门急诊和住院费用项目排名前十组件的布局间距问题" />
     <MESSAGE value="v126:feat/refactor:需求2588-科室端-收支分析-总览、收入总览两个页面，收入口径选择‘开单收入’时，整体分析Tab页、门急诊分析Tab、住院分析Tab页的‘医疗盈余分析表’表的各项收入下钻页，‘对比分析’图替换成对应收入分析表和费用上升前十帕累托图&#10;refactor(BIEAnalysis): 优化收入分析模块布局配置&#10;&#10;- 将 PlItemLayout 组件的绑定属性重构为计算属性 getPlItemLayoutBind&#10;- 移除硬编码的 lastRowBottomMargin 和 rowNum 属性&#10;- 使用 v-bind 指令动态绑定组件属性&#10;- 根据医疗服务类型动态设置底部边距样式类" />
     <MESSAGE value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;refactor(diseaseAnalysis): 优化诊断手术详情表格数据清理逻辑&#10;&#10;- 在多个组件中添加 clearTable 方法用于清空表格列和数据&#10;- 在日期参数变化时调用 clearTable 清理表格状态&#10;- 在维度类型变化时调用 clearTable 清理表格状态&#10;- 在请求数据前调用 clearTable 确保表格状态重置&#10;- 移除维度列表选择器中的多余检查键以简化验证逻辑" />
     <MESSAGE value="v126:feat/refactor:需求2588-科室端-收支分析-总览、收入总览两个页面，收入口径选择‘开单收入’时，整体分析Tab页、门急诊分析Tab、住院分析Tab页的‘医疗盈余分析表’表的各项收入下钻页，‘对比分析’图替换成对应收入分析表和费用上升前十帕累托图&#10;refactor(api): 移除废弃接口&#10;&#10;- 移除整体分析收入构成明细表接口 fetchOverviewIncomeAnalysis&#10;- 移除门急诊项目费用变化前十接口 fetchOutpatientItemFeeChangeTop10&#10;- 移除住院项目费用变化前十接口 fetchInHospitalFeeItemChangeTop10" />
@@ -3167,7 +3144,10 @@
     <MESSAGE value="v126:feat/refactor:需求2467-前端代码规范化修改&#10;feat(BIEAnalysis): 添加病种单位边际贡献排名表格组件指标模型代码&#10;&#10;- 在返回对象中添加indModelCode字段用于标识指标模型&#10;- 将indModelCode作为表格绑定数据的code属性传递" />
     <MESSAGE value="拉取代码-1978 v126 院端-收支分析-总览页面中‘医疗收入’仪表盘下钻页面中‘门急诊次均费用趋势’条形图，右上角按钮选择‘全部’时，条形图的浮窗内新增蓝色字样‘科室明细’-筛选后数据序号问题处理" />
     <MESSAGE value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;fix(diseaseAnalysis): 修复表格筛选时排序功能异常问题&#10;&#10;- 在三个医院诊断操作详情表格组件中添加筛选状态标识 isFiltering&#10;- 监听 filter-change 事件并更新筛选状态&#10;- 修改 getIfHasSequencableFalseRows 计算属性，仅在非筛选状态下进行排序判断&#10;- 防止筛选时表格排序功能产生异常行为&#10;- 添加表格引用获取方法 getTableGridRef 为后续扩展做准备" />
-    <option name="LAST_COMMIT_MESSAGE" value="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;fix(diseaseAnalysis): 修复表格筛选时排序功能异常问题&#10;&#10;- 在三个医院诊断操作详情表格组件中添加筛选状态标识 isFiltering&#10;- 监听 filter-change 事件并更新筛选状态&#10;- 修改 getIfHasSequencableFalseRows 计算属性，仅在非筛选状态下进行排序判断&#10;- 防止筛选时表格排序功能产生异常行为&#10;- 添加表格引用获取方法 getTableGridRef 为后续扩展做准备" />
+    <MESSAGE value="v126:feat/refactor:需求2304-科端-病组分析（医保DRG）-出院分析、科端-病组分析（医保DRG）-临床病种分析，病人分类下拉框后面添加问号，问号默认内容：如“本地、异地”均不选择，则为本科室所有病例合计值。内容支持现场后台配置&#10;feat(diseaseAnalysis): 新增病人分类提示功能并优化口径提示组件&#10;&#10;- 添加 fetchPatientTypeListTipsOptions API 接口用于获取病人分类下拉框说明提示&#10;- 扩展 CalibrePopoverTips 组件支持 patTypeList 类型验证&#10;- 为 CalibrePopoverTips 组件增加自定义请求方法配置选项&#10;- 实现动态请求方法选择机制，支持默认和自定义提示获取逻辑&#10;- 更新组件内部请求调用方式以适配新的扩展功能" />
+    <MESSAGE value="v126:feat/refactor:需求2304-科端-病组分析（医保DRG）-出院分析、科端-病组分析（医保DRG）-临床病种分析，病人分类下拉框后面添加问号，问号默认内容：如“本地、异地”均不选择，则为本科室所有病例合计值。内容支持现场后台配置&#10;feat(diseaseAnalysis): 添加病人分类列表多选组件&#10;&#10;- 新增 PlPatientTypeListSelector 组件实现病人分类多选功能&#10;- 集成 PlCascader 级联选择器和 CalibrePopoverTips 提示组件&#10;- 实现基于医院编码的病人分类选择器显示控制逻辑&#10;- 添加病人分类选项配置包括本地职工、本地居民、外地职工、外地居民&#10;- 实现多选标签折叠显示和搜索功能&#10;- 集成 API 接口获取病人分类提示选项数据" />
+    <MESSAGE value="v126:feat/refactor:需求2304-科端-病组分析（医保DRG）-出院分析、科端-病组分析（医保DRG）-临床病种分析，病人分类下拉框后面添加问号，问号默认内容：如“本地、异地”均不选择，则为本科室所有病例合计值。内容支持现场后台配置&#10;refactor(diseaseAnalysis): 重构病人分类选择器组件&#10;&#10;- 将PlCascader替换为专用的PlPatientTypeListSelector组件&#10;- 移除废弃的getPatientTypeListMultiSelectorBindData计算属性&#10;- 移除不再使用的patientTypeListOptionsDrg常量&#10;- 添加新的PlPatientTypeListSelector组件引用和注册&#10;- 优化组件间的参数传递方式，使用.sync修饰符同步数据" />
+    <option name="LAST_COMMIT_MESSAGE" value="v126:feat/refactor:需求2304-科端-病组分析（医保DRG）-出院分析、科端-病组分析（医保DRG）-临床病种分析，病人分类下拉框后面添加问号，问号默认内容：如“本地、异地”均不选择，则为本科室所有病例合计值。内容支持现场后台配置&#10;refactor(diseaseAnalysis): 重构病人分类选择器组件&#10;&#10;- 将PlCascader替换为专用的PlPatientTypeListSelector组件&#10;- 移除废弃的getPatientTypeListMultiSelectorBindData计算属性&#10;- 移除不再使用的patientTypeListOptionsDrg常量&#10;- 添加新的PlPatientTypeListSelector组件引用和注册&#10;- 优化组件间的参数传递方式，使用.sync修饰符同步数据" />
   </component>
   <component name="VueSettings">
     <option name="innerServiceType" value="TS_SERVICE" />
