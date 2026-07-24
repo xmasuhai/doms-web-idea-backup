@@ -7,6 +7,8 @@
           <value>
             <TabSessionState>
               <option name="provider" value="claude" />
+              <option name="sessionId" value="8782486f-397a-4cbc-a575-c03afc4803a7" />
+              <option name="cwd" value="D:\project\doms_web" />
               <option name="model" value="claude-haiku-4-5" />
               <option name="permissionMode" value="default" />
             </TabSessionState>
