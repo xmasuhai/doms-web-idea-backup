@@ -44,11 +44,9 @@
     <option name="selectedModelId" value="auto" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a32d6ec8-0d74-4a1b-8cad-0ab91948ca3e" name="Changes" comment="v127:feat/refactor:需求2276-科室端-病种分析（市医保DRG） ，新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;refactor(charts): 移除废弃组件并优化图表配置&#10;&#10;- 移除了未使用的 DomsConH360 组件引用和注释代码&#10;- 为医疗成本趋势、医疗收入趋势和门诊急诊住院收入趋势组件添加了统一的模型代码配置&#10;- 在多个表格组件中添加了元素ID生成器以提升可访问性&#10;- 更新了实时疾病分析页面中的参考费用模块代码生成逻辑&#10;- 统一了图表组件的代码属性绑定方式">
+    <list default="true" id="a32d6ec8-0d74-4a1b-8cad-0ab91948ca3e" name="Changes" comment="v127:feat/refactor:需求2306-1、科室端-病种..(市..DRG)科/院 -出院分析；2、科室端-病种..(市..DRG)科/院 -临床病种分析；病人分类下拉框内容改为本地（本地下面是职工、居民）、异地（异地下面是职工、居民），支持多选，当选择本地时，默认本地职工和居民勾选，当选择异地时，默认异地下面的职工和居民勾选。默认本地和异地均被选中。&#10;style(drg): 统一医院可见性指令命名和组件属性顺序&#10;&#10;- 将 v-hospVisible 指令重命名为 v-hosp-visible 以符合命名规范&#10;- 调整 leavehosp.vue 中病人分类选择器的属性顺序，将 queryKey 和 label 移至开头&#10;- 保持组件功能不变，仅优化代码结构和命名一致性">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/diseaseAnalysis/drgCity/leavehosp.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/diseaseAnalysis/drgCity/leavehosp.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/diseaseAnalysisDeptArea/drg/drgCityClinicalArea.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/diseaseAnalysisDeptArea/drg/drgCityClinicalArea.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/diseaseAnalysisDeptArea/drg/drgCityLeaveHospitalArea.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/diseaseAnalysisDeptArea/drg/drgCityLeaveHospitalArea.vue" afterDir="false" />
     </list>
     <list id="bd8e474f-42c8-444f-9f2b-07be811ba86b" name="ignore-on-commit" comment="ignore-on-commit" />
     <option name="SHOW_DIALOG" value="false" />
@@ -2712,23 +2710,7 @@
       <workItem from="1784856520896" duration="13458000" />
       <workItem from="1784871591689" duration="18104000" />
       <workItem from="1785114217522" duration="8803000" />
-      <workItem from="1785123348157" duration="12848000" />
-    </task>
-    <task id="LOCAL-04545" summary="v126:feat/refactor:（菏泽市立-院端）病组分析-DRG支付-成本异常探查，卡片图数据问题&#10;fix(diseaseMatrix): 优化搜索和患者类型切换逻辑&#10;&#10;- 将handleSearch方法改为异步函数并添加groupPat调用&#10;- 在patientTypeListChange方法中注释掉重复的groupPat调用&#10;- 确保数据分组操作在表格初始化前完成&#10;- 保持原有的医院DRG矩阵和选择功能不变">
-      <option name="closed" value="true" />
-      <created>1784803220125</created>
-      <option name="number" value="04545" />
-      <option name="presentableId" value="LOCAL-04545" />
-      <option name="project" value="LOCAL" />
-      <updated>1784803220125</updated>
-    </task>
-    <task id="LOCAL-04546" summary="v126:feat/refactor::需求2467-前端代码规范化修改-病种分析（市医保DRG） /出院分析 /科室病组整体运营分析 总权重&#10;feat(cost): 添加表格ID生成功能到诊所房间详情对话框&#10;&#10;- 从 '@/util' 导入 elemId 函数&#10;- 为表格数据添加唯一ID字段，使用 elemId 生成 clinicRoom-table 的ID">
-      <option name="closed" value="true" />
-      <created>1784804080413</created>
-      <option name="number" value="04546" />
-      <option name="presentableId" value="LOCAL-04546" />
-      <option name="project" value="LOCAL" />
-      <updated>1784804080414</updated>
+      <workItem from="1785123348157" duration="14409000" />
     </task>
     <task id="LOCAL-04547" summary="v126:feat/refactor::需求2467-前端代码规范化修改-病种分析（市医保DRG） /出院分析 /科室病组整体运营分析 总权重&#10;refactor(cost): 移除未使用的Vuex映射并优化导入&#10;&#10;- 移除了clinicRoomdetailsDialog.vue中的mapState、mapGetters、mapMutations、mapActions导入&#10;- 移除了estimateDetailedDialog.vue中的mapState、mapGetters、mapMutations、mapActions导入&#10;- 在estimateDetailedDialog.vue中添加了elemId工具函数导入&#10;- 为estimateDetailedDialog中的表格组件添加了唯一ID标识">
       <option name="closed" value="true" />
@@ -3106,7 +3088,23 @@
       <option name="project" value="LOCAL" />
       <updated>1785130065936</updated>
     </task>
-    <option name="localTasksCounter" value="4594" />
+    <task id="LOCAL-04594" summary="v127:feat/refactor:需求2306-1、科室端-病种..(市..DRG)科/院 -出院分析；2、科室端-病种..(市..DRG)科/院 -临床病种分析；病人分类下拉框内容改为本地（本地下面是职工、居民）、异地（异地下面是职工、居民），支持多选，当选择本地时，默认本地职工和居民勾选，当选择异地时，默认异地下面的职工和居民勾选。默认本地和异地均被选中。&#10;feat(drg): 优化病人分类选择组件实现&#10;&#10;- 移除注释的部门选择组组件，简化页面结构&#10;- 新增病人分类单选级联下拉框功能&#10;- 添加病人分类列表多选器组件，支持主干、毓璜顶、菏泽医院显示&#10;- 引入医院代码判断逻辑，动态控制病人分类组件显示&#10;- 定义本地职工、居民及外籍人员患者类型常量&#10;- 实现病人分类单选绑定数据配置方法&#10;- 更新查询参数处理逻辑，支持多选病人类型列表&#10;- 修复患者组权限指令拼写错误（v-hospVisible改为v-hosp-visible）">
+      <option name="closed" value="true" />
+      <created>1785137623894</created>
+      <option name="number" value="04594" />
+      <option name="presentableId" value="LOCAL-04594" />
+      <option name="project" value="LOCAL" />
+      <updated>1785137623894</updated>
+    </task>
+    <task id="LOCAL-04595" summary="v127:feat/refactor:需求2306-1、科室端-病种..(市..DRG)科/院 -出院分析；2、科室端-病种..(市..DRG)科/院 -临床病种分析；病人分类下拉框内容改为本地（本地下面是职工、居民）、异地（异地下面是职工、居民），支持多选，当选择本地时，默认本地职工和居民勾选，当选择异地时，默认异地下面的职工和居民勾选。默认本地和异地均被选中。&#10;style(drg): 统一医院可见性指令命名和组件属性顺序&#10;&#10;- 将 v-hospVisible 指令重命名为 v-hosp-visible 以符合命名规范&#10;- 调整 leavehosp.vue 中病人分类选择器的属性顺序，将 queryKey 和 label 移至开头&#10;- 保持组件功能不变，仅优化代码结构和命名一致性">
+      <option name="closed" value="true" />
+      <created>1785137717479</created>
+      <option name="number" value="04595" />
+      <option name="presentableId" value="LOCAL-04595" />
+      <option name="project" value="LOCAL" />
+      <updated>1785137717479</updated>
+    </task>
+    <option name="localTasksCounter" value="4596" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -3127,8 +3125,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="MARK_IGNORED_AS_EXCLUDED" value="true" />
-    <MESSAGE value="v127:feat/refactor:需求2276-科室端-病种分析（市医保DRG） ，新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(api): 添加市医保DRG诊断操作明细相关接口&#10;&#10;- 新增诊断下拉框请求接口&#10;- 新增操作下拉框请求接口&#10;- 新增DRG病组下拉框请求接口&#10;- 新增诊断操作明细表格请求接口&#10;- 新增诊断操作明细下钻维度下拉框请求接口&#10;- 新增诊断操作明细下钻表格请求接口&#10;- 新增诊断操作明细下钻维度列表请求接口&#10;- 新增诊断操作明细下钻费用类型下拉框请求接口&#10;- 新增诊断操作明细下钻费用类型明细表格请求接口" />
-    <MESSAGE value="v127:feat/refactor:需求2276-科室端-病种分析（市医保DRG） ，新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;refactor(PlDiagnosisSelector): 重构诊断选择器以支持医院和部门数据源&#10;&#10;- 添加对 fetchDiagnosisSelectOptionsDept API 方法的导入&#10;- 新增 getIsHosp getter 映射以判断当前环境类型&#10;- 实现 getRequestMethod 计算属性根据环境动态选择 API 方法&#10;- 修改 requestOptions 方法使用动态请求方法替换固定调用" />
     <MESSAGE value="v127:feat/refactor:需求2276-科室端-病种分析（市医保DRG） ，新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;refactor(diagnosis-selector): 优化诊断选择器组件逻辑&#10;&#10;- 引入 mapGetters 来获取 Vuex 状态&#10;- 添加部门 API 接口导入支持&#10;- 实现动态请求方法选择机制&#10;- 根据配置状态切换医院或部门数据源&#10;- 统一选择器组件的数据获取逻辑" />
     <MESSAGE value="v127:feat/refactor:需求2276-科室端-病种分析（市医保DRG） ，新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(diseaseAnalysis): 添加诊断操作详情页面筛选组件&#10;&#10;- 集成 PlDiagnosisSelector 组件用于诊断口径选择&#10;- 集成 PlOperationSelector 组件用于操作口径选择&#10;- 集成 PlDrgGroupSelector 组件用于 DRG 病组选择&#10;- 集成 PlPatientTypeListSelector 组件用于病人分类列表选择&#10;- 添加诊断类型、操作类型、DRG 组列表相关数据绑定&#10;- 实现筛选器启用状态更新方法" />
     <MESSAGE value="v127:feat/refactor:需求2276-科室端-病种分析（市医保DRG） ，新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;fix(drg): 修复DRG分组选择器日期参数验证问题&#10;&#10;- 添加了对医院配置的getter映射&#10;- 修改了日期参数验证逻辑以支持不同配置模式&#10;- 优化了监听器中的参数传递方式" />
@@ -3152,7 +3148,9 @@
     <MESSAGE value="v127:feat/refactor:需求2467-前端代码规范化修改&#10;&#10;refactor(deptCockpit): 统一为表格组件添加ID标识&#10;&#10;- 在resourceAllocation模块的armarium.vue、bed.vue、fixedAssets.vue中为pl-grid-table组件添加elemId标识&#10;- 在components/chartAndTable.vue中为PlGridTable组件添加elemId标识&#10;- 在diseaseAnalysis模块的相关组件中引入并使用elemId工具函数&#10;- 在diseaseManagement.vue中引入generateModelCode并为tableConfig添加code字段&#10;- 移除DeptNoGroupRateDetailTable.vue中的多余注释代码和无用组件引用" />
     <MESSAGE value="v127:feat/refactor:需求2276-科室端-病种分析（市医保DRG） ，新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(dimension-selector): 修改维度列表选择器的数据请求逻辑&#10;&#10;- 添加了 fetchDrilldownDimensionListDeptDrgMedGroup API 方法导入&#10;- 引入了 Vuex mapGetters 用于获取配置状态&#10;- 添加了 getIsHosp 计算属性以区分医院类型&#10;- 实现了动态请求方法选择机制，根据 getIsHosp 状态决定使用不同 API&#10;- 修改了参数验证逻辑，根据医院类型进行不同的参数校验&#10;- 更新了数据请求调用方式，使用动态获取的请求方法替代固定方法" />
     <MESSAGE value="v127:feat/refactor:需求2276-科室端-病种分析（市医保DRG） ，新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;refactor(charts): 移除废弃组件并优化图表配置&#10;&#10;- 移除了未使用的 DomsConH360 组件引用和注释代码&#10;- 为医疗成本趋势、医疗收入趋势和门诊急诊住院收入趋势组件添加了统一的模型代码配置&#10;- 在多个表格组件中添加了元素ID生成器以提升可访问性&#10;- 更新了实时疾病分析页面中的参考费用模块代码生成逻辑&#10;- 统一了图表组件的代码属性绑定方式" />
-    <option name="LAST_COMMIT_MESSAGE" value="v127:feat/refactor:需求2276-科室端-病种分析（市医保DRG） ，新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;refactor(charts): 移除废弃组件并优化图表配置&#10;&#10;- 移除了未使用的 DomsConH360 组件引用和注释代码&#10;- 为医疗成本趋势、医疗收入趋势和门诊急诊住院收入趋势组件添加了统一的模型代码配置&#10;- 在多个表格组件中添加了元素ID生成器以提升可访问性&#10;- 更新了实时疾病分析页面中的参考费用模块代码生成逻辑&#10;- 统一了图表组件的代码属性绑定方式" />
+    <MESSAGE value="v127:feat/refactor:需求2306-1、科室端-病种..(市..DRG)科/院 -出院分析；2、科室端-病种..(市..DRG)科/院 -临床病种分析；病人分类下拉框内容改为本地（本地下面是职工、居民）、异地（异地下面是职工、居民），支持多选，当选择本地时，默认本地职工和居民勾选，当选择异地时，默认异地下面的职工和居民勾选。默认本地和异地均被选中。&#10;feat(drg): 优化病人分类选择组件实现&#10;&#10;- 移除注释的部门选择组组件，简化页面结构&#10;- 新增病人分类单选级联下拉框功能&#10;- 添加病人分类列表多选器组件，支持主干、毓璜顶、菏泽医院显示&#10;- 引入医院代码判断逻辑，动态控制病人分类组件显示&#10;- 定义本地职工、居民及外籍人员患者类型常量&#10;- 实现病人分类单选绑定数据配置方法&#10;- 更新查询参数处理逻辑，支持多选病人类型列表&#10;- 修复患者组权限指令拼写错误（v-hospVisible改为v-hosp-visible）" />
+    <MESSAGE value="v127:feat/refactor:需求2306-1、科室端-病种..(市..DRG)科/院 -出院分析；2、科室端-病种..(市..DRG)科/院 -临床病种分析；病人分类下拉框内容改为本地（本地下面是职工、居民）、异地（异地下面是职工、居民），支持多选，当选择本地时，默认本地职工和居民勾选，当选择异地时，默认异地下面的职工和居民勾选。默认本地和异地均被选中。&#10;style(drg): 统一医院可见性指令命名和组件属性顺序&#10;&#10;- 将 v-hospVisible 指令重命名为 v-hosp-visible 以符合命名规范&#10;- 调整 leavehosp.vue 中病人分类选择器的属性顺序，将 queryKey 和 label 移至开头&#10;- 保持组件功能不变，仅优化代码结构和命名一致性" />
+    <option name="LAST_COMMIT_MESSAGE" value="v127:feat/refactor:需求2306-1、科室端-病种..(市..DRG)科/院 -出院分析；2、科室端-病种..(市..DRG)科/院 -临床病种分析；病人分类下拉框内容改为本地（本地下面是职工、居民）、异地（异地下面是职工、居民），支持多选，当选择本地时，默认本地职工和居民勾选，当选择异地时，默认异地下面的职工和居民勾选。默认本地和异地均被选中。&#10;style(drg): 统一医院可见性指令命名和组件属性顺序&#10;&#10;- 将 v-hospVisible 指令重命名为 v-hosp-visible 以符合命名规范&#10;- 调整 leavehosp.vue 中病人分类选择器的属性顺序，将 queryKey 和 label 移至开头&#10;- 保持组件功能不变，仅优化代码结构和命名一致性" />
   </component>
   <component name="VueSettings">
     <option name="innerServiceType" value="TS_SERVICE" />
