@@ -44,13 +44,15 @@
     <option name="selectedModelId" value="auto" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a32d6ec8-0d74-4a1b-8cad-0ab91948ca3e" name="Changes" comment="v127:feat/refactor:需求2276-科室端-病种分析（市医保DRG） ，新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(diseaseAnalysis): 添加部门诊断操作明细表格组件&#10;&#10;- 引入 DiagnosisOperationDetailTableDept 组件&#10;- 引入 DiagnosisOperationDetailDrilldownTableDept 组件&#10;- 引入 DiagnosisOperationDetailDrilldownFeeTypeTableDept 组件&#10;- 在页面容器中添加诊断操作明细相关表格组件&#10;- 注册新引入的表格组件到页面组件列表中">
+    <list default="true" id="a32d6ec8-0d74-4a1b-8cad-0ab91948ca3e" name="Changes" comment="v127:feat/refactor:需求2276-科室端-病种分析（市医保DRG） ，新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;refactor(diseaseAnalysis): 优化诊断操作明细组件的请求参数处理&#10;&#10;- 提取公共请求参数计算方法 getCommonRequestParams&#10;- 移除硬编码的 indModelCode 值，改为空字符串&#10;- 简化 checkDateParamsValid 函数调用方式">
+      <change beforePath="$PROJECT_DIR$/.idea/claudeCodeTabState.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/claudeCodeTabState.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/disease-group-disease-type-analysis/drg-city/diagnosis-operation-detail/diagnosisOperationDetailDeptApi.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/disease-group-disease-type-analysis/drg-city/diagnosis-operation-detail/diagnosisOperationDetailDeptApi.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/diseaseAnalysis/department/diagnosis-operation-detail/DiagnosisOperationDetailDrilldownFeeTypeTableDept.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/diseaseAnalysis/department/diagnosis-operation-detail/DiagnosisOperationDetailDrilldownFeeTypeTableDept.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/diseaseAnalysis/department/diagnosis-operation-detail/DiagnosisOperationDetailDrilldownTableDept.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/diseaseAnalysis/department/diagnosis-operation-detail/DiagnosisOperationDetailDrilldownTableDept.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/diseaseAnalysis/department/diagnosis-operation-detail/DiagnosisOperationDetailTableDept.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/diseaseAnalysis/department/diagnosis-operation-detail/DiagnosisOperationDetailTableDept.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/diseaseAnalysis/drgCity/DiagnosisOperationDetailDept.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/diseaseAnalysis/drgCity/DiagnosisOperationDetailDept.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/BIEAnalysis/component/deptCompare.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/BIEAnalysis/component/deptCompare.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/BIEAnalysis/component/detailsDialog.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/BIEAnalysis/component/detailsDialog.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/BIEAnalysis/component/operational-cost-analysis/DiseaseUnitMarginalContributionRankTable.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/BIEAnalysis/component/operational-cost-analysis/DiseaseUnitMarginalContributionRankTable.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/BIEAnalysis/component/outPatient/outpatientBlock.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/BIEAnalysis/component/outPatient/outpatientBlock.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/BIEAnalysis/component/overall/MedicalGroupIncomeAnalysis.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/BIEAnalysis/component/overall/MedicalGroupIncomeAnalysis.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/BIEAnalysis/component/overall/overallBlock.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/BIEAnalysis/component/overall/overallBlock.vue" afterDir="false" />
     </list>
     <list id="bd8e474f-42c8-444f-9f2b-07be811ba86b" name="ignore-on-commit" comment="ignore-on-commit" />
     <option name="SHOW_DIALOG" value="false" />
@@ -2712,23 +2714,8 @@
       <workItem from="1784768095682" duration="35303000" />
       <workItem from="1784855028153" duration="1319000" />
       <workItem from="1784856520896" duration="13458000" />
-      <workItem from="1784871591689" duration="17212000" />
-    </task>
-    <task id="LOCAL-04531" summary="v126:feat/refactor:需求2588-科室端-收支分析-总览、收入总览两个页面，收入口径选择‘开单收入’时，整体分析Tab页、门急诊分析Tab、住院分析Tab页的‘医疗盈余分析表’表的各项收入下钻页，‘对比分析’图替换成对应收入分析表和费用上升前十帕累托图&#10;fix(BIEAnalysis): 更新收入分析模块的Vuex状态映射&#10;&#10;- 添加mapState辅助函数以简化组件状态访问">
-      <option name="closed" value="true" />
-      <created>1784787763506</created>
-      <option name="number" value="04531" />
-      <option name="presentableId" value="LOCAL-04531" />
-      <option name="project" value="LOCAL" />
-      <updated>1784787763506</updated>
-    </task>
-    <task id="LOCAL-04532" summary="v126:feat/refactor:需求2588-科室端-收支分析-总览、收入总览两个页面，收入口径选择‘开单收入’时，整体分析Tab页、门急诊分析Tab、住院分析Tab页的‘医疗盈余分析表’表的各项收入下钻页，‘对比分析’图替换成对应收入分析表和费用上升前十帕累托图&#10;fix(income): 修复收入分析模块布局间距问题&#10;&#10;- 为PlItemLayout组件添加lastRowBottomMargin属性以调整底部边距&#10;- 解决门急诊和住院费用项目排名前十组件的布局间距问题">
-      <option name="closed" value="true" />
-      <created>1784788163226</created>
-      <option name="number" value="04532" />
-      <option name="presentableId" value="LOCAL-04532" />
-      <option name="project" value="LOCAL" />
-      <updated>1784788163226</updated>
+      <workItem from="1784871591689" duration="18104000" />
+      <workItem from="1785114217522" duration="763000" />
     </task>
     <task id="LOCAL-04533" summary="v126:feat/refactor:需求2588-科室端-收支分析-总览、收入总览两个页面，收入口径选择‘开单收入’时，整体分析Tab页、门急诊分析Tab、住院分析Tab页的‘医疗盈余分析表’表的各项收入下钻页，‘对比分析’图替换成对应收入分析表和费用上升前十帕累托图&#10;refactor(BIEAnalysis): 优化收入分析模块布局配置&#10;&#10;- 将 PlItemLayout 组件的绑定属性重构为计算属性 getPlItemLayoutBind&#10;- 移除硬编码的 lastRowBottomMargin 和 rowNum 属性&#10;- 使用 v-bind 指令动态绑定组件属性&#10;- 根据医疗服务类型动态设置底部边距样式类">
       <option name="closed" value="true" />
@@ -3106,7 +3093,23 @@
       <option name="project" value="LOCAL" />
       <updated>1784889403632</updated>
     </task>
-    <option name="localTasksCounter" value="4580" />
+    <task id="LOCAL-04580" summary="v127:feat/refactor:需求2276-科室端-病种分析（市医保DRG） ，新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;fix(api): 修复诊断操作明细接口路径错误&#10;&#10;- 修正了 fetchDiagnosisOperationDetailTableDeptDrg 方法中的 API 路径&#10;- 移除了路径末尾多余的 '-drill' 后缀">
+      <option name="closed" value="true" />
+      <created>1784890165555</created>
+      <option name="number" value="04580" />
+      <option name="presentableId" value="LOCAL-04580" />
+      <option name="project" value="LOCAL" />
+      <updated>1784890165555</updated>
+    </task>
+    <task id="LOCAL-04581" summary="v127:feat/refactor:需求2276-科室端-病种分析（市医保DRG） ，新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;refactor(diseaseAnalysis): 优化诊断操作明细组件的请求参数处理&#10;&#10;- 提取公共请求参数计算方法 getCommonRequestParams&#10;- 移除硬编码的 indModelCode 值，改为空字符串&#10;- 简化 checkDateParamsValid 函数调用方式">
+      <option name="closed" value="true" />
+      <created>1784890526004</created>
+      <option name="number" value="04581" />
+      <option name="presentableId" value="LOCAL-04581" />
+      <option name="project" value="LOCAL" />
+      <updated>1784890526004</updated>
+    </task>
+    <option name="localTasksCounter" value="4582" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -3127,8 +3130,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="MARK_IGNORED_AS_EXCLUDED" value="true" />
-    <MESSAGE value="v126:feat/refactor:需求2304-科端-病组分析（医保DRG）-出院分析、科端-病组分析（医保DRG）-临床病种分析，病人分类下拉框后面添加问号，问号默认内容：如“本地、异地”均不选择，则为本科室所有病例合计值。内容支持现场后台配置&#10;feat(diseaseAnalysis): 新增病人分类提示功能并优化口径提示组件&#10;&#10;- 添加 fetchPatientTypeListTipsOptions API 接口用于获取病人分类下拉框说明提示&#10;- 扩展 CalibrePopoverTips 组件支持 patTypeList 类型验证&#10;- 为 CalibrePopoverTips 组件增加自定义请求方法配置选项&#10;- 实现动态请求方法选择机制，支持默认和自定义提示获取逻辑&#10;- 更新组件内部请求调用方式以适配新的扩展功能" />
-    <MESSAGE value="v126:feat/refactor:需求2304-科端-病组分析（医保DRG）-出院分析、科端-病组分析（医保DRG）-临床病种分析，病人分类下拉框后面添加问号，问号默认内容：如“本地、异地”均不选择，则为本科室所有病例合计值。内容支持现场后台配置&#10;feat(diseaseAnalysis): 添加病人分类列表多选组件&#10;&#10;- 新增 PlPatientTypeListSelector 组件实现病人分类多选功能&#10;- 集成 PlCascader 级联选择器和 CalibrePopoverTips 提示组件&#10;- 实现基于医院编码的病人分类选择器显示控制逻辑&#10;- 添加病人分类选项配置包括本地职工、本地居民、外地职工、外地居民&#10;- 实现多选标签折叠显示和搜索功能&#10;- 集成 API 接口获取病人分类提示选项数据" />
     <MESSAGE value="v126:feat/refactor:需求2304-科端-病组分析（医保DRG）-出院分析、科端-病组分析（医保DRG）-临床病种分析，病人分类下拉框后面添加问号，问号默认内容：如“本地、异地”均不选择，则为本科室所有病例合计值。内容支持现场后台配置&#10;refactor(diseaseAnalysis): 重构病人分类选择器组件&#10;&#10;- 将PlCascader替换为专用的PlPatientTypeListSelector组件&#10;- 移除废弃的getPatientTypeListMultiSelectorBindData计算属性&#10;- 移除不再使用的patientTypeListOptionsDrg常量&#10;- 添加新的PlPatientTypeListSelector组件引用和注册&#10;- 优化组件间的参数传递方式，使用.sync修饰符同步数据" />
     <MESSAGE value="v126:feat/refactor:需求2304-科端-病组分析（医保DRG）-出院分析、科端-病组分析（医保DRG）-临床病种分析，病人分类下拉框后面添加问号，问号默认内容：如“本地、异地”均不选择，则为本科室所有病例合计值。内容支持现场后台配置&#10;refactor(diseaseAnalysis): 替换病人分类选择器组件&#10;&#10;- 将 PlCascader 替换为 PlPatientTypeListSelector 组件&#10;- 移除医院可见性指令配置&#10;- 添加 drgGroupType 和 fromType 属性绑定&#10;- 从组件注册中移除旧的选择器组件&#10;- 删除相关的计算属性和绑定数据方法&#10;- 清理不再使用的导入和常量引用" />
     <MESSAGE value="v126:feat/refactor:需求2304-科端-病组分析（医保DRG）-出院分析、科端-病组分析（医保DRG）-临床病种分析，病人分类下拉框后面添加问号，问号默认内容：如“本地、异地”均不选择，则为本科室所有病例合计值。内容支持现场后台配置&#10;feat(diseaseAnalysis): 更新病人分类列表选择器显示逻辑&#10;&#10;- 修改组件描述注释，明确仅显示主干、毓璜顶、菏泽DRG市医保&#10;- 添加计算属性getIfShowPatTypeSelect控制病人分类下拉框显示&#10;- 隐藏省卫健委DRG相关选项&#10;- 修改getIfHasPatListSelector方法集成显示条件判断" />
@@ -3152,7 +3153,9 @@
     <MESSAGE value="v127:feat/refactor:需求2276-科室端-病种分析（市医保DRG） ，新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(diseaseAnalysis): 新增科端病组分析诊断操作明细功能&#10;&#10;- 创建诊断操作费用明细表格组件，支持维度和费用类型筛选&#10;- 实现诊断操作明细表格组件，包含当前行选择和过滤功能&#10;- 添加钻取明细表格组件，支持按维度类型进行数据分析&#10;- 集成DRG支付相关的诊断操作数据展示和交互逻辑&#10;- 实现表格排序、筛选和状态管理功能&#10;- 完善数据加载和错误处理机制" />
     <MESSAGE value="v127:feat/refactor:需求2276-科室端-病种分析（市医保DRG） ，新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;refactor(diseaseAnalysis): 更新部门诊断操作详情表格组件API调用&#10;&#10;- 将医院层级API接口替换为科室API接口&#10;- 更新诊断操作详情表格组件的数据获取方法&#10;- 修改状态映射以使用部门存储结构&#10;- 调整费用类型下拉选项的数据请求接口&#10;- 统一所有相关组件的API导入路径到疾病组分析模块" />
     <MESSAGE value="v127:feat/refactor:需求2276-科室端-病种分析（市医保DRG） ，新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(diseaseAnalysis): 添加部门诊断操作明细表格组件&#10;&#10;- 引入 DiagnosisOperationDetailTableDept 组件&#10;- 引入 DiagnosisOperationDetailDrilldownTableDept 组件&#10;- 引入 DiagnosisOperationDetailDrilldownFeeTypeTableDept 组件&#10;- 在页面容器中添加诊断操作明细相关表格组件&#10;- 注册新引入的表格组件到页面组件列表中" />
-    <option name="LAST_COMMIT_MESSAGE" value="v127:feat/refactor:需求2276-科室端-病种分析（市医保DRG） ，新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(diseaseAnalysis): 添加部门诊断操作明细表格组件&#10;&#10;- 引入 DiagnosisOperationDetailTableDept 组件&#10;- 引入 DiagnosisOperationDetailDrilldownTableDept 组件&#10;- 引入 DiagnosisOperationDetailDrilldownFeeTypeTableDept 组件&#10;- 在页面容器中添加诊断操作明细相关表格组件&#10;- 注册新引入的表格组件到页面组件列表中" />
+    <MESSAGE value="v127:feat/refactor:需求2276-科室端-病种分析（市医保DRG） ，新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;fix(api): 修复诊断操作明细接口路径错误&#10;&#10;- 修正了 fetchDiagnosisOperationDetailTableDeptDrg 方法中的 API 路径&#10;- 移除了路径末尾多余的 '-drill' 后缀" />
+    <MESSAGE value="v127:feat/refactor:需求2276-科室端-病种分析（市医保DRG） ，新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;refactor(diseaseAnalysis): 优化诊断操作明细组件的请求参数处理&#10;&#10;- 提取公共请求参数计算方法 getCommonRequestParams&#10;- 移除硬编码的 indModelCode 值，改为空字符串&#10;- 简化 checkDateParamsValid 函数调用方式" />
+    <option name="LAST_COMMIT_MESSAGE" value="v127:feat/refactor:需求2276-科室端-病种分析（市医保DRG） ，新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;refactor(diseaseAnalysis): 优化诊断操作明细组件的请求参数处理&#10;&#10;- 提取公共请求参数计算方法 getCommonRequestParams&#10;- 移除硬编码的 indModelCode 值，改为空字符串&#10;- 简化 checkDateParamsValid 函数调用方式" />
   </component>
   <component name="VueSettings">
     <option name="innerServiceType" value="TS_SERVICE" />
