@@ -47,6 +47,14 @@
     <list default="true" id="a32d6ec8-0d74-4a1b-8cad-0ab91948ca3e" name="Changes" comment="拉取代码-1735 v127 山肿瘤、毓璜顶 院/科端-病组分析（DRG）除分页的表格外，筛选控件改为可选的控件；">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/tool/diagnosis-operation-detail/PlDimensionListSelector.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/tool/diagnosis-operation-detail/PlDimensionListSelector.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/deptCockpit/components/chartAndTable.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/deptCockpit/components/chartAndTable.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/deptCockpit/components/diseaseDetail.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/deptCockpit/components/diseaseDetail.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/deptCockpit/components/efficiencyAnalysis.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/deptCockpit/components/efficiencyAnalysis.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/deptCockpit/components/incomeStructure.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/deptCockpit/components/incomeStructure.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/deptCockpit/components/outpatientStructure.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/deptCockpit/components/outpatientStructure.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/deptCockpit/resourceAllocation/armarium.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/deptCockpit/resourceAllocation/armarium.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/deptCockpit/resourceAllocation/bed.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/deptCockpit/resourceAllocation/bed.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/deptCockpit/resourceAllocation/fixedAssets.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/deptCockpit/resourceAllocation/fixedAssets.vue" afterDir="false" />
     </list>
     <list id="bd8e474f-42c8-444f-9f2b-07be811ba86b" name="ignore-on-commit" comment="ignore-on-commit" />
     <option name="SHOW_DIALOG" value="false" />
@@ -501,9 +509,9 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="npm.本地运行项目" />
       <item itemvalue="npm.build" />
       <item itemvalue="npm.testing" />
+      <item itemvalue="npm.本地运行项目" />
     </list>
   </component>
   <component name="SharedIndexes">
@@ -2710,6 +2718,7 @@
       <workItem from="1784856520896" duration="13458000" />
       <workItem from="1784871591689" duration="18104000" />
       <workItem from="1785114217522" duration="8803000" />
+      <workItem from="1785123348157" duration="1094000" />
     </task>
     <task id="LOCAL-04541" summary="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;fix(diseaseAnalysis): 处理维度列表数据为空时也可请求&#10;&#10;- 添加 ifDimensionListReady 状态标识维度列表是否准备就绪&#10;- 在 PlDimensionListSelector 组件中添加 update:options-ready 事件&#10;- 修改 requestParams 的 handler 为异步函数确保数据加载完成&#10;- 在数据请求完成后触发 options-ready 事件&#10;- 更新表格数据请求逻辑使用新的状态判断条件">
       <option name="closed" value="true" />
