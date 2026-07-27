@@ -44,7 +44,10 @@
     <option name="selectedModelId" value="auto" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a32d6ec8-0d74-4a1b-8cad-0ab91948ca3e" name="Changes" comment="v127:feat/refactor:需求2467-前端代码规范化修改&#10;refactor(equipment): 更新设备效益分析组件以使用动态ID生成&#10;&#10;- 为所有图表和表格组件添加elemId方法生成唯一ID&#10;- 在treatEquipmentDetail组件中为模块面板添加code属性&#10;- 从工具文件导入elemId函数并在组件数据中暴露&#10;- 统一使用动态ID替代静态ID提高组件可维护性" />
+    <list default="true" id="a32d6ec8-0d74-4a1b-8cad-0ab91948ca3e" name="Changes" comment="v127:feat/refactor:需求2467-前端代码规范化修改&#10;refactor(equipment): 更新设备效益分析组件以使用动态ID生成&#10;&#10;- 为所有图表和表格组件添加elemId方法生成唯一ID&#10;- 在treatEquipmentDetail组件中为模块面板添加code属性&#10;- 从工具文件导入elemId函数并在组件数据中暴露&#10;- 统一使用动态ID替代静态ID提高组件可维护性">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/unit/exportExcel.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/unit/exportExcel.vue" afterDir="false" />
+    </list>
     <list id="bd8e474f-42c8-444f-9f2b-07be811ba86b" name="ignore-on-commit" comment="ignore-on-commit" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -2707,7 +2710,7 @@
       <workItem from="1784856520896" duration="13458000" />
       <workItem from="1784871591689" duration="18104000" />
       <workItem from="1785114217522" duration="8803000" />
-      <workItem from="1785123348157" duration="19502000" />
+      <workItem from="1785123348157" duration="20127000" />
     </task>
     <task id="LOCAL-04551" summary="v126:feat/refactor:需求2467-前端代码规范化修改&#10;feat(BIEAnalysis): 添加疾病产出详情表组件功能&#10;&#10;- 引入elemId工具函数用于元素标识生成&#10;- 新增indModelCode数据属性用于模型代码标识&#10;- 在表格绑定数据中添加id和code字段配置&#10;- 为过滤对象添加indModelCode参数支持&#10;- 完善组件结构配置和数据请求设置">
       <option name="closed" value="true" />
