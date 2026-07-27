@@ -44,18 +44,11 @@
     <option name="selectedModelId" value="auto" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a32d6ec8-0d74-4a1b-8cad-0ab91948ca3e" name="Changes" comment="v127:feat/refactor:需求2276-科室端-病种分析（市医保DRG） ，新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(dimension-selector): 修改维度列表选择器的数据请求逻辑&#10;&#10;- 添加了 fetchDrilldownDimensionListDeptDrgMedGroup API 方法导入&#10;- 引入了 Vuex mapGetters 用于获取配置状态&#10;- 添加了 getIsHosp 计算属性以区分医院类型&#10;- 实现了动态请求方法选择机制，根据 getIsHosp 状态决定使用不同 API&#10;- 修改了参数验证逻辑，根据医院类型进行不同的参数校验&#10;- 更新了数据请求调用方式，使用动态获取的请求方法替代固定方法">
+    <list default="true" id="a32d6ec8-0d74-4a1b-8cad-0ab91948ca3e" name="Changes" comment="v127:feat/refactor:需求2276-科室端-病种分析（市医保DRG） ，新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;refactor(charts): 移除废弃组件并优化图表配置&#10;&#10;- 移除了未使用的 DomsConH360 组件引用和注释代码&#10;- 为医疗成本趋势、医疗收入趋势和门诊急诊住院收入趋势组件添加了统一的模型代码配置&#10;- 在多个表格组件中添加了元素ID生成器以提升可访问性&#10;- 更新了实时疾病分析页面中的参考费用模块代码生成逻辑&#10;- 统一了图表组件的代码属性绑定方式">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/deptCockpit/resourceAllocation/personnel.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/deptCockpit/resourceAllocation/personnel.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/deptCockpitNew/components/sourceOfPatients.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/deptCockpitNew/components/sourceOfPatients.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/deptCockpitNew/resourceAllocation/personnel.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/deptCockpitNew/resourceAllocation/personnel.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/diff/hosp-ytyhd/incomeExpenses/components/MedicalCostTrendsYhd.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/diff/hosp-ytyhd/incomeExpenses/components/MedicalCostTrendsYhd.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/diff/hosp-ytyhd/incomeExpenses/components/MedicalRevenueTrendsYhd.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/diff/hosp-ytyhd/incomeExpenses/components/MedicalRevenueTrendsYhd.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/diff/hosp-ytyhd/incomeExpenses/components/OutpatientEmergencyHospitalizationRevenueTrendsYhd.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/diff/hosp-ytyhd/incomeExpenses/components/OutpatientEmergencyHospitalizationRevenueTrendsYhd.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/diseaseAnalysis/components/operationDetailTable.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/diseaseAnalysis/components/operationDetailTable.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/diseaseAnalysis/in-hospital-analysis/RTTDiseaseAnalysis.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/diseaseAnalysis/in-hospital-analysis/RTTDiseaseAnalysis.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/diseaseAnalysis/in-hospital-analysis/RTTDiseaseAnalysis_dip.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/diseaseAnalysis/in-hospital-analysis/RTTDiseaseAnalysis_dip.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/diseaseAnalysis/drgCity/leavehosp.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/diseaseAnalysis/drgCity/leavehosp.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/diseaseAnalysisDeptArea/drg/drgCityClinicalArea.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/diseaseAnalysisDeptArea/drg/drgCityClinicalArea.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/diseaseAnalysisDeptArea/drg/drgCityLeaveHospitalArea.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/diseaseAnalysisDeptArea/drg/drgCityLeaveHospitalArea.vue" afterDir="false" />
     </list>
     <list id="bd8e474f-42c8-444f-9f2b-07be811ba86b" name="ignore-on-commit" comment="ignore-on-commit" />
     <option name="SHOW_DIALOG" value="false" />
@@ -2719,15 +2712,7 @@
       <workItem from="1784856520896" duration="13458000" />
       <workItem from="1784871591689" duration="18104000" />
       <workItem from="1785114217522" duration="8803000" />
-      <workItem from="1785123348157" duration="5518000" />
-    </task>
-    <task id="LOCAL-04544" summary="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;fix(diseaseAnalysis): 修复诊断操作详情费用类型表格数据请求问题&#10;&#10;- 将handler函数改为async函数以支持异步操作&#10;- 在requestTableData调用前添加await确保数据加载完成&#10;- 在clearTable方法中重置ifDimensionListReady状态">
-      <option name="closed" value="true" />
-      <created>1784799229513</created>
-      <option name="number" value="04544" />
-      <option name="presentableId" value="LOCAL-04544" />
-      <option name="project" value="LOCAL" />
-      <updated>1784799229513</updated>
+      <workItem from="1785123348157" duration="12848000" />
     </task>
     <task id="LOCAL-04545" summary="v126:feat/refactor:（菏泽市立-院端）病组分析-DRG支付-成本异常探查，卡片图数据问题&#10;fix(diseaseMatrix): 优化搜索和患者类型切换逻辑&#10;&#10;- 将handleSearch方法改为异步函数并添加groupPat调用&#10;- 在patientTypeListChange方法中注释掉重复的groupPat调用&#10;- 确保数据分组操作在表格初始化前完成&#10;- 保持原有的医院DRG矩阵和选择功能不变">
       <option name="closed" value="true" />
@@ -3113,7 +3098,15 @@
       <option name="project" value="LOCAL" />
       <updated>1785129240967</updated>
     </task>
-    <option name="localTasksCounter" value="4593" />
+    <task id="LOCAL-04593" summary="v127:feat/refactor:需求2276-科室端-病种分析（市医保DRG） ，新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;refactor(charts): 移除废弃组件并优化图表配置&#10;&#10;- 移除了未使用的 DomsConH360 组件引用和注释代码&#10;- 为医疗成本趋势、医疗收入趋势和门诊急诊住院收入趋势组件添加了统一的模型代码配置&#10;- 在多个表格组件中添加了元素ID生成器以提升可访问性&#10;- 更新了实时疾病分析页面中的参考费用模块代码生成逻辑&#10;- 统一了图表组件的代码属性绑定方式">
+      <option name="closed" value="true" />
+      <created>1785130065935</created>
+      <option name="number" value="04593" />
+      <option name="presentableId" value="LOCAL-04593" />
+      <option name="project" value="LOCAL" />
+      <updated>1785130065936</updated>
+    </task>
+    <option name="localTasksCounter" value="4594" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -3134,7 +3127,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="MARK_IGNORED_AS_EXCLUDED" value="true" />
-    <MESSAGE value="v127:feat/refactor:需求2276-科室端-病种分析（市医保DRG） ，新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(diseaseAnalysis): 添加DRG市医保诊断操作明细科室页面功能&#10;&#10;- 引入PlQueryWrapper、DeptAndTimeHeaderFilter等组件实现查询过滤器&#10;- 添加收入口径和病组成本下拉选择功能&#10;- 实现对比方式选择器和口径提示弹窗&#10;- 集成混入逻辑包括索引导出、类型设置、成本选项处理和口径处理器&#10;- 添加全局注入参数配置默认值&#10;- 实现数据获取和状态管理逻辑&#10;- 完善页面初始化和查询处理流程" />
     <MESSAGE value="v127:feat/refactor:需求2276-科室端-病种分析（市医保DRG） ，新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(api): 添加市医保DRG诊断操作明细相关接口&#10;&#10;- 新增诊断下拉框请求接口&#10;- 新增操作下拉框请求接口&#10;- 新增DRG病组下拉框请求接口&#10;- 新增诊断操作明细表格请求接口&#10;- 新增诊断操作明细下钻维度下拉框请求接口&#10;- 新增诊断操作明细下钻表格请求接口&#10;- 新增诊断操作明细下钻维度列表请求接口&#10;- 新增诊断操作明细下钻费用类型下拉框请求接口&#10;- 新增诊断操作明细下钻费用类型明细表格请求接口" />
     <MESSAGE value="v127:feat/refactor:需求2276-科室端-病种分析（市医保DRG） ，新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;refactor(PlDiagnosisSelector): 重构诊断选择器以支持医院和部门数据源&#10;&#10;- 添加对 fetchDiagnosisSelectOptionsDept API 方法的导入&#10;- 新增 getIsHosp getter 映射以判断当前环境类型&#10;- 实现 getRequestMethod 计算属性根据环境动态选择 API 方法&#10;- 修改 requestOptions 方法使用动态请求方法替换固定调用" />
     <MESSAGE value="v127:feat/refactor:需求2276-科室端-病种分析（市医保DRG） ，新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;refactor(diagnosis-selector): 优化诊断选择器组件逻辑&#10;&#10;- 引入 mapGetters 来获取 Vuex 状态&#10;- 添加部门 API 接口导入支持&#10;- 实现动态请求方法选择机制&#10;- 根据配置状态切换医院或部门数据源&#10;- 统一选择器组件的数据获取逻辑" />
@@ -3159,7 +3151,8 @@
     <MESSAGE value="v127:feat/refactor:需求2467-前端代码规范化修改&#10;feat(deptCockpit): 为表格组件添加唯一ID标识&#10;&#10;- 在armarium.vue中为两个表格组件添加elemId标识&#10;- 在bed.vue中为床位表格组件添加elemId标识&#10;- 在chartAndTable.vue中为图表表格组件添加elemId标识&#10;- 在diseaseDetail.vue中为疾病详情表格组件添加elemId标识&#10;- 在efficiencyAnalysis.vue中为效率分析表格组件添加elemId标识&#10;- 在fixedAssets.vue中为固定资产表格组件添加elemId标识&#10;- 在incomeStructure.vue中为收入结构表格组件添加elemId标识&#10;- 在outpatientStructure.vue中为门诊结构表格组件添加elemId标识&#10;- 统一导入elemId工具函数并在各个组件中注册到data中使用" />
     <MESSAGE value="v127:feat/refactor:需求2467-前端代码规范化修改&#10;&#10;refactor(deptCockpit): 统一为表格组件添加ID标识&#10;&#10;- 在resourceAllocation模块的armarium.vue、bed.vue、fixedAssets.vue中为pl-grid-table组件添加elemId标识&#10;- 在components/chartAndTable.vue中为PlGridTable组件添加elemId标识&#10;- 在diseaseAnalysis模块的相关组件中引入并使用elemId工具函数&#10;- 在diseaseManagement.vue中引入generateModelCode并为tableConfig添加code字段&#10;- 移除DeptNoGroupRateDetailTable.vue中的多余注释代码和无用组件引用" />
     <MESSAGE value="v127:feat/refactor:需求2276-科室端-病种分析（市医保DRG） ，新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(dimension-selector): 修改维度列表选择器的数据请求逻辑&#10;&#10;- 添加了 fetchDrilldownDimensionListDeptDrgMedGroup API 方法导入&#10;- 引入了 Vuex mapGetters 用于获取配置状态&#10;- 添加了 getIsHosp 计算属性以区分医院类型&#10;- 实现了动态请求方法选择机制，根据 getIsHosp 状态决定使用不同 API&#10;- 修改了参数验证逻辑，根据医院类型进行不同的参数校验&#10;- 更新了数据请求调用方式，使用动态获取的请求方法替代固定方法" />
-    <option name="LAST_COMMIT_MESSAGE" value="v127:feat/refactor:需求2276-科室端-病种分析（市医保DRG） ，新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(dimension-selector): 修改维度列表选择器的数据请求逻辑&#10;&#10;- 添加了 fetchDrilldownDimensionListDeptDrgMedGroup API 方法导入&#10;- 引入了 Vuex mapGetters 用于获取配置状态&#10;- 添加了 getIsHosp 计算属性以区分医院类型&#10;- 实现了动态请求方法选择机制，根据 getIsHosp 状态决定使用不同 API&#10;- 修改了参数验证逻辑，根据医院类型进行不同的参数校验&#10;- 更新了数据请求调用方式，使用动态获取的请求方法替代固定方法" />
+    <MESSAGE value="v127:feat/refactor:需求2276-科室端-病种分析（市医保DRG） ，新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;refactor(charts): 移除废弃组件并优化图表配置&#10;&#10;- 移除了未使用的 DomsConH360 组件引用和注释代码&#10;- 为医疗成本趋势、医疗收入趋势和门诊急诊住院收入趋势组件添加了统一的模型代码配置&#10;- 在多个表格组件中添加了元素ID生成器以提升可访问性&#10;- 更新了实时疾病分析页面中的参考费用模块代码生成逻辑&#10;- 统一了图表组件的代码属性绑定方式" />
+    <option name="LAST_COMMIT_MESSAGE" value="v127:feat/refactor:需求2276-科室端-病种分析（市医保DRG） ，新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;refactor(charts): 移除废弃组件并优化图表配置&#10;&#10;- 移除了未使用的 DomsConH360 组件引用和注释代码&#10;- 为医疗成本趋势、医疗收入趋势和门诊急诊住院收入趋势组件添加了统一的模型代码配置&#10;- 在多个表格组件中添加了元素ID生成器以提升可访问性&#10;- 更新了实时疾病分析页面中的参考费用模块代码生成逻辑&#10;- 统一了图表组件的代码属性绑定方式" />
   </component>
   <component name="VueSettings">
     <option name="innerServiceType" value="TS_SERVICE" />
