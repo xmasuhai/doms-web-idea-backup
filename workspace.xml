@@ -44,9 +44,7 @@
     <option name="selectedModelId" value="auto" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a32d6ec8-0d74-4a1b-8cad-0ab91948ca3e" name="Changes" comment="v127:feat/refactor:需求2306-1、科室端-病种..(市..DRG)科/院 -出院分析；2、科室端-病种..(市..DRG)科/院 -临床病种分析；病人分类下拉框内容改为本地（本地下面是职工、居民）、异地（异地下面是职工、居民），支持多选，当选择本地时，默认本地职工和居民勾选，当选择异地时，默认异地下面的职工和居民勾选。默认本地和异地均被选中。&#10;feat(drg): 添加患者类型选择器组件并优化查询参数处理&#10;&#10;- 引入 PlPatientTypeListSelector 组件用于患者类型选择&#10;- 添加 genIfHasSinglePatientCascaderByHospCode 和 genIfHasPatListByHospCode 工具函数&#10;- 注册 PlPatientTypeListSelector 组件到组件实例&#10;- 优化 patType 查询参数处理，使用空值合并操作符提供默认值&#10;- 适配现有患者类型列表选项配置&#10;- 完善 DRG 城市临床区域页面的患者类型筛选功能">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="a32d6ec8-0d74-4a1b-8cad-0ab91948ca3e" name="Changes" comment="v127:feat/refactor:需求2306-1、科室端-病种..(市..DRG)科/院 -出院分析；2、科室端-病种..(市..DRG)科/院 -临床病种分析；病人分类下拉框内容改为本地（本地下面是职工、居民）、异地（异地下面是职工、居民），支持多选，当选择本地时，默认本地职工和居民勾选，当选择异地时，默认异地下面的职工和居民勾选。默认本地和异地均被选中。&#10;feat(drg): 添加患者类型选择器组件并优化查询参数处理&#10;&#10;- 引入 PlPatientTypeListSelector 组件用于患者类型选择&#10;- 添加 genIfHasSinglePatientCascaderByHospCode 和 genIfHasPatListByHospCode 工具函数&#10;- 注册 PlPatientTypeListSelector 组件到组件实例&#10;- 优化 patType 查询参数处理，使用空值合并操作符提供默认值&#10;- 适配现有患者类型列表选项配置&#10;- 完善 DRG 城市临床区域页面的患者类型筛选功能" />
     <list id="bd8e474f-42c8-444f-9f2b-07be811ba86b" name="ignore-on-commit" comment="ignore-on-commit" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -2709,7 +2707,7 @@
       <workItem from="1784856520896" duration="13458000" />
       <workItem from="1784871591689" duration="18104000" />
       <workItem from="1785114217522" duration="8803000" />
-      <workItem from="1785123348157" duration="16112000" />
+      <workItem from="1785123348157" duration="16483000" />
     </task>
     <task id="LOCAL-04548" summary="v126:feat/refactor:需求2467-前端代码规范化修改-病种分析（市医保DRG） /出院分析 /科室病组整体运营分析 总权重&#10;refactor(BIEAnalysis): 优化住院患者盈余估算组件的图表元素标识&#10;&#10;- 引入elemId工具函数用于生成唯一元素标识符&#10;- 为住院患者盈余明细表添加唯一ID标识&#10;- 为住院患者盈余分析图添加唯一ID标识">
       <option name="closed" value="true" />
