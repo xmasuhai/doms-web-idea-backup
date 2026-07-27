@@ -45,7 +45,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a32d6ec8-0d74-4a1b-8cad-0ab91948ca3e" name="Changes" comment="v127:feat/refactor:需求2306-1、科室端-病种..(市..DRG)科/院 -出院分析；2、科室端-病种..(市..DRG)科/院 -临床病种分析；病人分类下拉框内容改为本地（本地下面是职工、居民）、异地（异地下面是职工、居民），支持多选，当选择本地时，默认本地职工和居民勾选，当选择异地时，默认异地下面的职工和居民勾选。默认本地和异地均被选中。&#10;style(drg): 统一医院可见性指令命名和组件属性顺序&#10;&#10;- 将 v-hospVisible 指令重命名为 v-hosp-visible 以符合命名规范&#10;- 调整 leavehosp.vue 中病人分类选择器的属性顺序，将 queryKey 和 label 移至开头&#10;- 保持组件功能不变，仅优化代码结构和命名一致性">
-      <change beforePath="$PROJECT_DIR$/src/views/abnormalCheck/components/matrix/cusTable.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/abnormalCheck/components/matrix/cusTable.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/diseaseAnalysisDeptArea/drg/drgCityClinicalArea.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/diseaseAnalysisDeptArea/drg/drgCityClinicalArea.vue" afterDir="false" />
     </list>
     <list id="bd8e474f-42c8-444f-9f2b-07be811ba86b" name="ignore-on-commit" comment="ignore-on-commit" />
@@ -2710,7 +2710,7 @@
       <workItem from="1784856520896" duration="13458000" />
       <workItem from="1784871591689" duration="18104000" />
       <workItem from="1785114217522" duration="8803000" />
-      <workItem from="1785123348157" duration="14747000" />
+      <workItem from="1785123348157" duration="15254000" />
     </task>
     <task id="LOCAL-04547" summary="v126:feat/refactor::需求2467-前端代码规范化修改-病种分析（市医保DRG） /出院分析 /科室病组整体运营分析 总权重&#10;refactor(cost): 移除未使用的Vuex映射并优化导入&#10;&#10;- 移除了clinicRoomdetailsDialog.vue中的mapState、mapGetters、mapMutations、mapActions导入&#10;- 移除了estimateDetailedDialog.vue中的mapState、mapGetters、mapMutations、mapActions导入&#10;- 在estimateDetailedDialog.vue中添加了elemId工具函数导入&#10;- 为estimateDetailedDialog中的表格组件添加了唯一ID标识">
       <option name="closed" value="true" />
