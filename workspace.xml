@@ -44,15 +44,9 @@
     <option name="selectedModelId" value="auto" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a32d6ec8-0d74-4a1b-8cad-0ab91948ca3e" name="Changes" comment="v127:feat/refactor:需求2467-前端代码规范化修改&#10;refactor(equipment): 更新设备效益分析组件以使用动态ID生成&#10;&#10;- 为所有图表和表格组件添加elemId方法生成唯一ID&#10;- 在treatEquipmentDetail组件中为模块面板添加code属性&#10;- 从工具文件导入elemId函数并在组件数据中暴露&#10;- 统一使用动态ID替代静态ID提高组件可维护性">
+    <list default="true" id="a32d6ec8-0d74-4a1b-8cad-0ab91948ca3e" name="Changes" comment="v127:feat/refactor:需求2276-科室端-病种分析（市医保DRG） ，新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(diseaseAnalysis): 添加指标模型代码并优化费用明细组件&#10;&#10;- 在多个组件中添加 indModelCode 属性用于指标模型标识&#10;- 重构费用类型明细表格组件的数据加载逻辑&#10;- 集成维度费用类型选项的获取功能&#10;- 更新组件中的变量命名以提高一致性&#10;- 添加 Vuex actions 映射支持数据请求&#10;- 优化组件创建时的数据初始化流程">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/disease-group-disease-type-analysis/drg-city/diagnosis-operation-detail/diagnosisOperationDetailDeptApi.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/disease-group-disease-type-analysis/drg-city/diagnosis-operation-detail/diagnosisOperationDetailDeptApi.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/diseaseAnalysis/department/diagnosis-operation-detail/DiagnosisOperationDetailDrilldownFeeTypeTableDept.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/diseaseAnalysis/department/diagnosis-operation-detail/DiagnosisOperationDetailDrilldownFeeTypeTableDept.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/diseaseAnalysis/department/diagnosis-operation-detail/DiagnosisOperationDetailDrilldownTableDept.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/diseaseAnalysis/department/diagnosis-operation-detail/DiagnosisOperationDetailDrilldownTableDept.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/diseaseAnalysis/department/diagnosis-operation-detail/DiagnosisOperationDetailTableDept.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/diseaseAnalysis/department/diagnosis-operation-detail/DiagnosisOperationDetailTableDept.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/unit/exportExcel.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/unit/exportExcel.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/modules/department/disease-analysis/diagnosisOperationDetailDeptStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/modules/department/disease-analysis/diagnosisOperationDetailDeptStore.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue.config.js" afterDir="false" />
     </list>
     <list id="bd8e474f-42c8-444f-9f2b-07be811ba86b" name="ignore-on-commit" comment="ignore-on-commit" />
     <option name="SHOW_DIALOG" value="false" />
@@ -107,7 +101,7 @@
     <option name="totalTimeSeconds" value="2031945" />
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="3794" />
+    <option name="cachedIndexableFilesCount" value="4028" />
   </component>
   <component name="FileSync">
     <option name="targetMappings">
@@ -2718,23 +2712,7 @@
       <workItem from="1785114217522" duration="8803000" />
       <workItem from="1785123348157" duration="20127000" />
       <workItem from="1785200598288" duration="3272000" />
-      <workItem from="1785204151142" duration="84000" />
-    </task>
-    <task id="LOCAL-04551" summary="v126:feat/refactor:需求2467-前端代码规范化修改&#10;feat(BIEAnalysis): 添加疾病产出详情表组件功能&#10;&#10;- 引入elemId工具函数用于元素标识生成&#10;- 新增indModelCode数据属性用于模型代码标识&#10;- 在表格绑定数据中添加id和code字段配置&#10;- 为过滤对象添加indModelCode参数支持&#10;- 完善组件结构配置和数据请求设置">
-      <option name="closed" value="true" />
-      <created>1784806572594</created>
-      <option name="number" value="04551" />
-      <option name="presentableId" value="LOCAL-04551" />
-      <option name="project" value="LOCAL" />
-      <updated>1784806572594</updated>
-    </task>
-    <task id="LOCAL-04552" summary="v126:feat/refactor:需求2467-前端代码规范化修改&#10;feat(BIEAnalysis): 添加病种单位边际贡献排名表格组件指标模型代码&#10;&#10;- 在返回对象中添加indModelCode字段用于标识指标模型&#10;- 将indModelCode作为表格绑定数据的code属性传递">
-      <option name="closed" value="true" />
-      <created>1784806855218</created>
-      <option name="number" value="04552" />
-      <option name="presentableId" value="LOCAL-04552" />
-      <option name="project" value="LOCAL" />
-      <updated>1784806855218</updated>
+      <workItem from="1785204151142" duration="927000" />
     </task>
     <task id="LOCAL-04553" summary="拉取代码-1978 v126 院端-收支分析-总览页面中‘医疗收入’仪表盘下钻页面中‘门急诊次均费用趋势’条形图，右上角按钮选择‘全部’时，条形图的浮窗内新增蓝色字样‘科室明细’-筛选后数据序号问题处理">
       <option name="closed" value="true" />
@@ -3112,7 +3090,23 @@
       <option name="project" value="LOCAL" />
       <updated>1785145513078</updated>
     </task>
-    <option name="localTasksCounter" value="4600" />
+    <task id="LOCAL-04600" summary="v127:feat/refactor:需求2276-科室端-病种分析（市医保DRG） ，新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(diagnosisOperationDetail): 添加费用类型维度下拉框功能&#10;&#10;- 新增 fetchDrilldownFeeTypeDimensionSelectOptionsDept API 接口&#10;- 在 store 中添加 dimensionFeeTypeLoading 和 dimensionFeeTypeOptions 状态&#10;- 实现 requestDimensionFeeTypeOptions 异步方法获取费用维度选项">
+      <option name="closed" value="true" />
+      <created>1785205053265</created>
+      <option name="number" value="04600" />
+      <option name="presentableId" value="LOCAL-04600" />
+      <option name="project" value="LOCAL" />
+      <updated>1785205053267</updated>
+    </task>
+    <task id="LOCAL-04601" summary="v127:feat/refactor:需求2276-科室端-病种分析（市医保DRG） ，新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(diseaseAnalysis): 添加指标模型代码并优化费用明细组件&#10;&#10;- 在多个组件中添加 indModelCode 属性用于指标模型标识&#10;- 重构费用类型明细表格组件的数据加载逻辑&#10;- 集成维度费用类型选项的获取功能&#10;- 更新组件中的变量命名以提高一致性&#10;- 添加 Vuex actions 映射支持数据请求&#10;- 优化组件创建时的数据初始化流程">
+      <option name="closed" value="true" />
+      <created>1785205080315</created>
+      <option name="number" value="04601" />
+      <option name="presentableId" value="LOCAL-04601" />
+      <option name="project" value="LOCAL" />
+      <updated>1785205080316</updated>
+    </task>
+    <option name="localTasksCounter" value="4602" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -3133,8 +3127,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="MARK_IGNORED_AS_EXCLUDED" value="true" />
-    <MESSAGE value="v127:feat/refactor:需求2276-科室端-病种分析（市医保DRG） ，新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(diseaseAnalysis): 添加组件提示文本HTML更新功能&#10;&#10;- 在CalibrePopoverTips组件中添加tipsTextHtml监听器&#10;- 实现tipsTextHtml属性变化时触发update事件&#10;- 在PlPatientTypeListSelector组件中添加tipsTextHtml数据绑定&#10;- 添加updateTipsTextHtml方法处理提示文本更新&#10;- 实现提示文本HTML内容的动态展示和更新机制" />
-    <MESSAGE value="v127:feat/refactor:需求2276-科室端-病种分析（市医保DRG） ，新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(store): 添加院端病组分析诊断操作明细模块&#10;&#10;- 新增诊断操作明细部门store模块&#10;- 集成维度下拉框数据请求功能&#10;- 添加诊断代码、名称及操作代码、名称状态管理&#10;- 实现维度类型选项加载和映射逻辑&#10;- 在疾病组分析store中注册新模块" />
     <MESSAGE value="v127:feat/refactor:需求2276-科室端-病种分析（市医保DRG） ，新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(diseaseAnalysis): 新增科端病组分析诊断操作明细功能&#10;&#10;- 创建诊断操作费用明细表格组件，支持维度和费用类型筛选&#10;- 实现诊断操作明细表格组件，包含当前行选择和过滤功能&#10;- 添加钻取明细表格组件，支持按维度类型进行数据分析&#10;- 集成DRG支付相关的诊断操作数据展示和交互逻辑&#10;- 实现表格排序、筛选和状态管理功能&#10;- 完善数据加载和错误处理机制" />
     <MESSAGE value="v127:feat/refactor:需求2276-科室端-病种分析（市医保DRG） ，新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;refactor(diseaseAnalysis): 更新部门诊断操作详情表格组件API调用&#10;&#10;- 将医院层级API接口替换为科室API接口&#10;- 更新诊断操作详情表格组件的数据获取方法&#10;- 修改状态映射以使用部门存储结构&#10;- 调整费用类型下拉选项的数据请求接口&#10;- 统一所有相关组件的API导入路径到疾病组分析模块" />
     <MESSAGE value="v127:feat/refactor:需求2276-科室端-病种分析（市医保DRG） ，新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(diseaseAnalysis): 添加部门诊断操作明细表格组件&#10;&#10;- 引入 DiagnosisOperationDetailTableDept 组件&#10;- 引入 DiagnosisOperationDetailDrilldownTableDept 组件&#10;- 引入 DiagnosisOperationDetailDrilldownFeeTypeTableDept 组件&#10;- 在页面容器中添加诊断操作明细相关表格组件&#10;- 注册新引入的表格组件到页面组件列表中" />
@@ -3158,7 +3150,9 @@
     <MESSAGE value="v127:feat/refactor:需求2467-前端代码规范化修改&#10;refactor(diseaseAnalysis): 重构代码以添加模块标识和清理废弃逻辑&#10;&#10;- 为多个表格组件添加动态 ID 生成，使用 elemId 函数统一管理元素标识&#10;- 新增 getIndModelCode 方法，集中管理不同类型的指标模型代码映射&#10;- 将硬编码的指标模型代码替换为动态获取方式&#10;- 删除已废弃的注释代码块，包括 V93 版本重构后不再使用的逻辑&#10;- 在表格绑定数据中添加 code 属性&#10;- 清理无用的导入语句和变量声明&#10;- 统一代码风格，移除多余空行和空白字符" />
     <MESSAGE value="v127:feat/refactor:需求2467-前端代码规范化修改&#10;feat(drg): 为DRG相关页面添加表格ID标识和代码优化&#10;&#10;- 在drgCityInHospital.vue中为表格组件添加elemId标识&#10;- 在drgProvinceInHospital.vue中引入elemId工具函数并移除无用watch&#10;- 在dip/inHospital.vue中为表格组件添加ID属性绑定&#10;- 在drg/inHospital.vue中引入elemId并优化代码结构&#10;- 统一使用generateModelCode生成模型代码&#10;- 将硬编码的indModelCode提取为data属性" />
     <MESSAGE value="v127:feat/refactor:需求2467-前端代码规范化修改&#10;refactor(equipment): 更新设备效益分析组件以使用动态ID生成&#10;&#10;- 为所有图表和表格组件添加elemId方法生成唯一ID&#10;- 在treatEquipmentDetail组件中为模块面板添加code属性&#10;- 从工具文件导入elemId函数并在组件数据中暴露&#10;- 统一使用动态ID替代静态ID提高组件可维护性" />
-    <option name="LAST_COMMIT_MESSAGE" value="v127:feat/refactor:需求2467-前端代码规范化修改&#10;refactor(equipment): 更新设备效益分析组件以使用动态ID生成&#10;&#10;- 为所有图表和表格组件添加elemId方法生成唯一ID&#10;- 在treatEquipmentDetail组件中为模块面板添加code属性&#10;- 从工具文件导入elemId函数并在组件数据中暴露&#10;- 统一使用动态ID替代静态ID提高组件可维护性" />
+    <MESSAGE value="v127:feat/refactor:需求2276-科室端-病种分析（市医保DRG） ，新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(diagnosisOperationDetail): 添加费用类型维度下拉框功能&#10;&#10;- 新增 fetchDrilldownFeeTypeDimensionSelectOptionsDept API 接口&#10;- 在 store 中添加 dimensionFeeTypeLoading 和 dimensionFeeTypeOptions 状态&#10;- 实现 requestDimensionFeeTypeOptions 异步方法获取费用维度选项" />
+    <MESSAGE value="v127:feat/refactor:需求2276-科室端-病种分析（市医保DRG） ，新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(diseaseAnalysis): 添加指标模型代码并优化费用明细组件&#10;&#10;- 在多个组件中添加 indModelCode 属性用于指标模型标识&#10;- 重构费用类型明细表格组件的数据加载逻辑&#10;- 集成维度费用类型选项的获取功能&#10;- 更新组件中的变量命名以提高一致性&#10;- 添加 Vuex actions 映射支持数据请求&#10;- 优化组件创建时的数据初始化流程" />
+    <option name="LAST_COMMIT_MESSAGE" value="v127:feat/refactor:需求2276-科室端-病种分析（市医保DRG） ，新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(diseaseAnalysis): 添加指标模型代码并优化费用明细组件&#10;&#10;- 在多个组件中添加 indModelCode 属性用于指标模型标识&#10;- 重构费用类型明细表格组件的数据加载逻辑&#10;- 集成维度费用类型选项的获取功能&#10;- 更新组件中的变量命名以提高一致性&#10;- 添加 Vuex actions 映射支持数据请求&#10;- 优化组件创建时的数据初始化流程" />
   </component>
   <component name="VueSettings">
     <option name="innerServiceType" value="TS_SERVICE" />
