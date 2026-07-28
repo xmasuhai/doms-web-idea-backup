@@ -44,10 +44,7 @@
     <option name="selectedModelId" value="auto" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a32d6ec8-0d74-4a1b-8cad-0ab91948ca3e" name="Changes" comment="v127:feat/refactor:需求2276-科室端-病种分析（市医保DRG） ，新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(diseaseAnalysis): 添加指标模型代码并优化费用明细组件&#10;&#10;- 在多个组件中添加 indModelCode 属性用于指标模型标识&#10;- 重构费用类型明细表格组件的数据加载逻辑&#10;- 集成维度费用类型选项的获取功能&#10;- 更新组件中的变量命名以提高一致性&#10;- 添加 Vuex actions 映射支持数据请求&#10;- 优化组件创建时的数据初始化流程">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/unit/exportExcel.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/unit/exportExcel.vue" afterDir="false" />
-    </list>
+    <list default="true" id="a32d6ec8-0d74-4a1b-8cad-0ab91948ca3e" name="Changes" comment="v127:fix/refactor:科室端 科室页面 收支余分析 /总览&#10;feat(BIEAnalysis): 添日期下拉框等参数切换时，收入口径选项显示隐藏处理功能&#10;&#10;- 在mainTabType切换时调用incomeOptionsHandler方法&#10;- 根据tab切换显示组件类型处理收入口径选项的显示/隐藏&#10;- 添加注释说明tab切换对收入口径选项的影响逻辑" />
     <list id="bd8e474f-42c8-444f-9f2b-07be811ba86b" name="ignore-on-commit" comment="ignore-on-commit" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -285,6 +282,65 @@
   </component>
   <component name="NamedScopeManager">
     <scope name="GitScope" pattern="GitScopeFiles" />
+  </component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0000016297484846" />
+      <entry key="S2" value="1.049816069655258" />
+      <entry key="S5" value="1.5385721931161285" />
+      <entry key="S10" value="2.2545918062684" />
+      <entry key="S30" value="3.2371330112469585" />
+      <entry key="S60" value="3.5897447615522458" />
+      <entry key="M2" value="3.7870964391050714" />
+      <entry key="M5" value="3.912894007130241" />
+      <entry key="M10" value="3.9561874752245587" />
+      <entry key="M15" value="3.972390075787915" />
+      <entry key="M30" value="4.026770961174412" />
+      <entry key="H1" value="4.196289028295627" />
+      <entry key="H2" value="4.447592785402649" />
+      <entry key="H4" value="4.6699284329369135" />
+      <entry key="D1" value="4.9355369528151005" />
+      <entry key="W1" value="4.990528500904253" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="0.0" />
+      <entry key="S5" value="0.0" />
+      <entry key="S10" value="0.0" />
+      <entry key="S30" value="0.0" />
+      <entry key="S60" value="0.0" />
+      <entry key="M2" value="0.0" />
+      <entry key="M5" value="0.0" />
+      <entry key="M10" value="0.0" />
+      <entry key="M15" value="0.0" />
+      <entry key="M30" value="0.0" />
+      <entry key="H1" value="0.0" />
+      <entry key="H2" value="0.0" />
+      <entry key="H4" value="0.0" />
+      <entry key="D1" value="0.0" />
+      <entry key="W1" value="0.0" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="0.9012504626108302" />
+      <entry key="MS500" value="0.9794218847319756" />
+      <entry key="S2" value="1.0441866477336779" />
+      <entry key="S5" value="1.5342203283246418" />
+      <entry key="S10" value="2.25077093312606" />
+      <entry key="S30" value="3.235085481689867" />
+      <entry key="S60" value="3.58858047969869" />
+      <entry key="M2" value="3.7864748386874694" />
+      <entry key="M5" value="3.9126352876849415" />
+      <entry key="M10" value="3.9560563536619773" />
+      <entry key="M15" value="3.972301829163966" />
+      <entry key="M30" value="4.026721300053073" />
+      <entry key="H1" value="4.196253251191743" />
+      <entry key="H2" value="4.4475665647484925" />
+      <entry key="H4" value="4.669911615362657" />
+      <entry key="D1" value="4.935533410075386" />
+      <entry key="W1" value="4.990527972897366" />
+    </decayedShown>
   </component>
   <component name="PackageJsonUpdateNotifier">
     <dismissed value="$PROJECT_DIR$/package.json" />
@@ -531,6 +587,24 @@
     <configuration useDefault="false">C:\Users\xushuai\AppData\Roaming\Subversion</configuration>
     <supportedVersion>125</supportedVersion>
     <option name="runUnderTerminal" value="true" />
+  </component>
+  <component name="SvnFileUrlMappingImpl">
+    <option name="myMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="D:\project\doms_web" />
+          <option name="myCopyRoot" value="D:\project\doms_web" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
+    <option name="myMoreRealMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="D:\project\doms_web" />
+          <option name="myCopyRoot" value="D:\project\doms_web" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
   </component>
   <component name="TDDPredictState">
     <testRunHistory>
@@ -2712,23 +2786,7 @@
       <workItem from="1785114217522" duration="8803000" />
       <workItem from="1785123348157" duration="20127000" />
       <workItem from="1785200598288" duration="3272000" />
-      <workItem from="1785204151142" duration="927000" />
-    </task>
-    <task id="LOCAL-04553" summary="拉取代码-1978 v126 院端-收支分析-总览页面中‘医疗收入’仪表盘下钻页面中‘门急诊次均费用趋势’条形图，右上角按钮选择‘全部’时，条形图的浮窗内新增蓝色字样‘科室明细’-筛选后数据序号问题处理">
-      <option name="closed" value="true" />
-      <created>1784858245142</created>
-      <option name="number" value="04553" />
-      <option name="presentableId" value="LOCAL-04553" />
-      <option name="project" value="LOCAL" />
-      <updated>1784858245143</updated>
-    </task>
-    <task id="LOCAL-04554" summary="v126:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;fix(diseaseAnalysis): 修复表格筛选时排序功能异常问题&#10;&#10;- 在三个医院诊断操作详情表格组件中添加筛选状态标识 isFiltering&#10;- 监听 filter-change 事件并更新筛选状态&#10;- 修改 getIfHasSequencableFalseRows 计算属性，仅在非筛选状态下进行排序判断&#10;- 防止筛选时表格排序功能产生异常行为&#10;- 添加表格引用获取方法 getTableGridRef 为后续扩展做准备">
-      <option name="closed" value="true" />
-      <created>1784858647717</created>
-      <option name="number" value="04554" />
-      <option name="presentableId" value="LOCAL-04554" />
-      <option name="project" value="LOCAL" />
-      <updated>1784858647717</updated>
+      <workItem from="1785204151142" duration="8097000" />
     </task>
     <task id="LOCAL-04555" summary="v126:feat/refactor:需求2304-科端-病组分析（医保DRG）-出院分析、科端-病组分析（医保DRG）-临床病种分析，病人分类下拉框后面添加问号，问号默认内容：如“本地、异地”均不选择，则为本科室所有病例合计值。内容支持现场后台配置&#10;feat(diseaseAnalysis): 新增病人分类提示功能并优化口径提示组件&#10;&#10;- 添加 fetchPatientTypeListTipsOptions API 接口用于获取病人分类下拉框说明提示&#10;- 扩展 CalibrePopoverTips 组件支持 patTypeList 类型验证&#10;- 为 CalibrePopoverTips 组件增加自定义请求方法配置选项&#10;- 实现动态请求方法选择机制，支持默认和自定义提示获取逻辑&#10;- 更新组件内部请求调用方式以适配新的扩展功能">
       <option name="closed" value="true" />
@@ -3106,7 +3164,23 @@
       <option name="project" value="LOCAL" />
       <updated>1785205080316</updated>
     </task>
-    <option name="localTasksCounter" value="4602" />
+    <task id="LOCAL-04602" summary="v127:fix/refactor:科室端 科室页面 收支余分析 /总览&#10;fix(BIEAnalysisOverview): 解决收入类型选择框禁用条件问题&#10;&#10;- 添加部门收入值判断条件&#10;- 当部门收入值小于等于1时禁用下拉框&#10;- 保持原有的禁用逻辑不变">
+      <option name="closed" value="true" />
+      <created>1785210697049</created>
+      <option name="number" value="04602" />
+      <option name="presentableId" value="LOCAL-04602" />
+      <option name="project" value="LOCAL" />
+      <updated>1785210697049</updated>
+    </task>
+    <task id="LOCAL-04603" summary="v127:fix/refactor:科室端 科室页面 收支余分析 /总览&#10;feat(BIEAnalysis): 添日期下拉框等参数切换时，收入口径选项显示隐藏处理功能&#10;&#10;- 在mainTabType切换时调用incomeOptionsHandler方法&#10;- 根据tab切换显示组件类型处理收入口径选项的显示/隐藏&#10;- 添加注释说明tab切换对收入口径选项的影响逻辑">
+      <option name="closed" value="true" />
+      <created>1785218046826</created>
+      <option name="number" value="04603" />
+      <option name="presentableId" value="LOCAL-04603" />
+      <option name="project" value="LOCAL" />
+      <updated>1785218046826</updated>
+    </task>
+    <option name="localTasksCounter" value="4604" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -3127,8 +3201,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="MARK_IGNORED_AS_EXCLUDED" value="true" />
-    <MESSAGE value="v127:feat/refactor:需求2276-科室端-病种分析（市医保DRG） ，新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(diseaseAnalysis): 新增科端病组分析诊断操作明细功能&#10;&#10;- 创建诊断操作费用明细表格组件，支持维度和费用类型筛选&#10;- 实现诊断操作明细表格组件，包含当前行选择和过滤功能&#10;- 添加钻取明细表格组件，支持按维度类型进行数据分析&#10;- 集成DRG支付相关的诊断操作数据展示和交互逻辑&#10;- 实现表格排序、筛选和状态管理功能&#10;- 完善数据加载和错误处理机制" />
-    <MESSAGE value="v127:feat/refactor:需求2276-科室端-病种分析（市医保DRG） ，新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;refactor(diseaseAnalysis): 更新部门诊断操作详情表格组件API调用&#10;&#10;- 将医院层级API接口替换为科室API接口&#10;- 更新诊断操作详情表格组件的数据获取方法&#10;- 修改状态映射以使用部门存储结构&#10;- 调整费用类型下拉选项的数据请求接口&#10;- 统一所有相关组件的API导入路径到疾病组分析模块" />
     <MESSAGE value="v127:feat/refactor:需求2276-科室端-病种分析（市医保DRG） ，新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(diseaseAnalysis): 添加部门诊断操作明细表格组件&#10;&#10;- 引入 DiagnosisOperationDetailTableDept 组件&#10;- 引入 DiagnosisOperationDetailDrilldownTableDept 组件&#10;- 引入 DiagnosisOperationDetailDrilldownFeeTypeTableDept 组件&#10;- 在页面容器中添加诊断操作明细相关表格组件&#10;- 注册新引入的表格组件到页面组件列表中" />
     <MESSAGE value="v127:feat/refactor:需求2276-科室端-病种分析（市医保DRG） ，新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;fix(api): 修复诊断操作明细接口路径错误&#10;&#10;- 修正了 fetchDiagnosisOperationDetailTableDeptDrg 方法中的 API 路径&#10;- 移除了路径末尾多余的 '-drill' 后缀" />
     <MESSAGE value="v127:feat/refactor:需求2276-科室端-病种分析（市医保DRG） ，新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;refactor(diseaseAnalysis): 优化诊断操作明细组件的请求参数处理&#10;&#10;- 提取公共请求参数计算方法 getCommonRequestParams&#10;- 移除硬编码的 indModelCode 值，改为空字符串&#10;- 简化 checkDateParamsValid 函数调用方式" />
@@ -3152,7 +3224,9 @@
     <MESSAGE value="v127:feat/refactor:需求2467-前端代码规范化修改&#10;refactor(equipment): 更新设备效益分析组件以使用动态ID生成&#10;&#10;- 为所有图表和表格组件添加elemId方法生成唯一ID&#10;- 在treatEquipmentDetail组件中为模块面板添加code属性&#10;- 从工具文件导入elemId函数并在组件数据中暴露&#10;- 统一使用动态ID替代静态ID提高组件可维护性" />
     <MESSAGE value="v127:feat/refactor:需求2276-科室端-病种分析（市医保DRG） ，新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(diagnosisOperationDetail): 添加费用类型维度下拉框功能&#10;&#10;- 新增 fetchDrilldownFeeTypeDimensionSelectOptionsDept API 接口&#10;- 在 store 中添加 dimensionFeeTypeLoading 和 dimensionFeeTypeOptions 状态&#10;- 实现 requestDimensionFeeTypeOptions 异步方法获取费用维度选项" />
     <MESSAGE value="v127:feat/refactor:需求2276-科室端-病种分析（市医保DRG） ，新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(diseaseAnalysis): 添加指标模型代码并优化费用明细组件&#10;&#10;- 在多个组件中添加 indModelCode 属性用于指标模型标识&#10;- 重构费用类型明细表格组件的数据加载逻辑&#10;- 集成维度费用类型选项的获取功能&#10;- 更新组件中的变量命名以提高一致性&#10;- 添加 Vuex actions 映射支持数据请求&#10;- 优化组件创建时的数据初始化流程" />
-    <option name="LAST_COMMIT_MESSAGE" value="v127:feat/refactor:需求2276-科室端-病种分析（市医保DRG） ，新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(diseaseAnalysis): 添加指标模型代码并优化费用明细组件&#10;&#10;- 在多个组件中添加 indModelCode 属性用于指标模型标识&#10;- 重构费用类型明细表格组件的数据加载逻辑&#10;- 集成维度费用类型选项的获取功能&#10;- 更新组件中的变量命名以提高一致性&#10;- 添加 Vuex actions 映射支持数据请求&#10;- 优化组件创建时的数据初始化流程" />
+    <MESSAGE value="v127:fix/refactor:科室端 科室页面 收支余分析 /总览&#10;fix(BIEAnalysisOverview): 解决收入类型选择框禁用条件问题&#10;&#10;- 添加部门收入值判断条件&#10;- 当部门收入值小于等于1时禁用下拉框&#10;- 保持原有的禁用逻辑不变" />
+    <MESSAGE value="v127:fix/refactor:科室端 科室页面 收支余分析 /总览&#10;feat(BIEAnalysis): 添日期下拉框等参数切换时，收入口径选项显示隐藏处理功能&#10;&#10;- 在mainTabType切换时调用incomeOptionsHandler方法&#10;- 根据tab切换显示组件类型处理收入口径选项的显示/隐藏&#10;- 添加注释说明tab切换对收入口径选项的影响逻辑" />
+    <option name="LAST_COMMIT_MESSAGE" value="v127:fix/refactor:科室端 科室页面 收支余分析 /总览&#10;feat(BIEAnalysis): 添日期下拉框等参数切换时，收入口径选项显示隐藏处理功能&#10;&#10;- 在mainTabType切换时调用incomeOptionsHandler方法&#10;- 根据tab切换显示组件类型处理收入口径选项的显示/隐藏&#10;- 添加注释说明tab切换对收入口径选项的影响逻辑" />
   </component>
   <component name="VueSettings">
     <option name="innerServiceType" value="TS_SERVICE" />
