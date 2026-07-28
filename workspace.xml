@@ -44,8 +44,10 @@
     <option name="selectedModelId" value="auto" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a32d6ec8-0d74-4a1b-8cad-0ab91948ca3e" name="Changes" comment="v127:feat/refactor:需求2306-1、科室端-病种..(市..DRG)科/院 -出院分析；2、科室端-病种..(市..DRG)科/院 -临床病种分析；病人分类下拉框内容改为本地（本地下面是职工、居民）、异地（异地下面是职工、居民），支持多选，当选择本地时，默认本地职工和居民勾选，当选择异地时，默认异地下面的职工和居民勾选。默认本地和异地均被选中。&#10;fix(drg): 修复患者类型参数传递逻辑&#10;&#10;- 移除无条件的 patType 参数传递&#10;- 添加条件判断仅在 getIfHasPatListSelector 为 false 时传递 patType&#10;- 保持原有患者类型列表选择器的功能完整性">
+    <list default="true" id="a32d6ec8-0d74-4a1b-8cad-0ab91948ca3e" name="Changes" comment="v127:fix/refactor:科室端-科室页面 收支余分析 /总览&#10;fix(BIEAnalysis): 修复科室收入口径处理逻辑&#10;&#10;- 在科室未切换但日期改变时，调用 incomeOptionsHandler 更新本地数据&#10;- 移除重复的 incomeOptionsHandler 调用避免冗余处理&#10;- 针对吉大一医院特殊场景，在整体分析tab下医技科室默认设置为执行收入口径&#10;- 优化 overallBlockIncomeHandler 方法中的条件判断逻辑&#10;- 为吉大一医院医技科室禁用收入口径选择功能&#10;- 隐藏并禁用患者科室相关的收入选项">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/operationDisease/capacity.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/operationDisease/capacity.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/operationDisease/diseaseSurplus.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/operationDisease/diseaseSurplus.vue" afterDir="false" />
     </list>
     <list id="bd8e474f-42c8-444f-9f2b-07be811ba86b" name="ignore-on-commit" comment="ignore-on-commit" />
     <option name="SHOW_DIALOG" value="false" />
@@ -288,22 +290,22 @@
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
       <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0000016297484846" />
-      <entry key="S2" value="1.049816069655258" />
-      <entry key="S5" value="1.5385721931161285" />
-      <entry key="S10" value="2.2545918062684" />
-      <entry key="S30" value="3.2371330112469585" />
-      <entry key="S60" value="3.5897447615522458" />
-      <entry key="M2" value="3.7870964391050714" />
-      <entry key="M5" value="3.912894007130241" />
-      <entry key="M10" value="3.9561874752245587" />
-      <entry key="M15" value="3.972390075787915" />
-      <entry key="M30" value="4.026770961174412" />
-      <entry key="H1" value="4.196289028295627" />
-      <entry key="H2" value="4.447592785402649" />
-      <entry key="H4" value="4.6699284329369135" />
-      <entry key="D1" value="4.9355369528151005" />
-      <entry key="W1" value="4.990528500904253" />
+      <entry key="MS500" value="1.0" />
+      <entry key="S2" value="1.0" />
+      <entry key="S5" value="1.0" />
+      <entry key="S10" value="1.0" />
+      <entry key="S30" value="1.0" />
+      <entry key="S60" value="1.0" />
+      <entry key="M2" value="1.0" />
+      <entry key="M5" value="1.0000001363983344" />
+      <entry key="M10" value="1.0007386392055984" />
+      <entry key="M15" value="1.0129764395937984" />
+      <entry key="M30" value="1.230148823230729" />
+      <entry key="H1" value="2.0032087439359803" />
+      <entry key="H2" value="3.1746430174293474" />
+      <entry key="H4" value="4.265439966194302" />
+      <entry key="D1" value="5.649857614215418" />
+      <entry key="W1" value="5.948200509707088" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
@@ -325,23 +327,23 @@
       <entry key="W1" value="0.0" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.9012504626108302" />
-      <entry key="MS500" value="0.9794218847319756" />
-      <entry key="S2" value="1.0441866477336779" />
-      <entry key="S5" value="1.5342203283246418" />
-      <entry key="S10" value="2.25077093312606" />
-      <entry key="S30" value="3.235085481689867" />
-      <entry key="S60" value="3.58858047969869" />
-      <entry key="M2" value="3.7864748386874694" />
-      <entry key="M5" value="3.9126352876849415" />
-      <entry key="M10" value="3.9560563536619773" />
-      <entry key="M15" value="3.972301829163966" />
-      <entry key="M30" value="4.026721300053073" />
-      <entry key="H1" value="4.196253251191743" />
-      <entry key="H2" value="4.4475665647484925" />
-      <entry key="H4" value="4.669911615362657" />
-      <entry key="D1" value="4.935533410075386" />
-      <entry key="W1" value="4.990527972897366" />
+      <entry key="MS100" value="0.11265630782635375" />
+      <entry key="MS500" value="0.6461764153187461" />
+      <entry key="S2" value="0.8965773757702965" />
+      <entry key="S5" value="0.9572714581952976" />
+      <entry key="S10" value="0.9784025031628331" />
+      <entry key="S30" value="0.992748375440308" />
+      <entry key="S60" value="0.9963675905208419" />
+      <entry key="M2" value="0.9981821429583089" />
+      <entry key="M5" value="0.9992725966352107" />
+      <entry key="M10" value="1.0003747786591788" />
+      <entry key="M15" value="1.0127335792344347" />
+      <entry key="M30" value="1.2300246914650557" />
+      <entry key="H1" value="2.0031395421482325" />
+      <entry key="H2" value="3.17459987215522" />
+      <entry key="H4" value="4.265413044052855" />
+      <entry key="D1" value="5.649851749441083" />
+      <entry key="W1" value="5.948199625164489" />
     </decayedShown>
   </component>
   <component name="PackageJsonUpdateNotifier">
@@ -2770,15 +2772,7 @@
       <workItem from="1785114217522" duration="8803000" />
       <workItem from="1785123348157" duration="20127000" />
       <workItem from="1785200598288" duration="3272000" />
-      <workItem from="1785204151142" duration="10956000" />
-    </task>
-    <task id="LOCAL-04557" summary="v126:feat/refactor:需求2304-科端-病组分析（医保DRG）-出院分析、科端-病组分析（医保DRG）-临床病种分析，病人分类下拉框后面添加问号，问号默认内容：如“本地、异地”均不选择，则为本科室所有病例合计值。内容支持现场后台配置&#10;refactor(diseaseAnalysis): 重构病人分类选择器组件&#10;&#10;- 将PlCascader替换为专用的PlPatientTypeListSelector组件&#10;- 移除废弃的getPatientTypeListMultiSelectorBindData计算属性&#10;- 移除不再使用的patientTypeListOptionsDrg常量&#10;- 添加新的PlPatientTypeListSelector组件引用和注册&#10;- 优化组件间的参数传递方式，使用.sync修饰符同步数据">
-      <option name="closed" value="true" />
-      <created>1784863619412</created>
-      <option name="number" value="04557" />
-      <option name="presentableId" value="LOCAL-04557" />
-      <option name="project" value="LOCAL" />
-      <updated>1784863619412</updated>
+      <workItem from="1785204151142" duration="17794000" />
     </task>
     <task id="LOCAL-04558" summary="v126:feat/refactor:需求2304-科端-病组分析（医保DRG）-出院分析、科端-病组分析（医保DRG）-临床病种分析，病人分类下拉框后面添加问号，问号默认内容：如“本地、异地”均不选择，则为本科室所有病例合计值。内容支持现场后台配置&#10;refactor(diseaseAnalysis): 替换病人分类选择器组件&#10;&#10;- 将 PlCascader 替换为 PlPatientTypeListSelector 组件&#10;- 移除医院可见性指令配置&#10;- 添加 drgGroupType 和 fromType 属性绑定&#10;- 从组件注册中移除旧的选择器组件&#10;- 删除相关的计算属性和绑定数据方法&#10;- 清理不再使用的导入和常量引用">
       <option name="closed" value="true" />
@@ -3164,7 +3158,15 @@
       <option name="project" value="LOCAL" />
       <updated>1785221300645</updated>
     </task>
-    <option name="localTasksCounter" value="4606" />
+    <task id="LOCAL-04606" summary="v127:fix/refactor:科室端-科室页面 收支余分析 /总览&#10;fix(BIEAnalysis): 修复科室收入口径处理逻辑&#10;&#10;- 在科室未切换但日期改变时，调用 incomeOptionsHandler 更新本地数据&#10;- 移除重复的 incomeOptionsHandler 调用避免冗余处理&#10;- 针对吉大一医院特殊场景，在整体分析tab下医技科室默认设置为执行收入口径&#10;- 优化 overallBlockIncomeHandler 方法中的条件判断逻辑&#10;- 为吉大一医院医技科室禁用收入口径选择功能&#10;- 隐藏并禁用患者科室相关的收入选项">
+      <option name="closed" value="true" />
+      <created>1785232485405</created>
+      <option name="number" value="04606" />
+      <option name="presentableId" value="LOCAL-04606" />
+      <option name="project" value="LOCAL" />
+      <updated>1785232485405</updated>
+    </task>
+    <option name="localTasksCounter" value="4607" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -3185,7 +3187,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="MARK_IGNORED_AS_EXCLUDED" value="true" />
-    <MESSAGE value="v127:feat/refactor:需求2276-科室端-病种分析（市医保DRG） ，新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;fix(api): 修复诊断操作明细接口路径错误&#10;&#10;- 修正了 fetchDiagnosisOperationDetailTableDeptDrg 方法中的 API 路径&#10;- 移除了路径末尾多余的 '-drill' 后缀" />
     <MESSAGE value="v127:feat/refactor:需求2276-科室端-病种分析（市医保DRG） ，新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;refactor(diseaseAnalysis): 优化诊断操作明细组件的请求参数处理&#10;&#10;- 提取公共请求参数计算方法 getCommonRequestParams&#10;- 移除硬编码的 indModelCode 值，改为空字符串&#10;- 简化 checkDateParamsValid 函数调用方式" />
     <MESSAGE value="v127:feat/refactor:需求2467-前端代码规范化修改&#10;refactor(BIEAnalysis): 为表格组件添加唯一ID并清理未使用的导入&#10;&#10;- 为deptCompareTable、detailsDialogTable、diseaseUnitMarginalContributionRankTable和medicalGroupIncomeAnalysis表格组件添加elemId标识&#10;- 从多个组件中导入elemId工具函数以支持元素ID生成&#10;- 清理outpatientBlock.vue中的未使用组件导入(BarChart、MedicalSurplusAnalysisChart、HeaderSelect)" />
     <MESSAGE value="v127:feat/refactor:需求2467-前端代码规范化修改&#10;refactor(BIEAnalysis): 优化整体模块组件的数据绑定结构&#10;&#10;- 将成本条形图数据通过v-bind方式进行绑定&#10;- 为成本详情表格组件添加统一配置对象costDetailConfig&#10;- 为图表数据对象添加唯一标识码(code)属性&#10;- 提取成本项明细相关属性到独立的计算属性中&#10;- 优化组件数据结构，提高代码可维护性&#10;- 统一组件配置项的数据传递方式" />
@@ -3210,7 +3211,8 @@
     <MESSAGE value="v127:fix/refactor:科室端 科室页面 收支余分析 /总览&#10;fix(BIEAnalysisOverview): 解决收入类型选择框禁用条件问题&#10;&#10;- 添加部门收入值判断条件&#10;- 当部门收入值小于等于1时禁用下拉框&#10;- 保持原有的禁用逻辑不变" />
     <MESSAGE value="v127:fix/refactor:科室端 科室页面 收支余分析 /总览&#10;feat(BIEAnalysis): 添日期下拉框等参数切换时，收入口径选项显示隐藏处理功能&#10;&#10;- 在mainTabType切换时调用incomeOptionsHandler方法&#10;- 根据tab切换显示组件类型处理收入口径选项的显示/隐藏&#10;- 添加注释说明tab切换对收入口径选项的影响逻辑" />
     <MESSAGE value="v127:feat/refactor:需求2306-1、科室端-病种..(市..DRG)科/院 -出院分析；2、科室端-病种..(市..DRG)科/院 -临床病种分析；病人分类下拉框内容改为本地（本地下面是职工、居民）、异地（异地下面是职工、居民），支持多选，当选择本地时，默认本地职工和居民勾选，当选择异地时，默认异地下面的职工和居民勾选。默认本地和异地均被选中。&#10;fix(drg): 修复患者类型参数传递逻辑&#10;&#10;- 移除无条件的 patType 参数传递&#10;- 添加条件判断仅在 getIfHasPatListSelector 为 false 时传递 patType&#10;- 保持原有患者类型列表选择器的功能完整性" />
-    <option name="LAST_COMMIT_MESSAGE" value="v127:feat/refactor:需求2306-1、科室端-病种..(市..DRG)科/院 -出院分析；2、科室端-病种..(市..DRG)科/院 -临床病种分析；病人分类下拉框内容改为本地（本地下面是职工、居民）、异地（异地下面是职工、居民），支持多选，当选择本地时，默认本地职工和居民勾选，当选择异地时，默认异地下面的职工和居民勾选。默认本地和异地均被选中。&#10;fix(drg): 修复患者类型参数传递逻辑&#10;&#10;- 移除无条件的 patType 参数传递&#10;- 添加条件判断仅在 getIfHasPatListSelector 为 false 时传递 patType&#10;- 保持原有患者类型列表选择器的功能完整性" />
+    <MESSAGE value="v127:fix/refactor:科室端-科室页面 收支余分析 /总览&#10;fix(BIEAnalysis): 修复科室收入口径处理逻辑&#10;&#10;- 在科室未切换但日期改变时，调用 incomeOptionsHandler 更新本地数据&#10;- 移除重复的 incomeOptionsHandler 调用避免冗余处理&#10;- 针对吉大一医院特殊场景，在整体分析tab下医技科室默认设置为执行收入口径&#10;- 优化 overallBlockIncomeHandler 方法中的条件判断逻辑&#10;- 为吉大一医院医技科室禁用收入口径选择功能&#10;- 隐藏并禁用患者科室相关的收入选项" />
+    <option name="LAST_COMMIT_MESSAGE" value="v127:fix/refactor:科室端-科室页面 收支余分析 /总览&#10;fix(BIEAnalysis): 修复科室收入口径处理逻辑&#10;&#10;- 在科室未切换但日期改变时，调用 incomeOptionsHandler 更新本地数据&#10;- 移除重复的 incomeOptionsHandler 调用避免冗余处理&#10;- 针对吉大一医院特殊场景，在整体分析tab下医技科室默认设置为执行收入口径&#10;- 优化 overallBlockIncomeHandler 方法中的条件判断逻辑&#10;- 为吉大一医院医技科室禁用收入口径选择功能&#10;- 隐藏并禁用患者科室相关的收入选项" />
   </component>
   <component name="VueSettings">
     <option name="innerServiceType" value="TS_SERVICE" />
