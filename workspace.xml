@@ -44,10 +44,11 @@
     <option name="selectedModelId" value="auto" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a32d6ec8-0d74-4a1b-8cad-0ab91948ca3e" name="Changes" comment="v127:fix/refactor:科室端-科室页面 收支余分析 /总览&#10;fix(BIEAnalysis): 修复科室收入口径处理逻辑&#10;&#10;- 在科室未切换但日期改变时，调用 incomeOptionsHandler 更新本地数据&#10;- 移除重复的 incomeOptionsHandler 调用避免冗余处理&#10;- 针对吉大一医院特殊场景，在整体分析tab下医技科室默认设置为执行收入口径&#10;- 优化 overallBlockIncomeHandler 方法中的条件判断逻辑&#10;- 为吉大一医院医技科室禁用收入口径选择功能&#10;- 隐藏并禁用患者科室相关的收入选项">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/operationDisease/capacity.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/operationDisease/capacity.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/operationDisease/diseaseSurplus.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/operationDisease/diseaseSurplus.vue" afterDir="false" />
+    <list default="true" id="a32d6ec8-0d74-4a1b-8cad-0ab91948ca3e" name="Changes" comment="v127:feat/refactor:需求2647-院端-病组分析（医保版DRG）-总览-全院病组总览，费用消耗指数、时间消耗指数、药品指数、材料指数下钻显示病人分类下拉框，并与总览页面保持一致&#10;feat(operationDisease): 添加山东大学第二医院病人分类树形选择器&#10;&#10;- 在capacity.vue和diseaseSurplus.vue中新增PlTreeRadio组件用于病人分类单选&#10;- 添加getPatientTypeTreeSingleSelectorBindData计算属性配置树形选择器参数&#10;- 集成PlTreeRadio组件到页面组件注册中&#10;- 添加医院代码常量引用和数据绑定支持&#10;- 实现基于医院类型的条件渲染逻辑">
+      <change beforePath="$PROJECT_DIR$/src/views/operationDisease/drugIndex/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/operationDisease/drugIndex/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/operationDisease/expenseConsumptionIndex/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/operationDisease/expenseConsumptionIndex/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/operationDisease/materialIndex/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/operationDisease/materialIndex/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/operationDisease/timeConsumptionIndex/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/operationDisease/timeConsumptionIndex/index.vue" afterDir="false" />
     </list>
     <list id="bd8e474f-42c8-444f-9f2b-07be811ba86b" name="ignore-on-commit" comment="ignore-on-commit" />
     <option name="SHOW_DIALOG" value="false" />
@@ -293,19 +294,19 @@
       <entry key="MS500" value="1.0" />
       <entry key="S2" value="1.0" />
       <entry key="S5" value="1.0" />
-      <entry key="S10" value="1.0" />
-      <entry key="S30" value="1.0" />
-      <entry key="S60" value="1.0" />
-      <entry key="M2" value="1.0" />
-      <entry key="M5" value="1.0000001363983344" />
-      <entry key="M10" value="1.0007386392055984" />
-      <entry key="M15" value="1.0129764395937984" />
-      <entry key="M30" value="1.230148823230729" />
-      <entry key="H1" value="2.0032087439359803" />
-      <entry key="H2" value="3.1746430174293474" />
-      <entry key="H4" value="4.265439966194302" />
-      <entry key="D1" value="5.649857614215418" />
-      <entry key="W1" value="5.948200509707088" />
+      <entry key="S10" value="1.0000000000061813" />
+      <entry key="S30" value="1.000290323626845" />
+      <entry key="S60" value="1.0240861926449074" />
+      <entry key="M2" value="1.2194583106919203" />
+      <entry key="M5" value="1.8263185821171426" />
+      <entry key="M10" value="2.285602374855336" />
+      <entry key="M15" value="2.4911198366522838" />
+      <entry key="M30" value="2.773796451592251" />
+      <entry key="H1" value="3.2527069137281717" />
+      <entry key="H2" value="4.336916779792628" />
+      <entry key="H4" value="5.805405065720186" />
+      <entry key="D1" value="8.274005202266338" />
+      <entry key="W1" value="8.890091299540018" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
@@ -327,23 +328,23 @@
       <entry key="W1" value="0.0" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.11265630782635375" />
-      <entry key="MS500" value="0.6461764153187461" />
-      <entry key="S2" value="0.8965773757702965" />
-      <entry key="S5" value="0.9572714581952976" />
-      <entry key="S10" value="0.9784025031628331" />
-      <entry key="S30" value="0.992748375440308" />
-      <entry key="S60" value="0.9963675905208419" />
-      <entry key="M2" value="0.9981821429583089" />
-      <entry key="M5" value="0.9992725966352107" />
-      <entry key="M10" value="1.0003747786591788" />
-      <entry key="M15" value="1.0127335792344347" />
-      <entry key="M30" value="1.2300246914650557" />
-      <entry key="H1" value="2.0031395421482325" />
-      <entry key="H2" value="3.17459987215522" />
-      <entry key="H4" value="4.265413044052855" />
-      <entry key="D1" value="5.649851749441083" />
-      <entry key="W1" value="5.948199625164489" />
+      <entry key="MS100" value="0.5987393523094643" />
+      <entry key="MS500" value="0.90250072746243" />
+      <entry key="S2" value="0.9746796308915489" />
+      <entry key="S5" value="0.9897938614695402" />
+      <entry key="S10" value="0.99488384321072" />
+      <entry key="S30" value="0.9985811165707631" />
+      <entry key="S60" value="1.023193433541447" />
+      <entry key="M2" value="1.2188551166982966" />
+      <entry key="M5" value="1.8258813118217672" />
+      <entry key="M10" value="2.2853093335343755" />
+      <entry key="M15" value="2.4909020640815807" />
+      <entry key="M30" value="2.7736701400486568" />
+      <entry key="H1" value="3.2526289618231363" />
+      <entry key="H2" value="4.336864526408652" />
+      <entry key="H4" value="5.8053703356090205" />
+      <entry key="D1" value="8.273996888213915" />
+      <entry key="W1" value="8.890090017938435" />
     </decayedShown>
   </component>
   <component name="PackageJsonUpdateNotifier">
@@ -591,6 +592,24 @@
     <configuration useDefault="false">C:\Users\xushuai\AppData\Roaming\Subversion</configuration>
     <supportedVersion>125</supportedVersion>
     <option name="runUnderTerminal" value="true" />
+  </component>
+  <component name="SvnFileUrlMappingImpl">
+    <option name="myMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="D:\project\doms_web" />
+          <option name="myCopyRoot" value="D:\project\doms_web" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
+    <option name="myMoreRealMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="D:\project\doms_web" />
+          <option name="myCopyRoot" value="D:\project\doms_web" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
   </component>
   <component name="TDDPredictState">
     <testRunHistory>
@@ -2772,15 +2791,7 @@
       <workItem from="1785114217522" duration="8803000" />
       <workItem from="1785123348157" duration="20127000" />
       <workItem from="1785200598288" duration="3272000" />
-      <workItem from="1785204151142" duration="17794000" />
-    </task>
-    <task id="LOCAL-04558" summary="v126:feat/refactor:需求2304-科端-病组分析（医保DRG）-出院分析、科端-病组分析（医保DRG）-临床病种分析，病人分类下拉框后面添加问号，问号默认内容：如“本地、异地”均不选择，则为本科室所有病例合计值。内容支持现场后台配置&#10;refactor(diseaseAnalysis): 替换病人分类选择器组件&#10;&#10;- 将 PlCascader 替换为 PlPatientTypeListSelector 组件&#10;- 移除医院可见性指令配置&#10;- 添加 drgGroupType 和 fromType 属性绑定&#10;- 从组件注册中移除旧的选择器组件&#10;- 删除相关的计算属性和绑定数据方法&#10;- 清理不再使用的导入和常量引用">
-      <option name="closed" value="true" />
-      <created>1784866644947</created>
-      <option name="number" value="04558" />
-      <option name="presentableId" value="LOCAL-04558" />
-      <option name="project" value="LOCAL" />
-      <updated>1784866644947</updated>
+      <workItem from="1785204151142" duration="18852000" />
     </task>
     <task id="LOCAL-04559" summary="v126:feat/refactor:需求2304-科端-病组分析（医保DRG）-出院分析、科端-病组分析（医保DRG）-临床病种分析，病人分类下拉框后面添加问号，问号默认内容：如“本地、异地”均不选择，则为本科室所有病例合计值。内容支持现场后台配置&#10;feat(diseaseAnalysis): 更新病人分类列表选择器显示逻辑&#10;&#10;- 修改组件描述注释，明确仅显示主干、毓璜顶、菏泽DRG市医保&#10;- 添加计算属性getIfShowPatTypeSelect控制病人分类下拉框显示&#10;- 隐藏省卫健委DRG相关选项&#10;- 修改getIfHasPatListSelector方法集成显示条件判断">
       <option name="closed" value="true" />
@@ -3166,7 +3177,15 @@
       <option name="project" value="LOCAL" />
       <updated>1785232485405</updated>
     </task>
-    <option name="localTasksCounter" value="4607" />
+    <task id="LOCAL-04607" summary="v127:feat/refactor:需求2647-院端-病组分析（医保版DRG）-总览-全院病组总览，费用消耗指数、时间消耗指数、药品指数、材料指数下钻显示病人分类下拉框，并与总览页面保持一致&#10;feat(operationDisease): 添加山东大学第二医院病人分类树形选择器&#10;&#10;- 在capacity.vue和diseaseSurplus.vue中新增PlTreeRadio组件用于病人分类单选&#10;- 添加getPatientTypeTreeSingleSelectorBindData计算属性配置树形选择器参数&#10;- 集成PlTreeRadio组件到页面组件注册中&#10;- 添加医院代码常量引用和数据绑定支持&#10;- 实现基于医院类型的条件渲染逻辑">
+      <option name="closed" value="true" />
+      <created>1785233613124</created>
+      <option name="number" value="04607" />
+      <option name="presentableId" value="LOCAL-04607" />
+      <option name="project" value="LOCAL" />
+      <updated>1785233613124</updated>
+    </task>
+    <option name="localTasksCounter" value="4608" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -3187,7 +3206,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="MARK_IGNORED_AS_EXCLUDED" value="true" />
-    <MESSAGE value="v127:feat/refactor:需求2276-科室端-病种分析（市医保DRG） ，新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;refactor(diseaseAnalysis): 优化诊断操作明细组件的请求参数处理&#10;&#10;- 提取公共请求参数计算方法 getCommonRequestParams&#10;- 移除硬编码的 indModelCode 值，改为空字符串&#10;- 简化 checkDateParamsValid 函数调用方式" />
     <MESSAGE value="v127:feat/refactor:需求2467-前端代码规范化修改&#10;refactor(BIEAnalysis): 为表格组件添加唯一ID并清理未使用的导入&#10;&#10;- 为deptCompareTable、detailsDialogTable、diseaseUnitMarginalContributionRankTable和medicalGroupIncomeAnalysis表格组件添加elemId标识&#10;- 从多个组件中导入elemId工具函数以支持元素ID生成&#10;- 清理outpatientBlock.vue中的未使用组件导入(BarChart、MedicalSurplusAnalysisChart、HeaderSelect)" />
     <MESSAGE value="v127:feat/refactor:需求2467-前端代码规范化修改&#10;refactor(BIEAnalysis): 优化整体模块组件的数据绑定结构&#10;&#10;- 将成本条形图数据通过v-bind方式进行绑定&#10;- 为成本详情表格组件添加统一配置对象costDetailConfig&#10;- 为图表数据对象添加唯一标识码(code)属性&#10;- 提取成本项明细相关属性到独立的计算属性中&#10;- 优化组件数据结构，提高代码可维护性&#10;- 统一组件配置项的数据传递方式" />
     <MESSAGE value="v127:feat/refactor:需求2467-前端代码规范化修改&#10;refactor(BIEAnalysis): 优化医生效率分析组件结构&#10;&#10;- 移除未使用的组件导入包括 CusTabBar、DoctorEfficiencyTable 等&#10;- 删除废弃的注释代码块&#10;- 为图表和表格组件添加统一的 code 标识符 添加元素 ID 生成器" />
@@ -3212,7 +3230,8 @@
     <MESSAGE value="v127:fix/refactor:科室端 科室页面 收支余分析 /总览&#10;feat(BIEAnalysis): 添日期下拉框等参数切换时，收入口径选项显示隐藏处理功能&#10;&#10;- 在mainTabType切换时调用incomeOptionsHandler方法&#10;- 根据tab切换显示组件类型处理收入口径选项的显示/隐藏&#10;- 添加注释说明tab切换对收入口径选项的影响逻辑" />
     <MESSAGE value="v127:feat/refactor:需求2306-1、科室端-病种..(市..DRG)科/院 -出院分析；2、科室端-病种..(市..DRG)科/院 -临床病种分析；病人分类下拉框内容改为本地（本地下面是职工、居民）、异地（异地下面是职工、居民），支持多选，当选择本地时，默认本地职工和居民勾选，当选择异地时，默认异地下面的职工和居民勾选。默认本地和异地均被选中。&#10;fix(drg): 修复患者类型参数传递逻辑&#10;&#10;- 移除无条件的 patType 参数传递&#10;- 添加条件判断仅在 getIfHasPatListSelector 为 false 时传递 patType&#10;- 保持原有患者类型列表选择器的功能完整性" />
     <MESSAGE value="v127:fix/refactor:科室端-科室页面 收支余分析 /总览&#10;fix(BIEAnalysis): 修复科室收入口径处理逻辑&#10;&#10;- 在科室未切换但日期改变时，调用 incomeOptionsHandler 更新本地数据&#10;- 移除重复的 incomeOptionsHandler 调用避免冗余处理&#10;- 针对吉大一医院特殊场景，在整体分析tab下医技科室默认设置为执行收入口径&#10;- 优化 overallBlockIncomeHandler 方法中的条件判断逻辑&#10;- 为吉大一医院医技科室禁用收入口径选择功能&#10;- 隐藏并禁用患者科室相关的收入选项" />
-    <option name="LAST_COMMIT_MESSAGE" value="v127:fix/refactor:科室端-科室页面 收支余分析 /总览&#10;fix(BIEAnalysis): 修复科室收入口径处理逻辑&#10;&#10;- 在科室未切换但日期改变时，调用 incomeOptionsHandler 更新本地数据&#10;- 移除重复的 incomeOptionsHandler 调用避免冗余处理&#10;- 针对吉大一医院特殊场景，在整体分析tab下医技科室默认设置为执行收入口径&#10;- 优化 overallBlockIncomeHandler 方法中的条件判断逻辑&#10;- 为吉大一医院医技科室禁用收入口径选择功能&#10;- 隐藏并禁用患者科室相关的收入选项" />
+    <MESSAGE value="v127:feat/refactor:需求2647-院端-病组分析（医保版DRG）-总览-全院病组总览，费用消耗指数、时间消耗指数、药品指数、材料指数下钻显示病人分类下拉框，并与总览页面保持一致&#10;feat(operationDisease): 添加山东大学第二医院病人分类树形选择器&#10;&#10;- 在capacity.vue和diseaseSurplus.vue中新增PlTreeRadio组件用于病人分类单选&#10;- 添加getPatientTypeTreeSingleSelectorBindData计算属性配置树形选择器参数&#10;- 集成PlTreeRadio组件到页面组件注册中&#10;- 添加医院代码常量引用和数据绑定支持&#10;- 实现基于医院类型的条件渲染逻辑" />
+    <option name="LAST_COMMIT_MESSAGE" value="v127:feat/refactor:需求2647-院端-病组分析（医保版DRG）-总览-全院病组总览，费用消耗指数、时间消耗指数、药品指数、材料指数下钻显示病人分类下拉框，并与总览页面保持一致&#10;feat(operationDisease): 添加山东大学第二医院病人分类树形选择器&#10;&#10;- 在capacity.vue和diseaseSurplus.vue中新增PlTreeRadio组件用于病人分类单选&#10;- 添加getPatientTypeTreeSingleSelectorBindData计算属性配置树形选择器参数&#10;- 集成PlTreeRadio组件到页面组件注册中&#10;- 添加医院代码常量引用和数据绑定支持&#10;- 实现基于医院类型的条件渲染逻辑" />
   </component>
   <component name="VueSettings">
     <option name="innerServiceType" value="TS_SERVICE" />
