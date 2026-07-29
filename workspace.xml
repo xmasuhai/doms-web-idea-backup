@@ -44,8 +44,8 @@
     <option name="selectedModelId" value="auto" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a32d6ec8-0d74-4a1b-8cad-0ab91948ca3e" name="Changes" comment="v127:feat/refactor:需求2647-院端-病组分析（医保版DRG）-总览-全院病组总览，费用消耗指数、时间消耗指数、药品指数、材料指数下钻显示病人分类下拉框，并与总览页面保持一致&#10;refactor(operationDisease): 简化费用消耗指数页面依赖引入&#10;&#10;- 移除未使用的 ScatterChart 组件导入&#10;- 移除未使用的 HeaderTimeFilters 组件导入&#10;- 移除未使用的 API 方法导入 (chargeVsCmi, chargeDeptDistr 等)&#10;- 移除未使用的 ColumnChart 组件导入&#10;- 移除未使用的 genQuadrantDescription 函数导入&#10;- 移除未使用的 PATIENT_TYPE_LIST_DRG_CODE_HASH 常量导入">
-      <change beforePath="$PROJECT_DIR$/src/views/workloadAnalysis/wholeHospital/outpatientPersonTime.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/workloadAnalysis/wholeHospital/outpatientPersonTime.vue" afterDir="false" />
+    <list default="true" id="a32d6ec8-0d74-4a1b-8cad-0ab91948ca3e" name="Changes" comment="v127:feat/refactor:需求2314-院端-临床工作量分析-总览-全院临床工作量总览-门诊人次下钻，门诊人次数与出院人次数比模块，标题右侧“异常探查”链接改为：院端-临床工作量分析-入院率异常探查&#10;feat(router): 替换跳转路径和组件名称 入院率异常探查&#10;&#10;- 将路径从 outpatientMatrix 更新为 /hospitalAdmissionRateAbnormalProbe&#10;- 将组件名称从 outpatientMatrix 更新为 HospitalAdmissionRateAbnormalProbe">
+      <change beforePath="$PROJECT_DIR$/src/views/deptCockpitNew/components/cockpitPanel.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/deptCockpitNew/components/cockpitPanel.vue" afterDir="false" />
     </list>
     <list id="bd8e474f-42c8-444f-9f2b-07be811ba86b" name="ignore-on-commit" comment="ignore-on-commit" />
     <option name="SHOW_DIALOG" value="false" />
@@ -287,23 +287,23 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0" />
-      <entry key="S2" value="1.0" />
-      <entry key="S5" value="1.0" />
-      <entry key="S10" value="1.0" />
-      <entry key="S30" value="1.000000003732576" />
-      <entry key="S60" value="1.0000625572728241" />
-      <entry key="M2" value="1.0095309810517272" />
-      <entry key="M5" value="1.2622797718795886" />
-      <entry key="M10" value="1.8661533876231948" />
-      <entry key="M15" value="2.304539919131631" />
-      <entry key="M30" value="3.0072707902474147" />
-      <entry key="H1" value="3.7670093143345773" />
-      <entry key="H2" value="5.000036302280085" />
-      <entry key="H4" value="6.575373282917589" />
-      <entry key="D1" value="9.218439453085184" />
-      <entry key="W1" value="9.881537620602618" />
+      <entry key="MS100" value="1.1015315495445295" />
+      <entry key="MS500" value="1.6328782969851399" />
+      <entry key="S2" value="1.8919285194200928" />
+      <entry key="S5" value="1.9552829363824373" />
+      <entry key="S10" value="1.9773857664108054" />
+      <entry key="S30" value="1.9924043783900434" />
+      <entry key="S60" value="1.9962572673722105" />
+      <entry key="M2" value="2.0076084916436736" />
+      <entry key="M5" value="2.2613176984669057" />
+      <entry key="M10" value="2.865442087789047" />
+      <entry key="M15" value="3.3039542855946005" />
+      <entry key="M30" value="4.006888659628535" />
+      <entry key="H1" value="4.766769971848895" />
+      <entry key="H2" value="5.999877457421115" />
+      <entry key="H4" value="7.575268836422192" />
+      <entry key="D1" value="10.218415047878434" />
+      <entry key="W1" value="10.881533883353356" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
@@ -325,23 +325,23 @@
       <entry key="W1" value="0.0" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.45691572511470024" />
-      <entry key="MS500" value="0.8550021778919727" />
-      <entry key="S2" value="0.9615941337766675" />
-      <entry key="S5" value="0.9844569336176409" />
-      <entry key="S10" value="0.9921980314522101" />
-      <entry key="S30" value="0.9973925546621465" />
-      <entry key="S60" value="0.9987579272471594" />
-      <entry key="M2" value="1.0088737660145428" />
-      <entry key="M5" value="1.2619559236170612" />
-      <entry key="M10" value="1.865911802291717" />
-      <entry key="M15" value="2.3043388521487858" />
-      <entry key="M30" value="3.007135871014513" />
-      <entry key="H1" value="3.7669212454064067" />
-      <entry key="H2" value="4.999977229303071" />
-      <entry key="H4" value="6.575334489677685" />
-      <entry key="D1" value="9.218430288321207" />
-      <entry key="W1" value="9.881536210727482" />
+      <entry key="MS100" value="0.14792291112668726" />
+      <entry key="MS500" value="1.1739906192479974" />
+      <entry key="S2" value="1.7496017514425621" />
+      <entry key="S5" value="1.8957178466707474" />
+      <entry key="S10" value="1.947145999813016" />
+      <entry key="S30" value="1.982221109211597" />
+      <entry key="S60" value="1.9911525496645148" />
+      <entry key="M2" value="2.005048188979496" />
+      <entry key="M5" value="2.260231925733825" />
+      <entry key="M10" value="2.8648194362497983" />
+      <entry key="M15" value="3.303499148035411" />
+      <entry key="M30" value="4.006626688630508" />
+      <entry key="H1" value="4.766618372043289" />
+      <entry key="H2" value="5.999786617579637" />
+      <entry key="H4" value="7.575214159301772" />
+      <entry key="D1" value="10.218403235705077" />
+      <entry key="W1" value="10.881532095273519" />
     </decayedShown>
   </component>
   <component name="PackageJsonUpdateNotifier">
@@ -2789,15 +2789,7 @@
       <workItem from="1785123348157" duration="20127000" />
       <workItem from="1785200598288" duration="3272000" />
       <workItem from="1785204151142" duration="19193000" />
-      <workItem from="1785287399802" duration="5760000" />
-    </task>
-    <task id="LOCAL-04563" summary="v126:feat/refactor:需求2304-科端-病组分析（医保DRG）-出院分析、科端-病组分析（医保DRG）-临床病种分析，病人分类下拉框后面添加问号，问号默认内容：如“本地、异地”均不选择，则为本科室所有病例合计值。内容支持现场后台配置&#10;refactor(diseaseAnalysis): 科端-病种分析 出院分析 病组RW-费用消耗指数分析 下钻页 替换病人分类选择器组件&#10;&#10;- 将 PlCascader 组件替换为 PlPatientTypeListSelector 组件&#10;- 添加 disabled 属性和 drgGroupType、fromType 等绑定参数&#10;- 移除患者类型多选选项列表计算属性&#10;- 移除患者类型多选绑定数据计算属性&#10;- 更新组件导入和注册方式 优化组件配置结构">
-      <option name="closed" value="true" />
-      <created>1784878311326</created>
-      <option name="number" value="04563" />
-      <option name="presentableId" value="LOCAL-04563" />
-      <option name="project" value="LOCAL" />
-      <updated>1784878311326</updated>
+      <workItem from="1785287399802" duration="8592000" />
     </task>
     <task id="LOCAL-04564" summary="v126:feat/refactor:需求2304-科端-病组分析（医保DRG）-出院分析、科端-病组分析（医保DRG）-临床病种分析，病人分类下拉框后面添加问号，问号默认内容：如“本地、异地”均不选择，则为本科室所有病例合计值。内容支持现场后台配置&#10;refactor(diseaseAnalysis): 科室端-病种分析（市医保DRG） /出院分析 /病组RW-结余率分析 查看详情 下钻页 替换病人分类选择器组件&#10;&#10;- 将 PlCascader 组件替换为 PlPatientTypeListSelector 组件&#10;- 移除已废弃的 getPatientTypeListOptions 和 getPatientTypeListMultiSelectorBindData 方法&#10;- 删除不再使用的 patientTypeListOptionsDrg 常量&#10;- 添加 PlPatientTypeListSelector 组件到 components 注册&#10;- 移除已不再使用的 getShowPatListSelectorHospCodesStr 方法&#10;- 优化病人分类选择器的数据绑定方式">
       <option name="closed" value="true" />
@@ -3183,7 +3175,15 @@
       <option name="project" value="LOCAL" />
       <updated>1785291597194</updated>
     </task>
-    <option name="localTasksCounter" value="4612" />
+    <task id="LOCAL-04612" summary="v127:feat/refactor:需求2314-院端-临床工作量分析-总览-全院临床工作量总览-门诊人次下钻，门诊人次数与出院人次数比模块，标题右侧“异常探查”链接改为：院端-临床工作量分析-入院率异常探查&#10;feat(router): 替换跳转路径和组件名称 入院率异常探查&#10;&#10;- 将路径从 outpatientMatrix 更新为 /hospitalAdmissionRateAbnormalProbe&#10;- 将组件名称从 outpatientMatrix 更新为 HospitalAdmissionRateAbnormalProbe">
+      <option name="closed" value="true" />
+      <created>1785294303397</created>
+      <option name="number" value="04612" />
+      <option name="presentableId" value="LOCAL-04612" />
+      <option name="project" value="LOCAL" />
+      <updated>1785294303398</updated>
+    </task>
+    <option name="localTasksCounter" value="4613" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -3204,7 +3204,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="MARK_IGNORED_AS_EXCLUDED" value="true" />
-    <MESSAGE value="v127:feat/refactor:需求2467-前端代码规范化修改&#10;feat(BIEAnalysis): 在outpatientAmountDialog.vue组件中新增code属性&#10;- 设置唯一标识码为3CF597062B7E58AADB7CFB436945B7B0" />
     <MESSAGE value="v127:feat/refactor:需求2467-前端代码规范化修改&#10;feat(BIEAnalysis): 为成本概览组件添加code&#10;&#10;- 为 PlModulePanel 组件添加 code 属性&#10;- 更新 OverallCostBlock.vue 文件中的多个图表组件配置&#10;- 为折线图、柱状图和表格组件分别添加唯一标识码&#10;- 确保所有图表组件具备完整的数据绑定配置" />
     <MESSAGE value="v127:feat/refactor:需求2467-前端代码规范化修改&#10;fix(department): 修复检查收入组件中的模型代码问题&#10;&#10;- 在检查收入分类排名表格中为code属性添加空字符串默认值&#10;- 在盈余分析组件中导入generateModelCode工具函数&#10;- 为医疗盈余目标完成分析图表添加动态模型代码生成&#10;- 为收入成本趋势分析图表添加动态模型代码生成&#10;- 确保所有图表组件都有正确的唯一标识符" />
     <MESSAGE value="拉取代码-1735 v127 山肿瘤、毓璜顶 院/科端-病组分析（DRG）除分页的表格外，筛选控件改为可选的控件；" />
@@ -3229,7 +3228,8 @@
     <MESSAGE value="v127:feat/refactor:需求2647-院端-病组分析（医保版DRG）-总览-全院病组总览，费用消耗指数、时间消耗指数、药品指数、材料指数下钻显示病人分类下拉框，并与总览页面保持一致&#10;feat(operationDisease): 为多个选择器组件添加禁用功能&#10;&#10;- 在药物索引页面的选择器配置中添加disabled属性&#10;- 在费用消耗索引页面的选择器配置中添加disabled属性&#10;- 在材料索引页面的选择器配置中添加disabled属性&#10;- 在时间消耗索引页面的病人分类选择器中添加disabled属性&#10;- 统一四个操作疾病相关页面的选择器禁用状态管理" />
     <MESSAGE value="v127:feat/refactor:需求2647-院端-病组分析（医保版DRG）-总览-全院病组总览，费用消耗指数、时间消耗指数、药品指数、材料指数下钻显示病人分类下拉框，并与总览页面保持一致&#10;&#10;- 在capacity.vue中增加HOSP_CODE_SHAN_DONG_DA_ER医院代码&#10;- 在diseaseSurplus.vue中增加HOSP_CODE_SHAN_DONG_DA_ER医院代码" />
     <MESSAGE value="v127:feat/refactor:需求2647-院端-病组分析（医保版DRG）-总览-全院病组总览，费用消耗指数、时间消耗指数、药品指数、材料指数下钻显示病人分类下拉框，并与总览页面保持一致&#10;refactor(operationDisease): 简化费用消耗指数页面依赖引入&#10;&#10;- 移除未使用的 ScatterChart 组件导入&#10;- 移除未使用的 HeaderTimeFilters 组件导入&#10;- 移除未使用的 API 方法导入 (chargeVsCmi, chargeDeptDistr 等)&#10;- 移除未使用的 ColumnChart 组件导入&#10;- 移除未使用的 genQuadrantDescription 函数导入&#10;- 移除未使用的 PATIENT_TYPE_LIST_DRG_CODE_HASH 常量导入" />
-    <option name="LAST_COMMIT_MESSAGE" value="v127:feat/refactor:需求2647-院端-病组分析（医保版DRG）-总览-全院病组总览，费用消耗指数、时间消耗指数、药品指数、材料指数下钻显示病人分类下拉框，并与总览页面保持一致&#10;refactor(operationDisease): 简化费用消耗指数页面依赖引入&#10;&#10;- 移除未使用的 ScatterChart 组件导入&#10;- 移除未使用的 HeaderTimeFilters 组件导入&#10;- 移除未使用的 API 方法导入 (chargeVsCmi, chargeDeptDistr 等)&#10;- 移除未使用的 ColumnChart 组件导入&#10;- 移除未使用的 genQuadrantDescription 函数导入&#10;- 移除未使用的 PATIENT_TYPE_LIST_DRG_CODE_HASH 常量导入" />
+    <MESSAGE value="v127:feat/refactor:需求2314-院端-临床工作量分析-总览-全院临床工作量总览-门诊人次下钻，门诊人次数与出院人次数比模块，标题右侧“异常探查”链接改为：院端-临床工作量分析-入院率异常探查&#10;feat(router): 替换跳转路径和组件名称 入院率异常探查&#10;&#10;- 将路径从 outpatientMatrix 更新为 /hospitalAdmissionRateAbnormalProbe&#10;- 将组件名称从 outpatientMatrix 更新为 HospitalAdmissionRateAbnormalProbe" />
+    <option name="LAST_COMMIT_MESSAGE" value="v127:feat/refactor:需求2314-院端-临床工作量分析-总览-全院临床工作量总览-门诊人次下钻，门诊人次数与出院人次数比模块，标题右侧“异常探查”链接改为：院端-临床工作量分析-入院率异常探查&#10;feat(router): 替换跳转路径和组件名称 入院率异常探查&#10;&#10;- 将路径从 outpatientMatrix 更新为 /hospitalAdmissionRateAbnormalProbe&#10;- 将组件名称从 outpatientMatrix 更新为 HospitalAdmissionRateAbnormalProbe" />
   </component>
   <component name="VueSettings">
     <option name="innerServiceType" value="TS_SERVICE" />
