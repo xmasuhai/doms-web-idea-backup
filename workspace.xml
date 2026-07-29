@@ -44,9 +44,7 @@
     <option name="selectedModelId" value="auto" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a32d6ec8-0d74-4a1b-8cad-0ab91948ca3e" name="Changes" comment="v127:feat/refactor:需求2597-院端-病组分析（省卫健委DRG）-总览-全院病组一览表下钻，医保病例类型分类及右侧的科室明细数据表删除。（注：市医保DRG的不删除）&#10;feat(diseaseAnalysis): 添加医保案例类型分类联动组件显示控制&#10;&#10;- 引入 vuex mapGetters 方法用于获取状态&#10;- 添加计算属性控制组件显示逻辑">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="a32d6ec8-0d74-4a1b-8cad-0ab91948ca3e" name="Changes" comment="v127:fix/refactor:院端-病种分析（DIP支付） 异常病种监控分析&#10;fix(diseaseMonitoring): 修复病人类型参数传递问题&#10;&#10;- 添加 patType 字段初始化为 null&#10;- 修改 drgType 参数获取逻辑，增加 patientTypeValue 作为默认值&#10;- 新增 patType 参数传递，确保查询条件完整性&#10;- 修复参数为空时的回退机制" />
     <list id="bd8e474f-42c8-444f-9f2b-07be811ba86b" name="ignore-on-commit" comment="ignore-on-commit" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -300,60 +298,60 @@
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
       <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0" />
-      <entry key="S2" value="1.0000768810701945" />
-      <entry key="S5" value="1.0329759757164532" />
-      <entry key="S10" value="1.3075276712985833" />
-      <entry key="S30" value="3.792293241541159" />
-      <entry key="S60" value="7.264558483768339" />
-      <entry key="M2" value="12.78676288891528" />
-      <entry key="M5" value="22.369579560440474" />
-      <entry key="M10" value="28.708239496799727" />
-      <entry key="M15" value="32.17032022441339" />
-      <entry key="M30" value="38.98800525624475" />
-      <entry key="H1" value="46.84726525095362" />
-      <entry key="H2" value="54.50266610828558" />
-      <entry key="H4" value="61.05957697094601" />
-      <entry key="D1" value="70.33524618209378" />
-      <entry key="W1" value="72.59575790571715" />
+      <entry key="MS500" value="1.0000001735674797" />
+      <entry key="S2" value="1.0204113299403472" />
+      <entry key="S5" value="1.2138603505875625" />
+      <entry key="S10" value="1.5663518003616907" />
+      <entry key="S30" value="3.128394472840964" />
+      <entry key="S60" value="4.587130286804062" />
+      <entry key="M2" value="6.123218355470148" />
+      <entry key="M5" value="7.920130134535694" />
+      <entry key="M10" value="9.038845411203571" />
+      <entry key="M15" value="10.38760990356399" />
+      <entry key="M30" value="17.10153072741992" />
+      <entry key="H1" value="30.36410535729999" />
+      <entry key="H2" value="46.01504065586032" />
+      <entry key="H4" value="59.65513374188435" />
+      <entry key="D1" value="77.95623137285071" />
+      <entry key="W1" value="82.23986337339356" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="1.4666931640447814E-159" />
-      <entry key="S2" value="1.9572187690765807E-40" />
-      <entry key="S5" value="1.347445275726098E-16" />
-      <entry key="S10" value="1.4092467937260629E-8" />
-      <entry key="S30" value="0.005227282261158723" />
-      <entry key="S60" value="0.15400561601933274" />
-      <entry key="M2" value="0.8668226186353064" />
-      <entry key="M5" value="2.473378354837341" />
-      <entry key="M10" value="3.5149705727583327" />
-      <entry key="M15" value="3.9526796822958277" />
-      <entry key="M30" value="4.4453685418415185" />
-      <entry key="H1" value="4.714472826428522" />
-      <entry key="H2" value="4.855121849846932" />
-      <entry key="H4" value="4.927024367035236" />
-      <entry key="D1" value="4.987762190884662" />
-      <entry key="W1" value="4.9982498908781965" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="0.0" />
+      <entry key="S5" value="8.226479484069884E-274" />
+      <entry key="S10" value="3.4820780126869276E-137" />
+      <entry key="S30" value="7.066859095669962E-46" />
+      <entry key="S60" value="5.662546722879753E-23" />
+      <entry key="M2" value="1.662140972889492E-11" />
+      <entry key="M5" value="1.2775726439654675E-4" />
+      <entry key="M10" value="0.025262086477811033" />
+      <entry key="M15" value="0.14720525165336176" />
+      <entry key="M30" value="0.8578742124067033" />
+      <entry key="H1" value="2.0710522586387974" />
+      <entry key="H2" value="3.2179485363437133" />
+      <entry key="H4" value="4.0111988332513455" />
+      <entry key="D1" value="4.819707163869376" />
+      <entry key="W1" value="4.973836719827606" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="1.2162316914241322E-22" />
-      <entry key="MS500" value="4.1400278547605314E-5" />
-      <entry key="S2" value="0.0802776705854301" />
-      <entry key="S5" value="0.39459174807363284" />
-      <entry key="S10" value="0.8961911609762064" />
-      <entry key="S30" value="3.5936358343620496" />
-      <entry key="S60" value="7.273721288120423" />
-      <entry key="M2" value="13.531643965954611" />
-      <entry key="M5" value="24.75297147225768" />
-      <entry key="M10" value="32.1639975816234" />
-      <entry key="M15" value="36.078453837812496" />
-      <entry key="M30" value="43.40643017186003" />
-      <entry key="H1" value="51.54588143803505" />
-      <entry key="H2" value="59.34889702581854" />
-      <entry key="H4" value="65.98183397544757" />
-      <entry key="D1" value="75.32215787883639" />
-      <entry key="W1" value="77.5938847147098" />
+      <entry key="MS100" value="0.9265880618903709" />
+      <entry key="MS500" value="0.9848666034983081" />
+      <entry key="S2" value="1.0162138670962537" />
+      <entry key="S5" value="1.2101683856423926" />
+      <entry key="S10" value="1.5555217050276091" />
+      <entry key="S30" value="3.09593784788447" />
+      <entry key="S60" value="4.555299736277378" />
+      <entry key="M2" value="6.097142234815985" />
+      <entry key="M5" value="7.904027532843698" />
+      <entry key="M10" value="9.053948298917183" />
+      <entry key="M15" value="10.52623179385407" />
+      <entry key="M30" value="17.950503012982555" />
+      <entry key="H1" value="32.426276051816046" />
+      <entry key="H2" value="49.226121656969525" />
+      <entry key="H4" value="63.66195975053671" />
+      <entry key="D1" value="82.77503416331125" />
+      <entry key="W1" value="87.21356580694987" />
     </decayedShown>
   </component>
   <component name="PackageJsonUpdateNotifier">
@@ -601,6 +599,24 @@
     <configuration useDefault="false">C:\Users\xushuai\AppData\Roaming\Subversion</configuration>
     <supportedVersion>125</supportedVersion>
     <option name="runUnderTerminal" value="true" />
+  </component>
+  <component name="SvnFileUrlMappingImpl">
+    <option name="myMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="D:\project\doms_web" />
+          <option name="myCopyRoot" value="D:\project\doms_web" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
+    <option name="myMoreRealMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="D:\project\doms_web" />
+          <option name="myCopyRoot" value="D:\project\doms_web" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
   </component>
   <component name="TDDPredictState">
     <testRunHistory>
@@ -2783,15 +2799,7 @@
       <workItem from="1785123348157" duration="20127000" />
       <workItem from="1785200598288" duration="3272000" />
       <workItem from="1785204151142" duration="19193000" />
-      <workItem from="1785287399802" duration="18113000" />
-    </task>
-    <task id="LOCAL-04566" summary="v127:feat/refactor:需求2276-科室端-病种分析（市医保DRG） ，新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(router): 添加科端诊断操作明细路由配置&#10;&#10;- 引入诊断操作明细科端路由模块&#10;- 更新路由配置文件添加科端诊断操作明细路由映射&#10;- 在病组分析相关路由中集成诊断操作明细功能">
-      <option name="closed" value="true" />
-      <created>1784880388016</created>
-      <option name="number" value="04566" />
-      <option name="presentableId" value="LOCAL-04566" />
-      <option name="project" value="LOCAL" />
-      <updated>1784880388016</updated>
+      <workItem from="1785287399802" duration="20438000" />
     </task>
     <task id="LOCAL-04567" summary="v127:feat/refactor:需求2276-科室端-病种分析（市医保DRG） ，新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(diseaseAnalysis): 添加科室端DRG病组分析诊断操作明细页面&#10;&#10;- 新增DiagnosisOperationDetailDept.vue组件文件&#10;- 创建科室端病组分析（DRG支付）诊断操作明细页面&#10;- 配置路由指向新的科室端页面路径&#10;- 更新文件路径引用以匹配新页面位置">
       <option name="closed" value="true" />
@@ -3177,7 +3185,15 @@
       <option name="project" value="LOCAL" />
       <updated>1785306970325</updated>
     </task>
-    <option name="localTasksCounter" value="4615" />
+    <task id="LOCAL-04615" summary="v127:fix/refactor:院端-病种分析（DIP支付） 异常病种监控分析&#10;fix(diseaseMonitoring): 修复病人类型参数传递问题&#10;&#10;- 添加 patType 字段初始化为 null&#10;- 修改 drgType 参数获取逻辑，增加 patientTypeValue 作为默认值&#10;- 新增 patType 参数传递，确保查询条件完整性&#10;- 修复参数为空时的回退机制">
+      <option name="closed" value="true" />
+      <created>1785310477015</created>
+      <option name="number" value="04615" />
+      <option name="presentableId" value="LOCAL-04615" />
+      <option name="project" value="LOCAL" />
+      <updated>1785310477015</updated>
+    </task>
+    <option name="localTasksCounter" value="4616" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -3198,7 +3214,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="MARK_IGNORED_AS_EXCLUDED" value="true" />
-    <MESSAGE value="拉取代码-1735 v127 山肿瘤、毓璜顶 院/科端-病组分析（DRG）除分页的表格外，筛选控件改为可选的控件；" />
     <MESSAGE value="v127:feat/refactor:需求2467-前端代码规范化修改&#10;feat(deptCockpit): 为表格组件添加唯一ID标识&#10;&#10;- 在armarium.vue中为两个表格组件添加elemId标识&#10;- 在bed.vue中为床位表格组件添加elemId标识&#10;- 在chartAndTable.vue中为图表表格组件添加elemId标识&#10;- 在diseaseDetail.vue中为疾病详情表格组件添加elemId标识&#10;- 在efficiencyAnalysis.vue中为效率分析表格组件添加elemId标识&#10;- 在fixedAssets.vue中为固定资产表格组件添加elemId标识&#10;- 在incomeStructure.vue中为收入结构表格组件添加elemId标识&#10;- 在outpatientStructure.vue中为门诊结构表格组件添加elemId标识&#10;- 统一导入elemId工具函数并在各个组件中注册到data中使用" />
     <MESSAGE value="v127:feat/refactor:需求2467-前端代码规范化修改&#10;&#10;refactor(deptCockpit): 统一为表格组件添加ID标识&#10;&#10;- 在resourceAllocation模块的armarium.vue、bed.vue、fixedAssets.vue中为pl-grid-table组件添加elemId标识&#10;- 在components/chartAndTable.vue中为PlGridTable组件添加elemId标识&#10;- 在diseaseAnalysis模块的相关组件中引入并使用elemId工具函数&#10;- 在diseaseManagement.vue中引入generateModelCode并为tableConfig添加code字段&#10;- 移除DeptNoGroupRateDetailTable.vue中的多余注释代码和无用组件引用" />
     <MESSAGE value="v127:feat/refactor:需求2276-科室端-病种分析（市医保DRG） ，新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(dimension-selector): 修改维度列表选择器的数据请求逻辑&#10;&#10;- 添加了 fetchDrilldownDimensionListDeptDrgMedGroup API 方法导入&#10;- 引入了 Vuex mapGetters 用于获取配置状态&#10;- 添加了 getIsHosp 计算属性以区分医院类型&#10;- 实现了动态请求方法选择机制，根据 getIsHosp 状态决定使用不同 API&#10;- 修改了参数验证逻辑，根据医院类型进行不同的参数校验&#10;- 更新了数据请求调用方式，使用动态获取的请求方法替代固定方法" />
@@ -3223,7 +3238,8 @@
     <MESSAGE value="v127:feat/refactor:需求2314-院端-临床工作量分析-总览-全院临床工作量总览-门诊人次下钻，门诊人次数与出院人次数比模块，标题右侧“异常探查”链接改为：院端-临床工作量分析-入院率异常探查&#10;feat(router): 替换跳转路径和组件名称 入院率异常探查&#10;&#10;- 将路径从 outpatientMatrix 更新为 /hospitalAdmissionRateAbnormalProbe&#10;- 将组件名称从 outpatientMatrix 更新为 HospitalAdmissionRateAbnormalProbe" />
     <MESSAGE value="v127:feat/refactor:需求2435-科室端-专科目标管理驾驶舱，门诊收入、住院收入、门急诊人次、出院人次、CMI只有点击文字才可以跳转链接。（现在是点击门诊收入后面空白的地方也可以跳转）&#10;feat(component): 为PlIndexTitle组件添加点击事件支持&#10;&#10;- 在PlIndexTitle组件的标题上添加click.native事件监听器&#10;- 将点击事件通过handleClickTitle自定义事件向外传递&#10;- 更新PlTargetCard2组件以响应PlIndexTitle的点击事件&#10;- 移动clickable样式的CSS定位到正确的组件作用域内&#10;- 添加PlIndexTitle组件的导入和注册声明&#10;- 确保点击样式在嵌套组件中正确应用" />
     <MESSAGE value="v127:feat/refactor:需求2597-院端-病组分析（省卫健委DRG）-总览-全院病组一览表下钻，医保病例类型分类及右侧的科室明细数据表删除。（注：市医保DRG的不删除）&#10;feat(diseaseAnalysis): 添加医保案例类型分类联动组件显示控制&#10;&#10;- 引入 vuex mapGetters 方法用于获取状态&#10;- 添加计算属性控制组件显示逻辑" />
-    <option name="LAST_COMMIT_MESSAGE" value="v127:feat/refactor:需求2597-院端-病组分析（省卫健委DRG）-总览-全院病组一览表下钻，医保病例类型分类及右侧的科室明细数据表删除。（注：市医保DRG的不删除）&#10;feat(diseaseAnalysis): 添加医保案例类型分类联动组件显示控制&#10;&#10;- 引入 vuex mapGetters 方法用于获取状态&#10;- 添加计算属性控制组件显示逻辑" />
+    <MESSAGE value="v127:fix/refactor:院端-病种分析（DIP支付） 异常病种监控分析&#10;fix(diseaseMonitoring): 修复病人类型参数传递问题&#10;&#10;- 添加 patType 字段初始化为 null&#10;- 修改 drgType 参数获取逻辑，增加 patientTypeValue 作为默认值&#10;- 新增 patType 参数传递，确保查询条件完整性&#10;- 修复参数为空时的回退机制" />
+    <option name="LAST_COMMIT_MESSAGE" value="v127:fix/refactor:院端-病种分析（DIP支付） 异常病种监控分析&#10;fix(diseaseMonitoring): 修复病人类型参数传递问题&#10;&#10;- 添加 patType 字段初始化为 null&#10;- 修改 drgType 参数获取逻辑，增加 patientTypeValue 作为默认值&#10;- 新增 patType 参数传递，确保查询条件完整性&#10;- 修复参数为空时的回退机制" />
   </component>
   <component name="VueSettings">
     <option name="innerServiceType" value="TS_SERVICE" />
