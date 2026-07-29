@@ -45,6 +45,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a32d6ec8-0d74-4a1b-8cad-0ab91948ca3e" name="Changes" comment="v127:feat/refactor:需求2314-院端-临床工作量分析-总览-全院临床工作量总览-门诊人次下钻，门诊人次数与出院人次数比模块，标题右侧“异常探查”链接改为：院端-临床工作量分析-入院率异常探查&#10;feat(router): 替换跳转路径和组件名称 入院率异常探查&#10;&#10;- 将路径从 outpatientMatrix 更新为 /hospitalAdmissionRateAbnormalProbe&#10;- 将组件名称从 outpatientMatrix 更新为 HospitalAdmissionRateAbnormalProbe">
+      <change beforePath="$PROJECT_DIR$/src/component/tool/PlTargetCard2.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/tool/PlTargetCard2.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/deptCockpitNew/components/cockpitPanel.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/deptCockpitNew/components/cockpitPanel.vue" afterDir="false" />
     </list>
     <list id="bd8e474f-42c8-444f-9f2b-07be811ba86b" name="ignore-on-commit" comment="ignore-on-commit" />
@@ -2789,7 +2790,7 @@
       <workItem from="1785123348157" duration="20127000" />
       <workItem from="1785200598288" duration="3272000" />
       <workItem from="1785204151142" duration="19193000" />
-      <workItem from="1785287399802" duration="8592000" />
+      <workItem from="1785287399802" duration="9219000" />
     </task>
     <task id="LOCAL-04564" summary="v126:feat/refactor:需求2304-科端-病组分析（医保DRG）-出院分析、科端-病组分析（医保DRG）-临床病种分析，病人分类下拉框后面添加问号，问号默认内容：如“本地、异地”均不选择，则为本科室所有病例合计值。内容支持现场后台配置&#10;refactor(diseaseAnalysis): 科室端-病种分析（市医保DRG） /出院分析 /病组RW-结余率分析 查看详情 下钻页 替换病人分类选择器组件&#10;&#10;- 将 PlCascader 组件替换为 PlPatientTypeListSelector 组件&#10;- 移除已废弃的 getPatientTypeListOptions 和 getPatientTypeListMultiSelectorBindData 方法&#10;- 删除不再使用的 patientTypeListOptionsDrg 常量&#10;- 添加 PlPatientTypeListSelector 组件到 components 注册&#10;- 移除已不再使用的 getShowPatListSelectorHospCodesStr 方法&#10;- 优化病人分类选择器的数据绑定方式">
       <option name="closed" value="true" />
