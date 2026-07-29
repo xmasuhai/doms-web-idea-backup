@@ -44,9 +44,8 @@
     <option name="selectedModelId" value="auto" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a32d6ec8-0d74-4a1b-8cad-0ab91948ca3e" name="Changes" comment="v127:feat/refactor:需求2435-科室端-专科目标管理驾驶舱，门诊收入、住院收入、门急诊人次、出院人次、CMI只有点击文字才可以跳转链接。（现在是点击门诊收入后面空白的地方也可以跳转）&#10;feat(component): 为PlIndexTitle组件添加点击事件支持&#10;&#10;- 在PlIndexTitle组件的标题上添加click.native事件监听器&#10;- 将点击事件通过handleClickTitle自定义事件向外传递&#10;- 更新PlTargetCard2组件以响应PlIndexTitle的点击事件&#10;- 移动clickable样式的CSS定位到正确的组件作用域内&#10;- 添加PlIndexTitle组件的导入和注册声明&#10;- 确保点击样式在嵌套组件中正确应用">
+    <list default="true" id="a32d6ec8-0d74-4a1b-8cad-0ab91948ca3e" name="Changes" comment="v127:feat/refactor:需求2597-院端-病组分析（省卫健委DRG）-总览-全院病组一览表下钻，医保病例类型分类及右侧的科室明细数据表删除。（注：市医保DRG的不删除）&#10;feat(diseaseAnalysis): 添加医保案例类型分类联动组件显示控制&#10;&#10;- 引入 vuex mapGetters 方法用于获取状态&#10;- 添加计算属性控制组件显示逻辑">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/diseaseAnalysis/hospital/overview/disease-detail/MedicareCaseTypeClassificationLinkage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/diseaseAnalysis/hospital/overview/disease-detail/MedicareCaseTypeClassificationLinkage.vue" afterDir="false" />
     </list>
     <list id="bd8e474f-42c8-444f-9f2b-07be811ba86b" name="ignore-on-commit" comment="ignore-on-commit" />
     <option name="SHOW_DIALOG" value="false" />
@@ -133,6 +132,12 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="SYNC" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "xmasuhai"
+  }
+}]]></component>
   <component name="GitLabServerManager">
     <selected>-1</selected>
     <servers />
@@ -163,6 +168,12 @@
       </RecentBranches>
     </option>
   </component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "git@github.com:xmasuhai/doms-web-idea-backup.git",
+    "accountId": "7c00b16c-c737-4a58-b998-ae291182bac1"
+  }
+}]]></component>
   <component name="HierarchyBrowserManager">
     <option name="SORT_ALPHABETICALLY" value="true" />
   </component>
@@ -2772,15 +2783,7 @@
       <workItem from="1785123348157" duration="20127000" />
       <workItem from="1785200598288" duration="3272000" />
       <workItem from="1785204151142" duration="19193000" />
-      <workItem from="1785287399802" duration="16830000" />
-    </task>
-    <task id="LOCAL-04565" summary="v127:feat/refactor:需求2276-科室端-病种分析（市医保DRG） ，新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(router): 添加科室端诊断操作明细报表路由配置&#10;&#10;- 新增 diagnosisOperationDetailDeptRoute 路由表&#10;- 配置诊断操作明细页面路径和组件映射&#10;- 设置页面元数据包括标题和菜单显示属性&#10;- 添加 DRG 相关过滤器类型配置">
-      <option name="closed" value="true" />
-      <created>1784880338817</created>
-      <option name="number" value="04565" />
-      <option name="presentableId" value="LOCAL-04565" />
-      <option name="project" value="LOCAL" />
-      <updated>1784880338817</updated>
+      <workItem from="1785287399802" duration="18113000" />
     </task>
     <task id="LOCAL-04566" summary="v127:feat/refactor:需求2276-科室端-病种分析（市医保DRG） ，新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(router): 添加科端诊断操作明细路由配置&#10;&#10;- 引入诊断操作明细科端路由模块&#10;- 更新路由配置文件添加科端诊断操作明细路由映射&#10;- 在病组分析相关路由中集成诊断操作明细功能">
       <option name="closed" value="true" />
@@ -3166,7 +3169,15 @@
       <option name="project" value="LOCAL" />
       <updated>1785303888417</updated>
     </task>
-    <option name="localTasksCounter" value="4614" />
+    <task id="LOCAL-04614" summary="v127:feat/refactor:需求2597-院端-病组分析（省卫健委DRG）-总览-全院病组一览表下钻，医保病例类型分类及右侧的科室明细数据表删除。（注：市医保DRG的不删除）&#10;feat(diseaseAnalysis): 添加医保案例类型分类联动组件显示控制&#10;&#10;- 引入 vuex mapGetters 方法用于获取状态&#10;- 添加计算属性控制组件显示逻辑">
+      <option name="closed" value="true" />
+      <created>1785306970325</created>
+      <option name="number" value="04614" />
+      <option name="presentableId" value="LOCAL-04614" />
+      <option name="project" value="LOCAL" />
+      <updated>1785306970325</updated>
+    </task>
+    <option name="localTasksCounter" value="4615" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -3187,7 +3198,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="MARK_IGNORED_AS_EXCLUDED" value="true" />
-    <MESSAGE value="v127:feat/refactor:需求2467-前端代码规范化修改&#10;fix(department): 修复检查收入组件中的模型代码问题&#10;&#10;- 在检查收入分类排名表格中为code属性添加空字符串默认值&#10;- 在盈余分析组件中导入generateModelCode工具函数&#10;- 为医疗盈余目标完成分析图表添加动态模型代码生成&#10;- 为收入成本趋势分析图表添加动态模型代码生成&#10;- 确保所有图表组件都有正确的唯一标识符" />
     <MESSAGE value="拉取代码-1735 v127 山肿瘤、毓璜顶 院/科端-病组分析（DRG）除分页的表格外，筛选控件改为可选的控件；" />
     <MESSAGE value="v127:feat/refactor:需求2467-前端代码规范化修改&#10;feat(deptCockpit): 为表格组件添加唯一ID标识&#10;&#10;- 在armarium.vue中为两个表格组件添加elemId标识&#10;- 在bed.vue中为床位表格组件添加elemId标识&#10;- 在chartAndTable.vue中为图表表格组件添加elemId标识&#10;- 在diseaseDetail.vue中为疾病详情表格组件添加elemId标识&#10;- 在efficiencyAnalysis.vue中为效率分析表格组件添加elemId标识&#10;- 在fixedAssets.vue中为固定资产表格组件添加elemId标识&#10;- 在incomeStructure.vue中为收入结构表格组件添加elemId标识&#10;- 在outpatientStructure.vue中为门诊结构表格组件添加elemId标识&#10;- 统一导入elemId工具函数并在各个组件中注册到data中使用" />
     <MESSAGE value="v127:feat/refactor:需求2467-前端代码规范化修改&#10;&#10;refactor(deptCockpit): 统一为表格组件添加ID标识&#10;&#10;- 在resourceAllocation模块的armarium.vue、bed.vue、fixedAssets.vue中为pl-grid-table组件添加elemId标识&#10;- 在components/chartAndTable.vue中为PlGridTable组件添加elemId标识&#10;- 在diseaseAnalysis模块的相关组件中引入并使用elemId工具函数&#10;- 在diseaseManagement.vue中引入generateModelCode并为tableConfig添加code字段&#10;- 移除DeptNoGroupRateDetailTable.vue中的多余注释代码和无用组件引用" />
@@ -3212,7 +3222,8 @@
     <MESSAGE value="v127:feat/refactor:需求2647-院端-病组分析（医保版DRG）-总览-全院病组总览，费用消耗指数、时间消耗指数、药品指数、材料指数下钻显示病人分类下拉框，并与总览页面保持一致&#10;refactor(operationDisease): 简化费用消耗指数页面依赖引入&#10;&#10;- 移除未使用的 ScatterChart 组件导入&#10;- 移除未使用的 HeaderTimeFilters 组件导入&#10;- 移除未使用的 API 方法导入 (chargeVsCmi, chargeDeptDistr 等)&#10;- 移除未使用的 ColumnChart 组件导入&#10;- 移除未使用的 genQuadrantDescription 函数导入&#10;- 移除未使用的 PATIENT_TYPE_LIST_DRG_CODE_HASH 常量导入" />
     <MESSAGE value="v127:feat/refactor:需求2314-院端-临床工作量分析-总览-全院临床工作量总览-门诊人次下钻，门诊人次数与出院人次数比模块，标题右侧“异常探查”链接改为：院端-临床工作量分析-入院率异常探查&#10;feat(router): 替换跳转路径和组件名称 入院率异常探查&#10;&#10;- 将路径从 outpatientMatrix 更新为 /hospitalAdmissionRateAbnormalProbe&#10;- 将组件名称从 outpatientMatrix 更新为 HospitalAdmissionRateAbnormalProbe" />
     <MESSAGE value="v127:feat/refactor:需求2435-科室端-专科目标管理驾驶舱，门诊收入、住院收入、门急诊人次、出院人次、CMI只有点击文字才可以跳转链接。（现在是点击门诊收入后面空白的地方也可以跳转）&#10;feat(component): 为PlIndexTitle组件添加点击事件支持&#10;&#10;- 在PlIndexTitle组件的标题上添加click.native事件监听器&#10;- 将点击事件通过handleClickTitle自定义事件向外传递&#10;- 更新PlTargetCard2组件以响应PlIndexTitle的点击事件&#10;- 移动clickable样式的CSS定位到正确的组件作用域内&#10;- 添加PlIndexTitle组件的导入和注册声明&#10;- 确保点击样式在嵌套组件中正确应用" />
-    <option name="LAST_COMMIT_MESSAGE" value="v127:feat/refactor:需求2435-科室端-专科目标管理驾驶舱，门诊收入、住院收入、门急诊人次、出院人次、CMI只有点击文字才可以跳转链接。（现在是点击门诊收入后面空白的地方也可以跳转）&#10;feat(component): 为PlIndexTitle组件添加点击事件支持&#10;&#10;- 在PlIndexTitle组件的标题上添加click.native事件监听器&#10;- 将点击事件通过handleClickTitle自定义事件向外传递&#10;- 更新PlTargetCard2组件以响应PlIndexTitle的点击事件&#10;- 移动clickable样式的CSS定位到正确的组件作用域内&#10;- 添加PlIndexTitle组件的导入和注册声明&#10;- 确保点击样式在嵌套组件中正确应用" />
+    <MESSAGE value="v127:feat/refactor:需求2597-院端-病组分析（省卫健委DRG）-总览-全院病组一览表下钻，医保病例类型分类及右侧的科室明细数据表删除。（注：市医保DRG的不删除）&#10;feat(diseaseAnalysis): 添加医保案例类型分类联动组件显示控制&#10;&#10;- 引入 vuex mapGetters 方法用于获取状态&#10;- 添加计算属性控制组件显示逻辑" />
+    <option name="LAST_COMMIT_MESSAGE" value="v127:feat/refactor:需求2597-院端-病组分析（省卫健委DRG）-总览-全院病组一览表下钻，医保病例类型分类及右侧的科室明细数据表删除。（注：市医保DRG的不删除）&#10;feat(diseaseAnalysis): 添加医保案例类型分类联动组件显示控制&#10;&#10;- 引入 vuex mapGetters 方法用于获取状态&#10;- 添加计算属性控制组件显示逻辑" />
   </component>
   <component name="VueSettings">
     <option name="innerServiceType" value="TS_SERVICE" />
