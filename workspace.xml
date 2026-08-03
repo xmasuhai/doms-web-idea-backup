@@ -44,11 +44,11 @@
     <option name="selectedModelId" value="auto" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a32d6ec8-0d74-4a1b-8cad-0ab91948ca3e" name="Changes" comment="v127:feat/refactor:需求2639-科室端-病种分析（市医保DRG）-出院分析-病组RW-结余率分析下钻：关键病组RW-结余率明细改为新组件；优势病组RW-结余率明细改为新组件；&#10;feat(drg-api): 新增病组RW-结余率图表接口&#10;&#10;- 添加关键病组RW-结余率图表数据请求接口&#10;- 添加优势病组RW-结余率图表数据请求接口">
-      <change afterPath="$PROJECT_DIR$/src/component/diseaseAnalysis/department/leave-hospital-analysis/rw-surplus-ratio-analysis/AdvantageDiseaseRwYieldRateDetail.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/component/diseaseAnalysis/department/leave-hospital-analysis/rw-surplus-ratio-analysis/KeyDiseaseRwYieldRateDetail.vue" afterDir="false" />
+    <list default="true" id="a32d6ec8-0d74-4a1b-8cad-0ab91948ca3e" name="Changes" comment="v127:feat/refactor:需求2639-科室端-病种分析（市医保DRG）-出院分析-病组RW-结余率分析下钻：关键病组RW-结余率明细改为新组件；优势病组RW-结余率明细改为新组件；&#10;feat(diseaseAnalysis): 添加关键病组和优势病组RW结余率明细组件&#10;&#10;- 新增 KeyDiseaseRwYieldRateDetail 组件用于显示关键病组RW结余率明细&#10;- 新增 AdvantageDiseaseRwYieldRateDetail 组件用于显示优势病组RW结余率明细&#10;- 在yieldReport.vue中集成新的明细组件&#10;- 移除原有的YYieldDetails和YAdvantageYieldDetails组件引用&#10;- 更新样式类添加mb20间距调整&#10;- 注释掉旧的明细组件作为临时过渡方案">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/diseaseAnalysis/yieldReport.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/diseaseAnalysis/yieldReport.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/diseaseAnalysis/department/leave-hospital-analysis/rw-surplus-ratio-analysis/AdvantageDiseaseRwYieldRateDetail.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/diseaseAnalysis/department/leave-hospital-analysis/rw-surplus-ratio-analysis/AdvantageDiseaseRwYieldRateDetail.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/diseaseAnalysis/department/leave-hospital-analysis/rw-surplus-ratio-analysis/KeyDiseaseRwYieldRateDetail.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/diseaseAnalysis/department/leave-hospital-analysis/rw-surplus-ratio-analysis/KeyDiseaseRwYieldRateDetail.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/doms-ui/component/chart/bar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/doms-ui/component/chart/bar.vue" afterDir="false" />
     </list>
     <list id="bd8e474f-42c8-444f-9f2b-07be811ba86b" name="ignore-on-commit" comment="ignore-on-commit" />
     <option name="SHOW_DIALOG" value="false" />
@@ -303,60 +303,60 @@
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
       <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0000017870358406" />
-      <entry key="S2" value="1.0365622838280446" />
-      <entry key="S5" value="1.2662032334072801" />
-      <entry key="S10" value="1.515948867125564" />
-      <entry key="S30" value="1.8026912573706424" />
-      <entry key="S60" value="1.9312179971434777" />
-      <entry key="M2" value="2.2346236685206717" />
-      <entry key="M5" value="3.6177451460353818" />
-      <entry key="M10" value="7.55264342702103" />
-      <entry key="M15" value="12.92501982852498" />
-      <entry key="M30" value="28.49570256067637" />
-      <entry key="H1" value="47.06228705789895" />
-      <entry key="H2" value="65.89381695148477" />
-      <entry key="H4" value="92.49978897461067" />
-      <entry key="D1" value="174.77661320569746" />
-      <entry key="W1" value="205.91364932855467" />
+      <entry key="MS500" value="1.0" />
+      <entry key="S2" value="1.0" />
+      <entry key="S5" value="1.0" />
+      <entry key="S10" value="1.0000000000006601" />
+      <entry key="S30" value="1.0000870759206435" />
+      <entry key="S60" value="1.0093323528926026" />
+      <entry key="M2" value="1.0975507482008293" />
+      <entry key="M5" value="1.4564328419821713" />
+      <entry key="M10" value="2.050583017778771" />
+      <entry key="M15" value="3.1793415365784696" />
+      <entry key="M30" value="10.612752470969586" />
+      <entry key="H1" value="27.85310978290306" />
+      <entry key="H2" value="51.008042687003694" />
+      <entry key="H4" value="81.99996752619411" />
+      <entry key="D1" value="173.25536394105467" />
+      <entry key="W1" value="208.14448450351" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
       <entry key="MS500" value="0.0" />
       <entry key="S2" value="0.0" />
-      <entry key="S5" value="2.0100512981460423E-172" />
-      <entry key="S10" value="1.4177627792215598E-86" />
-      <entry key="S30" value="2.4202925102500284E-29" />
-      <entry key="S60" value="4.9196534202766925E-15" />
-      <entry key="M2" value="7.022126793832681E-8" />
-      <entry key="M5" value="0.0014672163087912744" />
-      <entry key="M10" value="0.04667364164795485" />
-      <entry key="M15" value="0.15634158556697858" />
-      <entry key="M30" value="0.5459271988230584" />
-      <entry key="H1" value="1.039711705907525" />
-      <entry key="H2" value="1.5198849281435862" />
-      <entry key="H4" value="2.3323027179061855" />
-      <entry key="D1" value="5.492018466483673" />
-      <entry key="W1" value="6.752698412865478" />
+      <entry key="S5" value="0.0" />
+      <entry key="S10" value="1.2303505791695333E-184" />
+      <entry key="S30" value="4.973662280741452E-62" />
+      <entry key="S60" value="2.230173888056253E-31" />
+      <entry key="M2" value="4.727927147798037E-16" />
+      <entry key="M5" value="7.902690785754596E-7" />
+      <entry key="M10" value="0.0010832086245874297" />
+      <entry key="M15" value="0.01272042026343033" />
+      <entry key="M30" value="0.1557213664228221" />
+      <entry key="H1" value="0.5552897674174402" />
+      <entry key="H2" value="1.110744258039219" />
+      <entry key="H4" value="1.9938230049082417" />
+      <entry key="D1" value="5.350350944607272" />
+      <entry key="W1" value="6.727534992023703" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="2.1310560952610377E-6" />
-      <entry key="MS500" value="0.07340547708348129" />
-      <entry key="S2" value="0.5560979436782024" />
-      <entry key="S5" value="1.0334841904437058" />
-      <entry key="S10" value="1.3907453394859528" />
-      <entry key="S30" value="1.7586445182711963" />
-      <entry key="S60" value="1.9086937815507643" />
-      <entry key="M2" value="2.2224349866226407" />
-      <entry key="M5" value="3.6105658417540294" />
-      <entry key="M10" value="7.589302979769326" />
-      <entry key="M15" value="13.070246083422697" />
-      <entry key="M30" value="29.03021756095002" />
-      <entry key="H1" value="48.09294295823915" />
-      <entry key="H2" value="67.40740555835548" />
-      <entry key="H4" value="94.82747273536837" />
-      <entry key="D1" value="180.26703026051425" />
-      <entry key="W1" value="212.66607386684757" />
+      <entry key="MS100" value="0.004016069635375257" />
+      <entry key="MS500" value="0.33171128514929044" />
+      <entry key="S2" value="0.758909626487027" />
+      <entry key="S5" value="0.8955215158425639" />
+      <entry key="S10" value="0.9463199859686652" />
+      <entry key="S30" value="0.9818617916184676" />
+      <entry key="S60" value="1.0000779375826454" />
+      <entry key="M2" value="1.0924247052549472" />
+      <entry key="M5" value="1.4533309222897774" />
+      <entry key="M10" value="2.049011391695335" />
+      <entry key="M15" value="3.189141627994016" />
+      <entry key="M30" value="10.763907802166287" />
+      <entry key="H1" value="28.402804272778226" />
+      <entry key="H2" value="52.11377587045339" />
+      <entry key="H4" value="83.98962886335052" />
+      <entry key="D1" value="178.6041180770451" />
+      <entry key="W1" value="214.87174136774834" />
     </decayedShown>
   </component>
   <component name="PackageJsonUpdateNotifier">
@@ -2790,23 +2790,7 @@
       <workItem from="1785373604829" duration="567000" />
       <workItem from="1785374231516" duration="863000" />
       <workItem from="1785375191420" duration="19541000" />
-      <workItem from="1785459709535" duration="28371000" />
-    </task>
-    <task id="LOCAL-04579" summary="v127:feat/refactor:需求2276-科室端-病种分析（市医保DRG） ，新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(diseaseAnalysis): 添加部门诊断操作明细表格组件&#10;&#10;- 引入 DiagnosisOperationDetailTableDept 组件&#10;- 引入 DiagnosisOperationDetailDrilldownTableDept 组件&#10;- 引入 DiagnosisOperationDetailDrilldownFeeTypeTableDept 组件&#10;- 在页面容器中添加诊断操作明细相关表格组件&#10;- 注册新引入的表格组件到页面组件列表中">
-      <option name="closed" value="true" />
-      <created>1784889403632</created>
-      <option name="number" value="04579" />
-      <option name="presentableId" value="LOCAL-04579" />
-      <option name="project" value="LOCAL" />
-      <updated>1784889403632</updated>
-    </task>
-    <task id="LOCAL-04580" summary="v127:feat/refactor:需求2276-科室端-病种分析（市医保DRG） ，新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;fix(api): 修复诊断操作明细接口路径错误&#10;&#10;- 修正了 fetchDiagnosisOperationDetailTableDeptDrg 方法中的 API 路径&#10;- 移除了路径末尾多余的 '-drill' 后缀">
-      <option name="closed" value="true" />
-      <created>1784890165555</created>
-      <option name="number" value="04580" />
-      <option name="presentableId" value="LOCAL-04580" />
-      <option name="project" value="LOCAL" />
-      <updated>1784890165555</updated>
+      <workItem from="1785459709535" duration="30607000" />
     </task>
     <task id="LOCAL-04581" summary="v127:feat/refactor:需求2276-科室端-病种分析（市医保DRG） ，新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;refactor(diseaseAnalysis): 优化诊断操作明细组件的请求参数处理&#10;&#10;- 提取公共请求参数计算方法 getCommonRequestParams&#10;- 移除硬编码的 indModelCode 值，改为空字符串&#10;- 简化 checkDateParamsValid 函数调用方式">
       <option name="closed" value="true" />
@@ -3184,7 +3168,23 @@
       <option name="project" value="LOCAL" />
       <updated>1785753914614</updated>
     </task>
-    <option name="localTasksCounter" value="4628" />
+    <task id="LOCAL-04628" summary="v127:feat/refactor:需求2639-科室端-病种分析（市医保DRG）-出院分析-病组RW-结余率分析下钻：关键病组RW-结余率明细改为新组件；优势病组RW-结余率明细改为新组件；&#10;feat(diseaseAnalysis): 添加病组RW-结余率明细组件&#10;&#10;- 新增 AdvantageDiseaseRwYieldRateDetail 组件用于优势病组RW-结余率明细展示&#10;- 新增 KeyDiseaseRwYieldRateDetail 组件用于关键病组RW-结余率明细展示&#10;- 集成图表标签切换和排序功能&#10;- 添加数据验证和参数检查逻辑&#10;- 配置图表数据请求和响应处理">
+      <option name="closed" value="true" />
+      <created>1785754067174</created>
+      <option name="number" value="04628" />
+      <option name="presentableId" value="LOCAL-04628" />
+      <option name="project" value="LOCAL" />
+      <updated>1785754067174</updated>
+    </task>
+    <task id="LOCAL-04629" summary="v127:feat/refactor:需求2639-科室端-病种分析（市医保DRG）-出院分析-病组RW-结余率分析下钻：关键病组RW-结余率明细改为新组件；优势病组RW-结余率明细改为新组件；&#10;feat(diseaseAnalysis): 添加关键病组和优势病组RW结余率明细组件&#10;&#10;- 新增 KeyDiseaseRwYieldRateDetail 组件用于显示关键病组RW结余率明细&#10;- 新增 AdvantageDiseaseRwYieldRateDetail 组件用于显示优势病组RW结余率明细&#10;- 在yieldReport.vue中集成新的明细组件&#10;- 移除原有的YYieldDetails和YAdvantageYieldDetails组件引用&#10;- 更新样式类添加mb20间距调整&#10;- 注释掉旧的明细组件作为临时过渡方案">
+      <option name="closed" value="true" />
+      <created>1785754111636</created>
+      <option name="number" value="04629" />
+      <option name="presentableId" value="LOCAL-04629" />
+      <option name="project" value="LOCAL" />
+      <updated>1785754111636</updated>
+    </task>
+    <option name="localTasksCounter" value="4630" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -3205,8 +3205,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="MARK_IGNORED_AS_EXCLUDED" value="true" />
-    <MESSAGE value="v127:feat/refactor:需求2467-前端代码规范化修改&#10;refactor(diseaseAnalysis): 重构代码以添加模块标识和清理废弃逻辑&#10;&#10;- 为多个表格组件添加动态 ID 生成，使用 elemId 函数统一管理元素标识&#10;- 新增 getIndModelCode 方法，集中管理不同类型的指标模型代码映射&#10;- 将硬编码的指标模型代码替换为动态获取方式&#10;- 删除已废弃的注释代码块，包括 V93 版本重构后不再使用的逻辑&#10;- 在表格绑定数据中添加 code 属性&#10;- 清理无用的导入语句和变量声明&#10;- 统一代码风格，移除多余空行和空白字符" />
-    <MESSAGE value="v127:feat/refactor:需求2467-前端代码规范化修改&#10;feat(drg): 为DRG相关页面添加表格ID标识和代码优化&#10;&#10;- 在drgCityInHospital.vue中为表格组件添加elemId标识&#10;- 在drgProvinceInHospital.vue中引入elemId工具函数并移除无用watch&#10;- 在dip/inHospital.vue中为表格组件添加ID属性绑定&#10;- 在drg/inHospital.vue中引入elemId并优化代码结构&#10;- 统一使用generateModelCode生成模型代码&#10;- 将硬编码的indModelCode提取为data属性" />
     <MESSAGE value="v127:feat/refactor:需求2467-前端代码规范化修改&#10;refactor(equipment): 更新设备效益分析组件以使用动态ID生成&#10;&#10;- 为所有图表和表格组件添加elemId方法生成唯一ID&#10;- 在treatEquipmentDetail组件中为模块面板添加code属性&#10;- 从工具文件导入elemId函数并在组件数据中暴露&#10;- 统一使用动态ID替代静态ID提高组件可维护性" />
     <MESSAGE value="v127:feat/refactor:需求2276-科室端-病种分析（市医保DRG） ，新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(diagnosisOperationDetail): 添加费用类型维度下拉框功能&#10;&#10;- 新增 fetchDrilldownFeeTypeDimensionSelectOptionsDept API 接口&#10;- 在 store 中添加 dimensionFeeTypeLoading 和 dimensionFeeTypeOptions 状态&#10;- 实现 requestDimensionFeeTypeOptions 异步方法获取费用维度选项" />
     <MESSAGE value="v127:feat/refactor:需求2276-科室端-病种分析（市医保DRG） ，新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(diseaseAnalysis): 添加指标模型代码并优化费用明细组件&#10;&#10;- 在多个组件中添加 indModelCode 属性用于指标模型标识&#10;- 重构费用类型明细表格组件的数据加载逻辑&#10;- 集成维度费用类型选项的获取功能&#10;- 更新组件中的变量命名以提高一致性&#10;- 添加 Vuex actions 映射支持数据请求&#10;- 优化组件创建时的数据初始化流程" />
@@ -3230,7 +3228,9 @@
     <MESSAGE value="v128:feat/refactor:需求2466-科室端-应用配置-关键病组自定义（DRG）、DIP，在关键病组自定义（DRG）表格中，添加RW列&#10;feat(applicationConfig): 添加rw字段到左侧固定列&#10;&#10;- 在leftFixedColumnFields数组中添加'rw'字段&#10;- 确保表格左侧固定列显示rw相关数据" />
     <MESSAGE value="v127:feat/refactor:需求2435-科室端-专科目标管理驾驶舱，门诊收入、住院收入、门急诊人次、出院人次、CMI只有点击文字才可以跳转链接。（现在是点击门诊收入后面空白的地方也可以跳转）&#10;refactor(card): 优化卡片点击事件处理逻辑&#10;&#10;- 移除卡片容器上的点击事件绑定&#10;- 将点击事件绑定到标题组件上" />
     <MESSAGE value="v127:feat/refactor:需求2639-科室端-病种分析（市医保DRG）-出院分析-病组RW-结余率分析下钻：关键病组RW-结余率明细改为新组件；优势病组RW-结余率明细改为新组件；&#10;feat(drg-api): 新增病组RW-结余率图表接口&#10;&#10;- 添加关键病组RW-结余率图表数据请求接口&#10;- 添加优势病组RW-结余率图表数据请求接口" />
-    <option name="LAST_COMMIT_MESSAGE" value="v127:feat/refactor:需求2639-科室端-病种分析（市医保DRG）-出院分析-病组RW-结余率分析下钻：关键病组RW-结余率明细改为新组件；优势病组RW-结余率明细改为新组件；&#10;feat(drg-api): 新增病组RW-结余率图表接口&#10;&#10;- 添加关键病组RW-结余率图表数据请求接口&#10;- 添加优势病组RW-结余率图表数据请求接口" />
+    <MESSAGE value="v127:feat/refactor:需求2639-科室端-病种分析（市医保DRG）-出院分析-病组RW-结余率分析下钻：关键病组RW-结余率明细改为新组件；优势病组RW-结余率明细改为新组件；&#10;feat(diseaseAnalysis): 添加病组RW-结余率明细组件&#10;&#10;- 新增 AdvantageDiseaseRwYieldRateDetail 组件用于优势病组RW-结余率明细展示&#10;- 新增 KeyDiseaseRwYieldRateDetail 组件用于关键病组RW-结余率明细展示&#10;- 集成图表标签切换和排序功能&#10;- 添加数据验证和参数检查逻辑&#10;- 配置图表数据请求和响应处理" />
+    <MESSAGE value="v127:feat/refactor:需求2639-科室端-病种分析（市医保DRG）-出院分析-病组RW-结余率分析下钻：关键病组RW-结余率明细改为新组件；优势病组RW-结余率明细改为新组件；&#10;feat(diseaseAnalysis): 添加关键病组和优势病组RW结余率明细组件&#10;&#10;- 新增 KeyDiseaseRwYieldRateDetail 组件用于显示关键病组RW结余率明细&#10;- 新增 AdvantageDiseaseRwYieldRateDetail 组件用于显示优势病组RW结余率明细&#10;- 在yieldReport.vue中集成新的明细组件&#10;- 移除原有的YYieldDetails和YAdvantageYieldDetails组件引用&#10;- 更新样式类添加mb20间距调整&#10;- 注释掉旧的明细组件作为临时过渡方案" />
+    <option name="LAST_COMMIT_MESSAGE" value="v127:feat/refactor:需求2639-科室端-病种分析（市医保DRG）-出院分析-病组RW-结余率分析下钻：关键病组RW-结余率明细改为新组件；优势病组RW-结余率明细改为新组件；&#10;feat(diseaseAnalysis): 添加关键病组和优势病组RW结余率明细组件&#10;&#10;- 新增 KeyDiseaseRwYieldRateDetail 组件用于显示关键病组RW结余率明细&#10;- 新增 AdvantageDiseaseRwYieldRateDetail 组件用于显示优势病组RW结余率明细&#10;- 在yieldReport.vue中集成新的明细组件&#10;- 移除原有的YYieldDetails和YAdvantageYieldDetails组件引用&#10;- 更新样式类添加mb20间距调整&#10;- 注释掉旧的明细组件作为临时过渡方案" />
   </component>
   <component name="VueSettings">
     <option name="innerServiceType" value="TS_SERVICE" />
