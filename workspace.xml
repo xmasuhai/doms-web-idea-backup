@@ -44,7 +44,9 @@
     <option name="selectedModelId" value="auto" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a32d6ec8-0d74-4a1b-8cad-0ab91948ca3e" name="Changes" comment="v127:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;fix(drg): 修复医院诊断操作详情页面的DRG分组类型初始化问题&#10;&#10;- 将drgGroupType默认值从null修改为1&#10;- 更新fetchCalibreOptionsFromStore调用以使用实例的drgGroupType值&#10;- 移除硬编码的drgGroupType参数值，改用动态绑定" />
+    <list default="true" id="a32d6ec8-0d74-4a1b-8cad-0ab91948ca3e" name="Changes" comment="v127:feat/refactor:需求2175-院端-病组分析（DRG支付），新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;fix(drg): 修复医院诊断操作详情页面的DRG分组类型初始化问题&#10;&#10;- 将drgGroupType默认值从null修改为1&#10;- 更新fetchCalibreOptionsFromStore调用以使用实例的drgGroupType值&#10;- 移除硬编码的drgGroupType参数值，改用动态绑定">
+      <change beforePath="$PROJECT_DIR$/src/views/applicationConfig/KeyDiseaseCustom.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/applicationConfig/KeyDiseaseCustom.vue" afterDir="false" />
+    </list>
     <list id="bd8e474f-42c8-444f-9f2b-07be811ba86b" name="ignore-on-commit" comment="ignore-on-commit" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -297,23 +299,23 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0" />
-      <entry key="S2" value="1.0" />
-      <entry key="S5" value="1.0" />
-      <entry key="S10" value="1.0" />
-      <entry key="S30" value="1.0" />
-      <entry key="S60" value="1.0" />
-      <entry key="M2" value="1.0000000048762838" />
-      <entry key="M5" value="1.0021710781376347" />
-      <entry key="M10" value="1.190892413814279" />
-      <entry key="M15" value="1.9180161150758592" />
-      <entry key="M30" value="5.868652787797802" />
-      <entry key="H1" value="14.674227834809587" />
-      <entry key="H2" value="32.008089400698665" />
-      <entry key="H4" value="57.04704905256383" />
-      <entry key="D1" value="105.87359422725217" />
-      <entry key="W1" value="119.50415935432325" />
+      <entry key="MS100" value="1.0000307879971073" />
+      <entry key="MS500" value="1.1873009747399665" />
+      <entry key="S2" value="2.4344093858953295" />
+      <entry key="S5" value="3.225700308793914" />
+      <entry key="S10" value="3.582582368105022" />
+      <entry key="S30" value="3.853511146637314" />
+      <entry key="S60" value="3.9257948606365773" />
+      <entry key="M2" value="3.962653984854884" />
+      <entry key="M5" value="3.987161208782198" />
+      <entry key="M10" value="4.182828798285868" />
+      <entry key="M15" value="4.911227600684912" />
+      <entry key="M30" value="8.861423620598146" />
+      <entry key="H1" value="17.666339253940823" />
+      <entry key="H2" value="34.99993825978375" />
+      <entry key="H4" value="60.03993497103593" />
+      <entry key="D1" value="108.87142098943396" />
+      <entry key="W1" value="122.50380950691257" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
@@ -321,37 +323,37 @@
       <entry key="S2" value="0.0" />
       <entry key="S5" value="0.0" />
       <entry key="S10" value="0.0" />
-      <entry key="S30" value="2.651547012846916E-199" />
-      <entry key="S60" value="1.0968525475904147E-99" />
-      <entry key="M2" value="7.315366348599781E-50" />
-      <entry key="M5" value="5.805142619455388E-20" />
-      <entry key="M10" value="5.384964721770897E-10" />
-      <entry key="M15" value="1.1317028268453429E-6" />
-      <entry key="M30" value="0.0023786369529248137" />
-      <entry key="H1" value="0.10905443491003804" />
-      <entry key="H2" value="0.7384230271446347" />
-      <entry key="H4" value="1.921486151757401" />
-      <entry key="D1" value="4.263319005653769" />
-      <entry key="W1" value="4.887436423806946" />
+      <entry key="S30" value="2.501513078074833E-199" />
+      <entry key="S60" value="1.065368793284492E-99" />
+      <entry key="M2" value="7.209612809854224E-50" />
+      <entry key="M5" value="5.771427420089834E-20" />
+      <entry key="M10" value="5.369304508998244E-10" />
+      <entry key="M15" value="1.1295076644366525E-6" />
+      <entry key="M30" value="0.0023763289137518477" />
+      <entry key="H1" value="0.10900151321575796" />
+      <entry key="H2" value="0.7382438352581762" />
+      <entry key="H4" value="1.9212529956891413" />
+      <entry key="D1" value="4.263232781686236" />
+      <entry key="W1" value="4.887422302756064" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.9012504626108302" />
-      <entry key="MS500" value="0.9794202975869268" />
-      <entry key="S2" value="0.9948148855014217" />
-      <entry key="S5" value="0.9979227189990506" />
-      <entry key="S10" value="0.998960819551523" />
-      <entry key="S30" value="0.9996534864594093" />
-      <entry key="S60" value="0.9998267282181494" />
-      <entry key="M2" value="0.9999133651854678" />
-      <entry key="M5" value="1.0021279497971398" />
-      <entry key="M10" value="1.1905238060427668" />
-      <entry key="M15" value="1.9169317871748233" />
-      <entry key="M30" value="5.868369103337814" />
-      <entry key="H1" value="14.779690102689202" />
-      <entry key="H2" value="32.742399947611396" />
-      <entry key="H4" value="58.96478178306419" />
-      <entry key="D1" value="110.1357609346749" />
-      <entry key="W1" value="124.39141124885445" />
+      <entry key="MS100" value="0.2268799008186063" />
+      <entry key="MS500" value="0.8396706954592311" />
+      <entry key="S2" value="2.197634934997409" />
+      <entry key="S5" value="3.097180132027792" />
+      <entry key="S10" value="3.5109651067432512" />
+      <entry key="S30" value="3.827806284869298" />
+      <entry key="S60" value="3.9126999234665214" />
+      <entry key="M2" value="3.9560448363829708" />
+      <entry key="M5" value="3.984494187123667" />
+      <entry key="M10" value="4.181146739511498" />
+      <entry key="M15" value="4.909268481897854" />
+      <entry key="M30" value="8.860701491360988" />
+      <entry key="H1" value="17.771530915023966" />
+      <entry key="H2" value="35.73396088155332" />
+      <entry key="H4" value="61.957380131031854" />
+      <entry key="D1" value="113.1334923506206" />
+      <entry key="W1" value="127.39104597440104" />
     </decayedShown>
   </component>
   <component name="PackageJsonUpdateNotifier">
@@ -2803,7 +2805,7 @@
       <workItem from="1785373604829" duration="567000" />
       <workItem from="1785374231516" duration="863000" />
       <workItem from="1785375191420" duration="19541000" />
-      <workItem from="1785459709535" duration="7837000" />
+      <workItem from="1785459709535" duration="11134000" />
     </task>
     <task id="LOCAL-04576" summary="v127:feat/refactor:需求2276-科室端-病种分析（市医保DRG） ，新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(store): 添加院端病组分析诊断操作明细模块&#10;&#10;- 新增诊断操作明细部门store模块&#10;- 集成维度下拉框数据请求功能&#10;- 添加诊断代码、名称及操作代码、名称状态管理&#10;- 实现维度类型选项加载和映射逻辑&#10;- 在疾病组分析store中注册新模块">
       <option name="closed" value="true" />
