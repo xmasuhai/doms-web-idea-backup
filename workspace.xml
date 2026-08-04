@@ -44,9 +44,7 @@
     <option name="selectedModelId" value="auto" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a32d6ec8-0d74-4a1b-8cad-0ab91948ca3e" name="Changes" comment="拉取代码-图表通知算法更新">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="a32d6ec8-0d74-4a1b-8cad-0ab91948ca3e" name="Changes" comment="v128:feat/refactor:需求2639-科室端-病种分析（市医保DRG）-出院分析-病组RW-结余率分析下钻：关键病组RW-结余率明细改为新组件；优势病组RW-结余率明细改为新组件；&#10;fix(charts): 修复图表排序字段更新问题&#10;&#10;- 在 tabsBarChange 方法中添加 sort.field 更新逻辑&#10;- 确保图表类型切换时排序字段同步更新&#10;- 修正优势疾病RW收益率详情组件排序功能&#10;- 修正关键疾病RW收益率详情组件排序功能" />
     <list id="bd8e474f-42c8-444f-9f2b-07be811ba86b" name="ignore-on-commit" comment="ignore-on-commit" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -299,61 +297,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.000000001099885" />
-      <entry key="MS500" value="1.0161536072364183" />
-      <entry key="S2" value="1.363179192437483" />
-      <entry key="S5" value="1.7967631898292935" />
-      <entry key="S10" value="2.1819332794092" />
-      <entry key="S30" value="2.870223316210887" />
-      <entry key="S60" value="3.6983788176763572" />
-      <entry key="M2" value="4.972684553066985" />
-      <entry key="M5" value="7.2793023402085675" />
-      <entry key="M10" value="9.336268632140166" />
-      <entry key="M15" value="10.924965119106183" />
-      <entry key="M30" value="17.85380606126571" />
-      <entry key="H1" value="34.431868905599835" />
-      <entry key="H2" value="58.0360726291405" />
-      <entry key="H4" value="89.83103037252761" />
-      <entry key="D1" value="183.14755990190588" />
-      <entry key="W1" value="218.9545088085097" />
+      <entry key="MS100" value="1.637280314360566" />
+      <entry key="MS500" value="1.9285931245566927" />
+      <entry key="S2" value="2.3328137777768574" />
+      <entry key="S5" value="2.7806454393054985" />
+      <entry key="S10" value="3.172124786017048" />
+      <entry key="S30" value="3.865915995829743" />
+      <entry key="S60" value="4.695602712520969" />
+      <entry key="M2" value="5.970817885613009" />
+      <entry key="M5" value="8.278209202918395" />
+      <entry key="M10" value="10.335567589231223" />
+      <entry key="M15" value="11.92441822216191" />
+      <entry key="M30" value="18.85335918047147" />
+      <entry key="H1" value="35.43143798803649" />
+      <entry key="H2" value="59.03570946498407" />
+      <entry key="H4" value="90.83074931059556" />
+      <entry key="D1" value="184.1474643969081" />
+      <entry key="W1" value="219.9544924974975" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
       <entry key="MS500" value="0.0" />
       <entry key="S2" value="0.0" />
       <entry key="S5" value="0.0" />
-      <entry key="S10" value="3.3084230775271496E-208" />
-      <entry key="S30" value="6.916297732776147E-70" />
-      <entry key="S60" value="2.6298890117187953E-35" />
-      <entry key="M2" value="5.13416855974173E-18" />
-      <entry key="M5" value="1.2944781616140187E-7" />
-      <entry key="M10" value="4.384014467056263E-4" />
-      <entry key="M15" value="0.006959980768285614" />
-      <entry key="M30" value="0.1151864770536925" />
-      <entry key="H1" value="0.47758020266269635" />
-      <entry key="H2" value="1.0300952849813179" />
-      <entry key="H4" value="1.920075313211419" />
-      <entry key="D1" value="5.316847612782709" />
-      <entry key="W1" value="6.721500619432602" />
+      <entry key="S10" value="3.2935506493916957E-208" />
+      <entry key="S30" value="6.905918501997068E-70" />
+      <entry key="S60" value="2.627914944484624E-35" />
+      <entry key="M2" value="5.132241273735263E-18" />
+      <entry key="M5" value="1.2942837690357687E-7" />
+      <entry key="M10" value="4.3836852796286165E-4" />
+      <entry key="M15" value="0.006959632355986547" />
+      <entry key="M30" value="0.1151835939359878" />
+      <entry key="H1" value="0.47757422570867747" />
+      <entry key="H2" value="1.0300888390991576" />
+      <entry key="H4" value="1.920069305709613" />
+      <entry key="D1" value="5.316844840234062" />
+      <entry key="W1" value="6.721500118714535" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="4.0097065876913284E-7" />
-      <entry key="MS500" value="0.053677801702413416" />
-      <entry key="S2" value="0.6636639675087569" />
-      <entry key="S5" value="1.3325461673136214" />
-      <entry key="S10" value="1.8603143462101674" />
-      <entry key="S30" value="2.7205706673526873" />
-      <entry key="S60" value="3.6126328686418483" />
-      <entry key="M2" value="4.924711236062064" />
-      <entry key="M5" value="7.2569168664254935" />
-      <entry key="M10" value="9.3237128824375" />
-      <entry key="M15" value="10.922066129356583" />
-      <entry key="M30" value="17.961290369321276" />
-      <entry key="H1" value="34.90241735771572" />
-      <entry key="H2" value="59.06039538544437" />
-      <entry key="H4" value="91.7465312431517" />
-      <entry key="D1" value="188.46272567526032" />
-      <entry key="W1" value="225.67571795956013" />
+      <entry key="MS100" value="0.6372805691903383" />
+      <entry key="MS500" value="0.9628839136042431" />
+      <entry key="S2" value="1.626605122633774" />
+      <entry key="S5" value="2.31162220948612" />
+      <entry key="S10" value="2.8474563112605944" />
+      <entry key="S30" value="3.7149872377378337" />
+      <entry key="S60" value="4.6091704991773295" />
+      <entry key="M2" value="5.922487192787141" />
+      <entry key="M5" value="8.255676920163243" />
+      <entry key="M10" value="10.322937694190959" />
+      <entry key="M15" value="11.921469318157236" />
+      <entry key="M30" value="18.960815768193036" />
+      <entry key="H1" value="35.901968036122156" />
+      <entry key="H2" value="60.060019553968594" />
+      <entry key="H4" value="92.74624105924583" />
+      <entry key="D1" value="189.46262687712616" />
+      <entry key="W1" value="226.6757010733566" />
     </decayedShown>
   </component>
   <component name="PackageJsonUpdateNotifier">
@@ -414,101 +412,101 @@
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;2a1a7435_parent_location_hash&quot;: &quot;2a1a7435&quot;,
-    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
-    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder0&quot;: &quot;0&quot;,
-    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder1&quot;: &quot;1&quot;,
-    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder2&quot;: &quot;2&quot;,
-    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder3&quot;: &quot;3&quot;,
-    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder4&quot;: &quot;4&quot;,
-    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder5&quot;: &quot;5&quot;,
-    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth0&quot;: &quot;75&quot;,
-    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth1&quot;: &quot;75&quot;,
-    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth2&quot;: &quot;75&quot;,
-    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth3&quot;: &quot;75&quot;,
-    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth4&quot;: &quot;75&quot;,
-    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth5&quot;: &quot;1426&quot;,
-    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder0&quot;: &quot;0&quot;,
-    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder1&quot;: &quot;1&quot;,
-    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder2&quot;: &quot;2&quot;,
-    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder3&quot;: &quot;3&quot;,
-    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder4&quot;: &quot;4&quot;,
-    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder5&quot;: &quot;5&quot;,
-    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth0&quot;: &quot;301&quot;,
-    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth1&quot;: &quot;301&quot;,
-    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth2&quot;: &quot;300&quot;,
-    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth3&quot;: &quot;299&quot;,
-    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth4&quot;: &quot;300&quot;,
-    &quot;FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth5&quot;: &quot;300&quot;,
-    &quot;Node.js.useAllCheckColumn.js.executor&quot;: &quot;Debug&quot;,
-    &quot;Notification.DisplayName-DoNotAsk-JavaScript: Code Vision Performance&quot;: &quot;JavaScript: Code Vision 性能观察程序&quot;,
-    &quot;Notification.DoNotAsk-JavaScript: Code Vision Performance&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.CodyProjectSettingsMigration&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;SHELLCHECK.PATH&quot;: &quot;C:\\Users\\xushuai\\AppData\\Roaming\\JetBrains\\WebStorm2024.1\\plugins\\Shell Script\\shellcheck.exe&quot;,
-    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;app.teamhub.selectedTeam&quot;: &quot;https://github.com/xmastan/department-management-web&quot;,
-    &quot;buildsPattern&quot;: &quot;&quot;,
-    &quot;chainlesschain.chat.sessionIds&quot;: &quot;&quot;,
-    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
-    &quot;com.codeium.enabled&quot;: &quot;true&quot;,
-    &quot;com.codeium.snoozedEndTime&quot;: &quot;0&quot;,
-    &quot;com.github.patou.gitmoji.migration-offered&quot;: &quot;true&quot;,
-    &quot;com.google.cloudcode.ide_session_index&quot;: &quot;20240202_0001&quot;,
-    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
-    &quot;copilot.chat.legacySessionMetadata.migrated&quot;: &quot;true&quot;,
-    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
-    &quot;didalgo.chatgpt.ToolWindow.ACTIVE&quot;: &quot;GPT_4&quot;,
-    &quot;file.manager.left.side.uri&quot;: &quot;file:///C:/Users/xushuai/&quot;,
-    &quot;file.manager.right.side.uri&quot;: &quot;file:///C:/Users/xushuai/&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;18.20.8&quot;,
-    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;18.19.130&quot;,
-    &quot;javascript.preferred.runtime.type.id&quot;: &quot;node&quot;,
-    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/project/doms_web/src/component/diseaseAnalysis/department/diagnosis-operation-detail&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;SCSS&quot;,
-    &quot;network.radicle.jetbrains.radiclejetbrainsplugin.config.path&quot;: &quot;&quot;,
-    &quot;network.radicle.jetbrains.radiclejetbrainsplugin.config.radSeedKey&quot;: &quot;http://localhost:8080&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.jshint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.stylelint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.jshint&quot;: &quot;&quot;,
-    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
-    &quot;node.js.selected.package.stylelint&quot;: &quot;&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;npm.testing.executor&quot;: &quot;Debug&quot;,
-    &quot;npm.本地构建打包.executor&quot;: &quot;Run&quot;,
-    &quot;npm.本地运行项目.executor&quot;: &quot;Debug&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
-    &quot;settings.editor.splitter.proportion&quot;: &quot;0.19736843&quot;,
-    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;D:\\software\\JetBrains\\WebStorm 2024.3\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;,
-    &quot;typescript.add.unambiguous.imports.on.the.fly&quot;: &quot;true&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "2a1a7435_parent_location_hash": "2a1a7435",
+    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
+    "FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder0": "0",
+    "FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder1": "1",
+    "FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder2": "2",
+    "FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder3": "3",
+    "FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder4": "4",
+    "FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder5": "5",
+    "FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth0": "75",
+    "FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth1": "75",
+    "FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth2": "75",
+    "FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth3": "75",
+    "FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth4": "75",
+    "FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth5": "1440",
+    "FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder0": "0",
+    "FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder1": "1",
+    "FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder2": "2",
+    "FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder3": "3",
+    "FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder4": "4",
+    "FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder5": "5",
+    "FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth0": "303",
+    "FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth1": "303",
+    "FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth2": "302",
+    "FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth3": "302",
+    "FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth4": "303",
+    "FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth5": "302",
+    "Node.js.useAllCheckColumn.js.executor": "Debug",
+    "Notification.DisplayName-DoNotAsk-JavaScript: Code Vision Performance": "JavaScript: Code Vision 性能观察程序",
+    "Notification.DoNotAsk-JavaScript: Code Vision Performance": "true",
+    "RunOnceActivity.CodyProjectSettingsMigration": "true",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "SHELLCHECK.PATH": "C:\\Users\\xushuai\\AppData\\Roaming\\JetBrains\\WebStorm2024.1\\plugins\\Shell Script\\shellcheck.exe",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "app.teamhub.selectedTeam": "https://github.com/xmastan/department-management-web",
+    "buildsPattern": "",
+    "chainlesschain.chat.sessionIds": "",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "com.codeium.enabled": "true",
+    "com.codeium.snoozedEndTime": "0",
+    "com.github.patou.gitmoji.migration-offered": "true",
+    "com.google.cloudcode.ide_session_index": "20240202_0001",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "copilot.chat.legacySessionMetadata.migrated": "true",
+    "dart.analysis.tool.window.visible": "false",
+    "didalgo.chatgpt.ToolWindow.ACTIVE": "GPT_4",
+    "file.manager.left.side.uri": "file:///C:/Users/xushuai/",
+    "file.manager.right.side.uri": "file:///C:/Users/xushuai/",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "javascript.nodejs.core.library.configured.version": "18.20.8",
+    "javascript.nodejs.core.library.typings.version": "18.19.130",
+    "javascript.preferred.runtime.type.id": "node",
+    "junie.onboarding.icon.badge.shown": "true",
+    "last_opened_file_path": "D:/project/doms_web/src/component/diseaseAnalysis/department/diagnosis-operation-detail",
+    "list.type.of.created.stylesheet": "SCSS",
+    "network.radicle.jetbrains.radiclejetbrainsplugin.config.path": "",
+    "network.radicle.jetbrains.radiclejetbrainsplugin.config.radSeedKey": "http://localhost:8080",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.jshint": "true",
+    "node.js.detected.package.standard": "true",
+    "node.js.detected.package.stylelint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.jshint": "",
+    "node.js.selected.package.standard": "",
+    "node.js.selected.package.stylelint": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_interpreter_path": "node",
+    "nodejs_package_manager_path": "npm",
+    "npm.testing.executor": "Debug",
+    "npm.本地构建打包.executor": "Run",
+    "npm.本地运行项目.executor": "Debug",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
+    "settings.editor.splitter.proportion": "0.19736843",
+    "to.speed.mode.migration.done": "true",
+    "ts.external.directory.path": "D:\\software\\JetBrains\\WebStorm 2024.3\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
+    "typescript.add.unambiguous.imports.on.the.fly": "true",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;stardust.markdown.MarkdownSplitEditorSuppressor:keyList&quot;: [],
-    &quot;vue.recent.templates&quot;: [
-      &quot;Vue Options API Component&quot;
+  "keyToStringList": {
+    "stardust.markdown.MarkdownSplitEditorSuppressor:keyList": [],
+    "vue.recent.templates": [
+      "Vue Options API Component"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\project\doms_web\src\component\diseaseAnalysis\department\diagnosis-operation-detail" />
@@ -601,6 +599,24 @@
     <configuration useDefault="false">C:\Users\xushuai\AppData\Roaming\Subversion</configuration>
     <supportedVersion>125</supportedVersion>
     <option name="runUnderTerminal" value="true" />
+  </component>
+  <component name="SvnFileUrlMappingImpl">
+    <option name="myMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="D:\project\doms_web" />
+          <option name="myCopyRoot" value="D:\project\doms_web" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
+    <option name="myMoreRealMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="D:\project\doms_web" />
+          <option name="myCopyRoot" value="D:\project\doms_web" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
   </component>
   <component name="TDDPredictState">
     <testRunHistory>
@@ -2789,15 +2805,7 @@
       <workItem from="1785375191420" duration="19541000" />
       <workItem from="1785459709535" duration="30745000" />
       <workItem from="1785805347614" duration="3777000" />
-      <workItem from="1785810151944" duration="604000" />
-    </task>
-    <task id="LOCAL-04585" summary="v127:feat/refactor:需求2467-前端代码规范化修改&#10;feat(BIEAnalysis): 添加elemId全局变量并优化组件结构&#10;&#10;- 在deptCompare.vue、detailsDialog.vue、DiseaseUnitMarginalContributionRankTable.vue和MedicalGroupIncomeAnalysis.vue中添加elemId变量">
-      <option name="closed" value="true" />
-      <created>1785117871141</created>
-      <option name="number" value="04585" />
-      <option name="presentableId" value="LOCAL-04585" />
-      <option name="project" value="LOCAL" />
-      <updated>1785117871141</updated>
+      <workItem from="1785810151944" duration="1540000" />
     </task>
     <task id="LOCAL-04586" summary="v127:feat/refactor:需求2467-前端代码规范化修改&#10;feat(BIEAnalysis): 在outpatientAmountDialog.vue组件中新增code属性&#10;- 设置唯一标识码为3CF597062B7E58AADB7CFB436945B7B0">
       <option name="closed" value="true" />
@@ -3183,7 +3191,15 @@
       <option name="project" value="LOCAL" />
       <updated>1785810098776</updated>
     </task>
-    <option name="localTasksCounter" value="4634" />
+    <task id="LOCAL-04634" summary="v128:feat/refactor:需求2639-科室端-病种分析（市医保DRG）-出院分析-病组RW-结余率分析下钻：关键病组RW-结余率明细改为新组件；优势病组RW-结余率明细改为新组件；&#10;fix(charts): 修复图表排序字段更新问题&#10;&#10;- 在 tabsBarChange 方法中添加 sort.field 更新逻辑&#10;- 确保图表类型切换时排序字段同步更新&#10;- 修正优势疾病RW收益率详情组件排序功能&#10;- 修正关键疾病RW收益率详情组件排序功能">
+      <option name="closed" value="true" />
+      <created>1785812465406</created>
+      <option name="number" value="04634" />
+      <option name="presentableId" value="LOCAL-04634" />
+      <option name="project" value="LOCAL" />
+      <updated>1785812465406</updated>
+    </task>
+    <option name="localTasksCounter" value="4635" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -3204,7 +3220,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="MARK_IGNORED_AS_EXCLUDED" value="true" />
-    <MESSAGE value="v127:fix/refactor:科室端 科室页面 收支余分析 /总览&#10;fix(BIEAnalysisOverview): 解决收入类型选择框禁用条件问题&#10;&#10;- 添加部门收入值判断条件&#10;- 当部门收入值小于等于1时禁用下拉框&#10;- 保持原有的禁用逻辑不变" />
     <MESSAGE value="v127:fix/refactor:科室端 科室页面 收支余分析 /总览&#10;feat(BIEAnalysis): 添日期下拉框等参数切换时，收入口径选项显示隐藏处理功能&#10;&#10;- 在mainTabType切换时调用incomeOptionsHandler方法&#10;- 根据tab切换显示组件类型处理收入口径选项的显示/隐藏&#10;- 添加注释说明tab切换对收入口径选项的影响逻辑" />
     <MESSAGE value="v127:feat/refactor:需求2306-1、科室端-病种..(市..DRG)科/院 -出院分析；2、科室端-病种..(市..DRG)科/院 -临床病种分析；病人分类下拉框内容改为本地（本地下面是职工、居民）、异地（异地下面是职工、居民），支持多选，当选择本地时，默认本地职工和居民勾选，当选择异地时，默认异地下面的职工和居民勾选。默认本地和异地均被选中。&#10;fix(drg): 修复患者类型参数传递逻辑&#10;&#10;- 移除无条件的 patType 参数传递&#10;- 添加条件判断仅在 getIfHasPatListSelector 为 false 时传递 patType&#10;- 保持原有患者类型列表选择器的功能完整性" />
     <MESSAGE value="v127:fix/refactor:科室端-科室页面 收支余分析 /总览&#10;fix(BIEAnalysis): 修复科室收入口径处理逻辑&#10;&#10;- 在科室未切换但日期改变时，调用 incomeOptionsHandler 更新本地数据&#10;- 移除重复的 incomeOptionsHandler 调用避免冗余处理&#10;- 针对吉大一医院特殊场景，在整体分析tab下医技科室默认设置为执行收入口径&#10;- 优化 overallBlockIncomeHandler 方法中的条件判断逻辑&#10;- 为吉大一医院医技科室禁用收入口径选择功能&#10;- 隐藏并禁用患者科室相关的收入选项" />
@@ -3229,7 +3244,8 @@
     <MESSAGE value="v127:feat/refactor:需求2639-科室端-病种分析（市医保DRG）-出院分析-病组RW-结余率分析下钻：关键病组RW-结余率明细改为新组件；优势病组RW-结余率明细改为新组件；&#10;feat(diseaseAnalysis): 添加疾病收益率详情组件标题右侧提示功能&#10;&#10;- 在优势疾病和关键疾病收益率详情组件中新增TitleRightTips组件&#10;- 从vuex映射diseaseType和incomeTypeText状态用于显示疾病类型和收入类型文本&#10;- 添加getTotalIncome计算属性用于计算并格式化总收入数据&#10;- 引入getThousandNum工具函数用于数值千分位格式化&#10;- 为组件添加totalData响应式数据存储扩展数据&#10;- 移除调试用的console.log代码和不需要的事件参数" />
     <MESSAGE value="v127:fix/refactor:科室端-科室页面 收支余分析 /总览&#10;fix(bieanalysis): 修复收入选择禁用条件判断 修正了 deptInfo.incomeValues 的判断逻辑，改为数组长度比较" />
     <MESSAGE value="拉取代码-图表通知算法更新" />
-    <option name="LAST_COMMIT_MESSAGE" value="拉取代码-图表通知算法更新" />
+    <MESSAGE value="v128:feat/refactor:需求2639-科室端-病种分析（市医保DRG）-出院分析-病组RW-结余率分析下钻：关键病组RW-结余率明细改为新组件；优势病组RW-结余率明细改为新组件；&#10;fix(charts): 修复图表排序字段更新问题&#10;&#10;- 在 tabsBarChange 方法中添加 sort.field 更新逻辑&#10;- 确保图表类型切换时排序字段同步更新&#10;- 修正优势疾病RW收益率详情组件排序功能&#10;- 修正关键疾病RW收益率详情组件排序功能" />
+    <option name="LAST_COMMIT_MESSAGE" value="v128:feat/refactor:需求2639-科室端-病种分析（市医保DRG）-出院分析-病组RW-结余率分析下钻：关键病组RW-结余率明细改为新组件；优势病组RW-结余率明细改为新组件；&#10;fix(charts): 修复图表排序字段更新问题&#10;&#10;- 在 tabsBarChange 方法中添加 sort.field 更新逻辑&#10;- 确保图表类型切换时排序字段同步更新&#10;- 修正优势疾病RW收益率详情组件排序功能&#10;- 修正关键疾病RW收益率详情组件排序功能" />
   </component>
   <component name="VueSettings">
     <option name="innerServiceType" value="TS_SERVICE" />
