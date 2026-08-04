@@ -2789,7 +2789,7 @@
       <workItem from="1785375191420" duration="19541000" />
       <workItem from="1785459709535" duration="30745000" />
       <workItem from="1785805347614" duration="3777000" />
-      <workItem from="1785810151944" duration="1563000" />
+      <workItem from="1785810151944" duration="3827000" />
     </task>
     <task id="LOCAL-04587" summary="v127:feat/refactor:需求2467-前端代码规范化修改&#10;feat(BIEAnalysis): 为成本概览组件添加code&#10;&#10;- 为 PlModulePanel 组件添加 code 属性&#10;- 更新 OverallCostBlock.vue 文件中的多个图表组件配置&#10;- 为折线图、柱状图和表格组件分别添加唯一标识码&#10;- 确保所有图表组件具备完整的数据绑定配置">
       <option name="closed" value="true" />
