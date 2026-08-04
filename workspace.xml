@@ -44,11 +44,8 @@
     <option name="selectedModelId" value="auto" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a32d6ec8-0d74-4a1b-8cad-0ab91948ca3e" name="Changes" comment="v127:feat/refactor:需求2639-科室端-病种分析（市医保DRG）-出院分析-病组RW-结余率分析下钻：关键病组RW-结余率明细改为新组件；优势病组RW-结余率明细改为新组件；&#10;feat(diseaseAnalysis): 添加关键病组和优势病组RW结余率明细组件&#10;&#10;- 新增 KeyDiseaseRwYieldRateDetail 组件用于显示关键病组RW结余率明细&#10;- 新增 AdvantageDiseaseRwYieldRateDetail 组件用于显示优势病组RW结余率明细&#10;- 在yieldReport.vue中集成新的明细组件&#10;- 移除原有的YYieldDetails和YAdvantageYieldDetails组件引用&#10;- 更新样式类添加mb20间距调整&#10;- 注释掉旧的明细组件作为临时过渡方案">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/diseaseAnalysis/department/leave-hospital-analysis/rw-surplus-ratio-analysis/AdvantageDiseaseRwYieldRateDetail.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/diseaseAnalysis/department/leave-hospital-analysis/rw-surplus-ratio-analysis/AdvantageDiseaseRwYieldRateDetail.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/diseaseAnalysis/department/leave-hospital-analysis/rw-surplus-ratio-analysis/KeyDiseaseRwYieldRateDetail.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/diseaseAnalysis/department/leave-hospital-analysis/rw-surplus-ratio-analysis/KeyDiseaseRwYieldRateDetail.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/doms-ui/component/chart/bar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/doms-ui/component/chart/bar.vue" afterDir="false" />
+    <list default="true" id="a32d6ec8-0d74-4a1b-8cad-0ab91948ca3e" name="Changes" comment="v127:feat/refactor:需求2639-科室端-病种分析（市医保DRG）-出院分析-病组RW-结余率分析下钻：关键病组RW-结余率明细改为新组件；优势病组RW-结余率明细改为新组件；&#10;feat(diseaseAnalysis): 添加疾病收益率详情组件标题右侧提示功能&#10;&#10;- 在优势疾病和关键疾病收益率详情组件中新增TitleRightTips组件&#10;- 从vuex映射diseaseType和incomeTypeText状态用于显示疾病类型和收入类型文本&#10;- 添加getTotalIncome计算属性用于计算并格式化总收入数据&#10;- 引入getThousandNum工具函数用于数值千分位格式化&#10;- 为组件添加totalData响应式数据存储扩展数据&#10;- 移除调试用的console.log代码和不需要的事件参数">
+      <change beforePath="$PROJECT_DIR$/src/views/BIEAnalysis/BIEAnalysisOverview.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/BIEAnalysis/BIEAnalysisOverview.vue" afterDir="false" />
     </list>
     <list id="bd8e474f-42c8-444f-9f2b-07be811ba86b" name="ignore-on-commit" comment="ignore-on-commit" />
     <option name="SHOW_DIALOG" value="false" />
@@ -103,7 +100,7 @@
     <option name="totalTimeSeconds" value="2031945" />
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="4037" />
+    <option name="cachedIndexableFilesCount" value="4046" />
   </component>
   <component name="FileSync">
     <option name="targetMappings">
@@ -302,61 +299,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0" />
-      <entry key="S2" value="1.0" />
-      <entry key="S5" value="1.0" />
-      <entry key="S10" value="1.0000000000006601" />
-      <entry key="S30" value="1.0000870759206435" />
-      <entry key="S60" value="1.0093323528926026" />
-      <entry key="M2" value="1.0975507482008293" />
-      <entry key="M5" value="1.4564328419821713" />
-      <entry key="M10" value="2.050583017778771" />
-      <entry key="M15" value="3.1793415365784696" />
-      <entry key="M30" value="10.612752470969586" />
-      <entry key="H1" value="27.85310978290306" />
-      <entry key="H2" value="51.008042687003694" />
-      <entry key="H4" value="81.99996752619411" />
-      <entry key="D1" value="173.25536394105467" />
-      <entry key="W1" value="208.14448450351" />
+      <entry key="MS100" value="1.000000001099885" />
+      <entry key="MS500" value="1.0161536072364183" />
+      <entry key="S2" value="1.363179192437483" />
+      <entry key="S5" value="1.7967631898292935" />
+      <entry key="S10" value="2.1819332794092" />
+      <entry key="S30" value="2.870223316210887" />
+      <entry key="S60" value="3.6983788176763572" />
+      <entry key="M2" value="4.972684553066985" />
+      <entry key="M5" value="7.2793023402085675" />
+      <entry key="M10" value="9.336268632140166" />
+      <entry key="M15" value="10.924965119106183" />
+      <entry key="M30" value="17.85380606126571" />
+      <entry key="H1" value="34.431868905599835" />
+      <entry key="H2" value="58.0360726291405" />
+      <entry key="H4" value="89.83103037252761" />
+      <entry key="D1" value="183.14755990190588" />
+      <entry key="W1" value="218.9545088085097" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
       <entry key="MS500" value="0.0" />
       <entry key="S2" value="0.0" />
       <entry key="S5" value="0.0" />
-      <entry key="S10" value="1.2303505791695333E-184" />
-      <entry key="S30" value="4.973662280741452E-62" />
-      <entry key="S60" value="2.230173888056253E-31" />
-      <entry key="M2" value="4.727927147798037E-16" />
-      <entry key="M5" value="7.902690785754596E-7" />
-      <entry key="M10" value="0.0010832086245874297" />
-      <entry key="M15" value="0.01272042026343033" />
-      <entry key="M30" value="0.1557213664228221" />
-      <entry key="H1" value="0.5552897674174402" />
-      <entry key="H2" value="1.110744258039219" />
-      <entry key="H4" value="1.9938230049082417" />
-      <entry key="D1" value="5.350350944607272" />
-      <entry key="W1" value="6.727534992023703" />
+      <entry key="S10" value="3.3084230775271496E-208" />
+      <entry key="S30" value="6.916297732776147E-70" />
+      <entry key="S60" value="2.6298890117187953E-35" />
+      <entry key="M2" value="5.13416855974173E-18" />
+      <entry key="M5" value="1.2944781616140187E-7" />
+      <entry key="M10" value="4.384014467056263E-4" />
+      <entry key="M15" value="0.006959980768285614" />
+      <entry key="M30" value="0.1151864770536925" />
+      <entry key="H1" value="0.47758020266269635" />
+      <entry key="H2" value="1.0300952849813179" />
+      <entry key="H4" value="1.920075313211419" />
+      <entry key="D1" value="5.316847612782709" />
+      <entry key="W1" value="6.721500619432602" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.004016069635375257" />
-      <entry key="MS500" value="0.33171128514929044" />
-      <entry key="S2" value="0.758909626487027" />
-      <entry key="S5" value="0.8955215158425639" />
-      <entry key="S10" value="0.9463199859686652" />
-      <entry key="S30" value="0.9818617916184676" />
-      <entry key="S60" value="1.0000779375826454" />
-      <entry key="M2" value="1.0924247052549472" />
-      <entry key="M5" value="1.4533309222897774" />
-      <entry key="M10" value="2.049011391695335" />
-      <entry key="M15" value="3.189141627994016" />
-      <entry key="M30" value="10.763907802166287" />
-      <entry key="H1" value="28.402804272778226" />
-      <entry key="H2" value="52.11377587045339" />
-      <entry key="H4" value="83.98962886335052" />
-      <entry key="D1" value="178.6041180770451" />
-      <entry key="W1" value="214.87174136774834" />
+      <entry key="MS100" value="4.0097065876913284E-7" />
+      <entry key="MS500" value="0.053677801702413416" />
+      <entry key="S2" value="0.6636639675087569" />
+      <entry key="S5" value="1.3325461673136214" />
+      <entry key="S10" value="1.8603143462101674" />
+      <entry key="S30" value="2.7205706673526873" />
+      <entry key="S60" value="3.6126328686418483" />
+      <entry key="M2" value="4.924711236062064" />
+      <entry key="M5" value="7.2569168664254935" />
+      <entry key="M10" value="9.3237128824375" />
+      <entry key="M15" value="10.922066129356583" />
+      <entry key="M30" value="17.961290369321276" />
+      <entry key="H1" value="34.90241735771572" />
+      <entry key="H2" value="59.06039538544437" />
+      <entry key="H4" value="91.7465312431517" />
+      <entry key="D1" value="188.46272567526032" />
+      <entry key="W1" value="225.67571795956013" />
     </decayedShown>
   </component>
   <component name="PackageJsonUpdateNotifier">
@@ -604,6 +601,24 @@
     <configuration useDefault="false">C:\Users\xushuai\AppData\Roaming\Subversion</configuration>
     <supportedVersion>125</supportedVersion>
     <option name="runUnderTerminal" value="true" />
+  </component>
+  <component name="SvnFileUrlMappingImpl">
+    <option name="myMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="D:\project\doms_web" />
+          <option name="myCopyRoot" value="D:\project\doms_web" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
+    <option name="myMoreRealMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="D:\project\doms_web" />
+          <option name="myCopyRoot" value="D:\project\doms_web" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
   </component>
   <component name="TDDPredictState">
     <testRunHistory>
@@ -2790,15 +2805,8 @@
       <workItem from="1785373604829" duration="567000" />
       <workItem from="1785374231516" duration="863000" />
       <workItem from="1785375191420" duration="19541000" />
-      <workItem from="1785459709535" duration="30607000" />
-    </task>
-    <task id="LOCAL-04581" summary="v127:feat/refactor:需求2276-科室端-病种分析（市医保DRG） ，新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;refactor(diseaseAnalysis): 优化诊断操作明细组件的请求参数处理&#10;&#10;- 提取公共请求参数计算方法 getCommonRequestParams&#10;- 移除硬编码的 indModelCode 值，改为空字符串&#10;- 简化 checkDateParamsValid 函数调用方式">
-      <option name="closed" value="true" />
-      <created>1784890526004</created>
-      <option name="number" value="04581" />
-      <option name="presentableId" value="LOCAL-04581" />
-      <option name="project" value="LOCAL" />
-      <updated>1784890526004</updated>
+      <workItem from="1785459709535" duration="30745000" />
+      <workItem from="1785805347614" duration="3686000" />
     </task>
     <task id="LOCAL-04582" summary="v127:feat/refactor:需求2467-前端代码规范化修改&#10;refactor(BIEAnalysis): 为表格组件添加唯一ID并清理未使用的导入&#10;&#10;- 为deptCompareTable、detailsDialogTable、diseaseUnitMarginalContributionRankTable和medicalGroupIncomeAnalysis表格组件添加elemId标识&#10;- 从多个组件中导入elemId工具函数以支持元素ID生成&#10;- 清理outpatientBlock.vue中的未使用组件导入(BarChart、MedicalSurplusAnalysisChart、HeaderSelect)">
       <option name="closed" value="true" />
@@ -3184,7 +3192,15 @@
       <option name="project" value="LOCAL" />
       <updated>1785754111636</updated>
     </task>
-    <option name="localTasksCounter" value="4630" />
+    <task id="LOCAL-04630" summary="v127:feat/refactor:需求2639-科室端-病种分析（市医保DRG）-出院分析-病组RW-结余率分析下钻：关键病组RW-结余率明细改为新组件；优势病组RW-结余率明细改为新组件；&#10;feat(diseaseAnalysis): 添加疾病收益率详情组件标题右侧提示功能&#10;&#10;- 在优势疾病和关键疾病收益率详情组件中新增TitleRightTips组件&#10;- 从vuex映射diseaseType和incomeTypeText状态用于显示疾病类型和收入类型文本&#10;- 添加getTotalIncome计算属性用于计算并格式化总收入数据&#10;- 引入getThousandNum工具函数用于数值千分位格式化&#10;- 为组件添加totalData响应式数据存储扩展数据&#10;- 移除调试用的console.log代码和不需要的事件参数">
+      <option name="closed" value="true" />
+      <created>1785756432066</created>
+      <option name="number" value="04630" />
+      <option name="presentableId" value="LOCAL-04630" />
+      <option name="project" value="LOCAL" />
+      <updated>1785756432066</updated>
+    </task>
+    <option name="localTasksCounter" value="4631" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -3205,7 +3221,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="MARK_IGNORED_AS_EXCLUDED" value="true" />
-    <MESSAGE value="v127:feat/refactor:需求2467-前端代码规范化修改&#10;refactor(equipment): 更新设备效益分析组件以使用动态ID生成&#10;&#10;- 为所有图表和表格组件添加elemId方法生成唯一ID&#10;- 在treatEquipmentDetail组件中为模块面板添加code属性&#10;- 从工具文件导入elemId函数并在组件数据中暴露&#10;- 统一使用动态ID替代静态ID提高组件可维护性" />
     <MESSAGE value="v127:feat/refactor:需求2276-科室端-病种分析（市医保DRG） ，新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(diagnosisOperationDetail): 添加费用类型维度下拉框功能&#10;&#10;- 新增 fetchDrilldownFeeTypeDimensionSelectOptionsDept API 接口&#10;- 在 store 中添加 dimensionFeeTypeLoading 和 dimensionFeeTypeOptions 状态&#10;- 实现 requestDimensionFeeTypeOptions 异步方法获取费用维度选项" />
     <MESSAGE value="v127:feat/refactor:需求2276-科室端-病种分析（市医保DRG） ，新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(diseaseAnalysis): 添加指标模型代码并优化费用明细组件&#10;&#10;- 在多个组件中添加 indModelCode 属性用于指标模型标识&#10;- 重构费用类型明细表格组件的数据加载逻辑&#10;- 集成维度费用类型选项的获取功能&#10;- 更新组件中的变量命名以提高一致性&#10;- 添加 Vuex actions 映射支持数据请求&#10;- 优化组件创建时的数据初始化流程" />
     <MESSAGE value="v127:fix/refactor:科室端 科室页面 收支余分析 /总览&#10;fix(BIEAnalysisOverview): 解决收入类型选择框禁用条件问题&#10;&#10;- 添加部门收入值判断条件&#10;- 当部门收入值小于等于1时禁用下拉框&#10;- 保持原有的禁用逻辑不变" />
@@ -3230,7 +3245,8 @@
     <MESSAGE value="v127:feat/refactor:需求2639-科室端-病种分析（市医保DRG）-出院分析-病组RW-结余率分析下钻：关键病组RW-结余率明细改为新组件；优势病组RW-结余率明细改为新组件；&#10;feat(drg-api): 新增病组RW-结余率图表接口&#10;&#10;- 添加关键病组RW-结余率图表数据请求接口&#10;- 添加优势病组RW-结余率图表数据请求接口" />
     <MESSAGE value="v127:feat/refactor:需求2639-科室端-病种分析（市医保DRG）-出院分析-病组RW-结余率分析下钻：关键病组RW-结余率明细改为新组件；优势病组RW-结余率明细改为新组件；&#10;feat(diseaseAnalysis): 添加病组RW-结余率明细组件&#10;&#10;- 新增 AdvantageDiseaseRwYieldRateDetail 组件用于优势病组RW-结余率明细展示&#10;- 新增 KeyDiseaseRwYieldRateDetail 组件用于关键病组RW-结余率明细展示&#10;- 集成图表标签切换和排序功能&#10;- 添加数据验证和参数检查逻辑&#10;- 配置图表数据请求和响应处理" />
     <MESSAGE value="v127:feat/refactor:需求2639-科室端-病种分析（市医保DRG）-出院分析-病组RW-结余率分析下钻：关键病组RW-结余率明细改为新组件；优势病组RW-结余率明细改为新组件；&#10;feat(diseaseAnalysis): 添加关键病组和优势病组RW结余率明细组件&#10;&#10;- 新增 KeyDiseaseRwYieldRateDetail 组件用于显示关键病组RW结余率明细&#10;- 新增 AdvantageDiseaseRwYieldRateDetail 组件用于显示优势病组RW结余率明细&#10;- 在yieldReport.vue中集成新的明细组件&#10;- 移除原有的YYieldDetails和YAdvantageYieldDetails组件引用&#10;- 更新样式类添加mb20间距调整&#10;- 注释掉旧的明细组件作为临时过渡方案" />
-    <option name="LAST_COMMIT_MESSAGE" value="v127:feat/refactor:需求2639-科室端-病种分析（市医保DRG）-出院分析-病组RW-结余率分析下钻：关键病组RW-结余率明细改为新组件；优势病组RW-结余率明细改为新组件；&#10;feat(diseaseAnalysis): 添加关键病组和优势病组RW结余率明细组件&#10;&#10;- 新增 KeyDiseaseRwYieldRateDetail 组件用于显示关键病组RW结余率明细&#10;- 新增 AdvantageDiseaseRwYieldRateDetail 组件用于显示优势病组RW结余率明细&#10;- 在yieldReport.vue中集成新的明细组件&#10;- 移除原有的YYieldDetails和YAdvantageYieldDetails组件引用&#10;- 更新样式类添加mb20间距调整&#10;- 注释掉旧的明细组件作为临时过渡方案" />
+    <MESSAGE value="v127:feat/refactor:需求2639-科室端-病种分析（市医保DRG）-出院分析-病组RW-结余率分析下钻：关键病组RW-结余率明细改为新组件；优势病组RW-结余率明细改为新组件；&#10;feat(diseaseAnalysis): 添加疾病收益率详情组件标题右侧提示功能&#10;&#10;- 在优势疾病和关键疾病收益率详情组件中新增TitleRightTips组件&#10;- 从vuex映射diseaseType和incomeTypeText状态用于显示疾病类型和收入类型文本&#10;- 添加getTotalIncome计算属性用于计算并格式化总收入数据&#10;- 引入getThousandNum工具函数用于数值千分位格式化&#10;- 为组件添加totalData响应式数据存储扩展数据&#10;- 移除调试用的console.log代码和不需要的事件参数" />
+    <option name="LAST_COMMIT_MESSAGE" value="v127:feat/refactor:需求2639-科室端-病种分析（市医保DRG）-出院分析-病组RW-结余率分析下钻：关键病组RW-结余率明细改为新组件；优势病组RW-结余率明细改为新组件；&#10;feat(diseaseAnalysis): 添加疾病收益率详情组件标题右侧提示功能&#10;&#10;- 在优势疾病和关键疾病收益率详情组件中新增TitleRightTips组件&#10;- 从vuex映射diseaseType和incomeTypeText状态用于显示疾病类型和收入类型文本&#10;- 添加getTotalIncome计算属性用于计算并格式化总收入数据&#10;- 引入getThousandNum工具函数用于数值千分位格式化&#10;- 为组件添加totalData响应式数据存储扩展数据&#10;- 移除调试用的console.log代码和不需要的事件参数" />
   </component>
   <component name="VueSettings">
     <option name="innerServiceType" value="TS_SERVICE" />
