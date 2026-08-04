@@ -44,7 +44,9 @@
     <option name="selectedModelId" value="auto" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a32d6ec8-0d74-4a1b-8cad-0ab91948ca3e" name="Changes" comment="v128:feat/refactor:需求2639-科室端-病种分析（市医保DRG）-出院分析-病组RW-结余率分析下钻：关键病组RW-结余率明细改为新组件；优势病组RW-结余率明细改为新组件；&#10;fix(charts): 修复图表排序字段更新问题&#10;&#10;- 在 tabsBarChange 方法中添加 sort.field 更新逻辑&#10;- 确保图表类型切换时排序字段同步更新&#10;- 修正优势疾病RW收益率详情组件排序功能&#10;- 修正关键疾病RW收益率详情组件排序功能" />
+    <list default="true" id="a32d6ec8-0d74-4a1b-8cad-0ab91948ca3e" name="Changes" comment="v128:feat/refactor:需求2639-科室端-病种分析（市医保DRG）-出院分析-病组RW-结余率分析下钻：关键病组RW-结余率明细改为新组件；优势病组RW-结余率明细改为新组件；&#10;fix(charts): 修复图表排序字段更新问题&#10;&#10;- 在 tabsBarChange 方法中添加 sort.field 更新逻辑&#10;- 确保图表类型切换时排序字段同步更新&#10;- 修正优势疾病RW收益率详情组件排序功能&#10;- 修正关键疾病RW收益率详情组件排序功能">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <list id="bd8e474f-42c8-444f-9f2b-07be811ba86b" name="ignore-on-commit" comment="ignore-on-commit" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -599,24 +601,6 @@
     <configuration useDefault="false">C:\Users\xushuai\AppData\Roaming\Subversion</configuration>
     <supportedVersion>125</supportedVersion>
     <option name="runUnderTerminal" value="true" />
-  </component>
-  <component name="SvnFileUrlMappingImpl">
-    <option name="myMappingRoots">
-      <list>
-        <SvnCopyRootSimple>
-          <option name="myVcsRoot" value="D:\project\doms_web" />
-          <option name="myCopyRoot" value="D:\project\doms_web" />
-        </SvnCopyRootSimple>
-      </list>
-    </option>
-    <option name="myMoreRealMappingRoots">
-      <list>
-        <SvnCopyRootSimple>
-          <option name="myVcsRoot" value="D:\project\doms_web" />
-          <option name="myCopyRoot" value="D:\project\doms_web" />
-        </SvnCopyRootSimple>
-      </list>
-    </option>
   </component>
   <component name="TDDPredictState">
     <testRunHistory>
@@ -2805,15 +2789,7 @@
       <workItem from="1785375191420" duration="19541000" />
       <workItem from="1785459709535" duration="30745000" />
       <workItem from="1785805347614" duration="3777000" />
-      <workItem from="1785810151944" duration="1540000" />
-    </task>
-    <task id="LOCAL-04586" summary="v127:feat/refactor:需求2467-前端代码规范化修改&#10;feat(BIEAnalysis): 在outpatientAmountDialog.vue组件中新增code属性&#10;- 设置唯一标识码为3CF597062B7E58AADB7CFB436945B7B0">
-      <option name="closed" value="true" />
-      <created>1785120530504</created>
-      <option name="number" value="04586" />
-      <option name="presentableId" value="LOCAL-04586" />
-      <option name="project" value="LOCAL" />
-      <updated>1785120530505</updated>
+      <workItem from="1785810151944" duration="1563000" />
     </task>
     <task id="LOCAL-04587" summary="v127:feat/refactor:需求2467-前端代码规范化修改&#10;feat(BIEAnalysis): 为成本概览组件添加code&#10;&#10;- 为 PlModulePanel 组件添加 code 属性&#10;- 更新 OverallCostBlock.vue 文件中的多个图表组件配置&#10;- 为折线图、柱状图和表格组件分别添加唯一标识码&#10;- 确保所有图表组件具备完整的数据绑定配置">
       <option name="closed" value="true" />
@@ -3199,7 +3175,15 @@
       <option name="project" value="LOCAL" />
       <updated>1785812465406</updated>
     </task>
-    <option name="localTasksCounter" value="4635" />
+    <task id="LOCAL-04635" summary="v128:feat/refactor:需求2639-科室端-病种分析（市医保DRG）-出院分析-病组RW-结余率分析下钻：关键病组RW-结余率明细改为新组件；优势病组RW-结余率明细改为新组件；&#10;fix(charts): 修复图表排序字段更新问题&#10;&#10;- 在 tabsBarChange 方法中添加 sort.field 更新逻辑&#10;- 确保图表类型切换时排序字段同步更新&#10;- 修正优势疾病RW收益率详情组件排序功能&#10;- 修正关键疾病RW收益率详情组件排序功能">
+      <option name="closed" value="true" />
+      <created>1785812485778</created>
+      <option name="number" value="04635" />
+      <option name="presentableId" value="LOCAL-04635" />
+      <option name="project" value="LOCAL" />
+      <updated>1785812485778</updated>
+    </task>
+    <option name="localTasksCounter" value="4636" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
