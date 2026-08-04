@@ -44,8 +44,8 @@
     <option name="selectedModelId" value="auto" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a32d6ec8-0d74-4a1b-8cad-0ab91948ca3e" name="Changes" comment="v127:feat/refactor:需求2639-科室端-病种分析（市医保DRG）-出院分析-病组RW-结余率分析下钻：关键病组RW-结余率明细改为新组件；优势病组RW-结余率明细改为新组件；&#10;feat(diseaseAnalysis): 添加疾病收益率详情组件标题右侧提示功能&#10;&#10;- 在优势疾病和关键疾病收益率详情组件中新增TitleRightTips组件&#10;- 从vuex映射diseaseType和incomeTypeText状态用于显示疾病类型和收入类型文本&#10;- 添加getTotalIncome计算属性用于计算并格式化总收入数据&#10;- 引入getThousandNum工具函数用于数值千分位格式化&#10;- 为组件添加totalData响应式数据存储扩展数据&#10;- 移除调试用的console.log代码和不需要的事件参数">
-      <change beforePath="$PROJECT_DIR$/src/views/BIEAnalysis/BIEAnalysisOverview.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/BIEAnalysis/BIEAnalysisOverview.vue" afterDir="false" />
+    <list default="true" id="a32d6ec8-0d74-4a1b-8cad-0ab91948ca3e" name="Changes" comment="拉取代码-图表通知算法更新">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <list id="bd8e474f-42c8-444f-9f2b-07be811ba86b" name="ignore-on-commit" comment="ignore-on-commit" />
     <option name="SHOW_DIALOG" value="false" />
@@ -601,24 +601,6 @@
     <configuration useDefault="false">C:\Users\xushuai\AppData\Roaming\Subversion</configuration>
     <supportedVersion>125</supportedVersion>
     <option name="runUnderTerminal" value="true" />
-  </component>
-  <component name="SvnFileUrlMappingImpl">
-    <option name="myMappingRoots">
-      <list>
-        <SvnCopyRootSimple>
-          <option name="myVcsRoot" value="D:\project\doms_web" />
-          <option name="myCopyRoot" value="D:\project\doms_web" />
-        </SvnCopyRootSimple>
-      </list>
-    </option>
-    <option name="myMoreRealMappingRoots">
-      <list>
-        <SvnCopyRootSimple>
-          <option name="myVcsRoot" value="D:\project\doms_web" />
-          <option name="myCopyRoot" value="D:\project\doms_web" />
-        </SvnCopyRootSimple>
-      </list>
-    </option>
   </component>
   <component name="TDDPredictState">
     <testRunHistory>
@@ -2806,31 +2788,8 @@
       <workItem from="1785374231516" duration="863000" />
       <workItem from="1785375191420" duration="19541000" />
       <workItem from="1785459709535" duration="30745000" />
-      <workItem from="1785805347614" duration="3686000" />
-    </task>
-    <task id="LOCAL-04582" summary="v127:feat/refactor:需求2467-前端代码规范化修改&#10;refactor(BIEAnalysis): 为表格组件添加唯一ID并清理未使用的导入&#10;&#10;- 为deptCompareTable、detailsDialogTable、diseaseUnitMarginalContributionRankTable和medicalGroupIncomeAnalysis表格组件添加elemId标识&#10;- 从多个组件中导入elemId工具函数以支持元素ID生成&#10;- 清理outpatientBlock.vue中的未使用组件导入(BarChart、MedicalSurplusAnalysisChart、HeaderSelect)">
-      <option name="closed" value="true" />
-      <created>1785115185837</created>
-      <option name="number" value="04582" />
-      <option name="presentableId" value="LOCAL-04582" />
-      <option name="project" value="LOCAL" />
-      <updated>1785115185839</updated>
-    </task>
-    <task id="LOCAL-04583" summary="v127:feat/refactor:需求2467-前端代码规范化修改&#10;refactor(BIEAnalysis): 优化整体模块组件的数据绑定结构&#10;&#10;- 将成本条形图数据通过v-bind方式进行绑定&#10;- 为成本详情表格组件添加统一配置对象costDetailConfig&#10;- 为图表数据对象添加唯一标识码(code)属性&#10;- 提取成本项明细相关属性到独立的计算属性中&#10;- 优化组件数据结构，提高代码可维护性&#10;- 统一组件配置项的数据传递方式">
-      <option name="closed" value="true" />
-      <created>1785116451022</created>
-      <option name="number" value="04583" />
-      <option name="presentableId" value="LOCAL-04583" />
-      <option name="project" value="LOCAL" />
-      <updated>1785116451022</updated>
-    </task>
-    <task id="LOCAL-04584" summary="v127:feat/refactor:需求2467-前端代码规范化修改&#10;refactor(BIEAnalysis): 优化医生效率分析组件结构&#10;&#10;- 移除未使用的组件导入包括 CusTabBar、DoctorEfficiencyTable 等&#10;- 删除废弃的注释代码块&#10;- 为图表和表格组件添加统一的 code 标识符 添加元素 ID 生成器">
-      <option name="closed" value="true" />
-      <created>1785117544283</created>
-      <option name="number" value="04584" />
-      <option name="presentableId" value="LOCAL-04584" />
-      <option name="project" value="LOCAL" />
-      <updated>1785117544283</updated>
+      <workItem from="1785805347614" duration="3777000" />
+      <workItem from="1785810151944" duration="604000" />
     </task>
     <task id="LOCAL-04585" summary="v127:feat/refactor:需求2467-前端代码规范化修改&#10;feat(BIEAnalysis): 添加elemId全局变量并优化组件结构&#10;&#10;- 在deptCompare.vue、detailsDialog.vue、DiseaseUnitMarginalContributionRankTable.vue和MedicalGroupIncomeAnalysis.vue中添加elemId变量">
       <option name="closed" value="true" />
@@ -3200,7 +3159,31 @@
       <option name="project" value="LOCAL" />
       <updated>1785756432066</updated>
     </task>
-    <option name="localTasksCounter" value="4631" />
+    <task id="LOCAL-04631" summary="v127:fix/refactor:科室端-科室页面 收支余分析 /总览&#10;fix(bieanalysis): 修复收入选择禁用条件判断 修正了 deptInfo.incomeValues 的判断逻辑，改为数组长度比较">
+      <option name="closed" value="true" />
+      <created>1785810049467</created>
+      <option name="number" value="04631" />
+      <option name="presentableId" value="LOCAL-04631" />
+      <option name="project" value="LOCAL" />
+      <updated>1785810049467</updated>
+    </task>
+    <task id="LOCAL-04632" summary="v127:fix/refactor:科室端-科室页面 收支余分析 /总览&#10;fix(bieanalysis): 修复收入选择禁用条件判断 修正了 deptInfo.incomeValues 的判断逻辑，改为数组长度比较">
+      <option name="closed" value="true" />
+      <created>1785810079805</created>
+      <option name="number" value="04632" />
+      <option name="presentableId" value="LOCAL-04632" />
+      <option name="project" value="LOCAL" />
+      <updated>1785810079806</updated>
+    </task>
+    <task id="LOCAL-04633" summary="拉取代码-图表通知算法更新">
+      <option name="closed" value="true" />
+      <created>1785810098775</created>
+      <option name="number" value="04633" />
+      <option name="presentableId" value="LOCAL-04633" />
+      <option name="project" value="LOCAL" />
+      <updated>1785810098776</updated>
+    </task>
+    <option name="localTasksCounter" value="4634" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -3221,8 +3204,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="MARK_IGNORED_AS_EXCLUDED" value="true" />
-    <MESSAGE value="v127:feat/refactor:需求2276-科室端-病种分析（市医保DRG） ，新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(diagnosisOperationDetail): 添加费用类型维度下拉框功能&#10;&#10;- 新增 fetchDrilldownFeeTypeDimensionSelectOptionsDept API 接口&#10;- 在 store 中添加 dimensionFeeTypeLoading 和 dimensionFeeTypeOptions 状态&#10;- 实现 requestDimensionFeeTypeOptions 异步方法获取费用维度选项" />
-    <MESSAGE value="v127:feat/refactor:需求2276-科室端-病种分析（市医保DRG） ，新添加一个诊断操作分析菜单：诊断操作明细、xx诊断xx操作明细、xx诊断xx操作费用明细&#10;feat(diseaseAnalysis): 添加指标模型代码并优化费用明细组件&#10;&#10;- 在多个组件中添加 indModelCode 属性用于指标模型标识&#10;- 重构费用类型明细表格组件的数据加载逻辑&#10;- 集成维度费用类型选项的获取功能&#10;- 更新组件中的变量命名以提高一致性&#10;- 添加 Vuex actions 映射支持数据请求&#10;- 优化组件创建时的数据初始化流程" />
     <MESSAGE value="v127:fix/refactor:科室端 科室页面 收支余分析 /总览&#10;fix(BIEAnalysisOverview): 解决收入类型选择框禁用条件问题&#10;&#10;- 添加部门收入值判断条件&#10;- 当部门收入值小于等于1时禁用下拉框&#10;- 保持原有的禁用逻辑不变" />
     <MESSAGE value="v127:fix/refactor:科室端 科室页面 收支余分析 /总览&#10;feat(BIEAnalysis): 添日期下拉框等参数切换时，收入口径选项显示隐藏处理功能&#10;&#10;- 在mainTabType切换时调用incomeOptionsHandler方法&#10;- 根据tab切换显示组件类型处理收入口径选项的显示/隐藏&#10;- 添加注释说明tab切换对收入口径选项的影响逻辑" />
     <MESSAGE value="v127:feat/refactor:需求2306-1、科室端-病种..(市..DRG)科/院 -出院分析；2、科室端-病种..(市..DRG)科/院 -临床病种分析；病人分类下拉框内容改为本地（本地下面是职工、居民）、异地（异地下面是职工、居民），支持多选，当选择本地时，默认本地职工和居民勾选，当选择异地时，默认异地下面的职工和居民勾选。默认本地和异地均被选中。&#10;fix(drg): 修复患者类型参数传递逻辑&#10;&#10;- 移除无条件的 patType 参数传递&#10;- 添加条件判断仅在 getIfHasPatListSelector 为 false 时传递 patType&#10;- 保持原有患者类型列表选择器的功能完整性" />
@@ -3246,7 +3227,9 @@
     <MESSAGE value="v127:feat/refactor:需求2639-科室端-病种分析（市医保DRG）-出院分析-病组RW-结余率分析下钻：关键病组RW-结余率明细改为新组件；优势病组RW-结余率明细改为新组件；&#10;feat(diseaseAnalysis): 添加病组RW-结余率明细组件&#10;&#10;- 新增 AdvantageDiseaseRwYieldRateDetail 组件用于优势病组RW-结余率明细展示&#10;- 新增 KeyDiseaseRwYieldRateDetail 组件用于关键病组RW-结余率明细展示&#10;- 集成图表标签切换和排序功能&#10;- 添加数据验证和参数检查逻辑&#10;- 配置图表数据请求和响应处理" />
     <MESSAGE value="v127:feat/refactor:需求2639-科室端-病种分析（市医保DRG）-出院分析-病组RW-结余率分析下钻：关键病组RW-结余率明细改为新组件；优势病组RW-结余率明细改为新组件；&#10;feat(diseaseAnalysis): 添加关键病组和优势病组RW结余率明细组件&#10;&#10;- 新增 KeyDiseaseRwYieldRateDetail 组件用于显示关键病组RW结余率明细&#10;- 新增 AdvantageDiseaseRwYieldRateDetail 组件用于显示优势病组RW结余率明细&#10;- 在yieldReport.vue中集成新的明细组件&#10;- 移除原有的YYieldDetails和YAdvantageYieldDetails组件引用&#10;- 更新样式类添加mb20间距调整&#10;- 注释掉旧的明细组件作为临时过渡方案" />
     <MESSAGE value="v127:feat/refactor:需求2639-科室端-病种分析（市医保DRG）-出院分析-病组RW-结余率分析下钻：关键病组RW-结余率明细改为新组件；优势病组RW-结余率明细改为新组件；&#10;feat(diseaseAnalysis): 添加疾病收益率详情组件标题右侧提示功能&#10;&#10;- 在优势疾病和关键疾病收益率详情组件中新增TitleRightTips组件&#10;- 从vuex映射diseaseType和incomeTypeText状态用于显示疾病类型和收入类型文本&#10;- 添加getTotalIncome计算属性用于计算并格式化总收入数据&#10;- 引入getThousandNum工具函数用于数值千分位格式化&#10;- 为组件添加totalData响应式数据存储扩展数据&#10;- 移除调试用的console.log代码和不需要的事件参数" />
-    <option name="LAST_COMMIT_MESSAGE" value="v127:feat/refactor:需求2639-科室端-病种分析（市医保DRG）-出院分析-病组RW-结余率分析下钻：关键病组RW-结余率明细改为新组件；优势病组RW-结余率明细改为新组件；&#10;feat(diseaseAnalysis): 添加疾病收益率详情组件标题右侧提示功能&#10;&#10;- 在优势疾病和关键疾病收益率详情组件中新增TitleRightTips组件&#10;- 从vuex映射diseaseType和incomeTypeText状态用于显示疾病类型和收入类型文本&#10;- 添加getTotalIncome计算属性用于计算并格式化总收入数据&#10;- 引入getThousandNum工具函数用于数值千分位格式化&#10;- 为组件添加totalData响应式数据存储扩展数据&#10;- 移除调试用的console.log代码和不需要的事件参数" />
+    <MESSAGE value="v127:fix/refactor:科室端-科室页面 收支余分析 /总览&#10;fix(bieanalysis): 修复收入选择禁用条件判断 修正了 deptInfo.incomeValues 的判断逻辑，改为数组长度比较" />
+    <MESSAGE value="拉取代码-图表通知算法更新" />
+    <option name="LAST_COMMIT_MESSAGE" value="拉取代码-图表通知算法更新" />
   </component>
   <component name="VueSettings">
     <option name="innerServiceType" value="TS_SERVICE" />
