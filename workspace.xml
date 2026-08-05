@@ -571,9 +571,9 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="npm.本地运行项目" />
       <item itemvalue="npm.build" />
       <item itemvalue="npm.testing" />
-      <item itemvalue="npm.本地运行项目" />
     </list>
   </component>
   <component name="SharedIndexes">
@@ -2795,7 +2795,11 @@
       <workItem from="1785837625386" duration="1171000" />
       <workItem from="1785892256179" duration="1634000" />
       <workItem from="1785895167406" duration="1930000" />
-      <workItem from="1785901148429" duration="563000" />
+      <workItem from="1785901148429" duration="3469000" />
+      <workItem from="1785912455850" duration="73000" />
+      <workItem from="1785912782816" duration="1749000" />
+      <workItem from="1785914641358" duration="1535000" />
+      <workItem from="1785916251278" duration="303000" />
     </task>
     <task id="LOCAL-04588" summary="v127:feat/refactor:需求2467-前端代码规范化修改&#10;fix(department): 修复检查收入组件中的模型代码问题&#10;&#10;- 在检查收入分类排名表格中为code属性添加空字符串默认值&#10;- 在盈余分析组件中导入generateModelCode工具函数&#10;- 为医疗盈余目标完成分析图表添加动态模型代码生成&#10;- 为收入成本趋势分析图表添加动态模型代码生成&#10;- 确保所有图表组件都有正确的唯一标识符">
       <option name="closed" value="true" />
