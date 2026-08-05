@@ -44,9 +44,7 @@
     <option name="selectedModelId" value="auto" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a32d6ec8-0d74-4a1b-8cad-0ab91948ca3e" name="Changes" comment="v128:feat/refactor:需求2466-科室端-应用配置-关键病组自定义（DRG），在关键病组自定义（DRG）表格中，添加RW列，位于专科列后面。支持配置小数位。科室端-应用配置-关键病种自定义（DIP），在关键病种自定义（DIP）表格中，添加RW列，位于专科列后面。支持配置小数位。&#10;fix(applicationConfig): 移除后端字段排序限制&#10;&#10;- 注释掉强制设置排序字段为'total'的代码&#10;- 允许前端自定义排序字段配置&#10;- 修复排序功能被后端硬编码限制的问题">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="a32d6ec8-0d74-4a1b-8cad-0ab91948ca3e" name="Changes" comment="v128:feat/refactor:需求2466-科室端-应用配置-关键病组自定义（DRG），在关键病组自定义（DRG）表格中，添加RW列，位于专科列后面。支持配置小数位。科室端-应用配置-关键病种自定义（DIP），在关键病种自定义（DIP）表格中，添加RW列，位于专科列后面。支持配置小数位。&#10;fix(applicationConfig): 移除后端字段排序限制&#10;&#10;- 注释掉强制设置排序字段为'total'的代码&#10;- 允许前端自定义排序字段配置&#10;- 修复排序功能被后端硬编码限制的问题" />
     <list id="bd8e474f-42c8-444f-9f2b-07be811ba86b" name="ignore-on-commit" comment="ignore-on-commit" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -2800,7 +2798,7 @@
       <workItem from="1785912782816" duration="1749000" />
       <workItem from="1785914641358" duration="1535000" />
       <workItem from="1785916251278" duration="4645000" />
-      <workItem from="1785920993558" duration="1469000" />
+      <workItem from="1785920993558" duration="1615000" />
     </task>
     <task id="LOCAL-04589" summary="拉取代码-1735 v127 山肿瘤、毓璜顶 院/科端-病组分析（DRG）除分页的表格外，筛选控件改为可选的控件；">
       <option name="closed" value="true" />
