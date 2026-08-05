@@ -46,7 +46,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a32d6ec8-0d74-4a1b-8cad-0ab91948ca3e" name="Changes" comment="v128:feat/refactor:需求2575、2565-科室端-病种分析（市医保DRG） -出院分析-病组RW-结余率分析，样式修改为左右交互的样式，左侧为散点图，右侧为每个象限的病组;病组RW-结余率分析，下面添加散点图及右侧明细表格，默认为科室所有主诊断、第一个操作的明细数据，当病组RW-结余率分析选中病组时，即为该科室该病组的主诊断、第一个操作的数据。标题默认为诊断操作结余分析，如选择了某个病组，则为：FM19-经皮冠状动脉支架植入-诊断操作结余分析&#10;feat(disease-analysis): 添加散点图象限描述后缀功能&#10;&#10;- 新增 suffixDescription 参数用于自定义描述后缀&#10;- 在返回的象限描述中添加后缀内容支持">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/router/permission.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/permission.js" afterDir="false" />
     </list>
     <list id="bd8e474f-42c8-444f-9f2b-07be811ba86b" name="ignore-on-commit" comment="ignore-on-commit" />
     <option name="SHOW_DIALOG" value="false" />
@@ -2795,7 +2794,8 @@
       <workItem from="1785825710385" duration="4292000" />
       <workItem from="1785837625386" duration="1171000" />
       <workItem from="1785892256179" duration="1634000" />
-      <workItem from="1785895167406" duration="586000" />
+      <workItem from="1785895167406" duration="1930000" />
+      <workItem from="1785901148429" duration="563000" />
     </task>
     <task id="LOCAL-04588" summary="v127:feat/refactor:需求2467-前端代码规范化修改&#10;fix(department): 修复检查收入组件中的模型代码问题&#10;&#10;- 在检查收入分类排名表格中为code属性添加空字符串默认值&#10;- 在盈余分析组件中导入generateModelCode工具函数&#10;- 为医疗盈余目标完成分析图表添加动态模型代码生成&#10;- 为收入成本趋势分析图表添加动态模型代码生成&#10;- 确保所有图表组件都有正确的唯一标识符">
       <option name="closed" value="true" />
