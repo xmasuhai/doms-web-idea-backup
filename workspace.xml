@@ -44,7 +44,7 @@
     <option name="selectedModelId" value="auto" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a32d6ec8-0d74-4a1b-8cad-0ab91948ca3e" name="Changes" comment="v128:feat/refactor:需求2575、2565-科室端-病种分析（市医保DRG） -出院分析-病组RW-结余率分析，样式修改为左右交互的样式，左侧为散点图，右侧为每个象限的病组;病组RW-结余率分析，下面添加散点图及右侧明细表格，默认为科室所有主诊断、第一个操作的明细数据，当病组RW-结余率分析选中病组时，即为该科室该病组的主诊断、第一个操作的数据。标题默认为诊断操作结余分析，如选择了某个病组，则为：FM19-经皮冠状动脉支架植入-诊断操作结余分析&#10;feat(disease-analysis): 添加散点图象限描述后缀功能&#10;&#10;- 新增 suffixDescription 参数用于自定义描述后缀&#10;- 在返回的象限描述中添加后缀内容支持">
+    <list default="true" id="a32d6ec8-0d74-4a1b-8cad-0ab91948ca3e" name="Changes" comment="v128:feat/refactor:需求2466-科室端-应用配置-关键病组自定义（DRG），在关键病组自定义（DRG）表格中，添加RW列，位于专科列后面。支持配置小数位。科室端-应用配置-关键病种自定义（DIP），在关键病种自定义（DIP）表格中，添加RW列，位于专科列后面。支持配置小数位。&#10;fix(applicationConfig): 移除后端字段排序限制&#10;&#10;- 注释掉强制设置排序字段为'total'的代码&#10;- 允许前端自定义排序字段配置&#10;- 修复排序功能被后端硬编码限制的问题">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <list id="bd8e474f-42c8-444f-9f2b-07be811ba86b" name="ignore-on-commit" comment="ignore-on-commit" />
@@ -2799,15 +2799,8 @@
       <workItem from="1785912455850" duration="73000" />
       <workItem from="1785912782816" duration="1749000" />
       <workItem from="1785914641358" duration="1535000" />
-      <workItem from="1785916251278" duration="961000" />
-    </task>
-    <task id="LOCAL-04588" summary="v127:feat/refactor:需求2467-前端代码规范化修改&#10;fix(department): 修复检查收入组件中的模型代码问题&#10;&#10;- 在检查收入分类排名表格中为code属性添加空字符串默认值&#10;- 在盈余分析组件中导入generateModelCode工具函数&#10;- 为医疗盈余目标完成分析图表添加动态模型代码生成&#10;- 为收入成本趋势分析图表添加动态模型代码生成&#10;- 确保所有图表组件都有正确的唯一标识符">
-      <option name="closed" value="true" />
-      <created>1785122151775</created>
-      <option name="number" value="04588" />
-      <option name="presentableId" value="LOCAL-04588" />
-      <option name="project" value="LOCAL" />
-      <updated>1785122151775</updated>
+      <workItem from="1785916251278" duration="4645000" />
+      <workItem from="1785920993558" duration="1469000" />
     </task>
     <task id="LOCAL-04589" summary="拉取代码-1735 v127 山肿瘤、毓璜顶 院/科端-病组分析（DRG）除分页的表格外，筛选控件改为可选的控件；">
       <option name="closed" value="true" />
@@ -3193,7 +3186,15 @@
       <option name="project" value="LOCAL" />
       <updated>1785835352188</updated>
     </task>
-    <option name="localTasksCounter" value="4637" />
+    <task id="LOCAL-04637" summary="v128:feat/refactor:需求2466-科室端-应用配置-关键病组自定义（DRG），在关键病组自定义（DRG）表格中，添加RW列，位于专科列后面。支持配置小数位。科室端-应用配置-关键病种自定义（DIP），在关键病种自定义（DIP）表格中，添加RW列，位于专科列后面。支持配置小数位。&#10;fix(applicationConfig): 移除后端字段排序限制&#10;&#10;- 注释掉强制设置排序字段为'total'的代码&#10;- 允许前端自定义排序字段配置&#10;- 修复排序功能被后端硬编码限制的问题">
+      <option name="closed" value="true" />
+      <created>1785922161014</created>
+      <option name="number" value="04637" />
+      <option name="presentableId" value="LOCAL-04637" />
+      <option name="project" value="LOCAL" />
+      <updated>1785922161015</updated>
+    </task>
+    <option name="localTasksCounter" value="4638" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -3214,7 +3215,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="MARK_IGNORED_AS_EXCLUDED" value="true" />
-    <MESSAGE value="v127:feat/refactor:需求2306-1、科室端-病种..(市..DRG)科/院 -出院分析；2、科室端-病种..(市..DRG)科/院 -临床病种分析；病人分类下拉框内容改为本地（本地下面是职工、居民）、异地（异地下面是职工、居民），支持多选，当选择本地时，默认本地职工和居民勾选，当选择异地时，默认异地下面的职工和居民勾选。默认本地和异地均被选中。&#10;fix(drg): 修复患者类型参数传递逻辑&#10;&#10;- 移除无条件的 patType 参数传递&#10;- 添加条件判断仅在 getIfHasPatListSelector 为 false 时传递 patType&#10;- 保持原有患者类型列表选择器的功能完整性" />
     <MESSAGE value="v127:fix/refactor:科室端-科室页面 收支余分析 /总览&#10;fix(BIEAnalysis): 修复科室收入口径处理逻辑&#10;&#10;- 在科室未切换但日期改变时，调用 incomeOptionsHandler 更新本地数据&#10;- 移除重复的 incomeOptionsHandler 调用避免冗余处理&#10;- 针对吉大一医院特殊场景，在整体分析tab下医技科室默认设置为执行收入口径&#10;- 优化 overallBlockIncomeHandler 方法中的条件判断逻辑&#10;- 为吉大一医院医技科室禁用收入口径选择功能&#10;- 隐藏并禁用患者科室相关的收入选项" />
     <MESSAGE value="v127:feat/refactor:需求2647-院端-病组分析（医保版DRG）-总览-全院病组总览，费用消耗指数、时间消耗指数、药品指数、材料指数下钻显示病人分类下拉框，并与总览页面保持一致&#10;feat(operationDisease): 添加山东大学第二医院病人分类树形选择器&#10;&#10;- 在capacity.vue和diseaseSurplus.vue中新增PlTreeRadio组件用于病人分类单选&#10;- 添加getPatientTypeTreeSingleSelectorBindData计算属性配置树形选择器参数&#10;- 集成PlTreeRadio组件到页面组件注册中&#10;- 添加医院代码常量引用和数据绑定支持&#10;- 实现基于医院类型的条件渲染逻辑" />
     <MESSAGE value="v127:feat/refactor:需求2647-院端-病组分析（医保版DRG）-总览-全院病组总览，费用消耗指数、时间消耗指数、药品指数、材料指数下钻显示病人分类下拉框，并与总览页面保持一致&#10;feat(operationDisease): 添加病人分类选择功能支持多院区配置&#10;&#10;- 在四个业务模块(drugIndex, expenseConsumptionIndex, materialIndex, timeConsumptionIndex)中集成病人分类选择组件&#10;- 新增PlTreeRadio树形单选组件用于山东大二院区特殊配置&#10;- 实现基于医院代码的动态显示控制逻辑&#10;- 添加病人类型选项生成函数genPatientTypeOptionsByHospCodeDRG&#10;- 配置不同院区的病人分类选择器显示规则和绑定数据&#10;- 移除重复的病人分类列表多选组件避免界面冗余" />
@@ -3239,7 +3239,8 @@
     <MESSAGE value="拉取代码-图表通知算法更新" />
     <MESSAGE value="v128:feat/refactor:需求2639-科室端-病种分析（市医保DRG）-出院分析-病组RW-结余率分析下钻：关键病组RW-结余率明细改为新组件；优势病组RW-结余率明细改为新组件；&#10;fix(charts): 修复图表排序字段更新问题&#10;&#10;- 在 tabsBarChange 方法中添加 sort.field 更新逻辑&#10;- 确保图表类型切换时排序字段同步更新&#10;- 修正优势疾病RW收益率详情组件排序功能&#10;- 修正关键疾病RW收益率详情组件排序功能" />
     <MESSAGE value="v128:feat/refactor:需求2575、2565-科室端-病种分析（市医保DRG） -出院分析-病组RW-结余率分析，样式修改为左右交互的样式，左侧为散点图，右侧为每个象限的病组;病组RW-结余率分析，下面添加散点图及右侧明细表格，默认为科室所有主诊断、第一个操作的明细数据，当病组RW-结余率分析选中病组时，即为该科室该病组的主诊断、第一个操作的数据。标题默认为诊断操作结余分析，如选择了某个病组，则为：FM19-经皮冠状动脉支架植入-诊断操作结余分析&#10;feat(disease-analysis): 添加散点图象限描述后缀功能&#10;&#10;- 新增 suffixDescription 参数用于自定义描述后缀&#10;- 在返回的象限描述中添加后缀内容支持" />
-    <option name="LAST_COMMIT_MESSAGE" value="v128:feat/refactor:需求2575、2565-科室端-病种分析（市医保DRG） -出院分析-病组RW-结余率分析，样式修改为左右交互的样式，左侧为散点图，右侧为每个象限的病组;病组RW-结余率分析，下面添加散点图及右侧明细表格，默认为科室所有主诊断、第一个操作的明细数据，当病组RW-结余率分析选中病组时，即为该科室该病组的主诊断、第一个操作的数据。标题默认为诊断操作结余分析，如选择了某个病组，则为：FM19-经皮冠状动脉支架植入-诊断操作结余分析&#10;feat(disease-analysis): 添加散点图象限描述后缀功能&#10;&#10;- 新增 suffixDescription 参数用于自定义描述后缀&#10;- 在返回的象限描述中添加后缀内容支持" />
+    <MESSAGE value="v128:feat/refactor:需求2466-科室端-应用配置-关键病组自定义（DRG），在关键病组自定义（DRG）表格中，添加RW列，位于专科列后面。支持配置小数位。科室端-应用配置-关键病种自定义（DIP），在关键病种自定义（DIP）表格中，添加RW列，位于专科列后面。支持配置小数位。&#10;fix(applicationConfig): 移除后端字段排序限制&#10;&#10;- 注释掉强制设置排序字段为'total'的代码&#10;- 允许前端自定义排序字段配置&#10;- 修复排序功能被后端硬编码限制的问题" />
+    <option name="LAST_COMMIT_MESSAGE" value="v128:feat/refactor:需求2466-科室端-应用配置-关键病组自定义（DRG），在关键病组自定义（DRG）表格中，添加RW列，位于专科列后面。支持配置小数位。科室端-应用配置-关键病种自定义（DIP），在关键病种自定义（DIP）表格中，添加RW列，位于专科列后面。支持配置小数位。&#10;fix(applicationConfig): 移除后端字段排序限制&#10;&#10;- 注释掉强制设置排序字段为'total'的代码&#10;- 允许前端自定义排序字段配置&#10;- 修复排序功能被后端硬编码限制的问题" />
   </component>
   <component name="VueSettings">
     <option name="innerServiceType" value="TS_SERVICE" />
